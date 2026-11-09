@@ -29,6 +29,18 @@ VS Code rekommenderar tillägget **Prettier – Code formatter**
 (`esbenp.prettier-vscode`). Installera det för att använda projektets inställning
 för automatisk formatering vid sparning.
 
+## Projektstruktur
+
+- `src/main.jsx` startar React med StrictMode och laddar globala stilar.
+- `src/App.jsx` kopplar ihop layout, gemensamt state och komponenter.
+- `src/components/` innehåller sidomeny, sidhuvud, sökfilter, spelkort,
+  samling, informationspanel, galleri, bildmodal och ikoner.
+- `src/hooks/useFavorites.js` hanterar favoriter i localStorage.
+- `src/utils/filterGames.js` filtrerar och sorterar utan att ändra originaldatan.
+- `src/constants/categories.js` innehåller den gemensamma kategorilistan.
+- `src/styles.css`, `src/games.json` och `public/images/` innehåller design,
+  speldata respektive lokala bilder.
+
 ## Innehåll och bilder
 
 All speldata finns i `src/games.json`. Bilder finns i `public/images/`.
@@ -47,7 +59,7 @@ För varje spel:
 
 Lägg dina bilder i `public/images/` och ändra bildsökvägarna i JSON-filen. Använd gärna WebP eller AVIF. Omslag visas stående, men kan ha andra proportioner; justera `object-fit` i CSS om du vill visa hela originalomslaget.
 
-Innan exempelvärden ersätts helt: behåll gränssnittets exempelmarkeringar. När alla uppgifter är kontrollerade kan markeringarna i `src/main.jsx` tas bort. Favoriter sparas bara lokalt i besökarens webbläsare, inte mellan enheter.
+Innan exempelvärden ersätts helt: behåll gränssnittets exempelmarkeringar. När alla uppgifter är kontrollerade kan markeringarna i komponenterna under `src/components/` tas bort. Favoriter sparas bara lokalt i besökarens webbläsare, inte mellan enheter.
 
 ## Funktioner
 
