@@ -18,6 +18,17 @@ npm run dev
 
 För fortsatt AI-utveckling: installera OpenAI:s officiella Codex-tillägg i VS Code och logga in. Öppna projektmappen innan du startar en Codex-chatt. Se [Codex i din editor](https://developers.openai.com/codex/ide).
 
+## Formatering
+
+Kör `npm run format` för att formatera projektet med Prettier och
+`npm run format:check` för att kontrollera formateringen utan att ändra filer.
+Indrag är två mellanslag. `node_modules`, `dist`, `package-lock.json` och
+`public/images` undantas från formateringen.
+
+VS Code rekommenderar tillägget **Prettier – Code formatter**
+(`esbenp.prettier-vscode`). Installera det för att använda projektets inställning
+för automatisk formatering vid sparning.
+
 ## Innehåll och bilder
 
 All speldata finns i `src/games.json`. Bilder finns i `public/images/`.

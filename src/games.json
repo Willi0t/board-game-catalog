@@ -13,10 +13,7 @@
     "weight": 3.0,
     "metadataStatus": "placeholder",
     "cover": "/images/burgundy-cover.svg",
-    "gallery": [
-      "/images/burgundy-scene.svg",
-      "/images/burgundy-detail.svg"
-    ]
+    "gallery": ["/images/burgundy-scene.svg", "/images/burgundy-detail.svg"]
   },
   {
     "id": "terraforming",
@@ -51,10 +48,7 @@
     "weight": 2.0,
     "metadataStatus": "placeholder",
     "cover": "/images/cosmic-cover.svg",
-    "gallery": [
-      "/images/cosmic-scene.svg",
-      "/images/cosmic-detail.svg"
-    ]
+    "gallery": ["/images/cosmic-scene.svg", "/images/cosmic-detail.svg"]
   },
   {
     "id": "clank",
@@ -70,10 +64,7 @@
     "weight": 2.0,
     "metadataStatus": "placeholder",
     "cover": "/images/clank-cover.svg",
-    "gallery": [
-      "/images/clank-scene.svg",
-      "/images/clank-detail.svg"
-    ]
+    "gallery": ["/images/clank-scene.svg", "/images/clank-detail.svg"]
   },
   {
     "id": "wonders",
@@ -89,10 +80,7 @@
     "weight": 3.0,
     "metadataStatus": "placeholder",
     "cover": "/images/wonders-cover.svg",
-    "gallery": [
-      "/images/wonders-scene.svg",
-      "/images/wonders-detail.svg"
-    ]
+    "gallery": ["/images/wonders-scene.svg", "/images/wonders-detail.svg"]
   },
   {
     "id": "salad",
@@ -108,10 +96,7 @@
     "weight": 2.0,
     "metadataStatus": "placeholder",
     "cover": "/images/salad-cover.svg",
-    "gallery": [
-      "/images/salad-scene.svg",
-      "/images/salad-detail.svg"
-    ]
+    "gallery": ["/images/salad-scene.svg", "/images/salad-detail.svg"]
   },
   {
     "id": "burgle",
@@ -127,10 +112,7 @@
     "weight": 2.0,
     "metadataStatus": "placeholder",
     "cover": "/images/burgle-cover.svg",
-    "gallery": [
-      "/images/burgle-scene.svg",
-      "/images/burgle-detail.svg"
-    ]
+    "gallery": ["/images/burgle-scene.svg", "/images/burgle-detail.svg"]
   },
   {
     "id": "duel",
@@ -146,10 +128,7 @@
     "weight": 2.0,
     "metadataStatus": "placeholder",
     "cover": "/images/duel-cover.svg",
-    "gallery": [
-      "/images/duel-scene.svg",
-      "/images/duel-detail.svg"
-    ]
+    "gallery": ["/images/duel-scene.svg", "/images/duel-detail.svg"]
   },
   {
     "id": "vaalbara",
@@ -165,10 +144,7 @@
     "weight": 2.0,
     "metadataStatus": "placeholder",
     "cover": "/images/vaalbara-cover.svg",
-    "gallery": [
-      "/images/vaalbara-scene.svg",
-      "/images/vaalbara-detail.svg"
-    ]
+    "gallery": ["/images/vaalbara-scene.svg", "/images/vaalbara-detail.svg"]
   },
   {
     "id": "citadels",
@@ -184,10 +160,7 @@
     "weight": 2.0,
     "metadataStatus": "placeholder",
     "cover": "/images/citadels-cover.svg",
-    "gallery": [
-      "/images/citadels-scene.svg",
-      "/images/citadels-detail.svg"
-    ]
+    "gallery": ["/images/citadels-scene.svg", "/images/citadels-detail.svg"]
   },
   {
     "id": "starwars",
@@ -203,10 +176,7 @@
     "weight": 2.0,
     "metadataStatus": "placeholder",
     "cover": "/images/starwars-cover.svg",
-    "gallery": [
-      "/images/starwars-scene.svg",
-      "/images/starwars-detail.svg"
-    ]
+    "gallery": ["/images/starwars-scene.svg", "/images/starwars-detail.svg"]
   },
   {
     "id": "scarface",
@@ -222,9 +192,6 @@
     "weight": 3.0,
     "metadataStatus": "placeholder",
     "cover": "/images/scarface-cover.svg",
-    "gallery": [
-      "/images/scarface-scene.svg",
-      "/images/scarface-detail.svg"
-    ]
+    "gallery": ["/images/scarface-scene.svg", "/images/scarface-detail.svg"]
   }
 ]
