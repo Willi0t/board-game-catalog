@@ -1,33 +1,48 @@
 import React from 'react';
 import Icon from './Icon';
 
-export default function Header({ category, hasGames, onRandomGame, children }) {
+import styles from './Header.module.css';
+
+interface HeaderProps {
+  category: string;
+  hasGames: boolean;
+  onRandomGame: () => void;
+  children: React.ReactNode;
+  contentClassName: string;
+}
+export default function Header({
+  category,
+  hasGames,
+  onRandomGame,
+  children,
+  contentClassName,
+}: HeaderProps) {
   return (
     <>
-      <header className="topbar">
-        <div className="breadcrumb">
+      <header className={styles['topbar']}>
+        <div className={styles['breadcrumb']}>
           Mitt bibliotek <Icon name="chevron" size={13} />
           <span>{category}</span>
         </div>
-        <span className="demo-label">
+        <span className={styles['demo-label']}>
           <span /> Förhandsversion
         </span>
       </header>
-      <div className="workspace-inner">
-        <section className="page-heading">
+      <div className={contentClassName}>
+        <section className={styles['page-heading']}>
           <div>
-            <p className="eyebrow">SAMLINGEN, PÅ ETT STÄLLE</p>
-            <h1>
+            <p className={styles['eyebrow']}>SAMLINGEN, PÅ ETT STÄLLE</p>
+            <h1 className={styles.heading}>
               {category === 'Alla spel'
                 ? 'Nästa spelkväll börjar här.'
                 : category}
             </h1>
-            <p className="intro">
+            <p className={styles['intro']}>
               Bläddra, upptäck och hitta något att samlas kring.
             </p>
           </div>
           <button
-            className="random-button"
+            className={styles['random-button']}
             disabled={!hasGames}
             onClick={onRandomGame}
           >

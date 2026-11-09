@@ -1,5 +1,8 @@
 import React, { useState, useRef, useCallback } from 'react';
-import games from './games.json';
+import gameData from './games.json';
+import type { Game, GalleryImage, DetailTab } from './types/game';
+import styles from './App.module.css';
+
 import useFavorites from './hooks/useFavorites';
 import filterGames from './utils/filterGames';
 import Sidebar from './components/Sidebar';
@@ -9,6 +12,8 @@ import GameCollection from './components/GameCollection';
 import GameDetails from './components/GameDetails';
 import ImageModal from './components/ImageModal';
 
+const games: Game[] = gameData;
+
 export default function App() {
   const [category, setCategory] = useState('Alla spel');
   const [query, setQuery] = useState('');
@@ -16,9 +21,9 @@ export default function App() {
   const [duration, setDuration] = useState('');
   const [sort, setSort] = useState('default');
   const [selectedGameId, setSelectedGameId] = useState(games[0].id);
-  const [tab, setTab] = useState('Om spelet');
-  const [modal, setModal] = useState(null);
-  const detailsRef = useRef(null);
+  const [tab, setTab] = useState<DetailTab>('Om spelet');
+  const [modal, setModal] = useState<GalleryImage | null>(null);
+  const detailsRef = useRef<HTMLElement>(null);
   const { favorites, toggleFavorite } = useFavorites();
   const closeModal = useCallback(() => setModal(null), []);
   const filteredGames = filterGames(games, {
@@ -33,7 +38,7 @@ export default function App() {
     filteredGames.find((g) => g.id === selectedGameId) || filteredGames[0];
   const tint = selectedGame?.tint || '#e9e4ed',
     accent = selectedGame?.accent || '#815467';
-  const selectGame = (game) => {
+  const selectGame = (game: Game) => {
     setSelectedGameId(game.id);
     setTab('Om spelet');
     if (window.matchMedia('(max-width: 650px)').matches)
@@ -53,8 +58,12 @@ export default function App() {
     setPlayers('');
     setDuration('');
   };
+  const themeStyle: React.CSSProperties & {
+    '--tint': string;
+    '--accent': string;
+  } = { '--tint': tint, '--accent': accent };
   return (
-    <div className="app" style={{ '--tint': tint, '--accent': accent }}>
+    <div className={styles['app']} style={themeStyle}>
       <Sidebar
         games={games}
         favorites={favorites}
@@ -62,8 +71,9 @@ export default function App() {
         onCategoryChange={setCategory}
         onReset={reset}
       />
-      <main className="workspace">
+      <main className={styles['workspace']}>
         <Header
+          contentClassName={styles['workspace-inner']}
           category={category}
           hasGames={filteredGames.length > 0}
           onRandomGame={() =>
@@ -82,7 +92,7 @@ export default function App() {
             onPlayersChange={setPlayers}
             onDurationChange={setDuration}
           />
-          <div className="collection-layout">
+          <div className={styles['collection-layout']}>
             <GameCollection
               games={filteredGames}
               selectedGame={selectedGame}

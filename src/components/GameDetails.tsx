@@ -2,6 +2,19 @@ import React from 'react';
 import Icon from './Icon';
 import GameGallery from './GameGallery';
 
+import type { Game, GalleryImage, DetailTab } from '../types/game';
+import styles from './GameDetails.module.css';
+
+interface GameDetailsProps {
+  game: Game;
+  isFavorite: boolean;
+  onToggleFavorite: (id: string) => void;
+  tab: DetailTab;
+  onTabChange: (tab: DetailTab) => void;
+  onOpenImage: (image: GalleryImage) => void;
+  detailsRef: React.Ref<HTMLElement>;
+  collectionIndex: number;
+}
 export default function GameDetails({
   game,
   isFavorite,
@@ -11,22 +24,23 @@ export default function GameDetails({
   onOpenImage,
   detailsRef,
   collectionIndex,
-}) {
+}: GameDetailsProps) {
+  const tabs: DetailTab[] = ['Om spelet', 'Bilder'];
   return (
     <aside
       ref={detailsRef}
-      className="details"
+      className={styles['details']}
       aria-label="Information om valt spel"
       key={game.id}
     >
-      <div className="detail-hero">
+      <div className={styles['detail-hero']}>
         <img
           src={game.gallery[0]}
           alt={`Illustrerad platshållarbild för ${game.title}`}
         />
-        <span className="hero-label">{game.category}</span>
+        <span className={styles['hero-label']}>{game.category}</span>
         <button
-          className={`favorite-button ${isFavorite ? 'is-favorite' : ''}`}
+          className={`${styles['favorite-button']} ${isFavorite ? styles['is-favorite'] : ''}`}
           aria-label={
             isFavorite ? 'Ta bort från favoriter' : 'Lägg till i favoriter'
           }
@@ -35,14 +49,14 @@ export default function GameDetails({
         >
           <Icon name="heart" size={19} />
         </button>
-        <span className="hero-placeholder">PLATSHÅLLARBILD</span>
+        <span className={styles['hero-placeholder']}>PLATSHÅLLARBILD</span>
       </div>
-      <div className="detail-content">
-        <p className="detail-edition">
+      <div className={styles['detail-content']}>
+        <p className={styles['detail-edition']}>
           {game.edition || 'UR WILLIAMS SAMLING'}
         </p>
         <h2>{game.title}</h2>
-        <div className="stats">
+        <div className={styles['stats']}>
           <div>
             <Icon name="people" />
             <strong>
@@ -65,15 +79,15 @@ export default function GameDetails({
             <span>svårighet*</span>
           </div>
         </div>
-        <p className="data-note">
+        <p className={styles['data-note']}>
           * Exempelvärden – ersätts med verifierad speldata.
         </p>
         <div
-          className="detail-tabs"
+          className={styles['detail-tabs']}
           role="tablist"
           aria-label="Spelinformation"
         >
-          {['Om spelet', 'Bilder'].map((t) => (
+          {tabs.map((t) => (
             <button
               key={t}
               role="tab"
@@ -93,13 +107,13 @@ export default function GameDetails({
           aria-labelledby={`tab-${tab === 'Bilder' ? 'images' : 'about'}`}
         >
           {tab === 'Om spelet' ? (
-            <div className="about">
+            <div className={styles['about']}>
               <p>{game.description}</p>
-              <div className="tags">
+              <div className={styles['tags']}>
                 <span>{game.category}</span>
                 <span>Brädspel</span>
               </div>
-              <div className="preview-note">
+              <div className={styles['preview-note']}>
                 <Icon name="book" size={18} />
                 <p>
                   Här finns snart dina bilder, spelbeskrivningar och detaljer.
@@ -111,8 +125,8 @@ export default function GameDetails({
           )}
         </div>
       </div>
-      <div className="detail-footer">
-        <span className="tiny-dot" /> I samlingen{' '}
+      <div className={styles['detail-footer']}>
+        <span className={styles['tiny-dot']} /> I samlingen{' '}
         <span>#{String(collectionIndex).padStart(3, '0')}</span>
       </div>
     </aside>

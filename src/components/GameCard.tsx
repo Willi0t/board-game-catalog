@@ -1,30 +1,39 @@
 import React from 'react';
 import Icon from './Icon';
 
+import type { Game } from '../types/game';
+import styles from './GameCard.module.css';
+
+interface GameCardProps {
+  game: Game;
+  isSelected: boolean;
+  isFavorite: boolean;
+  onSelectGame: (game: Game) => void;
+}
 export default function GameCard({
   game,
   isSelected,
   isFavorite,
   onSelectGame,
-}) {
+}: GameCardProps) {
   return (
     <button
-      className={`game-card ${isSelected ? 'selected' : ''}`}
+      className={`${styles['game-card']} ${isSelected ? styles.selected : ''}`}
       onClick={() => onSelectGame(game)}
       aria-pressed={isSelected}
     >
-      <div className="cover-wrap">
+      <div className={styles['cover-wrap']}>
         <img
           src={game.cover}
           alt={`Platshållaromslag för ${game.title}`}
           loading="lazy"
         />
         {isFavorite && (
-          <span className="card-heart">
+          <span className={styles['card-heart']}>
             <Icon name="heart" size={14} />
           </span>
         )}
-        <span className="selected-indicator">
+        <span className={styles['selected-indicator']}>
           Valt spel <Icon name="arrow" size={14} />
         </span>
       </div>

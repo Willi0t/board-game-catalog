@@ -1,5 +1,16 @@
+import type { Game } from '../types/game';
+
+interface GameFilters {
+  category?: string;
+  favorites?: readonly string[];
+  query?: string;
+  players?: string;
+  duration?: string;
+  sort?: string;
+}
+
 export default function filterGames(
-  games,
+  games: readonly Game[],
   {
     category = 'Alla spel',
     favorites = [],
@@ -7,7 +18,7 @@ export default function filterGames(
     players = '',
     duration = '',
     sort = 'default',
-  } = {},
+  }: GameFilters = {},
 ) {
   const filtered = games.filter(
     (g) =>

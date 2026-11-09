@@ -1,0 +1,115 @@
+.game-card {
+  background: transparent;
+  padding: 0;
+  text-align: left;
+  min-width: 0;
+  transition: transform 0.25s;
+}
+
+.game-card:hover {
+  transform: translateY(-4px);
+}
+
+.cover-wrap {
+  position: relative;
+  aspect-ratio: 0.8;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px #49392e12;
+  border: 3px solid transparent;
+  transition:
+    box-shadow 0.2s,
+    border-color 0.2s;
+}
+
+.cover-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.game-card.selected .cover-wrap {
+  border-color: var(--accent);
+  box-shadow:
+    0 0 0 3px #fff9,
+    0 8px 18px #4e2c3720;
+}
+
+.game-card h2 {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 10px 2px 2px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.game-card p {
+  font-size: 9px;
+  color: #a1938b;
+  margin: 0 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.selected-indicator {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--accent);
+  color: white;
+  padding: 6px 9px;
+  font-size: 9px;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.selected .selected-indicator {
+  display: flex;
+}
+
+.card-heart {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: white;
+  filter: drop-shadow(0 1px 2px #0008);
+}
+
+.card-heart svg {
+  fill: currentColor;
+}
+
+@media (max-width: 900px) {
+  .game-card h2 {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 650px) {
+  .cover-wrap {
+    border-width: 2px;
+  }
+
+  .game-card h2 {
+    font-size: 10px;
+  }
+
+  .selected-indicator {
+    font-size: 7px;
+    padding: 5px;
+  }
+
+  .game-card p {
+    font-size: 8px;
+  }
+}
+
+.game-card p {
+  color: #7e7068;
+}

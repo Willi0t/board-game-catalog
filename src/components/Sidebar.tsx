@@ -1,75 +1,90 @@
 import React from 'react';
-import Icon from './Icon';
+import Icon, { type IconName } from './Icon';
 import { categories } from '../constants/categories';
 
+import type { Game } from '../types/game';
+import styles from './Sidebar.module.css';
+
+interface SidebarProps {
+  games: Game[];
+  favorites: string[];
+  category: string;
+  onCategoryChange: (category: string) => void;
+  onReset: () => void;
+}
 export default function Sidebar({
   games,
   favorites,
   category,
   onCategoryChange,
   onReset,
-}) {
+}: SidebarProps) {
+  const libraryItems: [string, IconName, number][] = [
+    ['Alla spel', 'grid', games.length],
+    ['Favoriter', 'heart', favorites.length],
+  ];
   return (
-    <aside className="sidebar">
+    <aside className={styles['sidebar']}>
       <a
-        className="brand"
+        className={styles['brand']}
         href="#"
         onClick={(e) => {
           e.preventDefault();
           onReset();
         }}
       >
-        <span className="brand-mark">
+        <span className={styles['brand-mark']}>
           <Icon name="dice" size={24} />
         </span>
         <span>
-          spelhyllan<span className="brand-dot">.</span>
+          spelhyllan<span className={styles['brand-dot']}>.</span>
         </span>
       </a>
-      <div className="owner">
-        <span className="avatar">W</span>
+      <div className={styles['owner']}>
+        <span className={styles['avatar']}>W</span>
         <div>
           <strong>Williams samling</strong>
           <span>En värld av spelkvällar</span>
         </div>
       </div>
-      <p className="nav-caption">BIBLIOTEK</p>
+      <p className={styles['nav-caption']}>BIBLIOTEK</p>
       <nav aria-label="Bibliotek">
-        {[
-          ['Alla spel', 'grid', games.length],
-          ['Favoriter', 'heart', favorites.length],
-        ].map(([label, icon, count]) => (
+        {libraryItems.map(([label, icon, count]) => (
           <button
             key={label}
             aria-label={`${label}, ${count} spel`}
-            className={`nav-item ${category === label ? 'active' : ''}`}
+            className={`${styles['nav-item']} ${category === label ? styles.active : ''}`}
             onClick={() => onCategoryChange(label)}
             aria-current={category === label ? 'page' : undefined}
           >
             <Icon name={icon} />
             <span>{label}</span>
-            <span className="count">{count}</span>
+            <span className={styles['count']}>{count}</span>
           </button>
         ))}
       </nav>
-      <p className="nav-caption category-caption">UTFORSKA</p>
+      <p className={`${styles['nav-caption']} ${styles['category-caption']}`}>
+        UTFORSKA
+      </p>
       <nav aria-label="Spelkategorier">
         {categories.map((c, i) => (
           <button
             key={c}
-            className={`nav-item category-item ${category === c ? 'active' : ''}`}
+            className={`${styles['nav-item']} ${styles['category-item']} ${category === c ? styles.active : ''}`}
             aria-current={category === c ? 'page' : undefined}
             onClick={() => onCategoryChange(c)}
           >
-            <span className={`category-dot dot-${i}`} />
+            <span
+              className={`${styles['category-dot']} ${styles[`dot-${i}`] || ''}`}
+            />
             <span>{c}</span>
-            <span className="count">
+            <span className={styles['count']}>
               {games.filter((g) => g.category === c).length}
             </span>
           </button>
         ))}
       </nav>
-      <div className="sidebar-bottom">
+      <div className={styles['sidebar-bottom']}>
         <Icon name="sun" size={18} />
         <span>
           Lite mindre skärm.

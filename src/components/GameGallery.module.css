@@ -1,0 +1,43 @@
+.gallery {
+  display: grid;
+  gap: 12px;
+  padding: 18px 0 22px;
+}
+
+.gallery button {
+  background: transparent;
+  text-align: left;
+  padding: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #dfd6d0;
+}
+
+.gallery img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 2.5;
+  object-fit: cover;
+}
+
+.gallery button > span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  font-size: 10px;
+}
+
+@media (max-width: 650px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery img {
+    aspect-ratio: 1.4;
+  }
+
+  .gallery button > span {
+    font-size: 9px;
+  }
+}
