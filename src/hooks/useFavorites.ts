@@ -16,7 +16,9 @@ export default function useFavorites() {
   useEffect(() => {
     try {
       localStorage.setItem('spelhyllan-favorites', JSON.stringify(favorites));
-    } catch {}
+    } catch {
+      // Keep in-memory favorites when browser storage is unavailable or full.
+    }
   }, [favorites]);
   const toggleFavorite = (id: string) =>
     setFavorites((prev) =>

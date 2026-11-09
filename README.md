@@ -4,7 +4,9 @@ Williams ljusa brädspelskatalog, inspirerad av Playnite/Dune. Bakgrundens ton �
 
 ## Starta i VS Code
 
-Kräver Node.js 22.12 eller senare (eller en senare LTS-version).
+Kräver Node.js 22.13.0 eller senare inom 22-serien, eller Node.js 24 eller senare
+(`^22.13.0 || >=24.0.0`). Node.js 23 ingår inte i det stödda intervallet.
+CI och Netlify använder Node.js 22.23.4.
 
 1. Packa upp projektet och öppna mappen `board-game-catalog` i VS Code.
 2. Öppna terminalen i den mappen och kör:
@@ -28,6 +30,36 @@ Indrag är två mellanslag. `node_modules`, `dist`, `package-lock.json` och
 VS Code rekommenderar tillägget **Prettier – Code formatter**
 (`esbenp.prettier-vscode`). Installera det för att använda projektets inställning
 för automatisk formatering vid sparning.
+
+## Kodkontroll och CI
+
+Kör `npm run lint` för ESLints rekommenderade TypeScript- och React Hooks-regler.
+Kommandot misslyckas vid både fel och varningar. `eslint.config.js` använder flat
+config och undantar `dist` och `node_modules`. Prettier ansvarar för formatering;
+`eslint-config-prettier` stänger av regler som kan stå i konflikt med Prettier.
+VS Code rekommenderar även det officiella ESLint-tillägget
+(`dbaeumer.vscode-eslint`).
+
+Projektets verifierade verktygsversioner är ESLint 10.14.0, `@eslint/js` 10.0.1,
+TypeScript 6.0.3, typescript-eslint 8.72.1 och React Hooks-plugin 7.1.1.
+De är låsta till exakta versioner. Node-kravet ovan följer ESLint 10:s stödda
+versioner, med 22.13.0 som projektets lägsta tillåtna version.
+
+Kvarvarande audit-anmärkning: minimatch 10.2.6 berörs av
+[GHSA-g3hv-75wg-m249](https://github.com/advisories/GHSA-g3hv-75wg-m249), som kan
+orsaka hög CPU- och minnesförbrukning vid särskilt utformade globmönster.
+Det gäller utvecklingsberoenden via ESLint och typescript-eslint, inte appens
+produktionsberoenden. Audit rapporterar tio måttliga paketträffar från samma
+grundsårbarhet. Rättningen finns i minimatch 11.0.1, utanför den aktuella
+beroendekedjans deklarerade versionsintervall. En kompatibel rättning saknas
+därför i denna kedja; vi använder inte force, overrides eller inkompatibla
+nedgraderingar för att dölja varningen.
+
+`.github/workflows/ci.yml` körs vid pull requests till `main` och push till alla
+grenar. Med Node.js 22.23.4 och npm-cache baserad på `package-lock.json` körs `npm ci`,
+`npm run format`, `npm run lint` och `npm run build`. Formateringen skriver till
+CI-jobbets arbetskopia. Bygget inkluderar typkontroll, så den körs inte separat i
+CI. Arbetsflödet har endast `contents: read` och publicerar eller deployar ingenting.
 
 ## Projektstruktur
 
@@ -105,6 +137,7 @@ Importera GitHub-repot i Netlify. `netlify.toml` innehåller bygginställningarn
 ```bash
 npm run format
 npm run format:check
+npm run lint
 npm run typecheck
 npm run build
 npm run preview
