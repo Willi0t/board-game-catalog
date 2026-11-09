@@ -1,7 +1,7 @@
 import React from 'react';
-import Icon from './Icon';
+import Icon from '../Icon/Icon';
 
-import type { Game } from '../types/game';
+import type { Game } from '../../types/game';
 import styles from './GameCard.module.css';
 
 interface GameCardProps {

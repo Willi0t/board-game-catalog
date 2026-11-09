@@ -1,8 +1,8 @@
 import React from 'react';
-import Icon from './Icon';
-import GameGallery from './GameGallery';
+import Icon from '../Icon/Icon';
+import GameGallery from '../GameGallery/GameGallery';
 
-import type { Game, GalleryImage, DetailTab } from '../types/game';
+import type { Game, GalleryImage, DetailTab } from '../../types/game';
 import styles from './GameDetails.module.css';
 
 interface GameDetailsProps {

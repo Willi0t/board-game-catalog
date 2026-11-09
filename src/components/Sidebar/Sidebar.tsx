@@ -1,8 +1,8 @@
 import React from 'react';
-import Icon, { type IconName } from './Icon';
-import { categories } from '../constants/categories';
+import Icon, { type IconName } from '../Icon/Icon';
+import { categories } from '../../constants/categories';
 
-import type { Game } from '../types/game';
+import type { Game } from '../../types/game';
 import styles from './Sidebar.module.css';
 
 interface SidebarProps {

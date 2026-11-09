@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
-import Icon from './Icon';
+import Icon from '../Icon/Icon';
 
-import type { GalleryImage } from '../types/game';
+import type { GalleryImage } from '../../types/game';
 import styles from './ImageModal.module.css';
 
 interface ImageModalProps {

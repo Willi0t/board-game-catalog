@@ -5,12 +5,12 @@ import styles from './App.module.css';
 
 import useFavorites from './hooks/useFavorites';
 import filterGames from './utils/filterGames';
-import Sidebar from './components/Sidebar';
-import Header from './components/Header';
-import CatalogToolbar from './components/CatalogToolbar';
-import GameCollection from './components/GameCollection';
-import GameDetails from './components/GameDetails';
-import ImageModal from './components/ImageModal';
+import Sidebar from './components/Sidebar/Sidebar';
+import Header from './components/Header/Header';
+import CatalogToolbar from './components/CatalogToolbar/CatalogToolbar';
+import GameCollection from './components/GameCollection/GameCollection';
+import GameDetails from './components/GameDetails/GameDetails';
+import ImageModal from './components/ImageModal/ImageModal';
 
 const games: Game[] = gameData;
 

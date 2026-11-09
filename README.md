@@ -34,9 +34,11 @@ för automatisk formatering vid sparning.
 - `src/main.tsx` startar React med StrictMode och laddar globala stilar.
 - `src/App.tsx` kopplar ihop layout, gemensamt state och komponenter.
 - `src/App.module.css` innehåller övergripande layoutstilar.
-- `src/components/` innehåller komponenter i `.tsx` och deras lokala
-  `.module.css`-filer för sidomeny, sidhuvud, sökfilter, spelkort, samling,
-  informationspanel, galleri och bildmodal, samt ikoner.
+- `src/components/` har en mapp per komponent, med komponentens `.tsx`-fil och
+  eventuell `.module.css`-fil, exempelvis `GameCard/GameCard.tsx` och
+  `GameCard/GameCard.module.css`. `Icon/Icon.tsx` saknar egen CSS-fil.
+  Komponenter importeras med explicit sökväg, exempelvis
+  `./components/GameCard/GameCard`, utan återexport via `index.ts`.
 - `src/hooks/useFavorites.ts` hanterar favoriter i localStorage.
 - `src/utils/filterGames.ts` filtrerar och sorterar utan att ändra originaldatan.
 - `src/constants/categories.ts` innehåller den gemensamma kategorilistan.

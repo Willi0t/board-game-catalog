@@ -1,8 +1,8 @@
 import React from 'react';
-import Icon from './Icon';
-import GameCard from './GameCard';
+import Icon from '../Icon/Icon';
+import GameCard from '../GameCard/GameCard';
 
-import type { Game } from '../types/game';
+import type { Game } from '../../types/game';
 import styles from './GameCollection.module.css';
 
 interface GameCollectionProps {

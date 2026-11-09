@@ -1,6 +1,6 @@
 import React from 'react';
-import Icon from './Icon';
-import { categories } from '../constants/categories';
+import Icon from '../Icon/Icon';
+import { categories } from '../../constants/categories';
 
 import styles from './CatalogToolbar.module.css';
 
