@@ -1,0 +1,230 @@
+[
+  {
+    "id": "burgundy",
+    "title": "Castles of Burgundy",
+    "edition": "Special Edition",
+    "category": "Strategi",
+    "accent": "#815467",
+    "tint": "#eadce2",
+    "description": "Ett landskap av möjligheter. Bygg ditt furstendöme, kombinera handlingar och låt varje tärning öppna en ny väg.",
+    "playersMin": 2,
+    "playersMax": 4,
+    "minutes": 90,
+    "weight": 3.0,
+    "metadataStatus": "placeholder",
+    "cover": "/images/burgundy-cover.svg",
+    "gallery": [
+      "/images/burgundy-scene.svg",
+      "/images/burgundy-detail.svg"
+    ]
+  },
+  {
+    "id": "terraforming",
+    "title": "Terraforming Mars",
+    "edition": "",
+    "category": "Strategi",
+    "accent": "#b9663e",
+    "tint": "#f3e2d6",
+    "description": "Från karg planet till levande värld. Ett strategispel om att utveckla projekt och forma framtiden på Mars.",
+    "playersMin": 2,
+    "playersMax": 4,
+    "minutes": 90,
+    "weight": 3.0,
+    "metadataStatus": "placeholder",
+    "cover": "/images/terraforming-cover.svg",
+    "gallery": [
+      "/images/terraforming-scene.svg",
+      "/images/terraforming-detail.svg"
+    ]
+  },
+  {
+    "id": "cosmic",
+    "title": "Cosmic Encounter",
+    "edition": "",
+    "category": "Socialt",
+    "accent": "#6d6aaf",
+    "tint": "#e6e3f4",
+    "description": "Förhandla, bilda allianser och möt oväntade förmågor i en galax där ingen omgång blir den andra lik.",
+    "playersMin": 2,
+    "playersMax": 4,
+    "minutes": 30,
+    "weight": 2.0,
+    "metadataStatus": "placeholder",
+    "cover": "/images/cosmic-cover.svg",
+    "gallery": [
+      "/images/cosmic-scene.svg",
+      "/images/cosmic-detail.svg"
+    ]
+  },
+  {
+    "id": "clank",
+    "title": "Clank! Catacombs",
+    "edition": "",
+    "category": "Äventyr",
+    "accent": "#317c78",
+    "tint": "#dceee9",
+    "description": "Våga dig ner i katakomberna. Bygg din kortlek, hitta skatter och försök komma tillbaka innan det är för sent.",
+    "playersMin": 2,
+    "playersMax": 4,
+    "minutes": 30,
+    "weight": 2.0,
+    "metadataStatus": "placeholder",
+    "cover": "/images/clank-cover.svg",
+    "gallery": [
+      "/images/clank-scene.svg",
+      "/images/clank-detail.svg"
+    ]
+  },
+  {
+    "id": "wonders",
+    "title": "7 Wonders",
+    "edition": "",
+    "category": "Strategi",
+    "accent": "#b8944e",
+    "tint": "#f2ead7",
+    "description": "Bygg en civilisation genom att välja kort, utveckla din stad och resa ett underverk.",
+    "playersMin": 2,
+    "playersMax": 4,
+    "minutes": 90,
+    "weight": 3.0,
+    "metadataStatus": "placeholder",
+    "cover": "/images/wonders-cover.svg",
+    "gallery": [
+      "/images/wonders-scene.svg",
+      "/images/wonders-detail.svg"
+    ]
+  },
+  {
+    "id": "salad",
+    "title": "Point Salad",
+    "edition": "",
+    "category": "Familj",
+    "accent": "#6d8c4b",
+    "tint": "#e7eedc",
+    "description": "En färgglad kortlek med grönsaker och många sätt att samla poäng. Hitta kombinationerna som passar din sallad.",
+    "playersMin": 2,
+    "playersMax": 4,
+    "minutes": 30,
+    "weight": 2.0,
+    "metadataStatus": "placeholder",
+    "cover": "/images/salad-cover.svg",
+    "gallery": [
+      "/images/salad-scene.svg",
+      "/images/salad-detail.svg"
+    ]
+  },
+  {
+    "id": "burgle",
+    "title": "Burgle Bros.",
+    "edition": "",
+    "category": "Co-op",
+    "accent": "#4d7195",
+    "tint": "#e0e9f2",
+    "description": "Planera en kupp tillsammans. Undvik vakter, knäck kassaskåp och hitta vägen ut.",
+    "playersMin": 2,
+    "playersMax": 4,
+    "minutes": 30,
+    "weight": 2.0,
+    "metadataStatus": "placeholder",
+    "cover": "/images/burgle-cover.svg",
+    "gallery": [
+      "/images/burgle-scene.svg",
+      "/images/burgle-detail.svg"
+    ]
+  },
+  {
+    "id": "duel",
+    "title": "7 Wonders Duel",
+    "edition": "",
+    "category": "Två spelare",
+    "accent": "#b17b49",
+    "tint": "#f0e4d8",
+    "description": "Två civilisationer möts i en kamp om utveckling, inflytande och smarta kortval.",
+    "playersMin": 2,
+    "playersMax": 2,
+    "minutes": 30,
+    "weight": 2.0,
+    "metadataStatus": "placeholder",
+    "cover": "/images/duel-cover.svg",
+    "gallery": [
+      "/images/duel-scene.svg",
+      "/images/duel-detail.svg"
+    ]
+  },
+  {
+    "id": "vaalbara",
+    "title": "Vaalbara",
+    "edition": "",
+    "category": "Familj",
+    "accent": "#5d8b85",
+    "tint": "#e0eee9",
+    "description": "Led din klan till nya marker och välj när dina karaktärers förmågor gör störst skillnad.",
+    "playersMin": 2,
+    "playersMax": 4,
+    "minutes": 30,
+    "weight": 2.0,
+    "metadataStatus": "placeholder",
+    "cover": "/images/vaalbara-cover.svg",
+    "gallery": [
+      "/images/vaalbara-scene.svg",
+      "/images/vaalbara-detail.svg"
+    ]
+  },
+  {
+    "id": "citadels",
+    "title": "Citadels",
+    "edition": "",
+    "category": "Socialt",
+    "accent": "#a36360",
+    "tint": "#f0e1de",
+    "description": "Bygg en stad, välj hemliga roller och försök läsa dina motspelares planer.",
+    "playersMin": 2,
+    "playersMax": 4,
+    "minutes": 30,
+    "weight": 2.0,
+    "metadataStatus": "placeholder",
+    "cover": "/images/citadels-cover.svg",
+    "gallery": [
+      "/images/citadels-scene.svg",
+      "/images/citadels-detail.svg"
+    ]
+  },
+  {
+    "id": "starwars",
+    "title": "Star Wars",
+    "edition": "The Deckbuilding Game",
+    "category": "Två spelare",
+    "accent": "#5d7184",
+    "tint": "#e2e8ef",
+    "description": "Bygg din kortlek och möt din motståndare i en galaktisk duell.",
+    "playersMin": 2,
+    "playersMax": 2,
+    "minutes": 30,
+    "weight": 2.0,
+    "metadataStatus": "placeholder",
+    "cover": "/images/starwars-cover.svg",
+    "gallery": [
+      "/images/starwars-scene.svg",
+      "/images/starwars-detail.svg"
+    ]
+  },
+  {
+    "id": "scarface",
+    "title": "Scarface 1920",
+    "edition": "",
+    "category": "Strategi",
+    "accent": "#6f7562",
+    "tint": "#e8e9df",
+    "description": "Bygg upp ditt imperium i förbudstidens Chicago och kämpa om stadens inflytande.",
+    "playersMin": 2,
+    "playersMax": 4,
+    "minutes": 90,
+    "weight": 3.0,
+    "metadataStatus": "placeholder",
+    "cover": "/images/scarface-cover.svg",
+    "gallery": [
+      "/images/scarface-scene.svg",
+      "/images/scarface-detail.svg"
+    ]
+  }
+]
