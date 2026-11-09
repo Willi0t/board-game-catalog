@@ -1,9 +1,16 @@
 import React from 'react';
-import Icon from './Icon';
+import Icon from '../Icon/Icon';
 
-export default function GameGallery({ game, onOpenImage }) {
+import type { Game, GalleryImage } from '../../types/game';
+import styles from './GameGallery.module.css';
+
+interface GameGalleryProps {
+  game: Game;
+  onOpenImage: (image: GalleryImage) => void;
+}
+export default function GameGallery({ game, onOpenImage }: GameGalleryProps) {
   return (
-    <div className="gallery">
+    <div className={styles['gallery']}>
       {game.gallery.map((src, i) => (
         <button
           key={src}

@@ -1,0 +1,44 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  background: #312b35a6;
+  backdrop-filter: blur(8px);
+  display: grid;
+  place-items: center;
+  padding: 30px;
+}
+
+.modal {
+  width: min(900px, 100%);
+  position: relative;
+  background: #fcfaf7;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 100px #0003;
+}
+
+.modal > button {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  background: white;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.modal img {
+  width: 100%;
+  max-height: 75vh;
+  object-fit: contain;
+  display: block;
+}
+
+.modal p {
+  font-size: 12px;
+  padding: 0 20px;
+  color: #8b7b70;
+}

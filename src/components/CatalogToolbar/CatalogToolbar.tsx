@@ -1,7 +1,19 @@
 import React from 'react';
-import Icon from './Icon';
-import { categories } from '../constants/categories';
+import Icon from '../Icon/Icon';
+import { categories } from '../../constants/categories';
 
+import styles from './CatalogToolbar.module.css';
+
+interface CatalogToolbarProps {
+  query: string;
+  category: string;
+  players: string;
+  duration: string;
+  onQueryChange: (query: string) => void;
+  onCategoryChange: (category: string) => void;
+  onPlayersChange: (players: string) => void;
+  onDurationChange: (duration: string) => void;
+}
 export default function CatalogToolbar({
   query,
   category,
@@ -11,10 +23,10 @@ export default function CatalogToolbar({
   onCategoryChange,
   onPlayersChange,
   onDurationChange,
-}) {
+}: CatalogToolbarProps) {
   return (
-    <div className="toolbar">
-      <label className="search">
+    <div className={styles['toolbar']}>
+      <label className={styles['search']}>
         <Icon name="search" size={19} />
         <input
           value={query}
@@ -28,9 +40,9 @@ export default function CatalogToolbar({
           </button>
         )}
       </label>
-      <div className="filters">
+      <div className={styles['filters']}>
         <select
-          className="mobile-category"
+          className={styles['mobile-category']}
           aria-label="Välj spelkategori"
           value={category}
           onChange={(e) => onCategoryChange(e.target.value)}

@@ -1,13 +1,25 @@
 import React, { useEffect, useRef } from 'react';
-import Icon from './Icon';
+import Icon from '../Icon/Icon';
 
-export default function ImageModal({ modal, onClose }) {
-  const closeRef = useRef(null);
-  const previousFocus = useRef(null);
+import type { GalleryImage } from '../../types/game';
+import styles from './ImageModal.module.css';
+
+interface ImageModalProps {
+  modal: GalleryImage;
+  onClose: () => void;
+}
+export default function ImageModal({ modal, onClose }: ImageModalProps) {
+  const closeRef = useRef<HTMLButtonElement>(null);
+  const previousFocus = useRef<HTMLElement | SVGElement | null>(null);
   useEffect(() => {
-    previousFocus.current = document.activeElement;
+    const activeElement = document.activeElement;
+    previousFocus.current =
+      activeElement instanceof HTMLElement ||
+      activeElement instanceof SVGElement
+        ? activeElement
+        : null;
     closeRef.current?.focus();
-    const onKey = (e) => {
+    const onKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose();
       if (e.key === 'Tab') {
         e.preventDefault();
@@ -21,9 +33,9 @@ export default function ImageModal({ modal, onClose }) {
     };
   }, [modal, onClose]);
   return (
-    <div className="modal-backdrop" onClick={onClose}>
+    <div className={styles['modal-backdrop']} onClick={onClose}>
       <div
-        className="modal"
+        className={styles['modal']}
         role="dialog"
         aria-modal="true"
         aria-label={modal.title}

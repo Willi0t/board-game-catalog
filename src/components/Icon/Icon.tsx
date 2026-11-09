@@ -15,7 +15,14 @@ const paths = {
   mountain: 'm2 20 7-14 5 9 3-5 5 10H2Z',
   sun: 'M12 2v2M12 20v2M2 12h2M20 12h2m-17-7 1.5 1.5m11 11L19 19m0-14-1.5 1.5m-11 11L5 19M17 12a5 5 0 1 1-10 0 5 5 0 0 1 10 0Z',
 };
-export default function Icon({ name, size = 20, ...props }) {
+export type IconName = keyof typeof paths;
+
+type IconProps = React.SVGProps<SVGSVGElement> & {
+  name: IconName;
+  size?: number;
+};
+
+export default function Icon({ name, size = 20, ...props }: IconProps) {
   return (
     <svg
       width={size}

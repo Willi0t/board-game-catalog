@@ -1,6 +1,6 @@
 # Spelhyllan
 
-Williams ljusa brädspelskatalog, inspirerad av Playnite/Dune. Bakgrundens ton ändras mjukt med det valda spelet. Byggd med [React](https://react.dev/) och [Vite](https://vite.dev/), utan databas eller backend.
+Williams ljusa brädspelskatalog, inspirerad av Playnite/Dune. Bakgrundens ton ändras mjukt med det valda spelet. Byggd med [React](https://react.dev/), TypeScript och [Vite](https://vite.dev/), utan databas eller backend. Komponentstilar använder CSS Modules med vanlig CSS, utan Sass.
 
 ## Starta i VS Code
 
@@ -31,15 +31,23 @@ för automatisk formatering vid sparning.
 
 ## Projektstruktur
 
-- `src/main.jsx` startar React med StrictMode och laddar globala stilar.
-- `src/App.jsx` kopplar ihop layout, gemensamt state och komponenter.
-- `src/components/` innehåller sidomeny, sidhuvud, sökfilter, spelkort,
-  samling, informationspanel, galleri, bildmodal och ikoner.
-- `src/hooks/useFavorites.js` hanterar favoriter i localStorage.
-- `src/utils/filterGames.js` filtrerar och sorterar utan att ändra originaldatan.
-- `src/constants/categories.js` innehåller den gemensamma kategorilistan.
-- `src/styles.css`, `src/games.json` och `public/images/` innehåller design,
-  speldata respektive lokala bilder.
+- `src/main.tsx` startar React med StrictMode och laddar globala stilar.
+- `src/App.tsx` kopplar ihop layout, gemensamt state och komponenter.
+- `src/App.module.css` innehåller övergripande layoutstilar.
+- `src/components/` har en mapp per komponent, med komponentens `.tsx`-fil och
+  eventuell `.module.css`-fil, exempelvis `GameCard/GameCard.tsx` och
+  `GameCard/GameCard.module.css`. `Icon/Icon.tsx` saknar egen CSS-fil.
+  Komponenter importeras med explicit sökväg, exempelvis
+  `./components/GameCard/GameCard`, utan återexport via `index.ts`.
+- `src/hooks/useFavorites.ts` hanterar favoriter i localStorage.
+- `src/utils/filterGames.ts` filtrerar och sorterar utan att ändra originaldatan.
+- `src/constants/categories.ts` innehåller den gemensamma kategorilistan.
+- `src/types/game.ts` definierar den gemensamma speltypen och typer för bildmodal
+  och informationsflikar. Importerad JSON kontrolleras mot `Game[]` i `App.tsx`.
+- `src/styles.css` innehåller typsnitt, grundinställningar, globala elementstilar
+  och stöd för minskad rörelse. Komponentstilar importeras som `styles`-objekt.
+- `src/games.json` och `public/images/` innehåller speldata respektive lokala bilder.
+- `tsconfig.json` aktiverar strikt typkontroll och Vites typer.
 
 ## Innehåll och bilder
 
@@ -95,8 +103,13 @@ Importera GitHub-repot i Netlify. `netlify.toml` innehåller bygginställningarn
 ## Kontrollera produktionsbygget
 
 ```bash
+npm run format
+npm run format:check
+npm run typecheck
 npm run build
 npm run preview
 ```
+
+`typecheck` kör `tsc --noEmit`. `build` kör samma typkontroll före Vite-bygget.
 
 ZIP-leveransen innehåller även `dist/`, ett färdigbyggt statiskt exemplar. Själva källprojektet kräver npm-kommandona ovan. Ingen API-nyckel, databas eller betald AI-tjänst används av den färdiga katalogen.

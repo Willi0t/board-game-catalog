@@ -1,7 +1,19 @@
 import React from 'react';
-import Icon from './Icon';
-import GameCard from './GameCard';
+import Icon from '../Icon/Icon';
+import GameCard from '../GameCard/GameCard';
 
+import type { Game } from '../../types/game';
+import styles from './GameCollection.module.css';
+
+interface GameCollectionProps {
+  games: Game[];
+  selectedGame: Game | undefined;
+  favorites: string[];
+  sort: string;
+  onSortChange: (sort: string) => void;
+  onSelectGame: (game: Game) => void;
+  onReset: () => void;
+}
 export default function GameCollection({
   games,
   selectedGame,
@@ -10,10 +22,10 @@ export default function GameCollection({
   onSortChange,
   onSelectGame,
   onReset,
-}) {
+}: GameCollectionProps) {
   return (
-    <section className="collection" aria-label="Spelsamling">
-      <div className="collection-heading">
+    <section className={styles['collection']} aria-label="Spelsamling">
+      <div className={styles['collection-heading']}>
         <p>
           <strong>{games.length}</strong> spel att upptäcka
         </p>
@@ -28,7 +40,7 @@ export default function GameCollection({
         </select>
       </div>
       {games.length ? (
-        <div className="game-grid">
+        <div className={styles['game-grid']}>
           {games.map((game) => (
             <GameCard
               key={game.id}
@@ -40,14 +52,14 @@ export default function GameCollection({
           ))}
         </div>
       ) : (
-        <div className="empty">
+        <div className={styles['empty']}>
           <Icon name="search" size={34} />
           <h2>Inga spel hittades</h2>
           <p>Prova en annan sökning eller ta bort dina filter.</p>
           <button onClick={onReset}>Visa alla spel</button>
         </div>
       )}
-      <p className="collection-footnote">
+      <p className={styles['collection-footnote']}>
         En första titt på samlingen · Bilder och spelvärden är platshållare.
       </p>
     </section>
