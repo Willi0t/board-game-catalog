@@ -12,6 +12,7 @@ interface GameCollectionProps {
   sort: string;
   onSortChange: (sort: string) => void;
   onSelectGame: (game: Game) => void;
+  onOpenDetails: (game: Game, trigger: HTMLButtonElement) => void;
   onReset: () => void;
 }
 export default function GameCollection({
@@ -21,6 +22,7 @@ export default function GameCollection({
   sort,
   onSortChange,
   onSelectGame,
+  onOpenDetails,
   onReset,
 }: GameCollectionProps) {
   return (
@@ -48,6 +50,7 @@ export default function GameCollection({
               isSelected={selectedGame?.id === game.id}
               isFavorite={favorites.includes(game.id)}
               onSelectGame={onSelectGame}
+              onOpenDetails={onOpenDetails}
             />
           ))}
         </div>

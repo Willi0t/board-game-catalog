@@ -66,6 +66,10 @@ CI. Arbetsflödet har endast `contents: read` och publicerar eller deployar inge
 - `src/main.tsx` startar React med StrictMode och laddar globala stilar.
 - `src/App.tsx` kopplar ihop layout, gemensamt state och komponenter.
 - `src/App.module.css` innehåller övergripande layoutstilar.
+- `src/components/GameDetailDrawer/` innehåller den större detaljvyn som öppnas
+  med dubbelklick på ett spelkort eller informationspanelens ”Visa mer”.
+- `src/hooks/useModalDialog.ts` hanterar dialogernas fokus, fokusåterställning och
+  gemensamma scrollåsning, även när en bild förstoras ovanpå detaljvyn.
 - `src/components/` har en mapp per komponent, med komponentens `.tsx`-fil och
   eventuell `.module.css`-fil, exempelvis `GameCard/GameCard.tsx` och
   `GameCard/GameCard.module.css`. `Icon/Icon.tsx` saknar egen CSS-fil.
@@ -96,6 +100,11 @@ För varje spel:
 - `tint`: mycket ljus bakgrundston, exempelvis `#eadce2`.
 - `cover`: bildsökväg, exempelvis `/images/burgundy-cover.webp`.
 - `gallery`: lista över bildsökvägar.
+- `longDescription`, `minimumAge`, `expansions`: valfria fält för längre
+  beskrivning, åldersgräns som tal och expansionsnamn som en lista med strängar.
+  Detaljvyn använder den befintliga beskrivningen om `longDescription` saknas
+  och döljer åldersgräns och expansioner när uppgifter saknas. Lägg bara till
+  uppgifter som gäller din utgåva; exempelspelen saknar dessa extra fält.
 
 Lägg dina bilder i `public/images/` och ändra bildsökvägarna i JSON-filen. Använd gärna WebP eller AVIF. Omslag visas stående, men kan ha andra proportioner; justera `object-fit` i CSS om du vill visa hela originalomslaget.
 

@@ -11,9 +11,10 @@ interface GameDetailsProps {
   onToggleFavorite: (id: string) => void;
   tab: DetailTab;
   onTabChange: (tab: DetailTab) => void;
-  onOpenImage: (image: GalleryImage) => void;
+  onOpenImage: (image: GalleryImage, trigger: HTMLButtonElement) => void;
   detailsRef: React.Ref<HTMLElement>;
   collectionIndex: number;
+  onShowMore: (game: Game, trigger: HTMLButtonElement) => void;
 }
 export default function GameDetails({
   game,
@@ -24,6 +25,7 @@ export default function GameDetails({
   onOpenImage,
   detailsRef,
   collectionIndex,
+  onShowMore,
 }: GameDetailsProps) {
   const tabs: DetailTab[] = ['Om spelet', 'Bilder'];
   return (
@@ -124,6 +126,15 @@ export default function GameDetails({
             <GameGallery game={game} onOpenImage={onOpenImage} />
           )}
         </div>
+      </div>
+      <div className={styles.actions}>
+        <button
+          className={styles.more}
+          aria-haspopup="dialog"
+          onClick={(event) => onShowMore(game, event.currentTarget)}
+        >
+          Visa mer <Icon name="arrow" size={17} />
+        </button>
       </div>
       <div className={styles['detail-footer']}>
         <span className={styles['tiny-dot']} /> I samlingen{' '}
