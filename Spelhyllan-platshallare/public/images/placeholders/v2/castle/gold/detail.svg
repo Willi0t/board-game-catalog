@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="720" viewBox="0 0 960 720" preserveAspectRatio="xMidYMid slice" overflow="hidden">
+  <title>Generisk reservillustration – castle</title>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f2ead9"/><stop offset="1" stop-color="#a58043"/></linearGradient>
+    <pattern id="grain" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r=".65" fill="#fff6e5" opacity=".22"/></pattern>
+  </defs>
+  <rect width="960" height="720" fill="url(#background)"/>
+  <circle cx="739.2" cy="180.0" r="208.8" fill="#fff6e5" opacity=".53"/>
+  <path d="M0 503.99999999999994Q211.2 309.6 480.0 518.4T960 439.2V720H0Z" fill="#a58043" opacity=".23"/>
+  <path d="M0 626.4Q240.0 424.79999999999995 518.4000000000001 640.8T960 576.0V720H0Z" fill="#a58043" opacity=".36"/>
+  <rect width="960" height="720" fill="url(#grain)"/>
+  <g fill="#fff6e5" opacity=".89" stroke-linecap="round" stroke-linejoin="round" transform="translate(480 414) scale(1.22)"><path d="M-158 150V-44H-76V150H-44V-120H44V150H76V-24H158V150Z"/>
+ <path fill="#a58043" d="M-174-44L-117-134L-60-44ZM-63-120L0-214L63-120ZM60-24L117-114L174-24Z"/>
+ <path fill="#a58043" d="M-23 150V78Q0 35 23 78V150Z"/>
+ <path fill="#a58043" opacity=".4" d="M-132-10H-104V30H-132ZM104 8H132V48H104Z"/></g>
+</svg>

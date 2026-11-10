@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="760" viewBox="0 0 600 760" preserveAspectRatio="xMidYMid slice" overflow="hidden">
+  <title>Generisk reservillustration – ship</title>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ebe4f1"/><stop offset="1" stop-color="#78658f"/></linearGradient>
+    <pattern id="grain" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r=".65" fill="#fff6e5" opacity=".22"/></pattern>
+  </defs>
+  <rect width="600" height="760" fill="url(#background)"/>
+  <circle cx="462.0" cy="190.0" r="220.4" fill="#fff6e5" opacity=".53"/>
+  <path d="M0 532.0Q132.0 326.8 300.0 547.1999999999999T600 463.59999999999997V760H0Z" fill="#78658f" opacity=".23"/>
+  <path d="M0 661.2Q150.0 448.4 324.0 676.4T600 608.0V760H0Z" fill="#78658f" opacity=".36"/>
+  <rect width="600" height="760" fill="url(#grain)"/>
+  <g fill="#fff6e5" opacity=".89" stroke-linecap="round" stroke-linejoin="round" transform="translate(300 441) scale(0.99)"><path d="M-177 67H177L120 145H-118Z"/>
+ <path d="M-7 66V-196" fill="none" stroke="#fff6e5" stroke-width="12"/>
+ <path d="M-24-171L-24 42H-156Z"/><path d="M14-132L153 42H14Z" opacity=".8"/>
+ <path  d="M-104 96H103" fill="none" stroke="#78658f" stroke-width="8"/>
+ <path d="M-198 173Q-148 148-98 173T2 173T102 173T202 173" fill="none" stroke="#fff6e5" stroke-width="8"/>
+ <path d="M5-198H79L55-163H5Z"/></g>
+</svg>

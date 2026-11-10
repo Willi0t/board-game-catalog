@@ -63,7 +63,10 @@
   right: 14px;
   font-size: 7px;
   letter-spacing: 1.6px;
-  color: #fff9;
+  color: #5b4b48;
+  background: #fff9;
+  border-radius: 3px;
+  padding: 2px 4px;
 }
 
 .detail-content {

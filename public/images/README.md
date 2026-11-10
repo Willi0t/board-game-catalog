@@ -58,33 +58,61 @@ Verifiera fakta mot din utgåva; kopiera inte exempelspelens värden som fakta.
 
 ## Återanvändbara reservillustrationer
 
-```text
-placeholders/
-  castle/{rose,teal,blue,red}/
-  planet/{rust,gold,copper,slate}/
-  geometric/{purple,green,teal,olive}/
-```
+Den gemensamma sanningskällan är `src/data/placeholder-manifest.json`:
 
-Varje färgvariant har `cover.svg`, `scene.svg`, `detail.svg` och
-`cover.original.svg`. Alla ursprungliga färger och former är bevarade. De tre
-illustrationstyperna är slott, planet med ring och geometrisk figur.
+- `themes`: 72 teman (12 motiv × 6 paletter), med `cover`, `scene`, `detail`,
+  `accent` och `tint`. Bilderna ligger i `placeholders/v2/<motiv>/<palett>/`.
+- `games`: explicit koppling från stabilt spel-id till temanyckel. Den ändrar
+  endast det visuella reservtemat, aldrig speldata, ägarstatus eller favoriter.
+- `defaultTheme`: tema för spel som varken har mapping eller giltigt eget tema.
 
-`cover.original.svg` är det arkiverade omslaget med det ursprungliga spelnamnet.
-Det används **inte** som generell reservbild. `cover.svg` har exakt samma
-illustration utan titeln; `GameImage` lägger ovanpå det aktuella spelets titel
-med samma SVG-position, typsnitt och storlek. Scen- och detaljbilder är oförändrade.
+Ändra ett spels föreslagna motiv/palett genom att uppdatera dess temanyckel i
+`games`. Välj en befintlig nyckel i `themes`. När nya motiv/paletter läggs till
+ska alla tre SVG-formaten finnas och samtliga sökvägar uppdateras i manifestet.
+`game-theme-overview.json` i leveranspaketet är en granskningslista, ingen extra
+runtime-källa. Paketets `current-games.json` ska inte ersätta katalogen.
 
-Temanycklar och sökvägar definieras enbart i
-`src/constants/placeholderThemes.ts`, exempelvis `castle-rose`, `planet-rust`
-och `geometric-purple`. Okänt eller utelämnat tema använder `castle-rose`.
+Temaprioritet: giltig manifestmapping → giltigt `game.placeholderTheme` i v2
+eller det äldre registret → manifestets `defaultTheme` (`geometric-slate`).
+Äldre nycklar som inte finns i v2 kan fortfarande lösas av det äldre registret
+under `src/constants/placeholderThemes.ts`. Vid nyckelkrock har v2 företräde.
 
-`cover`, `hero` och `gallery` är valfria. Saknad eller tom `gallery` visar temats
-scen- och detaljillustration. Tomma strängar i galleriet filtreras bort.
-En angiven riktig bild som inte laddas ersätts med motsvarande reservbild.
-Om även den misslyckas görs inga fler försök i samma bildinstans: kort och
-informationsvyer visar en textreserv, medan galleriobjektet döljs. Nytt spel
-eller ändrade bildsökvägar återställer laddningstillståndet.
+Färgprioriteten är samlad i `resolveGameColors` i samma modul. Importerade
+poster med `castle-rose` och exakt standardparet `#815467`/`#eadce2` får det
+upplösta temats accent/tint. Burgundy undantas eftersom dess rosa färger valdes
+individuellt före importen. Övriga individuella färgpar bevaras. Detta beräknas
+vid visning; `src/games.json` skrivs inte om.
 
-Reservbilder får platshållartext och alt-text för det aktuella spelet. Riktiga
-bilder får inte platshållarmarkering. Bildstatus är oberoende av spelvärdenas
-`metadataStatus`; ett riktigt fotografi gör inte exempelvärden verifierade.
+V2-format: omslag 600×760, hero/scen 1600×640 och detalj 960×720. Motiven har
+samma geometri i alla format och skalas proportionellt. `GameImage` använder
+`contain` för reservbilder, med en separat tonad bakgrund, så hela motivet syns
+även i smala eller höga ramar. Riktiga fotografier behåller komponentens vanliga
+bildpassning och får varken reservbakgrund eller platshållarmarkering.
+
+V2-filerna saknar synlig text och spelnamn. Appen lägger aktuell titel på
+omslaget i det fria övre området med radbrytning och proportionell storlek.
+Bilderna är generiska reservillustrationer och mappingen är ett visuellt
+förslag, inte verifierad eller officiell produktgrafik.
+
+### Äldre illustrationer
+
+De tidigare mapparna `castle`, `planet` och `geometric` under `placeholders/`
+finns kvar med alla färgvarianter. Varje variant innehåller `cover.svg`,
+`scene.svg`, `detail.svg` och `cover.original.svg`. Det sista är arkivomslaget
+med det ursprungliga spelnamnet och används inte som generell reservbild.
+Inga arkivbilder eller riktiga spelbilder har ersatts.
+
+### Riktiga bilder och laddningsfel
+
+`cover`, `hero` och `gallery` har alltid prioritet över reservtemat. Ange deras
+lokala sökvägar enligt exemplen ovan först när filerna finns. Saknad eller tom
+`gallery` visar temats scen- och detaljillustration; tomma sökvägar filtreras.
+En riktig bild som inte laddas ersätts med motsvarande reservbild. Misslyckas
+även den görs inga fler försök i samma instans: informationsvyer visar en
+textreserv och obrukbara galleriobjekt döljs. Nytt spel eller ändrade sökvägar
+återställer tillståndet.
+
+Reservbilder markeras som platshållare och får alt-text för aktuellt spel.
+Bildstatus är oberoende av spelvärdenas metadata. Kör
+`node --test tests/*.test.mjs` för att kontrollera mapping, färgprioritet,
+bildsökvägar och oförändrad motivgeometri samt befintliga katalogtester.

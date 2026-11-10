@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="640" viewBox="0 0 1600 640" preserveAspectRatio="xMidYMid slice" overflow="hidden">
+  <title>Generisk reservillustration – cards</title>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e6eddf"/><stop offset="1" stop-color="#648155"/></linearGradient>
+    <pattern id="grain" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r=".65" fill="#fff6e5" opacity=".22"/></pattern>
+  </defs>
+  <rect width="1600" height="640" fill="url(#background)"/>
+  <circle cx="1232.0" cy="160.0" r="185.6" fill="#fff6e5" opacity=".53"/>
+  <path d="M0 448.0Q352.0 275.2 800.0 460.79999999999995T1600 390.4V640H0Z" fill="#648155" opacity=".23"/>
+  <path d="M0 556.8Q400.0 377.59999999999997 864.0 569.6T1600 512.0V640H0Z" fill="#648155" opacity=".36"/>
+  <rect width="1600" height="640" fill="url(#grain)"/>
+  <g fill="#fff6e5" opacity=".89" stroke-linecap="round" stroke-linejoin="round" transform="translate(800 358) scale(1.1)"><g transform="rotate(-17 -70 0)"><rect x="-163" y="-145" width="153" height="257" rx="15" opacity=".6"/></g>
+ <g transform="rotate(17 70 0)"><rect x="10" y="-145" width="153" height="257" rx="15" opacity=".8"/></g>
+ <rect x="-78" y="-134" width="156" height="266" rx="15"/>
+ <path fill="#648155" d="M0-57L39 0L0 57L-39 0Z"/>
+ <circle fill="#648155" cx="-49" cy="-101" r="7"/><circle fill="#648155" cx="49" cy="100" r="7"/>
+ <ellipse cx="-98" cy="162" rx="40" ry="14"/><ellipse cx="101" cy="164" rx="39" ry="14"/></g>
+</svg>

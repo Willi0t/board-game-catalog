@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import { transpileModule, ModuleKind } from 'typescript';
 import { mergeCatalog } from '../scripts/import-catalog.mjs';
 import matches from '../scripts/catalog-matches.json' with { type: 'json' };
-import source from '../catalog-data.json' with { type: 'json' };
+import source from './fixtures/catalog-source.json' with { type: 'json' };
 import games from '../src/games.json' with { type: 'json' };
 
 const code = transpileModule(

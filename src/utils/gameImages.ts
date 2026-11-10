@@ -4,10 +4,7 @@ import type {
   GameImageKind,
   GameGalleryEntry,
 } from '../types/game';
-import {
-  defaultPlaceholderTheme,
-  placeholderThemes,
-} from '../constants/placeholderThemes';
+import { resolvePlaceholderTheme } from '../constants/placeholderThemes';
 
 export function getGameImage(
   game: Game,
@@ -16,12 +13,12 @@ export function getGameImage(
   title?: string,
   alt?: string,
 ): GalleryImage {
-  const theme =
-    placeholderThemes[game.placeholderTheme ?? ''] ?? defaultPlaceholderTheme;
+  const theme = resolvePlaceholderTheme(game);
   return {
     src: src?.trim() || undefined,
     alt,
     placeholderSrc: theme[kind],
+    placeholderTint: theme.tint ?? game.tint,
     kind,
     gameId: game.id,
     gameTitle: game.title,

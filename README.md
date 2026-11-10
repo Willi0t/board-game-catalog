@@ -83,6 +83,10 @@ CI. Arbetsflödet har endast `contents: read` och publicerar eller deployar inge
 - `src/styles.css` innehåller typsnitt, grundinställningar, globala elementstilar
   och stöd för minskad rörelse. Komponentstilar importeras som `styles`-objekt.
 - `src/games.json` och `public/images/` innehåller speldata respektive lokala bilder.
+- `src/data/placeholder-manifest.json` beskriver de 72 reservtemana och mappingen
+  för de 71 katalogposterna. Äldre bilder finns kvar. Se bildguiden för färgprioritet.
+- `tests/fixtures/catalog-source.json` arkiverar den tidigare katalogexporten för
+  testerna, så utvecklarens borttagning av arbetskopians importunderlag bevaras.
 - `tsconfig.json` aktiverar strikt typkontroll och Vites typer.
 
 ## Innehåll och bilder
@@ -130,7 +134,7 @@ För varje spel:
   och döljer åldersgräns och expansioner när uppgifter saknas. Lägg bara till
   uppgifter som gäller din utgåva; exempelspelen saknar dessa extra fält.
 
-Lägg riktiga bilder under `public/images/games/<game-id>/` och ändra bildsökvägarna i JSON-filen. Se [bildguiden](public/images/README.md) för struktur, reservteman och exempel. Reservillustrationerna ligger i `public/images/placeholders/` och definieras centralt i `src/constants/placeholderThemes.ts`. `GameImage` hanterar bildfel och återställning vid spelbyte. Använd gärna WebP eller AVIF. Omslag visas stående, men kan ha andra proportioner; justera `object-fit` i CSS om du vill visa hela originalomslaget.
+Lägg riktiga bilder under `public/images/games/<game-id>/` och ändra bildsökvägarna i JSON-filen. Se [bildguiden](public/images/README.md) för struktur, reservteman och exempel. Reservillustrationerna ligger i `public/images/placeholders/`. V2-teman och id-mappning definieras centralt i `src/data/placeholder-manifest.json`; `src/constants/placeholderThemes.ts` hanterar temaprioritet, färger och stöd för äldre temanycklar. `GameImage` hanterar bildfel och återställning vid spelbyte. Använd gärna WebP eller AVIF. Omslag visas stående, men kan ha andra proportioner; justera `object-fit` i CSS om du vill visa hela originalomslaget.
 
 Behåll osäkerhetsmarkeringar per fält och skilj bildstatus från speldata. Favoriter sparas bara lokalt i besökarens webbläsare, inte mellan enheter.
 
@@ -148,8 +152,8 @@ Behåll osäkerhetsmarkeringar per fält och skilj bildstatus från speldata. Fa
    faktauppgifterna, bevarar lokal text/bilder/färger och sparar gemensam
    källinformation och datakvalitet i `src/catalogMetadata.json`. Katalogposter
    utanför exporten bevaras utan att tilldelas ägarstatus eller granskade fakta.
-4. Kör `node --test tests/catalog.test.mjs` samt projektets kontroller. Testerna
-   använder Node:s inbyggda testverktyg och befintliga TypeScript; inga nya
+4. Kör `node --test tests/*.test.mjs` samt projektets kontroller. Testerna
+   använder Node:s inbyggda testverktyg samt befintliga TypeScript/esbuild; inga nya
    testberoenden krävs. Nuvarande exportkontroll förväntar 70 poster/20 kommande;
    uppdatera dessa förväntningar vid en avsiktlig ändring av underlaget.
 
@@ -195,7 +199,7 @@ Importera GitHub-repot i Netlify. `netlify.toml` innehåller bygginställningarn
 npm run format
 npm run format:check
 npm run lint
-node --test tests/catalog.test.mjs
+node --test tests/*.test.mjs
 npm run typecheck
 npm run build
 npm run preview
