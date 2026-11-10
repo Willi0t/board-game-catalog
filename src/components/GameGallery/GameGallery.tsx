@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import Icon from '../Icon/Icon';
 import GameImage from '../GameImage/GameImage';
-import { getGalleryImages } from '../../utils/gameImages';
-import type { Game, GalleryImage } from '../../types/game';
+import type { GalleryImage } from '../../types/game';
 import styles from './GameGallery.module.css';
 
 interface GalleryItemProps {
@@ -36,14 +35,14 @@ function GalleryItem({ image, onOpenImage }: GalleryItemProps) {
 }
 
 interface GameGalleryProps {
-  game: Game;
+  images: readonly GalleryImage[];
   onOpenImage: GalleryItemProps['onOpenImage'];
 }
 
-export default function GameGallery({ game, onOpenImage }: GameGalleryProps) {
+export default function GameGallery({ images, onOpenImage }: GameGalleryProps) {
   return (
     <div className={styles.gallery}>
-      {getGalleryImages(game).map((image, index) => (
+      {images.map((image, index) => (
         <GalleryItem
           key={JSON.stringify([
             image.gameId,

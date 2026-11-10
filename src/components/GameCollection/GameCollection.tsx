@@ -1,4 +1,3 @@
-import React from 'react';
 import Icon from '../Icon/Icon';
 import GameCard from '../GameCard/GameCard';
 

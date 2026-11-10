@@ -121,13 +121,6 @@
   border-radius: 3px;
 }
 
-.about > p {
-  font-size: 12px;
-  line-height: 1.9;
-  color: #92837d;
-  margin: 18px 0;
-}
-
 .detail-footer {
   display: flex;
   align-items: center;
@@ -165,18 +158,9 @@
     padding: 19px 20px 0;
   }
 
-  .about > p {
-    margin: 14px 0;
-    font-size: 12px;
-  }
-
   .detail-footer {
     padding: 9px 20px;
   }
-}
-
-.about > p {
-  color: #74665f;
 }
 
 .actions {

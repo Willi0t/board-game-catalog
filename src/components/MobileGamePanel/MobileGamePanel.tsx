@@ -26,7 +26,7 @@ export default function MobileGamePanel({
   panelRef,
   children,
 }: MobileGamePanelProps) {
-  const dialogRef = useModalDialog({ openerRef, fallbackRef });
+  const dialogProps = useModalDialog({ onClose, openerRef, fallbackRef });
   const scrollRef = useRef<HTMLDivElement>(null);
   const titleId = useId();
   useEffect(() => {
@@ -34,17 +34,10 @@ export default function MobileGamePanel({
   }, [gameId]);
   return (
     <dialog
-      ref={dialogRef}
+      {...dialogProps}
       className={styles.dialog}
       aria-modal="true"
       aria-labelledby={titleId}
-      onCancel={(event) => {
-        event.preventDefault();
-        onClose();
-      }}
-      onClick={(event) => {
-        if (event.target === event.currentTarget) onClose();
-      }}
     >
       <header ref={panelRef} tabIndex={-1} className={styles.header}>
         <button onClick={onClose}>

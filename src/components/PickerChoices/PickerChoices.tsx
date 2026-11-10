@@ -1,5 +1,6 @@
 import { useId } from 'react';
-import OptionCount from '../OptionCount/OptionCount';
+import PickerOption from '../PickerOption/PickerOption';
+import { togglePickerChoice } from '../../utils/gamePicker';
 import styles from './PickerChoices.module.css';
 
 interface PickerChoicesProps {
@@ -27,30 +28,13 @@ export default function PickerChoices({
       </p>
       <div className={styles.choices}>
         {options.map((option) => (
-          <label key={option} data-empty={counts[option] === 0}>
-            <input
-              type="checkbox"
-              checked={selected.includes(option)}
-              disabled={!selected.includes(option) && counts[option] === 0}
-              aria-invalid={
-                selected.includes(option) && counts[option] === 0
-                  ? true
-                  : undefined
-              }
-              onChange={() =>
-                onChange(
-                  selected.includes(option)
-                    ? selected.filter((tag) => tag !== option)
-                    : [...selected, option],
-                )
-              }
-            />
-            <span>{option}</span>
-            <OptionCount
-              count={counts[option] ?? 0}
-              selected={selected.includes(option)}
-            />
-          </label>
+          <PickerOption
+            key={option}
+            label={option}
+            checked={selected.includes(option)}
+            count={counts[option] ?? 0}
+            onChange={() => onChange(togglePickerChoice(selected, option))}
+          />
         ))}
       </div>
     </fieldset>

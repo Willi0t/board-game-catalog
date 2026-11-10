@@ -1,0 +1,28 @@
+.group {
+  padding: 0;
+  border: 0;
+  min-width: 0;
+  margin: 0 0 24px;
+}
+
+.group legend {
+  font-weight: 600;
+  font-size: 16px;
+  color: #5c494e;
+}
+
+.group p {
+  font-size: 12px;
+  color: #74665f;
+  line-height: 1.7;
+}
+
+.input {
+  accent-color: var(--accent);
+  flex-shrink: 0;
+}
+
+.input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}

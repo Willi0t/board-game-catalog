@@ -124,20 +124,7 @@
 }
 
 .section {
-  margin-top: 30px;
-  color: #74665f;
-  line-height: 1.9;
-}
-
-.section h3 {
-  color: #5c494e;
-  font-family: Manrope, sans-serif;
-  font-size: 18px;
-  margin: 0 0 12px;
-}
-
-.description {
-  white-space: pre-line;
+  composes: section from '../GameDescription/GameDescription.module.css';
 }
 
 @keyframes slide-in {

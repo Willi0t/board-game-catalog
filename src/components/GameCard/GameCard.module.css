@@ -47,7 +47,7 @@
 
 .game-card p {
   font-size: 9px;
-  color: #a1938b;
+  color: #7e7068;
   margin: 0 2px;
   white-space: nowrap;
   overflow: hidden;
@@ -107,10 +107,6 @@
   .game-card p {
     font-size: 8px;
   }
-}
-
-.game-card p {
-  color: #7e7068;
 }
 
 .status {

@@ -1,4 +1,6 @@
 import GameFacts from '../GameFacts/GameFacts';
+import GameDescription from '../GameDescription/GameDescription';
+import GameEditionDetails from '../GameEditionDetails/GameEditionDetails';
 import GameMetadata from '../GameMetadata/GameMetadata';
 import { useId, type RefObject } from 'react';
 import type { Game, GalleryImage } from '../../types/game';
@@ -6,7 +8,11 @@ import useModalDialog from '../../hooks/useModalDialog';
 import Icon from '../Icon/Icon';
 import GameGallery from '../GameGallery/GameGallery';
 import GameImage from '../GameImage/GameImage';
-import { getCoverImage, getHeroImage } from '../../utils/gameImages';
+import {
+  getCoverImage,
+  getHeroImage,
+  getGalleryImages,
+} from '../../utils/gameImages';
 import styles from './GameDetailDrawer.module.css';
 
 interface GameDetailDrawerProps {
@@ -27,20 +33,13 @@ export default function GameDetailDrawer({
   panelRef,
 }: GameDetailDrawerProps) {
   const titleId = useId();
-  const dialogRef = useModalDialog({ openerRef, fallbackRef });
+  const dialogProps = useModalDialog({ onClose, openerRef, fallbackRef });
   return (
     <dialog
-      ref={dialogRef}
+      {...dialogProps}
       className={styles.drawer}
       aria-modal="true"
       aria-labelledby={titleId}
-      onCancel={(event) => {
-        event.preventDefault();
-        onClose();
-      }}
-      onClick={(event) => {
-        if (event.target === event.currentTarget) onClose();
-      }}
     >
       <div className={styles.panel}>
         <header ref={panelRef} tabIndex={-1} className={styles.header}>
@@ -79,41 +78,19 @@ export default function GameDetailDrawer({
           </div>
           <GameFacts game={game} />
           <GameMetadata game={game} />
-          {(game.longDescription || game.description) && (
-            <section className={styles.section}>
-              <h3>Om spelet</h3>
-              {game.descriptionStatus === 'draft' && (
-                <p className={styles.note}>Beskrivningen är ett utkast.</p>
-              )}
-              <p className={styles.description}>
-                {game.longDescription || game.description}
-              </p>
-            </section>
-          )}
+          <GameDescription game={game} presentation="full" />
           <section className={styles.section}>
             <h3>Bilder</h3>
             <p className={styles.note}>
               Välj en bild för att förstora. Reservillustrationer är markerade
               som platshållare.
             </p>
-            <GameGallery game={game} onOpenImage={onOpenImage} />
+            <GameGallery
+              images={getGalleryImages(game)}
+              onOpenImage={onOpenImage}
+            />
           </section>
-          {game.edition && (
-            <section className={styles.section}>
-              <h3>Min utgåva</h3>
-              <p>{game.edition}</p>
-            </section>
-          )}
-          {game.expansions && game.expansions.length > 0 && (
-            <section className={styles.section}>
-              <h3>Expansioner</h3>
-              <ul>
-                {game.expansions.map((expansion, index) => (
-                  <li key={`${expansion}-${index}`}>{expansion}</li>
-                ))}
-              </ul>
-            </section>
-          )}
+          <GameEditionDetails game={game} />
         </div>
       </div>
     </dialog>

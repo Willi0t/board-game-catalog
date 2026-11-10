@@ -64,14 +64,31 @@ CI. Arbetsflödet har endast `contents: read` och publicerar eller deployar inge
 ## Projektstruktur
 
 - `src/main.tsx` startar React med StrictMode och laddar globala stilar.
-- `src/App.tsx` kopplar ihop layout, gemensamt state och komponenter.
+- `src/App.tsx` kopplar ihop layout, komponenter och enkla samordnade åtgärder
+  som spelval, kategoribyte och återställning. Hooks anropas här, så gemensam state
+  stannar hos komponenternas gemensamma ägare.
+- `src/hooks/useCatalog.ts` äger vanliga filter, sortering och valt spel. Synliga
+  spel och automatiskt förval beräknas med befintliga rena hjälpfunktioner.
+- `src/hooks/useGamePicker.ts` äger guidens utkast, bekräftade kriterier och
+  öppning/stängning. Bekräftade kriterier är en separat användaråtgärd; resultat
+  lagras inte som extra state. Steg och formulärfel stannar lokalt i `GamePicker`.
+- `src/hooks/useGamePanels.ts` äger informationsfliken, mobilpanelens öppning,
+  större detaljvy, bildförstoring och deras fokusreferenser. Manuellt öppnad
+  mobilinformation knyts till sitt spel så automatiskt förval aldrig öppnar en
+  dialog. `useModalDialog` fortsätter sköta själva dialogernas tillgänglighet.
 - `src/App.module.css` innehåller övergripande layoutstilar.
 - `src/components/GameInfoPanel/` ger katalogen och guiden samma informationspanel.
   `MobileGamePanel/` visar samma innehåll i en tillgänglig dialog på mindre skärmar.
   `src/hooks/useMediaQuery.ts` följer ändringar av skärmbredd.
 - `src/components/GameDetailDrawer/` innehåller den större detaljvyn som öppnas
-  med dubbelklick på ett spelkort eller informationspanelens ”Visa mer”.
-- `src/hooks/useModalDialog.ts` hanterar dialogernas fokus, fokusåterställning och
+  med dubbelklick på ett spelkort eller datorpanelens ”Visa mer”.
+- `src/components/GameDescription/` och `GameEditionDetails/` delar beskrivning,
+  utgåva och expansioner mellan informationsvyerna. Mobilen får längre
+  beskrivning direkt; datorpanelen behåller sin korta presentation.
+- `src/components/PickerOption/` samlar räknade kryssrutors nollträffs- och
+  tillgänglighetsregler. `PickerLevelChoices/` återanvänds för svårighet och
+  interaktion; `PickerChoices/` behåller tagggruppernas chip-layout.
+- `src/hooks/useModalDialog.ts` hanterar Escape, bakgrundsklick, fokus, fokusåterställning och
   gemensamma scrollåsning, även när en bild förstoras ovanpå detaljvyn.
 - `src/components/` har en mapp per komponent, med komponentens `.tsx`-fil och
   eventuell `.module.css`-fil, exempelvis `GameCard/GameCard.tsx` och
@@ -183,8 +200,13 @@ varken fokus eller sidans scroll och öppnar inga dialoger. Den gemensamma
 urvalsregeln finns i `src/utils/resolveSelectedGame.ts`.
 På skärmar upp till 900 px öppnar enkelklick samma innehåll i en modal mobilpanel
 med **Tillbaka till spelen**. Den använder befintligt fokus- och scrollås och
-återställer gridens scrollposition och fokus vid återgång. Bildförstoring och
-**Visa mer** kan öppnas ovanpå panelen; Escape stänger den översta dialogen först.
+återställer gridens scrollposition och fokus vid återgång. Mobilen visar även
+längre beskrivning, utgåva och expansioner där uppgifter finns. Bildfliken
+innehåller omslaget och samma galleri som på dator, med bildförstoring.
+Mobilpanelen har ingen **Visa mer**-knapp eller motsvarande tabbstopp.
+Datorns **Visa mer** öppnar den större detaljvyn; Escape stänger alltid översta
+bild-/dialoglagret först. `GameGallery` renderar en bildlista, och bildval samt
+reservteman fortsätter hämtas centralt från befintliga bildhjälpare.
 
 Terraforming Mars använder sitt stabila id `terraforming` och godkända uppgifter,
 med okänd spelarinteraktion (`null`). Det är spel nummer 12/källrad 13 i det
@@ -245,13 +267,14 @@ flerval, OR/AND, okända värden, Party och kommande spel. Kör även
 `npm run format:check`, `npm run lint`, `npm run typecheck`, `npm run build`
 och `git diff --check` efter ändringar.
 
-Kontrollerat lokalt med Node.js 24.20.0: 31 tester, formatkontroll, lint,
+Kontrollerat lokalt med Node.js 24.20.0: 34 tester, formatkontroll, lint,
 typkontroll och produktionsbygge. Flödet har även körts med tangentbord i Chrome
 vid 1280 och 390 pixlars bredd: gemensam panel i båda vyerna, träffantal/grid,
 Terraforming Mars, Hitmans status, bevarat/rensat urval, tomma resultat,
 panelens scrollåterställning och mobilens återgång till rätt scrollposition.
-Detaljvy och bildförstoring kontrollerades även ovanpå mobilpanelen med Escape,
-fokuslås, fokusåterställning och scrollås.
+Datorns större detaljvy samt mobilens fullständiga information utan **Visa mer**
+kontrollerades med favoriter, bildförstoring, Escape, fokuslås, fokusåterställning
+och scrollås. Enbart bildförstoring öppnas vidare från mobilinformationen.
 Guidens dynamiska antal, spärrade nollalternativ, bevarade/avmarkerade ogiltiga
 val, navigation bakåt och slutknappens antal mot resultatgriden har också
 kontrollerats med tangentbord i båda bredderna. Tillgängliga kontrollnamn
