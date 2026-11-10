@@ -1,0 +1,362 @@
+[
+  {
+    "sourceRow": 2,
+    "sourceTitle": "Point Salad",
+    "id": "salad"
+  },
+  {
+    "sourceRow": 3,
+    "sourceTitle": "Codex Naturalis",
+    "id": "codex-naturalis"
+  },
+  {
+    "sourceRow": 4,
+    "sourceTitle": "Knarr",
+    "id": "knarr"
+  },
+  {
+    "sourceRow": 5,
+    "sourceTitle": "Star Wars: The Deckbuilding Game",
+    "id": "starwars"
+  },
+  {
+    "sourceRow": 6,
+    "sourceTitle": "The Crew: Mission Deep Sea",
+    "id": "the-crew-mission-deep-sea"
+  },
+  {
+    "sourceRow": 7,
+    "sourceTitle": "Spies, Lies & Supplies",
+    "id": "spies-lies-supplies"
+  },
+  {
+    "sourceRow": 8,
+    "sourceTitle": "Burgle Bros",
+    "id": "burgle"
+  },
+  {
+    "sourceRow": 9,
+    "sourceTitle": "7 Wonders Duel",
+    "id": "duel"
+  },
+  {
+    "sourceRow": 10,
+    "sourceTitle": "Clank! Catacombs + Underworld",
+    "id": "clank",
+    "expansions": ["Underworld"]
+  },
+  {
+    "sourceRow": 11,
+    "sourceTitle": "The Castles of Burgundy",
+    "id": "burgundy"
+  },
+  {
+    "sourceRow": 12,
+    "sourceTitle": "Deep Regrets + Deeper Regrets",
+    "id": "deep-regrets-deeper-regrets"
+  },
+  {
+    "sourceRow": 13,
+    "sourceTitle": "Solar Titans",
+    "id": "solar-titans"
+  },
+  {
+    "sourceRow": 14,
+    "sourceTitle": "7 Wonders",
+    "id": "wonders"
+  },
+  {
+    "sourceRow": 15,
+    "sourceTitle": "Love Letter",
+    "id": "love-letter"
+  },
+  {
+    "sourceRow": 16,
+    "sourceTitle": "Puerto Rico",
+    "id": "puerto-rico"
+  },
+  {
+    "sourceRow": 17,
+    "sourceTitle": "Agricola",
+    "id": "agricola"
+  },
+  {
+    "sourceRow": 18,
+    "sourceTitle": "Scarface 1920",
+    "id": "scarface"
+  },
+  {
+    "sourceRow": 19,
+    "sourceTitle": "Libertalia: Winds of Galecrest",
+    "id": "libertalia-winds-of-galecrest"
+  },
+  {
+    "sourceRow": 20,
+    "sourceTitle": "Final Titan",
+    "id": "final-titan"
+  },
+  {
+    "sourceRow": 21,
+    "sourceTitle": "High Society",
+    "id": "high-society"
+  },
+  {
+    "sourceRow": 22,
+    "sourceTitle": "Parlay",
+    "id": "parlay"
+  },
+  {
+    "sourceRow": 23,
+    "sourceTitle": "Grimcoven",
+    "id": "grimcoven"
+  },
+  {
+    "sourceRow": 24,
+    "sourceTitle": "Long Dark Sea",
+    "id": "long-dark-sea"
+  },
+  {
+    "sourceRow": 25,
+    "sourceTitle": "Vaalbara",
+    "id": "vaalbara"
+  },
+  {
+    "sourceRow": 26,
+    "sourceTitle": "Excalibur",
+    "id": "excalibur"
+  },
+  {
+    "sourceRow": 27,
+    "sourceTitle": "Lands of Evershade",
+    "id": "lands-of-evershade"
+  },
+  {
+    "sourceRow": 28,
+    "sourceTitle": "Citadels",
+    "id": "citadels"
+  },
+  {
+    "sourceRow": 29,
+    "sourceTitle": "Point City",
+    "id": "point-city"
+  },
+  {
+    "sourceRow": 30,
+    "sourceTitle": "Catan (base)",
+    "id": "catan-base"
+  },
+  {
+    "sourceRow": 31,
+    "sourceTitle": "Forbidden Desert",
+    "id": "forbidden-desert"
+  },
+  {
+    "sourceRow": 32,
+    "sourceTitle": "Ticket to Ride",
+    "id": "ticket-to-ride"
+  },
+  {
+    "sourceRow": 33,
+    "sourceTitle": "Cosmic Encounter",
+    "id": "cosmic"
+  },
+  {
+    "sourceRow": 34,
+    "sourceTitle": "fate of the fellowship",
+    "id": "fate-of-the-fellowship",
+    "displayTitle": "Fate of the Fellowship"
+  },
+  {
+    "sourceRow": 35,
+    "sourceTitle": "fliptoons",
+    "id": "fliptoons",
+    "displayTitle": "FlipToons"
+  },
+  {
+    "sourceRow": 36,
+    "sourceTitle": "azul mini",
+    "id": "azul-mini",
+    "displayTitle": "Azul Mini"
+  },
+  {
+    "sourceRow": 37,
+    "sourceTitle": "there and back again",
+    "id": "there-and-back-again",
+    "displayTitle": "There and Back Again"
+  },
+  {
+    "sourceRow": 38,
+    "sourceTitle": "lord of the rings trick taking game",
+    "id": "lord-of-the-rings-trick-taking-game",
+    "displayTitle": "Lord of the Rings Trick-Taking Game"
+  },
+  {
+    "sourceRow": 39,
+    "sourceTitle": "magical athleete",
+    "id": "magical-athleete",
+    "displayTitle": "Magical Athlete"
+  },
+  {
+    "sourceRow": 40,
+    "sourceTitle": "goats and goblins",
+    "id": "goats-and-goblins",
+    "displayTitle": "Goats and Goblins"
+  },
+  {
+    "sourceRow": 41,
+    "sourceTitle": "inis",
+    "id": "inis",
+    "displayTitle": "Inis"
+  },
+  {
+    "sourceRow": 42,
+    "sourceTitle": "spirit island",
+    "id": "spirit-island",
+    "displayTitle": "Spirit Island"
+  },
+  {
+    "sourceRow": 43,
+    "sourceTitle": "Nemesis + Aftermath",
+    "id": "nemesis-aftermath"
+  },
+  {
+    "sourceRow": 44,
+    "sourceTitle": "An Infamous Traffic: Second Edition",
+    "id": "an-infamous-traffic-second-edition"
+  },
+  {
+    "sourceRow": 45,
+    "sourceTitle": "SHUG",
+    "id": "shug"
+  },
+  {
+    "sourceRow": 46,
+    "sourceTitle": "Battlesticks",
+    "id": "battlesticks"
+  },
+  {
+    "sourceRow": 47,
+    "sourceTitle": "Re;MATCH: Marble Puzzle Fighter",
+    "id": "re-match-marble-puzzle-fighter"
+  },
+  {
+    "sourceRow": 48,
+    "sourceTitle": "Roma XLI",
+    "id": "roma-xli"
+  },
+  {
+    "sourceRow": 49,
+    "sourceTitle": "52 Duels: Fight with Playing Cards",
+    "id": "52-duels-fight-with-playing-cards"
+  },
+  {
+    "sourceRow": 50,
+    "sourceTitle": "Grifoni: Blades for Hire",
+    "id": "grifoni-blades-for-hire"
+  },
+  {
+    "sourceRow": 51,
+    "sourceTitle": "Bio Blitz",
+    "id": "bio-blitz"
+  },
+  {
+    "sourceRow": 52,
+    "sourceTitle": "High Adventure: Treasure Hunt",
+    "id": "high-adventure-treasure-hunt"
+  },
+  {
+    "sourceRow": 53,
+    "sourceTitle": "Rolling Seas",
+    "id": "rolling-seas"
+  },
+  {
+    "sourceRow": 54,
+    "sourceTitle": "Rise of the Oak Dell",
+    "id": "rise-of-the-oak-dell"
+  },
+  {
+    "sourceRow": 55,
+    "sourceTitle": "Avalon: The Riven Veil",
+    "id": "avalon-the-riven-veil"
+  },
+  {
+    "sourceRow": 56,
+    "sourceTitle": "DECKO + Pistachio",
+    "id": "decko-pistachio"
+  },
+  {
+    "sourceRow": 57,
+    "sourceTitle": "Nemesis: Retaliation",
+    "id": "nemesis-retaliation"
+  },
+  {
+    "sourceRow": 58,
+    "sourceTitle": "Gang Wars",
+    "id": "gang-wars"
+  },
+  {
+    "sourceRow": 59,
+    "sourceTitle": "DAVOS",
+    "id": "davos"
+  },
+  {
+    "sourceRow": 60,
+    "sourceTitle": "Hitman: The Board Game",
+    "id": "hitman-the-board-game"
+  },
+  {
+    "sourceRow": 61,
+    "sourceTitle": "Brass: Pittsburgh",
+    "id": "brass-pittsburgh"
+  },
+  {
+    "sourceRow": 62,
+    "sourceTitle": "The Old King's Crown",
+    "id": "the-old-king-s-crown"
+  },
+  {
+    "sourceRow": 63,
+    "sourceTitle": "B.E.L.O.W.: The Asylum",
+    "id": "b-e-l-o-w-the-asylum"
+  },
+  {
+    "sourceRow": 64,
+    "sourceTitle": "Detectives vs Criminals",
+    "id": "detectives-vs-criminals"
+  },
+  {
+    "sourceRow": 65,
+    "sourceTitle": "The Wandmaker's Apprentice",
+    "id": "the-wandmaker-s-apprentice"
+  },
+  {
+    "sourceRow": 66,
+    "sourceTitle": "Andromeda's Edge + Genesis (Fully Operational)",
+    "id": "andromeda-s-edge-genesis-fully-operational"
+  },
+  {
+    "sourceRow": 67,
+    "sourceTitle": "Ascension: 15th Anniversary Edition",
+    "id": "ascension-15th-anniversary-edition"
+  },
+  {
+    "sourceRow": 68,
+    "sourceTitle": "Ascension Legends",
+    "id": "ascension-legends"
+  },
+  {
+    "sourceRow": 69,
+    "sourceTitle": "Shallow Regrets",
+    "id": "shallow-regrets"
+  },
+  {
+    "sourceRow": 70,
+    "sourceTitle": "Nexus Card Game",
+    "id": "nexus-card-game"
+  },
+  {
+    "sourceRow": 71,
+    "sourceTitle": "Tend + Hive & Cellar",
+    "id": "tend-hive-cellar"
+  }
+]

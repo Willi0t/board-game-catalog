@@ -79,7 +79,7 @@ CI. Arbetsflödet har endast `contents: read` och publicerar eller deployar inge
 - `src/utils/filterGames.ts` filtrerar och sorterar utan att ändra originaldatan.
 - `src/constants/categories.ts` innehåller den gemensamma kategorilistan.
 - `src/types/game.ts` definierar den gemensamma speltypen och typer för bildmodal
-  och informationsflikar. Importerad JSON kontrolleras mot `Game[]` i `App.tsx`.
+  och informationsflikar. Importerad JSON kontrolleras mot `Game[]` i `src/data/games.ts`.
 - `src/styles.css` innehåller typsnitt, grundinställningar, globala elementstilar
   och stöd för minskad rörelse. Komponentstilar importeras som `styles`-objekt.
 - `src/games.json` och `public/images/` innehåller speldata respektive lokala bilder.
@@ -89,13 +89,34 @@ CI. Arbetsflödet har endast `contents: read` och publicerar eller deployar inge
 
 All speldata finns i `src/games.json`. Bilder finns i `public/images/`.
 
-De tolv spelen är exempel för att visa layouten. Samlingen är inte en verifierad import av din kompletta lista. Beskrivningarna är utkast; spelarantal, tider och svårighet är avsiktliga exempelvärden och markeras så i gränssnittet. SVG-bilderna är egna enkla platshållare, inte riktiga spelomslag.
+Katalogen innehåller 70 importerade poster (50 i samlingen och 20 kommande)
+samt den tidigare posten Terraforming Mars, som saknas i exporten och har
+okänd tillgänglighet. Spelarantal och svårighet följer importunderlaget;
+exakt utgåva är inte oberoende verifierad och värden kan avse grundspelet.
+Spelarinteraktion är subjektiv och taggar är vår granskade indelning.
+Kommande uppgifter kan vara preliminära. Beskrivningar som fanns tidigare är
+fortfarande utkast; 59 nya poster saknar beskrivning. SVG-bilder är
+platshållarillustrationer, inte riktiga spelomslag.
 
 För varje spel:
 
 - `id`: unikt och stabilt id, exempelvis `burgundy`.
 - `title`, `edition`, `category`, `description`: textinnehåll.
-- `playersMin`, `playersMax`, `minutes`, `weight`: verifiera mot exakt utgåva innan slutlig publicering. Svårighet anges på en skala 1–5.
+- `playersMin`, `playersMax`, `minutes`, `weight`: tal eller `null` för okänd
+  uppgift. Svårighet visas med två decimaler på skalan 1–5. Tid och ålder saknas
+  i exporten; alla tidigare demo-speltider är borttagna.
+- `bestWith`: avsedd text, exempelvis `1–3`, eller `null`. Datumserienummer från
+  Sheets får inte användas; Fate of the Fellowship har normaliserats till `1–3`.
+- `playerInteraction`: subjektiv poäng 0–5, där 0 är ett giltigt värde. Skalan
+  räknar både samarbete och konkurrens.
+- `mechanics` och `gameTypes`: separata listor med exakt exportens engelska
+  taggar. `Solo` betyder enbart spel som endast spelas ensamma.
+- `upcoming`: `true` för kommande, `false` för i samlingen; utelämnat betyder
+  okänd status och ingår inte i filtret ”I samlingen”.
+- `catalogMetadata`: källrad, ursprunglig källtitel, importdatum, preliminära
+  uppgifter och utgåvematchning. Parlay har uttryckligen preliminär matchning.
+- `descriptionStatus`: `draft`, `missing` eller `complete`, separat från fakta.
+  Ingen generell verifierad-markering används.
 - `accent`: mörkare accentfärg i hex, exempelvis `#815467`.
 - `tint`: mycket ljus bakgrundston, exempelvis `#eadce2`.
 - `placeholderTheme`: återanvändbart reservtema, exempelvis `castle-rose`.
@@ -111,11 +132,35 @@ För varje spel:
 
 Lägg riktiga bilder under `public/images/games/<game-id>/` och ändra bildsökvägarna i JSON-filen. Se [bildguiden](public/images/README.md) för struktur, reservteman och exempel. Reservillustrationerna ligger i `public/images/placeholders/` och definieras centralt i `src/constants/placeholderThemes.ts`. `GameImage` hanterar bildfel och återställning vid spelbyte. Använd gärna WebP eller AVIF. Omslag visas stående, men kan ha andra proportioner; justera `object-fit` i CSS om du vill visa hela originalomslaget.
 
-Innan exempelvärden ersätts helt: behåll gränssnittets exempelmarkeringar. När alla uppgifter är kontrollerade kan markeringarna i komponenterna under `src/components/` tas bort. Favoriter sparas bara lokalt i besökarens webbläsare, inte mellan enheter.
+Behåll osäkerhetsmarkeringar per fält och skilj bildstatus från speldata. Favoriter sparas bara lokalt i besökarens webbläsare, inte mellan enheter.
+
+## Manuell uppdatering från Sheets
+
+1. Exportera de första åtta kolumnerna till `catalog-data.json`. Inga
+   Notes/Notering ska ingå. Filen används bara vid utveckling, aldrig för anrop
+   till Sheets i webbläsaren. `CODEX-PROMPT.md` och exportfilen undantas från
+   automatisk formatering för att bevara importunderlagen.
+2. Granska `scripts/catalog-matches.json`. Varje källrad och exakt källtitel
+   matchar ett stabilt katalog-id. Ändra inte id för befintliga spel. Justera
+   källtitel/källrad i matchningen om Sheets har ändrats; importeraren stoppar
+   vid saknad matchning, dubbletter eller ändrat antal poster.
+3. Kör `node scripts/import-catalog.mjs`. Importen uppdaterar bara de angivna
+   faktauppgifterna, bevarar lokal text/bilder/färger och sparar gemensam
+   källinformation och datakvalitet i `src/catalogMetadata.json`. Katalogposter
+   utanför exporten bevaras utan att tilldelas ägarstatus eller granskade fakta.
+4. Kör `node --test tests/catalog.test.mjs` samt projektets kontroller. Testerna
+   använder Node:s inbyggda testverktyg och befintliga TypeScript; inga nya
+   testberoenden krävs. Nuvarande exportkontroll förväntar 70 poster/20 kommande;
+   uppdatera dessa förväntningar vid en avsiktlig ändring av underlaget.
+
+När ett kommande spel levererats: ändra dess `upcoming` till `false` i
+`src/games.json`. Uppdatera också den manuella Sheets-exporten före nästa import,
+annars skriver importen tillbaka exportens status. Sätt
+`catalogMetadata.preliminary` till `false` först när uppgifterna granskats.
 
 ## Funktioner
 
-Sökning, kategorier, filter för antal spelare och tid, sortering, favoritmarkeringar, slumpval och bildgalleri. Mobil layout och stöd för minskad rörelse ingår. Typsnitt hämtas från Google Fonts med lokala systemtypsnitt som reserv.
+Sökning i namn och taggar, äldre kategorier, separata filter för spelmekanik, speltyp och tillgänglighet, spelar- och tidsfilter, sortering, favoriter, slumpval och bildgalleri. Ett värde väljs per tagggrupp; grupperna kombineras med AND. Okända värden matchar inte aktiva spelar-/tidsfilter. Tidssortering lägger okända tider sist. Slumpval följer samma filter. Mobil layout och stöd för minskad rörelse ingår. Typsnitt hämtas från Google Fonts med lokala systemtypsnitt som reserv.
 
 ## GitHub
 
@@ -150,6 +195,7 @@ Importera GitHub-repot i Netlify. `netlify.toml` innehåller bygginställningarn
 npm run format
 npm run format:check
 npm run lint
+node --test tests/catalog.test.mjs
 npm run typecheck
 npm run build
 npm run preview

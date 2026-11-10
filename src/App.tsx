@@ -1,10 +1,10 @@
 import React, { useState, useRef, useCallback } from 'react';
-import gameData from './games.json';
+import games from './data/games';
 import type { Game, GalleryImage, DetailTab } from './types/game';
 import styles from './App.module.css';
 
 import useFavorites from './hooks/useFavorites';
-import filterGames from './utils/filterGames';
+import filterGames, { type Availability } from './utils/filterGames';
 import Sidebar from './components/Sidebar/Sidebar';
 import Header from './components/Header/Header';
 import CatalogToolbar from './components/CatalogToolbar/CatalogToolbar';
@@ -13,13 +13,14 @@ import GameDetails from './components/GameDetails/GameDetails';
 import ImageModal from './components/ImageModal/ImageModal';
 import GameDetailDrawer from './components/GameDetailDrawer/GameDetailDrawer';
 
-const games: Game[] = gameData;
-
 export default function App() {
   const [category, setCategory] = useState('Alla spel');
   const [query, setQuery] = useState('');
   const [players, setPlayers] = useState('');
   const [duration, setDuration] = useState('');
+  const [mechanic, setMechanic] = useState('');
+  const [gameType, setGameType] = useState('');
+  const [availability, setAvailability] = useState<Availability>('all');
   const [sort, setSort] = useState('default');
   const [selectedGameId, setSelectedGameId] = useState(games[0].id);
   const [tab, setTab] = useState<DetailTab>('Om spelet');
@@ -46,6 +47,9 @@ export default function App() {
   const filteredGames = filterGames(games, {
     category,
     favorites,
+    mechanic,
+    gameType,
+    availability,
     query,
     players,
     duration,
@@ -75,6 +79,9 @@ export default function App() {
     setQuery('');
     setPlayers('');
     setDuration('');
+    setMechanic('');
+    setGameType('');
+    setAvailability('all');
   };
   const themeStyle: React.CSSProperties & {
     '--tint': string;
@@ -101,6 +108,13 @@ export default function App() {
           }
         >
           <CatalogToolbar
+            mechanic={mechanic}
+            gameType={gameType}
+            availability={availability}
+            onMechanicChange={setMechanic}
+            onGameTypeChange={setGameType}
+            onAvailabilityChange={setAvailability}
+            onReset={reset}
             query={query}
             category={category}
             players={players}

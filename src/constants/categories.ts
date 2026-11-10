@@ -5,4 +5,5 @@ export const categories = [
   'Två spelare',
   'Familj',
   'Socialt',
+  'Övrigt',
 ];

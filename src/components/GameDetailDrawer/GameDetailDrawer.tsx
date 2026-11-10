@@ -1,3 +1,5 @@
+import GameFacts from '../GameFacts/GameFacts';
+import GameMetadata from '../GameMetadata/GameMetadata';
 import { useId, type RefObject } from 'react';
 import type { Game, GalleryImage } from '../../types/game';
 import useModalDialog from '../../hooks/useModalDialog';
@@ -42,7 +44,7 @@ export default function GameDetailDrawer({
     >
       <div className={styles.panel}>
         <header ref={panelRef} tabIndex={-1} className={styles.header}>
-          <span>Ur Williams samling</span>
+          <span>Spelinformation</span>
           <button
             className={styles.close}
             onClick={onClose}
@@ -75,37 +77,12 @@ export default function GameDetailDrawer({
               {game.edition && <p>{game.edition}</p>}
             </div>
           </div>
-          <dl className={styles.facts}>
-            <div>
-              <dt>Spelare*</dt>
-              <dd>
-                {game.playersMin === game.playersMax
-                  ? game.playersMin
-                  : `${game.playersMin}–${game.playersMax}`}
-              </dd>
-            </div>
-            <div>
-              <dt>Speltid*</dt>
-              <dd>{game.minutes} min</dd>
-            </div>
-            <div>
-              <dt>Svårighet*</dt>
-              <dd>{game.weight.toFixed(1)} / 5</dd>
-            </div>
-            {game.minimumAge !== undefined && (
-              <div>
-                <dt>Ålder</dt>
-                <dd>Från {game.minimumAge} år</dd>
-              </div>
-            )}
-          </dl>
-          <p className={styles.note}>
-            * Exempelvärden – ersätts med verifierad speldata.
-          </p>
+          <GameFacts game={game} />
+          <GameMetadata game={game} />
           {(game.longDescription || game.description) && (
             <section className={styles.section}>
               <h3>Om spelet</h3>
-              {game.metadataStatus === 'placeholder' && (
+              {game.descriptionStatus === 'draft' && (
                 <p className={styles.note}>Beskrivningen är ett utkast.</p>
               )}
               <p className={styles.description}>

@@ -112,3 +112,14 @@
 .game-card p {
   color: #7e7068;
 }
+
+.status {
+  position: absolute;
+  bottom: 32px;
+  left: 8px;
+  max-width: calc(100% - 38px);
+}
+.status > span {
+  font-size: 8px;
+  padding: 3px 5px;
+}

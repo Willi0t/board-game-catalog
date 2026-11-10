@@ -1,3 +1,6 @@
+import GameFacts from '../GameFacts/GameFacts';
+import GameMetadata from '../GameMetadata/GameMetadata';
+import GameStatus from '../GameStatus/GameStatus';
 import React from 'react';
 import Icon from '../Icon/Icon';
 import GameGallery from '../GameGallery/GameGallery';
@@ -58,35 +61,10 @@ export default function GameDetails({
       </div>
       <div className={styles['detail-content']}>
         <p className={styles['detail-edition']}>
-          {game.edition || 'UR WILLIAMS SAMLING'}
+          {game.edition || 'SPELINFORMATION'}
         </p>
         <h2>{game.title}</h2>
-        <div className={styles['stats']}>
-          <div>
-            <Icon name="people" />
-            <strong>
-              {game.playersMin === game.playersMax
-                ? game.playersMin
-                : `${game.playersMin}–${game.playersMax}`}
-            </strong>
-            <span>spelare*</span>
-          </div>
-          <div>
-            <Icon name="clock" />
-            <strong>{game.minutes} min</strong>
-            <span>speltid*</span>
-          </div>
-          <div>
-            <Icon name="mountain" />
-            <strong>
-              {game.weight.toFixed(1)} <small>/ 5</small>
-            </strong>
-            <span>svårighet*</span>
-          </div>
-        </div>
-        <p className={styles['data-note']}>
-          * Exempelvärden – ersätts med verifierad speldata.
-        </p>
+        <GameFacts game={game} />
         <div
           className={styles['detail-tabs']}
           role="tablist"
@@ -113,17 +91,15 @@ export default function GameDetails({
         >
           {tab === 'Om spelet' ? (
             <div className={styles['about']}>
-              <p>{game.description}</p>
-              <div className={styles['tags']}>
-                <span>{game.category}</span>
-                <span>Brädspel</span>
-              </div>
-              <div className={styles['preview-note']}>
-                <Icon name="book" size={18} />
-                <p>
-                  Här finns snart dina bilder, spelbeskrivningar och detaljer.
-                </p>
-              </div>
+              {game.description && (
+                <>
+                  <p>{game.description}</p>
+                  {game.descriptionStatus === 'draft' && (
+                    <p>Beskrivningen är ett utkast.</p>
+                  )}
+                </>
+              )}
+              <GameMetadata game={game} showStatus={false} />
             </div>
           ) : (
             <GameGallery game={game} onOpenImage={onOpenImage} />
@@ -140,7 +116,7 @@ export default function GameDetails({
         </button>
       </div>
       <div className={styles['detail-footer']}>
-        <span className={styles['tiny-dot']} /> I samlingen{' '}
+        <GameStatus game={game} />
         <span>#{String(collectionIndex).padStart(3, '0')}</span>
       </div>
     </aside>

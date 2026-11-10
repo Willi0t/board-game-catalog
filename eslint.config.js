@@ -8,7 +8,7 @@ import tseslint from 'typescript-eslint';
 export default defineConfig([
   globalIgnores(['dist/**', 'node_modules/**']),
   {
-    files: ['**/*.{js,ts,tsx}'],
+    files: ['**/*.{js,mjs,ts,tsx}'],
     extends: [js.configs.recommended],
   },
   {
@@ -21,7 +21,7 @@ export default defineConfig([
     extends: [reactHooks.configs.flat.recommended],
   },
   {
-    files: ['*.config.{js,ts}'],
+    files: ['*.config.{js,ts}', 'scripts/**/*.mjs', 'tests/**/*.mjs'],
     languageOptions: { globals: globals.node },
   },
   prettier,

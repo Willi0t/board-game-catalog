@@ -1,4 +1,5 @@
 import React from 'react';
+import GameStatus from '../GameStatus/GameStatus';
 import Icon from '../Icon/Icon';
 import GameImage from '../GameImage/GameImage';
 import { getCoverImage } from '../../utils/gameImages';
@@ -33,6 +34,11 @@ export default function GameCard({
           className={styles.image}
           loading="lazy"
         />
+        {game.upcoming === true && (
+          <span className={styles.status}>
+            <GameStatus game={game} />
+          </span>
+        )}
         {isFavorite && (
           <span className={styles['card-heart']}>
             <Icon name="heart" size={14} />
@@ -43,7 +49,7 @@ export default function GameCard({
         </span>
       </div>
       <h2>{game.title}</h2>
-      <p>{game.edition || game.category}</p>
+      <p>{game.edition || game.gameTypes[0] || game.category}</p>
     </button>
   );
 }
