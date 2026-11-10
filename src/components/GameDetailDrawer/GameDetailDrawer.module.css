@@ -113,9 +113,12 @@
   color: #74665f;
 }
 
-.identity .category {
-  color: var(--accent);
-  font-size: 12px;
+.identityText {
+  min-width: 0;
+}
+
+.identityText h2 {
+  margin-top: 8px;
 }
 
 .note {

@@ -17,7 +17,11 @@ export function normalizeGameTypes(tags) {
   return [
     ...new Set(
       tags.map((tag) =>
-        ['party', 'paty'].includes(tag.toLowerCase()) ? 'Party' : tag,
+        ['party', 'paty'].includes(tag.toLowerCase())
+          ? 'Party'
+          : tag.toLowerCase() === 'social'
+            ? 'Social'
+            : tag,
       ),
     ),
   ];
@@ -55,6 +59,13 @@ export function mergeCatalog(existing, source) {
         };
     if (match.displayTitle) game.title = match.displayTitle;
     for (const field of importedFields) game[field] = row[field];
+    // Terraforming Mars has a locally approved score; an empty Sheets cell must not erase it.
+    if (
+      match.id === 'terraforming' &&
+      row.playerInteraction == null &&
+      original?.playerInteraction != null
+    )
+      game.playerInteraction = original.playerInteraction;
     game.gameTypes = normalizeGameTypes(row.gameTypes);
     // All legacy times were explicitly demo content. Never promote them to facts.
     if (!original || original.metadataStatus === 'placeholder')

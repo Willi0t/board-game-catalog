@@ -7,7 +7,7 @@ import resolveSelectedGame from '../utils/resolveSelectedGame';
 type CatalogFilters = Required<Omit<GameFilters, 'favorites' | 'sort'>>;
 
 const initialFilters: CatalogFilters = {
-  category: 'Alla spel',
+  libraryView: 'all',
   query: '',
   players: '',
   duration: '',

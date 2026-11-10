@@ -1,5 +1,4 @@
 import Icon from '../Icon/Icon';
-import { categories } from '../../constants/categories';
 
 import styles from './CatalogToolbar.module.css';
 import {
@@ -11,7 +10,6 @@ import type { Availability } from '../../utils/filterGames';
 
 interface CatalogToolbarProps {
   query: string;
-  category: string;
   players: string;
   duration: string;
   mechanic: string;
@@ -22,13 +20,11 @@ interface CatalogToolbarProps {
   onAvailabilityChange: (value: Availability) => void;
   onReset: () => void;
   onQueryChange: (query: string) => void;
-  onCategoryChange: (category: string) => void;
   onPlayersChange: (players: string) => void;
   onDurationChange: (duration: string) => void;
 }
 export default function CatalogToolbar({
   query,
-  category,
   players,
   duration,
   mechanic,
@@ -39,7 +35,6 @@ export default function CatalogToolbar({
   onAvailabilityChange,
   onReset,
   onQueryChange,
-  onCategoryChange,
   onPlayersChange,
   onDurationChange,
 }: CatalogToolbarProps) {
@@ -60,16 +55,6 @@ export default function CatalogToolbar({
         )}
       </label>
       <div className={styles['filters']}>
-        <select
-          className={styles['mobile-category']}
-          aria-label="Välj spelkategori"
-          value={category}
-          onChange={(e) => onCategoryChange(e.target.value)}
-        >
-          {['Alla spel', 'Favoriter', ...categories].map((c) => (
-            <option key={c}>{c}</option>
-          ))}
-        </select>
         <select
           aria-label="Filtrera antal spelare"
           value={players}

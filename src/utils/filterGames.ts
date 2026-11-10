@@ -1,9 +1,11 @@
 import type { Game } from '../types/game';
 
+export type LibraryView = 'all' | 'favorites';
+
 export type Availability = 'all' | 'owned' | 'upcoming';
 
 export interface GameFilters {
-  category?: string;
+  libraryView?: LibraryView;
   favorites?: readonly string[];
   query?: string;
   players?: string;
@@ -17,7 +19,7 @@ export interface GameFilters {
 export default function filterGames(
   games: readonly Game[],
   {
-    category = 'Alla spel',
+    libraryView = 'all',
     favorites = [],
     query = '',
     players = '',
@@ -30,10 +32,7 @@ export default function filterGames(
 ) {
   const filtered = games.filter(
     (game) =>
-      (category === 'Alla spel' ||
-        (category === 'Favoriter'
-          ? favorites.includes(game.id)
-          : game.category === category)) &&
+      (libraryView === 'all' || favorites.includes(game.id)) &&
       `${game.title} ${game.edition} ${game.category} ${game.mechanics.join(' ')} ${game.gameTypes.join(' ')}`
         .toLocaleLowerCase('sv')
         .includes(query.toLocaleLowerCase('sv')) &&

@@ -97,21 +97,6 @@
   color: #837970;
 }
 
-.mobile-category {
-  display: none;
-}
-
-@media (max-width: 650px) {
-  .filters {
-    flex-wrap: wrap;
-  }
-
-  .filters .mobile-category {
-    display: block;
-    flex-basis: 100%;
-  }
-}
-
 .toolbar {
   flex-wrap: wrap;
 }

@@ -46,6 +46,9 @@
 }
 
 @media (max-width: 900px) {
+  .app {
+    display: block;
+  }
   .collection-layout {
     display: block;
   }
