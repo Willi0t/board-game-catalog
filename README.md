@@ -152,7 +152,7 @@ För varje spel:
   och döljer åldersgräns och expansioner när uppgifter saknas. Lägg bara till
   uppgifter som gäller din utgåva; exempelspelen saknar dessa extra fält.
 
-Lägg riktiga bilder under `public/images/games/<game-id>/` och ändra bildsökvägarna i JSON-filen. Se [bildguiden](public/images/README.md) för struktur, reservteman och exempel. Reservillustrationerna ligger i `public/images/placeholders/`. V2-teman och id-mappning definieras centralt i `src/data/placeholder-manifest.json`; `src/constants/placeholderThemes.ts` hanterar temaprioritet, färger och stöd för äldre temanycklar. `GameImage` hanterar bildfel och återställning vid spelbyte. Använd gärna WebP eller AVIF. Omslag visas stående, men kan ha andra proportioner; justera `object-fit` i CSS om du vill visa hela originalomslaget.
+Lägg riktiga bilder under `public/images/games/<game-id>/` och ändra bildsökvägarna i JSON-filen. Se [bildguiden](public/images/README.md) för struktur, reservteman och exempel. Reservillustrationerna ligger i `public/images/placeholders/`. Generatorn finns i `scripts/generate_placeholders.py` och skriver bara illustrationer, aldrig speldata eller aktuell temamappning. Se bildguiden för körkommandon. V2-teman och id-mappning definieras centralt i `src/data/placeholder-manifest.json`; `src/constants/placeholderThemes.ts` hanterar temaprioritet, färger och stöd för äldre temanycklar. `GameImage` hanterar bildfel och återställning vid spelbyte. Använd gärna WebP eller AVIF. Omslag visas stående, men kan ha andra proportioner; justera `object-fit` i CSS om du vill visa hela originalomslaget.
 
 Behåll osäkerhetsmarkeringar per fält och skilj bildstatus från speldata. Favoriter sparas bara lokalt i besökarens webbläsare, inte mellan enheter.
 
@@ -188,7 +188,12 @@ Sökning i namn och taggar, äldre kategorier, separata filter för spelmekanik,
 
 Katalogen och guidens resultat använder samma `GameInfoPanel` och `GameDetails`.
 På dator är innehållet uppdelat i ungefär 58 % grid och 42 % informationspanel.
-Panelen börjar under sidhuvudet, är sticky och har egen scrollning. Dess scroll
+Panelen börjar under sidhuvudet, är sticky och har egen scrollning.
+`usePanelViewportHeight` mäter panelens faktiska avstånd till skärmens överkant;
+CSS anpassar höjden till återstående viewport med 20 px nederkant. Mätningen
+uppdateras vid sidscroll, storleksändringar och ändrad omgivande layout utan
+antaganden om sidhuvudets höjd. Panelens sista innehåll kan därför nås med egen
+scrollning även när sidan står högst upp och på korta datorskärmar. Dess scroll
 återställs vid spelbyte utan att gridens sidscroll flyttas. Bilden behåller sina
 proportioner; status, faktarader, beskrivning och separata tagggrupper återanvänds.
 
@@ -267,7 +272,7 @@ flerval, OR/AND, okända värden, Party och kommande spel. Kör även
 `npm run format:check`, `npm run lint`, `npm run typecheck`, `npm run build`
 och `git diff --check` efter ändringar.
 
-Kontrollerat lokalt med Node.js 24.20.0: 34 tester, formatkontroll, lint,
+Kontrollerat lokalt med Node.js 24.20.0: 36 tester, formatkontroll, lint,
 typkontroll och produktionsbygge. Flödet har även körts med tangentbord i Chrome
 vid 1280 och 390 pixlars bredd: gemensam panel i båda vyerna, träffantal/grid,
 Terraforming Mars, Hitmans status, bevarat/rensat urval, tomma resultat,

@@ -69,8 +69,28 @@ Den gemensamma sanningskällan är `src/data/placeholder-manifest.json`:
 Ändra ett spels föreslagna motiv/palett genom att uppdatera dess temanyckel i
 `games`. Välj en befintlig nyckel i `themes`. När nya motiv/paletter läggs till
 ska alla tre SVG-formaten finnas och samtliga sökvägar uppdateras i manifestet.
-`game-theme-overview.json` i leveranspaketet är en granskningslista, ingen extra
-runtime-källa. Paketets `current-games.json` ska inte ersätta katalogen.
+Illustrationerna återskapas med `scripts/generate_placeholders.py` (Python 3,
+endast standardbiblioteket). Kör från projektroten:
+
+```bash
+python3 scripts/generate_placeholders.py
+```
+
+Generatorn skriver endast de 216 SVG-bilderna under
+`public/images/placeholders/v2/`. Den läser eller skriver inte speldata,
+temamappning, `defaultTheme` eller manifestet. Ändra aktuell mapping manuellt i
+`src/data/placeholder-manifest.json` när ett spels tema ska bytas; kör inte en
+äldre paketgenerator över projektets JSON-filer.
+
+För att granska illustrationerna separat utan att skriva till appens bilder:
+
+```bash
+python3 scripts/generate_placeholders.py --output-dir /tmp/spelhyllan-images --preview /tmp/spelhyllan-preview.svg
+```
+
+`--output-dir` väljer bildmappen; `--preview` är valfri och accepterar endast
+SVG-sökvägar. Generatorns sökvägar utgår från scriptets plats, inte aktuell
+arbetskatalog. Den tidigare leveransmappen behövs inte längre.
 
 Temaprioritet: giltig manifestmapping → giltigt `game.placeholderTheme` i v2
 eller det äldre registret → manifestets `defaultTheme` (`geometric-slate`).

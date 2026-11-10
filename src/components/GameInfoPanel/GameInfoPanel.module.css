@@ -1,8 +1,16 @@
 .panel {
+  --panel-gutter: 20px;
   position: sticky;
-  top: 20px;
-  height: calc(100dvh - 40px);
-  min-height: 300px;
+  top: var(--panel-gutter);
+  height: max(
+    0px,
+    calc(
+      100dvh - var(--panel-viewport-top, var(--panel-gutter)) -
+        var(--panel-gutter)
+    )
+  );
+  min-height: 0;
+  overflow-anchor: none;
   overflow-y: auto;
   overflow-x: hidden;
   overscroll-behavior: contain;

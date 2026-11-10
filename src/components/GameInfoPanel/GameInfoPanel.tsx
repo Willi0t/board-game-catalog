@@ -1,5 +1,6 @@
 import { useEffect, useRef, type ReactNode, type RefObject } from 'react';
 import MobileGamePanel from '../MobileGamePanel/MobileGamePanel';
+import usePanelViewportHeight from '../../hooks/usePanelViewportHeight';
 import styles from './GameInfoPanel.module.css';
 
 interface GameInfoPanelProps {
@@ -24,6 +25,7 @@ export default function GameInfoPanel({
   children,
 }: GameInfoPanelProps) {
   const scrollRef = useRef<HTMLElement | null>(null);
+  usePanelViewportHeight(scrollRef, !isMobile);
   useEffect(() => {
     scrollRef.current?.scrollTo({ top: 0, behavior: 'instant' });
   }, [gameId, isMobile]);
