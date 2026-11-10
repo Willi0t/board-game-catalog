@@ -6,6 +6,9 @@ export interface Game {
   accent: string;
   tint: string;
   description: string;
+  longDescription?: string;
+  minimumAge?: number;
+  expansions?: string[];
   playersMin: number;
   playersMax: number;
   minutes: number;

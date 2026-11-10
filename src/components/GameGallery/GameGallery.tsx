@@ -6,7 +6,7 @@ import styles from './GameGallery.module.css';
 
 interface GameGalleryProps {
   game: Game;
-  onOpenImage: (image: GalleryImage) => void;
+  onOpenImage: (image: GalleryImage, trigger: HTMLButtonElement) => void;
 }
 export default function GameGallery({ game, onOpenImage }: GameGalleryProps) {
   return (
@@ -14,11 +14,14 @@ export default function GameGallery({ game, onOpenImage }: GameGalleryProps) {
       {game.gallery.map((src, i) => (
         <button
           key={src}
-          onClick={() =>
-            onOpenImage({
-              src,
-              title: i === 0 ? 'Spelet uppdukat' : 'Komponenter',
-            })
+          onClick={(event) =>
+            onOpenImage(
+              {
+                src,
+                title: i === 0 ? 'Spelet uppdukat' : 'Komponenter',
+              },
+              event.currentTarget,
+            )
           }
         >
           <img

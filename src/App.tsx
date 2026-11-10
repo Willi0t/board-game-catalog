@@ -11,6 +11,7 @@ import CatalogToolbar from './components/CatalogToolbar/CatalogToolbar';
 import GameCollection from './components/GameCollection/GameCollection';
 import GameDetails from './components/GameDetails/GameDetails';
 import ImageModal from './components/ImageModal/ImageModal';
+import GameDetailDrawer from './components/GameDetailDrawer/GameDetailDrawer';
 
 const games: Game[] = gameData;
 
@@ -23,9 +24,25 @@ export default function App() {
   const [selectedGameId, setSelectedGameId] = useState(games[0].id);
   const [tab, setTab] = useState<DetailTab>('Om spelet');
   const [modal, setModal] = useState<GalleryImage | null>(null);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const drawerOpenerRef = useRef<HTMLElement>(null);
+  const imageOpenerRef = useRef<HTMLElement>(null);
+  const libraryRef = useRef<HTMLElement>(null);
+  const drawerFallbackRef = useRef<HTMLElement>(null);
   const detailsRef = useRef<HTMLElement>(null);
   const { favorites, toggleFavorite } = useFavorites();
   const closeModal = useCallback(() => setModal(null), []);
+  const closeDrawer = useCallback(() => setIsDrawerOpen(false), []);
+  const openImage = (image: GalleryImage, trigger: HTMLButtonElement) => {
+    imageOpenerRef.current = trigger;
+    setModal(image);
+  };
+  const openDetails = (game: Game, trigger: HTMLButtonElement) => {
+    drawerOpenerRef.current = trigger;
+    setSelectedGameId(game.id);
+    setTab('Om spelet');
+    setIsDrawerOpen(true);
+  };
   const filteredGames = filterGames(games, {
     category,
     favorites,
@@ -42,15 +59,16 @@ export default function App() {
     setSelectedGameId(game.id);
     setTab('Om spelet');
     if (window.matchMedia('(max-width: 650px)').matches)
-      requestAnimationFrame(() =>
+      requestAnimationFrame(() => {
+        if (document.querySelector('dialog[open]')) return;
         detailsRef.current?.scrollIntoView({
           behavior: window.matchMedia('(prefers-reduced-motion: reduce)')
             .matches
             ? 'instant'
             : 'smooth',
           block: 'start',
-        }),
-      );
+        });
+      });
   };
   const reset = () => {
     setCategory('Alla spel');
@@ -71,7 +89,7 @@ export default function App() {
         onCategoryChange={setCategory}
         onReset={reset}
       />
-      <main className={styles['workspace']}>
+      <main ref={libraryRef} tabIndex={-1} className={styles['workspace']}>
         <Header
           contentClassName={styles['workspace-inner']}
           category={category}
@@ -100,6 +118,7 @@ export default function App() {
               sort={sort}
               onSortChange={setSort}
               onSelectGame={selectGame}
+              onOpenDetails={openDetails}
               onReset={reset}
             />
             {selectedGame && (
@@ -109,7 +128,8 @@ export default function App() {
                 onToggleFavorite={toggleFavorite}
                 tab={tab}
                 onTabChange={setTab}
-                onOpenImage={setModal}
+                onOpenImage={openImage}
+                onShowMore={openDetails}
                 detailsRef={detailsRef}
                 collectionIndex={games.indexOf(selectedGame) + 1}
               />
@@ -117,7 +137,24 @@ export default function App() {
           </div>
         </Header>
       </main>
-      {modal && <ImageModal modal={modal} onClose={closeModal} />}
+      {isDrawerOpen && selectedGame && (
+        <GameDetailDrawer
+          game={selectedGame}
+          onClose={closeDrawer}
+          onOpenImage={openImage}
+          openerRef={drawerOpenerRef}
+          fallbackRef={libraryRef}
+          panelRef={drawerFallbackRef}
+        />
+      )}
+      {modal && (
+        <ImageModal
+          modal={modal}
+          onClose={closeModal}
+          openerRef={imageOpenerRef}
+          fallbackRef={isDrawerOpen ? drawerFallbackRef : libraryRef}
+        />
+      )}
     </div>
   );
 }

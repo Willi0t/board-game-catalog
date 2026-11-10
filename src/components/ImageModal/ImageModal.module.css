@@ -1,12 +1,27 @@
 .modal-backdrop {
   position: fixed;
   inset: 0;
-  z-index: 10;
-  background: #312b35a6;
-  backdrop-filter: blur(8px);
+  width: 100%;
+  max-width: none;
+  height: 100dvh;
+  max-height: none;
+  margin: 0;
+  border: 0;
+  color: inherit;
+  background: transparent;
+
   display: grid;
   place-items: center;
   padding: 30px;
+}
+
+.modal-backdrop:not([open]) {
+  display: none;
+}
+
+.modal-backdrop::backdrop {
+  background: #312b35a6;
+  backdrop-filter: blur(8px);
 }
 
 .modal {
