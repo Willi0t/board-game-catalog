@@ -12,8 +12,7 @@
     "minutes": 90,
     "weight": 3.0,
     "metadataStatus": "placeholder",
-    "cover": "/images/burgundy-cover.svg",
-    "gallery": ["/images/burgundy-scene.svg", "/images/burgundy-detail.svg"]
+    "placeholderTheme": "castle-rose"
   },
   {
     "id": "terraforming",
@@ -28,11 +27,7 @@
     "minutes": 90,
     "weight": 3.0,
     "metadataStatus": "placeholder",
-    "cover": "/images/terraforming-cover.svg",
-    "gallery": [
-      "/images/terraforming-scene.svg",
-      "/images/terraforming-detail.svg"
-    ]
+    "placeholderTheme": "planet-rust"
   },
   {
     "id": "cosmic",
@@ -47,8 +42,7 @@
     "minutes": 30,
     "weight": 2.0,
     "metadataStatus": "placeholder",
-    "cover": "/images/cosmic-cover.svg",
-    "gallery": ["/images/cosmic-scene.svg", "/images/cosmic-detail.svg"]
+    "placeholderTheme": "geometric-purple"
   },
   {
     "id": "clank",
@@ -63,8 +57,7 @@
     "minutes": 30,
     "weight": 2.0,
     "metadataStatus": "placeholder",
-    "cover": "/images/clank-cover.svg",
-    "gallery": ["/images/clank-scene.svg", "/images/clank-detail.svg"]
+    "placeholderTheme": "castle-teal"
   },
   {
     "id": "wonders",
@@ -79,8 +72,7 @@
     "minutes": 90,
     "weight": 3.0,
     "metadataStatus": "placeholder",
-    "cover": "/images/wonders-cover.svg",
-    "gallery": ["/images/wonders-scene.svg", "/images/wonders-detail.svg"]
+    "placeholderTheme": "planet-gold"
   },
   {
     "id": "salad",
@@ -95,8 +87,7 @@
     "minutes": 30,
     "weight": 2.0,
     "metadataStatus": "placeholder",
-    "cover": "/images/salad-cover.svg",
-    "gallery": ["/images/salad-scene.svg", "/images/salad-detail.svg"]
+    "placeholderTheme": "geometric-green"
   },
   {
     "id": "burgle",
@@ -111,8 +102,7 @@
     "minutes": 30,
     "weight": 2.0,
     "metadataStatus": "placeholder",
-    "cover": "/images/burgle-cover.svg",
-    "gallery": ["/images/burgle-scene.svg", "/images/burgle-detail.svg"]
+    "placeholderTheme": "castle-blue"
   },
   {
     "id": "duel",
@@ -127,8 +117,7 @@
     "minutes": 30,
     "weight": 2.0,
     "metadataStatus": "placeholder",
-    "cover": "/images/duel-cover.svg",
-    "gallery": ["/images/duel-scene.svg", "/images/duel-detail.svg"]
+    "placeholderTheme": "planet-copper"
   },
   {
     "id": "vaalbara",
@@ -143,8 +132,7 @@
     "minutes": 30,
     "weight": 2.0,
     "metadataStatus": "placeholder",
-    "cover": "/images/vaalbara-cover.svg",
-    "gallery": ["/images/vaalbara-scene.svg", "/images/vaalbara-detail.svg"]
+    "placeholderTheme": "geometric-teal"
   },
   {
     "id": "citadels",
@@ -159,8 +147,7 @@
     "minutes": 30,
     "weight": 2.0,
     "metadataStatus": "placeholder",
-    "cover": "/images/citadels-cover.svg",
-    "gallery": ["/images/citadels-scene.svg", "/images/citadels-detail.svg"]
+    "placeholderTheme": "castle-red"
   },
   {
     "id": "starwars",
@@ -175,8 +162,7 @@
     "minutes": 30,
     "weight": 2.0,
     "metadataStatus": "placeholder",
-    "cover": "/images/starwars-cover.svg",
-    "gallery": ["/images/starwars-scene.svg", "/images/starwars-detail.svg"]
+    "placeholderTheme": "planet-slate"
   },
   {
     "id": "scarface",
@@ -191,7 +177,6 @@
     "minutes": 90,
     "weight": 3.0,
     "metadataStatus": "placeholder",
-    "cover": "/images/scarface-cover.svg",
-    "gallery": ["/images/scarface-scene.svg", "/images/scarface-detail.svg"]
+    "placeholderTheme": "geometric-olive"
   }
 ]

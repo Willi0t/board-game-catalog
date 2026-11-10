@@ -13,11 +13,8 @@
   border: 1px solid #dfd6d0;
 }
 
-.gallery img {
-  width: 100%;
-  display: block;
-  aspect-ratio: 2.5;
-  object-fit: cover;
+.image {
+  --image-aspect: 2.5;
 }
 
 .gallery button > span {
@@ -33,11 +30,22 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .gallery img {
-    aspect-ratio: 1.4;
+  .image {
+    --image-aspect: 1.4;
   }
 
   .gallery button > span {
     font-size: 9px;
   }
+}
+
+.placeholder {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  border-radius: 3px;
+  padding: 2px 5px;
+  background: #fff9;
+  color: #5b4b48;
+  font-size: 8px;
 }

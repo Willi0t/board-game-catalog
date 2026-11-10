@@ -25,7 +25,7 @@ För fortsatt AI-utveckling: installera OpenAI:s officiella Codex-tillägg i VS 
 Kör `npm run format` för att formatera projektet med Prettier och
 `npm run format:check` för att kontrollera formateringen utan att ändra filer.
 Indrag är två mellanslag. `node_modules`, `dist`, `package-lock.json` och
-`public/images` undantas från formateringen.
+bildmapparna under `public/images` undantas från formateringen.
 
 VS Code rekommenderar tillägget **Prettier – Code formatter**
 (`esbenp.prettier-vscode`). Installera det för att använda projektets inställning
@@ -98,15 +98,18 @@ För varje spel:
 - `playersMin`, `playersMax`, `minutes`, `weight`: verifiera mot exakt utgåva innan slutlig publicering. Svårighet anges på en skala 1–5.
 - `accent`: mörkare accentfärg i hex, exempelvis `#815467`.
 - `tint`: mycket ljus bakgrundston, exempelvis `#eadce2`.
-- `cover`: bildsökväg, exempelvis `/images/burgundy-cover.webp`.
-- `gallery`: lista över bildsökvägar.
+- `placeholderTheme`: återanvändbart reservtema, exempelvis `castle-rose`.
+- `cover`, `hero`: valfria sökvägar, exempelvis `/images/games/burgundy/cover.webp`
+  och `/images/games/burgundy/hero.webp`, när filerna faktiskt finns.
+- `gallery`: valfri lista över bildsökvägar. Saknad eller tom lista visar temats
+  scen- och detaljillustrationer.
 - `longDescription`, `minimumAge`, `expansions`: valfria fält för längre
   beskrivning, åldersgräns som tal och expansionsnamn som en lista med strängar.
   Detaljvyn använder den befintliga beskrivningen om `longDescription` saknas
   och döljer åldersgräns och expansioner när uppgifter saknas. Lägg bara till
   uppgifter som gäller din utgåva; exempelspelen saknar dessa extra fält.
 
-Lägg dina bilder i `public/images/` och ändra bildsökvägarna i JSON-filen. Använd gärna WebP eller AVIF. Omslag visas stående, men kan ha andra proportioner; justera `object-fit` i CSS om du vill visa hela originalomslaget.
+Lägg riktiga bilder under `public/images/games/<game-id>/` och ändra bildsökvägarna i JSON-filen. Se [bildguiden](public/images/README.md) för struktur, reservteman och exempel. Reservillustrationerna ligger i `public/images/placeholders/` och definieras centralt i `src/constants/placeholderThemes.ts`. `GameImage` hanterar bildfel och återställning vid spelbyte. Använd gärna WebP eller AVIF. Omslag visas stående, men kan ha andra proportioner; justera `object-fit` i CSS om du vill visa hela originalomslaget.
 
 Innan exempelvärden ersätts helt: behåll gränssnittets exempelmarkeringar. När alla uppgifter är kontrollerade kan markeringarna i komponenterna under `src/components/` tas bort. Favoriter sparas bara lokalt i besökarens webbläsare, inte mellan enheter.
 

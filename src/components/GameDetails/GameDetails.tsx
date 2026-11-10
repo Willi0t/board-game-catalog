@@ -1,6 +1,8 @@
 import React from 'react';
 import Icon from '../Icon/Icon';
 import GameGallery from '../GameGallery/GameGallery';
+import GameImage from '../GameImage/GameImage';
+import { getHeroImage, getGalleryImages } from '../../utils/gameImages';
 
 import type { Game, GalleryImage, DetailTab } from '../../types/game';
 import styles from './GameDetails.module.css';
@@ -36,9 +38,11 @@ export default function GameDetails({
       key={game.id}
     >
       <div className={styles['detail-hero']}>
-        <img
-          src={game.gallery[0]}
-          alt={`Illustrerad platshållarbild för ${game.title}`}
+        <GameImage
+          image={getHeroImage(game)}
+          className={styles.heroImage}
+          placeholderLabel="PLATSHÅLLARBILD"
+          labelClassName={styles['hero-placeholder']}
         />
         <span className={styles['hero-label']}>{game.category}</span>
         <button
@@ -51,7 +55,6 @@ export default function GameDetails({
         >
           <Icon name="heart" size={19} />
         </button>
-        <span className={styles['hero-placeholder']}>PLATSHÅLLARBILD</span>
       </div>
       <div className={styles['detail-content']}>
         <p className={styles['detail-edition']}>
@@ -99,7 +102,7 @@ export default function GameDetails({
               onClick={() => onTabChange(t)}
             >
               {t}
-              {t === 'Bilder' && <span>2</span>}
+              {t === 'Bilder' && <span>{getGalleryImages(game).length}</span>}
             </button>
           ))}
         </div>

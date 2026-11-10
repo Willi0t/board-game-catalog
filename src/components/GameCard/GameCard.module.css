@@ -22,11 +22,10 @@
     border-color 0.2s;
 }
 
-.cover-wrap img {
-  width: 100%;
+.image {
   height: 100%;
-  object-fit: cover;
-  display: block;
+  --image-box-height: 100%;
+  --image-height: 100%;
 }
 
 .game-card.selected .cover-wrap {
