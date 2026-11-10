@@ -1,4 +1,3 @@
-import React from 'react';
 import GameStatus from '../GameStatus/GameStatus';
 import Icon from '../Icon/Icon';
 import GameImage from '../GameImage/GameImage';

@@ -1,4 +1,3 @@
-import React from 'react';
 import Icon, { type IconName } from '../Icon/Icon';
 import { categories } from '../../constants/categories';
 

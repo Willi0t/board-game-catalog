@@ -1,0 +1,38 @@
+.group {
+  composes: group from '../PickerOption/PickerOption.module.css';
+}
+
+.choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+}
+
+.choices label {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 13px;
+  padding: 6px 0;
+  color: #5c494e;
+}
+
+.choices label[data-empty='true'] {
+  outline: 1px solid #d8a9ae;
+  outline-offset: 2px;
+}
+
+.choices label:has(input:disabled) {
+  cursor: not-allowed;
+}
+
+.clear {
+  background: transparent;
+  color: #943646;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-size: 12px;
+  padding: 6px 0;
+  text-align: left;
+}

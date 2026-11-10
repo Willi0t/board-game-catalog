@@ -18,20 +18,13 @@ export default function ImageModal({
   openerRef,
   fallbackRef,
 }: ImageModalProps) {
-  const dialogRef = useModalDialog({ openerRef, fallbackRef });
+  const dialogProps = useModalDialog({ onClose, openerRef, fallbackRef });
   return (
     <dialog
-      ref={dialogRef}
+      {...dialogProps}
       className={styles['modal-backdrop']}
       aria-modal="true"
       aria-label={modal.title}
-      onCancel={(event) => {
-        event.preventDefault();
-        onClose();
-      }}
-      onClick={(event) => {
-        if (event.target === event.currentTarget) onClose();
-      }}
     >
       <div className={styles.modal}>
         <button onClick={onClose} aria-label="Stäng bild">

@@ -23,6 +23,7 @@ import {
   type PickerCriteria,
 } from '../../utils/gamePicker';
 import PickerChoices from '../PickerChoices/PickerChoices';
+import PickerLevelChoices from '../PickerLevelChoices/PickerLevelChoices';
 import PickerSummary from '../PickerSummary/PickerSummary';
 import Icon from '../Icon/Icon';
 import OptionCount from '../OptionCount/OptionCount';
@@ -49,9 +50,8 @@ export default function GamePicker({
   openerRef,
   fallbackRef,
 }: GamePickerProps) {
-  const dialogRef = useModalDialog({ openerRef, fallbackRef });
+  const dialogProps = useModalDialog({ onClose, openerRef, fallbackRef });
   const titleId = useId();
-  const countId = useId();
   const errorId = useId();
   const [step, setStep] = useState(0);
   const [playerError, setPlayerError] = useState(false);
@@ -89,17 +89,10 @@ export default function GamePicker({
 
   return (
     <dialog
-      ref={dialogRef}
+      {...dialogProps}
       className={styles.dialog}
       aria-modal="true"
       aria-labelledby={titleId}
-      onCancel={(event) => {
-        event.preventDefault();
-        onClose();
-      }}
-      onClick={(event) => {
-        if (event.target === event.currentTarget) onClose();
-      }}
     >
       <div className={styles.panel}>
         <header className={styles.header}>
@@ -128,12 +121,7 @@ export default function GamePicker({
           <h3 ref={headingRef} tabIndex={-1} className={styles.heading}>
             {steps[step]}
           </h3>
-          <p
-            id={countId}
-            className={styles.count}
-            aria-live="polite"
-            aria-atomic="true"
-          >
+          <p className={styles.count} aria-live="polite" aria-atomic="true">
             {criteria.players == null
               ? 'Ange spelarantal för att se hur många spel som matchar.'
               : `${counts.total} spel matchar`}
@@ -212,68 +200,15 @@ export default function GamePicker({
                     </p>
                   )}
                 </fieldset>
-                <fieldset className={styles.fieldset}>
-                  <legend>Hur avancerat får det vara?</legend>
-                  <p>
-                    Välj en eller flera nivåer. Inga val betyder ”Spelar ingen
-                    roll”. Okänd svårighet matchar bara utan svårighetsfilter.
-                  </p>
-                  <div className={styles.radios}>
-                    <label>
-                      <input
-                        type="checkbox"
-                        checked={!criteria.weightLevels.length}
-                        disabled={
-                          criteria.weightLevels.length > 0 &&
-                          counts.weightLevels.any === 0
-                        }
-                        onChange={() => update({ weightLevels: [] })}
-                      />
-                      Spelar ingen roll
-                      <OptionCount
-                        count={counts.weightLevels.any}
-                        selected={!criteria.weightLevels.length}
-                      />
-                    </label>
-                    {weightOptions.map((level) => (
-                      <label
-                        key={level}
-                        data-empty={counts.weightLevels[level] === 0}
-                      >
-                        <input
-                          type="checkbox"
-                          checked={criteria.weightLevels.includes(level)}
-                          disabled={
-                            !criteria.weightLevels.includes(level) &&
-                            counts.weightLevels[level] === 0
-                          }
-                          aria-invalid={
-                            criteria.weightLevels.includes(level) &&
-                            counts.weightLevels[level] === 0
-                              ? true
-                              : undefined
-                          }
-                          onChange={() =>
-                            update({
-                              weightLevels: criteria.weightLevels.includes(
-                                level,
-                              )
-                                ? criteria.weightLevels.filter(
-                                    (selected) => selected !== level,
-                                  )
-                                : [...criteria.weightLevels, level],
-                            })
-                          }
-                        />
-                        {weightLabels[level]}
-                        <OptionCount
-                          count={counts.weightLevels[level]}
-                          selected={criteria.weightLevels.includes(level)}
-                        />
-                      </label>
-                    ))}
-                  </div>
-                </fieldset>
+                <PickerLevelChoices
+                  legend="Hur avancerat får det vara?"
+                  description="Välj en eller flera nivåer. Inga val betyder ”Spelar ingen roll”. Okänd svårighet matchar bara utan svårighetsfilter."
+                  options={weightOptions}
+                  labels={weightLabels}
+                  selected={criteria.weightLevels}
+                  counts={counts.weightLevels}
+                  onChange={(weightLevels) => update({ weightLevels })}
+                />
                 <label className={styles.checkbox}>
                   <input
                     type="checkbox"
@@ -300,84 +235,18 @@ export default function GamePicker({
                   counts={counts.gameTypes}
                   onChange={(gameTypes) => update({ gameTypes })}
                 />
-                <fieldset className={styles.fieldset}>
-                  <legend>Hur mycket spelarinteraktion vill ni ha?</legend>
-                  <p>
-                    Interaktion räknar både samarbete och konkurrens och är vår
-                    subjektiva bedömning. Välj flera nivåer för att matcha minst
-                    en. Inga val betyder ”Spelar ingen roll”.
-                  </p>
-                  <div className={styles.radios}>
-                    <label data-empty={counts.interaction.any === 0}>
-                      <input
-                        type="checkbox"
-                        checked={criteria.interactionLevels.length === 0}
-                        disabled={
-                          criteria.interactionLevels.length > 0 &&
-                          counts.interaction.any === 0
-                        }
-                        onChange={() => update({ interactionLevels: [] })}
-                      />
-                      Spelar ingen roll
-                      <OptionCount
-                        count={counts.interaction.any}
-                        selected={criteria.interactionLevels.length === 0}
-                      />
-                    </label>
-                    {interactionOptions.map((interaction) => (
-                      <label
-                        key={interaction}
-                        data-empty={counts.interaction[interaction] === 0}
-                      >
-                        <input
-                          type="checkbox"
-                          checked={criteria.interactionLevels.includes(
-                            interaction,
-                          )}
-                          disabled={
-                            !criteria.interactionLevels.includes(interaction) &&
-                            counts.interaction[interaction] === 0
-                          }
-                          aria-invalid={
-                            criteria.interactionLevels.includes(interaction) &&
-                            counts.interaction[interaction] === 0
-                              ? true
-                              : undefined
-                          }
-                          onChange={() =>
-                            update({
-                              interactionLevels:
-                                criteria.interactionLevels.includes(interaction)
-                                  ? criteria.interactionLevels.filter(
-                                      (level) => level !== interaction,
-                                    )
-                                  : [
-                                      ...criteria.interactionLevels,
-                                      interaction,
-                                    ],
-                            })
-                          }
-                        />
-                        {interactionLabels[interaction]}
-                        <OptionCount
-                          count={counts.interaction[interaction]}
-                          selected={criteria.interactionLevels.includes(
-                            interaction,
-                          )}
-                        />
-                      </label>
-                    ))}
-                  </div>
-                  {criteria.interactionLevels.length > 0 && (
-                    <button
-                      className={styles.clear}
-                      type="button"
-                      onClick={() => update({ interactionLevels: [] })}
-                    >
-                      Rensa interaktionsval
-                    </button>
-                  )}
-                </fieldset>
+                <PickerLevelChoices
+                  legend="Hur mycket spelarinteraktion vill ni ha?"
+                  description="Interaktion räknar både samarbete och konkurrens och är vår subjektiva bedömning. Välj flera nivåer för att matcha minst en. Inga val betyder ”Spelar ingen roll”."
+                  options={interactionOptions}
+                  labels={interactionLabels}
+                  selected={criteria.interactionLevels}
+                  counts={counts.interaction}
+                  onChange={(interactionLevels) =>
+                    update({ interactionLevels })
+                  }
+                  clearLabel="Rensa interaktionsval"
+                />
               </>
             )}
             {step === 2 && (

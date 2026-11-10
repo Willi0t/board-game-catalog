@@ -282,3 +282,12 @@ export function findPickerConflicts(
       conflicts.push({ label: `Spelmekanik: ${tag}`, step: 2 });
   return conflicts;
 }
+
+export function togglePickerChoice<Choice extends string>(
+  selected: readonly Choice[],
+  choice: Choice,
+): Choice[] {
+  return selected.includes(choice)
+    ? selected.filter((value) => value !== choice)
+    : [...selected, choice];
+}

@@ -1,10 +1,16 @@
 import GameFacts from '../GameFacts/GameFacts';
+import GameDescription from '../GameDescription/GameDescription';
+import GameEditionDetails from '../GameEditionDetails/GameEditionDetails';
 import GameMetadata from '../GameMetadata/GameMetadata';
 import GameStatus from '../GameStatus/GameStatus';
 import Icon from '../Icon/Icon';
 import GameGallery from '../GameGallery/GameGallery';
 import GameImage from '../GameImage/GameImage';
-import { getHeroImage, getGalleryImages } from '../../utils/gameImages';
+import {
+  getHeroImage,
+  getGalleryImages,
+  getCoverImage,
+} from '../../utils/gameImages';
 
 import type { Game, GalleryImage, DetailTab } from '../../types/game';
 import styles from './GameDetails.module.css';
@@ -17,7 +23,7 @@ interface GameDetailsProps {
   onTabChange: (tab: DetailTab) => void;
   onOpenImage: (image: GalleryImage, trigger: HTMLButtonElement) => void;
   collectionIndex: number;
-  onShowMore: (game: Game, trigger: HTMLButtonElement) => void;
+  onShowMore?: (game: Game, trigger: HTMLButtonElement) => void;
 }
 export default function GameDetails({
   game,
@@ -29,6 +35,9 @@ export default function GameDetails({
   collectionIndex,
   onShowMore,
 }: GameDetailsProps) {
+  const galleryImages = onShowMore
+    ? getGalleryImages(game)
+    : [getCoverImage(game), ...getGalleryImages(game)];
   const tabs: DetailTab[] = ['Om spelet', 'Bilder'];
   return (
     <aside
@@ -79,7 +88,7 @@ export default function GameDetails({
               onClick={() => onTabChange(t)}
             >
               {t}
-              {t === 'Bilder' && <span>{getGalleryImages(game).length}</span>}
+              {t === 'Bilder' && <span>{galleryImages.length}</span>}
             </button>
           ))}
         </div>
@@ -89,31 +98,30 @@ export default function GameDetails({
           aria-labelledby={`tab-${tab === 'Bilder' ? 'images' : 'about'}`}
         >
           {tab === 'Om spelet' ? (
-            <div className={styles['about']}>
-              {game.description && (
-                <>
-                  <p>{game.description}</p>
-                  {game.descriptionStatus === 'draft' && (
-                    <p>Beskrivningen är ett utkast.</p>
-                  )}
-                </>
-              )}
+            <>
+              <GameDescription
+                game={game}
+                presentation={onShowMore ? 'summary' : 'mobile'}
+              />
               <GameMetadata game={game} showStatus={false} />
-            </div>
+              {!onShowMore && <GameEditionDetails game={game} />}
+            </>
           ) : (
-            <GameGallery game={game} onOpenImage={onOpenImage} />
+            <GameGallery images={galleryImages} onOpenImage={onOpenImage} />
           )}
         </div>
       </div>
-      <div className={styles.actions}>
-        <button
-          className={styles.more}
-          aria-haspopup="dialog"
-          onClick={(event) => onShowMore(game, event.currentTarget)}
-        >
-          Visa mer <Icon name="arrow" size={17} />
-        </button>
-      </div>
+      {onShowMore && (
+        <div className={styles.actions}>
+          <button
+            className={styles.more}
+            aria-haspopup="dialog"
+            onClick={(event) => onShowMore(game, event.currentTarget)}
+          >
+            Visa mer <Icon name="arrow" size={17} />
+          </button>
+        </div>
+      )}
       <div className={styles['detail-footer']}>
         <GameStatus game={game} />
         <span>#{String(collectionIndex).padStart(3, '0')}</span>

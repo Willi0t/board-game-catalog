@@ -1,4 +1,10 @@
-import { useEffect, useRef, type RefObject } from 'react';
+import {
+  useEffect,
+  useRef,
+  type RefObject,
+  type SyntheticEvent,
+  type MouseEvent,
+} from 'react';
 
 let scrollLocks = 0;
 let restoreScroll: (() => void) | undefined;
@@ -47,11 +53,13 @@ function lockPageScroll() {
 }
 
 interface ModalDialogOptions {
+  onClose: () => void;
   openerRef: RefObject<HTMLElement | null>;
   fallbackRef: RefObject<HTMLElement | null>;
 }
 
 export default function useModalDialog({
+  onClose,
   openerRef,
   fallbackRef,
 }: ModalDialogOptions) {
@@ -101,5 +109,14 @@ export default function useModalDialog({
       target?.focus({ preventScroll: true });
     };
   }, [openerRef, fallbackRef]);
-  return dialogRef;
+  return {
+    ref: dialogRef,
+    onCancel: (event: SyntheticEvent<HTMLDialogElement>) => {
+      event.preventDefault();
+      onClose();
+    },
+    onClick: (event: MouseEvent<HTMLDialogElement>) => {
+      if (event.target === event.currentTarget) onClose();
+    },
+  };
 }
