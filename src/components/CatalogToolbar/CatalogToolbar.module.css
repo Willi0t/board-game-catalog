@@ -111,3 +111,27 @@
     flex-basis: 100%;
   }
 }
+
+.toolbar {
+  flex-wrap: wrap;
+}
+
+.filters {
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: 0;
+}
+
+.filters select {
+  min-width: 0;
+  flex: 1 1 145px;
+}
+
+.reset {
+  background: #fff9;
+  border: 1px solid #d9d3ce80;
+  border-radius: 6px;
+  color: #62554f;
+  padding: 10px;
+  font-size: 11px;
+}

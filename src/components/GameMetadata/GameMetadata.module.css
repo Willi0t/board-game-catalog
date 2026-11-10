@@ -1,0 +1,37 @@
+.metadata {
+  margin: 20px 0;
+  min-width: 0;
+}
+
+.metadata h3 {
+  font-family: Manrope, sans-serif;
+  font-size: 13px;
+  color: #5c494e;
+  margin: 18px 0 8px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.chips li {
+  color: #67545b;
+  border: 1px solid #d9cdd2;
+  background: #fff7;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 11px;
+  overflow-wrap: anywhere;
+  max-width: 100%;
+}
+
+.quality {
+  font-size: 11px;
+  line-height: 1.7;
+  color: #74665f;
+}

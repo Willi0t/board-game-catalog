@@ -2,7 +2,9 @@
   border-radius: 11px;
   background: #fff9;
   box-shadow: 0 8px 35px #55433406;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: calc(100dvh - 40px);
   border: 1px solid #fff9;
   animation: reveal 0.35s ease;
   position: sticky;
@@ -85,54 +87,6 @@
   margin: 0 0 25px;
 }
 
-.stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.stats > div {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  border-right: 1px solid #ded5d16b;
-}
-
-.stats > div:last-child {
-  border: 0;
-}
-
-.stats svg {
-  color: #a49394;
-  margin-bottom: 7px;
-  width: 18px;
-  height: 18px;
-}
-
-.stats strong {
-  font-size: 14px;
-  font-weight: 550;
-  color: #5e4d52;
-}
-
-.stats small {
-  font-size: 10px;
-  color: #ad9fa0;
-  font-weight: 400;
-}
-
-.stats span {
-  font-size: 9px;
-  color: #ad9e9f;
-  margin-top: 2px;
-}
-
-.data-note {
-  font-size: 8px;
-  color: #b1a7a2;
-  text-align: center;
-  margin: 15px 0 18px;
-}
-
 .detail-tabs {
   display: flex;
   gap: 23px;
@@ -176,41 +130,6 @@
   margin: 18px 0;
 }
 
-.tags {
-  display: flex;
-  gap: 6px;
-}
-
-.tags span {
-  font-size: 9px;
-  color: #9c888d;
-  border: 1px solid #e5dadd;
-  border-radius: 4px;
-  padding: 3px 8px;
-}
-
-.preview-note {
-  margin: 22px 0;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  padding: 13px;
-  background: #f2ede88c;
-  border-radius: 6px;
-  color: #ae9c91;
-}
-
-.preview-note svg {
-  flex-shrink: 0;
-}
-
-.preview-note p {
-  font-size: 10px;
-  line-height: 1.7;
-  margin: 0;
-  color: #9f8e82;
-}
-
 .detail-footer {
   display: flex;
   align-items: center;
@@ -225,13 +144,6 @@
   margin-left: auto;
   color: #b6a89d;
   letter-spacing: 1px;
-}
-
-.tiny-dot {
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: #9eaa8c;
 }
 
 @keyframes reveal {
@@ -264,6 +176,8 @@
 
 @media (max-width: 650px) {
   .details {
+    max-height: none;
+    overflow: hidden;
     position: relative;
     top: 0;
     width: 100%;
@@ -282,26 +196,9 @@
     padding: 19px 20px 0;
   }
 
-  .stats {
-    max-width: 320px;
-    margin: auto;
-  }
-
-  .data-note {
-    margin-bottom: 10px;
-  }
-
   .about > p {
     margin: 14px 0;
     font-size: 12px;
-  }
-
-  .preview-note {
-    display: none;
-  }
-
-  .tags {
-    margin-bottom: 18px;
   }
 
   .detail-footer {

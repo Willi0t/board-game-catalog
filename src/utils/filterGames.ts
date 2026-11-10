@@ -1,12 +1,17 @@
 import type { Game } from '../types/game';
 
-interface GameFilters {
+export type Availability = 'all' | 'owned' | 'upcoming';
+
+export interface GameFilters {
   category?: string;
   favorites?: readonly string[];
   query?: string;
   players?: string;
   duration?: string;
   sort?: string;
+  mechanic?: string;
+  gameType?: string;
+  availability?: Availability;
 }
 
 export default function filterGames(
@@ -18,23 +23,41 @@ export default function filterGames(
     players = '',
     duration = '',
     sort = 'default',
+    mechanic = '',
+    gameType = '',
+    availability = 'all',
   }: GameFilters = {},
 ) {
   const filtered = games.filter(
-    (g) =>
+    (game) =>
       (category === 'Alla spel' ||
         (category === 'Favoriter'
-          ? favorites.includes(g.id)
-          : g.category === category)) &&
-      `${g.title} ${g.edition} ${g.category}`
+          ? favorites.includes(game.id)
+          : game.category === category)) &&
+      `${game.title} ${game.edition} ${game.category} ${game.mechanics.join(' ')} ${game.gameTypes.join(' ')}`
         .toLocaleLowerCase('sv')
         .includes(query.toLocaleLowerCase('sv')) &&
       (!players ||
-        (g.playersMin <= Number(players) && g.playersMax >= Number(players))) &&
-      (!duration || g.minutes <= Number(duration)),
+        (game.playersMin != null &&
+          game.playersMax != null &&
+          game.playersMin <= Number(players) &&
+          game.playersMax >= Number(players))) &&
+      (!duration ||
+        (game.minutes != null && game.minutes <= Number(duration))) &&
+      (!mechanic || game.mechanics.includes(mechanic)) &&
+      (!gameType || game.gameTypes.includes(gameType)) &&
+      (availability === 'all' ||
+        (availability === 'owned'
+          ? game.upcoming === false
+          : game.upcoming === true)),
   );
   if (sort === 'name')
     filtered.sort((a, b) => a.title.localeCompare(b.title, 'sv'));
-  if (sort === 'time') filtered.sort((a, b) => a.minutes - b.minutes);
+  if (sort === 'time')
+    filtered.sort((a, b) => {
+      if (a.minutes == null) return b.minutes == null ? 0 : 1;
+      if (b.minutes == null) return -1;
+      return a.minutes - b.minutes;
+    });
   return filtered;
 }

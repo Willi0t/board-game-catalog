@@ -1,0 +1,18 @@
+{
+  "source": {
+    "url": "https://docs.google.com/spreadsheets/d/1cQjSP-aUUlCe93NibwDcPdxPtAAS_KD6wiliVAMGRdk/edit",
+    "sheet": "Sheet1",
+    "range": "A1:H71",
+    "exportedAt": "2026-11-10",
+    "notesIncluded": false
+  },
+  "dataQuality": {
+    "status": "user-reviewed",
+    "interaction": "Subjective user-approved 0–5; both cooperation and competition.",
+    "mechanics": "Curated user-approved catalog tags; some forthcoming titles are preliminary.",
+    "missingValues": "null means unknown; do not substitute fictional values.",
+    "bestWithNormalization": "Fate of the Fellowship: Sheets stored bestWith as a date, displayed 1-3; exported as the intended text 1–3.",
+    "editionCaveat": "Figures may refer to the base game rather than bundled expansions; not independently verified for all editions.",
+    "parlay": "Categories provisional; assumed Parlay: The Betting Game; exact edition unconfirmed."
+  }
+}

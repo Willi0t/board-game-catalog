@@ -1,3 +1,5 @@
+export type InteractionScore = 0 | 1 | 2 | 3 | 4 | 5;
+
 export interface Game {
   id: string;
   title: string;
@@ -9,10 +11,23 @@ export interface Game {
   longDescription?: string;
   minimumAge?: number;
   expansions?: string[];
-  playersMin: number;
-  playersMax: number;
-  minutes: number;
-  weight: number;
+  playersMin: number | null;
+  playersMax: number | null;
+  minutes: number | null;
+  weight: number | null;
+  bestWith: string | null;
+  playerInteraction: InteractionScore | null;
+  mechanics: string[];
+  gameTypes: string[];
+  upcoming?: boolean;
+  descriptionStatus?: 'draft' | 'missing' | 'complete';
+  catalogMetadata?: {
+    sourceRow: number;
+    sourceTitle: string;
+    importedAt: string;
+    preliminary: boolean;
+    editionMatch: string;
+  };
   metadataStatus: string;
   placeholderTheme?: string;
   cover?: string;

@@ -3,12 +3,25 @@ import Icon from '../Icon/Icon';
 import { categories } from '../../constants/categories';
 
 import styles from './CatalogToolbar.module.css';
+import {
+  mechanicOptions,
+  gameTypeOptions,
+  playerOptions,
+} from '../../constants/catalogOptions';
+import type { Availability } from '../../utils/filterGames';
 
 interface CatalogToolbarProps {
   query: string;
   category: string;
   players: string;
   duration: string;
+  mechanic: string;
+  gameType: string;
+  availability: Availability;
+  onMechanicChange: (value: string) => void;
+  onGameTypeChange: (value: string) => void;
+  onAvailabilityChange: (value: Availability) => void;
+  onReset: () => void;
   onQueryChange: (query: string) => void;
   onCategoryChange: (category: string) => void;
   onPlayersChange: (players: string) => void;
@@ -19,6 +32,13 @@ export default function CatalogToolbar({
   category,
   players,
   duration,
+  mechanic,
+  gameType,
+  availability,
+  onMechanicChange,
+  onGameTypeChange,
+  onAvailabilityChange,
+  onReset,
   onQueryChange,
   onCategoryChange,
   onPlayersChange,
@@ -57,7 +77,7 @@ export default function CatalogToolbar({
           onChange={(e) => onPlayersChange(e.target.value)}
         >
           <option value="">Alla spelarantal</option>
-          {[1, 2, 3, 4, 5, 6].map((n) => (
+          {playerOptions.map((n) => (
             <option key={n} value={n}>
               {n} spelare
             </option>
@@ -73,6 +93,42 @@ export default function CatalogToolbar({
           <option value="60">Upp till 60 min</option>
           <option value="120">Upp till 120 min</option>
         </select>
+        <select
+          aria-label="Filtrera spelmekanik"
+          value={mechanic}
+          onChange={(event) => onMechanicChange(event.target.value)}
+        >
+          <option value="">Alla spelmekaniker</option>
+          {mechanicOptions.map((tag) => (
+            <option key={tag}>{tag}</option>
+          ))}
+        </select>
+        <select
+          aria-label="Filtrera speltyp"
+          value={gameType}
+          onChange={(event) => onGameTypeChange(event.target.value)}
+        >
+          <option value="">Alla speltyper</option>
+          {gameTypeOptions.map((tag) => (
+            <option key={tag}>{tag}</option>
+          ))}
+        </select>
+        <select
+          aria-label="Filtrera tillgänglighet"
+          value={availability}
+          onChange={(event) => {
+            const value = event.target.value;
+            if (value === 'all' || value === 'owned' || value === 'upcoming')
+              onAvailabilityChange(value);
+          }}
+        >
+          <option value="all">Alla</option>
+          <option value="owned">I samlingen</option>
+          <option value="upcoming">Kommande</option>
+        </select>
+        <button className={styles.reset} onClick={onReset}>
+          Återställ filter
+        </button>
       </div>
     </div>
   );

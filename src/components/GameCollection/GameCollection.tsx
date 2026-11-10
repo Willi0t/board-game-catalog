@@ -63,7 +63,8 @@ export default function GameCollection({
         </div>
       )}
       <p className={styles['collection-footnote']}>
-        En första titt på samlingen · Bilder och spelvärden är platshållare.
+        Reservillustrationer är platshållare. Saknade speluppgifter fylls inte
+        ut med exempelvärden.
       </p>
     </section>
   );

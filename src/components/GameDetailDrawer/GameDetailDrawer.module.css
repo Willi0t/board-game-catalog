@@ -118,27 +118,6 @@
   font-size: 12px;
 }
 
-.facts {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 16px;
-  margin: 28px 0 12px;
-  padding: 20px;
-  border-radius: 8px;
-  background: #ffffff80;
-}
-
-.facts dt {
-  font-size: 12px;
-  color: #74665f;
-}
-
-.facts dd {
-  margin: 5px 0 0;
-  font-size: 18px;
-  color: var(--accent);
-}
-
 .note {
   color: #74665f;
   font-size: 12px;

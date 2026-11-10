@@ -1,0 +1,17 @@
+.status {
+  display: inline-block;
+  font-size: 10px;
+  line-height: 1.5;
+  border-radius: 4px;
+  padding: 3px 7px;
+}
+
+.upcoming {
+  background: #fff4da;
+  color: #70511e;
+}
+
+.owned {
+  background: #eaf0e2;
+  color: #4d633c;
+}
