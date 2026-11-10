@@ -1,5 +1,7 @@
 import React from 'react';
 import Icon from '../Icon/Icon';
+import GameImage from '../GameImage/GameImage';
+import { getCoverImage } from '../../utils/gameImages';
 
 import type { Game } from '../../types/game';
 import styles from './GameCard.module.css';
@@ -26,9 +28,9 @@ export default function GameCard({
       aria-pressed={isSelected}
     >
       <div className={styles['cover-wrap']}>
-        <img
-          src={game.cover}
-          alt={`Platshållaromslag för ${game.title}`}
+        <GameImage
+          image={getCoverImage(game)}
+          className={styles.image}
           loading="lazy"
         />
         {isFavorite && (

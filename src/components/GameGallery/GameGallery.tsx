@@ -1,38 +1,59 @@
-import React from 'react';
+import { useState } from 'react';
 import Icon from '../Icon/Icon';
-
+import GameImage from '../GameImage/GameImage';
+import { getGalleryImages } from '../../utils/gameImages';
 import type { Game, GalleryImage } from '../../types/game';
 import styles from './GameGallery.module.css';
 
-interface GameGalleryProps {
-  game: Game;
+interface GalleryItemProps {
+  image: GalleryImage;
   onOpenImage: (image: GalleryImage, trigger: HTMLButtonElement) => void;
 }
+
+function GalleryItem({ image, onOpenImage }: GalleryItemProps) {
+  const [available, setAvailable] = useState(true);
+  const [ready, setReady] = useState(false);
+  if (!available) return null;
+  return (
+    <button
+      disabled={!ready}
+      onClick={(event) => onOpenImage(image, event.currentTarget)}
+    >
+      <GameImage
+        image={image}
+        className={styles.image}
+        placeholderLabel="Platshållarbild"
+        labelClassName={styles.placeholder}
+        onReady={() => setReady(true)}
+        onUnavailable={() => setAvailable(false)}
+      />
+      <span>
+        {image.title}
+        <Icon name="arrow" size={15} />
+      </span>
+    </button>
+  );
+}
+
+interface GameGalleryProps {
+  game: Game;
+  onOpenImage: GalleryItemProps['onOpenImage'];
+}
+
 export default function GameGallery({ game, onOpenImage }: GameGalleryProps) {
   return (
-    <div className={styles['gallery']}>
-      {game.gallery.map((src, i) => (
-        <button
-          key={src}
-          onClick={(event) =>
-            onOpenImage(
-              {
-                src,
-                title: i === 0 ? 'Spelet uppdukat' : 'Komponenter',
-              },
-              event.currentTarget,
-            )
-          }
-        >
-          <img
-            src={src}
-            alt={`Platshållare: ${i === 0 ? 'spelet uppdukat' : 'komponenter'}`}
-          />
-          <span>
-            {i === 0 ? 'Spelet uppdukat' : 'Komponenter'}
-            <Icon name="arrow" size={15} />
-          </span>
-        </button>
+    <div className={styles.gallery}>
+      {getGalleryImages(game).map((image, index) => (
+        <GalleryItem
+          key={JSON.stringify([
+            image.gameId,
+            image.src,
+            image.placeholderSrc,
+            index,
+          ])}
+          image={image}
+          onOpenImage={onOpenImage}
+        />
       ))}
     </div>
   );

@@ -1,5 +1,6 @@
 import type { RefObject } from 'react';
 import Icon from '../Icon/Icon';
+import GameImage from '../GameImage/GameImage';
 import useModalDialog from '../../hooks/useModalDialog';
 import type { GalleryImage } from '../../types/game';
 import styles from './ImageModal.module.css';
@@ -36,8 +37,13 @@ export default function ImageModal({
         <button onClick={onClose} aria-label="Stäng bild">
           <Icon name="close" />
         </button>
-        <img src={modal.src} alt={`Platshållare: ${modal.title}`} />
-        <p>{modal.title} · Platshållarbild</p>
+        <GameImage
+          image={modal}
+          className={styles.image}
+          placeholderLabel={`${modal.title} · Platshållarbild`}
+          label={modal.title}
+          labelClassName={styles.caption}
+        />
       </div>
     </dialog>
   );

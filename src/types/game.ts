@@ -14,12 +14,29 @@ export interface Game {
   minutes: number;
   weight: number;
   metadataStatus: string;
-  cover: string;
-  gallery: string[];
+  placeholderTheme?: string;
+  cover?: string;
+  coverAlt?: string;
+  hero?: string;
+  heroAlt?: string;
+  gallery?: (string | GameGalleryEntry)[];
 }
 
-export interface GalleryImage {
+export interface GameGalleryEntry {
   src: string;
+  title?: string;
+  alt?: string;
+}
+
+export type GameImageKind = 'cover' | 'scene' | 'detail';
+
+export interface GalleryImage {
+  src?: string;
+  placeholderSrc: string;
+  alt?: string;
+  kind: GameImageKind;
+  gameId: string;
+  gameTitle: string;
   title: string;
 }
 

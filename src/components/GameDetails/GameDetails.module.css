@@ -15,10 +15,10 @@
   overflow: hidden;
 }
 
-.detail-hero > img {
-  width: 100%;
+.heroImage {
   height: 100%;
-  object-fit: cover;
+  --image-box-height: 100%;
+  --image-height: 100%;
 }
 
 .hero-label {
