@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="640" viewBox="0 0 1600 640" preserveAspectRatio="xMidYMid slice" overflow="hidden">
+  <title>Generisk reservillustration – ocean</title>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e3eaf1"/><stop offset="1" stop-color="#526c85"/></linearGradient>
+    <pattern id="grain" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r=".65" fill="#fff6e5" opacity=".22"/></pattern>
+  </defs>
+  <rect width="1600" height="640" fill="url(#background)"/>
+  <circle cx="1232.0" cy="160.0" r="185.6" fill="#fff6e5" opacity=".53"/>
+  <path d="M0 448.0Q352.0 275.2 800.0 460.79999999999995T1600 390.4V640H0Z" fill="#526c85" opacity=".23"/>
+  <path d="M0 556.8Q400.0 377.59999999999997 864.0 569.6T1600 512.0V640H0Z" fill="#526c85" opacity=".36"/>
+  <rect width="1600" height="640" fill="url(#grain)"/>
+  <g fill="#fff6e5" opacity=".89" stroke-linecap="round" stroke-linejoin="round" transform="translate(800 358) scale(1.1)"><path d="M-143-11Q-49-122 71-7L150-72V76L71 12Q-49 122-143 11Z"/>
+ <circle fill="#526c85" cx="-91" cy="-5" r="8"/>
+ <path fill="#526c85" opacity=".3" d="M-12-47L-45 0L-12 47Q26 0-12-47Z"/>
+ <circle cx="-134" cy="-107" r="13"/><circle cx="-112" cy="-151" r="8"/>
+ <path d="M-193 126Q-145 91-97 126T0 126T97 126T193 126M-155 165Q-107 130-59 165T38 165T135 165" fill="none" stroke="#fff6e5" stroke-width="9"/>
+ <path d="M-178 69V20M-178 48L-196 30M178 111V70M178 91L195 73" fill="none" stroke="#fff6e5" stroke-width="7"/></g>
+</svg>

@@ -48,6 +48,7 @@ export type GameImageKind = 'cover' | 'scene' | 'detail';
 export interface GalleryImage {
   src?: string;
   placeholderSrc: string;
+  placeholderTint?: string;
   alt?: string;
   kind: GameImageKind;
   gameId: string;

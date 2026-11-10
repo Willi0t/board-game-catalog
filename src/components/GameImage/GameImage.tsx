@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useState, type CSSProperties } from 'react';
 import type { GalleryImage } from '../../types/game';
 import styles from './GameImage.module.css';
+import { layoutCoverTitle } from '../../utils/coverTitle';
 
 interface GameImageProps {
   image: GalleryImage;
@@ -27,12 +28,20 @@ function ResolvedGameImage({
     image.src && image.src !== image.placeholderSrc ? 'image' : 'placeholder',
   );
   const isPlaceholder = stage !== 'image';
+  const titleLayout = layoutCoverTitle(image.gameTitle);
+  const placeholderStyle: CSSProperties & { '--placeholder-tint': string } = {
+    '--placeholder-tint': image.placeholderTint ?? 'var(--tint, #eadce2)',
+  };
+  const visibleLabel = isPlaceholder
+    ? (placeholderLabel ?? 'Platshållarbild')
+    : label;
   const alt = isPlaceholder
     ? `Platshållarillustration: ${image.title} för ${image.gameTitle}`
     : image.alt || `${image.title} för ${image.gameTitle}`;
   return (
     <div
       className={`${styles.frame} ${className}`}
+      style={placeholderStyle}
       data-placeholder={isPlaceholder}
       data-image-kind={image.kind}
     >
@@ -61,28 +70,34 @@ function ResolvedGameImage({
               <svg
                 className={styles.title}
                 viewBox="0 0 600 760"
-                preserveAspectRatio="xMidYMid slice"
+                preserveAspectRatio="xMidYMid meet"
                 aria-hidden="true"
               >
                 <text
                   x="300"
-                  y="114"
+                  y={titleLayout.firstY}
                   textAnchor="middle"
                   fontFamily="Georgia,serif"
-                  fontSize="37"
+                  fontSize={titleLayout.fontSize}
                   fill="#31312f"
                 >
-                  {image.gameTitle}
+                  {titleLayout.lines.map((line, index) => (
+                    <tspan
+                      key={index}
+                      x="300"
+                      dy={index === 0 ? 0 : titleLayout.lineHeight}
+                    >
+                      {line}
+                    </tspan>
+                  ))}
                 </text>
               </svg>
             )}
           </>
         )}
       </div>
-      {(isPlaceholder ? placeholderLabel : label) && (
-        <span className={labelClassName}>
-          {isPlaceholder ? placeholderLabel : label}
-        </span>
+      {visibleLabel && (
+        <span className={labelClassName || styles.badge}>{visibleLabel}</span>
       )}
     </div>
   );

@@ -1,5 +1,6 @@
 import React, { useState, useRef, useCallback } from 'react';
 import games from './data/games';
+import { resolveGameColors } from './constants/placeholderThemes';
 import type { Game, GalleryImage, DetailTab } from './types/game';
 import styles from './App.module.css';
 
@@ -57,8 +58,9 @@ export default function App() {
   });
   const selectedGame =
     filteredGames.find((g) => g.id === selectedGameId) || filteredGames[0];
-  const tint = selectedGame?.tint || '#e9e4ed',
-    accent = selectedGame?.accent || '#815467';
+  const { tint, accent } = selectedGame
+    ? resolveGameColors(selectedGame)
+    : { tint: '#e9e4ed', accent: '#815467' };
   const selectGame = (game: Game) => {
     setSelectedGameId(game.id);
     setTab('Om spelet');

@@ -1,0 +1,727 @@
+{
+  "version": 2,
+  "defaultTheme": "geometric-slate",
+  "themes": {
+    "castle-rose": {
+      "motif": "castle",
+      "palette": "rose",
+      "accent": "#95616f",
+      "tint": "#efe1e5",
+      "cover": "/images/placeholders/v2/castle/rose/cover.svg",
+      "scene": "/images/placeholders/v2/castle/rose/scene.svg",
+      "detail": "/images/placeholders/v2/castle/rose/detail.svg"
+    },
+    "castle-sage": {
+      "motif": "castle",
+      "palette": "sage",
+      "accent": "#648155",
+      "tint": "#e6eddf",
+      "cover": "/images/placeholders/v2/castle/sage/cover.svg",
+      "scene": "/images/placeholders/v2/castle/sage/scene.svg",
+      "detail": "/images/placeholders/v2/castle/sage/detail.svg"
+    },
+    "castle-teal": {
+      "motif": "castle",
+      "palette": "teal",
+      "accent": "#397c79",
+      "tint": "#dfefeb",
+      "cover": "/images/placeholders/v2/castle/teal/cover.svg",
+      "scene": "/images/placeholders/v2/castle/teal/scene.svg",
+      "detail": "/images/placeholders/v2/castle/teal/detail.svg"
+    },
+    "castle-slate": {
+      "motif": "castle",
+      "palette": "slate",
+      "accent": "#526c85",
+      "tint": "#e3eaf1",
+      "cover": "/images/placeholders/v2/castle/slate/cover.svg",
+      "scene": "/images/placeholders/v2/castle/slate/scene.svg",
+      "detail": "/images/placeholders/v2/castle/slate/detail.svg"
+    },
+    "castle-gold": {
+      "motif": "castle",
+      "palette": "gold",
+      "accent": "#a58043",
+      "tint": "#f2ead9",
+      "cover": "/images/placeholders/v2/castle/gold/cover.svg",
+      "scene": "/images/placeholders/v2/castle/gold/scene.svg",
+      "detail": "/images/placeholders/v2/castle/gold/detail.svg"
+    },
+    "castle-violet": {
+      "motif": "castle",
+      "palette": "violet",
+      "accent": "#78658f",
+      "tint": "#ebe4f1",
+      "cover": "/images/placeholders/v2/castle/violet/cover.svg",
+      "scene": "/images/placeholders/v2/castle/violet/scene.svg",
+      "detail": "/images/placeholders/v2/castle/violet/detail.svg"
+    },
+    "planet-rose": {
+      "motif": "planet",
+      "palette": "rose",
+      "accent": "#95616f",
+      "tint": "#efe1e5",
+      "cover": "/images/placeholders/v2/planet/rose/cover.svg",
+      "scene": "/images/placeholders/v2/planet/rose/scene.svg",
+      "detail": "/images/placeholders/v2/planet/rose/detail.svg"
+    },
+    "planet-sage": {
+      "motif": "planet",
+      "palette": "sage",
+      "accent": "#648155",
+      "tint": "#e6eddf",
+      "cover": "/images/placeholders/v2/planet/sage/cover.svg",
+      "scene": "/images/placeholders/v2/planet/sage/scene.svg",
+      "detail": "/images/placeholders/v2/planet/sage/detail.svg"
+    },
+    "planet-teal": {
+      "motif": "planet",
+      "palette": "teal",
+      "accent": "#397c79",
+      "tint": "#dfefeb",
+      "cover": "/images/placeholders/v2/planet/teal/cover.svg",
+      "scene": "/images/placeholders/v2/planet/teal/scene.svg",
+      "detail": "/images/placeholders/v2/planet/teal/detail.svg"
+    },
+    "planet-slate": {
+      "motif": "planet",
+      "palette": "slate",
+      "accent": "#526c85",
+      "tint": "#e3eaf1",
+      "cover": "/images/placeholders/v2/planet/slate/cover.svg",
+      "scene": "/images/placeholders/v2/planet/slate/scene.svg",
+      "detail": "/images/placeholders/v2/planet/slate/detail.svg"
+    },
+    "planet-gold": {
+      "motif": "planet",
+      "palette": "gold",
+      "accent": "#a58043",
+      "tint": "#f2ead9",
+      "cover": "/images/placeholders/v2/planet/gold/cover.svg",
+      "scene": "/images/placeholders/v2/planet/gold/scene.svg",
+      "detail": "/images/placeholders/v2/planet/gold/detail.svg"
+    },
+    "planet-violet": {
+      "motif": "planet",
+      "palette": "violet",
+      "accent": "#78658f",
+      "tint": "#ebe4f1",
+      "cover": "/images/placeholders/v2/planet/violet/cover.svg",
+      "scene": "/images/placeholders/v2/planet/violet/scene.svg",
+      "detail": "/images/placeholders/v2/planet/violet/detail.svg"
+    },
+    "geometric-rose": {
+      "motif": "geometric",
+      "palette": "rose",
+      "accent": "#95616f",
+      "tint": "#efe1e5",
+      "cover": "/images/placeholders/v2/geometric/rose/cover.svg",
+      "scene": "/images/placeholders/v2/geometric/rose/scene.svg",
+      "detail": "/images/placeholders/v2/geometric/rose/detail.svg"
+    },
+    "geometric-sage": {
+      "motif": "geometric",
+      "palette": "sage",
+      "accent": "#648155",
+      "tint": "#e6eddf",
+      "cover": "/images/placeholders/v2/geometric/sage/cover.svg",
+      "scene": "/images/placeholders/v2/geometric/sage/scene.svg",
+      "detail": "/images/placeholders/v2/geometric/sage/detail.svg"
+    },
+    "geometric-teal": {
+      "motif": "geometric",
+      "palette": "teal",
+      "accent": "#397c79",
+      "tint": "#dfefeb",
+      "cover": "/images/placeholders/v2/geometric/teal/cover.svg",
+      "scene": "/images/placeholders/v2/geometric/teal/scene.svg",
+      "detail": "/images/placeholders/v2/geometric/teal/detail.svg"
+    },
+    "geometric-slate": {
+      "motif": "geometric",
+      "palette": "slate",
+      "accent": "#526c85",
+      "tint": "#e3eaf1",
+      "cover": "/images/placeholders/v2/geometric/slate/cover.svg",
+      "scene": "/images/placeholders/v2/geometric/slate/scene.svg",
+      "detail": "/images/placeholders/v2/geometric/slate/detail.svg"
+    },
+    "geometric-gold": {
+      "motif": "geometric",
+      "palette": "gold",
+      "accent": "#a58043",
+      "tint": "#f2ead9",
+      "cover": "/images/placeholders/v2/geometric/gold/cover.svg",
+      "scene": "/images/placeholders/v2/geometric/gold/scene.svg",
+      "detail": "/images/placeholders/v2/geometric/gold/detail.svg"
+    },
+    "geometric-violet": {
+      "motif": "geometric",
+      "palette": "violet",
+      "accent": "#78658f",
+      "tint": "#ebe4f1",
+      "cover": "/images/placeholders/v2/geometric/violet/cover.svg",
+      "scene": "/images/placeholders/v2/geometric/violet/scene.svg",
+      "detail": "/images/placeholders/v2/geometric/violet/detail.svg"
+    },
+    "garden-rose": {
+      "motif": "garden",
+      "palette": "rose",
+      "accent": "#95616f",
+      "tint": "#efe1e5",
+      "cover": "/images/placeholders/v2/garden/rose/cover.svg",
+      "scene": "/images/placeholders/v2/garden/rose/scene.svg",
+      "detail": "/images/placeholders/v2/garden/rose/detail.svg"
+    },
+    "garden-sage": {
+      "motif": "garden",
+      "palette": "sage",
+      "accent": "#648155",
+      "tint": "#e6eddf",
+      "cover": "/images/placeholders/v2/garden/sage/cover.svg",
+      "scene": "/images/placeholders/v2/garden/sage/scene.svg",
+      "detail": "/images/placeholders/v2/garden/sage/detail.svg"
+    },
+    "garden-teal": {
+      "motif": "garden",
+      "palette": "teal",
+      "accent": "#397c79",
+      "tint": "#dfefeb",
+      "cover": "/images/placeholders/v2/garden/teal/cover.svg",
+      "scene": "/images/placeholders/v2/garden/teal/scene.svg",
+      "detail": "/images/placeholders/v2/garden/teal/detail.svg"
+    },
+    "garden-slate": {
+      "motif": "garden",
+      "palette": "slate",
+      "accent": "#526c85",
+      "tint": "#e3eaf1",
+      "cover": "/images/placeholders/v2/garden/slate/cover.svg",
+      "scene": "/images/placeholders/v2/garden/slate/scene.svg",
+      "detail": "/images/placeholders/v2/garden/slate/detail.svg"
+    },
+    "garden-gold": {
+      "motif": "garden",
+      "palette": "gold",
+      "accent": "#a58043",
+      "tint": "#f2ead9",
+      "cover": "/images/placeholders/v2/garden/gold/cover.svg",
+      "scene": "/images/placeholders/v2/garden/gold/scene.svg",
+      "detail": "/images/placeholders/v2/garden/gold/detail.svg"
+    },
+    "garden-violet": {
+      "motif": "garden",
+      "palette": "violet",
+      "accent": "#78658f",
+      "tint": "#ebe4f1",
+      "cover": "/images/placeholders/v2/garden/violet/cover.svg",
+      "scene": "/images/placeholders/v2/garden/violet/scene.svg",
+      "detail": "/images/placeholders/v2/garden/violet/detail.svg"
+    },
+    "forest-rose": {
+      "motif": "forest",
+      "palette": "rose",
+      "accent": "#95616f",
+      "tint": "#efe1e5",
+      "cover": "/images/placeholders/v2/forest/rose/cover.svg",
+      "scene": "/images/placeholders/v2/forest/rose/scene.svg",
+      "detail": "/images/placeholders/v2/forest/rose/detail.svg"
+    },
+    "forest-sage": {
+      "motif": "forest",
+      "palette": "sage",
+      "accent": "#648155",
+      "tint": "#e6eddf",
+      "cover": "/images/placeholders/v2/forest/sage/cover.svg",
+      "scene": "/images/placeholders/v2/forest/sage/scene.svg",
+      "detail": "/images/placeholders/v2/forest/sage/detail.svg"
+    },
+    "forest-teal": {
+      "motif": "forest",
+      "palette": "teal",
+      "accent": "#397c79",
+      "tint": "#dfefeb",
+      "cover": "/images/placeholders/v2/forest/teal/cover.svg",
+      "scene": "/images/placeholders/v2/forest/teal/scene.svg",
+      "detail": "/images/placeholders/v2/forest/teal/detail.svg"
+    },
+    "forest-slate": {
+      "motif": "forest",
+      "palette": "slate",
+      "accent": "#526c85",
+      "tint": "#e3eaf1",
+      "cover": "/images/placeholders/v2/forest/slate/cover.svg",
+      "scene": "/images/placeholders/v2/forest/slate/scene.svg",
+      "detail": "/images/placeholders/v2/forest/slate/detail.svg"
+    },
+    "forest-gold": {
+      "motif": "forest",
+      "palette": "gold",
+      "accent": "#a58043",
+      "tint": "#f2ead9",
+      "cover": "/images/placeholders/v2/forest/gold/cover.svg",
+      "scene": "/images/placeholders/v2/forest/gold/scene.svg",
+      "detail": "/images/placeholders/v2/forest/gold/detail.svg"
+    },
+    "forest-violet": {
+      "motif": "forest",
+      "palette": "violet",
+      "accent": "#78658f",
+      "tint": "#ebe4f1",
+      "cover": "/images/placeholders/v2/forest/violet/cover.svg",
+      "scene": "/images/placeholders/v2/forest/violet/scene.svg",
+      "detail": "/images/placeholders/v2/forest/violet/detail.svg"
+    },
+    "ocean-rose": {
+      "motif": "ocean",
+      "palette": "rose",
+      "accent": "#95616f",
+      "tint": "#efe1e5",
+      "cover": "/images/placeholders/v2/ocean/rose/cover.svg",
+      "scene": "/images/placeholders/v2/ocean/rose/scene.svg",
+      "detail": "/images/placeholders/v2/ocean/rose/detail.svg"
+    },
+    "ocean-sage": {
+      "motif": "ocean",
+      "palette": "sage",
+      "accent": "#648155",
+      "tint": "#e6eddf",
+      "cover": "/images/placeholders/v2/ocean/sage/cover.svg",
+      "scene": "/images/placeholders/v2/ocean/sage/scene.svg",
+      "detail": "/images/placeholders/v2/ocean/sage/detail.svg"
+    },
+    "ocean-teal": {
+      "motif": "ocean",
+      "palette": "teal",
+      "accent": "#397c79",
+      "tint": "#dfefeb",
+      "cover": "/images/placeholders/v2/ocean/teal/cover.svg",
+      "scene": "/images/placeholders/v2/ocean/teal/scene.svg",
+      "detail": "/images/placeholders/v2/ocean/teal/detail.svg"
+    },
+    "ocean-slate": {
+      "motif": "ocean",
+      "palette": "slate",
+      "accent": "#526c85",
+      "tint": "#e3eaf1",
+      "cover": "/images/placeholders/v2/ocean/slate/cover.svg",
+      "scene": "/images/placeholders/v2/ocean/slate/scene.svg",
+      "detail": "/images/placeholders/v2/ocean/slate/detail.svg"
+    },
+    "ocean-gold": {
+      "motif": "ocean",
+      "palette": "gold",
+      "accent": "#a58043",
+      "tint": "#f2ead9",
+      "cover": "/images/placeholders/v2/ocean/gold/cover.svg",
+      "scene": "/images/placeholders/v2/ocean/gold/scene.svg",
+      "detail": "/images/placeholders/v2/ocean/gold/detail.svg"
+    },
+    "ocean-violet": {
+      "motif": "ocean",
+      "palette": "violet",
+      "accent": "#78658f",
+      "tint": "#ebe4f1",
+      "cover": "/images/placeholders/v2/ocean/violet/cover.svg",
+      "scene": "/images/placeholders/v2/ocean/violet/scene.svg",
+      "detail": "/images/placeholders/v2/ocean/violet/detail.svg"
+    },
+    "ship-rose": {
+      "motif": "ship",
+      "palette": "rose",
+      "accent": "#95616f",
+      "tint": "#efe1e5",
+      "cover": "/images/placeholders/v2/ship/rose/cover.svg",
+      "scene": "/images/placeholders/v2/ship/rose/scene.svg",
+      "detail": "/images/placeholders/v2/ship/rose/detail.svg"
+    },
+    "ship-sage": {
+      "motif": "ship",
+      "palette": "sage",
+      "accent": "#648155",
+      "tint": "#e6eddf",
+      "cover": "/images/placeholders/v2/ship/sage/cover.svg",
+      "scene": "/images/placeholders/v2/ship/sage/scene.svg",
+      "detail": "/images/placeholders/v2/ship/sage/detail.svg"
+    },
+    "ship-teal": {
+      "motif": "ship",
+      "palette": "teal",
+      "accent": "#397c79",
+      "tint": "#dfefeb",
+      "cover": "/images/placeholders/v2/ship/teal/cover.svg",
+      "scene": "/images/placeholders/v2/ship/teal/scene.svg",
+      "detail": "/images/placeholders/v2/ship/teal/detail.svg"
+    },
+    "ship-slate": {
+      "motif": "ship",
+      "palette": "slate",
+      "accent": "#526c85",
+      "tint": "#e3eaf1",
+      "cover": "/images/placeholders/v2/ship/slate/cover.svg",
+      "scene": "/images/placeholders/v2/ship/slate/scene.svg",
+      "detail": "/images/placeholders/v2/ship/slate/detail.svg"
+    },
+    "ship-gold": {
+      "motif": "ship",
+      "palette": "gold",
+      "accent": "#a58043",
+      "tint": "#f2ead9",
+      "cover": "/images/placeholders/v2/ship/gold/cover.svg",
+      "scene": "/images/placeholders/v2/ship/gold/scene.svg",
+      "detail": "/images/placeholders/v2/ship/gold/detail.svg"
+    },
+    "ship-violet": {
+      "motif": "ship",
+      "palette": "violet",
+      "accent": "#78658f",
+      "tint": "#ebe4f1",
+      "cover": "/images/placeholders/v2/ship/violet/cover.svg",
+      "scene": "/images/placeholders/v2/ship/violet/scene.svg",
+      "detail": "/images/placeholders/v2/ship/violet/detail.svg"
+    },
+    "city-rose": {
+      "motif": "city",
+      "palette": "rose",
+      "accent": "#95616f",
+      "tint": "#efe1e5",
+      "cover": "/images/placeholders/v2/city/rose/cover.svg",
+      "scene": "/images/placeholders/v2/city/rose/scene.svg",
+      "detail": "/images/placeholders/v2/city/rose/detail.svg"
+    },
+    "city-sage": {
+      "motif": "city",
+      "palette": "sage",
+      "accent": "#648155",
+      "tint": "#e6eddf",
+      "cover": "/images/placeholders/v2/city/sage/cover.svg",
+      "scene": "/images/placeholders/v2/city/sage/scene.svg",
+      "detail": "/images/placeholders/v2/city/sage/detail.svg"
+    },
+    "city-teal": {
+      "motif": "city",
+      "palette": "teal",
+      "accent": "#397c79",
+      "tint": "#dfefeb",
+      "cover": "/images/placeholders/v2/city/teal/cover.svg",
+      "scene": "/images/placeholders/v2/city/teal/scene.svg",
+      "detail": "/images/placeholders/v2/city/teal/detail.svg"
+    },
+    "city-slate": {
+      "motif": "city",
+      "palette": "slate",
+      "accent": "#526c85",
+      "tint": "#e3eaf1",
+      "cover": "/images/placeholders/v2/city/slate/cover.svg",
+      "scene": "/images/placeholders/v2/city/slate/scene.svg",
+      "detail": "/images/placeholders/v2/city/slate/detail.svg"
+    },
+    "city-gold": {
+      "motif": "city",
+      "palette": "gold",
+      "accent": "#a58043",
+      "tint": "#f2ead9",
+      "cover": "/images/placeholders/v2/city/gold/cover.svg",
+      "scene": "/images/placeholders/v2/city/gold/scene.svg",
+      "detail": "/images/placeholders/v2/city/gold/detail.svg"
+    },
+    "city-violet": {
+      "motif": "city",
+      "palette": "violet",
+      "accent": "#78658f",
+      "tint": "#ebe4f1",
+      "cover": "/images/placeholders/v2/city/violet/cover.svg",
+      "scene": "/images/placeholders/v2/city/violet/scene.svg",
+      "detail": "/images/placeholders/v2/city/violet/detail.svg"
+    },
+    "industry-rose": {
+      "motif": "industry",
+      "palette": "rose",
+      "accent": "#95616f",
+      "tint": "#efe1e5",
+      "cover": "/images/placeholders/v2/industry/rose/cover.svg",
+      "scene": "/images/placeholders/v2/industry/rose/scene.svg",
+      "detail": "/images/placeholders/v2/industry/rose/detail.svg"
+    },
+    "industry-sage": {
+      "motif": "industry",
+      "palette": "sage",
+      "accent": "#648155",
+      "tint": "#e6eddf",
+      "cover": "/images/placeholders/v2/industry/sage/cover.svg",
+      "scene": "/images/placeholders/v2/industry/sage/scene.svg",
+      "detail": "/images/placeholders/v2/industry/sage/detail.svg"
+    },
+    "industry-teal": {
+      "motif": "industry",
+      "palette": "teal",
+      "accent": "#397c79",
+      "tint": "#dfefeb",
+      "cover": "/images/placeholders/v2/industry/teal/cover.svg",
+      "scene": "/images/placeholders/v2/industry/teal/scene.svg",
+      "detail": "/images/placeholders/v2/industry/teal/detail.svg"
+    },
+    "industry-slate": {
+      "motif": "industry",
+      "palette": "slate",
+      "accent": "#526c85",
+      "tint": "#e3eaf1",
+      "cover": "/images/placeholders/v2/industry/slate/cover.svg",
+      "scene": "/images/placeholders/v2/industry/slate/scene.svg",
+      "detail": "/images/placeholders/v2/industry/slate/detail.svg"
+    },
+    "industry-gold": {
+      "motif": "industry",
+      "palette": "gold",
+      "accent": "#a58043",
+      "tint": "#f2ead9",
+      "cover": "/images/placeholders/v2/industry/gold/cover.svg",
+      "scene": "/images/placeholders/v2/industry/gold/scene.svg",
+      "detail": "/images/placeholders/v2/industry/gold/detail.svg"
+    },
+    "industry-violet": {
+      "motif": "industry",
+      "palette": "violet",
+      "accent": "#78658f",
+      "tint": "#ebe4f1",
+      "cover": "/images/placeholders/v2/industry/violet/cover.svg",
+      "scene": "/images/placeholders/v2/industry/violet/scene.svg",
+      "detail": "/images/placeholders/v2/industry/violet/detail.svg"
+    },
+    "arcane-rose": {
+      "motif": "arcane",
+      "palette": "rose",
+      "accent": "#95616f",
+      "tint": "#efe1e5",
+      "cover": "/images/placeholders/v2/arcane/rose/cover.svg",
+      "scene": "/images/placeholders/v2/arcane/rose/scene.svg",
+      "detail": "/images/placeholders/v2/arcane/rose/detail.svg"
+    },
+    "arcane-sage": {
+      "motif": "arcane",
+      "palette": "sage",
+      "accent": "#648155",
+      "tint": "#e6eddf",
+      "cover": "/images/placeholders/v2/arcane/sage/cover.svg",
+      "scene": "/images/placeholders/v2/arcane/sage/scene.svg",
+      "detail": "/images/placeholders/v2/arcane/sage/detail.svg"
+    },
+    "arcane-teal": {
+      "motif": "arcane",
+      "palette": "teal",
+      "accent": "#397c79",
+      "tint": "#dfefeb",
+      "cover": "/images/placeholders/v2/arcane/teal/cover.svg",
+      "scene": "/images/placeholders/v2/arcane/teal/scene.svg",
+      "detail": "/images/placeholders/v2/arcane/teal/detail.svg"
+    },
+    "arcane-slate": {
+      "motif": "arcane",
+      "palette": "slate",
+      "accent": "#526c85",
+      "tint": "#e3eaf1",
+      "cover": "/images/placeholders/v2/arcane/slate/cover.svg",
+      "scene": "/images/placeholders/v2/arcane/slate/scene.svg",
+      "detail": "/images/placeholders/v2/arcane/slate/detail.svg"
+    },
+    "arcane-gold": {
+      "motif": "arcane",
+      "palette": "gold",
+      "accent": "#a58043",
+      "tint": "#f2ead9",
+      "cover": "/images/placeholders/v2/arcane/gold/cover.svg",
+      "scene": "/images/placeholders/v2/arcane/gold/scene.svg",
+      "detail": "/images/placeholders/v2/arcane/gold/detail.svg"
+    },
+    "arcane-violet": {
+      "motif": "arcane",
+      "palette": "violet",
+      "accent": "#78658f",
+      "tint": "#ebe4f1",
+      "cover": "/images/placeholders/v2/arcane/violet/cover.svg",
+      "scene": "/images/placeholders/v2/arcane/violet/scene.svg",
+      "detail": "/images/placeholders/v2/arcane/violet/detail.svg"
+    },
+    "desert-rose": {
+      "motif": "desert",
+      "palette": "rose",
+      "accent": "#95616f",
+      "tint": "#efe1e5",
+      "cover": "/images/placeholders/v2/desert/rose/cover.svg",
+      "scene": "/images/placeholders/v2/desert/rose/scene.svg",
+      "detail": "/images/placeholders/v2/desert/rose/detail.svg"
+    },
+    "desert-sage": {
+      "motif": "desert",
+      "palette": "sage",
+      "accent": "#648155",
+      "tint": "#e6eddf",
+      "cover": "/images/placeholders/v2/desert/sage/cover.svg",
+      "scene": "/images/placeholders/v2/desert/sage/scene.svg",
+      "detail": "/images/placeholders/v2/desert/sage/detail.svg"
+    },
+    "desert-teal": {
+      "motif": "desert",
+      "palette": "teal",
+      "accent": "#397c79",
+      "tint": "#dfefeb",
+      "cover": "/images/placeholders/v2/desert/teal/cover.svg",
+      "scene": "/images/placeholders/v2/desert/teal/scene.svg",
+      "detail": "/images/placeholders/v2/desert/teal/detail.svg"
+    },
+    "desert-slate": {
+      "motif": "desert",
+      "palette": "slate",
+      "accent": "#526c85",
+      "tint": "#e3eaf1",
+      "cover": "/images/placeholders/v2/desert/slate/cover.svg",
+      "scene": "/images/placeholders/v2/desert/slate/scene.svg",
+      "detail": "/images/placeholders/v2/desert/slate/detail.svg"
+    },
+    "desert-gold": {
+      "motif": "desert",
+      "palette": "gold",
+      "accent": "#a58043",
+      "tint": "#f2ead9",
+      "cover": "/images/placeholders/v2/desert/gold/cover.svg",
+      "scene": "/images/placeholders/v2/desert/gold/scene.svg",
+      "detail": "/images/placeholders/v2/desert/gold/detail.svg"
+    },
+    "desert-violet": {
+      "motif": "desert",
+      "palette": "violet",
+      "accent": "#78658f",
+      "tint": "#ebe4f1",
+      "cover": "/images/placeholders/v2/desert/violet/cover.svg",
+      "scene": "/images/placeholders/v2/desert/violet/scene.svg",
+      "detail": "/images/placeholders/v2/desert/violet/detail.svg"
+    },
+    "cards-rose": {
+      "motif": "cards",
+      "palette": "rose",
+      "accent": "#95616f",
+      "tint": "#efe1e5",
+      "cover": "/images/placeholders/v2/cards/rose/cover.svg",
+      "scene": "/images/placeholders/v2/cards/rose/scene.svg",
+      "detail": "/images/placeholders/v2/cards/rose/detail.svg"
+    },
+    "cards-sage": {
+      "motif": "cards",
+      "palette": "sage",
+      "accent": "#648155",
+      "tint": "#e6eddf",
+      "cover": "/images/placeholders/v2/cards/sage/cover.svg",
+      "scene": "/images/placeholders/v2/cards/sage/scene.svg",
+      "detail": "/images/placeholders/v2/cards/sage/detail.svg"
+    },
+    "cards-teal": {
+      "motif": "cards",
+      "palette": "teal",
+      "accent": "#397c79",
+      "tint": "#dfefeb",
+      "cover": "/images/placeholders/v2/cards/teal/cover.svg",
+      "scene": "/images/placeholders/v2/cards/teal/scene.svg",
+      "detail": "/images/placeholders/v2/cards/teal/detail.svg"
+    },
+    "cards-slate": {
+      "motif": "cards",
+      "palette": "slate",
+      "accent": "#526c85",
+      "tint": "#e3eaf1",
+      "cover": "/images/placeholders/v2/cards/slate/cover.svg",
+      "scene": "/images/placeholders/v2/cards/slate/scene.svg",
+      "detail": "/images/placeholders/v2/cards/slate/detail.svg"
+    },
+    "cards-gold": {
+      "motif": "cards",
+      "palette": "gold",
+      "accent": "#a58043",
+      "tint": "#f2ead9",
+      "cover": "/images/placeholders/v2/cards/gold/cover.svg",
+      "scene": "/images/placeholders/v2/cards/gold/scene.svg",
+      "detail": "/images/placeholders/v2/cards/gold/detail.svg"
+    },
+    "cards-violet": {
+      "motif": "cards",
+      "palette": "violet",
+      "accent": "#78658f",
+      "tint": "#ebe4f1",
+      "cover": "/images/placeholders/v2/cards/violet/cover.svg",
+      "scene": "/images/placeholders/v2/cards/violet/scene.svg",
+      "detail": "/images/placeholders/v2/cards/violet/detail.svg"
+    }
+  },
+  "games": {
+    "burgundy": "castle-rose",
+    "citadels": "castle-rose",
+    "excalibur": "castle-gold",
+    "roma-xli": "castle-gold",
+    "the-old-king-s-crown": "castle-gold",
+    "grifoni-blades-for-hire": "castle-gold",
+    "inis": "castle-sage",
+    "rise-of-the-oak-dell": "castle-sage",
+    "cosmic": "planet-gold",
+    "terraforming": "planet-rose",
+    "starwars": "planet-slate",
+    "nemesis-aftermath": "planet-slate",
+    "nemesis-retaliation": "planet-slate",
+    "solar-titans": "planet-slate",
+    "andromeda-s-edge-genesis-fully-operational": "planet-violet",
+    "azul-mini": "geometric-teal",
+    "re-match-marble-puzzle-fighter": "geometric-teal",
+    "salad": "garden-sage",
+    "agricola": "garden-sage",
+    "tend-hive-cellar": "garden-teal",
+    "codex-naturalis": "forest-sage",
+    "bio-blitz": "forest-sage",
+    "spirit-island": "forest-sage",
+    "vaalbara": "forest-gold",
+    "there-and-back-again": "forest-gold",
+    "high-adventure-treasure-hunt": "forest-gold",
+    "fate-of-the-fellowship": "forest-teal",
+    "lord-of-the-rings-trick-taking-game": "forest-teal",
+    "the-crew-mission-deep-sea": "ocean-slate",
+    "deep-regrets-deeper-regrets": "ocean-slate",
+    "shallow-regrets": "ocean-teal",
+    "long-dark-sea": "ocean-teal",
+    "knarr": "ship-teal",
+    "libertalia-winds-of-galecrest": "ship-teal",
+    "rolling-seas": "ship-teal",
+    "puerto-rico": "ship-gold",
+    "an-infamous-traffic-second-edition": "ship-gold",
+    "burgle": "city-slate",
+    "spies-lies-supplies": "city-slate",
+    "detectives-vs-criminals": "city-slate",
+    "hitman-the-board-game": "city-slate",
+    "scarface": "city-rose",
+    "gang-wars": "city-rose",
+    "point-city": "city-teal",
+    "brass-pittsburgh": "industry-gold",
+    "ticket-to-ride": "industry-gold",
+    "clank": "arcane-teal",
+    "grimcoven": "arcane-violet",
+    "lands-of-evershade": "arcane-violet",
+    "b-e-l-o-w-the-asylum": "arcane-violet",
+    "the-wandmaker-s-apprentice": "arcane-violet",
+    "avalon-the-riven-veil": "arcane-violet",
+    "shug": "arcane-violet",
+    "ascension-15th-anniversary-edition": "arcane-gold",
+    "ascension-legends": "arcane-gold",
+    "final-titan": "arcane-gold",
+    "nexus-card-game": "arcane-gold",
+    "wonders": "desert-gold",
+    "duel": "desert-gold",
+    "forbidden-desert": "desert-gold",
+    "catan-base": "desert-gold",
+    "love-letter": "cards-rose",
+    "high-society": "cards-rose",
+    "decko-pistachio": "cards-sage",
+    "battlesticks": "cards-sage",
+    "goats-and-goblins": "cards-sage",
+    "davos": "cards-slate",
+    "parlay": "cards-slate",
+    "magical-athleete": "cards-gold",
+    "fliptoons": "cards-gold",
+    "52-duels-fight-with-playing-cards": "cards-violet"
+  }
+}
