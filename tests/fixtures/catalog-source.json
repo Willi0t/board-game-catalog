@@ -3,7 +3,7 @@
   "source": {
     "url": "https://docs.google.com/spreadsheets/d/1cQjSP-aUUlCe93NibwDcPdxPtAAS_KD6wiliVAMGRdk/edit",
     "sheet": "Sheet1",
-    "range": "A1:H71",
+    "range": "A1:H72",
     "exportedAt": "2026-11-10",
     "notesIncluded": false
   },
@@ -157,11 +157,24 @@
       "weight": 2.39,
       "playerInteraction": 3,
       "mechanics": ["Push your luck"],
-      "gameTypes": ["Competitive"],
+      "gameTypes": ["Competitive", "Party"],
       "upcoming": false
     },
     {
       "sourceRow": 13,
+      "title": "Terraforming Mars",
+      "playersSource": "1–5",
+      "playersMin": 1,
+      "playersMax": 5,
+      "bestWith": "3",
+      "weight": 3.27,
+      "playerInteraction": null,
+      "mechanics": ["Engine building", "Hand management", "Tile placement"],
+      "gameTypes": ["Competitive"],
+      "upcoming": false
+    },
+    {
+      "sourceRow": 14,
       "title": "Solar Titans",
       "playersMin": 1,
       "playersMax": 5,
@@ -174,7 +187,7 @@
       "upcoming": false
     },
     {
-      "sourceRow": 14,
+      "sourceRow": 15,
       "title": "7 Wonders",
       "playersMin": 3,
       "playersMax": 7,
@@ -187,7 +200,7 @@
       "upcoming": false
     },
     {
-      "sourceRow": 15,
+      "sourceRow": 16,
       "title": "Love Letter",
       "playersMin": 2,
       "playersMax": 6,
@@ -196,11 +209,11 @@
       "weight": 1.11,
       "playerInteraction": 4,
       "mechanics": ["Bluff & deduction", "Hand management"],
-      "gameTypes": ["Competitive"],
+      "gameTypes": ["Competitive", "Party"],
       "upcoming": false
     },
     {
-      "sourceRow": 16,
+      "sourceRow": 17,
       "title": "Puerto Rico",
       "playersMin": 2,
       "playersMax": 5,
@@ -213,7 +226,7 @@
       "upcoming": false
     },
     {
-      "sourceRow": 17,
+      "sourceRow": 18,
       "title": "Agricola",
       "playersMin": 1,
       "playersMax": 4,
@@ -226,7 +239,7 @@
       "upcoming": true
     },
     {
-      "sourceRow": 18,
+      "sourceRow": 19,
       "title": "Scarface 1920",
       "playersMin": 2,
       "playersMax": 4,
@@ -239,7 +252,7 @@
       "upcoming": false
     },
     {
-      "sourceRow": 19,
+      "sourceRow": 20,
       "title": "Libertalia: Winds of Galecrest",
       "playersMin": 2,
       "playersMax": 6,
@@ -248,11 +261,11 @@
       "weight": 2.18,
       "playerInteraction": 4,
       "mechanics": ["Hand management", "Action selection", "Set collection"],
-      "gameTypes": ["Competitive"],
+      "gameTypes": ["Competitive", "Party"],
       "upcoming": false
     },
     {
-      "sourceRow": 20,
+      "sourceRow": 21,
       "title": "Final Titan",
       "playersMin": 1,
       "playersMax": 5,
@@ -265,7 +278,7 @@
       "upcoming": false
     },
     {
-      "sourceRow": 21,
+      "sourceRow": 22,
       "title": "High Society",
       "playersMin": 3,
       "playersMax": 5,
@@ -274,11 +287,11 @@
       "weight": 1.48,
       "playerInteraction": 5,
       "mechanics": ["Auction & bidding"],
-      "gameTypes": ["Competitive"],
+      "gameTypes": ["Competitive", "Party"],
       "upcoming": false
     },
     {
-      "sourceRow": 22,
+      "sourceRow": 23,
       "title": "Parlay",
       "playersMin": 2,
       "playersMax": 8,
@@ -291,7 +304,7 @@
       "upcoming": false
     },
     {
-      "sourceRow": 23,
+      "sourceRow": 24,
       "title": "Grimcoven",
       "playersMin": 1,
       "playersMax": 4,
@@ -304,7 +317,7 @@
       "upcoming": false
     },
     {
-      "sourceRow": 24,
+      "sourceRow": 25,
       "title": "Long Dark Sea",
       "playersMin": 1,
       "playersMax": 4,
@@ -317,7 +330,7 @@
       "upcoming": false
     },
     {
-      "sourceRow": 25,
+      "sourceRow": 26,
       "title": "Vaalbara",
       "playersMin": 2,
       "playersMax": 5,
@@ -326,11 +339,11 @@
       "weight": 1.72,
       "playerInteraction": 3,
       "mechanics": ["Hand management", "Drafting", "Set collection"],
-      "gameTypes": ["Competitive"],
+      "gameTypes": ["Competitive", "Party"],
       "upcoming": false
     },
     {
-      "sourceRow": 26,
+      "sourceRow": 27,
       "title": "Excalibur",
       "playersMin": 2,
       "playersMax": 8,
@@ -343,7 +356,7 @@
       "upcoming": false
     },
     {
-      "sourceRow": 27,
+      "sourceRow": 28,
       "title": "Lands of Evershade",
       "playersMin": 3,
       "playersMax": 8,
@@ -356,7 +369,7 @@
       "upcoming": true
     },
     {
-      "sourceRow": 28,
+      "sourceRow": 29,
       "title": "Citadels",
       "playersMin": 2,
       "playersMax": 6,
@@ -365,11 +378,11 @@
       "weight": 2.24,
       "playerInteraction": 4,
       "mechanics": ["Drafting", "Action selection", "Bluff & deduction"],
-      "gameTypes": ["Competitive"],
+      "gameTypes": ["Competitive", "Party"],
       "upcoming": false
     },
     {
-      "sourceRow": 29,
+      "sourceRow": 30,
       "title": "Point City",
       "playersMin": 1,
       "playersMax": 4,
@@ -382,7 +395,7 @@
       "upcoming": false
     },
     {
-      "sourceRow": 30,
+      "sourceRow": 31,
       "title": "Catan (base)",
       "playersMin": 3,
       "playersMax": 4,
@@ -395,7 +408,7 @@
       "upcoming": false
     },
     {
-      "sourceRow": 31,
+      "sourceRow": 32,
       "title": "Forbidden Desert",
       "playersMin": 2,
       "playersMax": 5,
@@ -408,7 +421,7 @@
       "upcoming": false
     },
     {
-      "sourceRow": 32,
+      "sourceRow": 33,
       "title": "Ticket to Ride",
       "playersMin": 2,
       "playersMax": 5,
@@ -421,7 +434,7 @@
       "upcoming": false
     },
     {
-      "sourceRow": 33,
+      "sourceRow": 34,
       "title": "Cosmic Encounter",
       "playersMin": 3,
       "playersMax": 6,
@@ -430,11 +443,11 @@
       "weight": 2.58,
       "playerInteraction": 5,
       "mechanics": ["Negotiation", "Bluff & deduction", "Hand management"],
-      "gameTypes": ["Competitive"],
+      "gameTypes": ["Competitive", "Party"],
       "upcoming": false
     },
     {
-      "sourceRow": 34,
+      "sourceRow": 35,
       "title": "fate of the fellowship",
       "playersMin": 1,
       "playersMax": 5,
@@ -447,7 +460,7 @@
       "upcoming": false
     },
     {
-      "sourceRow": 35,
+      "sourceRow": 36,
       "title": "fliptoons",
       "playersMin": 1,
       "playersMax": 4,
@@ -460,7 +473,7 @@
       "upcoming": false
     },
     {
-      "sourceRow": 36,
+      "sourceRow": 37,
       "title": "azul mini",
       "playersMin": 2,
       "playersMax": 4,
@@ -473,7 +486,7 @@
       "upcoming": false
     },
     {
-      "sourceRow": 37,
+      "sourceRow": 38,
       "title": "there and back again",
       "playersMin": 1,
       "playersMax": 4,
@@ -486,7 +499,7 @@
       "upcoming": false
     },
     {
-      "sourceRow": 38,
+      "sourceRow": 39,
       "title": "lord of the rings trick taking game",
       "playersMin": 1,
       "playersMax": 4,
@@ -499,7 +512,7 @@
       "upcoming": false
     },
     {
-      "sourceRow": 39,
+      "sourceRow": 40,
       "title": "magical athleete",
       "playersMin": 2,
       "playersMax": 6,
@@ -508,11 +521,11 @@
       "weight": 1.19,
       "playerInteraction": 4,
       "mechanics": ["Dice rolling", "Drafting"],
-      "gameTypes": ["Competitive", "Racing"],
+      "gameTypes": ["Competitive", "Racing", "Party"],
       "upcoming": false
     },
     {
-      "sourceRow": 40,
+      "sourceRow": 41,
       "title": "goats and goblins",
       "playersMin": 2,
       "playersMax": 6,
@@ -521,11 +534,11 @@
       "weight": 1.33,
       "playerInteraction": 4,
       "mechanics": ["Push your luck", "Hand management"],
-      "gameTypes": ["Competitive"],
+      "gameTypes": ["Competitive", "Party"],
       "upcoming": false
     },
     {
-      "sourceRow": 41,
+      "sourceRow": 42,
       "title": "inis",
       "playersMin": 2,
       "playersMax": 4,
@@ -538,7 +551,7 @@
       "upcoming": false
     },
     {
-      "sourceRow": 42,
+      "sourceRow": 43,
       "title": "spirit island",
       "playersMin": 1,
       "playersMax": 4,
@@ -551,7 +564,7 @@
       "upcoming": false
     },
     {
-      "sourceRow": 43,
+      "sourceRow": 44,
       "title": "Nemesis + Aftermath",
       "playersMin": 1,
       "playersMax": 5,
@@ -564,7 +577,7 @@
       "upcoming": false
     },
     {
-      "sourceRow": 44,
+      "sourceRow": 45,
       "title": "An Infamous Traffic: Second Edition",
       "playersMin": 1,
       "playersMax": 5,
@@ -577,7 +590,7 @@
       "upcoming": true
     },
     {
-      "sourceRow": 45,
+      "sourceRow": 46,
       "title": "SHUG",
       "playersMin": 1,
       "playersMax": 6,
@@ -590,7 +603,7 @@
       "upcoming": true
     },
     {
-      "sourceRow": 46,
+      "sourceRow": 47,
       "title": "Battlesticks",
       "playersMin": 2,
       "playersMax": 5,
@@ -603,7 +616,7 @@
       "upcoming": true
     },
     {
-      "sourceRow": 47,
+      "sourceRow": 48,
       "title": "Re;MATCH: Marble Puzzle Fighter",
       "playersMin": 2,
       "playersMax": 2,
@@ -616,7 +629,7 @@
       "upcoming": true
     },
     {
-      "sourceRow": 48,
+      "sourceRow": 49,
       "title": "Roma XLI",
       "playersMin": 1,
       "playersMax": 9,
@@ -629,7 +642,7 @@
       "upcoming": true
     },
     {
-      "sourceRow": 49,
+      "sourceRow": 50,
       "title": "52 Duels: Fight with Playing Cards",
       "playersMin": null,
       "playersMax": null,
@@ -642,7 +655,7 @@
       "upcoming": false
     },
     {
-      "sourceRow": 50,
+      "sourceRow": 51,
       "title": "Grifoni: Blades for Hire",
       "playersMin": 1,
       "playersMax": 4,
@@ -655,7 +668,7 @@
       "upcoming": true
     },
     {
-      "sourceRow": 51,
+      "sourceRow": 52,
       "title": "Bio Blitz",
       "playersMin": 2,
       "playersMax": 6,
@@ -668,7 +681,7 @@
       "upcoming": false
     },
     {
-      "sourceRow": 52,
+      "sourceRow": 53,
       "title": "High Adventure: Treasure Hunt",
       "playersMin": null,
       "playersMax": null,
@@ -681,7 +694,7 @@
       "upcoming": false
     },
     {
-      "sourceRow": 53,
+      "sourceRow": 54,
       "title": "Rolling Seas",
       "playersMin": 1,
       "playersMax": 6,
@@ -694,7 +707,7 @@
       "upcoming": true
     },
     {
-      "sourceRow": 54,
+      "sourceRow": 55,
       "title": "Rise of the Oak Dell",
       "playersMin": 1,
       "playersMax": 100,
@@ -707,7 +720,7 @@
       "upcoming": false
     },
     {
-      "sourceRow": 55,
+      "sourceRow": 56,
       "title": "Avalon: The Riven Veil",
       "playersMin": 2,
       "playersMax": 4,
@@ -720,7 +733,7 @@
       "upcoming": true
     },
     {
-      "sourceRow": 56,
+      "sourceRow": 57,
       "title": "DECKO + Pistachio",
       "playersMin": 2,
       "playersMax": 5,
@@ -729,11 +742,11 @@
       "weight": null,
       "playerInteraction": 4,
       "mechanics": ["Deckbuilding", "Auction & bidding", "Bluff & deduction"],
-      "gameTypes": ["Competitive"],
+      "gameTypes": ["Competitive", "Party"],
       "upcoming": true
     },
     {
-      "sourceRow": 57,
+      "sourceRow": 58,
       "title": "Nemesis: Retaliation",
       "playersMin": 1,
       "playersMax": 5,
@@ -746,7 +759,7 @@
       "upcoming": true
     },
     {
-      "sourceRow": 58,
+      "sourceRow": 59,
       "title": "Gang Wars",
       "playersMin": 1,
       "playersMax": 4,
@@ -759,7 +772,7 @@
       "upcoming": true
     },
     {
-      "sourceRow": 59,
+      "sourceRow": 60,
       "title": "DAVOS",
       "playersMin": 2,
       "playersMax": 8,
@@ -768,11 +781,11 @@
       "weight": 2.67,
       "playerInteraction": 5,
       "mechanics": ["Negotiation", "Bluff & deduction"],
-      "gameTypes": ["Competitive"],
+      "gameTypes": ["Competitive", "Party"],
       "upcoming": true
     },
     {
-      "sourceRow": 60,
+      "sourceRow": 61,
       "title": "Hitman: The Board Game",
       "playersMin": null,
       "playersMax": null,
@@ -782,10 +795,10 @@
       "playerInteraction": 3,
       "mechanics": ["Action points", "Hand management"],
       "gameTypes": ["Competitive"],
-      "upcoming": false
+      "upcoming": true
     },
     {
-      "sourceRow": 61,
+      "sourceRow": 62,
       "title": "Brass: Pittsburgh",
       "playersMin": 1,
       "playersMax": 4,
@@ -798,7 +811,7 @@
       "upcoming": true
     },
     {
-      "sourceRow": 62,
+      "sourceRow": 63,
       "title": "The Old King's Crown",
       "playersMin": 1,
       "playersMax": 4,
@@ -807,11 +820,11 @@
       "weight": 3.71,
       "playerInteraction": 5,
       "mechanics": ["Auction & bidding", "Bluff & deduction", "Area control"],
-      "gameTypes": ["Competitive"],
+      "gameTypes": ["Competitive", "Party"],
       "upcoming": false
     },
     {
-      "sourceRow": 63,
+      "sourceRow": 64,
       "title": "B.E.L.O.W.: The Asylum",
       "playersMin": null,
       "playersMax": null,
@@ -824,7 +837,7 @@
       "upcoming": true
     },
     {
-      "sourceRow": 64,
+      "sourceRow": 65,
       "title": "Detectives vs Criminals",
       "playersMin": null,
       "playersMax": null,
@@ -833,11 +846,11 @@
       "weight": null,
       "playerInteraction": 5,
       "mechanics": ["Bluff & deduction", "Hand management"],
-      "gameTypes": ["Competitive", "Team-based"],
+      "gameTypes": ["Competitive", "Team-based", "Party"],
       "upcoming": true
     },
     {
-      "sourceRow": 65,
+      "sourceRow": 66,
       "title": "The Wandmaker's Apprentice",
       "playersMin": null,
       "playersMax": null,
@@ -850,7 +863,7 @@
       "upcoming": false
     },
     {
-      "sourceRow": 66,
+      "sourceRow": 67,
       "title": "Andromeda's Edge + Genesis (Fully Operational)",
       "playersMin": 2,
       "playersMax": 4,
@@ -863,7 +876,7 @@
       "upcoming": true
     },
     {
-      "sourceRow": 67,
+      "sourceRow": 68,
       "title": "Ascension: 15th Anniversary Edition",
       "playersMin": null,
       "playersMax": null,
@@ -876,7 +889,7 @@
       "upcoming": false
     },
     {
-      "sourceRow": 68,
+      "sourceRow": 69,
       "title": "Ascension Legends",
       "playersMin": 1,
       "playersMax": 4,
@@ -889,7 +902,7 @@
       "upcoming": false
     },
     {
-      "sourceRow": 69,
+      "sourceRow": 70,
       "title": "Shallow Regrets",
       "playersMin": null,
       "playersMax": null,
@@ -902,7 +915,7 @@
       "upcoming": false
     },
     {
-      "sourceRow": 70,
+      "sourceRow": 71,
       "title": "Nexus Card Game",
       "playersMin": null,
       "playersMax": null,
@@ -915,7 +928,7 @@
       "upcoming": true
     },
     {
-      "sourceRow": 71,
+      "sourceRow": 72,
       "title": "Tend + Hive & Cellar",
       "playersMin": 1,
       "playersMax": 6,

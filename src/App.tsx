@@ -5,6 +5,9 @@ import type { Game, GalleryImage, DetailTab } from './types/game';
 import styles from './App.module.css';
 
 import useFavorites from './hooks/useFavorites';
+import resolveSelectedGame from './utils/resolveSelectedGame';
+import useMediaQuery from './hooks/useMediaQuery';
+import GameInfoPanel from './components/GameInfoPanel/GameInfoPanel';
 import filterGames, { type Availability } from './utils/filterGames';
 import Sidebar from './components/Sidebar/Sidebar';
 import Header from './components/Header/Header';
@@ -13,6 +16,13 @@ import GameCollection from './components/GameCollection/GameCollection';
 import GameDetails from './components/GameDetails/GameDetails';
 import ImageModal from './components/ImageModal/ImageModal';
 import GameDetailDrawer from './components/GameDetailDrawer/GameDetailDrawer';
+import GamePicker from './components/GamePicker/GamePicker';
+import GamePickerResult from './components/GamePickerResult/GamePickerResult';
+import {
+  defaultPickerCriteria,
+  matchPickerGames,
+  type PickerCriteria,
+} from './utils/gamePicker';
 
 export default function App() {
   const [category, setCategory] = useState('Alla spel');
@@ -23,18 +33,29 @@ export default function App() {
   const [gameType, setGameType] = useState('');
   const [availability, setAvailability] = useState<Availability>('all');
   const [sort, setSort] = useState('default');
-  const [selectedGameId, setSelectedGameId] = useState(games[0].id);
+  const [selectedGameId, setSelectedGameId] = useState<string | null>(null);
+  const isMobile = useMediaQuery('(max-width: 900px)');
+  const [isMobileInfoOpen, setIsMobileInfoOpen] = useState(false);
+  const infoOpenerRef = useRef<HTMLElement>(null);
+  const infoFallbackRef = useRef<HTMLElement>(null);
   const [tab, setTab] = useState<DetailTab>('Om spelet');
   const [modal, setModal] = useState<GalleryImage | null>(null);
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [detailGame, setDetailGame] = useState<Game | null>(null);
+  const [isPickerOpen, setIsPickerOpen] = useState(false);
+  const pickerOpenerRef = useRef<HTMLElement>(null);
+  const [pickerCriteria, setPickerCriteria] = useState(defaultPickerCriteria);
+  // A snapshot of applied guide criteria is the sole active filter in guide mode.
+  // Draft edits stay separate until the user confirms the final step.
+  const [activePickerCriteria, setActivePickerCriteria] =
+    useState<PickerCriteria | null>(null);
   const drawerOpenerRef = useRef<HTMLElement>(null);
   const imageOpenerRef = useRef<HTMLElement>(null);
   const libraryRef = useRef<HTMLElement>(null);
   const drawerFallbackRef = useRef<HTMLElement>(null);
-  const detailsRef = useRef<HTMLElement>(null);
   const { favorites, toggleFavorite } = useFavorites();
   const closeModal = useCallback(() => setModal(null), []);
-  const closeDrawer = useCallback(() => setIsDrawerOpen(false), []);
+  const closeDrawer = useCallback(() => setDetailGame(null), []);
+  const closePicker = useCallback(() => setIsPickerOpen(false), []);
   const openImage = (image: GalleryImage, trigger: HTMLButtonElement) => {
     imageOpenerRef.current = trigger;
     setModal(image);
@@ -43,40 +64,40 @@ export default function App() {
     drawerOpenerRef.current = trigger;
     setSelectedGameId(game.id);
     setTab('Om spelet');
-    setIsDrawerOpen(true);
+    setDetailGame(game);
   };
-  const filteredGames = filterGames(games, {
-    category,
-    favorites,
-    mechanic,
-    gameType,
-    availability,
-    query,
-    players,
-    duration,
-    sort,
-  });
-  const selectedGame =
-    filteredGames.find((g) => g.id === selectedGameId) || filteredGames[0];
-  const { tint, accent } = selectedGame
-    ? resolveGameColors(selectedGame)
+  const filteredGames = activePickerCriteria
+    ? filterGames(matchPickerGames(games, activePickerCriteria), { sort })
+    : filterGames(games, {
+        category,
+        favorites,
+        mechanic,
+        gameType,
+        availability,
+        query,
+        players,
+        duration,
+        sort,
+      });
+  const selectedGame = resolveSelectedGame(filteredGames, selectedGameId);
+  const resolvedGameId = selectedGame?.id ?? null;
+  // Persist the fallback without invoking manual-selection focus/dialog behavior.
+  if (selectedGameId !== resolvedGameId) {
+    setSelectedGameId(resolvedGameId);
+    if (isMobileInfoOpen) setIsMobileInfoOpen(false);
+  }
+  const themeGame = detailGame ?? selectedGame;
+  const { tint, accent } = themeGame
+    ? resolveGameColors(themeGame)
     : { tint: '#e9e4ed', accent: '#815467' };
-  const selectGame = (game: Game) => {
+  const selectGame = (game: Game, trigger: HTMLButtonElement) => {
+    infoOpenerRef.current = trigger;
     setSelectedGameId(game.id);
     setTab('Om spelet');
-    if (window.matchMedia('(max-width: 650px)').matches)
-      requestAnimationFrame(() => {
-        if (document.querySelector('dialog[open]')) return;
-        detailsRef.current?.scrollIntoView({
-          behavior: window.matchMedia('(prefers-reduced-motion: reduce)')
-            .matches
-            ? 'instant'
-            : 'smooth',
-          block: 'start',
-        });
-      });
+    setIsMobileInfoOpen(isMobile);
   };
   const reset = () => {
+    setActivePickerCriteria(null);
     setCategory('Alla spel');
     setQuery('');
     setPlayers('');
@@ -84,6 +105,23 @@ export default function App() {
     setMechanic('');
     setGameType('');
     setAvailability('all');
+  };
+  const changeCategory = (nextCategory: string) => {
+    setActivePickerCriteria(null);
+    setCategory(nextCategory);
+  };
+  const openPicker = (
+    trigger: HTMLButtonElement,
+    changes?: Partial<PickerCriteria>,
+  ) => {
+    pickerOpenerRef.current = trigger;
+    if (activePickerCriteria)
+      setPickerCriteria({ ...activePickerCriteria, ...changes });
+    setIsPickerOpen(true);
+  };
+  const applyPicker = () => {
+    setActivePickerCriteria(pickerCriteria);
+    setIsPickerOpen(false);
   };
   const themeStyle: React.CSSProperties & {
     '--tint': string;
@@ -94,72 +132,106 @@ export default function App() {
       <Sidebar
         games={games}
         favorites={favorites}
-        category={category}
-        onCategoryChange={setCategory}
+        category={activePickerCriteria ? 'Guidens resultat' : category}
+        onCategoryChange={changeCategory}
         onReset={reset}
       />
       <main ref={libraryRef} tabIndex={-1} className={styles['workspace']}>
         <Header
           contentClassName={styles['workspace-inner']}
-          category={category}
-          hasGames={filteredGames.length > 0}
-          onRandomGame={() =>
-            selectGame(
-              filteredGames[Math.floor(Math.random() * filteredGames.length)],
-            )
-          }
+          category={activePickerCriteria ? 'Guidens resultat' : category}
+          onOpenPicker={openPicker}
         >
-          <CatalogToolbar
-            mechanic={mechanic}
-            gameType={gameType}
-            availability={availability}
-            onMechanicChange={setMechanic}
-            onGameTypeChange={setGameType}
-            onAvailabilityChange={setAvailability}
-            onReset={reset}
-            query={query}
-            category={category}
-            players={players}
-            duration={duration}
-            onQueryChange={setQuery}
-            onCategoryChange={setCategory}
-            onPlayersChange={setPlayers}
-            onDurationChange={setDuration}
-          />
           <div className={styles['collection-layout']}>
-            <GameCollection
-              games={filteredGames}
-              selectedGame={selectedGame}
-              favorites={favorites}
-              sort={sort}
-              onSortChange={setSort}
-              onSelectGame={selectGame}
-              onOpenDetails={openDetails}
-              onReset={reset}
-            />
-            {selectedGame && (
-              <GameDetails
-                game={selectedGame}
-                isFavorite={favorites.includes(selectedGame.id)}
-                onToggleFavorite={toggleFavorite}
-                tab={tab}
-                onTabChange={setTab}
-                onOpenImage={openImage}
-                onShowMore={openDetails}
-                detailsRef={detailsRef}
-                collectionIndex={games.indexOf(selectedGame) + 1}
+            <div className={styles['catalog-column']}>
+              {activePickerCriteria ? (
+                <GamePickerResult
+                  games={games}
+                  criteria={activePickerCriteria}
+                  count={filteredGames.length}
+                  onEdit={openPicker}
+                  onClear={() => setActivePickerCriteria(null)}
+                />
+              ) : (
+                <CatalogToolbar
+                  mechanic={mechanic}
+                  gameType={gameType}
+                  availability={availability}
+                  onMechanicChange={setMechanic}
+                  onGameTypeChange={setGameType}
+                  onAvailabilityChange={setAvailability}
+                  onReset={reset}
+                  query={query}
+                  category={category}
+                  players={players}
+                  duration={duration}
+                  onQueryChange={setQuery}
+                  onCategoryChange={changeCategory}
+                  onPlayersChange={setPlayers}
+                  onDurationChange={setDuration}
+                />
+              )}
+              <GameCollection
+                games={filteredGames}
+                selectedGame={selectedGame}
+                favorites={favorites}
+                sort={sort}
+                onSortChange={setSort}
+                onSelectGame={selectGame}
+                onOpenDetails={openDetails}
+                onReset={
+                  activePickerCriteria
+                    ? (trigger) => openPicker(trigger)
+                    : reset
+                }
+                isPickerResult={activePickerCriteria !== null}
               />
-            )}
+            </div>
+            <GameInfoPanel
+              gameId={selectedGame?.id}
+              isMobile={isMobile}
+              isOpen={isMobileInfoOpen}
+              onClose={() => setIsMobileInfoOpen(false)}
+              openerRef={infoOpenerRef}
+              fallbackRef={libraryRef}
+              panelRef={infoFallbackRef}
+            >
+              {selectedGame && (
+                <GameDetails
+                  game={selectedGame}
+                  isFavorite={favorites.includes(selectedGame.id)}
+                  onToggleFavorite={toggleFavorite}
+                  tab={tab}
+                  onTabChange={setTab}
+                  onOpenImage={openImage}
+                  onShowMore={openDetails}
+                  collectionIndex={games.indexOf(selectedGame) + 1}
+                />
+              )}
+            </GameInfoPanel>
           </div>
         </Header>
       </main>
-      {isDrawerOpen && selectedGame && (
+      {isPickerOpen && (
+        <GamePicker
+          games={games}
+          onClose={closePicker}
+          criteria={pickerCriteria}
+          onCriteriaChange={setPickerCriteria}
+          onApply={applyPicker}
+          openerRef={pickerOpenerRef}
+          fallbackRef={libraryRef}
+        />
+      )}
+      {detailGame && (
         <GameDetailDrawer
-          game={selectedGame}
+          game={detailGame}
           onClose={closeDrawer}
           onOpenImage={openImage}
           openerRef={drawerOpenerRef}
-          fallbackRef={libraryRef}
+          fallbackRef={
+            isMobile && isMobileInfoOpen ? infoFallbackRef : libraryRef
+          }
           panelRef={drawerFallbackRef}
         />
       )}
@@ -168,7 +240,13 @@ export default function App() {
           modal={modal}
           onClose={closeModal}
           openerRef={imageOpenerRef}
-          fallbackRef={isDrawerOpen ? drawerFallbackRef : libraryRef}
+          fallbackRef={
+            detailGame
+              ? drawerFallbackRef
+              : isMobile && isMobileInfoOpen
+                ? infoFallbackRef
+                : libraryRef
+          }
         />
       )}
     </div>

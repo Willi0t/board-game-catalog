@@ -11,9 +11,10 @@ interface GameCollectionProps {
   favorites: string[];
   sort: string;
   onSortChange: (sort: string) => void;
-  onSelectGame: (game: Game) => void;
+  onSelectGame: (game: Game, trigger: HTMLButtonElement) => void;
   onOpenDetails: (game: Game, trigger: HTMLButtonElement) => void;
-  onReset: () => void;
+  onReset: (trigger: HTMLButtonElement) => void;
+  isPickerResult?: boolean;
 }
 export default function GameCollection({
   games,
@@ -24,6 +25,7 @@ export default function GameCollection({
   onSelectGame,
   onOpenDetails,
   onReset,
+  isPickerResult = false,
 }: GameCollectionProps) {
   return (
     <section className={styles['collection']} aria-label="Spelsamling">
@@ -57,9 +59,15 @@ export default function GameCollection({
       ) : (
         <div className={styles['empty']}>
           <Icon name="search" size={34} />
-          <h2>Inga spel hittades</h2>
+          <h2>
+            {isPickerResult
+              ? 'Inga spel matchar dina val'
+              : 'Inga spel hittades'}
+          </h2>
           <p>Prova en annan sökning eller ta bort dina filter.</p>
-          <button onClick={onReset}>Visa alla spel</button>
+          <button onClick={(event) => onReset(event.currentTarget)}>
+            {isPickerResult ? 'Ändra mina val' : 'Visa alla spel'}
+          </button>
         </div>
       )}
       <p className={styles['collection-footnote']}>

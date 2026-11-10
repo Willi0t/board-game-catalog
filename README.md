@@ -66,6 +66,9 @@ CI. Arbetsflödet har endast `contents: read` och publicerar eller deployar inge
 - `src/main.tsx` startar React med StrictMode och laddar globala stilar.
 - `src/App.tsx` kopplar ihop layout, gemensamt state och komponenter.
 - `src/App.module.css` innehåller övergripande layoutstilar.
+- `src/components/GameInfoPanel/` ger katalogen och guiden samma informationspanel.
+  `MobileGamePanel/` visar samma innehåll i en tillgänglig dialog på mindre skärmar.
+  `src/hooks/useMediaQuery.ts` följer ändringar av skärmbredd.
 - `src/components/GameDetailDrawer/` innehåller den större detaljvyn som öppnas
   med dubbelklick på ett spelkort eller informationspanelens ”Visa mer”.
 - `src/hooks/useModalDialog.ts` hanterar dialogernas fokus, fokusåterställning och
@@ -93,9 +96,7 @@ CI. Arbetsflödet har endast `contents: read` och publicerar eller deployar inge
 
 All speldata finns i `src/games.json`. Bilder finns i `public/images/`.
 
-Katalogen innehåller 70 importerade poster (50 i samlingen och 20 kommande)
-samt den tidigare posten Terraforming Mars, som saknas i exporten och har
-okänd tillgänglighet. Spelarantal och svårighet följer importunderlaget;
+Katalogen innehåller 71 importerade poster (50 i samlingen och 21 kommande). Spelarantal och svårighet följer importunderlaget;
 exakt utgåva är inte oberoende verifierad och värden kan avse grundspelet.
 Spelarinteraktion är subjektiv och taggar är vår granskade indelning.
 Kommande uppgifter kan vara preliminära. Beskrivningar som fanns tidigare är
@@ -154,7 +155,7 @@ Behåll osäkerhetsmarkeringar per fält och skilj bildstatus från speldata. Fa
    utanför exporten bevaras utan att tilldelas ägarstatus eller granskade fakta.
 4. Kör `node --test tests/*.test.mjs` samt projektets kontroller. Testerna
    använder Node:s inbyggda testverktyg samt befintliga TypeScript/esbuild; inga nya
-   testberoenden krävs. Nuvarande exportkontroll förväntar 70 poster/20 kommande;
+   testberoenden krävs. Nuvarande exportkontroll förväntar 71 poster/21 kommande;
    uppdatera dessa förväntningar vid en avsiktlig ändring av underlaget.
 
 När ett kommande spel levererats: ändra dess `upcoming` till `false` i
@@ -164,7 +165,106 @@ annars skriver importen tillbaka exportens status. Sätt
 
 ## Funktioner
 
-Sökning i namn och taggar, äldre kategorier, separata filter för spelmekanik, speltyp och tillgänglighet, spelar- och tidsfilter, sortering, favoriter, slumpval och bildgalleri. Ett värde väljs per tagggrupp; grupperna kombineras med AND. Okända värden matchar inte aktiva spelar-/tidsfilter. Tidssortering lägger okända tider sist. Slumpval följer samma filter. Mobil layout och stöd för minskad rörelse ingår. Typsnitt hämtas från Google Fonts med lokala systemtypsnitt som reserv.
+Sökning i namn och taggar, äldre kategorier, separata filter för spelmekanik, speltyp och tillgänglighet, spelar- och tidsfilter, sortering, favoriter, spelguide och bildgalleri. Ett värde väljs per tagggrupp; grupperna kombineras med AND. Okända värden matchar inte aktiva spelar-/tidsfilter. Tidssortering lägger okända tider sist. ”Välj åt mig” öppnar den separata guiden nedan. Mobil layout och stöd för minskad rörelse ingår. Typsnitt hämtas från Google Fonts med lokala systemtypsnitt som reserv.
+
+## Gemensam spelinformation
+
+Katalogen och guidens resultat använder samma `GameInfoPanel` och `GameDetails`.
+På dator är innehållet uppdelat i ungefär 58 % grid och 42 % informationspanel.
+Panelen börjar under sidhuvudet, är sticky och har egen scrollning. Dess scroll
+återställs vid spelbyte utan att gridens sidscroll flyttas. Bilden behåller sina
+proportioner; status, faktarader, beskrivning och separata tagggrupper återanvänds.
+
+Första spelet i den synliga, sorterade griden är förvalt i båda vyerna. Ett
+manuellt val behålls vid filtrering och sortering så länge spelet finns kvar.
+Saknas ett giltigt val väljs första synliga spelet; vid noll träffar rensas
+urvalet och panelen visar ”Inga spel att visa”. Automatisk markering flyttar
+varken fokus eller sidans scroll och öppnar inga dialoger. Den gemensamma
+urvalsregeln finns i `src/utils/resolveSelectedGame.ts`.
+På skärmar upp till 900 px öppnar enkelklick samma innehåll i en modal mobilpanel
+med **Tillbaka till spelen**. Den använder befintligt fokus- och scrollås och
+återställer gridens scrollposition och fokus vid återgång. Bildförstoring och
+**Visa mer** kan öppnas ovanpå panelen; Escape stänger den översta dialogen först.
+
+Terraforming Mars använder sitt stabila id `terraforming` och godkända uppgifter,
+med okänd spelarinteraktion (`null`). Det är spel nummer 12/källrad 13 i det
+sparade importunderlaget. Efterföljande källrader är förskjutna ett steg.
+Hitman är markerat som kommande. Importmatchningen använder källtitel till stabilt
+id och validerar också källraden; en oväntad titel eller rad stoppar importen.
+
+## Välj åt mig
+
+Knappen öppnar en tillgänglig dialog med tre steg: **Sällskap → Spelkänsla → Önskemål**.
+Spelarantal väljs obligatoriskt med snabbvalsknapparna 1–6, som visar dynamiska
+träffantal. Spelets kända spelarintervall måste omfatta det valda antalet. Guiden använder hela katalogen.
+
+Svårighet är ett flerval: **Låg (1 ≤ vikt < 2)**, **Medel (2 ≤ vikt < 3)** och
+**Hög (3 ≤ vikt ≤ 5)**. Indelningen använder originalvärdet före eventuell avrundning.
+Inga val betyder ”Spelar ingen roll”. OR används inom svårighetsnivåer,
+speltyper, interaktionsnivåer och mekaniker; AND används mellan filtergrupper. Okänd svårighet och
+interaktion matchar endast utan respektive filter. Interaktion är flerval: Låg (0–1/5), Medel (2–3/5) och Hög (4–5/5).
+0/5 är giltig låg interaktion; inga valda nivåer betyder ”Spelar ingen roll”.
+Endast kända spel i samlingen ingår normalt; ”Inkludera kommande spel” tillåter
+även okänd tillgänglighet.
+
+Varje alternativ har en badge med antal spel. Antalen beräknas i ordningen
+**Spelarantal → Svårighet → Speltyp → Interaktion → Mekaniker**, med tillgänglighet
+som gemensam grund. Bara tidigare grupper begränsar ett alternativ; andra val i
+samma OR-grupp och senare grupper påverkar inte dess antal. Spelarintervall
+räknas vid varje inkluderat antal. Totalen använder unika spel-id:n och är aldrig
+en summering av taggarnas antal.
+
+Nollalternativ visar ”0 spel” och en röd markering. Omarkerade nollalternativ är
+spärrade; markerade val ligger kvar, visar ”matchar inte” och kan avmarkeras.
+Interaktion kan även rensas med **Rensa interaktionsval**. En lista över val att
+se över länkar till rätt steg. Inga senare val rensas automatiskt.
+Tillgänglighetsvalet uppdaterar samtliga antal, även när användaren går bakåt.
+Bara totalantalet annonseras med `aria-live`; alternativens antal ingår i
+kontrollernas tillgängliga namn. Interaktionsnivåernas antal påverkas inte av
+andra val i samma grupp. Mekanikernas antal och slutresultatet använder däremot
+unionen av alla valda interaktionsnivåer. Sammanfattningen visar samtliga nivåer.
+
+Träffantalet uppdateras löpande. **Visa N spel** stänger dialogen och visar
+alla träffar i katalogens vanliga grid, utan slumpning, med samma automatiska förval som i katalogen.
+Guidens bekräftade kriterier är då den enda aktiva filtreringen. De vanliga
+biblioteksfiltren pausas och döljs, medan sortering fortfarande fungerar.
+**Ändra mina val** öppnar guiden med tidigare val. Ändringar är utkast tills de
+bekräftas; urvalet behålls om spelet fortfarande finns bland träffarna. **Rensa guidens filter**
+återgår till bibliotekets tidigare filter. Kategorinavigering lämnar också guidens resultat.
+
+Enkelklick väljer spelet till sidopanelen; dubbelklick och **Visa mer** öppnar
+befintlig detaljvy. Escape stänger först bildförstoring och sedan detaljpanelen.
+Dialoger återanvänder fokuslås, fokusåterställning och scrollås. Vid noll träffar
+kan användaren ändra sina val eller granska konkreta förslag som faktiskt ger
+träffar; inget tillämpas automatiskt.
+
+Ren matchning, alternativantal (`countPickerOptions`), ogiltiga val
+(`findPickerConflicts`) och ändringsförslag finns i `src/utils/gamePicker.ts`. Kör
+`node --test tests/*.test.mjs` för spelarintervall, exakta svårighetsgränser,
+flerval, OR/AND, okända värden, Party och kommande spel. Kör även
+`npm run format:check`, `npm run lint`, `npm run typecheck`, `npm run build`
+och `git diff --check` efter ändringar.
+
+Kontrollerat lokalt med Node.js 24.20.0: 31 tester, formatkontroll, lint,
+typkontroll och produktionsbygge. Flödet har även körts med tangentbord i Chrome
+vid 1280 och 390 pixlars bredd: gemensam panel i båda vyerna, träffantal/grid,
+Terraforming Mars, Hitmans status, bevarat/rensat urval, tomma resultat,
+panelens scrollåterställning och mobilens återgång till rätt scrollposition.
+Detaljvy och bildförstoring kontrollerades även ovanpå mobilpanelen med Escape,
+fokuslås, fokusåterställning och scrollås.
+Guidens dynamiska antal, spärrade nollalternativ, bevarade/avmarkerade ogiltiga
+val, navigation bakåt och slutknappens antal mot resultatgriden har också
+kontrollerats med tangentbord i båda bredderna. Tillgängliga kontrollnamn
+kontrollerades i Chromes tillgänglighetsträd.
+Mobilbredd är emulerad; fysisk mobil, skärmläsaruppläsning och andra webbläsare är
+inte verifierade.
+
+De 13 godkända Party-markeringarna finns även i `tests/fixtures/catalog-source.json`.
+Detta sparade importunderlag kan användas med
+`node scripts/import-catalog.mjs tests/fixtures/catalog-source.json`.
+Importeraren normaliserar `party` och `paty` till den kanoniska taggen `Party`,
+behåller andra speltyper och tar bort dubbletter. En ny manuell export behöver
+behålla dessa godkända markeringar; importera aldrig Notes.
 
 ## GitHub
 

@@ -1,18 +1,12 @@
 .details {
-  border-radius: 11px;
-  background: #fff9;
-  box-shadow: 0 8px 35px #55433406;
-  overflow-x: hidden;
-  overflow-y: auto;
-  max-height: calc(100dvh - 40px);
-  border: 1px solid #fff9;
-  animation: reveal 0.35s ease;
-  position: sticky;
-  top: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .detail-hero {
-  height: 186px;
+  aspect-ratio: 1200 / 680;
+  flex-shrink: 0;
   position: relative;
   overflow: hidden;
 }
@@ -21,6 +15,7 @@
   height: 100%;
   --image-box-height: 100%;
   --image-height: 100%;
+  --image-fit: contain;
 }
 
 .hero-label {
@@ -138,6 +133,7 @@
   align-items: center;
   gap: 7px;
   padding: 13px 24px;
+  margin-top: auto;
   border-top: 1px solid #eee5df;
   font-size: 9px;
   color: #9c9286;
@@ -147,24 +143,6 @@
   margin-left: auto;
   color: #b6a89d;
   letter-spacing: 1px;
-}
-
-@keyframes reveal {
-  from {
-    opacity: 0.45;
-    transform: translateY(5px);
-  }
-
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-@media (min-width: 1500px) {
-  .detail-hero {
-    height: 220px;
-  }
 }
 
 @media (max-width: 1150px) {
@@ -178,18 +156,6 @@
 }
 
 @media (max-width: 650px) {
-  .details {
-    max-height: none;
-    overflow: hidden;
-    position: relative;
-    top: 0;
-    width: 100%;
-  }
-
-  .detail-hero {
-    height: 155px;
-  }
-
   .detail-content > h2 {
     font-size: 25px;
     margin-bottom: 16px;
@@ -213,12 +179,6 @@
   color: #74665f;
 }
 
-@media (max-width: 650px) {
-  .details {
-    scroll-margin-top: 12px;
-  }
-}
-
 .actions {
   padding: 0 24px 20px;
 }
@@ -234,4 +194,8 @@
   color: white;
   border-radius: 6px;
   font-size: 12px;
+}
+
+.status {
+  margin: -10px 0 20px;
 }

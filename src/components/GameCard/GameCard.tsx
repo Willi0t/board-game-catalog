@@ -11,7 +11,7 @@ interface GameCardProps {
   game: Game;
   isSelected: boolean;
   isFavorite: boolean;
-  onSelectGame: (game: Game) => void;
+  onSelectGame: (game: Game, trigger: HTMLButtonElement) => void;
   onOpenDetails: (game: Game, trigger: HTMLButtonElement) => void;
 }
 export default function GameCard({
@@ -24,7 +24,7 @@ export default function GameCard({
   return (
     <button
       className={`${styles['game-card']} ${isSelected ? styles.selected : ''}`}
-      onClick={() => onSelectGame(game)}
+      onClick={(event) => onSelectGame(game, event.currentTarget)}
       onDoubleClick={(event) => onOpenDetails(game, event.currentTarget)}
       aria-pressed={isSelected}
     >

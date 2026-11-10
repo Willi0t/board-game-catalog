@@ -1,7 +1,6 @@
 import GameFacts from '../GameFacts/GameFacts';
 import GameMetadata from '../GameMetadata/GameMetadata';
 import GameStatus from '../GameStatus/GameStatus';
-import React from 'react';
 import Icon from '../Icon/Icon';
 import GameGallery from '../GameGallery/GameGallery';
 import GameImage from '../GameImage/GameImage';
@@ -17,7 +16,6 @@ interface GameDetailsProps {
   tab: DetailTab;
   onTabChange: (tab: DetailTab) => void;
   onOpenImage: (image: GalleryImage, trigger: HTMLButtonElement) => void;
-  detailsRef: React.Ref<HTMLElement>;
   collectionIndex: number;
   onShowMore: (game: Game, trigger: HTMLButtonElement) => void;
 }
@@ -28,14 +26,12 @@ export default function GameDetails({
   tab,
   onTabChange,
   onOpenImage,
-  detailsRef,
   collectionIndex,
   onShowMore,
 }: GameDetailsProps) {
   const tabs: DetailTab[] = ['Om spelet', 'Bilder'];
   return (
     <aside
-      ref={detailsRef}
       className={styles['details']}
       aria-label="Information om valt spel"
       key={game.id}
@@ -64,6 +60,9 @@ export default function GameDetails({
           {game.edition || 'SPELINFORMATION'}
         </p>
         <h2>{game.title}</h2>
+        <div className={styles.status}>
+          <GameStatus game={game} />
+        </div>
         <GameFacts game={game} />
         <div
           className={styles['detail-tabs']}
