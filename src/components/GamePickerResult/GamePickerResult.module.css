@@ -1,0 +1,40 @@
+.results {
+  padding: 18px;
+  margin-bottom: 24px;
+  border: 1px solid #d9cdd2;
+  border-radius: 10px;
+  background: #fff9;
+}
+
+.count {
+  margin-top: 0;
+  color: #5c494e;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.actions,
+.suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.suggestions p {
+  flex-basis: 100%;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.actions button,
+.suggestions button {
+  padding: 11px 16px;
+  border: 1px solid #cfc1c8;
+  border-radius: 6px;
+  background: #fff9;
+  color: #5c494e;
+  font-size: 13px;
+  text-align: left;
+  overflow-wrap: anywhere;
+}

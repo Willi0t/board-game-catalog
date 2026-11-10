@@ -13,6 +13,16 @@ const importedFields = [
   'upcoming',
 ];
 
+export function normalizeGameTypes(tags) {
+  return [
+    ...new Set(
+      tags.map((tag) =>
+        ['party', 'paty'].includes(tag.toLowerCase()) ? 'Party' : tag,
+      ),
+    ),
+  ];
+}
+
 export function mergeCatalog(existing, source) {
   if (source.games.length !== matches.length)
     throw new Error('Importen och matchningslistan har olika antal poster.');
@@ -20,11 +30,13 @@ export function mergeCatalog(existing, source) {
   const sourceRows = new Set();
   const originalById = new Map(existing.map((game) => [game.id, game]));
   const imported = source.games.map((row) => {
-    const match = matches.find(
-      (match) =>
-        match.sourceRow === row.sourceRow && match.sourceTitle === row.title,
-    );
-    if (!match || ids.has(match.id) || sourceRows.has(row.sourceRow))
+    const match = matches.find((match) => match.sourceTitle === row.title);
+    if (
+      !match ||
+      match.sourceRow !== row.sourceRow ||
+      ids.has(match.id) ||
+      sourceRows.has(row.sourceRow)
+    )
       throw new Error(`Ogiltig eller dubbel matchning: ${row.title}`);
     ids.add(match.id);
     sourceRows.add(row.sourceRow);
@@ -43,6 +55,7 @@ export function mergeCatalog(existing, source) {
         };
     if (match.displayTitle) game.title = match.displayTitle;
     for (const field of importedFields) game[field] = row[field];
+    game.gameTypes = normalizeGameTypes(row.gameTypes);
     // All legacy times were explicitly demo content. Never promote them to facts.
     if (!original || original.metadataStatus === 'placeholder')
       game.minutes = null;
@@ -58,7 +71,10 @@ export function mergeCatalog(existing, source) {
       sourceRow: row.sourceRow,
       sourceTitle: row.title,
       importedAt: source.source.exportedAt,
-      preliminary: row.upcoming || row.title === 'Parlay',
+      // Preserve existing edition/data caveats when availability alone changes.
+      preliminary:
+        original?.catalogMetadata?.preliminary ??
+        (row.upcoming || row.title === 'Parlay'),
       editionMatch:
         row.title === 'Parlay' ? 'provisional' : 'not-independently-verified',
     };
@@ -90,7 +106,9 @@ export function mergeCatalog(existing, source) {
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
-  const source = JSON.parse(fs.readFileSync('catalog-data.json', 'utf8'));
+  const source = JSON.parse(
+    fs.readFileSync(process.argv[2] ?? 'catalog-data.json', 'utf8'),
+  );
   const existing = JSON.parse(fs.readFileSync('src/games.json', 'utf8'));
   const games = mergeCatalog(existing, source);
   fs.writeFileSync('src/games.json', JSON.stringify(games, null, 2) + '\n');

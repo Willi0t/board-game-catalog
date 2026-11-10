@@ -1,0 +1,42 @@
+.panel {
+  position: sticky;
+  top: 20px;
+  height: calc(100dvh - 40px);
+  min-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  border: 1px solid #d9cdd2;
+  border-radius: 11px;
+  background: #fff9;
+  box-shadow: 0 8px 35px #55433406;
+}
+
+.empty {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 28px;
+  text-align: center;
+  color: #74665f;
+}
+
+.empty h2 {
+  color: #5c494e;
+  font-size: 21px;
+}
+
+.empty p {
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+  .panel {
+    position: static;
+    height: auto;
+    min-height: 150px;
+    margin-top: 24px;
+  }
+}

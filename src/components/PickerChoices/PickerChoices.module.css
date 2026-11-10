@@ -1,0 +1,55 @@
+.group {
+  border: 0;
+  padding: 0;
+  margin: 0 0 24px;
+  min-width: 0;
+}
+.group legend {
+  font-weight: 600;
+  font-size: 16px;
+  color: #5c494e;
+}
+.group p {
+  font-size: 12px;
+  color: #74665f;
+  line-height: 1.7;
+}
+.choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.choices label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 11px;
+  background: #fff9;
+  border: 1px solid #d9cdd2;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #5c494e;
+  cursor: pointer;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+.choices input {
+  accent-color: var(--accent);
+  flex-shrink: 0;
+}
+.choices input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.choices label[data-empty='true'] {
+  border-color: #d8a9ae;
+}
+
+.choices label:has(input:disabled) {
+  cursor: not-allowed;
+}
+
+.choices label {
+  flex-wrap: wrap;
+}

@@ -5,15 +5,13 @@ import styles from './Header.module.css';
 
 interface HeaderProps {
   category: string;
-  hasGames: boolean;
-  onRandomGame: () => void;
+  onOpenPicker: (trigger: HTMLButtonElement) => void;
   children: React.ReactNode;
   contentClassName: string;
 }
 export default function Header({
   category,
-  hasGames,
-  onRandomGame,
+  onOpenPicker,
   children,
   contentClassName,
 }: HeaderProps) {
@@ -43,8 +41,9 @@ export default function Header({
           </div>
           <button
             className={styles['random-button']}
-            disabled={!hasGames}
-            onClick={onRandomGame}
+            aria-haspopup="dialog"
+            aria-label="Välj åt mig"
+            onClick={(event) => onOpenPicker(event.currentTarget)}
           >
             <Icon name="dice" size={18} />
             Välj åt mig
