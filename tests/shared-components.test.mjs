@@ -28,7 +28,10 @@ async function loadComponent(filename) {
     const specifier = match[1];
     const resolved = specifier.startsWith('.')
       ? await loadComponent(
-          path.resolve(path.dirname(fullPath), `${specifier}.tsx`),
+          path.resolve(
+            path.dirname(fullPath),
+            `${specifier}${fs.existsSync(path.resolve(path.dirname(fullPath), `${specifier}.tsx`)) ? '.tsx' : '.ts'}`,
+          ),
         )
       : pathToFileURL(require.resolve(specifier)).href;
     code = code.replace(match[0], `from ${JSON.stringify(resolved)}`);
@@ -47,6 +50,9 @@ const GameEditionDetails = await component(
 );
 const PickerOption = await component(
   'src/components/PickerOption/PickerOption.tsx',
+);
+const ExploreNavigation = await component(
+  'src/components/ExploreNavigation/ExploreNavigation.tsx',
 );
 const render = (Component, props) =>
   renderToStaticMarkup(createElement(Component, props));
@@ -121,4 +127,59 @@ test('counted checkbox disables only unselected zero options and keeps selected 
     assert.equal(html.includes('matchar inte'), checked && count === 0);
     assert.equal(html.includes('aria-invalid="true"'), checked && count === 0);
   }
+});
+
+test('Explore shows five mechanics and reveals all mechanics then types for hidden selections', () => {
+  const options = Array.from({ length: 7 }, (_, index) => ({
+    tag: `Mechanic ${index + 1}`,
+    count: 10 - index,
+  }));
+  const props = {
+    mechanics: options,
+    gameTypes: [{ tag: 'Competitive', count: 3 }],
+    gameType: '',
+    mechanic: '',
+    onGameTypeChange: () => {},
+    onMechanicChange: () => {},
+  };
+  const collapsed = render(ExploreNavigation, props);
+  assert(collapsed.includes('Spelmekanik'));
+  assert(collapsed.includes('Mechanic 5'));
+  assert(!collapsed.includes('Mechanic 6'));
+  assert(!collapsed.includes('Speltyp'));
+  assert(collapsed.includes('aria-expanded="false"'));
+  assert(collapsed.includes('Visa fler'));
+  const listId = collapsed.match(/<div id="([^"]+)"/)[1];
+  assert(collapsed.includes(`aria-controls="${listId}"`));
+  const visibleSelection = render(ExploreNavigation, {
+    ...props,
+    mechanic: 'Mechanic 1',
+  });
+  assert(visibleSelection.includes('aria-expanded="false"'));
+  for (const selection of [
+    { mechanic: 'Mechanic 7' },
+    { gameType: 'Competitive' },
+  ]) {
+    const expanded = render(ExploreNavigation, { ...props, ...selection });
+    assert(expanded.includes('Mechanic 7'));
+    assert(expanded.includes('Competitive'));
+    assert(expanded.indexOf('Spelmekanik') < expanded.indexOf('Speltyp'));
+    assert(expanded.includes('aria-expanded="true"'));
+    assert(expanded.includes('aria-pressed="true"'));
+    assert(expanded.includes('Visa färre'));
+  }
+});
+
+test('shared game type badges show every type and omit missing types without a category fallback', async () => {
+  const GameTypeBadges = await component(
+    'src/components/GameTypeBadges/GameTypeBadges.tsx',
+  );
+  const html = render(GameTypeBadges, {
+    gameTypes: ['Competitive', 'Party', 'Social'],
+  });
+  assert(html.includes('aria-label="Speltyper"'));
+  for (const tag of ['Competitive', 'Party', 'Social'])
+    assert(html.includes(`<li>${tag}</li>`));
+  assert.equal((html.match(/<li>/g) || []).length, 3);
+  assert.equal(render(GameTypeBadges, { gameTypes: [] }), '');
 });

@@ -1,0 +1,10 @@
+.toggle {
+  background: transparent;
+  color: #74665f;
+  font-size: 12px;
+  padding: 10px 14px;
+  margin-top: 4px;
+  text-align: left;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

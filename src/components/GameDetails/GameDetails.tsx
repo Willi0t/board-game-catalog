@@ -1,3 +1,4 @@
+import GameTypeBadges from '../GameTypeBadges/GameTypeBadges';
 import GameFacts from '../GameFacts/GameFacts';
 import GameDescription from '../GameDescription/GameDescription';
 import GameEditionDetails from '../GameEditionDetails/GameEditionDetails';
@@ -52,7 +53,9 @@ export default function GameDetails({
           placeholderLabel="PLATSHÅLLARBILD"
           labelClassName={styles['hero-placeholder']}
         />
-        <span className={styles['hero-label']}>{game.category}</span>
+        <div className={styles['hero-label']}>
+          <GameTypeBadges gameTypes={game.gameTypes} />
+        </div>
         <button
           className={`${styles['favorite-button']} ${isFavorite ? styles['is-favorite'] : ''}`}
           aria-label={

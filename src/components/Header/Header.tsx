@@ -4,13 +4,13 @@ import Icon from '../Icon/Icon';
 import styles from './Header.module.css';
 
 interface HeaderProps {
-  category: string;
+  viewLabel: string;
   onOpenPicker: (trigger: HTMLButtonElement) => void;
   children: React.ReactNode;
   contentClassName: string;
 }
 export default function Header({
-  category,
+  viewLabel,
   onOpenPicker,
   children,
   contentClassName,
@@ -20,7 +20,7 @@ export default function Header({
       <header className={styles['topbar']}>
         <div className={styles['breadcrumb']}>
           Mitt bibliotek <Icon name="chevron" size={13} />
-          <span>{category}</span>
+          <span>{viewLabel}</span>
         </div>
         <span className={styles['demo-label']}>
           <span /> Förhandsversion
@@ -31,9 +31,9 @@ export default function Header({
           <div>
             <p className={styles['eyebrow']}>SAMLINGEN, PÅ ETT STÄLLE</p>
             <h1 className={styles.heading}>
-              {category === 'Alla spel'
+              {viewLabel === 'Alla spel'
                 ? 'Nästa spelkväll börjar här.'
-                : category}
+                : viewLabel}
             </h1>
             <p className={styles['intro']}>
               Bläddra, upptäck och hitta något att samlas kring.

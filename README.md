@@ -65,7 +65,7 @@ CI. Arbetsflödet har endast `contents: read` och publicerar eller deployar inge
 
 - `src/main.tsx` startar React med StrictMode och laddar globala stilar.
 - `src/App.tsx` kopplar ihop layout, komponenter och enkla samordnade åtgärder
-  som spelval, kategoribyte och återställning. Hooks anropas här, så gemensam state
+  som spelval, biblioteks-/taggval och återställning. Hooks anropas här, så gemensam state
   stannar hos komponenternas gemensamma ägare.
 - `src/hooks/useCatalog.ts` äger vanliga filter, sortering och valt spel. Synliga
   spel och automatiskt förval beräknas med befintliga rena hjälpfunktioner.
@@ -97,7 +97,12 @@ CI. Arbetsflödet har endast `contents: read` och publicerar eller deployar inge
   `./components/GameCard/GameCard`, utan återexport via `index.ts`.
 - `src/hooks/useFavorites.ts` hanterar favoriter i localStorage.
 - `src/utils/filterGames.ts` filtrerar och sorterar utan att ändra originaldatan.
-- `src/constants/categories.ts` innehåller den gemensamma kategorilistan.
+- `src/constants/catalogOptions.ts` härleder taggalternativ från hela katalogen.
+  `src/utils/getTagCounts.ts` räknar unika spel per tagg och sorterar efter antal
+  fallande, därefter svensk alfabetisk ordning. `ExploreNavigation` samordnar
+  mekanikernas topp fem och gemensam utfällning av mekaniker/speltyper. `TagNavigation`
+  återanvänds för båda grupperna, med identitetsbundna färgpunkter från
+  `src/utils/getTagColor.ts`.
 - `src/types/game.ts` definierar den gemensamma speltypen och typer för bildmodal
   och informationsflikar. Importerad JSON kontrolleras mot `Game[]` i `src/data/games.ts`.
 - `src/styles.css` innehåller typsnitt, grundinställningar, globala elementstilar
@@ -182,7 +187,39 @@ annars skriver importen tillbaka exportens status. Sätt
 
 ## Funktioner
 
-Sökning i namn och taggar, äldre kategorier, separata filter för spelmekanik, speltyp och tillgänglighet, spelar- och tidsfilter, sortering, favoriter, spelguide och bildgalleri. Ett värde väljs per tagggrupp; grupperna kombineras med AND. Okända värden matchar inte aktiva spelar-/tidsfilter. Tidssortering lägger okända tider sist. ”Välj åt mig” öppnar den separata guiden nedan. Mobil layout och stöd för minskad rörelse ingår. Typsnitt hämtas från Google Fonts med lokala systemtypsnitt som reserv.
+Sökning i namn och taggar, datadriven utforskning efter speltyp och spelmekanik, separata filter för spelmekanik, speltyp och tillgänglighet, spelar- och tidsfilter, sortering, favoriter, spelguide och bildgalleri. Ett värde väljs per tagggrupp; grupperna kombineras med AND. Okända värden matchar inte aktiva spelar-/tidsfilter. Tidssortering lägger okända tider sist. ”Välj åt mig” öppnar den separata guiden nedan. Mobil layout och stöd för minskad rörelse ingår. Typsnitt hämtas från Google Fonts med lokala systemtypsnitt som reserv.
+
+## Utforska samlingen
+
+Infällt **Utforska** visar de fem största spelmekanikerna från `mechanics` med
+färgpunkter och högerställda antal. **Visa fler** visar alla spelmekaniker och därefter
+gruppen **Speltyp** från `gameTypes`, i samma stil. En gemensam **Visa färre**
+fäller ihop till topp fem igen. Knappen använder `aria-expanded` och
+`aria-controls`. Katalogens mekanikkontroll och guidens mekanikfråga finns kvar.
+
+Ordningen är antal unika spel fallande, därefter svensk alfabetisk ordning.
+Antal och ordning bygger på hela katalogen, inklusive kommande spel, och ändras
+inte av aktiva filter. Varje spel räknas en gång per tagg. Färgerna hör till
+taggnamnen och påverkas inte av sorteringen. Aktiva val visar även en bock och
+`aria-pressed`, så markeringen förlitar sig inte enbart på färg.
+
+Väljs en speltyp eller en spelmekanik utanför topp fem i filterkontrollerna
+öppnas listan automatiskt,
+även mobilens **Utforska** om den är stängd. Användaren kan därefter fälla ihop
+listan manuellt; ett nytt dolt val öppnar den igen.
+
+Menyn och katalogens filterkontroller delar samma värden. En speltyp och en
+mekanik kan kombineras med AND och med sökning, spelarantal, tid, tillgänglighet
+och Favoriter. Ett andra klick på en markerad tagg avmarkerar den. Menyval
+lämnar guidens resultat och återgår till vanliga katalogfilter. **Alla spel**
+och **Favoriter** väljer biblioteksvy och behåller övriga filter; logotypen och
+**Återställ filter** återställer filtreringen. Sorteringen behålls.
+
+Menyn har egen scrollning på dator. Upp till 900 px bredd är **Utforska**
+utfällbart med en höjdbegränsad, scrollbar tagglista. Alla alternativ går att nå
+med tangentbord och på korta skärmar. Aktiv tagg visar både bock och
+`aria-pressed`. Den gamla demokategorilistan och dess filter är borttagna;
+spelens äldre `category`-fält finns kvar för befintligt innehåll och sökning.
 
 ## Gemensam spelinformation
 
@@ -214,7 +251,7 @@ bild-/dialoglagret först. `GameGallery` renderar en bildlista, och bildval samt
 reservteman fortsätter hämtas centralt från befintliga bildhjälpare.
 
 Terraforming Mars använder sitt stabila id `terraforming` och godkända uppgifter,
-med okänd spelarinteraktion (`null`). Det är spel nummer 12/källrad 13 i det
+med godkänd spelarinteraktion 3/5 (Medel i guidens interaktionsfilter). Det är spel nummer 12/källrad 13 i det
 sparade importunderlaget. Efterföljande källrader är förskjutna ett steg.
 Hitman är markerat som kommande. Importmatchningen använder källtitel till stabilt
 id och validerar också källraden; en oväntad titel eller rad stoppar importen.
@@ -257,7 +294,7 @@ Guidens bekräftade kriterier är då den enda aktiva filtreringen. De vanliga
 biblioteksfiltren pausas och döljs, medan sortering fortfarande fungerar.
 **Ändra mina val** öppnar guiden med tidigare val. Ändringar är utkast tills de
 bekräftas; urvalet behålls om spelet fortfarande finns bland träffarna. **Rensa guidens filter**
-återgår till bibliotekets tidigare filter. Kategorinavigering lämnar också guidens resultat.
+återgår till bibliotekets tidigare filter. Sidomenyns biblioteks- och taggval lämnar också guidens resultat.
 
 Enkelklick väljer spelet till sidopanelen; dubbelklick och **Visa mer** öppnar
 befintlig detaljvy. Escape stänger först bildförstoring och sedan detaljpanelen.
@@ -268,11 +305,11 @@ träffar; inget tillämpas automatiskt.
 Ren matchning, alternativantal (`countPickerOptions`), ogiltiga val
 (`findPickerConflicts`) och ändringsförslag finns i `src/utils/gamePicker.ts`. Kör
 `node --test tests/*.test.mjs` för spelarintervall, exakta svårighetsgränser,
-flerval, OR/AND, okända värden, Party och kommande spel. Kör även
+flerval, OR/AND, okända värden, Party, Social och kommande spel. Kör även
 `npm run format:check`, `npm run lint`, `npm run typecheck`, `npm run build`
 och `git diff --check` efter ändringar.
 
-Kontrollerat lokalt med Node.js 24.20.0: 36 tester, formatkontroll, lint,
+Kontrollerat lokalt med Node.js 24.20.0: 45 tester, formatkontroll, lint,
 typkontroll och produktionsbygge. Flödet har även körts med tangentbord i Chrome
 vid 1280 och 390 pixlars bredd: gemensam panel i båda vyerna, träffantal/grid,
 Terraforming Mars, Hitmans status, bevarat/rensat urval, tomma resultat,
@@ -284,6 +321,10 @@ Guidens dynamiska antal, spärrade nollalternativ, bevarade/avmarkerade ogiltiga
 val, navigation bakåt och slutknappens antal mot resultatgriden har också
 kontrollerats med tangentbord i båda bredderna. Tillgängliga kontrollnamn
 kontrollerades i Chromes tillgänglighetsträd.
+Sidomenyns topp fem, utfällning, stabila färgpunkter, automatiskt synliga
+externa val, ordning, katalogantal, kombinerade filter och Favoriter
+och navigation från guidens resultat har verifierats vid 1280 och 390 px,
+inklusive tangentbordsåtkomst till sista alternativet vid 450 px skärmhöjd.
 Mobilbredd är emulerad; fysisk mobil, skärmläsaruppläsning och andra webbläsare är
 inte verifierade.
 
@@ -336,3 +377,20 @@ npm run preview
 `typecheck` kör `tsc --noEmit`. `build` kör samma typkontroll före Vite-bygget.
 
 ZIP-leveransen innehåller även `dist/`, ett färdigbyggt statiskt exemplar. Själva källprojektet kräver npm-kommandona ovan. Ingen API-nyckel, databas eller betald AI-tjänst används av den färdiga katalogen.
+
+### Speltyper och badges
+
+`gameTypes` är källa för speltypsbadges i informationspanelen och den större
+spelvyn. Alla speltyper visas med radbrytning; tomma listor ger ingen badge.
+Äldre `category` finns kvar i datan men används inte som presentationsreserv.
+Social har lagts till på de 29 godkända spelen i både katalog och sparat
+importunderlag. Importen normaliserar `social` till `Social` och tar bort
+dubbletter, liksom för Party. Taggen blir automatiskt tillgänglig i Utforska,
+katalogfilter och guidens val/träffantal. Menyn visar fortsatt mekanikernas
+topp fem först och samtliga mekaniker följt av speltyper vid utfällning.
+En tom interaktionscell vid import får inte radera Terraforming Mars lokalt
+godkända 3/5.
+
+Social-filter och guidens antal/resultat samt samtliga speltypsbadges har
+kontrollerats i Chrome vid 1280 och 390 px. Radbrytning har även kontrollerats
+vid 320 px, med fyra speltyper och utan överlappning med favoritknappen.

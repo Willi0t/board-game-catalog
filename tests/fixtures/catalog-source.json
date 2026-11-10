@@ -79,7 +79,7 @@
       "weight": 2.04,
       "playerInteraction": 5,
       "mechanics": ["Trick-taking"],
-      "gameTypes": ["Cooperative"],
+      "gameTypes": ["Cooperative", "Social"],
       "upcoming": false
     },
     {
@@ -157,7 +157,7 @@
       "weight": 2.39,
       "playerInteraction": 3,
       "mechanics": ["Push your luck"],
-      "gameTypes": ["Competitive", "Party"],
+      "gameTypes": ["Competitive", "Party", "Social"],
       "upcoming": false
     },
     {
@@ -168,7 +168,7 @@
       "playersMax": 5,
       "bestWith": "3",
       "weight": 3.27,
-      "playerInteraction": null,
+      "playerInteraction": 3,
       "mechanics": ["Engine building", "Hand management", "Tile placement"],
       "gameTypes": ["Competitive"],
       "upcoming": false
@@ -196,7 +196,7 @@
       "weight": 2.32,
       "playerInteraction": 3,
       "mechanics": ["Drafting", "Engine building", "Set collection"],
-      "gameTypes": ["Competitive"],
+      "gameTypes": ["Competitive", "Social"],
       "upcoming": false
     },
     {
@@ -209,7 +209,7 @@
       "weight": 1.11,
       "playerInteraction": 4,
       "mechanics": ["Bluff & deduction", "Hand management"],
-      "gameTypes": ["Competitive", "Party"],
+      "gameTypes": ["Competitive", "Party", "Social"],
       "upcoming": false
     },
     {
@@ -222,7 +222,7 @@
       "weight": 3.23,
       "playerInteraction": 3,
       "mechanics": ["Action selection", "Engine building"],
-      "gameTypes": ["Competitive"],
+      "gameTypes": ["Competitive", "Social"],
       "upcoming": false
     },
     {
@@ -248,7 +248,7 @@
       "weight": 3.8,
       "playerInteraction": 4,
       "mechanics": ["Worker placement", "Deckbuilding", "Area control"],
-      "gameTypes": ["Competitive"],
+      "gameTypes": ["Competitive", "Social"],
       "upcoming": false
     },
     {
@@ -261,7 +261,7 @@
       "weight": 2.18,
       "playerInteraction": 4,
       "mechanics": ["Hand management", "Action selection", "Set collection"],
-      "gameTypes": ["Competitive", "Party"],
+      "gameTypes": ["Competitive", "Party", "Social"],
       "upcoming": false
     },
     {
@@ -274,7 +274,7 @@
       "weight": 2,
       "playerInteraction": 4,
       "mechanics": ["Drafting", "Tactical combat"],
-      "gameTypes": ["Competitive", "Cooperative", "Team-based"],
+      "gameTypes": ["Competitive", "Cooperative", "Team-based", "Social"],
       "upcoming": false
     },
     {
@@ -287,7 +287,7 @@
       "weight": 1.48,
       "playerInteraction": 5,
       "mechanics": ["Auction & bidding"],
-      "gameTypes": ["Competitive", "Party"],
+      "gameTypes": ["Competitive", "Party", "Social"],
       "upcoming": false
     },
     {
@@ -300,7 +300,7 @@
       "weight": 2.8,
       "playerInteraction": 3,
       "mechanics": ["Hand management"],
-      "gameTypes": ["Competitive", "Racing"],
+      "gameTypes": ["Competitive", "Racing", "Social"],
       "upcoming": false
     },
     {
@@ -339,7 +339,7 @@
       "weight": 1.72,
       "playerInteraction": 3,
       "mechanics": ["Hand management", "Drafting", "Set collection"],
-      "gameTypes": ["Competitive", "Party"],
+      "gameTypes": ["Competitive", "Party", "Social"],
       "upcoming": false
     },
     {
@@ -352,7 +352,7 @@
       "weight": null,
       "playerInteraction": 4,
       "mechanics": ["Bluff & deduction"],
-      "gameTypes": ["Competitive", "Party"],
+      "gameTypes": ["Competitive", "Party", "Social"],
       "upcoming": false
     },
     {
@@ -378,7 +378,7 @@
       "weight": 2.24,
       "playerInteraction": 4,
       "mechanics": ["Drafting", "Action selection", "Bluff & deduction"],
-      "gameTypes": ["Competitive", "Party"],
+      "gameTypes": ["Competitive", "Party", "Social"],
       "upcoming": false
     },
     {
@@ -404,7 +404,7 @@
       "weight": 2.4,
       "playerInteraction": 3,
       "mechanics": ["Negotiation", "Route building", "Engine building"],
-      "gameTypes": ["Competitive"],
+      "gameTypes": ["Competitive", "Social"],
       "upcoming": false
     },
     {
@@ -443,7 +443,7 @@
       "weight": 2.58,
       "playerInteraction": 5,
       "mechanics": ["Negotiation", "Bluff & deduction", "Hand management"],
-      "gameTypes": ["Competitive", "Party"],
+      "gameTypes": ["Competitive", "Party", "Social"],
       "upcoming": false
     },
     {
@@ -456,7 +456,7 @@
       "weight": 3.09,
       "playerInteraction": 5,
       "mechanics": ["Action points", "Hand management"],
-      "gameTypes": ["Cooperative", "Adventure"],
+      "gameTypes": ["Cooperative", "Adventure", "Social"],
       "upcoming": false
     },
     {
@@ -482,7 +482,7 @@
       "weight": 1.77,
       "playerInteraction": 3,
       "mechanics": ["Drafting", "Pattern building", "Set collection"],
-      "gameTypes": ["Competitive"],
+      "gameTypes": ["Competitive", "Social"],
       "upcoming": false
     },
     {
@@ -521,7 +521,7 @@
       "weight": 1.19,
       "playerInteraction": 4,
       "mechanics": ["Dice rolling", "Drafting"],
-      "gameTypes": ["Competitive", "Racing", "Party"],
+      "gameTypes": ["Competitive", "Racing", "Party", "Social"],
       "upcoming": false
     },
     {
@@ -534,7 +534,7 @@
       "weight": 1.33,
       "playerInteraction": 4,
       "mechanics": ["Push your luck", "Hand management"],
-      "gameTypes": ["Competitive", "Party"],
+      "gameTypes": ["Competitive", "Party", "Social"],
       "upcoming": false
     },
     {
@@ -547,7 +547,7 @@
       "weight": 2.95,
       "playerInteraction": 5,
       "mechanics": ["Drafting", "Area control", "Negotiation"],
-      "gameTypes": ["Competitive"],
+      "gameTypes": ["Competitive", "Social"],
       "upcoming": false
     },
     {
@@ -560,7 +560,7 @@
       "weight": 4.08,
       "playerInteraction": 5,
       "mechanics": ["Hand management", "Action selection", "Area control"],
-      "gameTypes": ["Cooperative"],
+      "gameTypes": ["Cooperative", "Social"],
       "upcoming": false
     },
     {
@@ -586,7 +586,7 @@
       "weight": null,
       "playerInteraction": 5,
       "mechanics": ["Negotiation", "Route building", "Engine building"],
-      "gameTypes": ["Competitive"],
+      "gameTypes": ["Competitive", "Social"],
       "upcoming": true
     },
     {
@@ -599,7 +599,7 @@
       "weight": 2,
       "playerInteraction": 4,
       "mechanics": ["Dice rolling", "Hand management"],
-      "gameTypes": ["Competitive", "Party", "Dungeon crawler"],
+      "gameTypes": ["Competitive", "Party", "Dungeon crawler", "Social"],
       "upcoming": true
     },
     {
@@ -729,7 +729,7 @@
       "weight": 3.64,
       "playerInteraction": 5,
       "mechanics": ["Area control", "Hand management", "Tactical combat"],
-      "gameTypes": ["Competitive"],
+      "gameTypes": ["Competitive", "Social"],
       "upcoming": true
     },
     {
@@ -742,7 +742,7 @@
       "weight": null,
       "playerInteraction": 4,
       "mechanics": ["Deckbuilding", "Auction & bidding", "Bluff & deduction"],
-      "gameTypes": ["Competitive", "Party"],
+      "gameTypes": ["Competitive", "Party", "Social"],
       "upcoming": true
     },
     {
@@ -768,7 +768,7 @@
       "weight": null,
       "playerInteraction": 5,
       "mechanics": ["Deckbuilding", "Area control"],
-      "gameTypes": ["Competitive"],
+      "gameTypes": ["Competitive", "Social"],
       "upcoming": true
     },
     {
@@ -781,7 +781,7 @@
       "weight": 2.67,
       "playerInteraction": 5,
       "mechanics": ["Negotiation", "Bluff & deduction"],
-      "gameTypes": ["Competitive", "Party"],
+      "gameTypes": ["Competitive", "Party", "Social"],
       "upcoming": true
     },
     {
@@ -820,7 +820,7 @@
       "weight": 3.71,
       "playerInteraction": 5,
       "mechanics": ["Auction & bidding", "Bluff & deduction", "Area control"],
-      "gameTypes": ["Competitive", "Party"],
+      "gameTypes": ["Competitive", "Party", "Social"],
       "upcoming": false
     },
     {
@@ -846,7 +846,7 @@
       "weight": null,
       "playerInteraction": 5,
       "mechanics": ["Bluff & deduction", "Hand management"],
-      "gameTypes": ["Competitive", "Team-based", "Party"],
+      "gameTypes": ["Competitive", "Team-based", "Party", "Social"],
       "upcoming": true
     },
     {

@@ -5,6 +5,7 @@
 }
 
 .detail-hero {
+  display: grid;
   aspect-ratio: 1200 / 680;
   flex-shrink: 0;
   position: relative;
@@ -12,6 +13,7 @@
 }
 
 .heroImage {
+  grid-area: 1 / 1;
   height: 100%;
   --image-box-height: 100%;
   --image-height: 100%;
@@ -19,16 +21,11 @@
 }
 
 .hero-label {
-  position: absolute;
-  left: 18px;
-  top: 18px;
-  background: #fff9;
-  backdrop-filter: blur(10px);
-  border: 1px solid #fffa;
-  border-radius: 4px;
-  padding: 4px 9px;
-  font-size: 9px;
-  color: #5b4b48;
+  grid-area: 1 / 1;
+  align-self: start;
+  z-index: 1;
+  margin: 18px 60px 18px 18px;
+  min-width: 0;
 }
 
 .favorite-button {

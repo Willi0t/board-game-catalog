@@ -1,3 +1,4 @@
+import GameTypeBadges from '../GameTypeBadges/GameTypeBadges';
 import GameFacts from '../GameFacts/GameFacts';
 import GameDescription from '../GameDescription/GameDescription';
 import GameEditionDetails from '../GameEditionDetails/GameEditionDetails';
@@ -70,8 +71,8 @@ export default function GameDetailDrawer({
                 labelClassName={styles.caption}
               />
             </figure>
-            <div>
-              <p className={styles.category}>{game.category}</p>
+            <div className={styles.identityText}>
+              <GameTypeBadges gameTypes={game.gameTypes} />
               <h2 id={titleId}>{game.title}</h2>
               {game.edition && <p>{game.edition}</p>}
             </div>

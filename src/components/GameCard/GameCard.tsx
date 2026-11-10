@@ -48,7 +48,7 @@ export default function GameCard({
         </span>
       </div>
       <h2>{game.title}</h2>
-      <p>{game.edition || game.gameTypes[0] || game.category}</p>
+      <p>{game.edition || game.gameTypes.join(' · ')}</p>
     </button>
   );
 }

@@ -276,9 +276,21 @@ test('Party is canonical, retained alongside other tags and filters in both the 
   );
 });
 
-test('guide uses approved Terraforming Mars values, unknown interaction and Hitman availability', () => {
+test('guide uses approved Terraforming Mars values, medium interaction and Hitman availability', () => {
   const mars = games.find((game) => game.id === 'terraforming');
   const hitman = games.find((game) => game.id === 'hitman-the-board-game');
+  assert(
+    matchPickerGames(
+      games,
+      criteria({ players: 3, interactionLevels: ['medium'] }),
+    ).includes(mars),
+  );
+  assert(
+    !matchPickerGames(
+      games,
+      criteria({ players: 3, interactionLevels: ['low'] }),
+    ).includes(mars),
+  );
   assert(
     matchPickerGames(
       games,
@@ -657,5 +669,24 @@ test('multiple interaction choices becoming zero are retained and reported indep
       { ...selected, interactionLevels: [] },
     ).length,
     1,
+  );
+});
+
+test('Social participates in guide choices, prefix counts and combined results', () => {
+  const selected = criteria({ players: 3, gameTypes: ['Social'] });
+  const social = matchPickerGames(games, selected);
+  assert(social.length > 0);
+  assert(
+    social.every(
+      (game) => game.gameTypes.includes('Social') && game.upcoming === false,
+    ),
+  );
+  const counts = countPickerOptions(games, selected);
+  assert.equal(counts.gameTypes.Social, social.length);
+  assert.equal(counts.total, social.length);
+  assert.equal(
+    matchPickerGames(games, { ...selected, includeUpcoming: true }).length >=
+      social.length,
+    true,
   );
 });

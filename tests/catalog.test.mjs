@@ -161,7 +161,7 @@ test('simultaneous filters, favorites, tag search and unknown availability', () 
   assert.equal(filterGames(games, { availability: 'owned' }).length, 50);
   assert.deepEqual(
     filterGames(games, {
-      category: 'Favoriter',
+      libraryView: 'favorites',
       favorites: ['burgundy', 'agricola'],
       availability: 'owned',
     }).map((game) => game.id),
@@ -188,7 +188,7 @@ test('Party aliases normalize without duplicates or removing existing types', ()
   assert(party.every((game) => game.gameTypes.includes('Party')));
 });
 
-test('Terraforming Mars updates the stable entry with approved facts and null interaction', () => {
+test('Terraforming Mars updates the stable entry with approved facts and medium interaction', () => {
   const entries = games.filter((game) => game.id === 'terraforming');
   assert.equal(entries.length, 1);
   const game = entries[0];
@@ -197,7 +197,7 @@ test('Terraforming Mars updates the stable entry with approved facts and null in
   assert.equal(game.playersMax, 5);
   assert.equal(game.bestWith, '3');
   assert.equal(game.weight, 3.27);
-  assert.equal(game.playerInteraction, null);
+  assert.equal(game.playerInteraction, 3);
   assert.deepEqual(game.mechanics, [
     'Engine building',
     'Hand management',
@@ -256,4 +256,62 @@ test('source numbering inserts game 12 on row 13 and identities survive reordere
     'tint',
   ])
     assert.deepEqual(updated[key], retained[key]);
+});
+
+const socialIds = [
+  'the-crew-mission-deep-sea',
+  'deep-regrets-deeper-regrets',
+  'wonders',
+  'love-letter',
+  'puerto-rico',
+  'scarface',
+  'libertalia-winds-of-galecrest',
+  'final-titan',
+  'high-society',
+  'parlay',
+  'vaalbara',
+  'excalibur',
+  'citadels',
+  'catan-base',
+  'cosmic',
+  'fate-of-the-fellowship',
+  'azul-mini',
+  'magical-athleete',
+  'goats-and-goblins',
+  'inis',
+  'spirit-island',
+  'an-infamous-traffic-second-edition',
+  'shug',
+  'avalon-the-riven-veil',
+  'decko-pistachio',
+  'gang-wars',
+  'davos',
+  'the-old-king-s-crown',
+  'detectives-vs-criminals',
+];
+
+test('Social is canonical on exactly the approved identities and survives re-import', () => {
+  assert.deepEqual(
+    normalizeGameTypes(['Competitive', 'social', 'Social', 'party', 'paty']),
+    ['Competitive', 'Social', 'Party'],
+  );
+  const social = filterGames(games, { gameType: 'Social' });
+  assert.deepEqual(social.map((game) => game.id).sort(), [...socialIds].sort());
+  for (const game of games) {
+    assert.equal(new Set(game.gameTypes).size, game.gameTypes.length);
+    assert(!game.gameTypes.includes('social'));
+  }
+  assert.deepEqual(mergeCatalog(games, source), games);
+});
+
+test('empty Sheets interaction preserves the locally approved Terraforming Mars score', () => {
+  const emptySource = {
+    ...source,
+    games: source.games.map((row) =>
+      row.title === 'Terraforming Mars'
+        ? { ...row, playerInteraction: null }
+        : row,
+    ),
+  };
+  assert.deepEqual(mergeCatalog(games, emptySource), games);
 });

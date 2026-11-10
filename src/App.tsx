@@ -5,6 +5,7 @@ import type { Game } from './types/game';
 import styles from './App.module.css';
 
 import useFavorites from './hooks/useFavorites';
+import type { LibraryView } from './utils/filterGames';
 import useCatalog from './hooks/useCatalog';
 import useGamePicker from './hooks/useGamePicker';
 import useGamePanels from './hooks/useGamePanels';
@@ -29,9 +30,11 @@ export default function App() {
     useGamePanels(catalog.selectedGame?.id ?? null, isMobile);
   const libraryRef = useRef<HTMLElement>(null);
   const selectedGame = catalog.selectedGame;
-  const categoryLabel = picker.appliedCriteria
+  const viewLabel = picker.appliedCriteria
     ? 'Guidens resultat'
-    : catalog.filters.category;
+    : catalog.filters.libraryView === 'favorites'
+      ? 'Favoriter'
+      : 'Alla spel';
   const themeGame = detailDrawer.game ?? selectedGame;
   const { tint, accent } = themeGame
     ? resolveGameColors(themeGame)
@@ -41,9 +44,13 @@ export default function App() {
     picker.clearResults();
     catalog.resetFilters();
   };
-  const changeCategory = (category: string) => {
+  const changeLibraryView = (view: LibraryView) => {
     picker.clearResults();
-    catalog.updateFilter('category', category);
+    catalog.updateFilter('libraryView', view);
+  };
+  const changeTag = (field: 'gameType' | 'mechanic', value: string) => {
+    picker.clearResults();
+    catalog.updateFilter(field, value);
   };
   const selectGame = (game: Game, trigger: HTMLButtonElement) => {
     catalog.selectGame(game);
@@ -62,14 +69,20 @@ export default function App() {
       <Sidebar
         games={games}
         favorites={favorites}
-        category={categoryLabel}
-        onCategoryChange={changeCategory}
+        libraryView={
+          picker.appliedCriteria ? null : catalog.filters.libraryView
+        }
+        gameType={picker.appliedCriteria ? '' : catalog.filters.gameType}
+        mechanic={picker.appliedCriteria ? '' : catalog.filters.mechanic}
+        onLibraryViewChange={changeLibraryView}
+        onGameTypeChange={(value) => changeTag('gameType', value)}
+        onMechanicChange={(value) => changeTag('mechanic', value)}
         onReset={reset}
       />
       <main ref={libraryRef} tabIndex={-1} className={styles['workspace']}>
         <Header
           contentClassName={styles['workspace-inner']}
-          category={categoryLabel}
+          viewLabel={viewLabel}
           onOpenPicker={picker.open}
         >
           <div className={styles['collection-layout']}>
@@ -85,12 +98,8 @@ export default function App() {
               ) : (
                 <CatalogToolbar
                   {...catalog.filters}
-                  onMechanicChange={(value) =>
-                    catalog.updateFilter('mechanic', value)
-                  }
-                  onGameTypeChange={(value) =>
-                    catalog.updateFilter('gameType', value)
-                  }
+                  onMechanicChange={(value) => changeTag('mechanic', value)}
+                  onGameTypeChange={(value) => changeTag('gameType', value)}
                   onAvailabilityChange={(value) =>
                     catalog.updateFilter('availability', value)
                   }
@@ -98,7 +107,6 @@ export default function App() {
                   onQueryChange={(value) =>
                     catalog.updateFilter('query', value)
                   }
-                  onCategoryChange={changeCategory}
                   onPlayersChange={(value) =>
                     catalog.updateFilter('players', value)
                   }
