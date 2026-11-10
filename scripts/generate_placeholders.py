@@ -1,11 +1,11 @@
 """Generate repo-native, text-free SVG placeholders. Python standard library only."""
-import json
+import argparse
 import re
 from pathlib import Path
 from xml.etree import ElementTree as ET
 
-ROOT = Path(__file__).resolve().parent
-OUT = ROOT if ROOT.name == 'Spelhyllan-platshallare' else ROOT / 'Spelhyllan-platshallare'
+ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_OUTPUT = ROOT / 'public/images/placeholders/v2'
 PALETTES = {
     'rose': {'accent': '#95616f', 'tint': '#efe1e5'},
     'sage': {'accent': '#648155', 'tint': '#e6eddf'},
@@ -106,62 +106,7 @@ def svg(motif, palette, kind):
 </svg>
 '''
 
-def main():
-    themes = {}
-    for motif in MOTIFS:
-        for palette,p in PALETTES.items():
-            folder=OUT/'public/images/placeholders/v2'/motif/palette
-            folder.mkdir(parents=True,exist_ok=True)
-            item={'motif':motif,'palette':palette,**p}
-            for kind in ['cover','scene','detail']:
-                content=svg(motif,palette,kind)
-                ET.fromstring(content)
-                (folder/f'{kind}.svg').write_text(content)
-                item[kind]=f'/images/placeholders/v2/{motif}/{palette}/{kind}.svg'
-            themes[f'{motif}-{palette}']=item
-    mapping={}
-    groups={
-      'castle-rose':['burgundy','citadels'],
-      'castle-gold':['excalibur','roma-xli','the-old-king-s-crown','grifoni-blades-for-hire'],
-      'castle-sage':['inis','rise-of-the-oak-dell'],
-      'planet-gold':['cosmic'],
-      'planet-rose':['terraforming'],
-      'planet-slate':['starwars','nemesis-aftermath','nemesis-retaliation','solar-titans'],
-      'planet-violet':['andromeda-s-edge-genesis-fully-operational'],
-      'geometric-teal':['azul-mini','re-match-marble-puzzle-fighter'],
-      'garden-sage':['salad','agricola'],
-      'garden-teal':['tend-hive-cellar'],
-      'forest-sage':['codex-naturalis','bio-blitz','spirit-island'],
-      'forest-gold':['vaalbara','there-and-back-again','high-adventure-treasure-hunt'],
-      'forest-teal':['fate-of-the-fellowship','lord-of-the-rings-trick-taking-game'],
-      'ocean-slate':['the-crew-mission-deep-sea','deep-regrets-deeper-regrets'],
-      'ocean-teal':['shallow-regrets','long-dark-sea'],
-      'ship-teal':['knarr','libertalia-winds-of-galecrest','rolling-seas'],
-      'ship-gold':['puerto-rico','an-infamous-traffic-second-edition'],
-      'city-slate':['burgle','spies-lies-supplies','detectives-vs-criminals','hitman-the-board-game'],
-      'city-rose':['scarface','gang-wars'],
-      'city-teal':['point-city'],
-      'industry-gold':['brass-pittsburgh','ticket-to-ride'],
-      'arcane-teal':['clank'],
-      'arcane-violet':['grimcoven','lands-of-evershade','b-e-l-o-w-the-asylum','the-wandmaker-s-apprentice','avalon-the-riven-veil','shug'],
-      'arcane-gold':['ascension-15th-anniversary-edition','ascension-legends','final-titan','nexus-card-game'],
-      'desert-gold':['wonders','duel','forbidden-desert','catan-base'],
-      'cards-rose':['love-letter','high-society'],
-      'cards-sage':['decko-pistachio','battlesticks','goats-and-goblins'],
-      'cards-slate':['davos','parlay'],
-      'cards-gold':['magical-athleete','fliptoons'],
-      'cards-violet':['52-duels-fight-with-playing-cards'],
-    }
-    for theme,ids in groups.items():
-        for gameid in ids:
-            assert gameid not in mapping,gameid
-            mapping[gameid]=theme
-    games=json.loads((ROOT/'current-games.json').read_text())
-    assert set(mapping)=={g['id'] for g in games}, ('missing', {g['id'] for g in games}-set(mapping))
-    (OUT/'src/data').mkdir(parents=True,exist_ok=True)
-    manifest={'version':2,'defaultTheme':'geometric-slate','themes':themes,'games':mapping}
-    (OUT/'src/data/placeholder-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
-    (OUT/'game-theme-overview.json').write_text(json.dumps([{'id':g['id'],'title':g['title'],'theme':mapping[g['id']]} for g in games],ensure_ascii=False,indent=2)+'\n')
+def write_preview(output):
     # Preview: real cover and hero SVGs side by side, with no aspect distortion.
     tiles=[]
     colors=list(PALETTES)
@@ -176,8 +121,34 @@ def main():
         scene=inner('scene').replace('background',f'bg{i}s').replace('grain',f'gr{i}s')
         tiles.append(f'<g transform="translate({x} {y})"><rect width="500" height="290" rx="16" fill="#fff"/><svg x="16" y="16" width="132" height="167.2" viewBox="0 0 600 760" overflow="hidden">{cover}</svg><svg x="162" y="16" width="322" height="128.8" viewBox="0 0 1600 640" overflow="hidden">{scene}</svg><text x="18" y="226" font-size="24" fill="#343a39">{motif.title()} · {palette}</text><text x="18" y="260" font-size="17" fill="#69716c">Omslag + bred scen · samma proportioner</text></g>')
     preview=f'<svg xmlns="http://www.w3.org/2000/svg" width="1640" height="1380" viewBox="0 0 1640 1380"><rect width="1640" height="1380" fill="#f4f4ef"/><g font-family="sans-serif"><text x="40" y="59" font-size="32" fill="#343a39">Spelhyllan — reservillustrationer</text>{"".join(tiles)}</g></svg>'
-    (OUT/'preview.svg').write_text(preview)
-    assert len(list((OUT/'public').rglob('*.svg')))==216
-    print(f'Validated {len(mapping)} game mappings, {len(themes)} themes, 216 SVGs.')
+    output.write_text(preview, encoding='utf-8')
 
-if __name__=='__main__': main()
+
+def main():
+    parser = argparse.ArgumentParser(
+        description='Generate SVG illustrations only; catalog data and theme mappings are never written.'
+    )
+    parser.add_argument('--output-dir', type=Path, default=DEFAULT_OUTPUT,
+                        help='Image directory (default: public/images/placeholders/v2 in this repository).')
+    parser.add_argument('--preview', type=Path, help='Optional SVG preview path; must end in .svg.')
+    args = parser.parse_args()
+    if args.preview and args.preview.resolve().suffix.lower() != '.svg':
+        parser.error('--preview must be an SVG file, not catalog JSON or a theme manifest.')
+    generated = 0
+    for motif in MOTIFS:
+        for palette in PALETTES:
+            folder = args.output_dir / motif / palette
+            folder.mkdir(parents=True, exist_ok=True)
+            for kind in ['cover', 'scene', 'detail']:
+                content = svg(motif, palette, kind)
+                ET.fromstring(content)
+                (folder / f'{kind}.svg').write_text(content, encoding='utf-8')
+                generated += 1
+    if args.preview:
+        args.preview.parent.mkdir(parents=True, exist_ok=True)
+        write_preview(args.preview)
+    print(f'Generated {generated} SVGs in {args.output_dir}. No catalog data or theme mappings were written.')
+
+
+if __name__ == '__main__':
+    main()
