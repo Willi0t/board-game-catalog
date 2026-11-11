@@ -282,8 +282,8 @@
   },
   {
     "id": "starwars",
-    "title": "Star Wars",
-    "edition": "The Deckbuilding Game",
+    "title": "Star Wars: The Deckbuilding Game",
+    "edition": "",
     "category": "Två spelare",
     "accent": "#5d7184",
     "tint": "#e2e8ef",
