@@ -111,6 +111,16 @@ test('re-import is idempotent and preserves local identity, art and descriptions
   );
 });
 
+test('Star Wars keeps its complete title, empty edition and stable identity on re-import', () => {
+  const game = games.find((game) => game.id === 'starwars');
+  assert.equal(game.title, 'Star Wars: The Deckbuilding Game');
+  assert.equal(game.edition, '');
+  const imported = mergeCatalog(games, source).find(
+    (game) => game.id === 'starwars',
+  );
+  assert.deepEqual(imported, game);
+});
+
 test('zero interaction survives, unknown times sort last and never match time filters', () => {
   assert.equal(games.filter((game) => game.playerInteraction === 0).length, 2);
   const unknown = {
