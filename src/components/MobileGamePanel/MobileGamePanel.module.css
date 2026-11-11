@@ -58,5 +58,25 @@
   flex: 1;
   min-height: 0;
   overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #a89b9480 #e6dfd633;
+  scrollbar-gutter: stable;
   overscroll-behavior: contain;
+}
+
+.content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.content::-webkit-scrollbar-track {
+  background: #e6dfd633;
+}
+
+.content::-webkit-scrollbar-thumb {
+  background: #a89b9480;
+  border-radius: 8px;
+}
+
+.content::-webkit-scrollbar-thumb:hover {
+  background: #978780;
 }

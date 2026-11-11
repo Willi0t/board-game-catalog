@@ -1,12 +1,22 @@
-import { useState, type CSSProperties } from 'react';
+import {
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+  type CSSProperties,
+  type ReactNode,
+} from 'react';
 import type { GalleryImage } from '../../types/game';
 import styles from './GameImage.module.css';
 import { layoutCoverTitle } from '../../utils/coverTitle';
+import { getBannerMask } from '../../utils/bannerMask';
 
 interface GameImageProps {
   image: GalleryImage;
   className?: string;
   loading?: 'lazy' | 'eager';
+  blurredBackdrop?: boolean;
+  bannerControls?: ReactNode;
   placeholderLabel?: string;
   label?: string;
   labelClassName?: string;
@@ -18,6 +28,8 @@ function ResolvedGameImage({
   image,
   className = '',
   loading,
+  blurredBackdrop = false,
+  bannerControls,
   placeholderLabel,
   label,
   labelClassName = '',
@@ -28,6 +40,28 @@ function ResolvedGameImage({
     image.src && image.src !== image.placeholderSrc ? 'image' : 'placeholder',
   );
   const isPlaceholder = stage !== 'image';
+  const visualRef = useRef<HTMLDivElement>(null);
+  const imageRef = useRef<HTMLImageElement>(null);
+  const [mask, setMask] = useState<string>();
+  const updateMask = useCallback(() => {
+    const visual = visualRef.current;
+    const img = imageRef.current;
+    if (!blurredBackdrop || stage !== 'image' || !visual || !img) return;
+    setMask(
+      getBannerMask(
+        visual.clientWidth,
+        visual.clientHeight,
+        img.naturalWidth,
+        img.naturalHeight,
+      ),
+    );
+  }, [blurredBackdrop, stage]);
+  useEffect(() => {
+    if (!blurredBackdrop || !visualRef.current) return;
+    const observer = new ResizeObserver(updateMask);
+    observer.observe(visualRef.current);
+    return () => observer.disconnect();
+  }, [blurredBackdrop, updateMask]);
   const titleLayout = layoutCoverTitle(image.gameTitle);
   const placeholderStyle: CSSProperties & { '--placeholder-tint': string } = {
     '--placeholder-tint': image.placeholderTint ?? 'var(--tint, #eadce2)',
@@ -40,12 +74,25 @@ function ResolvedGameImage({
     : image.alt || `${image.title} för ${image.gameTitle}`;
   return (
     <div
-      className={`${styles.frame} ${className}`}
+      className={`${styles.frame} ${blurredBackdrop ? styles.bannerFrame : ''} ${className}`}
       style={placeholderStyle}
       data-placeholder={isPlaceholder}
       data-image-kind={image.kind}
     >
-      <div className={styles.visual}>
+      {blurredBackdrop && !isPlaceholder && (
+        <img
+          className={styles.backdrop}
+          src={image.src}
+          alt=""
+          aria-hidden="true"
+          loading={loading}
+        />
+      )}
+      {blurredBackdrop && bannerControls}
+      <div
+        ref={visualRef}
+        className={`${styles.visual} ${blurredBackdrop ? styles.bannerVisual : ''}`}
+      >
         {stage === 'unavailable' ? (
           <div className={styles.unavailable} role="img" aria-label={alt}>
             <span>Bild saknas</span>
@@ -54,10 +101,20 @@ function ResolvedGameImage({
         ) : (
           <>
             <img
+              ref={imageRef}
+              className={blurredBackdrop ? styles.foreground : undefined}
+              style={
+                blurredBackdrop && !isPlaceholder
+                  ? { maskImage: mask, WebkitMaskImage: mask }
+                  : undefined
+              }
               src={stage === 'image' ? image.src : image.placeholderSrc}
               alt={alt}
               loading={loading}
-              onLoad={onReady}
+              onLoad={() => {
+                updateMask();
+                onReady?.();
+              }}
               onError={() => {
                 if (stage === 'image') setStage('placeholder');
                 else {

@@ -20,6 +20,45 @@ npm run dev
 
 För fortsatt AI-utveckling: installera OpenAI:s officiella Codex-tillägg i VS Code och logga in. Öppna projektmappen innan du startar en Codex-chatt. Se [Codex i din editor](https://developers.openai.com/codex/ide).
 
+## Temafärger från omslag
+
+Kör från projektmappen efter `npm install` (eller `npm ci`). Skriptet läser
+spelets `cover` i `src/games.json`, en lokal PNG-, JPEG- eller WebP-fil under
+`public/images`. Bildläsaren [sharp](https://sharp.pixelplumbing.com/install/)
+är ett utvecklingsberoende; ingen bildanalys körs i appen eller mot en extern tjänst.
+
+Windows (PowerShell):
+
+```powershell
+node scripts/cover-theme.mjs burgundy
+node scripts/cover-theme.mjs burgundy --write
+```
+
+macOS (Terminal):
+
+```bash
+node scripts/cover-theme.mjs burgundy
+node scripts/cover-theme.mjs burgundy --write
+```
+
+Byt `burgundy` mot valfritt spel-id. Utan `--write` visas bara förslaget.
+Med `--write` sparas endast spelets `accent` och `tint`; inga bilder ändras.
+Saknat, oläsbart eller ogiltigt omslag ger ett felmeddelande och lämnar speldata
+orörd. Reservillustrationer används aldrig som källa.
+
+Algoritmen samplar bilden till högst 192 × 192 pixlar och väljer den tyngsta
+av 24 kulörgrupper med angränsande grupper. Transparens, gråtoner och nästan
+vita/svarta pixlar viktas ned, så att exempelvis en vit logotyp inte dominerar.
+Samma bild och verktygsversion ger samma förslag. Bakgrundstonen görs ljus;
+accenten mörkas tills kontrasten är minst 4,8:1 mot tonen, vitt och appens
+ljusa grundytor. Det ger marginal till 4,5:1 för vanlig text, även vit text på
+accentknappar. Det är ingen garanti för kontrast mot godtyckliga fotografier.
+
+Appens befintliga `resolveGameColors` använder sparade individuella färger.
+Katalogimporten bevarar dem. Reservteman och färger för andra spel ändras inte.
+Kör `node --test tests/cover-theme.test.mjs` för bildformat, kontrast,
+förhandsvisning/skrivning och färgernas bevarande genom temalogik och import.
+
 ## Formatering
 
 Kör `npm run format` för att formatera projektet med Prettier och

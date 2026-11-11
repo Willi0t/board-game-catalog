@@ -170,6 +170,8 @@ export default function App() {
       {detailDrawer.game && (
         <GameDetailDrawer
           game={detailDrawer.game}
+          isFavorite={favorites.includes(detailDrawer.game.id)}
+          onToggleFavorite={toggleFavorite}
           onClose={detailDrawer.close}
           onOpenImage={imageModal.open}
           openerRef={detailDrawer.openerRef}
@@ -182,6 +184,7 @@ export default function App() {
       {imageModal.image && (
         <ImageModal
           modal={imageModal.image}
+          images={imageModal.images}
           onClose={imageModal.close}
           openerRef={imageModal.openerRef}
           fallbackRef={

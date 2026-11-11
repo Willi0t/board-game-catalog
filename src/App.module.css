@@ -2,7 +2,8 @@
   min-height: 100vh;
   display: flex;
   background:
-    linear-gradient(120deg, #faf9f7 23%, transparent 90%), var(--tint);
+    linear-gradient(120deg, #faf9f7 8%, #faf9f780 42%, transparent 72%),
+    var(--tint);
   transition: background-color 0.7s ease;
 }
 

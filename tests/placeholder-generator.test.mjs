@@ -6,6 +6,7 @@ import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 
 const generator = path.resolve('scripts/generate_placeholders.py');
+const python = process.platform === 'win32' ? 'python' : 'python3';
 
 test('generator reproduces all SVG illustrations from any cwd without changing catalog or mapping', () => {
   const temporary = fs.mkdtempSync(path.join(os.tmpdir(), 'spelhyllan-art-'));
@@ -18,7 +19,7 @@ test('generator reproduces all SVG illustrations from any cwd without changing c
     const output = path.join(temporary, 'images');
     const preview = path.join(temporary, 'preview.svg');
     const result = spawnSync(
-      'python3',
+      python,
       [generator, '--output-dir', output, '--preview', preview],
       { cwd: temporary, encoding: 'utf8' },
     );
@@ -57,7 +58,7 @@ test('generator rejects a JSON preview target before writing images or replacing
     const sentinel = '{"games":{"keep":"my-theme"}}\n';
     fs.writeFileSync(target, sentinel);
     const result = spawnSync(
-      'python3',
+      python,
       [
         generator,
         '--output-dir',
