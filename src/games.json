@@ -637,8 +637,8 @@
     "title": "Agricola",
     "edition": "",
     "category": "Övrigt",
-    "accent": "#815467",
-    "tint": "#eadce2",
+    "accent": "#1f57ad",
+    "tint": "#e4ebf6",
     "description": "",
     "placeholderTheme": "castle-rose",
     "playersMin": 1,
@@ -658,7 +658,33 @@
       "importedAt": "2026-11-10",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/agricola/agricola-thumb.png",
+    "coverAlt": "Omslag till Agricola: Special Edition med en familj, lantgårdsdjur och ett hus med halmtak under blå himmel.",
+    "hero": "/images/games/agricola/agricola-banner.png",
+    "heroAlt": "Bred gårdsillustration med Agricola-logotyp, ett får i förgrunden och en familj bland höns och andra djur vid ett hus med halmtak.",
+    "gallery": [
+      {
+        "src": "/images/games/agricola/gallery/agricola-1.png",
+        "title": "Spelplaner och komponenter",
+        "alt": "Översikt av handlingsbräde, två gårdsplaner, kort, djurfigurer, resurser och staket."
+      },
+      {
+        "src": "/images/games/agricola/gallery/agricola-2.png",
+        "title": "Gård med beteshagar",
+        "alt": "Gårdsplan med djur i inhägnader, åkrar och familjefigurer, omgiven av kort, resurser och staketdelar."
+      },
+      {
+        "src": "/images/games/agricola/gallery/agricola-3.png",
+        "title": "Förbättringskort",
+        "alt": "Staplar av förbättringskort med Lifting Machine, Food Basket och Cob uppställda i förgrunden."
+      },
+      {
+        "src": "/images/games/agricola/gallery/agricola-4.png",
+        "title": "Spelaskar och kortpaket",
+        "alt": "Askar för Agricola: Special Edition, Farmers of the Moor och Stretch Goals ovanför rader av kortpaket."
+      }
+    ]
   },
   {
     "id": "libertalia-winds-of-galecrest",
