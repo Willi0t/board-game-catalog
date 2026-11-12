@@ -777,8 +777,8 @@
     "title": "Grimcoven",
     "edition": "",
     "category": "Övrigt",
-    "accent": "#815467",
-    "tint": "#eadce2",
+    "accent": "#ad1f23",
+    "tint": "#f6e4e5",
     "description": "",
     "placeholderTheme": "castle-rose",
     "playersMin": 1,
@@ -798,7 +798,38 @@
       "importedAt": "2026-11-10",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/grimcoven/grimcoven-thumb.png",
+    "coverAlt": "Omslag till Grimcoven med vit logotyp, tre mörkt klädda gestalter i hattar och ett gotiskt slott framför en stor röd måne.",
+    "hero": "/images/games/grimcoven/grimcoven-banner.png",
+    "heroAlt": "Bred illustration med Grimcovens vita logotyp till vänster och tre beväpnade gestalter i svarta hattar och mantlar mot en röd himmel och gotiska torn.",
+    "gallery": [
+      {
+        "src": "/images/games/grimcoven/gallery/grimcoven-1.png",
+        "title": "Drakstrid på spelplanen",
+        "alt": "Hexagonala spelbrickor med en stor drakminiatyr, mindre figurer, gröna portaler och röda markörer, framför boss- och spelarpaneler."
+      },
+      {
+        "src": "/images/games/grimcoven/gallery/grimcoven-2.png",
+        "title": "Miniatyrer och portaler",
+        "alt": "Bildkollage med närbilder av beväpnade figurer, ett slingrande monster, en grön portal och en genomskinlig röd effektminiatyr på spelplanen."
+      },
+      {
+        "src": "/images/games/grimcoven/gallery/grimcoven-3.png",
+        "title": "Stor miniatyr med baner",
+        "alt": "Stor grå miniatyr av en bepansrad gestalt med kedjor, trasiga baner, stav och svärd, bredvid en illustrerad figurbricka och texten Special Edition Model."
+      },
+      {
+        "src": "/images/games/grimcoven/gallery/grimcoven-4.png",
+        "title": "Gunslingers spelarpanel",
+        "alt": "Mörk spelarpanel för Gunslinger med handlingslista, sifferbana, kortet Special Ammo, en miniatyr och gröna och blå tärningar på ett träbord."
+      },
+      {
+        "src": "/images/games/grimcoven/gallery/grimcoven-5.png",
+        "title": "Boss och terräng på spelbordet",
+        "alt": "Stor miniatyr med baner på hexagonala spelbrickor, omgiven av mindre figurer, klippterräng, en röd markör, kort och staplade spelmarkörer."
+      }
+    ]
   },
   {
     "id": "long-dark-sea",
