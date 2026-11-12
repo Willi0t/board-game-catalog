@@ -1,4 +1,4 @@
-import GameTypeBadges from '../GameTypeBadges/GameTypeBadges';
+import GameBanner from '../GameBanner/GameBanner';
 import GameFacts from '../GameFacts/GameFacts';
 import GameDescription from '../GameDescription/GameDescription';
 import GameEditionDetails from '../GameEditionDetails/GameEditionDetails';
@@ -8,18 +8,19 @@ import type { Game, GalleryImage } from '../../types/game';
 import useModalDialog from '../../hooks/useModalDialog';
 import Icon from '../Icon/Icon';
 import GameGallery from '../GameGallery/GameGallery';
-import GameImage from '../GameImage/GameImage';
-import {
-  getCoverImage,
-  getHeroImage,
-  getGalleryImages,
-} from '../../utils/gameImages';
+import { getGalleryImages } from '../../utils/gameImages';
 import styles from './GameDetailDrawer.module.css';
 
 interface GameDetailDrawerProps {
   game: Game;
+  isFavorite: boolean;
+  onToggleFavorite: (id: string) => void;
   onClose: () => void;
-  onOpenImage: (image: GalleryImage, trigger: HTMLButtonElement) => void;
+  onOpenImage: (
+    image: GalleryImage,
+    trigger: HTMLButtonElement,
+    images?: readonly GalleryImage[],
+  ) => void;
   openerRef: RefObject<HTMLElement | null>;
   fallbackRef: RefObject<HTMLElement | null>;
   panelRef: RefObject<HTMLElement | null>;
@@ -27,6 +28,8 @@ interface GameDetailDrawerProps {
 
 export default function GameDetailDrawer({
   game,
+  isFavorite,
+  onToggleFavorite,
   onClose,
   onOpenImage,
   openerRef,
@@ -55,43 +58,29 @@ export default function GameDetailDrawer({
         </header>
         <div className={styles.content}>
           <figure className={styles.hero}>
-            <GameImage
-              image={getHeroImage(game)}
+            <GameBanner
+              game={game}
+              isFavorite={isFavorite}
+              onToggleFavorite={onToggleFavorite}
               className={styles.heroImage}
-              placeholderLabel="PLATSHÅLLARBILD · Spelet uppdukat"
-              labelClassName={styles.caption}
             />
           </figure>
           <div className={styles.identity}>
-            <figure className={styles.cover}>
-              <GameImage
-                image={getCoverImage(game)}
-                className={styles.coverImage}
-                placeholderLabel="Platshållaromslag"
-                labelClassName={styles.caption}
-              />
-            </figure>
-            <div className={styles.identityText}>
-              <GameTypeBadges gameTypes={game.gameTypes} />
-              <h2 id={titleId}>{game.title}</h2>
-              {game.edition && <p>{game.edition}</p>}
-            </div>
+            <h2 id={titleId}>{game.title}</h2>
+            {game.edition && <p>{game.edition}</p>}
           </div>
           <GameFacts game={game} />
           <GameMetadata game={game} />
           <GameDescription game={game} presentation="full" />
-          <section className={styles.section}>
+          <GameEditionDetails game={game} />
+          <section className={styles.gallerySection} aria-label="Bilder">
             <h3>Bilder</h3>
-            <p className={styles.note}>
-              Välj en bild för att förstora. Reservillustrationer är markerade
-              som platshållare.
-            </p>
             <GameGallery
               images={getGalleryImages(game)}
               onOpenImage={onOpenImage}
+              layout="thumbnails"
             />
           </section>
-          <GameEditionDetails game={game} />
         </div>
       </div>
     </dialog>

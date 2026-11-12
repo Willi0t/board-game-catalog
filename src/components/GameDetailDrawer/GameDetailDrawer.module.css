@@ -65,43 +65,19 @@
 }
 
 .heroImage {
-  display: block;
   width: 100%;
-  --image-max-height: 380px;
   --image-aspect: 1.8;
-}
-
-.heroImage img {
-  border-radius: 10px;
-}
-
-.caption {
-  display: block;
-  margin-top: 8px;
-  font-size: 10px;
-  color: #74665f;
+  --image-fit: contain;
+  --image-radius: 10px;
 }
 
 .identity {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-
-.cover {
-  flex: 0 0 110px;
-  margin: 0;
-}
-
-.coverImage img {
-  display: block;
-  width: 100%;
-  border-radius: 6px;
-  box-shadow: 0 5px 12px #49392e20;
+  min-width: 0;
+  text-align: left;
 }
 
 .identity h2 {
-  margin: 0;
+  margin: 8px 0 0;
   font-family: Manrope, sans-serif;
   font-size: clamp(26px, 3vw, 42px);
   line-height: 1.2;
@@ -113,21 +89,9 @@
   color: #74665f;
 }
 
-.identityText {
+.gallerySection {
+  margin-top: 28px;
   min-width: 0;
-}
-
-.identityText h2 {
-  margin-top: 8px;
-}
-
-.note {
-  color: #74665f;
-  font-size: 12px;
-}
-
-.section {
-  composes: section from '../GameDescription/GameDescription.module.css';
 }
 
 @keyframes slide-in {
@@ -148,12 +112,6 @@
 @media (max-width: 650px) {
   .header {
     padding: 10px 18px;
-  }
-  .identity {
-    gap: 16px;
-  }
-  .cover {
-    flex-basis: 80px;
   }
 }
 

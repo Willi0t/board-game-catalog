@@ -54,8 +54,107 @@ const PickerOption = await component(
 const ExploreNavigation = await component(
   'src/components/ExploreNavigation/ExploreNavigation.tsx',
 );
+const ImageModal = await component('src/components/ImageModal/ImageModal.tsx');
+const { getBannerMask } = await import(
+  await loadComponent('src/utils/bannerMask.ts')
+);
+const { getCarouselNeighbors } = await import(
+  await loadComponent('src/utils/carouselNeighbors.ts')
+);
 const render = (Component, props) =>
   renderToStaticMarkup(createElement(Component, props));
+
+test('banner masks start at the contained image edges, on the axis with visible background', () => {
+  assert.equal(
+    getBannerMask(400, 300, 800, 280),
+    'linear-gradient(to bottom, transparent 80px, #000 86px, #000 214px, transparent 220px)',
+  );
+  assert.equal(
+    getBannerMask(400, 300, 200, 300),
+    'linear-gradient(to right, transparent 100px, #000 106px, #000 294px, transparent 300px)',
+  );
+  assert.equal(getBannerMask(400, 300, 800, 600), undefined);
+  assert.equal(getBannerMask(0, 300, 800, 600), undefined);
+  assert.equal(getBannerMask(400, 300, 0, 0), undefined);
+});
+
+test('carousel layers select unique nearest images, including wrapping and small galleries', () => {
+  for (let count = 1; count <= 8; count++) {
+    for (let current = 0; current < count; current++) {
+      const neighbors = getCarouselNeighbors(count, current);
+      assert.equal(neighbors.length, Math.min(count - 1, 4));
+      assert.equal(
+        new Set(neighbors.map((item) => item.index)).size,
+        neighbors.length,
+      );
+      assert(
+        neighbors.every(
+          (item) =>
+            item.index !== current && item.index >= 0 && item.index < count,
+        ),
+      );
+    }
+  }
+  assert.deepEqual(getCarouselNeighbors(5, 1), [
+    { index: 0, offset: -1 },
+    { index: 2, offset: 1 },
+    { index: 4, offset: -2 },
+    { index: 3, offset: 2 },
+  ]);
+});
+
+test('image dialog starts on the selected thumbnail and hides navigation for a single image', () => {
+  const images = ['Första', 'Andra', 'Tredje'].map((title, index) => ({
+    title,
+    src: `/images/test-${index}.png`,
+    placeholderSrc: '/images/fallback.svg',
+    kind: 'detail',
+    gameId: 'any-game',
+    gameTitle: 'Testspel',
+    alt: `${title} motiv`,
+  }));
+  const props = {
+    modal: images[1],
+    images,
+    onClose() {},
+    openerRef: { current: null },
+    fallbackRef: { current: null },
+  };
+  const html = render(ImageModal, props);
+  assert(html.includes('aria-label="Andra"'));
+  assert(html.includes('src="/images/test-1.png"'));
+  assert(html.includes('2 av 3'));
+  assert(html.includes('aria-label="Föregående bild"'));
+  assert(html.includes('aria-label="Nästa bild"'));
+  assert(html.includes('aria-label="Visa föregående bild: Första"'));
+  assert(html.includes('aria-label="Visa nästa bild: Tredje"'));
+  const twoHtml = render(ImageModal, { ...props, images: images.slice(0, 2) });
+  assert(!twoHtml.includes('Visa föregående bild:'));
+  assert(twoHtml.includes('aria-label="Visa nästa bild: Första"'));
+  assert.equal((twoHtml.match(/src="\/images\/test-0.png"/g) ?? []).length, 1);
+  const five = [
+    ...images,
+    ...['Fjärde', 'Femte'].map((title, index) => ({
+      ...images[0],
+      title,
+      src: `/images/test-${index + 3}.png`,
+    })),
+  ];
+  const fiveHtml = render(ImageModal, { ...props, images: five });
+  assert.equal((fiveHtml.match(/data-depth="1"/g) ?? []).length, 2);
+  assert.equal((fiveHtml.match(/data-depth="2"/g) ?? []).length, 2);
+  for (let i = 0; i < 5; i++)
+    assert.equal(
+      (fiveHtml.match(new RegExp(`src="/images/test-${i}.png"`, 'g')) ?? [])
+        .length,
+      1,
+    );
+  for (const single of [undefined, [], [images[1]]]) {
+    const singleHtml = render(ImageModal, { ...props, images: single });
+    assert(singleHtml.includes('src="/images/test-1.png"'));
+    assert(!singleHtml.includes('Bläddra bland bilder'));
+  }
+});
 
 test('mobile and full descriptions prefer long text and retain draft caveats; summaries stay short', () => {
   const game = {

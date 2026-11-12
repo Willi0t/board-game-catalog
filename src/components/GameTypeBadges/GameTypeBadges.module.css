@@ -9,13 +9,22 @@
 }
 
 .badges li {
-  background: #fff9;
+  background: rgb(255 255 255 / 50%);
   backdrop-filter: blur(10px);
-  border: 1px solid #fffa;
-  border-radius: 4px;
+  border: 0;
+  border-radius: 6px;
   padding: 4px 9px;
   font-size: 9px;
   color: #5b4b48;
   max-width: 100%;
   overflow-wrap: anywhere;
+}
+
+.banner li {
+  background: rgb(255 255 255 / 65%);
+  border: 0;
+  backdrop-filter: none;
+  color: #302b2a;
+  padding: 5px 8px;
+  font-size: 10px;
 }

@@ -36,12 +36,23 @@ function GalleryItem({ image, onOpenImage }: GalleryItemProps) {
 
 interface GameGalleryProps {
   images: readonly GalleryImage[];
-  onOpenImage: GalleryItemProps['onOpenImage'];
+  onOpenImage: (
+    image: GalleryImage,
+    trigger: HTMLButtonElement,
+    images?: readonly GalleryImage[],
+  ) => void;
+  layout?: 'default' | 'thumbnails';
 }
 
-export default function GameGallery({ images, onOpenImage }: GameGalleryProps) {
+export default function GameGallery({
+  images,
+  onOpenImage,
+  layout = 'default',
+}: GameGalleryProps) {
   return (
-    <div className={styles.gallery}>
+    <div
+      className={`${styles.gallery} ${layout === 'thumbnails' ? styles.thumbnails : ''}`}
+    >
       {images.map((image, index) => (
         <GalleryItem
           key={JSON.stringify([
@@ -51,7 +62,9 @@ export default function GameGallery({ images, onOpenImage }: GameGalleryProps) {
             index,
           ])}
           image={image}
-          onOpenImage={onOpenImage}
+          onOpenImage={(selected, trigger) =>
+            onOpenImage(selected, trigger, images)
+          }
         />
       ))}
     </div>

@@ -12,12 +12,32 @@
   min-height: 0;
   overflow-anchor: none;
   overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #a89b9480 #e6dfd633;
+  scrollbar-gutter: stable;
   overflow-x: hidden;
   overscroll-behavior: contain;
   border: 1px solid #d9cdd2;
   border-radius: 11px;
   background: #fff9;
   box-shadow: 0 8px 35px #55433406;
+}
+
+.panel::-webkit-scrollbar {
+  width: 6px;
+}
+
+.panel::-webkit-scrollbar-track {
+  background: #e6dfd633;
+}
+
+.panel::-webkit-scrollbar-thumb {
+  background: #a89b9480;
+  border-radius: 8px;
+}
+
+.panel::-webkit-scrollbar-thumb:hover {
+  background: #978780;
 }
 
 .empty {

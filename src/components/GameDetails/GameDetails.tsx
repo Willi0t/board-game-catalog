@@ -1,4 +1,4 @@
-import GameTypeBadges from '../GameTypeBadges/GameTypeBadges';
+import GameBanner from '../GameBanner/GameBanner';
 import GameFacts from '../GameFacts/GameFacts';
 import GameDescription from '../GameDescription/GameDescription';
 import GameEditionDetails from '../GameEditionDetails/GameEditionDetails';
@@ -6,12 +6,7 @@ import GameMetadata from '../GameMetadata/GameMetadata';
 import GameStatus from '../GameStatus/GameStatus';
 import Icon from '../Icon/Icon';
 import GameGallery from '../GameGallery/GameGallery';
-import GameImage from '../GameImage/GameImage';
-import {
-  getHeroImage,
-  getGalleryImages,
-  getCoverImage,
-} from '../../utils/gameImages';
+import { getGalleryImages, getCoverImage } from '../../utils/gameImages';
 
 import type { Game, GalleryImage, DetailTab } from '../../types/game';
 import styles from './GameDetails.module.css';
@@ -22,7 +17,11 @@ interface GameDetailsProps {
   onToggleFavorite: (id: string) => void;
   tab: DetailTab;
   onTabChange: (tab: DetailTab) => void;
-  onOpenImage: (image: GalleryImage, trigger: HTMLButtonElement) => void;
+  onOpenImage: (
+    image: GalleryImage,
+    trigger: HTMLButtonElement,
+    images?: readonly GalleryImage[],
+  ) => void;
   collectionIndex: number;
   onShowMore?: (game: Game, trigger: HTMLButtonElement) => void;
 }
@@ -46,27 +45,11 @@ export default function GameDetails({
       aria-label="Information om valt spel"
       key={game.id}
     >
-      <div className={styles['detail-hero']}>
-        <GameImage
-          image={getHeroImage(game)}
-          className={styles.heroImage}
-          placeholderLabel="PLATSHÅLLARBILD"
-          labelClassName={styles['hero-placeholder']}
-        />
-        <div className={styles['hero-label']}>
-          <GameTypeBadges gameTypes={game.gameTypes} />
-        </div>
-        <button
-          className={`${styles['favorite-button']} ${isFavorite ? styles['is-favorite'] : ''}`}
-          aria-label={
-            isFavorite ? 'Ta bort från favoriter' : 'Lägg till i favoriter'
-          }
-          aria-pressed={isFavorite}
-          onClick={() => onToggleFavorite(game.id)}
-        >
-          <Icon name="heart" size={19} />
-        </button>
-      </div>
+      <GameBanner
+        game={game}
+        isFavorite={isFavorite}
+        onToggleFavorite={onToggleFavorite}
+      />
       <div className={styles['detail-content']}>
         <p className={styles['detail-edition']}>
           {game.edition || 'SPELINFORMATION'}

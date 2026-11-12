@@ -1,0 +1,46 @@
+.controls {
+  grid-area: 1 / 1;
+  align-self: start;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+}
+
+.types {
+  flex: 1;
+  min-width: 0;
+}
+
+.favorite {
+  flex: 0 0 40px;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgb(255 255 255 / 65%);
+  color: #4c4140;
+}
+
+.favorite:hover {
+  background: rgb(255 255 255 / 85%);
+}
+
+.active svg {
+  fill: currentColor;
+}
+
+.placeholder {
+  position: absolute;
+  bottom: 12px;
+  right: 14px;
+  font-size: 7px;
+  letter-spacing: 1.6px;
+  color: #5b4b48;
+  background: #fff9;
+  border-radius: 3px;
+  padding: 2px 4px;
+}
