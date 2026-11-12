@@ -128,10 +128,26 @@ test('image dialog starts on the selected thumbnail and hides navigation for a s
   assert(html.includes('aria-label="Nästa bild"'));
   assert(html.includes('aria-label="Visa föregående bild: Första"'));
   assert(html.includes('aria-label="Visa nästa bild: Tredje"'));
+  // Offscreen buffers support seamless animation; visible layers remain unique.
+  const visibleLayers = (markup) =>
+    [
+      ...markup.matchAll(
+        /<button\b[^>]*data-slide-offset="[^"]+"[^>]*>[\s\S]*?<\/button>/g,
+      ),
+    ]
+      .map(([layer]) => layer)
+      .filter(
+        (layer) =>
+          !layer.slice(0, layer.indexOf('>')).includes('aria-hidden="true"'),
+      )
+      .join('');
   const twoHtml = render(ImageModal, { ...props, images: images.slice(0, 2) });
   assert(!twoHtml.includes('Visa föregående bild:'));
   assert(twoHtml.includes('aria-label="Visa nästa bild: Första"'));
-  assert.equal((twoHtml.match(/src="\/images\/test-0.png"/g) ?? []).length, 1);
+  assert.equal(
+    (visibleLayers(twoHtml).match(/src="\/images\/test-0.png"/g) ?? []).length,
+    1,
+  );
   const five = [
     ...images,
     ...['Fjärde', 'Femte'].map((title, index) => ({
@@ -145,8 +161,11 @@ test('image dialog starts on the selected thumbnail and hides navigation for a s
   assert.equal((fiveHtml.match(/data-depth="2"/g) ?? []).length, 2);
   for (let i = 0; i < 5; i++)
     assert.equal(
-      (fiveHtml.match(new RegExp(`src="/images/test-${i}.png"`, 'g')) ?? [])
-        .length,
+      (
+        visibleLayers(fiveHtml).match(
+          new RegExp(`src="/images/test-${i}.png"`, 'g'),
+        ) ?? []
+      ).length,
       1,
     );
   for (const single of [undefined, [], [images[1]]]) {
