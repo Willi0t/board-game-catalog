@@ -573,8 +573,8 @@
     "title": "Puerto Rico",
     "edition": "",
     "category": "Övrigt",
-    "accent": "#815467",
-    "tint": "#eadce2",
+    "accent": "#965824",
+    "tint": "#f6ece4",
     "description": "",
     "placeholderTheme": "castle-rose",
     "playersMin": 2,
@@ -594,7 +594,43 @@
       "importedAt": "2026-11-10",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/puerto-rico/puerto-thumb.png",
+    "coverAlt": "Omslag till Puerto Rico 1897: Special Edition med vit logotyp över en marknadsgata, människor med varor och ett segelfartyg i solnedgången.",
+    "hero": "/images/games/puerto-rico/puerto-banner.png",
+    "heroAlt": "Bred illustration med logotypen för Puerto Rico 1897: Special Edition till vänster och en solbelyst marknad med fruktstånd och en person som bär bananklasar till höger.",
+    "gallery": [
+      {
+        "src": "/images/games/puerto-rico/gallery/puerto-1.png",
+        "title": "Spelask och komponenter",
+        "alt": "Spelasken till Puerto Rico 1897: Special Edition bredvid fyra närbilder av kort, byggnadsminiatyrer, figurer och varulådor."
+      },
+      {
+        "src": "/images/games/puerto-rico/gallery/puerto-2.png",
+        "title": "Spelet uppdukat",
+        "alt": "Översikt av spelarmattor och en central spelplan med skepp, byggnadsminiatyrer, kort, mynt, varubrickor och en tygpåse."
+      },
+      {
+        "src": "/images/games/puerto-rico/gallery/puerto-3.png",
+        "title": "Hamnen och lastfartygen",
+        "alt": "Tre bruna skeppsminiatyrer lastade med gula, bruna och gröna varor framför stora byggnadsminiatyrer på hamnens spelplan."
+      },
+      {
+        "src": "/images/games/puerto-rico/gallery/puerto-4.png",
+        "title": "Skepp och varulådor",
+        "alt": "Närbild av ett brunt skepp lastat med lådor med vita varor, omgivet av lådor med gula, gröna, bruna och svarta varor."
+      },
+      {
+        "src": "/images/games/puerto-rico/gallery/puerto-5.png",
+        "title": "Spelarmatta med odlingar",
+        "alt": "Spelarmatta med odlingsbrickor, bruna figurer och byggnadsbrickor, samt varulådor, markörer och silverfärgade mynt till höger."
+      },
+      {
+        "src": "/images/games/puerto-rico/gallery/puerto-6.png",
+        "title": "Byggnadsminiatyrer",
+        "alt": "Närbild av sandfärgade byggnadsminiatyrer med torn, pelare och skorstenar på spelarmattor med byggnadsfält och tryckt regeltext."
+      }
+    ]
   },
   {
     "id": "agricola",
