@@ -68,3 +68,28 @@
     margin-top: 24px;
   }
 }
+
+.content {
+  position: relative;
+  min-height: 100%;
+  display: grid;
+  isolation: isolate;
+}
+.incoming,
+.outgoing {
+  grid-area: 1 / 1;
+  min-width: 0;
+}
+.incoming {
+  z-index: 1;
+}
+.outgoing {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.incoming > aside,
+.outgoing > aside {
+  min-height: 100%;
+}

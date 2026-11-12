@@ -9,12 +9,22 @@ bilder: favoriter sparar id i localStorage.
 
 ```text
 games/<game-id>/
-  cover.webp
-  hero.webp
+  <prefix>-thumb.<format>
+  <prefix>-banner.<format>
   gallery/
-    spelet-uppdukat.webp
-    komponenter.webp
+    <prefix>-1.<format>
+    <prefix>-2.<format>
 ```
+
+Använd varje spels eget, konsekventa prefix: `<prefix>-thumb` för
+`cover` (bilden i griden), `<prefix>-banner` för `hero` (den stora bilden)
+och `gallery/<prefix>-1`, `<prefix>-2` och så vidare i galleriordning.
+Behåll filens format och filändelse; ett galleri kan blanda PNG och WebP.
+Castles of Burgundy (`burgundy`) använder prefixet `castle`, exempelvis
+`castle-thumb.png`, `castle-banner.png` och `gallery/castle-1.png`.
+Andra spel använder sina egna prefix, inte `castle`.
+Bildrollerna styrs av `cover`, `hero` och `gallery` i `src/games.json`;
+färgskriptet hittar omslaget via `cover`, oberoende av filnamnet.
 
 `coverAlt` och `heroAlt` kan beskriva motivet i dina riktiga bilder. Ett galleri
 kan använda enkla sökvägar enligt exemplet ovan eller poster med egen titel och
@@ -22,7 +32,7 @@ alt-text, exempelvis (först när filen finns):
 
 ```json
 {
-  "src": "/images/games/burgundy/gallery/spelet-uppdukat.webp",
+  "src": "/images/games/burgundy/gallery/castle-1.png",
   "title": "Spelet uppdukat",
   "alt": "Beskriv vad just ditt fotografi visar här."
 }
@@ -42,11 +52,11 @@ kompletteras med dessa bildfält (övriga spelfält behålls):
 {
   "id": "burgundy",
   "placeholderTheme": "castle-rose",
-  "cover": "/images/games/burgundy/cover.webp",
-  "hero": "/images/games/burgundy/hero.webp",
+  "cover": "/images/games/burgundy/castle-thumb.png",
+  "hero": "/images/games/burgundy/castle-banner.png",
   "gallery": [
-    "/images/games/burgundy/gallery/spelet-uppdukat.webp",
-    "/images/games/burgundy/gallery/komponenter.webp"
+    "/images/games/burgundy/gallery/castle-1.png",
+    "/images/games/burgundy/gallery/castle-2.png"
   ]
 }
 ```

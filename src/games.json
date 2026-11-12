@@ -13,38 +13,38 @@
     "weight": 2.97,
     "metadataStatus": "catalog-import",
     "placeholderTheme": "castle-rose",
-    "cover": "/images/games/burgundy/castle2.png",
+    "cover": "/images/games/burgundy/castle-thumb.png",
     "coverAlt": "Omslag till Castles of Burgundy: Special Edition med vit logotyp ovanför ett slott på en grön höjd, berg och segelbåtar.",
-    "hero": "/images/games/burgundy/castle1.png",
+    "hero": "/images/games/burgundy/castle-banner.png",
     "heroAlt": "Bred illustration med logotypen för Castles of Burgundy: Special Edition till vänster och ett slott på en grön bergshöjd till höger.",
     "gallery": [
       {
-        "src": "/images/games/burgundy/gallery/castle3.png",
+        "src": "/images/games/burgundy/gallery/castle-1.png",
         "title": "Vingårdar och spelbrickor",
         "alt": "Närbild av gröna hexagonala vingårdsbrickor med röda, blå och gula druvor, intill spelplaner och tärningar."
       },
       {
-        "src": "/images/games/burgundy/gallery/castle4.png",
+        "src": "/images/games/burgundy/gallery/castle-2.png",
         "title": "Byggnader på spelplanen",
         "alt": "Närbild av spelplanens färgade hexagoner med slotts- och byggnadsminiatyrer, skepp och tärningssymboler."
       },
       {
-        "src": "/images/games/burgundy/gallery/castle5.webp",
+        "src": "/images/games/burgundy/gallery/castle-3.webp",
         "title": "Varubrickor och poängspår",
         "alt": "En hand flyttar en blå varubricka intill tre trälådemotiv och spelplanens numrerade poängspår."
       },
       {
-        "src": "/images/games/burgundy/gallery/castle6.webp",
+        "src": "/images/games/burgundy/gallery/castle-4.webp",
         "title": "Ställ med vingårdsbrickor",
         "alt": "Grönt ornamenterat brickställ med vingårdsbrickor som visar gula, röda och blå druvor, bakom en spelplan."
       },
       {
-        "src": "/images/games/burgundy/gallery/castle7.webp",
+        "src": "/images/games/burgundy/gallery/castle-5.webp",
         "title": "Spelplan, tygpåsar och brickställ",
         "alt": "Spelplan med färgade hexagonbrickor på ett bord, tre tygpåsar med vapensköldar och ett grönt ställ med vingårdsbrickor."
       },
       {
-        "src": "/images/games/burgundy/gallery/castle8.webp",
+        "src": "/images/games/burgundy/gallery/castle-6.webp",
         "title": "Röd slottsminiatyr",
         "alt": "Närbild av en röd slottsminiatyr på en röd hexagon, omgiven av byggnader, skepp och tärningssymboler på spelplanen."
       }
