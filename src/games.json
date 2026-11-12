@@ -1284,8 +1284,8 @@
     "title": "Nemesis + Aftermath",
     "edition": "",
     "category": "Övrigt",
-    "accent": "#815467",
-    "tint": "#eadce2",
+    "accent": "#276e8c",
+    "tint": "#e4f1f6",
     "description": "",
     "placeholderTheme": "castle-rose",
     "playersMin": 1,
@@ -1305,7 +1305,38 @@
       "importedAt": "2026-11-10",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/nemesis-aftermath/nemesis-thumb.png",
+    "coverAlt": "Omslag till Nemesis med vit logotyp, en astronaut i förgrunden och en stor kloförsedd rymdvarelse i blågrönt ljus bakom.",
+    "hero": "/images/games/nemesis-aftermath/nemesis-banner.png",
+    "heroAlt": "Bred illustration med Nemesis vita logotyp till vänster, en astronaut nedtill och en stor rymdvarelse med öppen käft och klor ovanför i blågrönt ljus.",
+    "gallery": [
+      {
+        "src": "/images/games/nemesis-aftermath/gallery/nemesis-1.png",
+        "title": "Handlingskort på hand",
+        "alt": "En hand håller tre mörka handlingskort med rosa detaljer, med Basic Repairs längst fram, framför en suddig spelplan med figurer och markörer."
+      },
+      {
+        "src": "/images/games/nemesis-aftermath/gallery/nemesis-2.png",
+        "title": "Spelarpaneler och kort",
+        "alt": "Spelarpaneler för Pilot och Soldier med miniatyrer och upprätta handlingskort i korthållare framför rymdskeppets spelplan."
+      },
+      {
+        "src": "/images/games/nemesis-aftermath/gallery/nemesis-3.jpg",
+        "title": "Rymdkatt och figurbricka",
+        "alt": "Två händer visar en grå kattminiatyr i rymddräkt och en lila figurbricka med kattmotiv, med spelplanen i bakgrunden."
+      },
+      {
+        "src": "/images/games/nemesis-aftermath/gallery/nemesis-4.png",
+        "title": "Rymdvarelse i närbild",
+        "alt": "Stor grå miniatyr av en bepansrad rymdvarelse med hornliknande utskott som håller en mindre varelse, på en sockel med dödskallar och omgiven av gula markörer."
+      },
+      {
+        "src": "/images/games/nemesis-aftermath/gallery/nemesis-5.png",
+        "title": "Miniatyrer ombord på skeppet",
+        "alt": "En stor grå rymdvarelse och mindre figurer med gröna och röda basringar på rymdskeppets mörka spelplan, bland rumsbrickor och gula markörer."
+      }
+    ]
   },
   {
     "id": "an-infamous-traffic-second-edition",
