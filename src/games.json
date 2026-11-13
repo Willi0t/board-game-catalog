@@ -1351,7 +1351,51 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/love-letter/love-letter-thumb.png",
+    "coverAlt": "Love Letter-omslag på pergament med rött vaxsigill, vågskålsemblem och två hovpersoner.",
+    "coverVariants": [
+      {
+        "src": "/images/games/love-letter/love-letter-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/love-letter/love-letter-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/love-letter/love-letter-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/love-letter/love-letter-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/love-letter/love-letter-banner.png",
+    "heroAlt": "Love Letter-titeln och ett rött vaxsigill på pergament bredvid prinsessan och hovet.",
+    "gallery": [
+      {
+        "src": "/images/games/love-letter/gallery/love-letter-1.png",
+        "title": "Kungliga kort och markörer",
+        "alt": "Kort med kungen, prinsessan och grevinnan samt fem röda sigillmarkörer."
+      },
+      {
+        "src": "/images/games/love-letter/gallery/love-letter-2.png",
+        "title": "Spelet uppdukat",
+        "alt": "Karaktärskort, röda kortbaksidor, referenskort och sigillmarkörer utlagda för fyra spelare."
+      },
+      {
+        "src": "/images/games/love-letter/gallery/love-letter-3.png",
+        "title": "Personer vid hovet",
+        "alt": "Fyra karaktärskort med vakten, prinsen, baronen och hovdamen."
+      },
+      {
+        "src": "/images/games/love-letter/gallery/love-letter-4.png",
+        "title": "Kort och sigill",
+        "alt": "Karaktärskort och röda sigillmarkörer på ett mönster av vinröda kortbaksidor."
+      }
+    ]
   },
   {
     "id": "puerto-rico",
