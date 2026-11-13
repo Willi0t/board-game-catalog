@@ -499,6 +499,26 @@
         "title": "Två våningar",
         "alt": "Två våningar med rumsbrickor, vaktkort och karaktärskort på ett träbord."
       }
+    ],
+    "cover": "/images/games/burgle/burgle-thumb.png",
+    "coverAlt": "Burgle Bros.-omslag med kuppgänget ovanför titeln på en gul affisch med röd ram.",
+    "coverVariants": [
+      {
+        "src": "/images/games/burgle/burgle-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/burgle/burgle-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/burgle/burgle-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/burgle/burgle-thumb.png",
+        "width": 1122
+      }
     ]
   },
   {
@@ -527,7 +547,51 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/duel/wonders-duel-thumb.png",
+    "coverAlt": "7 Wonders Duel-omslag med guldtitel, en krigare och en egyptisk kvinna framför antika städer.",
+    "coverVariants": [
+      {
+        "src": "/images/games/duel/wonders-duel-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/duel/wonders-duel-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/duel/wonders-duel-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/duel/wonders-duel-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/duel/wonders-duel-banner.png",
+    "heroAlt": "7 Wonders Duel-titeln med en krigare, en egyptisk kvinna och antika städer i solnedgång.",
+    "gallery": [
+      {
+        "src": "/images/games/duel/gallery/wonders-duel-1.png",
+        "title": "Askens baksida",
+        "alt": "Askens baksida med spelöversikt, kort och komponenter."
+      },
+      {
+        "src": "/images/games/duel/gallery/wonders-duel-2.png",
+        "title": "Spelet uppdukat",
+        "alt": "Kortformation, underverk, mynt och militärspår uppdukade på ett träbord."
+      },
+      {
+        "src": "/images/games/duel/gallery/wonders-duel-3.png",
+        "title": "Kortformationen",
+        "alt": "Överlappande öppna och dolda kort med lila baksidor på ett träbord."
+      },
+      {
+        "src": "/images/games/duel/gallery/wonders-duel-4.png",
+        "title": "Byggnadskort",
+        "alt": "Färgade byggnadskort med antika byggnader utlagda i solfjädersform."
+      }
+    ]
   },
   {
     "id": "vaalbara",
