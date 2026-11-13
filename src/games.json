@@ -81,12 +81,8 @@
         "width": 384
       },
       {
-        "src": "/images/games/burgundy/castle-thumb-768.webp",
-        "width": 768
-      },
-      {
         "src": "/images/games/burgundy/castle-thumb.png",
-        "width": 1218
+        "width": 768
       }
     ]
   },
@@ -153,8 +149,12 @@
         "width": 384
       },
       {
+        "src": "/images/games/terraforming/mars-thumb-768.webp",
+        "width": 768
+      },
+      {
         "src": "/images/games/terraforming/mars-thumb.png",
-        "width": 602
+        "width": 1122
       }
     ]
   },
@@ -258,7 +258,51 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/clank/catacombs-thumb.png",
+    "coverAlt": "Omslag till Clank! Catacombs med äventyrare som flyr en grönlysande skelettdrake.",
+    "hero": "/images/games/clank/catacombs-banner.png",
+    "heroAlt": "Clank! Catacombs med äventyrare och monster, Underworld-logotyp nere till vänster och Lairs & Lost Chambers nere till höger.",
+    "gallery": [
+      {
+        "src": "/images/games/clank/gallery/catacombs-1.png",
+        "title": "Askens baksida",
+        "alt": "Askens baksida med spelöversikt, kort, spelbrickor och färgade figurer."
+      },
+      {
+        "src": "/images/games/clank/gallery/catacombs-2.png",
+        "title": "Katakomberna uppdukade",
+        "alt": "Sammanfogade katakombbrickor med gångar, rum, kuber och en röd spelarfigur."
+      },
+      {
+        "src": "/images/games/clank/gallery/catacombs-3.png",
+        "title": "Underworld",
+        "alt": "Underworld-expansionens ask, kort, markörer och katakombbrickor mot en lavabakgrund."
+      },
+      {
+        "src": "/images/games/clank/gallery/catacombs-4.png",
+        "title": "Spelomgång i katakomberna",
+        "alt": "Spelbrickor med skattkistor, färgade figurer och kuber intill kort på ett bord."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/clank/catacombs-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/clank/catacombs-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/clank/catacombs-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/clank/catacombs-thumb.png",
+        "width": 1122
+      }
+    ]
   },
   {
     "id": "wonders",
@@ -287,7 +331,51 @@
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     },
-    "expansions": ["Leaders"]
+    "expansions": ["Leaders"],
+    "cover": "/images/games/wonders/wonders-thumb.png",
+    "coverAlt": "Omslag till 7 Wonders med gyllene titel, en staty med fackla och antika byggnadsverk vid havet.",
+    "hero": "/images/games/wonders/wonders-banner.png",
+    "heroAlt": "7 Wonders-logotyp till vänster om en antik hamnstad med staty, pyramid och fyr i solnedgång.",
+    "gallery": [
+      {
+        "src": "/images/games/wonders/gallery/wonders-1.png",
+        "title": "Askens baksida",
+        "alt": "Askens baksida med spelöversikt, kort och ett underverksbräde."
+      },
+      {
+        "src": "/images/games/wonders/gallery/wonders-2.png",
+        "title": "Spelets komponenter",
+        "alt": "Underverksbräden, kort för tre tidsåldrar, mynt, markörer och poängblock på vit bakgrund."
+      },
+      {
+        "src": "/images/games/wonders/gallery/wonders-3.png",
+        "title": "Städer under uppbyggnad",
+        "alt": "Fyra underverksbräden med utlagda kort, mynt och konfliktmarkörer på ett mörkt bord."
+      },
+      {
+        "src": "/images/games/wonders/gallery/wonders-4.png",
+        "title": "Spelomgång runt bordet",
+        "alt": "Spelare runt ett bord med underverksbräden, kort, mynt och markörer."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/wonders/wonders-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/wonders/wonders-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/wonders/wonders-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/wonders/wonders-thumb.png",
+        "width": 1122
+      }
+    ]
   },
   {
     "id": "salad",
@@ -315,7 +403,51 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/salad/sallad-thumb.png",
+    "coverAlt": "Omslag till Point Salad med vit titel på grön bakgrund och färgglada grönsaker på en tallrik.",
+    "hero": "/images/games/salad/sallad-banner.png",
+    "heroAlt": "Point Salad-logotyp till vänster och en tallrik med färgglada grönsaker till höger på grön bakgrund.",
+    "gallery": [
+      {
+        "src": "/images/games/salad/gallery/sallad-1.png",
+        "title": "Askens baksida",
+        "alt": "Grön askbaksida med spelöversikt och exempel på grönsaks- och poängkort."
+      },
+      {
+        "src": "/images/games/salad/gallery/sallad-2.png",
+        "title": "Garnishes-kort",
+        "alt": "Grönsaks- och poängkort från Garnishes-miniexpansionen på vit bakgrund."
+      },
+      {
+        "src": "/images/games/salad/gallery/sallad-3.png",
+        "title": "Ask och kort",
+        "alt": "Point Salad-ask, regelhäfte och kort på ett träbord, med grönsakskort i en skål."
+      },
+      {
+        "src": "/images/games/salad/gallery/sallad-4.png",
+        "title": "Poäng och grönsaker",
+        "alt": "Fem poängkort ovanför rader av lök-, paprika-, morots- och kålkort."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/salad/sallad-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/salad/sallad-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/salad/sallad-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/salad/sallad-thumb.png",
+        "width": 1122
+      }
+    ]
   },
   {
     "id": "burgle",
