@@ -1644,6 +1644,55 @@
       "Mindbug Expansion",
       "Gamefound Promo Pack",
       "Stretch Goal Upgrades"
+    ],
+    "cover": "/images/games/final-titan/final-titan-thumb.png",
+    "coverAlt": "Final Titan-omslag med titeln omgiven av fantasyfigurer i kantiga bildpaneler.",
+    "coverVariants": [
+      {
+        "src": "/images/games/final-titan/final-titan-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/final-titan/final-titan-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/final-titan/final-titan-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/final-titan/final-titan-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/final-titan/final-titan-banner.png",
+    "heroAlt": "Final Titan-titeln på ljus bakgrund bredvid en mörk riddare, en muskulös varelse och en ljushårig krigare.",
+    "gallery": [
+      {
+        "src": "/images/games/final-titan/gallery/final-titan-1.png",
+        "title": "Titaner och tärning",
+        "alt": "Final Titan-titeln bland fantasyfigurer och en svart tärning med färgade symboler."
+      },
+      {
+        "src": "/images/games/final-titan/gallery/final-titan-2.png",
+        "title": "Spel och komponenter",
+        "alt": "Kampanjbild med spelaskar, kort, tärningar, marker och tillbehör."
+      },
+      {
+        "src": "/images/games/final-titan/gallery/final-titan-3.png",
+        "title": "Bygg ditt lag",
+        "alt": "Kampanjbild med många karaktärskort och en stor bevingad varelse."
+      },
+      {
+        "src": "/images/games/final-titan/gallery/final-titan-4.png",
+        "title": "Karaktärerna",
+        "alt": "Kampanjbild med karaktärskort, en rustad krigare och text om 135 unika kämpar."
+      },
+      {
+        "src": "/images/games/final-titan/gallery/final-titan-5.png",
+        "title": "Ödets tärning",
+        "alt": "En röd hornprydd varelse omgiven av eld och blixtar bredvid en svart symboltärning."
+      }
     ]
   },
   {
