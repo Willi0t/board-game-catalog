@@ -1,3 +1,4 @@
+import GameExpansions from '../GameExpansions/GameExpansions';
 import GameStatus from '../GameStatus/GameStatus';
 import Icon from '../Icon/Icon';
 import GameImage from '../GameImage/GameImage';
@@ -53,6 +54,7 @@ export default function GameCard({
       </div>
       <h2>{game.title}</h2>
       <p>{game.edition || game.gameTypes.join(' · ')}</p>
+      <GameExpansions expansions={game.expansions} compact />
     </button>
   );
 }

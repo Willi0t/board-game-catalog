@@ -1,6 +1,7 @@
 import GameBanner from '../GameBanner/GameBanner';
 import GameFacts from '../GameFacts/GameFacts';
 import GameDescription from '../GameDescription/GameDescription';
+import GameExpansions from '../GameExpansions/GameExpansions';
 import GameEditionDetails from '../GameEditionDetails/GameEditionDetails';
 import GameMetadata from '../GameMetadata/GameMetadata';
 import GameStatus from '../GameStatus/GameStatus';
@@ -90,7 +91,11 @@ export default function GameDetails({
                 presentation={onShowMore ? 'summary' : 'mobile'}
               />
               <GameMetadata game={game} showStatus={false} />
-              {!onShowMore && <GameEditionDetails game={game} />}
+              {onShowMore ? (
+                <GameExpansions expansions={game.expansions} />
+              ) : (
+                <GameEditionDetails game={game} />
+              )}
             </>
           ) : (
             <GameGallery images={galleryImages} onOpenImage={onOpenImage} />

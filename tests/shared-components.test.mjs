@@ -48,6 +48,10 @@ const GameDescription = await component(
 const GameEditionDetails = await component(
   'src/components/GameEditionDetails/GameEditionDetails.tsx',
 );
+const GameExpansions = await component(
+  'src/components/GameExpansions/GameExpansions.tsx',
+);
+const GameFacts = await component('src/components/GameFacts/GameFacts.tsx');
 const PickerOption = await component(
   'src/components/PickerOption/PickerOption.tsx',
 );
@@ -202,6 +206,25 @@ test('mobile and full descriptions prefer long text and retain draft caveats; su
     }),
     '',
   );
+});
+
+test('expansion counts stay compact and disappear when empty', () => {
+  const renderCount = (expansions) =>
+    render(GameExpansions, { expansions, compact: true });
+  assert.equal(renderCount([]), '');
+  assert.match(renderCount(['Expansion A']), />1 expansion</);
+  assert.match(renderCount(['Expansion A', 'Expansion B']), />2 expansioner</);
+  assert(!renderCount(['Expansion A']).includes('Expansion A'));
+});
+
+test('difficulty uses its numeric value along the green-to-red scale', () => {
+  const renderFacts = (weight) =>
+    render(GameFacts, { game: { ...games[0], weight } });
+  assert.match(renderFacts(1), /#286529.*1,00/);
+  assert.match(renderFacts(3), /#7a5c00.*3,00/);
+  assert.match(renderFacts(5), /#a62223 100%.*5,00/);
+  assert.match(renderFacts(null), /Svårighetsgrad<\/dt><dd>Uppgift saknas/);
+  assert(!renderFacts(null).includes('color-mix'));
 });
 
 test('shared edition sections preserve real edition/expansion text and omit absent information', () => {
