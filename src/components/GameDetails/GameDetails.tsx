@@ -92,9 +92,17 @@ export default function GameDetails({
               />
               <GameMetadata game={game} showStatus={false} />
               {onShowMore ? (
-                <GameExpansions expansions={game.expansions} />
+                <GameExpansions
+                  panel
+                  expansions={game.expansions}
+                  className={styles.expansions}
+                />
               ) : (
-                <GameEditionDetails game={game} />
+                <GameEditionDetails
+                  panel
+                  game={game}
+                  expansionsClassName={styles.expansions}
+                />
               )}
             </>
           ) : (

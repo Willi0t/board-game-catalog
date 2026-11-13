@@ -21,7 +21,7 @@ export default function GameMetadata({
         ([label, tags]) =>
           tags.length > 0 && (
             <section key={label}>
-              <h3>{label}</h3>
+              <h3 className={styles.heading}>{label}</h3>
               <ul className={styles.chips}>
                 {tags.map((tag) => (
                   <li key={tag}>{tag}</li>

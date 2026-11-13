@@ -1,13 +1,18 @@
 import styles from './GameExpansions.module.css';
+import metadataStyles from '../GameMetadata/GameMetadata.module.css';
 
 interface GameExpansionsProps {
   expansions?: readonly string[];
   compact?: boolean;
+  className?: string;
+  panel?: boolean;
 }
 
 export default function GameExpansions({
   expansions,
   compact = false,
+  className,
+  panel = false,
 }: GameExpansionsProps) {
   if (!expansions?.length) return null;
 
@@ -20,9 +25,15 @@ export default function GameExpansions({
     );
 
   return (
-    <section className={styles.section}>
-      <h3>Expansioner</h3>
-      <ul className={styles.list}>
+    <section
+      className={[panel ? styles.panelSection : styles.section, className]
+        .filter(Boolean)
+        .join(' ')}
+    >
+      <h3 className={panel ? metadataStyles.heading : undefined}>
+        Expansioner
+      </h3>
+      <ul className={panel ? metadataStyles.chips : styles.list}>
         {expansions.map((expansion, index) => (
           <li key={`${expansion}-${index}`}>{expansion}</li>
         ))}
