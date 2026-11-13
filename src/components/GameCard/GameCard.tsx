@@ -32,6 +32,10 @@ export default function GameCard({
           image={getCoverImage(game)}
           className={styles.image}
           loading="lazy"
+          srcSet={game.coverVariants
+            ?.map(({ src, width }) => `${src} ${width}w`)
+            .join(', ')}
+          sizes="auto, (max-width: 650px) 33vw, (max-width: 900px) 50vw, 320px"
         />
         {game.upcoming === true && (
           <span className={styles.status}>

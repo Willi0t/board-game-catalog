@@ -15,6 +15,8 @@ interface GameImageProps {
   image: GalleryImage;
   className?: string;
   loading?: 'lazy' | 'eager';
+  srcSet?: string;
+  sizes?: string;
   blurredBackdrop?: boolean;
   bannerControls?: ReactNode;
   placeholderLabel?: string;
@@ -28,6 +30,8 @@ function ResolvedGameImage({
   image,
   className = '',
   loading,
+  srcSet,
+  sizes,
   blurredBackdrop = false,
   bannerControls,
   placeholderLabel,
@@ -39,7 +43,9 @@ function ResolvedGameImage({
   const [stage, setStage] = useState<'image' | 'placeholder' | 'unavailable'>(
     image.src && image.src !== image.placeholderSrc ? 'image' : 'placeholder',
   );
+  const [useOriginal, setUseOriginal] = useState(false);
   const isPlaceholder = stage !== 'image';
+  const responsiveSources = !isPlaceholder && !useOriginal ? srcSet : undefined;
   const visualRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
   const [mask, setMask] = useState<string>();
@@ -101,6 +107,7 @@ function ResolvedGameImage({
         ) : (
           <>
             <img
+              key={useOriginal ? 'original' : 'preferred'}
               ref={imageRef}
               className={blurredBackdrop ? styles.foreground : undefined}
               style={
@@ -108,6 +115,8 @@ function ResolvedGameImage({
                   ? { maskImage: mask, WebkitMaskImage: mask }
                   : undefined
               }
+              sizes={responsiveSources ? sizes : undefined}
+              srcSet={responsiveSources}
               src={stage === 'image' ? image.src : image.placeholderSrc}
               alt={alt}
               loading={loading}
@@ -116,7 +125,8 @@ function ResolvedGameImage({
                 onReady?.();
               }}
               onError={() => {
-                if (stage === 'image') setStage('placeholder');
+                if (responsiveSources) setUseOriginal(true);
+                else if (stage === 'image') setStage('placeholder');
                 else {
                   setStage('unavailable');
                   onUnavailable?.();
@@ -171,6 +181,7 @@ export default function GameImage(props: GameImageProps) {
         image.kind,
         image.src,
         image.placeholderSrc,
+        props.srcSet,
       ])}
       {...props}
     />

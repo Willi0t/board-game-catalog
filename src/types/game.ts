@@ -32,9 +32,15 @@ export interface Game {
   placeholderTheme?: string;
   cover?: string;
   coverAlt?: string;
+  coverVariants?: CoverVariant[];
   hero?: string;
   heroAlt?: string;
   gallery?: (string | GameGalleryEntry)[];
+}
+
+export interface CoverVariant {
+  src: string;
+  width: number;
 }
 
 export interface GameGalleryEntry {

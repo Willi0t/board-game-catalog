@@ -70,6 +70,24 @@
       "The Shields & Championship Boards",
       "Vineyards Expansion",
       "Stretch Goal Upgrades"
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/burgundy/castle-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/burgundy/castle-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/burgundy/castle-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/burgundy/castle-thumb.png",
+        "width": 1218
+      }
     ]
   },
   {
@@ -655,6 +673,24 @@
       "The Smuggler",
       "The Festival",
       "Stretch Goal Upgrades"
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/puerto-rico/puerto-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/puerto-rico/puerto-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/puerto-rico/puerto-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/puerto-rico/puerto-thumb.png",
+        "width": 1122
+      }
     ]
   },
   {
@@ -735,6 +771,24 @@
       "Through the Seasons",
       "Promotional Set",
       "Stretch Goals"
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/agricola/agricola-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/agricola/agricola-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/agricola/agricola-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/agricola/agricola-thumb.png",
+        "width": 1122
+      }
     ]
   },
   {
@@ -911,6 +965,24 @@
         "src": "/images/games/grimcoven/gallery/grimcoven-5.png",
         "title": "Boss och terräng på spelbordet",
         "alt": "Stor miniatyr med baner på hexagonala spelbrickor, omgiven av mindre figurer, klippterräng, en röd markör, kort och staplade spelmarkörer."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/grimcoven/grimcoven-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/grimcoven/grimcoven-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/grimcoven/grimcoven-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/grimcoven/grimcoven-thumb.png",
+        "width": 1122
       }
     ]
   },
@@ -1428,7 +1500,25 @@
         "alt": "En stor grå rymdvarelse och mindre figurer med gröna och röda basringar på rymdskeppets mörka spelplan, bland rumsbrickor och gula markörer."
       }
     ],
-    "expansions": ["Aftermath"]
+    "expansions": ["Aftermath"],
+    "coverVariants": [
+      {
+        "src": "/images/games/nemesis-aftermath/nemesis-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/nemesis-aftermath/nemesis-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/nemesis-aftermath/nemesis-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/nemesis-aftermath/nemesis-thumb.png",
+        "width": 1122
+      }
+    ]
   },
   {
     "id": "an-infamous-traffic-second-edition",
