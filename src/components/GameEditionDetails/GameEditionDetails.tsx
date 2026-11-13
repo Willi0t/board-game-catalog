@@ -1,7 +1,16 @@
 import type { Game } from '../../types/game';
+import GameExpansions from '../GameExpansions/GameExpansions';
 import styles from './GameEditionDetails.module.css';
 
-export default function GameEditionDetails({ game }: { game: Game }) {
+export default function GameEditionDetails({
+  game,
+  expansionsClassName,
+  panel = false,
+}: {
+  game: Game;
+  expansionsClassName?: string;
+  panel?: boolean;
+}) {
   return (
     <>
       {game.edition && (
@@ -10,16 +19,11 @@ export default function GameEditionDetails({ game }: { game: Game }) {
           <p>{game.edition}</p>
         </section>
       )}
-      {game.expansions && game.expansions.length > 0 && (
-        <section className={styles.section}>
-          <h3>Expansioner</h3>
-          <ul>
-            {game.expansions.map((expansion, index) => (
-              <li key={`${expansion}-${index}`}>{expansion}</li>
-            ))}
-          </ul>
-        </section>
-      )}
+      <GameExpansions
+        panel={panel}
+        expansions={game.expansions}
+        className={expansionsClassName}
+      />
     </>
   );
 }

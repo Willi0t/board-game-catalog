@@ -1,7 +1,7 @@
 [
   {
     "id": "burgundy",
-    "title": "Castles of Burgundy",
+    "title": "The Castles of Burgundy",
     "edition": "Special Edition",
     "category": "Strategi",
     "accent": "#336b94",
@@ -57,11 +57,34 @@
     "descriptionStatus": "draft",
     "catalogMetadata": {
       "sourceRow": 11,
-      "sourceTitle": "The Castles of Burgundy",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "The Castles of Burgundy: Special Edition",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": [
+      "New Duchies",
+      "The White Castles and Inns",
+      "Trade Routes",
+      "The Team Game & Solo Expansion",
+      "The Shields & Championship Boards",
+      "Vineyards Expansion",
+      "Stretch Goal Upgrades"
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/burgundy/castle-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/burgundy/castle-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/burgundy/castle-thumb.png",
+        "width": 768
+      }
+    ]
   },
   {
     "id": "terraforming",
@@ -86,10 +109,54 @@
     "catalogMetadata": {
       "sourceRow": 13,
       "sourceTitle": "Terraforming Mars",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/terraforming/mars-thumb.png",
+    "coverAlt": "Omslag till Terraforming Mars med två astronauter i ett rött landskap och spelets titel.",
+    "hero": "/images/games/terraforming/mars-banner.png",
+    "heroAlt": "Terraforming Mars-logotyp till vänster och två astronauter i ett marslandskap med sjöar och träd.",
+    "gallery": [
+      {
+        "src": "/images/games/terraforming/gallery/mars-1.png",
+        "title": "Askens baksida",
+        "alt": "Askens baksida med spelöversikt, kort och komponenter."
+      },
+      {
+        "src": "/images/games/terraforming/gallery/mars-2.png",
+        "title": "Spelet på rött bord",
+        "alt": "Spelplan, spelarbräde, kort och resurskuber på ett rött bord."
+      },
+      {
+        "src": "/images/games/terraforming/gallery/mars-3.png",
+        "title": "Brickor på Mars",
+        "alt": "Närbild av skogs-, stads- och havsbrickor med röda och blå kuber."
+      },
+      {
+        "src": "/images/games/terraforming/gallery/mars-4.png",
+        "title": "Spelplan och resurser",
+        "alt": "Spelplan med skogs- och havsbrickor, spelarbräde, kort och resurskuber på ett bord."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/terraforming/mars-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/terraforming/mars-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/terraforming/mars-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/terraforming/mars-thumb.png",
+        "width": 1122
+      }
+    ]
   },
   {
     "id": "cosmic",
@@ -108,16 +175,61 @@
     "bestWith": "4–5",
     "playerInteraction": 5,
     "mechanics": ["Negotiation", "Bluff & deduction", "Hand management"],
-    "gameTypes": ["Competitive", "Party", "Social"],
+    "gameTypes": ["Competitive", "Social"],
     "upcoming": false,
     "descriptionStatus": "draft",
     "catalogMetadata": {
       "sourceRow": 34,
       "sourceTitle": "Cosmic Encounter",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": ["Cosmic Dominion", "Cosmic Odyssey", "Cosmic Conflict"],
+    "cover": "/images/games/cosmic/cosmic-thumb.png",
+    "coverAlt": "Omslag till Cosmic Encounter med gyllene logotyp, utomjordiska varelser och blå energi mot en stjärnhimmel.",
+    "hero": "/images/games/cosmic/cosmic-banner.png",
+    "heroAlt": "Cosmic Encounter-logotyp framför utomjordiska varelser och lysande blå energi.",
+    "gallery": [
+      {
+        "src": "/images/games/cosmic/gallery/cosmic-1.png",
+        "title": "Askens baksida",
+        "alt": "Askens baksida med spelöversikt, utomjording, kort och färgade rymdskepp."
+      },
+      {
+        "src": "/images/games/cosmic/gallery/cosmic-2.png",
+        "title": "Spelet uppdukat",
+        "alt": "Färgade rymdskepp på planetbrickor, kort och en rymdportal på ett bord."
+      },
+      {
+        "src": "/images/games/cosmic/gallery/cosmic-3.png",
+        "title": "Rymdskepp och portal",
+        "alt": "Lila och gröna rymdskepp på planetbrickor intill kort och en rymdportal med ett rött skepp."
+      },
+      {
+        "src": "/images/games/cosmic/gallery/cosmic-4.png",
+        "title": "Spelomgång på rymdmatta",
+        "alt": "Spelare runt en rymdmatta med planetbrickor, färgade rymdskepp och kort."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/cosmic/cosmic-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/cosmic/cosmic-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/cosmic/cosmic-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/cosmic/cosmic-thumb.png",
+        "width": 1122
+      }
+    ]
   },
   {
     "id": "clank",
@@ -139,14 +251,58 @@
     "gameTypes": ["Competitive", "Dungeon crawler"],
     "upcoming": false,
     "descriptionStatus": "draft",
-    "expansions": ["Underworld"],
+    "expansions": ["Underworld", "Lairs & Lost Chambers"],
     "catalogMetadata": {
       "sourceRow": 10,
-      "sourceTitle": "Clank! Catacombs + Underworld",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "Clank! Catacombs",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/clank/catacombs-thumb.png",
+    "coverAlt": "Omslag till Clank! Catacombs med äventyrare som flyr en grönlysande skelettdrake.",
+    "hero": "/images/games/clank/catacombs-banner.png",
+    "heroAlt": "Clank! Catacombs med äventyrare och monster, Underworld-logotyp nere till vänster och Lairs & Lost Chambers nere till höger.",
+    "gallery": [
+      {
+        "src": "/images/games/clank/gallery/catacombs-1.png",
+        "title": "Askens baksida",
+        "alt": "Askens baksida med spelöversikt, kort, spelbrickor och färgade figurer."
+      },
+      {
+        "src": "/images/games/clank/gallery/catacombs-2.png",
+        "title": "Katakomberna uppdukade",
+        "alt": "Sammanfogade katakombbrickor med gångar, rum, kuber och en röd spelarfigur."
+      },
+      {
+        "src": "/images/games/clank/gallery/catacombs-3.png",
+        "title": "Underworld",
+        "alt": "Underworld-expansionens ask, kort, markörer och katakombbrickor mot en lavabakgrund."
+      },
+      {
+        "src": "/images/games/clank/gallery/catacombs-4.png",
+        "title": "Spelomgång i katakomberna",
+        "alt": "Spelbrickor med skattkistor, färgade figurer och kuber intill kort på ett bord."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/clank/catacombs-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/clank/catacombs-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/clank/catacombs-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/clank/catacombs-thumb.png",
+        "width": 1122
+      }
+    ]
   },
   {
     "id": "wonders",
@@ -171,10 +327,55 @@
     "catalogMetadata": {
       "sourceRow": 15,
       "sourceTitle": "7 Wonders",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": ["Leaders"],
+    "cover": "/images/games/wonders/wonders-thumb.png",
+    "coverAlt": "Omslag till 7 Wonders med gyllene titel, en staty med fackla och antika byggnadsverk vid havet.",
+    "hero": "/images/games/wonders/wonders-banner.png",
+    "heroAlt": "7 Wonders-logotyp till vänster om en antik hamnstad med staty, pyramid och fyr i solnedgång.",
+    "gallery": [
+      {
+        "src": "/images/games/wonders/gallery/wonders-1.png",
+        "title": "Askens baksida",
+        "alt": "Askens baksida med spelöversikt, kort och ett underverksbräde."
+      },
+      {
+        "src": "/images/games/wonders/gallery/wonders-2.png",
+        "title": "Spelets komponenter",
+        "alt": "Underverksbräden, kort för tre tidsåldrar, mynt, markörer och poängblock på vit bakgrund."
+      },
+      {
+        "src": "/images/games/wonders/gallery/wonders-3.png",
+        "title": "Städer under uppbyggnad",
+        "alt": "Fyra underverksbräden med utlagda kort, mynt och konfliktmarkörer på ett mörkt bord."
+      },
+      {
+        "src": "/images/games/wonders/gallery/wonders-4.png",
+        "title": "Spelomgång runt bordet",
+        "alt": "Spelare runt ett bord med underverksbräden, kort, mynt och markörer."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/wonders/wonders-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/wonders/wonders-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/wonders/wonders-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/wonders/wonders-thumb.png",
+        "width": 1122
+      }
+    ]
   },
   {
     "id": "salad",
@@ -199,10 +400,54 @@
     "catalogMetadata": {
       "sourceRow": 2,
       "sourceTitle": "Point Salad",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/salad/sallad-thumb.png",
+    "coverAlt": "Omslag till Point Salad med vit titel på grön bakgrund och färgglada grönsaker på en tallrik.",
+    "hero": "/images/games/salad/sallad-banner.png",
+    "heroAlt": "Point Salad-logotyp till vänster och en tallrik med färgglada grönsaker till höger på grön bakgrund.",
+    "gallery": [
+      {
+        "src": "/images/games/salad/gallery/sallad-1.png",
+        "title": "Askens baksida",
+        "alt": "Grön askbaksida med spelöversikt och exempel på grönsaks- och poängkort."
+      },
+      {
+        "src": "/images/games/salad/gallery/sallad-2.png",
+        "title": "Garnishes-kort",
+        "alt": "Grönsaks- och poängkort från Garnishes-miniexpansionen på vit bakgrund."
+      },
+      {
+        "src": "/images/games/salad/gallery/sallad-3.png",
+        "title": "Ask och kort",
+        "alt": "Point Salad-ask, regelhäfte och kort på ett träbord, med grönsakskort i en skål."
+      },
+      {
+        "src": "/images/games/salad/gallery/sallad-4.png",
+        "title": "Poäng och grönsaker",
+        "alt": "Fem poängkort ovanför rader av lök-, paprika-, morots- och kålkort."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/salad/sallad-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/salad/sallad-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/salad/sallad-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/salad/sallad-thumb.png",
+        "width": 1122
+      }
+    ]
   },
   {
     "id": "burgle",
@@ -227,10 +472,54 @@
     "catalogMetadata": {
       "sourceRow": 8,
       "sourceTitle": "Burgle Bros",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "hero": "/images/games/burgle/burgle-banner.png",
+    "heroAlt": "Burgle Bros.-titeln och kuppgänget i ett genomskuret hus med vakter och kassaskåp.",
+    "gallery": [
+      {
+        "src": "/images/games/burgle/gallery/burgle-1.png",
+        "title": "Spelet uppdukat",
+        "alt": "Rumsbrickor, kort, tärningar och spelpjäser uppdukade på ett vitt bord."
+      },
+      {
+        "src": "/images/games/burgle/gallery/burgle-2.png",
+        "title": "Kuppgänget",
+        "alt": "Tre färgade karaktärspjäser på en rumsbricka."
+      },
+      {
+        "src": "/images/games/burgle/gallery/burgle-3.png",
+        "title": "Rum och hinder",
+        "alt": "Avslöjade rum, träväggar och orange tärningar på spelplanen."
+      },
+      {
+        "src": "/images/games/burgle/gallery/burgle-4.png",
+        "title": "Två våningar",
+        "alt": "Två våningar med rumsbrickor, vaktkort och karaktärskort på ett träbord."
+      }
+    ],
+    "cover": "/images/games/burgle/burgle-thumb.png",
+    "coverAlt": "Burgle Bros.-omslag med kuppgänget ovanför titeln på en gul affisch med röd ram.",
+    "coverVariants": [
+      {
+        "src": "/images/games/burgle/burgle-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/burgle/burgle-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/burgle/burgle-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/burgle/burgle-thumb.png",
+        "width": 1122
+      }
+    ]
   },
   {
     "id": "duel",
@@ -255,10 +544,54 @@
     "catalogMetadata": {
       "sourceRow": 9,
       "sourceTitle": "7 Wonders Duel",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/duel/wonders-duel-thumb.png",
+    "coverAlt": "7 Wonders Duel-omslag med guldtitel, en krigare och en egyptisk kvinna framför antika städer.",
+    "coverVariants": [
+      {
+        "src": "/images/games/duel/wonders-duel-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/duel/wonders-duel-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/duel/wonders-duel-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/duel/wonders-duel-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/duel/wonders-duel-banner.png",
+    "heroAlt": "7 Wonders Duel-titeln med en krigare, en egyptisk kvinna och antika städer i solnedgång.",
+    "gallery": [
+      {
+        "src": "/images/games/duel/gallery/wonders-duel-1.png",
+        "title": "Askens baksida",
+        "alt": "Askens baksida med spelöversikt, kort och komponenter."
+      },
+      {
+        "src": "/images/games/duel/gallery/wonders-duel-2.png",
+        "title": "Spelet uppdukat",
+        "alt": "Kortformation, underverk, mynt och militärspår uppdukade på ett träbord."
+      },
+      {
+        "src": "/images/games/duel/gallery/wonders-duel-3.png",
+        "title": "Kortformationen",
+        "alt": "Överlappande öppna och dolda kort med lila baksidor på ett träbord."
+      },
+      {
+        "src": "/images/games/duel/gallery/wonders-duel-4.png",
+        "title": "Byggnadskort",
+        "alt": "Färgade byggnadskort med antika byggnader utlagda i solfjädersform."
+      }
+    ]
   },
   {
     "id": "vaalbara",
@@ -277,16 +610,60 @@
     "bestWith": "2–5",
     "playerInteraction": 3,
     "mechanics": ["Hand management", "Drafting", "Set collection"],
-    "gameTypes": ["Competitive", "Party", "Social"],
+    "gameTypes": ["Competitive", "Social"],
     "upcoming": false,
     "descriptionStatus": "draft",
     "catalogMetadata": {
       "sourceRow": 26,
       "sourceTitle": "Vaalbara",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/vaalbara/vaalbara-thumb.png",
+    "coverAlt": "Vaalbara-omslag med en hornprydd gestalt, en uggla och vargar på en klippa.",
+    "coverVariants": [
+      {
+        "src": "/images/games/vaalbara/vaalbara-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/vaalbara/vaalbara-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/vaalbara/vaalbara-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/vaalbara/vaalbara-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/vaalbara/vaalbara-banner.png",
+    "heroAlt": "Vaalbara-titeln över ett grönt landskap med en hornprydd gestalt och en flygande uggla.",
+    "gallery": [
+      {
+        "src": "/images/games/vaalbara/gallery/vaalbara-1.png",
+        "title": "Regelöversikt",
+        "alt": "En regelsida med spelets mål, komponenter och exempel på land- och karaktärskort."
+      },
+      {
+        "src": "/images/games/vaalbara/gallery/vaalbara-2.png",
+        "title": "Karaktärskort på hand",
+        "alt": "En hand håller karaktärskort framför spelasken och uppdukade kort."
+      },
+      {
+        "src": "/images/games/vaalbara/gallery/vaalbara-3.png",
+        "title": "Ask och kort",
+        "alt": "Vaalbara-asken med landkort och karaktärskort på ett träbord."
+      },
+      {
+        "src": "/images/games/vaalbara/gallery/vaalbara-4.png",
+        "title": "Spelet uppdukat",
+        "alt": "Spelask, landkort, karaktärskort och poängmarker på ett mörkt bord."
+      }
+    ]
   },
   {
     "id": "citadels",
@@ -305,16 +682,60 @@
     "bestWith": "4–6",
     "playerInteraction": 4,
     "mechanics": ["Drafting", "Action selection", "Bluff & deduction"],
-    "gameTypes": ["Competitive", "Party", "Social"],
+    "gameTypes": ["Competitive", "Social"],
     "upcoming": false,
     "descriptionStatus": "draft",
     "catalogMetadata": {
       "sourceRow": 29,
       "sourceTitle": "Citadels",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/citadels/citadels-thumb.png",
+    "coverAlt": "Citadels-omslag med titeln ovanför en färgstark medeltida stad och en kung med sitt följe.",
+    "coverVariants": [
+      {
+        "src": "/images/games/citadels/citadels-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/citadels/citadels-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/citadels/citadels-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/citadels/citadels-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/citadels/citadels-banner.png",
+    "heroAlt": "Citadels-titeln vid en medeltida stad med torn, marknad och en stenbro över vattnet.",
+    "gallery": [
+      {
+        "src": "/images/games/citadels/gallery/citadels-1.png",
+        "title": "Kort och spelpjäser",
+        "alt": "Karaktärskort och byggnadskort tillsammans med en gul krona och guldmynt."
+      },
+      {
+        "src": "/images/games/citadels/gallery/citadels-2.png",
+        "title": "Ask och innehåll",
+        "alt": "Citadels-asken med utbredda karaktärskort, byggnadskort och guldmynt."
+      },
+      {
+        "src": "/images/games/citadels/gallery/citadels-3.png",
+        "title": "Kronan och byggnaderna",
+        "alt": "En gul krona och mynt på byggnadskort utlagda på ett träbord."
+      },
+      {
+        "src": "/images/games/citadels/gallery/citadels-4.png",
+        "title": "Byggnadskort",
+        "alt": "Nio byggnadskort med bland annat värdshus, slott, kyrka och tempel."
+      }
+    ]
   },
   {
     "id": "starwars",
@@ -339,10 +760,54 @@
     "catalogMetadata": {
       "sourceRow": 5,
       "sourceTitle": "Star Wars: The Deckbuilding Game",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/starwars/starwars-thumb.png",
+    "coverAlt": "Star Wars: The Deckbuilding Game-omslag med Luke Skywalker och Darth Vader i ljussabelduell.",
+    "coverVariants": [
+      {
+        "src": "/images/games/starwars/starwars-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/starwars/starwars-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/starwars/starwars-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/starwars/starwars-thumb.png",
+        "width": 1000
+      }
+    ],
+    "hero": "/images/games/starwars/starwars-banner.png",
+    "heroAlt": "Luke Skywalker och Darth Vader korsar ljussablar, med spelets logga nere till höger.",
+    "gallery": [
+      {
+        "src": "/images/games/starwars/gallery/starwars-1.png",
+        "title": "Askens baksida",
+        "alt": "Askens tyska baksida med spelöversikt, kort och komponenter."
+      },
+      {
+        "src": "/images/games/starwars/gallery/starwars-2.png",
+        "title": "En pågående duell",
+        "alt": "En spelare lägger ett Darth Vader-kort på en stjärnmönstrad spelmatta."
+      },
+      {
+        "src": "/images/games/starwars/gallery/starwars-3.png",
+        "title": "Spelet uppdukat",
+        "alt": "Kort, baser och färgade markörer på två illustrerade Star Wars-spelmattor."
+      },
+      {
+        "src": "/images/games/starwars/gallery/starwars-4.png",
+        "title": "Kort på hand",
+        "alt": "En hand håller kort med bland annat Bossk framför spelet på ett vitt bord."
+      }
+    ]
   },
   {
     "id": "scarface",
@@ -360,17 +825,67 @@
     "placeholderTheme": "geometric-olive",
     "bestWith": "4",
     "playerInteraction": 4,
-    "mechanics": ["Worker placement", "Deckbuilding", "Area control"],
+    "mechanics": [
+      "Worker placement",
+      "Deckbuilding",
+      "Area control",
+      "Engine building"
+    ],
     "gameTypes": ["Competitive", "Social"],
     "upcoming": false,
     "descriptionStatus": "draft",
     "catalogMetadata": {
       "sourceRow": 19,
       "sourceTitle": "Scarface 1920",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": ["Bloody Business", "Enforcers", "Stretch Goal Upgrades"],
+    "cover": "/images/games/scarface/scarface1920-thumb.png",
+    "coverAlt": "Scarface 1920-omslag med fyra gangstergestalter ovanför titeln och en bil på en stadsgata.",
+    "coverVariants": [
+      {
+        "src": "/images/games/scarface/scarface1920-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/scarface/scarface1920-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/scarface/scarface1920-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/scarface/scarface1920-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/scarface/scarface1920-banner.png",
+    "heroAlt": "Scarface 1920-titeln vid en regnvåt stadsgata med ett par och en bil utanför en upplyst entré.",
+    "gallery": [
+      {
+        "src": "/images/games/scarface/gallery/scarface1920-1.png",
+        "title": "Capones spelarbräde",
+        "alt": "Alphonse Capones spelarbräde med markörer, miniatyrer och sedlar på ett träbord."
+      },
+      {
+        "src": "/images/games/scarface/gallery/scarface1920-2.png",
+        "title": "Kort och resurser",
+        "alt": "Bildkollage med karaktärskort, sedlar, tunnor och färgade miniatyrer på spelplanen."
+      },
+      {
+        "src": "/images/games/scarface/gallery/scarface1920-3.png",
+        "title": "Gäng och miniatyrer",
+        "alt": "Bildkollage med Black Wolves-gängets skärm och närbilder på beväpnade miniatyrer."
+      },
+      {
+        "src": "/images/games/scarface/gallery/scarface1920-4.png",
+        "title": "Kampen om Chicago",
+        "alt": "Bildkollage med kort, tidningskort och färgade miniatyrer på Chicagos stadskarta."
+      }
+    ]
   },
   {
     "id": "codex-naturalis",
@@ -395,10 +910,54 @@
     "catalogMetadata": {
       "sourceRow": 3,
       "sourceTitle": "Codex Naturalis",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/codex-naturalis/codex-naturalis-thumb.png",
+    "coverAlt": "Codex Naturalis-emblemet omgivet av växter, djur, insekter och svampar i fyra färgfält.",
+    "coverVariants": [
+      {
+        "src": "/images/games/codex-naturalis/codex-naturalis-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/codex-naturalis/codex-naturalis-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/codex-naturalis/codex-naturalis-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/codex-naturalis/codex-naturalis-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/codex-naturalis/codex-naturalis-banner.png",
+    "heroAlt": "Codex Naturalis-emblemet i mitten av ett färgstarkt landskap med växter, djur, insekter och svampar.",
+    "gallery": [
+      {
+        "src": "/images/games/codex-naturalis/gallery/codex-naturalis-1.png",
+        "title": "Gulddetaljer",
+        "alt": "Närbild av ett guldfärgat kort med ett grönt blad och en röd svamp."
+      },
+      {
+        "src": "/images/games/codex-naturalis/gallery/codex-naturalis-2.png",
+        "title": "Insektskort",
+        "alt": "Närbild av ett lila kort med en humla, gulddetaljer och en bläckflaska."
+      },
+      {
+        "src": "/images/games/codex-naturalis/gallery/codex-naturalis-3.png",
+        "title": "Överlappande kort",
+        "alt": "Gröna, röda, blå och lila kort utlagda över varandras hörn på en rosa duk."
+      },
+      {
+        "src": "/images/games/codex-naturalis/gallery/codex-naturalis-4.png",
+        "title": "Spelet uppdukat",
+        "alt": "Kortformationer, kortlekar och en poängbräda med färgade markörer på ett träbord."
+      }
+    ]
   },
   {
     "id": "knarr",
@@ -423,10 +982,59 @@
     "catalogMetadata": {
       "sourceRow": 4,
       "sourceTitle": "Knarr",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/knarr/knarr-thumb.png",
+    "coverAlt": "Knarr-omslag med titeln ovanför en pälsklädd roddare under norrsken.",
+    "coverVariants": [
+      {
+        "src": "/images/games/knarr/knarr-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/knarr/knarr-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/knarr/knarr-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/knarr/knarr-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/knarr/knarr-banner.png",
+    "heroAlt": "Knarr-titeln vid en pälsklädd roddare på havet under stjärnor och norrsken.",
+    "gallery": [
+      {
+        "src": "/images/games/knarr/gallery/knarr-1.png",
+        "title": "Spelet uppdukat",
+        "alt": "Knarr-asken med spelbräde, kort, skeppsbrickor och markörer uppdukade mot vit bakgrund."
+      },
+      {
+        "src": "/images/games/knarr/gallery/knarr-2.png",
+        "title": "En besättningsmedlem",
+        "alt": "Närbild av ett gult karaktärskort med en skäggig man med korsade armar."
+      },
+      {
+        "src": "/images/games/knarr/gallery/knarr-3.png",
+        "title": "Skeppsbrickan",
+        "alt": "Närbild av en blå skeppsbricka med ett seglande vikingaskepp."
+      },
+      {
+        "src": "/images/games/knarr/gallery/knarr-4.png",
+        "title": "Resmål",
+        "alt": "Närbild av illustrerade resmålskort med kustlandskap, byggnader och symboler."
+      },
+      {
+        "src": "/images/games/knarr/gallery/knarr-5.png",
+        "title": "Spelmarkörer",
+        "alt": "Runda vita markörer med gröna hjälmar och röda skeppssymboler på ett blått spelbräde."
+      }
+    ]
   },
   {
     "id": "the-crew-mission-deep-sea",
@@ -451,10 +1059,54 @@
     "catalogMetadata": {
       "sourceRow": 6,
       "sourceTitle": "The Crew: Mission Deep Sea",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/the-crew-mission-deep-sea/the-crew-deep-sea-thumb.png",
+    "coverAlt": "The Crew: Mission Deep Sea-omslag med dykare som utforskar en sjunken stad under havet.",
+    "coverVariants": [
+      {
+        "src": "/images/games/the-crew-mission-deep-sea/the-crew-deep-sea-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/the-crew-mission-deep-sea/the-crew-deep-sea-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/the-crew-mission-deep-sea/the-crew-deep-sea-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/the-crew-mission-deep-sea/the-crew-deep-sea-thumb.png",
+        "width": 1000
+      }
+    ],
+    "hero": "/images/games/the-crew-mission-deep-sea/the-crew-deep-sea-banner.png",
+    "heroAlt": "The Crew: Mission Deep Sea-titeln vid dykare och ruiner i en undervattensgrotta.",
+    "gallery": [
+      {
+        "src": "/images/games/the-crew-mission-deep-sea/gallery/the-crew-deep-sea-1.png",
+        "title": "Askens baksida",
+        "alt": "Askens engelska baksida med spelöversikt, kort och markörer."
+      },
+      {
+        "src": "/images/games/the-crew-mission-deep-sea/gallery/the-crew-deep-sea-2.png",
+        "title": "Kort och komponenter",
+        "alt": "Färgade spelkort, uppdragskort, markörer och en dykarfigur mot vit bakgrund."
+      },
+      {
+        "src": "/images/games/the-crew-mission-deep-sea/gallery/the-crew-deep-sea-3.png",
+        "title": "Uppdragskort",
+        "alt": "Tyska uppdragskort med färgade kortsymboler och blå baksidor på ett mörkt bord."
+      },
+      {
+        "src": "/images/games/the-crew-mission-deep-sea/gallery/the-crew-deep-sea-4.png",
+        "title": "Undervattensmotiv",
+        "alt": "Nio numrerade spelkort med dykare, undervattensfarkoster och havsdjur."
+      }
+    ]
   },
   {
     "id": "spies-lies-supplies",
@@ -479,14 +1131,58 @@
     "catalogMetadata": {
       "sourceRow": 7,
       "sourceTitle": "Spies, Lies & Supplies",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/spies-lies-supplies/air-land-sea-spies-thumb.png",
+    "coverAlt": "Air, Land & Sea: Spies, Lies, & Supplies-omslag med spioner, diplomater och svetsare.",
+    "coverVariants": [
+      {
+        "src": "/images/games/spies-lies-supplies/air-land-sea-spies-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/spies-lies-supplies/air-land-sea-spies-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/spies-lies-supplies/air-land-sea-spies-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/spies-lies-supplies/air-land-sea-spies-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/spies-lies-supplies/air-land-sea-spies-banner.png",
+    "heroAlt": "Air, Land & Sea-titeln med undertiteln Spies, Lies, & Supplies vid en regnig hamn med spioner och svetsare.",
+    "gallery": [
+      {
+        "src": "/images/games/spies-lies-supplies/gallery/air-land-sea-spies-1.png",
+        "title": "Kort och komponenter",
+        "alt": "Kort för underrättelser, diplomati och ekonomi tillsammans med spelhjälper och poängmarker."
+      },
+      {
+        "src": "/images/games/spies-lies-supplies/gallery/air-land-sea-spies-2.png",
+        "title": "Spelet uppdukat",
+        "alt": "Tre områdeskort med spelkort på båda sidor, kortlek och poängmarker."
+      },
+      {
+        "src": "/images/games/spies-lies-supplies/gallery/air-land-sea-spies-3.png",
+        "title": "Kort på hand",
+        "alt": "En hand håller flera spelkort med Requisition-kortet längst fram."
+      },
+      {
+        "src": "/images/games/spies-lies-supplies/gallery/air-land-sea-spies-4.png",
+        "title": "En pågående match",
+        "alt": "Spelkort kring områdena ekonomi, underrättelser och diplomati på en grå duk."
+      }
+    ]
   },
   {
     "id": "deep-regrets-deeper-regrets",
-    "title": "Deep Regrets + Deeper Regrets",
+    "title": "Deep Regrets",
     "edition": "",
     "category": "Övrigt",
     "accent": "#815467",
@@ -499,18 +1195,63 @@
     "weight": 2.39,
     "playerInteraction": 3,
     "mechanics": ["Push your luck"],
-    "gameTypes": ["Competitive", "Party", "Social"],
+    "gameTypes": ["Competitive", "Social"],
     "upcoming": false,
     "minutes": null,
     "descriptionStatus": "missing",
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
       "sourceRow": 12,
-      "sourceTitle": "Deep Regrets + Deeper Regrets",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "Deep Regrets",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": ["Deeper Regrets"],
+    "cover": "/images/games/deep-regrets-deeper-regrets/deep-regrets-thumb.png",
+    "coverAlt": "Deep Regrets-omslag med en fiskebåt ovanför titeln och en grön tentakel i havsdjupet.",
+    "coverVariants": [
+      {
+        "src": "/images/games/deep-regrets-deeper-regrets/deep-regrets-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/deep-regrets-deeper-regrets/deep-regrets-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/deep-regrets-deeper-regrets/deep-regrets-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/deep-regrets-deeper-regrets/deep-regrets-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/deep-regrets-deeper-regrets/deep-regrets-banner.png",
+    "heroAlt": "Deep Regrets-titeln vid ett mörkt hav med fiskebåt, fiskar och en stor grön tentakel.",
+    "gallery": [
+      {
+        "src": "/images/games/deep-regrets-deeper-regrets/gallery/deep-regrets-1.png",
+        "title": "Spelet uppdukat",
+        "alt": "Spelbräden, fiskkort, tärningar och färgade båtpjäser uppdukade på ett träbord."
+      },
+      {
+        "src": "/images/games/deep-regrets-deeper-regrets/gallery/deep-regrets-2.png",
+        "title": "Fiskets första steg",
+        "alt": "Illustrerad engelsk regelöversikt med fiskar, djupkort och exempel på att avslöja en fisk."
+      },
+      {
+        "src": "/images/games/deep-regrets-deeper-regrets/gallery/deep-regrets-3.png",
+        "title": "Fiske och tärningar",
+        "alt": "Illustrerad engelsk regelöversikt med fiskkort, förmågesymboler och betalning med tärningar."
+      },
+      {
+        "src": "/images/games/deep-regrets-deeper-regrets/gallery/deep-regrets-4.png",
+        "title": "Fångst och djup",
+        "alt": "Illustrerad engelsk regelöversikt med fångst, småfångstkort och förflyttning till djupare vatten."
+      }
+    ]
   },
   {
     "id": "solar-titans",
@@ -535,10 +1276,54 @@
     "catalogMetadata": {
       "sourceRow": 14,
       "sourceTitle": "Solar Titans",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/solar-titans/solar-titans-thumb.png",
+    "coverAlt": "Solar Titans-omslag med orange titel och ett rymdskepp med glödande motorer ovanför en planet.",
+    "coverVariants": [
+      {
+        "src": "/images/games/solar-titans/solar-titans-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/solar-titans/solar-titans-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/solar-titans/solar-titans-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/solar-titans/solar-titans-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/solar-titans/solar-titans-banner.png",
+    "heroAlt": "Solar Titans-titeln bredvid ett rymdskepp ovanför en planets solbelysta horisont.",
+    "gallery": [
+      {
+        "src": "/images/games/solar-titans/gallery/solar-titans-1.png",
+        "title": "Ask och spelmaterial",
+        "alt": "Solar Titans-asken, regelbok och kort som bildar rymdskepp på ett träbord."
+      },
+      {
+        "src": "/images/games/solar-titans/gallery/solar-titans-2.png",
+        "title": "Kort och automaskepp",
+        "alt": "Kortlekar, besättningskort och ett stort automaskeppskort på en mörk duk."
+      },
+      {
+        "src": "/images/games/solar-titans/gallery/solar-titans-3.png",
+        "title": "Rymdskeppets moduler",
+        "alt": "Närbild av överlappande skeppskort med laservapen och kommandodäck."
+      },
+      {
+        "src": "/images/games/solar-titans/gallery/solar-titans-4.png",
+        "title": "Spelet uppdukat",
+        "alt": "Öppen spelask, regelbok och utlagda rymdskepp av kort på ett mörkt bord."
+      }
+    ]
   },
   {
     "id": "love-letter",
@@ -555,7 +1340,7 @@
     "weight": 1.11,
     "playerInteraction": 4,
     "mechanics": ["Bluff & deduction", "Hand management"],
-    "gameTypes": ["Competitive", "Party", "Social"],
+    "gameTypes": ["Competitive", "Social"],
     "upcoming": false,
     "minutes": null,
     "descriptionStatus": "missing",
@@ -563,18 +1348,62 @@
     "catalogMetadata": {
       "sourceRow": 16,
       "sourceTitle": "Love Letter",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/love-letter/love-letter-thumb.png",
+    "coverAlt": "Love Letter-omslag på pergament med rött vaxsigill, vågskålsemblem och två hovpersoner.",
+    "coverVariants": [
+      {
+        "src": "/images/games/love-letter/love-letter-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/love-letter/love-letter-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/love-letter/love-letter-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/love-letter/love-letter-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/love-letter/love-letter-banner.png",
+    "heroAlt": "Love Letter-titeln och ett rött vaxsigill på pergament bredvid prinsessan och hovet.",
+    "gallery": [
+      {
+        "src": "/images/games/love-letter/gallery/love-letter-1.png",
+        "title": "Kungliga kort och markörer",
+        "alt": "Kort med kungen, prinsessan och grevinnan samt fem röda sigillmarkörer."
+      },
+      {
+        "src": "/images/games/love-letter/gallery/love-letter-2.png",
+        "title": "Spelet uppdukat",
+        "alt": "Karaktärskort, röda kortbaksidor, referenskort och sigillmarkörer utlagda för fyra spelare."
+      },
+      {
+        "src": "/images/games/love-letter/gallery/love-letter-3.png",
+        "title": "Personer vid hovet",
+        "alt": "Fyra karaktärskort med vakten, prinsen, baronen och hovdamen."
+      },
+      {
+        "src": "/images/games/love-letter/gallery/love-letter-4.png",
+        "title": "Kort och sigill",
+        "alt": "Karaktärskort och röda sigillmarkörer på ett mönster av vinröda kortbaksidor."
+      }
+    ]
   },
   {
     "id": "puerto-rico",
-    "title": "Puerto Rico",
-    "edition": "",
+    "title": "Puerto Rico 1897",
+    "edition": "Special Edition",
     "category": "Övrigt",
-    "accent": "#815467",
-    "tint": "#eadce2",
+    "accent": "#965824",
+    "tint": "#f6ece4",
     "description": "",
     "placeholderTheme": "castle-rose",
     "playersMin": 2,
@@ -590,19 +1419,80 @@
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
       "sourceRow": 17,
-      "sourceTitle": "Puerto Rico",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "Puerto Rico 1897: Special Edition",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/puerto-rico/puerto-thumb.png",
+    "coverAlt": "Omslag till Puerto Rico 1897: Special Edition med vit logotyp över en marknadsgata, människor med varor och ett segelfartyg i solnedgången.",
+    "hero": "/images/games/puerto-rico/puerto-banner.png",
+    "heroAlt": "Bred illustration med logotypen för Puerto Rico 1897: Special Edition till vänster och en solbelyst marknad med fruktstånd och en person som bär bananklasar till höger.",
+    "gallery": [
+      {
+        "src": "/images/games/puerto-rico/gallery/puerto-1.png",
+        "title": "Spelask och komponenter",
+        "alt": "Spelasken till Puerto Rico 1897: Special Edition bredvid fyra närbilder av kort, byggnadsminiatyrer, figurer och varulådor."
+      },
+      {
+        "src": "/images/games/puerto-rico/gallery/puerto-2.png",
+        "title": "Spelet uppdukat",
+        "alt": "Översikt av spelarmattor och en central spelplan med skepp, byggnadsminiatyrer, kort, mynt, varubrickor och en tygpåse."
+      },
+      {
+        "src": "/images/games/puerto-rico/gallery/puerto-3.png",
+        "title": "Hamnen och lastfartygen",
+        "alt": "Tre bruna skeppsminiatyrer lastade med gula, bruna och gröna varor framför stora byggnadsminiatyrer på hamnens spelplan."
+      },
+      {
+        "src": "/images/games/puerto-rico/gallery/puerto-4.png",
+        "title": "Skepp och varulådor",
+        "alt": "Närbild av ett brunt skepp lastat med lådor med vita varor, omgivet av lådor med gula, gröna, bruna och svarta varor."
+      },
+      {
+        "src": "/images/games/puerto-rico/gallery/puerto-5.png",
+        "title": "Spelarmatta med odlingar",
+        "alt": "Spelarmatta med odlingsbrickor, bruna figurer och byggnadsbrickor, samt varulådor, markörer och silverfärgade mynt till höger."
+      },
+      {
+        "src": "/images/games/puerto-rico/gallery/puerto-6.png",
+        "title": "Byggnadsminiatyrer",
+        "alt": "Närbild av sandfärgade byggnadsminiatyrer med torn, pelare och skorstenar på spelarmattor med byggnadsfält och tryckt regeltext."
+      }
+    ],
+    "expansions": [
+      "New Buildings",
+      "Citizens",
+      "The Smuggler",
+      "The Festival",
+      "Stretch Goal Upgrades"
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/puerto-rico/puerto-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/puerto-rico/puerto-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/puerto-rico/puerto-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/puerto-rico/puerto-thumb.png",
+        "width": 1122
+      }
+    ]
   },
   {
     "id": "agricola",
     "title": "Agricola",
-    "edition": "",
+    "edition": "Special Edition",
     "category": "Övrigt",
-    "accent": "#815467",
-    "tint": "#eadce2",
+    "accent": "#1f57ad",
+    "tint": "#e4ebf6",
     "description": "",
     "placeholderTheme": "castle-rose",
     "playersMin": 1,
@@ -618,11 +1508,81 @@
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
       "sourceRow": 18,
-      "sourceTitle": "Agricola",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "Agricola: Special Edition",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/agricola/agricola-thumb.png",
+    "coverAlt": "Omslag till Agricola: Special Edition med en familj, lantgårdsdjur och ett hus med halmtak under blå himmel.",
+    "hero": "/images/games/agricola/agricola-banner.png",
+    "heroAlt": "Bred gårdsillustration med Agricola-logotyp, ett får i förgrunden och en familj bland höns och andra djur vid ett hus med halmtak.",
+    "gallery": [
+      {
+        "src": "/images/games/agricola/gallery/agricola-1.png",
+        "title": "Spelplaner och komponenter",
+        "alt": "Översikt av handlingsbräde, två gårdsplaner, kort, djurfigurer, resurser och staket."
+      },
+      {
+        "src": "/images/games/agricola/gallery/agricola-2.png",
+        "title": "Gård med beteshagar",
+        "alt": "Gårdsplan med djur i inhägnader, åkrar och familjefigurer, omgiven av kort, resurser och staketdelar."
+      },
+      {
+        "src": "/images/games/agricola/gallery/agricola-3.png",
+        "title": "Förbättringskort",
+        "alt": "Staplar av förbättringskort med Lifting Machine, Food Basket och Cob uppställda i förgrunden."
+      },
+      {
+        "src": "/images/games/agricola/gallery/agricola-4.png",
+        "title": "Spelaskar och kortpaket",
+        "alt": "Askar för Agricola: Special Edition, Farmers of the Moor och Stretch Goals ovanför rader av kortpaket."
+      }
+    ],
+    "expansions": [
+      "Artifex Deck",
+      "Bubulcus Deck",
+      "Corbarius Deck",
+      "Dulcinaria Deck",
+      "Consul Dirigens Deck",
+      "Ephipparius Deck",
+      "Agricola Meets Newdale Deck",
+      "Changelings Expansion",
+      "Ö Deck",
+      "L Deck",
+      "X Deck",
+      "CZ Deck",
+      "Gamers' Deck",
+      "The Legen*dairy Forest Deck",
+      "NL Deck",
+      "World Championship Deck",
+      "Belgium Deck",
+      "Pi Deck",
+      "Bielefeld Deck",
+      "France Deck",
+      "Z-deck",
+      "Through the Seasons",
+      "Promotional Set",
+      "Stretch Goals"
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/agricola/agricola-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/agricola/agricola-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/agricola/agricola-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/agricola/agricola-thumb.png",
+        "width": 1122
+      }
+    ]
   },
   {
     "id": "libertalia-winds-of-galecrest",
@@ -639,7 +1599,7 @@
     "weight": 2.18,
     "playerInteraction": 4,
     "mechanics": ["Hand management", "Action selection", "Set collection"],
-    "gameTypes": ["Competitive", "Party", "Social"],
+    "gameTypes": ["Competitive", "Social"],
     "upcoming": false,
     "minutes": null,
     "descriptionStatus": "missing",
@@ -647,15 +1607,59 @@
     "catalogMetadata": {
       "sourceRow": 20,
       "sourceTitle": "Libertalia: Winds of Galecrest",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/libertalia-winds-of-galecrest/libertalia-thumb.png",
+    "coverAlt": "Libertalia: Winds of Galecrest-omslag med titeln över turkost hav, öar och en pirat på ett luftskepps bogspröt.",
+    "coverVariants": [
+      {
+        "src": "/images/games/libertalia-winds-of-galecrest/libertalia-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/libertalia-winds-of-galecrest/libertalia-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/libertalia-winds-of-galecrest/libertalia-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/libertalia-winds-of-galecrest/libertalia-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/libertalia-winds-of-galecrest/libertalia-banner.png",
+    "heroAlt": "Libertalia-titeln med undertiteln Winds of Galecrest bredvid ett seglande luftskepp över tropiska öar.",
+    "gallery": [
+      {
+        "src": "/images/games/libertalia-winds-of-galecrest/gallery/libertalia-1.png",
+        "title": "Spelet uppdukat",
+        "alt": "Libertalia-asken med spelbräde, kort, färgade brickor och mynt på ett träbord."
+      },
+      {
+        "src": "/images/games/libertalia-winds-of-galecrest/gallery/libertalia-2.png",
+        "title": "Ask och komponenter",
+        "alt": "Spelasken bakom karaktärskort, skeppskort, skattkistor, mynt och färgade markörer."
+      },
+      {
+        "src": "/images/games/libertalia-winds-of-galecrest/gallery/libertalia-3.png",
+        "title": "Byte ur påsen",
+        "alt": "En hand håller färgade bytesbrickor ovanför en öppen tygpåse."
+      },
+      {
+        "src": "/images/games/libertalia-winds-of-galecrest/gallery/libertalia-4.png",
+        "title": "Ett kort spelas",
+        "alt": "En hand lägger karaktärskortet Freed Prisoner på spelbrädet bredvid bytesbrickor och markörer."
+      }
+    ]
   },
   {
     "id": "final-titan",
     "title": "Final Titan",
-    "edition": "",
+    "edition": "Ultimate Edition",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -674,11 +1678,66 @@
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
       "sourceRow": 21,
-      "sourceTitle": "Final Titan",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "Final Titan: Ultimate Edition",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": [
+      "Godspark Expansion",
+      "Mindbug Expansion",
+      "Gamefound Promo Pack",
+      "Stretch Goal Upgrades"
+    ],
+    "cover": "/images/games/final-titan/final-titan-thumb.png",
+    "coverAlt": "Final Titan-omslag med titeln omgiven av fantasyfigurer i kantiga bildpaneler.",
+    "coverVariants": [
+      {
+        "src": "/images/games/final-titan/final-titan-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/final-titan/final-titan-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/final-titan/final-titan-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/final-titan/final-titan-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/final-titan/final-titan-banner.png",
+    "heroAlt": "Final Titan-titeln på ljus bakgrund bredvid en mörk riddare, en muskulös varelse och en ljushårig krigare.",
+    "gallery": [
+      {
+        "src": "/images/games/final-titan/gallery/final-titan-1.png",
+        "title": "Titaner och tärning",
+        "alt": "Final Titan-titeln bland fantasyfigurer och en svart tärning med färgade symboler."
+      },
+      {
+        "src": "/images/games/final-titan/gallery/final-titan-2.png",
+        "title": "Spel och komponenter",
+        "alt": "Kampanjbild med spelaskar, kort, tärningar, marker och tillbehör."
+      },
+      {
+        "src": "/images/games/final-titan/gallery/final-titan-3.png",
+        "title": "Bygg ditt lag",
+        "alt": "Kampanjbild med många karaktärskort och en stor bevingad varelse."
+      },
+      {
+        "src": "/images/games/final-titan/gallery/final-titan-4.png",
+        "title": "Karaktärerna",
+        "alt": "Kampanjbild med karaktärskort, en rustad krigare och text om 135 unika kämpar."
+      },
+      {
+        "src": "/images/games/final-titan/gallery/final-titan-5.png",
+        "title": "Ödets tärning",
+        "alt": "En röd hornprydd varelse omgiven av eld och blixtar bredvid en svart symboltärning."
+      }
+    ]
   },
   {
     "id": "high-society",
@@ -695,7 +1754,7 @@
     "weight": 1.48,
     "playerInteraction": 5,
     "mechanics": ["Auction & bidding"],
-    "gameTypes": ["Competitive", "Party", "Social"],
+    "gameTypes": ["Competitive", "Social"],
     "upcoming": false,
     "minutes": null,
     "descriptionStatus": "missing",
@@ -703,7 +1762,7 @@
     "catalogMetadata": {
       "sourceRow": 22,
       "sourceTitle": "High Society",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -731,7 +1790,7 @@
     "catalogMetadata": {
       "sourceRow": 23,
       "sourceTitle": "Parlay",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "provisional"
     }
@@ -741,8 +1800,8 @@
     "title": "Grimcoven",
     "edition": "",
     "category": "Övrigt",
-    "accent": "#815467",
-    "tint": "#eadce2",
+    "accent": "#ad1f23",
+    "tint": "#f6e4e5",
     "description": "",
     "placeholderTheme": "castle-rose",
     "playersMin": 1,
@@ -759,10 +1818,59 @@
     "catalogMetadata": {
       "sourceRow": 24,
       "sourceTitle": "Grimcoven",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/grimcoven/grimcoven-thumb.png",
+    "coverAlt": "Omslag till Grimcoven med vit logotyp, tre mörkt klädda gestalter i hattar och ett gotiskt slott framför en stor röd måne.",
+    "hero": "/images/games/grimcoven/grimcoven-banner.png",
+    "heroAlt": "Bred illustration med Grimcovens vita logotyp till vänster och tre beväpnade gestalter i svarta hattar och mantlar mot en röd himmel och gotiska torn.",
+    "gallery": [
+      {
+        "src": "/images/games/grimcoven/gallery/grimcoven-1.png",
+        "title": "Drakstrid på spelplanen",
+        "alt": "Hexagonala spelbrickor med en stor drakminiatyr, mindre figurer, gröna portaler och röda markörer, framför boss- och spelarpaneler."
+      },
+      {
+        "src": "/images/games/grimcoven/gallery/grimcoven-2.png",
+        "title": "Miniatyrer och portaler",
+        "alt": "Bildkollage med närbilder av beväpnade figurer, ett slingrande monster, en grön portal och en genomskinlig röd effektminiatyr på spelplanen."
+      },
+      {
+        "src": "/images/games/grimcoven/gallery/grimcoven-3.png",
+        "title": "Stor miniatyr med baner",
+        "alt": "Stor grå miniatyr av en bepansrad gestalt med kedjor, trasiga baner, stav och svärd, bredvid en illustrerad figurbricka och texten Special Edition Model."
+      },
+      {
+        "src": "/images/games/grimcoven/gallery/grimcoven-4.png",
+        "title": "Gunslingers spelarpanel",
+        "alt": "Mörk spelarpanel för Gunslinger med handlingslista, sifferbana, kortet Special Ammo, en miniatyr och gröna och blå tärningar på ett träbord."
+      },
+      {
+        "src": "/images/games/grimcoven/gallery/grimcoven-5.png",
+        "title": "Boss och terräng på spelbordet",
+        "alt": "Stor miniatyr med baner på hexagonala spelbrickor, omgiven av mindre figurer, klippterräng, en röd markör, kort och staplade spelmarkörer."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/grimcoven/grimcoven-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/grimcoven/grimcoven-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/grimcoven/grimcoven-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/grimcoven/grimcoven-thumb.png",
+        "width": 1122
+      }
+    ]
   },
   {
     "id": "long-dark-sea",
@@ -787,10 +1895,17 @@
     "catalogMetadata": {
       "sourceRow": 25,
       "sourceTitle": "Long Dark Sea",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": [
+      "Weakness Expansion",
+      "Bounty Expansion",
+      "Contracts Expansion",
+      "Dark Side Expansion",
+      "Stretch Goal Upgrades"
+    ]
   },
   {
     "id": "excalibur",
@@ -807,7 +1922,7 @@
     "weight": null,
     "playerInteraction": 4,
     "mechanics": ["Bluff & deduction"],
-    "gameTypes": ["Competitive", "Party", "Social"],
+    "gameTypes": ["Competitive", "Social"],
     "upcoming": false,
     "minutes": null,
     "descriptionStatus": "missing",
@@ -815,7 +1930,7 @@
     "catalogMetadata": {
       "sourceRow": 27,
       "sourceTitle": "Excalibur",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -843,10 +1958,74 @@
     "catalogMetadata": {
       "sourceRow": 28,
       "sourceTitle": "Lands of Evershade",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "hero": "/images/games/lands-of-evershade/evershade-banner.png",
+    "heroAlt": "Fyra mantlade gestalter i ett snölandskap framför en lysande ruin och logotypen Lands of Evershade.",
+    "gallery": [
+      {
+        "src": "/images/games/lands-of-evershade/gallery/evershade-1.webp",
+        "title": "Kartor och spelplaner",
+        "alt": "Kartblad och spelplaner med städer, rum och förbindelser."
+      },
+      {
+        "src": "/images/games/lands-of-evershade/gallery/evershade-2.webp",
+        "title": "Stad och stridsplan",
+        "alt": "Stadskarta och rutnätsbaserad stridsplan med miniatyrer och markörer."
+      },
+      {
+        "src": "/images/games/lands-of-evershade/gallery/evershade-3.webp",
+        "title": "Illustrerad spelbok",
+        "alt": "Uppslagen spelbok med illustrationer av alvliknande gestalter."
+      },
+      {
+        "src": "/images/games/lands-of-evershade/gallery/evershade-4.png",
+        "title": "Miniatyrer och utrustning",
+        "alt": "Bildkollage med miniatyrer, spelplan, utrustningsbrickor och karaktärskort."
+      },
+      {
+        "src": "/images/games/lands-of-evershade/gallery/evershade-5.png",
+        "title": "Spelet uppdukat",
+        "alt": "Spelplaner, spelarbräden, miniatyrer, tärningar och förvaringslådor på ett bord."
+      },
+      {
+        "src": "/images/games/lands-of-evershade/gallery/evershade-6.png",
+        "title": "Strid bland ruiner",
+        "alt": "Miniatyrer med blå effekter på en rutnätsbaserad stridsplan."
+      },
+      {
+        "src": "/images/games/lands-of-evershade/gallery/evershade-7.png",
+        "title": "Fiender och karaktärer",
+        "alt": "Bildkollage med fiendekort, miniatyrer, tärning och skademarkörer."
+      },
+      {
+        "src": "/images/games/lands-of-evershade/gallery/evershade-8.png",
+        "title": "Folkslag och bakgrund",
+        "alt": "Uppslag ur spelboken med en fana, en byggnad, ett smycke och bakgrundstext."
+      }
+    ],
+    "cover": "/images/games/lands-of-evershade/evershade-thumb.png",
+    "coverAlt": "Omslag till Lands of Evershade med fyra äventyrare framför ett gyllene ljussken över ett mörkt landskap.",
+    "coverVariants": [
+      {
+        "src": "/images/games/lands-of-evershade/evershade-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/lands-of-evershade/evershade-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/lands-of-evershade/evershade-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/lands-of-evershade/evershade-thumb.png",
+        "width": 1122
+      }
+    ]
   },
   {
     "id": "point-city",
@@ -871,7 +2050,7 @@
     "catalogMetadata": {
       "sourceRow": 30,
       "sourceTitle": "Point City",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -899,7 +2078,7 @@
     "catalogMetadata": {
       "sourceRow": 31,
       "sourceTitle": "Catan (base)",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -927,7 +2106,7 @@
     "catalogMetadata": {
       "sourceRow": 32,
       "sourceTitle": "Forbidden Desert",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -955,7 +2134,7 @@
     "catalogMetadata": {
       "sourceRow": 33,
       "sourceTitle": "Ticket to Ride",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -983,7 +2162,7 @@
     "catalogMetadata": {
       "sourceRow": 35,
       "sourceTitle": "fate of the fellowship",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -1011,7 +2190,7 @@
     "catalogMetadata": {
       "sourceRow": 36,
       "sourceTitle": "fliptoons",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -1039,7 +2218,7 @@
     "catalogMetadata": {
       "sourceRow": 37,
       "sourceTitle": "azul mini",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -1067,7 +2246,7 @@
     "catalogMetadata": {
       "sourceRow": 38,
       "sourceTitle": "there and back again",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -1095,7 +2274,7 @@
     "catalogMetadata": {
       "sourceRow": 39,
       "sourceTitle": "lord of the rings trick taking game",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -1123,7 +2302,7 @@
     "catalogMetadata": {
       "sourceRow": 40,
       "sourceTitle": "magical athleete",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -1143,7 +2322,7 @@
     "weight": 1.33,
     "playerInteraction": 4,
     "mechanics": ["Push your luck", "Hand management"],
-    "gameTypes": ["Competitive", "Party", "Social"],
+    "gameTypes": ["Competitive", "Social"],
     "upcoming": false,
     "minutes": null,
     "descriptionStatus": "missing",
@@ -1151,7 +2330,7 @@
     "catalogMetadata": {
       "sourceRow": 41,
       "sourceTitle": "goats and goblins",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -1159,7 +2338,7 @@
   {
     "id": "inis",
     "title": "Inis",
-    "edition": "",
+    "edition": "Big Box",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -1178,11 +2357,12 @@
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
       "sourceRow": 42,
-      "sourceTitle": "inis",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "Inis: Big Box",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": ["Nemed", "Seasons of Inis", "Stretch Goal Upgrades"]
   },
   {
     "id": "spirit-island",
@@ -1207,18 +2387,18 @@
     "catalogMetadata": {
       "sourceRow": 43,
       "sourceTitle": "spirit island",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
   },
   {
     "id": "nemesis-aftermath",
-    "title": "Nemesis + Aftermath",
-    "edition": "",
+    "title": "Nemesis",
+    "edition": "Special Edition",
     "category": "Övrigt",
-    "accent": "#815467",
-    "tint": "#eadce2",
+    "accent": "#276e8c",
+    "tint": "#e4f1f6",
     "description": "",
     "placeholderTheme": "castle-rose",
     "playersMin": 1,
@@ -1234,16 +2414,66 @@
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
       "sourceRow": 44,
-      "sourceTitle": "Nemesis + Aftermath",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "Nemesis: Special Edition",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/nemesis-aftermath/nemesis-thumb.png",
+    "coverAlt": "Omslag till Nemesis med vit logotyp, en astronaut i förgrunden och en stor kloförsedd rymdvarelse i blågrönt ljus bakom.",
+    "hero": "/images/games/nemesis-aftermath/nemesis-banner.png",
+    "heroAlt": "Bred illustration med Nemesis vita logotyp till vänster, en astronaut nedtill och en stor rymdvarelse med öppen käft och klor ovanför i blågrönt ljus.",
+    "gallery": [
+      {
+        "src": "/images/games/nemesis-aftermath/gallery/nemesis-1.png",
+        "title": "Handlingskort på hand",
+        "alt": "En hand håller tre mörka handlingskort med rosa detaljer, med Basic Repairs längst fram, framför en suddig spelplan med figurer och markörer."
+      },
+      {
+        "src": "/images/games/nemesis-aftermath/gallery/nemesis-2.png",
+        "title": "Spelarpaneler och kort",
+        "alt": "Spelarpaneler för Pilot och Soldier med miniatyrer och upprätta handlingskort i korthållare framför rymdskeppets spelplan."
+      },
+      {
+        "src": "/images/games/nemesis-aftermath/gallery/nemesis-3.jpg",
+        "title": "Rymdkatt och figurbricka",
+        "alt": "Två händer visar en grå kattminiatyr i rymddräkt och en lila figurbricka med kattmotiv, med spelplanen i bakgrunden."
+      },
+      {
+        "src": "/images/games/nemesis-aftermath/gallery/nemesis-4.png",
+        "title": "Rymdvarelse i närbild",
+        "alt": "Stor grå miniatyr av en bepansrad rymdvarelse med hornliknande utskott som håller en mindre varelse, på en sockel med dödskallar och omgiven av gula markörer."
+      },
+      {
+        "src": "/images/games/nemesis-aftermath/gallery/nemesis-5.png",
+        "title": "Miniatyrer ombord på skeppet",
+        "alt": "En stor grå rymdvarelse och mindre figurer med gröna och röda basringar på rymdskeppets mörka spelplan, bland rumsbrickor och gula markörer."
+      }
+    ],
+    "expansions": ["Aftermath", "Medic Character Pack", "Promos"],
+    "coverVariants": [
+      {
+        "src": "/images/games/nemesis-aftermath/nemesis-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/nemesis-aftermath/nemesis-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/nemesis-aftermath/nemesis-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/nemesis-aftermath/nemesis-thumb.png",
+        "width": 1122
+      }
+    ]
   },
   {
     "id": "an-infamous-traffic-second-edition",
-    "title": "An Infamous Traffic: Second Edition",
-    "edition": "",
+    "title": "An Infamous Traffic",
+    "edition": "Second Edition",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -1263,7 +2493,7 @@
     "catalogMetadata": {
       "sourceRow": 45,
       "sourceTitle": "An Infamous Traffic: Second Edition",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
     }
@@ -1271,7 +2501,7 @@
   {
     "id": "shug",
     "title": "SHUG",
-    "edition": "",
+    "edition": "Unnecessarily Nice Box",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -1290,11 +2520,17 @@
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
       "sourceRow": 46,
-      "sourceTitle": "SHUG",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "SHUG: Unnecessarily Nice Box",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": [
+      "Enter the Tiddy Realm",
+      "Landlords",
+      "Shugnanigans",
+      "Stretch Goal Upgrades"
+    ]
   },
   {
     "id": "battlesticks",
@@ -1319,15 +2555,15 @@
     "catalogMetadata": {
       "sourceRow": 47,
       "sourceTitle": "Battlesticks",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
     }
   },
   {
     "id": "re-match-marble-puzzle-fighter",
-    "title": "Re;MATCH: Marble Puzzle Fighter",
-    "edition": "",
+    "title": "Re;MATCH",
+    "edition": "Super Turbo Edition",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -1346,11 +2582,18 @@
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
       "sourceRow": 48,
-      "sourceTitle": "Re;MATCH: Marble Puzzle Fighter",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "Re;MATCH: Super Turbo Edition",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": [
+      "The Cosplayer Expansion",
+      "The Pilot Expansion",
+      "The VTuber Expansion",
+      "The Duelist Expansion",
+      "Stretch Goal Upgrades"
+    ]
   },
   {
     "id": "roma-xli",
@@ -1367,7 +2610,7 @@
     "weight": null,
     "playerInteraction": 5,
     "mechanics": ["Bluff & deduction", "Negotiation", "Hand management"],
-    "gameTypes": ["Competitive", "Party"],
+    "gameTypes": ["Competitive"],
     "upcoming": true,
     "minutes": null,
     "descriptionStatus": "missing",
@@ -1375,7 +2618,7 @@
     "catalogMetadata": {
       "sourceRow": 49,
       "sourceTitle": "Roma XLI",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
     }
@@ -1403,7 +2646,7 @@
     "catalogMetadata": {
       "sourceRow": 50,
       "sourceTitle": "52 Duels: Fight with Playing Cards",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -1411,7 +2654,7 @@
   {
     "id": "grifoni-blades-for-hire",
     "title": "Grifoni: Blades for Hire",
-    "edition": "",
+    "edition": "Mercenary Edition",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -1430,11 +2673,18 @@
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
       "sourceRow": 51,
-      "sourceTitle": "Grifoni: Blades for Hire",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "Grifoni: Blades for Hire: Mercenary Edition",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": [
+      "The Lost Company",
+      "Shadow of the Beast",
+      "Caravan of Wonders",
+      "Shakespeare in War",
+      "Stretch Goal Upgrades"
+    ]
   },
   {
     "id": "bio-blitz",
@@ -1459,7 +2709,7 @@
     "catalogMetadata": {
       "sourceRow": 52,
       "sourceTitle": "Bio Blitz",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -1487,7 +2737,7 @@
     "catalogMetadata": {
       "sourceRow": 53,
       "sourceTitle": "High Adventure: Treasure Hunt",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -1515,10 +2765,11 @@
     "catalogMetadata": {
       "sourceRow": 54,
       "sourceTitle": "Rolling Seas",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": ["Salty Dogs & Sea Tales", "Stretch Goal Upgrades"]
   },
   {
     "id": "rise-of-the-oak-dell",
@@ -1543,7 +2794,7 @@
     "catalogMetadata": {
       "sourceRow": 55,
       "sourceTitle": "Rise of the Oak Dell",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -1551,7 +2802,7 @@
   {
     "id": "avalon-the-riven-veil",
     "title": "Avalon: The Riven Veil",
-    "edition": "",
+    "edition": "Deluxe Edition",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -1570,15 +2821,20 @@
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
       "sourceRow": 56,
-      "sourceTitle": "Avalon: The Riven Veil",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "Avalon: The Riven Veil: Deluxe Edition",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": [
+      "Mistwalkers Expansion",
+      "Vernax: The Black Dragon",
+      "Stretch Goal Upgrades"
+    ]
   },
   {
     "id": "decko-pistachio",
-    "title": "DECKO + Pistachio",
+    "title": "DECKO",
     "edition": "",
     "category": "Övrigt",
     "accent": "#815467",
@@ -1591,23 +2847,24 @@
     "weight": null,
     "playerInteraction": 4,
     "mechanics": ["Deckbuilding", "Auction & bidding", "Bluff & deduction"],
-    "gameTypes": ["Competitive", "Party", "Social"],
+    "gameTypes": ["Competitive", "Social"],
     "upcoming": true,
     "minutes": null,
     "descriptionStatus": "missing",
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
       "sourceRow": 57,
-      "sourceTitle": "DECKO + Pistachio",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "DECKO",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": ["Pistachio", "Stretch Goal Upgrades"]
   },
   {
     "id": "nemesis-retaliation",
     "title": "Nemesis: Retaliation",
-    "edition": "",
+    "edition": "Special Edition",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -1626,16 +2883,61 @@
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
       "sourceRow": 58,
-      "sourceTitle": "Nemesis: Retaliation",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "Nemesis: Retaliation: Special Edition",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/nemesis-retaliation/nemesis-retaliation-thumb.png",
+    "coverAlt": "Omslag till Nemesis: Retaliation med tre bepansrade soldater i en blå rymdskeppskorridor.",
+    "hero": "/images/games/nemesis-retaliation/nemesis-retaliation-banner.png",
+    "heroAlt": "Tre bepansrade soldater i en blåtonad science fiction-miljö med logotypen Nemesis: Retaliation.",
+    "gallery": [
+      {
+        "src": "/images/games/nemesis-retaliation/gallery/nemesis-retaliation-1.webp",
+        "title": "Spelet uppdukat",
+        "alt": "Spelplan, kort, spelarbräden och miniatyrer uppdukade på ett bord."
+      },
+      {
+        "src": "/images/games/nemesis-retaliation/gallery/nemesis-retaliation-2.webp",
+        "title": "Varelser",
+        "alt": "Tre varelseminiatyrer framför spelasken till Nemesis: Retaliation."
+      },
+      {
+        "src": "/images/games/nemesis-retaliation/gallery/nemesis-retaliation-3.webp",
+        "title": "Soldater",
+        "alt": "Sex soldatminiatyrer med rustningar och vapen framför spelasken."
+      },
+      {
+        "src": "/images/games/nemesis-retaliation/gallery/nemesis-retaliation-4.webp",
+        "title": "Spelarbräden",
+        "alt": "Tre spelarbräden med platser för karaktärsbrickor, utrustning och skademarkörer."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/nemesis-retaliation/nemesis-retaliation-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/nemesis-retaliation/nemesis-retaliation-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/nemesis-retaliation/nemesis-retaliation-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/nemesis-retaliation/nemesis-retaliation-thumb.png",
+        "width": 1122
+      }
+    ],
+    "expansions": ["The Xyrians Expansion", "Support Squad Expansion"]
   },
   {
     "id": "gang-wars",
     "title": "Gang Wars",
-    "edition": "",
+    "edition": "Mobster Pledge",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -1654,11 +2956,16 @@
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
       "sourceRow": 59,
-      "sourceTitle": "Gang Wars",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "Gang Wars: Mobster Pledge",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": [
+      "City of Violence",
+      "Gangland Empire",
+      "Stretch Goal Upgrades"
+    ]
   },
   {
     "id": "davos",
@@ -1675,7 +2982,7 @@
     "weight": 2.67,
     "playerInteraction": 5,
     "mechanics": ["Negotiation", "Bluff & deduction"],
-    "gameTypes": ["Competitive", "Party", "Social"],
+    "gameTypes": ["Competitive", "Social"],
     "upcoming": true,
     "minutes": null,
     "descriptionStatus": "missing",
@@ -1683,7 +2990,7 @@
     "catalogMetadata": {
       "sourceRow": 60,
       "sourceTitle": "DAVOS",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
     }
@@ -1711,15 +3018,16 @@
     "catalogMetadata": {
       "sourceRow": 61,
       "sourceTitle": "Hitman: The Board Game",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": ["Stretch Goal Upgrades"]
   },
   {
     "id": "brass-pittsburgh",
     "title": "Brass: Pittsburgh",
-    "edition": "",
+    "edition": "Collector's Edition",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -1738,11 +3046,12 @@
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
       "sourceRow": 62,
-      "sourceTitle": "Brass: Pittsburgh",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "Brass: Pittsburgh: Collector's Edition",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": ["Stretch Goal Upgrades"]
   },
   {
     "id": "the-old-king-s-crown",
@@ -1759,7 +3068,7 @@
     "weight": 3.71,
     "playerInteraction": 5,
     "mechanics": ["Auction & bidding", "Bluff & deduction", "Area control"],
-    "gameTypes": ["Competitive", "Party", "Social"],
+    "gameTypes": ["Competitive", "Social"],
     "upcoming": false,
     "minutes": null,
     "descriptionStatus": "missing",
@@ -1767,15 +3076,16 @@
     "catalogMetadata": {
       "sourceRow": 63,
       "sourceTitle": "The Old King's Crown",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": ["Songs of Home"]
   },
   {
     "id": "b-e-l-o-w-the-asylum",
     "title": "B.E.L.O.W.: The Asylum",
-    "edition": "",
+    "edition": "Standard Edition",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -1794,11 +3104,17 @@
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
       "sourceRow": 64,
-      "sourceTitle": "B.E.L.O.W.: The Asylum",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "B.E.L.O.W.: The Asylum: Standard Edition",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": [
+      "Berry Pomeroy Expansion",
+      "Hero Pack",
+      "Ferratic Entity",
+      "SS Waratah"
+    ]
   },
   {
     "id": "detectives-vs-criminals",
@@ -1815,7 +3131,7 @@
     "weight": null,
     "playerInteraction": 5,
     "mechanics": ["Bluff & deduction", "Hand management"],
-    "gameTypes": ["Competitive", "Team-based", "Party", "Social"],
+    "gameTypes": ["Competitive", "Team-based", "Social"],
     "upcoming": true,
     "minutes": null,
     "descriptionStatus": "missing",
@@ -1823,10 +3139,16 @@
     "catalogMetadata": {
       "sourceRow": 65,
       "sourceTitle": "Detectives vs Criminals",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": [
+      "Rain & Fog",
+      "Sherlock Holmes – High Tension",
+      "Darkness of Dracula",
+      "Stretch Goal Upgrades"
+    ]
   },
   {
     "id": "the-wandmaker-s-apprentice",
@@ -1851,15 +3173,21 @@
     "catalogMetadata": {
       "sourceRow": 66,
       "sourceTitle": "The Wandmaker's Apprentice",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": [
+      "Spellcaster Pack",
+      "Mage Pack",
+      "Archaist Pack",
+      "Stretch Goal Upgrades"
+    ]
   },
   {
     "id": "andromeda-s-edge-genesis-fully-operational",
-    "title": "Andromeda's Edge + Genesis (Fully Operational)",
-    "edition": "",
+    "title": "Andromeda's Edge",
+    "edition": "Fully Operational",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -1878,16 +3206,17 @@
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
       "sourceRow": 67,
-      "sourceTitle": "Andromeda's Edge + Genesis (Fully Operational)",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "Andromeda's Edge: Fully Operational",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": ["Escalation", "Exotic Matter", "Genesis"]
   },
   {
     "id": "ascension-15th-anniversary-edition",
-    "title": "Ascension: 15th Anniversary Edition",
-    "edition": "",
+    "title": "Ascension",
+    "edition": "15th Anniversary Edition",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -1907,10 +3236,15 @@
     "catalogMetadata": {
       "sourceRow": 68,
       "sourceTitle": "Ascension: 15th Anniversary Edition",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": [
+      "Dreams & Nightmares",
+      "15th Anniversary Promo Pack",
+      "Dreamscape"
+    ]
   },
   {
     "id": "ascension-legends",
@@ -1935,7 +3269,7 @@
     "catalogMetadata": {
       "sourceRow": 69,
       "sourceTitle": "Ascension Legends",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -1963,7 +3297,7 @@
     "catalogMetadata": {
       "sourceRow": 70,
       "sourceTitle": "Shallow Regrets",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -1971,7 +3305,7 @@
   {
     "id": "nexus-card-game",
     "title": "Nexus Card Game",
-    "edition": "",
+    "edition": "Founders Edition",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -1990,16 +3324,17 @@
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
       "sourceRow": 71,
-      "sourceTitle": "Nexus Card Game",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "Nexus Card Game: Founders Edition",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": ["Foil Pack"]
   },
   {
     "id": "tend-hive-cellar",
-    "title": "Tend + Hive & Cellar",
-    "edition": "",
+    "title": "Tend",
+    "edition": "Big Box Edition",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -2018,10 +3353,125 @@
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
       "sourceRow": 72,
-      "sourceTitle": "Tend + Hive & Cellar",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "Tend: Big Box Edition",
+      "importedAt": "2026-11-13",
+      "preliminary": true,
+      "editionMatch": "not-independently-verified"
+    },
+    "expansions": ["Hive", "Cellar", "Stretch Goal Upgrades"]
+  },
+  {
+    "id": "san-juan",
+    "title": "San Juan",
+    "edition": "",
+    "category": "Övrigt",
+    "accent": "#815467",
+    "tint": "#eadce2",
+    "description": "",
+    "placeholderTheme": "castle-rose",
+    "playersMin": 2,
+    "playersMax": 4,
+    "bestWith": "3",
+    "weight": 2.28,
+    "playerInteraction": null,
+    "mechanics": ["Action selection", "Hand management", "Engine building"],
+    "gameTypes": ["Competitive"],
+    "upcoming": false,
+    "minutes": 60,
+    "descriptionStatus": "missing",
+    "metadataStatus": "catalog-import",
+    "catalogMetadata": {
+      "sourceRow": 73,
+      "sourceTitle": "San Juan",
+      "importedAt": "2026-11-13",
+      "preliminary": false,
+      "editionMatch": "not-independently-verified"
+    }
+  },
+  {
+    "id": "annulet",
+    "title": "Annulet",
+    "edition": "",
+    "category": "Övrigt",
+    "accent": "#815467",
+    "tint": "#eadce2",
+    "description": "",
+    "placeholderTheme": "castle-rose",
+    "playersMin": 1,
+    "playersMax": 4,
+    "bestWith": null,
+    "weight": null,
+    "playerInteraction": null,
+    "mechanics": ["Drafting", "Set collection", "Hand management"],
+    "gameTypes": ["Competitive"],
+    "upcoming": true,
+    "minutes": 60,
+    "descriptionStatus": "missing",
+    "metadataStatus": "catalog-import",
+    "catalogMetadata": {
+      "sourceRow": 74,
+      "sourceTitle": "Annulet",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
     }
+  },
+  {
+    "id": "brass-birmingham",
+    "title": "Brass: Birmingham",
+    "edition": "Collector's Edition",
+    "category": "Övrigt",
+    "accent": "#815467",
+    "tint": "#eadce2",
+    "description": "",
+    "placeholderTheme": "castle-rose",
+    "playersMin": 2,
+    "playersMax": 4,
+    "bestWith": "3–4",
+    "weight": 3.86,
+    "playerInteraction": null,
+    "mechanics": ["Route building", "Tile placement", "Hand management"],
+    "gameTypes": ["Competitive"],
+    "upcoming": true,
+    "minutes": 120,
+    "descriptionStatus": "missing",
+    "metadataStatus": "catalog-import",
+    "catalogMetadata": {
+      "sourceRow": 75,
+      "sourceTitle": "Brass: Birmingham: Collector's Edition",
+      "importedAt": "2026-11-13",
+      "preliminary": true,
+      "editionMatch": "not-independently-verified"
+    },
+    "expansions": ["Stretch Goal Upgrades"]
+  },
+  {
+    "id": "brass-lancashire",
+    "title": "Brass: Lancashire",
+    "edition": "Collector's Edition",
+    "category": "Övrigt",
+    "accent": "#815467",
+    "tint": "#eadce2",
+    "description": "",
+    "placeholderTheme": "castle-rose",
+    "playersMin": 2,
+    "playersMax": 4,
+    "bestWith": "4",
+    "weight": 3.84,
+    "playerInteraction": null,
+    "mechanics": ["Route building", "Tile placement", "Hand management"],
+    "gameTypes": ["Competitive"],
+    "upcoming": true,
+    "minutes": 120,
+    "descriptionStatus": "missing",
+    "metadataStatus": "catalog-import",
+    "catalogMetadata": {
+      "sourceRow": 76,
+      "sourceTitle": "Brass: Lancashire: Collector's Edition",
+      "importedAt": "2026-11-13",
+      "preliminary": true,
+      "editionMatch": "not-independently-verified"
+    },
+    "expansions": ["Stretch Goal Upgrades"]
   }
 ]

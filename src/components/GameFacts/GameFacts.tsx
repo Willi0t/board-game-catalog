@@ -2,6 +2,15 @@ import { useId } from 'react';
 import type { Game } from '../../types/game';
 import styles from './GameFacts.module.css';
 
+function difficultyColor(weight: number) {
+  const position = Math.min(5, Math.max(1, weight));
+  const [from, to, progress] =
+    position <= 3
+      ? ['#286529', '#7a5c00', (position - 1) / 2]
+      : ['#7a5c00', '#a62223', (position - 3) / 2];
+  return `color-mix(in srgb, ${from}, ${to} ${progress * 100}%)`;
+}
+
 export default function GameFacts({ game }: { game: Game }) {
   const interactionHelp = useId();
   const players =
@@ -24,9 +33,20 @@ export default function GameFacts({ game }: { game: Game }) {
         <div>
           <dt>Svårighetsgrad</dt>
           <dd>
-            {game.weight == null
-              ? 'Uppgift saknas'
-              : `${game.weight.toLocaleString('sv-SE', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}/5`}
+            {game.weight == null ? (
+              'Uppgift saknas'
+            ) : (
+              <span
+                className={styles.difficulty}
+                style={{ color: difficultyColor(game.weight) }}
+              >
+                {game.weight.toLocaleString('sv-SE', {
+                  minimumFractionDigits: 2,
+                  maximumFractionDigits: 2,
+                })}
+                /5
+              </span>
+            )}
           </dd>
         </div>
         <div>

@@ -3,8 +3,8 @@
   "source": {
     "url": "https://docs.google.com/spreadsheets/d/1cQjSP-aUUlCe93NibwDcPdxPtAAS_KD6wiliVAMGRdk/edit",
     "sheet": "Sheet1",
-    "range": "A1:H72",
-    "exportedAt": "2026-11-10",
+    "range": "A1:I76",
+    "exportedAt": "2026-11-13",
     "notesIncluded": false
   },
   "dataQuality": {
@@ -14,7 +14,8 @@
     "missingValues": "null means unknown; do not substitute fictional values.",
     "bestWithNormalization": "Fate of the Fellowship: Sheets stored bestWith as a date, displayed 1-3; exported as the intended text 1–3.",
     "editionCaveat": "Figures may refer to the base game rather than bundled expansions; not independently verified for all editions.",
-    "parlay": "Categories provisional; assumed Parlay: The Betting Game; exact edition unconfirmed."
+    "parlay": "Categories provisional; assumed Parlay: The Betting Game; exact edition unconfirmed.",
+    "playTime": "Verified upper end of the published play-time range, in minutes, for San Juan, Annulet, Brass: Birmingham and Brass: Lancashire."
   },
   "games": [
     {
@@ -28,7 +29,8 @@
       "playerInteraction": 1,
       "mechanics": ["Drafting", "Set collection"],
       "gameTypes": ["Competitive"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": []
     },
     {
       "sourceRow": 3,
@@ -41,7 +43,8 @@
       "playerInteraction": 1,
       "mechanics": ["Drafting", "Pattern building"],
       "gameTypes": ["Competitive"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": []
     },
     {
       "sourceRow": 4,
@@ -54,7 +57,8 @@
       "playerInteraction": 1,
       "mechanics": ["Engine building", "Set collection"],
       "gameTypes": ["Competitive"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": []
     },
     {
       "sourceRow": 5,
@@ -67,7 +71,8 @@
       "playerInteraction": 4,
       "mechanics": ["Deckbuilding", "Tactical combat"],
       "gameTypes": ["Competitive"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": []
     },
     {
       "sourceRow": 6,
@@ -80,7 +85,8 @@
       "playerInteraction": 5,
       "mechanics": ["Trick-taking"],
       "gameTypes": ["Cooperative", "Social"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": []
     },
     {
       "sourceRow": 7,
@@ -93,7 +99,8 @@
       "playerInteraction": 5,
       "mechanics": ["Area control", "Hand management", "Bluff & deduction"],
       "gameTypes": ["Competitive"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": []
     },
     {
       "sourceRow": 8,
@@ -106,7 +113,8 @@
       "playerInteraction": 5,
       "mechanics": ["Push your luck"],
       "gameTypes": ["Cooperative", "Adventure"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": []
     },
     {
       "sourceRow": 9,
@@ -119,11 +127,12 @@
       "playerInteraction": 4,
       "mechanics": ["Drafting", "Engine building", "Set collection"],
       "gameTypes": ["Competitive"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": []
     },
     {
       "sourceRow": 10,
-      "title": "Clank! Catacombs + Underworld",
+      "title": "Clank! Catacombs",
       "playersMin": 1,
       "playersMax": 4,
       "playersSource": "1–4",
@@ -132,11 +141,12 @@
       "playerInteraction": 3,
       "mechanics": ["Deckbuilding", "Push your luck"],
       "gameTypes": ["Competitive", "Dungeon crawler"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": ["Underworld", "Lairs & Lost Chambers"]
     },
     {
       "sourceRow": 11,
-      "title": "The Castles of Burgundy",
+      "title": "The Castles of Burgundy: Special Edition",
       "playersMin": 2,
       "playersMax": 4,
       "playersSource": "2–4",
@@ -145,11 +155,20 @@
       "playerInteraction": 2,
       "mechanics": ["Dice allocation", "Tile placement", "Set collection"],
       "gameTypes": ["Competitive"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": [
+        "New Duchies",
+        "The White Castles and Inns",
+        "Trade Routes",
+        "The Team Game & Solo Expansion",
+        "The Shields & Championship Boards",
+        "Vineyards Expansion",
+        "Stretch Goal Upgrades"
+      ]
     },
     {
       "sourceRow": 12,
-      "title": "Deep Regrets + Deeper Regrets",
+      "title": "Deep Regrets",
       "playersMin": 1,
       "playersMax": 5,
       "playersSource": "1–5",
@@ -157,21 +176,23 @@
       "weight": 2.39,
       "playerInteraction": 3,
       "mechanics": ["Push your luck"],
-      "gameTypes": ["Competitive", "Party", "Social"],
-      "upcoming": false
+      "gameTypes": ["Competitive", "Social"],
+      "upcoming": false,
+      "expansions": ["Deeper Regrets"]
     },
     {
       "sourceRow": 13,
       "title": "Terraforming Mars",
-      "playersSource": "1–5",
       "playersMin": 1,
       "playersMax": 5,
+      "playersSource": "1–5",
       "bestWith": "3",
       "weight": 3.27,
       "playerInteraction": 3,
       "mechanics": ["Engine building", "Hand management", "Tile placement"],
       "gameTypes": ["Competitive"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": []
     },
     {
       "sourceRow": 14,
@@ -184,7 +205,8 @@
       "playerInteraction": 4,
       "mechanics": ["Deckbuilding", "Engine building", "Tactical combat"],
       "gameTypes": ["Competitive", "Cooperative", "Team-based"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": []
     },
     {
       "sourceRow": 15,
@@ -197,7 +219,8 @@
       "playerInteraction": 3,
       "mechanics": ["Drafting", "Engine building", "Set collection"],
       "gameTypes": ["Competitive", "Social"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": ["Leaders"]
     },
     {
       "sourceRow": 16,
@@ -209,12 +232,13 @@
       "weight": 1.11,
       "playerInteraction": 4,
       "mechanics": ["Bluff & deduction", "Hand management"],
-      "gameTypes": ["Competitive", "Party", "Social"],
-      "upcoming": false
+      "gameTypes": ["Competitive", "Social"],
+      "upcoming": false,
+      "expansions": []
     },
     {
       "sourceRow": 17,
-      "title": "Puerto Rico",
+      "title": "Puerto Rico 1897: Special Edition",
       "playersMin": 2,
       "playersMax": 5,
       "playersSource": "2–5",
@@ -223,11 +247,18 @@
       "playerInteraction": 3,
       "mechanics": ["Action selection", "Engine building"],
       "gameTypes": ["Competitive", "Social"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": [
+        "New Buildings",
+        "Citizens",
+        "The Smuggler",
+        "The Festival",
+        "Stretch Goal Upgrades"
+      ]
     },
     {
       "sourceRow": 18,
-      "title": "Agricola",
+      "title": "Agricola: Special Edition",
       "playersMin": 1,
       "playersMax": 4,
       "playersSource": "1–4",
@@ -236,7 +267,33 @@
       "playerInteraction": 3,
       "mechanics": ["Worker placement", "Engine building"],
       "gameTypes": ["Competitive"],
-      "upcoming": true
+      "upcoming": true,
+      "expansions": [
+        "Artifex Deck",
+        "Bubulcus Deck",
+        "Corbarius Deck",
+        "Dulcinaria Deck",
+        "Consul Dirigens Deck",
+        "Ephipparius Deck",
+        "Agricola Meets Newdale Deck",
+        "Changelings Expansion",
+        "Ö Deck",
+        "L Deck",
+        "X Deck",
+        "CZ Deck",
+        "Gamers' Deck",
+        "The Legen*dairy Forest Deck",
+        "NL Deck",
+        "World Championship Deck",
+        "Belgium Deck",
+        "Pi Deck",
+        "Bielefeld Deck",
+        "France Deck",
+        "Z-deck",
+        "Through the Seasons",
+        "Promotional Set",
+        "Stretch Goals"
+      ]
     },
     {
       "sourceRow": 19,
@@ -247,9 +304,15 @@
       "bestWith": "4",
       "weight": 3.8,
       "playerInteraction": 4,
-      "mechanics": ["Worker placement", "Deckbuilding", "Area control"],
+      "mechanics": [
+        "Worker placement",
+        "Deckbuilding",
+        "Area control",
+        "Engine building"
+      ],
       "gameTypes": ["Competitive", "Social"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": ["Bloody Business", "Enforcers", "Stretch Goal Upgrades"]
     },
     {
       "sourceRow": 20,
@@ -261,12 +324,13 @@
       "weight": 2.18,
       "playerInteraction": 4,
       "mechanics": ["Hand management", "Action selection", "Set collection"],
-      "gameTypes": ["Competitive", "Party", "Social"],
-      "upcoming": false
+      "gameTypes": ["Competitive", "Social"],
+      "upcoming": false,
+      "expansions": []
     },
     {
       "sourceRow": 21,
-      "title": "Final Titan",
+      "title": "Final Titan: Ultimate Edition",
       "playersMin": 1,
       "playersMax": 5,
       "playersSource": "1–5",
@@ -275,7 +339,13 @@
       "playerInteraction": 4,
       "mechanics": ["Drafting", "Tactical combat"],
       "gameTypes": ["Competitive", "Cooperative", "Team-based", "Social"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": [
+        "Godspark Expansion",
+        "Mindbug Expansion",
+        "Gamefound Promo Pack",
+        "Stretch Goal Upgrades"
+      ]
     },
     {
       "sourceRow": 22,
@@ -287,8 +357,9 @@
       "weight": 1.48,
       "playerInteraction": 5,
       "mechanics": ["Auction & bidding"],
-      "gameTypes": ["Competitive", "Party", "Social"],
-      "upcoming": false
+      "gameTypes": ["Competitive", "Social"],
+      "upcoming": false,
+      "expansions": []
     },
     {
       "sourceRow": 23,
@@ -301,7 +372,8 @@
       "playerInteraction": 3,
       "mechanics": ["Hand management"],
       "gameTypes": ["Competitive", "Racing", "Social"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": []
     },
     {
       "sourceRow": 24,
@@ -314,7 +386,8 @@
       "playerInteraction": 5,
       "mechanics": ["Dice allocation", "Tactical combat"],
       "gameTypes": ["Cooperative", "Boss battler"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": []
     },
     {
       "sourceRow": 25,
@@ -327,7 +400,14 @@
       "playerInteraction": 4,
       "mechanics": ["Deckbuilding", "Hand management"],
       "gameTypes": ["Cooperative", "Adventure", "Campaign"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": [
+        "Weakness Expansion",
+        "Bounty Expansion",
+        "Contracts Expansion",
+        "Dark Side Expansion",
+        "Stretch Goal Upgrades"
+      ]
     },
     {
       "sourceRow": 26,
@@ -339,8 +419,9 @@
       "weight": 1.72,
       "playerInteraction": 3,
       "mechanics": ["Hand management", "Drafting", "Set collection"],
-      "gameTypes": ["Competitive", "Party", "Social"],
-      "upcoming": false
+      "gameTypes": ["Competitive", "Social"],
+      "upcoming": false,
+      "expansions": []
     },
     {
       "sourceRow": 27,
@@ -352,8 +433,9 @@
       "weight": null,
       "playerInteraction": 4,
       "mechanics": ["Bluff & deduction"],
-      "gameTypes": ["Competitive", "Party", "Social"],
-      "upcoming": false
+      "gameTypes": ["Competitive", "Social"],
+      "upcoming": false,
+      "expansions": []
     },
     {
       "sourceRow": 28,
@@ -366,7 +448,8 @@
       "playerInteraction": 4,
       "mechanics": ["Tactical combat", "Dice rolling"],
       "gameTypes": ["Cooperative", "Adventure", "Campaign"],
-      "upcoming": true
+      "upcoming": true,
+      "expansions": []
     },
     {
       "sourceRow": 29,
@@ -378,8 +461,9 @@
       "weight": 2.24,
       "playerInteraction": 4,
       "mechanics": ["Drafting", "Action selection", "Bluff & deduction"],
-      "gameTypes": ["Competitive", "Party", "Social"],
-      "upcoming": false
+      "gameTypes": ["Competitive", "Social"],
+      "upcoming": false,
+      "expansions": []
     },
     {
       "sourceRow": 30,
@@ -392,7 +476,8 @@
       "playerInteraction": 1,
       "mechanics": ["Drafting", "Engine building"],
       "gameTypes": ["Competitive"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": []
     },
     {
       "sourceRow": 31,
@@ -405,7 +490,8 @@
       "playerInteraction": 3,
       "mechanics": ["Negotiation", "Route building", "Engine building"],
       "gameTypes": ["Competitive", "Social"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": []
     },
     {
       "sourceRow": 32,
@@ -418,7 +504,8 @@
       "playerInteraction": 5,
       "mechanics": ["Action points"],
       "gameTypes": ["Cooperative", "Adventure"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": []
     },
     {
       "sourceRow": 33,
@@ -431,7 +518,8 @@
       "playerInteraction": 3,
       "mechanics": ["Set collection", "Route building"],
       "gameTypes": ["Competitive"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": []
     },
     {
       "sourceRow": 34,
@@ -443,8 +531,9 @@
       "weight": 2.58,
       "playerInteraction": 5,
       "mechanics": ["Negotiation", "Bluff & deduction", "Hand management"],
-      "gameTypes": ["Competitive", "Party", "Social"],
-      "upcoming": false
+      "gameTypes": ["Competitive", "Social"],
+      "upcoming": false,
+      "expansions": ["Cosmic Dominion", "Cosmic Odyssey", "Cosmic Conflict"]
     },
     {
       "sourceRow": 35,
@@ -457,7 +546,8 @@
       "playerInteraction": 5,
       "mechanics": ["Action points", "Hand management"],
       "gameTypes": ["Cooperative", "Adventure", "Social"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": []
     },
     {
       "sourceRow": 36,
@@ -470,7 +560,8 @@
       "playerInteraction": 1,
       "mechanics": ["Deckbuilding", "Engine building"],
       "gameTypes": ["Competitive"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": []
     },
     {
       "sourceRow": 37,
@@ -483,7 +574,8 @@
       "playerInteraction": 3,
       "mechanics": ["Drafting", "Pattern building", "Set collection"],
       "gameTypes": ["Competitive", "Social"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": []
     },
     {
       "sourceRow": 38,
@@ -496,7 +588,8 @@
       "playerInteraction": 1,
       "mechanics": ["Roll/Flip & Write", "Drafting", "Route building"],
       "gameTypes": ["Competitive", "Adventure"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": []
     },
     {
       "sourceRow": 39,
@@ -509,7 +602,8 @@
       "playerInteraction": 5,
       "mechanics": ["Trick-taking", "Hand management"],
       "gameTypes": ["Cooperative", "Campaign"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": []
     },
     {
       "sourceRow": 40,
@@ -522,7 +616,8 @@
       "playerInteraction": 4,
       "mechanics": ["Dice rolling", "Drafting"],
       "gameTypes": ["Competitive", "Racing", "Party", "Social"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": []
     },
     {
       "sourceRow": 41,
@@ -534,12 +629,13 @@
       "weight": 1.33,
       "playerInteraction": 4,
       "mechanics": ["Push your luck", "Hand management"],
-      "gameTypes": ["Competitive", "Party", "Social"],
-      "upcoming": false
+      "gameTypes": ["Competitive", "Social"],
+      "upcoming": false,
+      "expansions": []
     },
     {
       "sourceRow": 42,
-      "title": "inis",
+      "title": "Inis: Big Box",
       "playersMin": 2,
       "playersMax": 4,
       "playersSource": "2–4",
@@ -548,7 +644,8 @@
       "playerInteraction": 5,
       "mechanics": ["Drafting", "Area control", "Negotiation"],
       "gameTypes": ["Competitive", "Social"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": ["Nemed", "Seasons of Inis", "Stretch Goal Upgrades"]
     },
     {
       "sourceRow": 43,
@@ -561,11 +658,12 @@
       "playerInteraction": 5,
       "mechanics": ["Hand management", "Action selection", "Area control"],
       "gameTypes": ["Cooperative", "Social"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": []
     },
     {
       "sourceRow": 44,
-      "title": "Nemesis + Aftermath",
+      "title": "Nemesis: Special Edition",
       "playersMin": 1,
       "playersMax": 5,
       "playersSource": "1–5",
@@ -574,7 +672,8 @@
       "playerInteraction": 5,
       "mechanics": ["Hand management", "Action points", "Dice rolling"],
       "gameTypes": ["Semi-cooperative", "Adventure"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": ["Aftermath", "Medic Character Pack", "Promos"]
     },
     {
       "sourceRow": 45,
@@ -587,11 +686,12 @@
       "playerInteraction": 5,
       "mechanics": ["Negotiation", "Route building", "Engine building"],
       "gameTypes": ["Competitive", "Social"],
-      "upcoming": true
+      "upcoming": true,
+      "expansions": []
     },
     {
       "sourceRow": 46,
-      "title": "SHUG",
+      "title": "SHUG: Unnecessarily Nice Box",
       "playersMin": 1,
       "playersMax": 6,
       "playersSource": "1–6",
@@ -600,7 +700,13 @@
       "playerInteraction": 4,
       "mechanics": ["Dice rolling", "Hand management"],
       "gameTypes": ["Competitive", "Party", "Dungeon crawler", "Social"],
-      "upcoming": true
+      "upcoming": true,
+      "expansions": [
+        "Enter the Tiddy Realm",
+        "Landlords",
+        "Shugnanigans",
+        "Stretch Goal Upgrades"
+      ]
     },
     {
       "sourceRow": 47,
@@ -613,11 +719,12 @@
       "playerInteraction": 4,
       "mechanics": ["Hand management", "Set collection"],
       "gameTypes": ["Competitive", "Party"],
-      "upcoming": true
+      "upcoming": true,
+      "expansions": []
     },
     {
       "sourceRow": 48,
-      "title": "Re;MATCH: Marble Puzzle Fighter",
+      "title": "Re;MATCH: Super Turbo Edition",
       "playersMin": 2,
       "playersMax": 2,
       "playersSource": "2",
@@ -626,7 +733,14 @@
       "playerInteraction": 5,
       "mechanics": ["Drafting", "Tactical combat"],
       "gameTypes": ["Competitive"],
-      "upcoming": true
+      "upcoming": true,
+      "expansions": [
+        "The Cosplayer Expansion",
+        "The Pilot Expansion",
+        "The VTuber Expansion",
+        "The Duelist Expansion",
+        "Stretch Goal Upgrades"
+      ]
     },
     {
       "sourceRow": 49,
@@ -638,8 +752,9 @@
       "weight": null,
       "playerInteraction": 5,
       "mechanics": ["Bluff & deduction", "Negotiation", "Hand management"],
-      "gameTypes": ["Competitive", "Party"],
-      "upcoming": true
+      "gameTypes": ["Competitive"],
+      "upcoming": true,
+      "expansions": []
     },
     {
       "sourceRow": 50,
@@ -652,11 +767,12 @@
       "playerInteraction": 5,
       "mechanics": ["Hand management", "Tactical combat"],
       "gameTypes": ["Competitive"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": []
     },
     {
       "sourceRow": 51,
-      "title": "Grifoni: Blades for Hire",
+      "title": "Grifoni: Blades for Hire: Mercenary Edition",
       "playersMin": 1,
       "playersMax": 4,
       "playersSource": "1–4",
@@ -665,7 +781,14 @@
       "playerInteraction": 3,
       "mechanics": ["Worker placement", "Engine building"],
       "gameTypes": ["Competitive"],
-      "upcoming": true
+      "upcoming": true,
+      "expansions": [
+        "The Lost Company",
+        "Shadow of the Beast",
+        "Caravan of Wonders",
+        "Shakespeare in War",
+        "Stretch Goal Upgrades"
+      ]
     },
     {
       "sourceRow": 52,
@@ -678,7 +801,8 @@
       "playerInteraction": 4,
       "mechanics": ["Engine building", "Set collection", "Dice rolling"],
       "gameTypes": ["Competitive"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": []
     },
     {
       "sourceRow": 53,
@@ -691,7 +815,8 @@
       "playerInteraction": 0,
       "mechanics": ["Roll/Flip & Write", "Route building"],
       "gameTypes": ["Solo", "Adventure"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": []
     },
     {
       "sourceRow": 54,
@@ -704,7 +829,8 @@
       "playerInteraction": 2,
       "mechanics": ["Roll/Flip & Write", "Route building"],
       "gameTypes": ["Competitive", "Adventure"],
-      "upcoming": true
+      "upcoming": true,
+      "expansions": ["Salty Dogs & Sea Tales", "Stretch Goal Upgrades"]
     },
     {
       "sourceRow": 55,
@@ -717,11 +843,12 @@
       "playerInteraction": 0,
       "mechanics": ["Roll/Flip & Write", "Engine building", "Route building"],
       "gameTypes": ["Competitive"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": []
     },
     {
       "sourceRow": 56,
-      "title": "Avalon: The Riven Veil",
+      "title": "Avalon: The Riven Veil: Deluxe Edition",
       "playersMin": 2,
       "playersMax": 4,
       "playersSource": "2–4",
@@ -730,11 +857,16 @@
       "playerInteraction": 5,
       "mechanics": ["Area control", "Hand management", "Tactical combat"],
       "gameTypes": ["Competitive", "Social"],
-      "upcoming": true
+      "upcoming": true,
+      "expansions": [
+        "Mistwalkers Expansion",
+        "Vernax: The Black Dragon",
+        "Stretch Goal Upgrades"
+      ]
     },
     {
       "sourceRow": 57,
-      "title": "DECKO + Pistachio",
+      "title": "DECKO",
       "playersMin": 2,
       "playersMax": 5,
       "playersSource": "2–5",
@@ -742,12 +874,13 @@
       "weight": null,
       "playerInteraction": 4,
       "mechanics": ["Deckbuilding", "Auction & bidding", "Bluff & deduction"],
-      "gameTypes": ["Competitive", "Party", "Social"],
-      "upcoming": true
+      "gameTypes": ["Competitive", "Social"],
+      "upcoming": true,
+      "expansions": ["Pistachio", "Stretch Goal Upgrades"]
     },
     {
       "sourceRow": 58,
-      "title": "Nemesis: Retaliation",
+      "title": "Nemesis: Retaliation: Special Edition",
       "playersMin": 1,
       "playersMax": 5,
       "playersSource": "1–5",
@@ -756,11 +889,12 @@
       "playerInteraction": 5,
       "mechanics": ["Hand management", "Action points", "Dice rolling"],
       "gameTypes": ["Semi-cooperative", "Adventure"],
-      "upcoming": true
+      "upcoming": true,
+      "expansions": ["The Xyrians Expansion", "Support Squad Expansion"]
     },
     {
       "sourceRow": 59,
-      "title": "Gang Wars",
+      "title": "Gang Wars: Mobster Pledge",
       "playersMin": 1,
       "playersMax": 4,
       "playersSource": "1–4",
@@ -769,7 +903,12 @@
       "playerInteraction": 5,
       "mechanics": ["Deckbuilding", "Area control"],
       "gameTypes": ["Competitive", "Social"],
-      "upcoming": true
+      "upcoming": true,
+      "expansions": [
+        "City of Violence",
+        "Gangland Empire",
+        "Stretch Goal Upgrades"
+      ]
     },
     {
       "sourceRow": 60,
@@ -781,8 +920,9 @@
       "weight": 2.67,
       "playerInteraction": 5,
       "mechanics": ["Negotiation", "Bluff & deduction"],
-      "gameTypes": ["Competitive", "Party", "Social"],
-      "upcoming": true
+      "gameTypes": ["Competitive", "Social"],
+      "upcoming": true,
+      "expansions": []
     },
     {
       "sourceRow": 61,
@@ -795,11 +935,12 @@
       "playerInteraction": 3,
       "mechanics": ["Action points", "Hand management"],
       "gameTypes": ["Competitive"],
-      "upcoming": true
+      "upcoming": true,
+      "expansions": ["Stretch Goal Upgrades"]
     },
     {
       "sourceRow": 62,
-      "title": "Brass: Pittsburgh",
+      "title": "Brass: Pittsburgh: Collector's Edition",
       "playersMin": 1,
       "playersMax": 4,
       "playersSource": "1–4",
@@ -808,7 +949,8 @@
       "playerInteraction": 4,
       "mechanics": ["Route building", "Tile placement", "Hand management"],
       "gameTypes": ["Competitive"],
-      "upcoming": true
+      "upcoming": true,
+      "expansions": ["Stretch Goal Upgrades"]
     },
     {
       "sourceRow": 63,
@@ -820,12 +962,13 @@
       "weight": 3.71,
       "playerInteraction": 5,
       "mechanics": ["Auction & bidding", "Bluff & deduction", "Area control"],
-      "gameTypes": ["Competitive", "Party", "Social"],
-      "upcoming": false
+      "gameTypes": ["Competitive", "Social"],
+      "upcoming": false,
+      "expansions": ["Songs of Home"]
     },
     {
       "sourceRow": 64,
-      "title": "B.E.L.O.W.: The Asylum",
+      "title": "B.E.L.O.W.: The Asylum: Standard Edition",
       "playersMin": null,
       "playersMax": null,
       "playersSource": "TBA",
@@ -834,7 +977,13 @@
       "playerInteraction": 4,
       "mechanics": ["Tactical combat", "Dice rolling"],
       "gameTypes": ["Cooperative", "Adventure"],
-      "upcoming": true
+      "upcoming": true,
+      "expansions": [
+        "Berry Pomeroy Expansion",
+        "Hero Pack",
+        "Ferratic Entity",
+        "SS Waratah"
+      ]
     },
     {
       "sourceRow": 65,
@@ -846,8 +995,14 @@
       "weight": null,
       "playerInteraction": 5,
       "mechanics": ["Bluff & deduction", "Hand management"],
-      "gameTypes": ["Competitive", "Team-based", "Party", "Social"],
-      "upcoming": true
+      "gameTypes": ["Competitive", "Team-based", "Social"],
+      "upcoming": true,
+      "expansions": [
+        "Rain & Fog",
+        "Sherlock Holmes – High Tension",
+        "Darkness of Dracula",
+        "Stretch Goal Upgrades"
+      ]
     },
     {
       "sourceRow": 66,
@@ -860,11 +1015,17 @@
       "playerInteraction": 2,
       "mechanics": ["Set collection", "Dice rolling", "Engine building"],
       "gameTypes": ["Competitive"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": [
+        "Spellcaster Pack",
+        "Mage Pack",
+        "Archaist Pack",
+        "Stretch Goal Upgrades"
+      ]
     },
     {
       "sourceRow": 67,
-      "title": "Andromeda's Edge + Genesis (Fully Operational)",
+      "title": "Andromeda's Edge: Fully Operational",
       "playersMin": 2,
       "playersMax": 4,
       "playersSource": "2–4",
@@ -873,7 +1034,8 @@
       "playerInteraction": 4,
       "mechanics": ["Worker placement", "Engine building", "Tactical combat"],
       "gameTypes": ["Competitive"],
-      "upcoming": true
+      "upcoming": true,
+      "expansions": ["Escalation", "Exotic Matter", "Genesis"]
     },
     {
       "sourceRow": 68,
@@ -886,7 +1048,12 @@
       "playerInteraction": 2,
       "mechanics": ["Deckbuilding", "Engine building"],
       "gameTypes": ["Competitive"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": [
+        "Dreams & Nightmares",
+        "15th Anniversary Promo Pack",
+        "Dreamscape"
+      ]
     },
     {
       "sourceRow": 69,
@@ -899,7 +1066,8 @@
       "playerInteraction": 2,
       "mechanics": ["Deckbuilding", "Engine building"],
       "gameTypes": ["Competitive"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": []
     },
     {
       "sourceRow": 70,
@@ -912,11 +1080,12 @@
       "playerInteraction": 3,
       "mechanics": ["Push your luck", "Set collection", "Hand management"],
       "gameTypes": ["Competitive"],
-      "upcoming": false
+      "upcoming": false,
+      "expansions": []
     },
     {
       "sourceRow": 71,
-      "title": "Nexus Card Game",
+      "title": "Nexus Card Game: Founders Edition",
       "playersMin": null,
       "playersMax": null,
       "playersSource": "TBA",
@@ -925,11 +1094,12 @@
       "playerInteraction": 5,
       "mechanics": ["Hand management", "Tactical combat"],
       "gameTypes": ["Competitive"],
-      "upcoming": true
+      "upcoming": true,
+      "expansions": ["Foil Pack"]
     },
     {
       "sourceRow": 72,
-      "title": "Tend + Hive & Cellar",
+      "title": "Tend: Big Box Edition",
       "playersMin": 1,
       "playersMax": 6,
       "playersSource": "1–6",
@@ -938,7 +1108,68 @@
       "playerInteraction": 1,
       "mechanics": ["Roll/Flip & Write", "Engine building", "Pattern building"],
       "gameTypes": ["Competitive"],
-      "upcoming": true
+      "upcoming": true,
+      "expansions": ["Hive", "Cellar", "Stretch Goal Upgrades"]
+    },
+    {
+      "sourceRow": 73,
+      "title": "San Juan",
+      "playersMin": 2,
+      "playersMax": 4,
+      "playersSource": "2–4",
+      "bestWith": "3",
+      "weight": 2.28,
+      "playerInteraction": null,
+      "mechanics": ["Action selection", "Hand management", "Engine building"],
+      "gameTypes": ["Competitive"],
+      "upcoming": false,
+      "expansions": [],
+      "minutes": 60
+    },
+    {
+      "sourceRow": 74,
+      "title": "Annulet",
+      "playersMin": 1,
+      "playersMax": 4,
+      "playersSource": "1–4",
+      "bestWith": null,
+      "weight": null,
+      "playerInteraction": null,
+      "mechanics": ["Drafting", "Set collection", "Hand management"],
+      "gameTypes": ["Competitive"],
+      "upcoming": true,
+      "expansions": [],
+      "minutes": 60
+    },
+    {
+      "sourceRow": 75,
+      "title": "Brass: Birmingham: Collector's Edition",
+      "playersMin": 2,
+      "playersMax": 4,
+      "playersSource": "2–4",
+      "bestWith": "3–4",
+      "weight": 3.86,
+      "playerInteraction": null,
+      "mechanics": ["Route building", "Tile placement", "Hand management"],
+      "gameTypes": ["Competitive"],
+      "upcoming": true,
+      "expansions": ["Stretch Goal Upgrades"],
+      "minutes": 120
+    },
+    {
+      "sourceRow": 76,
+      "title": "Brass: Lancashire: Collector's Edition",
+      "playersMin": 2,
+      "playersMax": 4,
+      "playersSource": "2–4",
+      "bestWith": "4",
+      "weight": 3.84,
+      "playerInteraction": null,
+      "mechanics": ["Route building", "Tile placement", "Hand management"],
+      "gameTypes": ["Competitive"],
+      "upcoming": true,
+      "expansions": ["Stretch Goal Upgrades"],
+      "minutes": 120
     }
   ]
 }

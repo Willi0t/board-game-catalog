@@ -46,3 +46,12 @@
 .scale > .filled {
   background: var(--accent);
 }
+
+.difficulty {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: color-mix(in srgb, currentColor 9%, white);
+  font-weight: 650;
+  white-space: nowrap;
+}

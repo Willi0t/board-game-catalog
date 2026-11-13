@@ -1,9 +1,16 @@
 .game-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   background: transparent;
   padding: 0;
   text-align: left;
   min-width: 0;
   transition: transform 0.25s;
+}
+
+.game-card > span {
+  align-self: flex-start;
 }
 
 .game-card:hover {

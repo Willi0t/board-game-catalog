@@ -41,19 +41,22 @@
   },
   {
     "sourceRow": 10,
-    "sourceTitle": "Clank! Catacombs + Underworld",
+    "sourceTitle": "Clank! Catacombs",
     "id": "clank",
-    "expansions": ["Underworld"]
+    "displayTitle": "Clank! Catacombs"
   },
   {
     "sourceRow": 11,
-    "sourceTitle": "The Castles of Burgundy",
-    "id": "burgundy"
+    "sourceTitle": "The Castles of Burgundy: Special Edition",
+    "id": "burgundy",
+    "displayTitle": "The Castles of Burgundy",
+    "displayEdition": "Special Edition"
   },
   {
     "sourceRow": 12,
-    "sourceTitle": "Deep Regrets + Deeper Regrets",
-    "id": "deep-regrets-deeper-regrets"
+    "sourceTitle": "Deep Regrets",
+    "id": "deep-regrets-deeper-regrets",
+    "displayTitle": "Deep Regrets"
   },
   {
     "sourceRow": 13,
@@ -77,13 +80,17 @@
   },
   {
     "sourceRow": 17,
-    "sourceTitle": "Puerto Rico",
-    "id": "puerto-rico"
+    "sourceTitle": "Puerto Rico 1897: Special Edition",
+    "id": "puerto-rico",
+    "displayTitle": "Puerto Rico 1897",
+    "displayEdition": "Special Edition"
   },
   {
     "sourceRow": 18,
-    "sourceTitle": "Agricola",
-    "id": "agricola"
+    "sourceTitle": "Agricola: Special Edition",
+    "id": "agricola",
+    "displayTitle": "Agricola",
+    "displayEdition": "Special Edition"
   },
   {
     "sourceRow": 19,
@@ -97,8 +104,10 @@
   },
   {
     "sourceRow": 21,
-    "sourceTitle": "Final Titan",
-    "id": "final-titan"
+    "sourceTitle": "Final Titan: Ultimate Edition",
+    "id": "final-titan",
+    "displayTitle": "Final Titan",
+    "displayEdition": "Ultimate Edition"
   },
   {
     "sourceRow": 22,
@@ -209,9 +218,10 @@
   },
   {
     "sourceRow": 42,
-    "sourceTitle": "inis",
+    "sourceTitle": "Inis: Big Box",
     "id": "inis",
-    "displayTitle": "Inis"
+    "displayTitle": "Inis",
+    "displayEdition": "Big Box"
   },
   {
     "sourceRow": 43,
@@ -221,18 +231,24 @@
   },
   {
     "sourceRow": 44,
-    "sourceTitle": "Nemesis + Aftermath",
-    "id": "nemesis-aftermath"
+    "sourceTitle": "Nemesis: Special Edition",
+    "id": "nemesis-aftermath",
+    "displayTitle": "Nemesis",
+    "displayEdition": "Special Edition"
   },
   {
     "sourceRow": 45,
     "sourceTitle": "An Infamous Traffic: Second Edition",
-    "id": "an-infamous-traffic-second-edition"
+    "id": "an-infamous-traffic-second-edition",
+    "displayTitle": "An Infamous Traffic",
+    "displayEdition": "Second Edition"
   },
   {
     "sourceRow": 46,
-    "sourceTitle": "SHUG",
-    "id": "shug"
+    "sourceTitle": "SHUG: Unnecessarily Nice Box",
+    "id": "shug",
+    "displayTitle": "SHUG",
+    "displayEdition": "Unnecessarily Nice Box"
   },
   {
     "sourceRow": 47,
@@ -241,8 +257,10 @@
   },
   {
     "sourceRow": 48,
-    "sourceTitle": "Re;MATCH: Marble Puzzle Fighter",
-    "id": "re-match-marble-puzzle-fighter"
+    "sourceTitle": "Re;MATCH: Super Turbo Edition",
+    "id": "re-match-marble-puzzle-fighter",
+    "displayTitle": "Re;MATCH",
+    "displayEdition": "Super Turbo Edition"
   },
   {
     "sourceRow": 49,
@@ -256,8 +274,10 @@
   },
   {
     "sourceRow": 51,
-    "sourceTitle": "Grifoni: Blades for Hire",
-    "id": "grifoni-blades-for-hire"
+    "sourceTitle": "Grifoni: Blades for Hire: Mercenary Edition",
+    "id": "grifoni-blades-for-hire",
+    "displayTitle": "Grifoni: Blades for Hire",
+    "displayEdition": "Mercenary Edition"
   },
   {
     "sourceRow": 52,
@@ -281,23 +301,30 @@
   },
   {
     "sourceRow": 56,
-    "sourceTitle": "Avalon: The Riven Veil",
-    "id": "avalon-the-riven-veil"
+    "sourceTitle": "Avalon: The Riven Veil: Deluxe Edition",
+    "id": "avalon-the-riven-veil",
+    "displayTitle": "Avalon: The Riven Veil",
+    "displayEdition": "Deluxe Edition"
   },
   {
     "sourceRow": 57,
-    "sourceTitle": "DECKO + Pistachio",
-    "id": "decko-pistachio"
+    "sourceTitle": "DECKO",
+    "id": "decko-pistachio",
+    "displayTitle": "DECKO"
   },
   {
     "sourceRow": 58,
-    "sourceTitle": "Nemesis: Retaliation",
-    "id": "nemesis-retaliation"
+    "sourceTitle": "Nemesis: Retaliation: Special Edition",
+    "id": "nemesis-retaliation",
+    "displayTitle": "Nemesis: Retaliation",
+    "displayEdition": "Special Edition"
   },
   {
     "sourceRow": 59,
-    "sourceTitle": "Gang Wars",
-    "id": "gang-wars"
+    "sourceTitle": "Gang Wars: Mobster Pledge",
+    "id": "gang-wars",
+    "displayTitle": "Gang Wars",
+    "displayEdition": "Mobster Pledge"
   },
   {
     "sourceRow": 60,
@@ -311,8 +338,10 @@
   },
   {
     "sourceRow": 62,
-    "sourceTitle": "Brass: Pittsburgh",
-    "id": "brass-pittsburgh"
+    "sourceTitle": "Brass: Pittsburgh: Collector's Edition",
+    "id": "brass-pittsburgh",
+    "displayTitle": "Brass: Pittsburgh",
+    "displayEdition": "Collector's Edition"
   },
   {
     "sourceRow": 63,
@@ -321,8 +350,10 @@
   },
   {
     "sourceRow": 64,
-    "sourceTitle": "B.E.L.O.W.: The Asylum",
-    "id": "b-e-l-o-w-the-asylum"
+    "sourceTitle": "B.E.L.O.W.: The Asylum: Standard Edition",
+    "id": "b-e-l-o-w-the-asylum",
+    "displayTitle": "B.E.L.O.W.: The Asylum",
+    "displayEdition": "Standard Edition"
   },
   {
     "sourceRow": 65,
@@ -336,13 +367,17 @@
   },
   {
     "sourceRow": 67,
-    "sourceTitle": "Andromeda's Edge + Genesis (Fully Operational)",
-    "id": "andromeda-s-edge-genesis-fully-operational"
+    "sourceTitle": "Andromeda's Edge: Fully Operational",
+    "id": "andromeda-s-edge-genesis-fully-operational",
+    "displayTitle": "Andromeda's Edge",
+    "displayEdition": "Fully Operational"
   },
   {
     "sourceRow": 68,
     "sourceTitle": "Ascension: 15th Anniversary Edition",
-    "id": "ascension-15th-anniversary-edition"
+    "id": "ascension-15th-anniversary-edition",
+    "displayTitle": "Ascension",
+    "displayEdition": "15th Anniversary Edition"
   },
   {
     "sourceRow": 69,
@@ -356,12 +391,40 @@
   },
   {
     "sourceRow": 71,
-    "sourceTitle": "Nexus Card Game",
-    "id": "nexus-card-game"
+    "sourceTitle": "Nexus Card Game: Founders Edition",
+    "id": "nexus-card-game",
+    "displayTitle": "Nexus Card Game",
+    "displayEdition": "Founders Edition"
   },
   {
     "sourceRow": 72,
-    "sourceTitle": "Tend + Hive & Cellar",
-    "id": "tend-hive-cellar"
+    "sourceTitle": "Tend: Big Box Edition",
+    "id": "tend-hive-cellar",
+    "displayTitle": "Tend",
+    "displayEdition": "Big Box Edition"
+  },
+  {
+    "sourceRow": 73,
+    "id": "san-juan",
+    "sourceTitle": "San Juan"
+  },
+  {
+    "sourceRow": 74,
+    "id": "annulet",
+    "sourceTitle": "Annulet"
+  },
+  {
+    "sourceRow": 75,
+    "id": "brass-birmingham",
+    "sourceTitle": "Brass: Birmingham: Collector's Edition",
+    "displayTitle": "Brass: Birmingham",
+    "displayEdition": "Collector's Edition"
+  },
+  {
+    "sourceRow": 76,
+    "id": "brass-lancashire",
+    "sourceTitle": "Brass: Lancashire: Collector's Edition",
+    "displayTitle": "Brass: Lancashire",
+    "displayEdition": "Collector's Edition"
   }
 ]

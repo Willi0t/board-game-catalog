@@ -1,0 +1,43 @@
+.count {
+  display: inline-block;
+  margin: 5px 2px 0;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: #5c494e0e;
+  color: #5c494e;
+  font-size: 9px;
+  line-height: 1.4;
+}
+
+.section {
+  composes: section from '../GameDescription/GameDescription.module.css';
+}
+
+.panelSection {
+  margin-top: 30px;
+}
+
+.panelSection h3 {
+  margin-top: 0;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list > li {
+  min-width: 0;
+  padding: 3px 8px;
+  border: 1px solid #5c494e24;
+  border-radius: 5px;
+  background: #ffffff80;
+  color: #5c494e;
+  font-size: 12px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}

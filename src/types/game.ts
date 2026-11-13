@@ -32,9 +32,17 @@ export interface Game {
   placeholderTheme?: string;
   cover?: string;
   coverAlt?: string;
+  coverVariants?: CoverVariant[];
   hero?: string;
   heroAlt?: string;
+  bannerVideo?: { youtubeId: string };
+  bannerLogo?: { src: string; alt: string };
   gallery?: (string | GameGalleryEntry)[];
+}
+
+export interface CoverVariant {
+  src: string;
+  width: number;
 }
 
 export interface GameGalleryEntry {

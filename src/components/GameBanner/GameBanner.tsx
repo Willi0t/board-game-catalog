@@ -4,6 +4,7 @@ import GameImage from '../GameImage/GameImage';
 import GameTypeBadges from '../GameTypeBadges/GameTypeBadges';
 import Icon from '../Icon/Icon';
 import styles from './GameBanner.module.css';
+import BannerMedia from './BannerMedia';
 
 interface GameBannerProps {
   game: Game;
@@ -26,21 +27,26 @@ export default function GameBanner({
       placeholderLabel="PLATSHÅLLARBILD"
       labelClassName={styles.placeholder}
       bannerControls={
-        <div className={styles.controls}>
-          <div className={styles.types}>
-            <GameTypeBadges gameTypes={game.gameTypes} appearance="banner" />
+        <>
+          {(game.bannerVideo || game.bannerLogo) && (
+            <BannerMedia key={game.id} game={game} />
+          )}
+          <div className={styles.controls}>
+            <div className={styles.types}>
+              <GameTypeBadges gameTypes={game.gameTypes} appearance="banner" />
+            </div>
+            <button
+              className={`${styles.favorite} ${isFavorite ? styles.active : ''}`}
+              aria-label={
+                isFavorite ? 'Ta bort från favoriter' : 'Lägg till i favoriter'
+              }
+              aria-pressed={isFavorite}
+              onClick={() => onToggleFavorite(game.id)}
+            >
+              <Icon name="heart" size={19} />
+            </button>
           </div>
-          <button
-            className={`${styles.favorite} ${isFavorite ? styles.active : ''}`}
-            aria-label={
-              isFavorite ? 'Ta bort från favoriter' : 'Lägg till i favoriter'
-            }
-            aria-pressed={isFavorite}
-            onClick={() => onToggleFavorite(game.id)}
-          >
-            <Icon name="heart" size={19} />
-          </button>
-        </div>
+        </>
       }
     />
   );
