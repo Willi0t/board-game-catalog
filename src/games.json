@@ -619,7 +619,51 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/vaalbara/vaalbara-thumb.png",
+    "coverAlt": "Vaalbara-omslag med en hornprydd gestalt, en uggla och vargar på en klippa.",
+    "coverVariants": [
+      {
+        "src": "/images/games/vaalbara/vaalbara-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/vaalbara/vaalbara-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/vaalbara/vaalbara-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/vaalbara/vaalbara-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/vaalbara/vaalbara-banner.png",
+    "heroAlt": "Vaalbara-titeln över ett grönt landskap med en hornprydd gestalt och en flygande uggla.",
+    "gallery": [
+      {
+        "src": "/images/games/vaalbara/gallery/vaalbara-1.png",
+        "title": "Regelöversikt",
+        "alt": "En regelsida med spelets mål, komponenter och exempel på land- och karaktärskort."
+      },
+      {
+        "src": "/images/games/vaalbara/gallery/vaalbara-2.png",
+        "title": "Karaktärskort på hand",
+        "alt": "En hand håller karaktärskort framför spelasken och uppdukade kort."
+      },
+      {
+        "src": "/images/games/vaalbara/gallery/vaalbara-3.png",
+        "title": "Ask och kort",
+        "alt": "Vaalbara-asken med landkort och karaktärskort på ett träbord."
+      },
+      {
+        "src": "/images/games/vaalbara/gallery/vaalbara-4.png",
+        "title": "Spelet uppdukat",
+        "alt": "Spelask, landkort, karaktärskort och poängmarker på ett mörkt bord."
+      }
+    ]
   },
   {
     "id": "citadels",
