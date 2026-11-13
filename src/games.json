@@ -1937,7 +1937,51 @@
       "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/nemesis-retaliation/nemesis-retaliation-thumb.png",
+    "coverAlt": "Omslag till Nemesis: Retaliation med tre bepansrade soldater i en blå rymdskeppskorridor.",
+    "hero": "/images/games/nemesis-retaliation/nemesis-retaliation-banner.png",
+    "heroAlt": "Tre bepansrade soldater i en blåtonad science fiction-miljö med logotypen Nemesis: Retaliation.",
+    "gallery": [
+      {
+        "src": "/images/games/nemesis-retaliation/gallery/nemesis-retaliation-1.webp",
+        "title": "Spelet uppdukat",
+        "alt": "Spelplan, kort, spelarbräden och miniatyrer uppdukade på ett bord."
+      },
+      {
+        "src": "/images/games/nemesis-retaliation/gallery/nemesis-retaliation-2.webp",
+        "title": "Varelser",
+        "alt": "Tre varelseminiatyrer framför spelasken till Nemesis: Retaliation."
+      },
+      {
+        "src": "/images/games/nemesis-retaliation/gallery/nemesis-retaliation-3.webp",
+        "title": "Soldater",
+        "alt": "Sex soldatminiatyrer med rustningar och vapen framför spelasken."
+      },
+      {
+        "src": "/images/games/nemesis-retaliation/gallery/nemesis-retaliation-4.webp",
+        "title": "Spelarbräden",
+        "alt": "Tre spelarbräden med platser för karaktärsbrickor, utrustning och skademarkörer."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/nemesis-retaliation/nemesis-retaliation-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/nemesis-retaliation/nemesis-retaliation-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/nemesis-retaliation/nemesis-retaliation-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/nemesis-retaliation/nemesis-retaliation-thumb.png",
+        "width": 1122
+      }
+    ]
   },
   {
     "id": "gang-wars",
