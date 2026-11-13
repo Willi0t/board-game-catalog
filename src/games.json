@@ -1610,7 +1610,51 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/libertalia-winds-of-galecrest/libertalia-thumb.png",
+    "coverAlt": "Libertalia: Winds of Galecrest-omslag med titeln över turkost hav, öar och en pirat på ett luftskepps bogspröt.",
+    "coverVariants": [
+      {
+        "src": "/images/games/libertalia-winds-of-galecrest/libertalia-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/libertalia-winds-of-galecrest/libertalia-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/libertalia-winds-of-galecrest/libertalia-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/libertalia-winds-of-galecrest/libertalia-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/libertalia-winds-of-galecrest/libertalia-banner.png",
+    "heroAlt": "Libertalia-titeln med undertiteln Winds of Galecrest bredvid ett seglande luftskepp över tropiska öar.",
+    "gallery": [
+      {
+        "src": "/images/games/libertalia-winds-of-galecrest/gallery/libertalia-1.png",
+        "title": "Spelet uppdukat",
+        "alt": "Libertalia-asken med spelbräde, kort, färgade brickor och mynt på ett träbord."
+      },
+      {
+        "src": "/images/games/libertalia-winds-of-galecrest/gallery/libertalia-2.png",
+        "title": "Ask och komponenter",
+        "alt": "Spelasken bakom karaktärskort, skeppskort, skattkistor, mynt och färgade markörer."
+      },
+      {
+        "src": "/images/games/libertalia-winds-of-galecrest/gallery/libertalia-3.png",
+        "title": "Byte ur påsen",
+        "alt": "En hand håller färgade bytesbrickor ovanför en öppen tygpåse."
+      },
+      {
+        "src": "/images/games/libertalia-winds-of-galecrest/gallery/libertalia-4.png",
+        "title": "Ett kort spelas",
+        "alt": "En hand lägger karaktärskortet Freed Prisoner på spelbrädet bredvid bytesbrickor och markörer."
+      }
+    ]
   },
   {
     "id": "final-titan",
