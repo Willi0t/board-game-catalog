@@ -1279,7 +1279,51 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/solar-titans/solar-titans-thumb.png",
+    "coverAlt": "Solar Titans-omslag med orange titel och ett rymdskepp med glödande motorer ovanför en planet.",
+    "coverVariants": [
+      {
+        "src": "/images/games/solar-titans/solar-titans-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/solar-titans/solar-titans-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/solar-titans/solar-titans-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/solar-titans/solar-titans-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/solar-titans/solar-titans-banner.png",
+    "heroAlt": "Solar Titans-titeln bredvid ett rymdskepp ovanför en planets solbelysta horisont.",
+    "gallery": [
+      {
+        "src": "/images/games/solar-titans/gallery/solar-titans-1.png",
+        "title": "Ask och spelmaterial",
+        "alt": "Solar Titans-asken, regelbok och kort som bildar rymdskepp på ett träbord."
+      },
+      {
+        "src": "/images/games/solar-titans/gallery/solar-titans-2.png",
+        "title": "Kort och automaskepp",
+        "alt": "Kortlekar, besättningskort och ett stort automaskeppskort på en mörk duk."
+      },
+      {
+        "src": "/images/games/solar-titans/gallery/solar-titans-3.png",
+        "title": "Rymdskeppets moduler",
+        "alt": "Närbild av överlappande skeppskort med laservapen och kommandodäck."
+      },
+      {
+        "src": "/images/games/solar-titans/gallery/solar-titans-4.png",
+        "title": "Spelet uppdukat",
+        "alt": "Öppen spelask, regelbok och utlagda rymdskepp av kort på ett mörkt bord."
+      }
+    ]
   },
   {
     "id": "love-letter",
