@@ -475,7 +475,31 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "hero": "/images/games/burgle/burgle-banner.png",
+    "heroAlt": "Burgle Bros.-titeln och kuppgänget i ett genomskuret hus med vakter och kassaskåp.",
+    "gallery": [
+      {
+        "src": "/images/games/burgle/gallery/burgle-1.png",
+        "title": "Spelet uppdukat",
+        "alt": "Rumsbrickor, kort, tärningar och spelpjäser uppdukade på ett vitt bord."
+      },
+      {
+        "src": "/images/games/burgle/gallery/burgle-2.png",
+        "title": "Kuppgänget",
+        "alt": "Tre färgade karaktärspjäser på en rumsbricka."
+      },
+      {
+        "src": "/images/games/burgle/gallery/burgle-3.png",
+        "title": "Rum och hinder",
+        "alt": "Avslöjade rum, träväggar och orange tärningar på spelplanen."
+      },
+      {
+        "src": "/images/games/burgle/gallery/burgle-4.png",
+        "title": "Två våningar",
+        "alt": "Två våningar med rumsbrickor, vaktkort och karaktärskort på ett träbord."
+      }
+    ]
   },
   {
     "id": "duel",
