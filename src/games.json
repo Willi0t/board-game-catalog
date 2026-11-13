@@ -691,7 +691,51 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/citadels/citadels-thumb.png",
+    "coverAlt": "Citadels-omslag med titeln ovanför en färgstark medeltida stad och en kung med sitt följe.",
+    "coverVariants": [
+      {
+        "src": "/images/games/citadels/citadels-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/citadels/citadels-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/citadels/citadels-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/citadels/citadels-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/citadels/citadels-banner.png",
+    "heroAlt": "Citadels-titeln vid en medeltida stad med torn, marknad och en stenbro över vattnet.",
+    "gallery": [
+      {
+        "src": "/images/games/citadels/gallery/citadels-1.png",
+        "title": "Kort och spelpjäser",
+        "alt": "Karaktärskort och byggnadskort tillsammans med en gul krona och guldmynt."
+      },
+      {
+        "src": "/images/games/citadels/gallery/citadels-2.png",
+        "title": "Ask och innehåll",
+        "alt": "Citadels-asken med utbredda karaktärskort, byggnadskort och guldmynt."
+      },
+      {
+        "src": "/images/games/citadels/gallery/citadels-3.png",
+        "title": "Kronan och byggnaderna",
+        "alt": "En gul krona och mynt på byggnadskort utlagda på ett träbord."
+      },
+      {
+        "src": "/images/games/citadels/gallery/citadels-4.png",
+        "title": "Byggnadskort",
+        "alt": "Nio byggnadskort med bland annat värdshus, slott, kyrka och tempel."
+      }
+    ]
   },
   {
     "id": "starwars",
