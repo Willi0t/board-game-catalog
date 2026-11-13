@@ -45,6 +45,34 @@ WebP är en namnkonvention, inte ett krav. PNG, JPG, AVIF och SVG fungerar ocks�
 Skapa mappar först när du har verkliga filer. Lägg inte in tomma filer eller
 JSON-sökvägar till framtida material.
 
+### Videobanner och logga
+
+`GameBanner` kan komplettera den vanliga statiska `hero`-bilden med följande
+valfria fält i spelposten:
+
+```json
+{
+  "bannerVideo": { "youtubeId": "FKaSmARy_7I" },
+  "bannerLogo": {
+    "src": "/images/games/lands-of-evershade/lands-of-evershade-logo.webp",
+    "alt": "Lands of Evershade"
+  }
+}
+```
+
+Loggan kan användas med eller utan video. Videon laddas från YouTube via dess
+[IFrame Player API](https://developers.google.com/youtube/iframe_api_reference),
+spelas ljudlöst i loop och har en separat pausknapp.
+Stillbilden ligger kvar tills uppspelningen har börjat och vid laddningsfel
+eller blockerad autoplay. Vid minskad rörelse laddas ingen videospelare.
+Spelaren förstörs när bannern scrollas ur bild, dokumentet döljs eller en annan
+dialog täcker bannern. Därmed spelar inte panelen bakom ”Visa mer”. En manuell
+paus bevaras under bannerkomponentens livstid.
+
+Lands of Evershade använder nu en statisk `evershade-banner.png` som `hero`
+och åtta numrerade galleribilder. Spelet har ingen aktiv `bannerVideo` eller
+`bannerLogo`; exemplet ovan visar det återanvändbara stödet för dessa fält.
+
 När filerna för exempelvis `burgundy` faktiskt finns kan dess befintliga post
 kompletteras med dessa bildfält (övriga spelfält behålls):
 

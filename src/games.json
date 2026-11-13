@@ -1075,7 +1075,71 @@
       "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "hero": "/images/games/lands-of-evershade/evershade-banner.png",
+    "heroAlt": "Fyra mantlade gestalter i ett snölandskap framför en lysande ruin och logotypen Lands of Evershade.",
+    "gallery": [
+      {
+        "src": "/images/games/lands-of-evershade/gallery/evershade-1.webp",
+        "title": "Kartor och spelplaner",
+        "alt": "Kartblad och spelplaner med städer, rum och förbindelser."
+      },
+      {
+        "src": "/images/games/lands-of-evershade/gallery/evershade-2.webp",
+        "title": "Stad och stridsplan",
+        "alt": "Stadskarta och rutnätsbaserad stridsplan med miniatyrer och markörer."
+      },
+      {
+        "src": "/images/games/lands-of-evershade/gallery/evershade-3.webp",
+        "title": "Illustrerad spelbok",
+        "alt": "Uppslagen spelbok med illustrationer av alvliknande gestalter."
+      },
+      {
+        "src": "/images/games/lands-of-evershade/gallery/evershade-4.png",
+        "title": "Miniatyrer och utrustning",
+        "alt": "Bildkollage med miniatyrer, spelplan, utrustningsbrickor och karaktärskort."
+      },
+      {
+        "src": "/images/games/lands-of-evershade/gallery/evershade-5.png",
+        "title": "Spelet uppdukat",
+        "alt": "Spelplaner, spelarbräden, miniatyrer, tärningar och förvaringslådor på ett bord."
+      },
+      {
+        "src": "/images/games/lands-of-evershade/gallery/evershade-6.png",
+        "title": "Strid bland ruiner",
+        "alt": "Miniatyrer med blå effekter på en rutnätsbaserad stridsplan."
+      },
+      {
+        "src": "/images/games/lands-of-evershade/gallery/evershade-7.png",
+        "title": "Fiender och karaktärer",
+        "alt": "Bildkollage med fiendekort, miniatyrer, tärning och skademarkörer."
+      },
+      {
+        "src": "/images/games/lands-of-evershade/gallery/evershade-8.png",
+        "title": "Folkslag och bakgrund",
+        "alt": "Uppslag ur spelboken med en fana, en byggnad, ett smycke och bakgrundstext."
+      }
+    ],
+    "cover": "/images/games/lands-of-evershade/evershade-thumb.png",
+    "coverAlt": "Omslag till Lands of Evershade med fyra äventyrare framför ett gyllene ljussken över ett mörkt landskap.",
+    "coverVariants": [
+      {
+        "src": "/images/games/lands-of-evershade/evershade-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/lands-of-evershade/evershade-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/lands-of-evershade/evershade-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/lands-of-evershade/evershade-thumb.png",
+        "width": 1122
+      }
+    ]
   },
   {
     "id": "point-city",
