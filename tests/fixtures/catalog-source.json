@@ -673,7 +673,7 @@
       "mechanics": ["Hand management", "Action points", "Dice rolling"],
       "gameTypes": ["Semi-cooperative", "Adventure"],
       "upcoming": false,
-      "expansions": ["Aftermath"]
+      "expansions": ["Aftermath", "Medic Character Pack", "Promos"]
     },
     {
       "sourceRow": 45,
@@ -880,7 +880,7 @@
     },
     {
       "sourceRow": 58,
-      "title": "Nemesis: Retaliation",
+      "title": "Nemesis: Retaliation: Special Edition",
       "playersMin": 1,
       "playersMax": 5,
       "playersSource": "1–5",
@@ -890,7 +890,7 @@
       "mechanics": ["Hand management", "Action points", "Dice rolling"],
       "gameTypes": ["Semi-cooperative", "Adventure"],
       "upcoming": true,
-      "expansions": []
+      "expansions": ["The Xyrians Expansion", "Support Squad Expansion"]
     },
     {
       "sourceRow": 59,

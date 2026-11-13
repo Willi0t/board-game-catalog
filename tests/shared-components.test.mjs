@@ -21,8 +21,8 @@ async function loadComponent(filename) {
     compilerOptions: { module: ModuleKind.ESNext, jsx: JsxEmit.ReactJSX },
   }).outputText;
   code = code.replace(
-    /import styles from ['"][^'"]+\.module\.css['"];?/g,
-    'const styles = {};',
+    /import (\w+) from ['"][^'"]+\.module\.css['"];?/g,
+    'const $1 = {};',
   );
   for (const match of [...code.matchAll(/from ["']([^"']+)["']/g)]) {
     const specifier = match[1];

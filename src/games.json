@@ -1500,7 +1500,7 @@
         "alt": "En stor grå rymdvarelse och mindre figurer med gröna och röda basringar på rymdskeppets mörka spelplan, bland rumsbrickor och gula markörer."
       }
     ],
-    "expansions": ["Aftermath"],
+    "expansions": ["Aftermath", "Medic Character Pack", "Promos"],
     "coverVariants": [
       {
         "src": "/images/games/nemesis-aftermath/nemesis-thumb-192.webp",
@@ -1914,7 +1914,7 @@
   {
     "id": "nemesis-retaliation",
     "title": "Nemesis: Retaliation",
-    "edition": "",
+    "edition": "Special Edition",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -1933,7 +1933,7 @@
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
       "sourceRow": 58,
-      "sourceTitle": "Nemesis: Retaliation",
+      "sourceTitle": "Nemesis: Retaliation: Special Edition",
       "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
@@ -1981,7 +1981,8 @@
         "src": "/images/games/nemesis-retaliation/nemesis-retaliation-thumb.png",
         "width": 1122
       }
-    ]
+    ],
+    "expansions": ["The Xyrians Expansion", "Support Squad Expansion"]
   },
   {
     "id": "gang-wars",

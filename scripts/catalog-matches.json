@@ -314,8 +314,10 @@
   },
   {
     "sourceRow": 58,
-    "sourceTitle": "Nemesis: Retaliation",
-    "id": "nemesis-retaliation"
+    "sourceTitle": "Nemesis: Retaliation: Special Edition",
+    "id": "nemesis-retaliation",
+    "displayTitle": "Nemesis: Retaliation",
+    "displayEdition": "Special Edition"
   },
   {
     "sourceRow": 59,
