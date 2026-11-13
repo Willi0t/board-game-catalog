@@ -2640,7 +2640,8 @@
       "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": ["Stretch Goal Upgrades"]
   },
   {
     "id": "brass-lancashire",
@@ -2668,6 +2669,7 @@
       "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": ["Stretch Goal Upgrades"]
   }
 ]
