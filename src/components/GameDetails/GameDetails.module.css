@@ -1,4 +1,5 @@
 .details {
+  --detail-gutter: 24px;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -79,6 +80,10 @@
 }
 
 @media (max-width: 1150px) {
+  .details {
+    --detail-gutter: 20px;
+  }
+
   .detail-content {
     padding: 20px 20px 0;
   }
@@ -104,12 +109,12 @@
 }
 
 .actions {
-  padding: 0 24px 20px;
+  padding: 0 var(--detail-gutter) 20px;
 }
 
 .expansions {
   margin-bottom: 20px;
-  padding: 16px 0;
+  padding: 12px;
   border-radius: 8px;
   background: #ffffff80;
 }
