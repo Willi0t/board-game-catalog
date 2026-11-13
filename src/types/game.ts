@@ -35,6 +35,8 @@ export interface Game {
   coverVariants?: CoverVariant[];
   hero?: string;
   heroAlt?: string;
+  bannerVideo?: { youtubeId: string };
+  bannerLogo?: { src: string; alt: string };
   gallery?: (string | GameGalleryEntry)[];
 }
 
