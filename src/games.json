@@ -185,7 +185,51 @@
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     },
-    "expansions": ["Cosmic Dominion", "Cosmic Odyssey", "Cosmic Conflict"]
+    "expansions": ["Cosmic Dominion", "Cosmic Odyssey", "Cosmic Conflict"],
+    "cover": "/images/games/cosmic/cosmic-thumb.png",
+    "coverAlt": "Omslag till Cosmic Encounter med gyllene logotyp, utomjordiska varelser och blå energi mot en stjärnhimmel.",
+    "hero": "/images/games/cosmic/cosmic-banner.png",
+    "heroAlt": "Cosmic Encounter-logotyp framför utomjordiska varelser och lysande blå energi.",
+    "gallery": [
+      {
+        "src": "/images/games/cosmic/gallery/cosmic-1.png",
+        "title": "Askens baksida",
+        "alt": "Askens baksida med spelöversikt, utomjording, kort och färgade rymdskepp."
+      },
+      {
+        "src": "/images/games/cosmic/gallery/cosmic-2.png",
+        "title": "Spelet uppdukat",
+        "alt": "Färgade rymdskepp på planetbrickor, kort och en rymdportal på ett bord."
+      },
+      {
+        "src": "/images/games/cosmic/gallery/cosmic-3.png",
+        "title": "Rymdskepp och portal",
+        "alt": "Lila och gröna rymdskepp på planetbrickor intill kort och en rymdportal med ett rött skepp."
+      },
+      {
+        "src": "/images/games/cosmic/gallery/cosmic-4.png",
+        "title": "Spelomgång på rymdmatta",
+        "alt": "Spelare runt en rymdmatta med planetbrickor, färgade rymdskepp och kort."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/cosmic/cosmic-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/cosmic/cosmic-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/cosmic/cosmic-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/cosmic/cosmic-thumb.png",
+        "width": 1122
+      }
+    ]
   },
   {
     "id": "clank",
