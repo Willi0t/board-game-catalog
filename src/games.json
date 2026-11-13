@@ -1134,7 +1134,51 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/spies-lies-supplies/air-land-sea-spies-thumb.png",
+    "coverAlt": "Air, Land & Sea: Spies, Lies, & Supplies-omslag med spioner, diplomater och svetsare.",
+    "coverVariants": [
+      {
+        "src": "/images/games/spies-lies-supplies/air-land-sea-spies-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/spies-lies-supplies/air-land-sea-spies-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/spies-lies-supplies/air-land-sea-spies-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/spies-lies-supplies/air-land-sea-spies-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/spies-lies-supplies/air-land-sea-spies-banner.png",
+    "heroAlt": "Air, Land & Sea-titeln med undertiteln Spies, Lies, & Supplies vid en regnig hamn med spioner och svetsare.",
+    "gallery": [
+      {
+        "src": "/images/games/spies-lies-supplies/gallery/air-land-sea-spies-1.png",
+        "title": "Kort och komponenter",
+        "alt": "Kort för underrättelser, diplomati och ekonomi tillsammans med spelhjälper och poängmarker."
+      },
+      {
+        "src": "/images/games/spies-lies-supplies/gallery/air-land-sea-spies-2.png",
+        "title": "Spelet uppdukat",
+        "alt": "Tre områdeskort med spelkort på båda sidor, kortlek och poängmarker."
+      },
+      {
+        "src": "/images/games/spies-lies-supplies/gallery/air-land-sea-spies-3.png",
+        "title": "Kort på hand",
+        "alt": "En hand håller flera spelkort med Requisition-kortet längst fram."
+      },
+      {
+        "src": "/images/games/spies-lies-supplies/gallery/air-land-sea-spies-4.png",
+        "title": "En pågående match",
+        "alt": "Spelkort kring områdena ekonomi, underrättelser och diplomati på en grå duk."
+      }
+    ]
   },
   {
     "id": "deep-regrets-deeper-regrets",
