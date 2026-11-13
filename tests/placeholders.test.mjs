@@ -26,9 +26,9 @@ const {
   layoutCoverTitle,
 } = mod.exports;
 
-test('72 themes / 216 files, proportional geometry and 71 unique valid mappings', () => {
+test('72 themes / 216 files, proportional geometry and 75 unique valid mappings', () => {
   assert.equal(Object.keys(manifest.themes).length, 72);
-  assert.equal(Object.keys(manifest.games).length, 71);
+  assert.equal(Object.keys(manifest.games).length, 75);
   assert(manifest.themes[manifest.defaultTheme]);
   for (const [id, key] of Object.entries(manifest.games)) {
     assert.equal(games.filter((game) => game.id === id).length, 1, id);

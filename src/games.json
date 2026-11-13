@@ -1,7 +1,7 @@
 [
   {
     "id": "burgundy",
-    "title": "Castles of Burgundy",
+    "title": "The Castles of Burgundy",
     "edition": "Special Edition",
     "category": "Strategi",
     "accent": "#336b94",
@@ -57,11 +57,20 @@
     "descriptionStatus": "draft",
     "catalogMetadata": {
       "sourceRow": 11,
-      "sourceTitle": "The Castles of Burgundy",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "The Castles of Burgundy: Special Edition",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": [
+      "New Duchies",
+      "The White Castles and Inns",
+      "Trade Routes",
+      "The Team Game & Solo Expansion",
+      "The Shields & Championship Boards",
+      "Vineyards Expansion",
+      "Stretch Goal Upgrades"
+    ]
   },
   {
     "id": "terraforming",
@@ -86,7 +95,7 @@
     "catalogMetadata": {
       "sourceRow": 13,
       "sourceTitle": "Terraforming Mars",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -108,16 +117,17 @@
     "bestWith": "4–5",
     "playerInteraction": 5,
     "mechanics": ["Negotiation", "Bluff & deduction", "Hand management"],
-    "gameTypes": ["Competitive", "Party", "Social"],
+    "gameTypes": ["Competitive", "Social"],
     "upcoming": false,
     "descriptionStatus": "draft",
     "catalogMetadata": {
       "sourceRow": 34,
       "sourceTitle": "Cosmic Encounter",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": ["Cosmic Dominion", "Cosmic Odyssey", "Cosmic Conflict"]
   },
   {
     "id": "clank",
@@ -139,11 +149,11 @@
     "gameTypes": ["Competitive", "Dungeon crawler"],
     "upcoming": false,
     "descriptionStatus": "draft",
-    "expansions": ["Underworld"],
+    "expansions": ["Underworld", "Lairs & Lost Chambers"],
     "catalogMetadata": {
       "sourceRow": 10,
-      "sourceTitle": "Clank! Catacombs + Underworld",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "Clank! Catacombs",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -171,10 +181,11 @@
     "catalogMetadata": {
       "sourceRow": 15,
       "sourceTitle": "7 Wonders",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": ["Leaders"]
   },
   {
     "id": "salad",
@@ -199,7 +210,7 @@
     "catalogMetadata": {
       "sourceRow": 2,
       "sourceTitle": "Point Salad",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -227,7 +238,7 @@
     "catalogMetadata": {
       "sourceRow": 8,
       "sourceTitle": "Burgle Bros",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -255,7 +266,7 @@
     "catalogMetadata": {
       "sourceRow": 9,
       "sourceTitle": "7 Wonders Duel",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -277,13 +288,13 @@
     "bestWith": "2–5",
     "playerInteraction": 3,
     "mechanics": ["Hand management", "Drafting", "Set collection"],
-    "gameTypes": ["Competitive", "Party", "Social"],
+    "gameTypes": ["Competitive", "Social"],
     "upcoming": false,
     "descriptionStatus": "draft",
     "catalogMetadata": {
       "sourceRow": 26,
       "sourceTitle": "Vaalbara",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -305,13 +316,13 @@
     "bestWith": "4–6",
     "playerInteraction": 4,
     "mechanics": ["Drafting", "Action selection", "Bluff & deduction"],
-    "gameTypes": ["Competitive", "Party", "Social"],
+    "gameTypes": ["Competitive", "Social"],
     "upcoming": false,
     "descriptionStatus": "draft",
     "catalogMetadata": {
       "sourceRow": 29,
       "sourceTitle": "Citadels",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -339,7 +350,7 @@
     "catalogMetadata": {
       "sourceRow": 5,
       "sourceTitle": "Star Wars: The Deckbuilding Game",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -360,17 +371,23 @@
     "placeholderTheme": "geometric-olive",
     "bestWith": "4",
     "playerInteraction": 4,
-    "mechanics": ["Worker placement", "Deckbuilding", "Area control"],
+    "mechanics": [
+      "Worker placement",
+      "Deckbuilding",
+      "Area control",
+      "Engine building"
+    ],
     "gameTypes": ["Competitive", "Social"],
     "upcoming": false,
     "descriptionStatus": "draft",
     "catalogMetadata": {
       "sourceRow": 19,
       "sourceTitle": "Scarface 1920",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": ["Bloody Business", "Enforcers", "Stretch Goal Upgrades"]
   },
   {
     "id": "codex-naturalis",
@@ -395,7 +412,7 @@
     "catalogMetadata": {
       "sourceRow": 3,
       "sourceTitle": "Codex Naturalis",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -423,7 +440,7 @@
     "catalogMetadata": {
       "sourceRow": 4,
       "sourceTitle": "Knarr",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -451,7 +468,7 @@
     "catalogMetadata": {
       "sourceRow": 6,
       "sourceTitle": "The Crew: Mission Deep Sea",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -479,14 +496,14 @@
     "catalogMetadata": {
       "sourceRow": 7,
       "sourceTitle": "Spies, Lies & Supplies",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
   },
   {
     "id": "deep-regrets-deeper-regrets",
-    "title": "Deep Regrets + Deeper Regrets",
+    "title": "Deep Regrets",
     "edition": "",
     "category": "Övrigt",
     "accent": "#815467",
@@ -499,18 +516,19 @@
     "weight": 2.39,
     "playerInteraction": 3,
     "mechanics": ["Push your luck"],
-    "gameTypes": ["Competitive", "Party", "Social"],
+    "gameTypes": ["Competitive", "Social"],
     "upcoming": false,
     "minutes": null,
     "descriptionStatus": "missing",
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
       "sourceRow": 12,
-      "sourceTitle": "Deep Regrets + Deeper Regrets",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "Deep Regrets",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": ["Deeper Regrets"]
   },
   {
     "id": "solar-titans",
@@ -535,7 +553,7 @@
     "catalogMetadata": {
       "sourceRow": 14,
       "sourceTitle": "Solar Titans",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -555,7 +573,7 @@
     "weight": 1.11,
     "playerInteraction": 4,
     "mechanics": ["Bluff & deduction", "Hand management"],
-    "gameTypes": ["Competitive", "Party", "Social"],
+    "gameTypes": ["Competitive", "Social"],
     "upcoming": false,
     "minutes": null,
     "descriptionStatus": "missing",
@@ -563,15 +581,15 @@
     "catalogMetadata": {
       "sourceRow": 16,
       "sourceTitle": "Love Letter",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
   },
   {
     "id": "puerto-rico",
-    "title": "Puerto Rico",
-    "edition": "",
+    "title": "Puerto Rico 1897",
+    "edition": "Special Edition",
     "category": "Övrigt",
     "accent": "#965824",
     "tint": "#f6ece4",
@@ -590,8 +608,8 @@
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
       "sourceRow": 17,
-      "sourceTitle": "Puerto Rico",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "Puerto Rico 1897: Special Edition",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     },
@@ -630,12 +648,19 @@
         "title": "Byggnadsminiatyrer",
         "alt": "Närbild av sandfärgade byggnadsminiatyrer med torn, pelare och skorstenar på spelarmattor med byggnadsfält och tryckt regeltext."
       }
+    ],
+    "expansions": [
+      "New Buildings",
+      "Citizens",
+      "The Smuggler",
+      "The Festival",
+      "Stretch Goal Upgrades"
     ]
   },
   {
     "id": "agricola",
     "title": "Agricola",
-    "edition": "",
+    "edition": "Special Edition",
     "category": "Övrigt",
     "accent": "#1f57ad",
     "tint": "#e4ebf6",
@@ -654,8 +679,8 @@
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
       "sourceRow": 18,
-      "sourceTitle": "Agricola",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "Agricola: Special Edition",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
     },
@@ -684,6 +709,32 @@
         "title": "Spelaskar och kortpaket",
         "alt": "Askar för Agricola: Special Edition, Farmers of the Moor och Stretch Goals ovanför rader av kortpaket."
       }
+    ],
+    "expansions": [
+      "Artifex Deck",
+      "Bubulcus Deck",
+      "Corbarius Deck",
+      "Dulcinaria Deck",
+      "Consul Dirigens Deck",
+      "Ephipparius Deck",
+      "Agricola Meets Newdale Deck",
+      "Changelings Expansion",
+      "Ö Deck",
+      "L Deck",
+      "X Deck",
+      "CZ Deck",
+      "Gamers' Deck",
+      "The Legen*dairy Forest Deck",
+      "NL Deck",
+      "World Championship Deck",
+      "Belgium Deck",
+      "Pi Deck",
+      "Bielefeld Deck",
+      "France Deck",
+      "Z-deck",
+      "Through the Seasons",
+      "Promotional Set",
+      "Stretch Goals"
     ]
   },
   {
@@ -701,7 +752,7 @@
     "weight": 2.18,
     "playerInteraction": 4,
     "mechanics": ["Hand management", "Action selection", "Set collection"],
-    "gameTypes": ["Competitive", "Party", "Social"],
+    "gameTypes": ["Competitive", "Social"],
     "upcoming": false,
     "minutes": null,
     "descriptionStatus": "missing",
@@ -709,7 +760,7 @@
     "catalogMetadata": {
       "sourceRow": 20,
       "sourceTitle": "Libertalia: Winds of Galecrest",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -717,7 +768,7 @@
   {
     "id": "final-titan",
     "title": "Final Titan",
-    "edition": "",
+    "edition": "Ultimate Edition",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -736,11 +787,17 @@
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
       "sourceRow": 21,
-      "sourceTitle": "Final Titan",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "Final Titan: Ultimate Edition",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": [
+      "Godspark Expansion",
+      "Mindbug Expansion",
+      "Gamefound Promo Pack",
+      "Stretch Goal Upgrades"
+    ]
   },
   {
     "id": "high-society",
@@ -757,7 +814,7 @@
     "weight": 1.48,
     "playerInteraction": 5,
     "mechanics": ["Auction & bidding"],
-    "gameTypes": ["Competitive", "Party", "Social"],
+    "gameTypes": ["Competitive", "Social"],
     "upcoming": false,
     "minutes": null,
     "descriptionStatus": "missing",
@@ -765,7 +822,7 @@
     "catalogMetadata": {
       "sourceRow": 22,
       "sourceTitle": "High Society",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -793,7 +850,7 @@
     "catalogMetadata": {
       "sourceRow": 23,
       "sourceTitle": "Parlay",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "provisional"
     }
@@ -821,7 +878,7 @@
     "catalogMetadata": {
       "sourceRow": 24,
       "sourceTitle": "Grimcoven",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     },
@@ -880,10 +937,17 @@
     "catalogMetadata": {
       "sourceRow": 25,
       "sourceTitle": "Long Dark Sea",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": [
+      "Weakness Expansion",
+      "Bounty Expansion",
+      "Contracts Expansion",
+      "Dark Side Expansion",
+      "Stretch Goal Upgrades"
+    ]
   },
   {
     "id": "excalibur",
@@ -900,7 +964,7 @@
     "weight": null,
     "playerInteraction": 4,
     "mechanics": ["Bluff & deduction"],
-    "gameTypes": ["Competitive", "Party", "Social"],
+    "gameTypes": ["Competitive", "Social"],
     "upcoming": false,
     "minutes": null,
     "descriptionStatus": "missing",
@@ -908,7 +972,7 @@
     "catalogMetadata": {
       "sourceRow": 27,
       "sourceTitle": "Excalibur",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -936,7 +1000,7 @@
     "catalogMetadata": {
       "sourceRow": 28,
       "sourceTitle": "Lands of Evershade",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
     }
@@ -964,7 +1028,7 @@
     "catalogMetadata": {
       "sourceRow": 30,
       "sourceTitle": "Point City",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -992,7 +1056,7 @@
     "catalogMetadata": {
       "sourceRow": 31,
       "sourceTitle": "Catan (base)",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -1020,7 +1084,7 @@
     "catalogMetadata": {
       "sourceRow": 32,
       "sourceTitle": "Forbidden Desert",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -1048,7 +1112,7 @@
     "catalogMetadata": {
       "sourceRow": 33,
       "sourceTitle": "Ticket to Ride",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -1076,7 +1140,7 @@
     "catalogMetadata": {
       "sourceRow": 35,
       "sourceTitle": "fate of the fellowship",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -1104,7 +1168,7 @@
     "catalogMetadata": {
       "sourceRow": 36,
       "sourceTitle": "fliptoons",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -1132,7 +1196,7 @@
     "catalogMetadata": {
       "sourceRow": 37,
       "sourceTitle": "azul mini",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -1160,7 +1224,7 @@
     "catalogMetadata": {
       "sourceRow": 38,
       "sourceTitle": "there and back again",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -1188,7 +1252,7 @@
     "catalogMetadata": {
       "sourceRow": 39,
       "sourceTitle": "lord of the rings trick taking game",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -1216,7 +1280,7 @@
     "catalogMetadata": {
       "sourceRow": 40,
       "sourceTitle": "magical athleete",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -1236,7 +1300,7 @@
     "weight": 1.33,
     "playerInteraction": 4,
     "mechanics": ["Push your luck", "Hand management"],
-    "gameTypes": ["Competitive", "Party", "Social"],
+    "gameTypes": ["Competitive", "Social"],
     "upcoming": false,
     "minutes": null,
     "descriptionStatus": "missing",
@@ -1244,7 +1308,7 @@
     "catalogMetadata": {
       "sourceRow": 41,
       "sourceTitle": "goats and goblins",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -1252,7 +1316,7 @@
   {
     "id": "inis",
     "title": "Inis",
-    "edition": "",
+    "edition": "Big Box",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -1271,11 +1335,12 @@
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
       "sourceRow": 42,
-      "sourceTitle": "inis",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "Inis: Big Box",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": ["Nemed", "Seasons of Inis", "Stretch Goal Upgrades"]
   },
   {
     "id": "spirit-island",
@@ -1300,15 +1365,15 @@
     "catalogMetadata": {
       "sourceRow": 43,
       "sourceTitle": "spirit island",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
   },
   {
     "id": "nemesis-aftermath",
-    "title": "Nemesis + Aftermath",
-    "edition": "",
+    "title": "Nemesis",
+    "edition": "Special Edition",
     "category": "Övrigt",
     "accent": "#276e8c",
     "tint": "#e4f1f6",
@@ -1327,8 +1392,8 @@
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
       "sourceRow": 44,
-      "sourceTitle": "Nemesis + Aftermath",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "Nemesis: Special Edition",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     },
@@ -1362,12 +1427,13 @@
         "title": "Miniatyrer ombord på skeppet",
         "alt": "En stor grå rymdvarelse och mindre figurer med gröna och röda basringar på rymdskeppets mörka spelplan, bland rumsbrickor och gula markörer."
       }
-    ]
+    ],
+    "expansions": ["Aftermath"]
   },
   {
     "id": "an-infamous-traffic-second-edition",
-    "title": "An Infamous Traffic: Second Edition",
-    "edition": "",
+    "title": "An Infamous Traffic",
+    "edition": "Second Edition",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -1387,7 +1453,7 @@
     "catalogMetadata": {
       "sourceRow": 45,
       "sourceTitle": "An Infamous Traffic: Second Edition",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
     }
@@ -1395,7 +1461,7 @@
   {
     "id": "shug",
     "title": "SHUG",
-    "edition": "",
+    "edition": "Unnecessarily Nice Box",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -1414,11 +1480,17 @@
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
       "sourceRow": 46,
-      "sourceTitle": "SHUG",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "SHUG: Unnecessarily Nice Box",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": [
+      "Enter the Tiddy Realm",
+      "Landlords",
+      "Shugnanigans",
+      "Stretch Goal Upgrades"
+    ]
   },
   {
     "id": "battlesticks",
@@ -1443,15 +1515,15 @@
     "catalogMetadata": {
       "sourceRow": 47,
       "sourceTitle": "Battlesticks",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
     }
   },
   {
     "id": "re-match-marble-puzzle-fighter",
-    "title": "Re;MATCH: Marble Puzzle Fighter",
-    "edition": "",
+    "title": "Re;MATCH",
+    "edition": "Super Turbo Edition",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -1470,11 +1542,18 @@
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
       "sourceRow": 48,
-      "sourceTitle": "Re;MATCH: Marble Puzzle Fighter",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "Re;MATCH: Super Turbo Edition",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": [
+      "The Cosplayer Expansion",
+      "The Pilot Expansion",
+      "The VTuber Expansion",
+      "The Duelist Expansion",
+      "Stretch Goal Upgrades"
+    ]
   },
   {
     "id": "roma-xli",
@@ -1491,7 +1570,7 @@
     "weight": null,
     "playerInteraction": 5,
     "mechanics": ["Bluff & deduction", "Negotiation", "Hand management"],
-    "gameTypes": ["Competitive", "Party"],
+    "gameTypes": ["Competitive"],
     "upcoming": true,
     "minutes": null,
     "descriptionStatus": "missing",
@@ -1499,7 +1578,7 @@
     "catalogMetadata": {
       "sourceRow": 49,
       "sourceTitle": "Roma XLI",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
     }
@@ -1527,7 +1606,7 @@
     "catalogMetadata": {
       "sourceRow": 50,
       "sourceTitle": "52 Duels: Fight with Playing Cards",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -1535,7 +1614,7 @@
   {
     "id": "grifoni-blades-for-hire",
     "title": "Grifoni: Blades for Hire",
-    "edition": "",
+    "edition": "Mercenary Edition",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -1554,11 +1633,18 @@
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
       "sourceRow": 51,
-      "sourceTitle": "Grifoni: Blades for Hire",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "Grifoni: Blades for Hire: Mercenary Edition",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": [
+      "The Lost Company",
+      "Shadow of the Beast",
+      "Caravan of Wonders",
+      "Shakespeare in War",
+      "Stretch Goal Upgrades"
+    ]
   },
   {
     "id": "bio-blitz",
@@ -1583,7 +1669,7 @@
     "catalogMetadata": {
       "sourceRow": 52,
       "sourceTitle": "Bio Blitz",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -1611,7 +1697,7 @@
     "catalogMetadata": {
       "sourceRow": 53,
       "sourceTitle": "High Adventure: Treasure Hunt",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -1639,10 +1725,11 @@
     "catalogMetadata": {
       "sourceRow": 54,
       "sourceTitle": "Rolling Seas",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": ["Salty Dogs & Sea Tales", "Stretch Goal Upgrades"]
   },
   {
     "id": "rise-of-the-oak-dell",
@@ -1667,7 +1754,7 @@
     "catalogMetadata": {
       "sourceRow": 55,
       "sourceTitle": "Rise of the Oak Dell",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -1675,7 +1762,7 @@
   {
     "id": "avalon-the-riven-veil",
     "title": "Avalon: The Riven Veil",
-    "edition": "",
+    "edition": "Deluxe Edition",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -1694,15 +1781,20 @@
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
       "sourceRow": 56,
-      "sourceTitle": "Avalon: The Riven Veil",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "Avalon: The Riven Veil: Deluxe Edition",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": [
+      "Mistwalkers Expansion",
+      "Vernax: The Black Dragon",
+      "Stretch Goal Upgrades"
+    ]
   },
   {
     "id": "decko-pistachio",
-    "title": "DECKO + Pistachio",
+    "title": "DECKO",
     "edition": "",
     "category": "Övrigt",
     "accent": "#815467",
@@ -1715,18 +1807,19 @@
     "weight": null,
     "playerInteraction": 4,
     "mechanics": ["Deckbuilding", "Auction & bidding", "Bluff & deduction"],
-    "gameTypes": ["Competitive", "Party", "Social"],
+    "gameTypes": ["Competitive", "Social"],
     "upcoming": true,
     "minutes": null,
     "descriptionStatus": "missing",
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
       "sourceRow": 57,
-      "sourceTitle": "DECKO + Pistachio",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "DECKO",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": ["Pistachio", "Stretch Goal Upgrades"]
   },
   {
     "id": "nemesis-retaliation",
@@ -1751,7 +1844,7 @@
     "catalogMetadata": {
       "sourceRow": 58,
       "sourceTitle": "Nemesis: Retaliation",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
     }
@@ -1759,7 +1852,7 @@
   {
     "id": "gang-wars",
     "title": "Gang Wars",
-    "edition": "",
+    "edition": "Mobster Pledge",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -1778,11 +1871,16 @@
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
       "sourceRow": 59,
-      "sourceTitle": "Gang Wars",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "Gang Wars: Mobster Pledge",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": [
+      "City of Violence",
+      "Gangland Empire",
+      "Stretch Goal Upgrades"
+    ]
   },
   {
     "id": "davos",
@@ -1799,7 +1897,7 @@
     "weight": 2.67,
     "playerInteraction": 5,
     "mechanics": ["Negotiation", "Bluff & deduction"],
-    "gameTypes": ["Competitive", "Party", "Social"],
+    "gameTypes": ["Competitive", "Social"],
     "upcoming": true,
     "minutes": null,
     "descriptionStatus": "missing",
@@ -1807,7 +1905,7 @@
     "catalogMetadata": {
       "sourceRow": 60,
       "sourceTitle": "DAVOS",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
     }
@@ -1835,15 +1933,16 @@
     "catalogMetadata": {
       "sourceRow": 61,
       "sourceTitle": "Hitman: The Board Game",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": ["Stretch Goal Upgrades"]
   },
   {
     "id": "brass-pittsburgh",
     "title": "Brass: Pittsburgh",
-    "edition": "",
+    "edition": "Collector's Edition",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -1862,11 +1961,12 @@
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
       "sourceRow": 62,
-      "sourceTitle": "Brass: Pittsburgh",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "Brass: Pittsburgh: Collector's Edition",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": ["Stretch Goal Upgrades"]
   },
   {
     "id": "the-old-king-s-crown",
@@ -1883,7 +1983,7 @@
     "weight": 3.71,
     "playerInteraction": 5,
     "mechanics": ["Auction & bidding", "Bluff & deduction", "Area control"],
-    "gameTypes": ["Competitive", "Party", "Social"],
+    "gameTypes": ["Competitive", "Social"],
     "upcoming": false,
     "minutes": null,
     "descriptionStatus": "missing",
@@ -1891,15 +1991,16 @@
     "catalogMetadata": {
       "sourceRow": 63,
       "sourceTitle": "The Old King's Crown",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": ["Songs of Home"]
   },
   {
     "id": "b-e-l-o-w-the-asylum",
     "title": "B.E.L.O.W.: The Asylum",
-    "edition": "",
+    "edition": "Standard Edition",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -1918,11 +2019,17 @@
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
       "sourceRow": 64,
-      "sourceTitle": "B.E.L.O.W.: The Asylum",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "B.E.L.O.W.: The Asylum: Standard Edition",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": [
+      "Berry Pomeroy Expansion",
+      "Hero Pack",
+      "Ferratic Entity",
+      "SS Waratah"
+    ]
   },
   {
     "id": "detectives-vs-criminals",
@@ -1939,7 +2046,7 @@
     "weight": null,
     "playerInteraction": 5,
     "mechanics": ["Bluff & deduction", "Hand management"],
-    "gameTypes": ["Competitive", "Team-based", "Party", "Social"],
+    "gameTypes": ["Competitive", "Team-based", "Social"],
     "upcoming": true,
     "minutes": null,
     "descriptionStatus": "missing",
@@ -1947,10 +2054,16 @@
     "catalogMetadata": {
       "sourceRow": 65,
       "sourceTitle": "Detectives vs Criminals",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": [
+      "Rain & Fog",
+      "Sherlock Holmes – High Tension",
+      "Darkness of Dracula",
+      "Stretch Goal Upgrades"
+    ]
   },
   {
     "id": "the-wandmaker-s-apprentice",
@@ -1975,15 +2088,21 @@
     "catalogMetadata": {
       "sourceRow": 66,
       "sourceTitle": "The Wandmaker's Apprentice",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": [
+      "Spellcaster Pack",
+      "Mage Pack",
+      "Archaist Pack",
+      "Stretch Goal Upgrades"
+    ]
   },
   {
     "id": "andromeda-s-edge-genesis-fully-operational",
-    "title": "Andromeda's Edge + Genesis (Fully Operational)",
-    "edition": "",
+    "title": "Andromeda's Edge",
+    "edition": "Fully Operational",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -2002,16 +2121,17 @@
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
       "sourceRow": 67,
-      "sourceTitle": "Andromeda's Edge + Genesis (Fully Operational)",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "Andromeda's Edge: Fully Operational",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": ["Escalation", "Exotic Matter", "Genesis"]
   },
   {
     "id": "ascension-15th-anniversary-edition",
-    "title": "Ascension: 15th Anniversary Edition",
-    "edition": "",
+    "title": "Ascension",
+    "edition": "15th Anniversary Edition",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -2031,10 +2151,15 @@
     "catalogMetadata": {
       "sourceRow": 68,
       "sourceTitle": "Ascension: 15th Anniversary Edition",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": [
+      "Dreams & Nightmares",
+      "15th Anniversary Promo Pack",
+      "Dreamscape"
+    ]
   },
   {
     "id": "ascension-legends",
@@ -2059,7 +2184,7 @@
     "catalogMetadata": {
       "sourceRow": 69,
       "sourceTitle": "Ascension Legends",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -2087,7 +2212,7 @@
     "catalogMetadata": {
       "sourceRow": 70,
       "sourceTitle": "Shallow Regrets",
-      "importedAt": "2026-11-10",
+      "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     }
@@ -2095,7 +2220,7 @@
   {
     "id": "nexus-card-game",
     "title": "Nexus Card Game",
-    "edition": "",
+    "edition": "Founders Edition",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -2114,16 +2239,17 @@
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
       "sourceRow": 71,
-      "sourceTitle": "Nexus Card Game",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "Nexus Card Game: Founders Edition",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "expansions": ["Foil Pack"]
   },
   {
     "id": "tend-hive-cellar",
-    "title": "Tend + Hive & Cellar",
-    "edition": "",
+    "title": "Tend",
+    "edition": "Big Box Edition",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -2142,8 +2268,121 @@
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
       "sourceRow": 72,
-      "sourceTitle": "Tend + Hive & Cellar",
-      "importedAt": "2026-11-10",
+      "sourceTitle": "Tend: Big Box Edition",
+      "importedAt": "2026-11-13",
+      "preliminary": true,
+      "editionMatch": "not-independently-verified"
+    },
+    "expansions": ["Hive", "Cellar", "Stretch Goal Upgrades"]
+  },
+  {
+    "id": "san-juan",
+    "title": "San Juan",
+    "edition": "",
+    "category": "Övrigt",
+    "accent": "#815467",
+    "tint": "#eadce2",
+    "description": "",
+    "placeholderTheme": "castle-rose",
+    "playersMin": 2,
+    "playersMax": 4,
+    "bestWith": "3",
+    "weight": 2.28,
+    "playerInteraction": null,
+    "mechanics": ["Action selection", "Hand management", "Engine building"],
+    "gameTypes": ["Competitive"],
+    "upcoming": false,
+    "minutes": 60,
+    "descriptionStatus": "missing",
+    "metadataStatus": "catalog-import",
+    "catalogMetadata": {
+      "sourceRow": 73,
+      "sourceTitle": "San Juan",
+      "importedAt": "2026-11-13",
+      "preliminary": false,
+      "editionMatch": "not-independently-verified"
+    }
+  },
+  {
+    "id": "annulet",
+    "title": "Annulet",
+    "edition": "",
+    "category": "Övrigt",
+    "accent": "#815467",
+    "tint": "#eadce2",
+    "description": "",
+    "placeholderTheme": "castle-rose",
+    "playersMin": 1,
+    "playersMax": 4,
+    "bestWith": null,
+    "weight": null,
+    "playerInteraction": null,
+    "mechanics": ["Drafting", "Set collection", "Hand management"],
+    "gameTypes": ["Competitive"],
+    "upcoming": true,
+    "minutes": 60,
+    "descriptionStatus": "missing",
+    "metadataStatus": "catalog-import",
+    "catalogMetadata": {
+      "sourceRow": 74,
+      "sourceTitle": "Annulet",
+      "importedAt": "2026-11-13",
+      "preliminary": true,
+      "editionMatch": "not-independently-verified"
+    }
+  },
+  {
+    "id": "brass-birmingham",
+    "title": "Brass: Birmingham",
+    "edition": "Collector's Edition",
+    "category": "Övrigt",
+    "accent": "#815467",
+    "tint": "#eadce2",
+    "description": "",
+    "placeholderTheme": "castle-rose",
+    "playersMin": 2,
+    "playersMax": 4,
+    "bestWith": "3–4",
+    "weight": 3.86,
+    "playerInteraction": null,
+    "mechanics": ["Route building", "Tile placement", "Hand management"],
+    "gameTypes": ["Competitive"],
+    "upcoming": true,
+    "minutes": 120,
+    "descriptionStatus": "missing",
+    "metadataStatus": "catalog-import",
+    "catalogMetadata": {
+      "sourceRow": 75,
+      "sourceTitle": "Brass: Birmingham: Collector's Edition",
+      "importedAt": "2026-11-13",
+      "preliminary": true,
+      "editionMatch": "not-independently-verified"
+    }
+  },
+  {
+    "id": "brass-lancashire",
+    "title": "Brass: Lancashire",
+    "edition": "Collector's Edition",
+    "category": "Övrigt",
+    "accent": "#815467",
+    "tint": "#eadce2",
+    "description": "",
+    "placeholderTheme": "castle-rose",
+    "playersMin": 2,
+    "playersMax": 4,
+    "bestWith": "4",
+    "weight": 3.84,
+    "playerInteraction": null,
+    "mechanics": ["Route building", "Tile placement", "Hand management"],
+    "gameTypes": ["Competitive"],
+    "upcoming": true,
+    "minutes": 120,
+    "descriptionStatus": "missing",
+    "metadataStatus": "catalog-import",
+    "catalogMetadata": {
+      "sourceRow": 76,
+      "sourceTitle": "Brass: Lancashire: Collector's Edition",
+      "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
     }

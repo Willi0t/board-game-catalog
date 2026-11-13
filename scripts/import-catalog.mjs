@@ -58,6 +58,7 @@ export function mergeCatalog(existing, source) {
           placeholderTheme: 'castle-rose',
         };
     if (match.displayTitle) game.title = match.displayTitle;
+    if (match.displayEdition !== undefined) game.edition = match.displayEdition;
     for (const field of importedFields) game[field] = row[field];
     // Terraforming Mars has a locally approved score; an empty Sheets cell must not erase it.
     if (
@@ -68,16 +69,17 @@ export function mergeCatalog(existing, source) {
       game.playerInteraction = original.playerInteraction;
     game.gameTypes = normalizeGameTypes(row.gameTypes);
     // All legacy times were explicitly demo content. Never promote them to facts.
-    if (!original || original.metadataStatus === 'placeholder')
+    if (row.minutes !== undefined) game.minutes = row.minutes;
+    else if (!original || original.metadataStatus === 'placeholder')
       game.minutes = null;
     game.descriptionStatus =
       original?.descriptionStatus ??
       (original?.description ? 'draft' : 'missing');
     game.metadataStatus = 'catalog-import';
-    if (match.expansions)
-      game.expansions = [
-        ...new Set([...(game.expansions ?? []), ...match.expansions]),
-      ];
+    if (row.expansions !== undefined) {
+      if (row.expansions.length) game.expansions = [...new Set(row.expansions)];
+      else delete game.expansions;
+    }
     game.catalogMetadata = {
       sourceRow: row.sourceRow,
       sourceTitle: row.title,

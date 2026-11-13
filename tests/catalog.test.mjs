@@ -18,10 +18,10 @@ const { default: filterGames } = await import(
   `data:text/javascript;base64,${Buffer.from(code).toString('base64')}`
 );
 
-test('71 explicit unique matches, exact approved fields and 21 upcoming games', () => {
-  assert.equal(source.games.length, 71);
+test('75 explicit unique matches, exact approved fields and 24 upcoming games', () => {
+  assert.equal(source.games.length, 75);
   assert.equal(new Set(games.map((game) => game.id)).size, games.length);
-  assert.equal(new Set(matches.map((match) => match.id)).size, 71);
+  assert.equal(new Set(matches.map((match) => match.id)).size, 75);
   for (const row of source.games) {
     const match = matches.find(
       (match) =>
@@ -42,9 +42,14 @@ test('71 explicit unique matches, exact approved fields and 21 upcoming games', 
       'upcoming',
     ])
       assert.deepEqual(game[field], row[field], `${row.title}: ${field}`);
+    assert.deepEqual(game.expansions ?? [], row.expansions);
+    if (row.minutes !== undefined) assert.equal(game.minutes, row.minutes);
+    if (match.displayTitle) assert.equal(game.title, match.displayTitle);
+    if (match.displayEdition !== undefined)
+      assert.equal(game.edition, match.displayEdition);
     assert.equal(game.catalogMetadata.sourceTitle, row.title);
   }
-  assert.equal(games.filter((game) => game.upcoming === true).length, 21);
+  assert.equal(games.filter((game) => game.upcoming === true).length, 24);
   assert.equal(
     games.find((game) => game.id === 'terraforming').upcoming,
     false,
@@ -111,6 +116,15 @@ test('re-import is idempotent and preserves local identity, art and descriptions
   );
 });
 
+test('re-import replaces expansion lists and removes cleared lists', () => {
+  const existing = games.map((game) =>
+    game.id === 'clank' || game.id === 'terraforming'
+      ? { ...game, expansions: ['Old expansion'] }
+      : game,
+  );
+  assert.deepEqual(mergeCatalog(existing, source), games);
+});
+
 test('Star Wars keeps its complete title, empty edition and stable identity on re-import', () => {
   const game = games.find((game) => game.id === 'starwars');
   assert.equal(game.title, 'Star Wars: The Deckbuilding Game');
@@ -167,8 +181,8 @@ test('simultaneous filters, favorites, tag search and unknown availability', () 
         game.playersMax >= 2,
     ),
   );
-  assert.equal(filterGames(games, { availability: 'upcoming' }).length, 21);
-  assert.equal(filterGames(games, { availability: 'owned' }).length, 50);
+  assert.equal(filterGames(games, { availability: 'upcoming' }).length, 24);
+  assert.equal(filterGames(games, { availability: 'owned' }).length, 51);
   assert.deepEqual(
     filterGames(games, {
       libraryView: 'favorites',
@@ -194,8 +208,15 @@ test('Party aliases normalize without duplicates or removing existing types', ()
     ['Competitive', 'Party', 'Racing', 'Team-based'],
   );
   const party = filterGames(games, { gameType: 'Party' });
-  assert(party.length >= 13);
-  assert(party.every((game) => game.gameTypes.includes('Party')));
+  assert.deepEqual(party.map((game) => game.id).sort(), [
+    'battlesticks',
+    'magical-athleete',
+    'shug',
+  ]);
+  assert.deepEqual(games.find((game) => game.id === 'love-letter').gameTypes, [
+    'Competitive',
+    'Social',
+  ]);
 });
 
 test('Terraforming Mars updates the stable entry with approved facts and medium interaction', () => {
@@ -225,7 +246,7 @@ test('Terraforming Mars updates the stable entry with approved facts and medium 
 });
 
 test('source numbering inserts game 12 on row 13 and identities survive reordered input', () => {
-  assert.equal(source.source.range, 'A1:H72');
+  assert.equal(source.source.range, 'A1:I76');
   assert.equal(source.games[11].title, 'Terraforming Mars');
   assert.equal(source.games[11].sourceRow, 13);
   assert.equal(source.games[12].title, 'Solar Titans');

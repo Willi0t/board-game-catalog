@@ -190,7 +190,7 @@ test('empty-result suggestions are explicit changes with verifiably positive cou
   assert(far.some((suggestion) => suggestion.changes.players === 4));
 });
 
-test('actual catalog suggestions honor all declared criteria, default excludes 21 upcoming', () => {
+test('actual catalog suggestions honor all declared criteria, default excludes upcoming games', () => {
   const fresh = defaultPickerCriteria();
   assert.equal(fresh.includeUpcoming, false);
   assert.deepEqual(fresh.gameTypes, []);
@@ -231,21 +231,7 @@ test('actual catalog suggestions honor all declared criteria, default excludes 2
 });
 
 test('Party is canonical, retained alongside other tags and filters in both the catalog and guide', () => {
-  const ids = [
-    'deep-regrets-deeper-regrets',
-    'love-letter',
-    'libertalia-winds-of-galecrest',
-    'high-society',
-    'vaalbara',
-    'citadels',
-    'cosmic',
-    'magical-athleete',
-    'goats-and-goblins',
-    'decko-pistachio',
-    'davos',
-    'the-old-king-s-crown',
-    'detectives-vs-criminals',
-  ];
+  const ids = ['battlesticks', 'magical-athleete', 'shug'];
   for (const id of ids) {
     const entry = games.find((g) => g.id === id);
     assert(entry, id);

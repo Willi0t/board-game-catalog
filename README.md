@@ -202,21 +202,23 @@ Behåll osäkerhetsmarkeringar per fält och skilj bildstatus från speldata. Fa
 
 ## Manuell uppdatering från Sheets
 
-1. Exportera de första åtta kolumnerna till `catalog-data.json`. Inga
+1. Exportera de första nio kolumnerna, inklusive Expansions, till `catalog-data.json`. Inga
    Notes/Notering ska ingå. Filen används bara vid utveckling, aldrig för anrop
    till Sheets i webbläsaren. `CODEX-PROMPT.md` och exportfilen undantas från
    automatisk formatering för att bevara importunderlagen.
 2. Granska `scripts/catalog-matches.json`. Varje källrad och exakt källtitel
    matchar ett stabilt katalog-id. Ändra inte id för befintliga spel. Justera
-   källtitel/källrad i matchningen om Sheets har ändrats; importeraren stoppar
+   källtitel/källrad i matchningen om Sheets har ändrats. Ange spel och utgåva
+   separat med `displayTitle` och `displayEdition`; importeraren stoppar
    vid saknad matchning, dubbletter eller ändrat antal poster.
-3. Kör `node scripts/import-catalog.mjs`. Importen uppdaterar bara de angivna
-   faktauppgifterna, bevarar lokal text/bilder/färger och sparar gemensam
+3. Kör `node scripts/import-catalog.mjs`. Importen ersätter speltyper, mekaniker och
+   expansionslistor från exporten, inklusive borttagna värden. Den uppdaterar
+   spel och utgåva enligt matchningen, bevarar lokal text/bilder/färger och sparar gemensam
    källinformation och datakvalitet i `src/catalogMetadata.json`. Katalogposter
    utanför exporten bevaras utan att tilldelas ägarstatus eller granskade fakta.
 4. Kör `node --test tests/*.test.mjs` samt projektets kontroller. Testerna
    använder Node:s inbyggda testverktyg samt befintliga TypeScript/esbuild; inga nya
-   testberoenden krävs. Nuvarande exportkontroll förväntar 71 poster/21 kommande;
+   testberoenden krävs. Nuvarande exportkontroll förväntar 75 poster/24 kommande;
    uppdatera dessa förväntningar vid en avsiktlig ändring av underlaget.
 
 När ett kommande spel levererats: ändra dess `upcoming` till `false` i
