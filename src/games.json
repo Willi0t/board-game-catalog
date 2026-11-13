@@ -1062,7 +1062,51 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/the-crew-mission-deep-sea/the-crew-deep-sea-thumb.png",
+    "coverAlt": "The Crew: Mission Deep Sea-omslag med dykare som utforskar en sjunken stad under havet.",
+    "coverVariants": [
+      {
+        "src": "/images/games/the-crew-mission-deep-sea/the-crew-deep-sea-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/the-crew-mission-deep-sea/the-crew-deep-sea-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/the-crew-mission-deep-sea/the-crew-deep-sea-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/the-crew-mission-deep-sea/the-crew-deep-sea-thumb.png",
+        "width": 1000
+      }
+    ],
+    "hero": "/images/games/the-crew-mission-deep-sea/the-crew-deep-sea-banner.png",
+    "heroAlt": "The Crew: Mission Deep Sea-titeln vid dykare och ruiner i en undervattensgrotta.",
+    "gallery": [
+      {
+        "src": "/images/games/the-crew-mission-deep-sea/gallery/the-crew-deep-sea-1.png",
+        "title": "Askens baksida",
+        "alt": "Askens engelska baksida med spelöversikt, kort och markörer."
+      },
+      {
+        "src": "/images/games/the-crew-mission-deep-sea/gallery/the-crew-deep-sea-2.png",
+        "title": "Kort och komponenter",
+        "alt": "Färgade spelkort, uppdragskort, markörer och en dykarfigur mot vit bakgrund."
+      },
+      {
+        "src": "/images/games/the-crew-mission-deep-sea/gallery/the-crew-deep-sea-3.png",
+        "title": "Uppdragskort",
+        "alt": "Tyska uppdragskort med färgade kortsymboler och blå baksidor på ett mörkt bord."
+      },
+      {
+        "src": "/images/games/the-crew-mission-deep-sea/gallery/the-crew-deep-sea-4.png",
+        "title": "Undervattensmotiv",
+        "alt": "Nio numrerade spelkort med dykare, undervattensfarkoster och havsdjur."
+      }
+    ]
   },
   {
     "id": "spies-lies-supplies",
