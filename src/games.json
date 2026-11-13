@@ -913,7 +913,51 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/codex-naturalis/codex-naturalis-thumb.png",
+    "coverAlt": "Codex Naturalis-emblemet omgivet av växter, djur, insekter och svampar i fyra färgfält.",
+    "coverVariants": [
+      {
+        "src": "/images/games/codex-naturalis/codex-naturalis-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/codex-naturalis/codex-naturalis-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/codex-naturalis/codex-naturalis-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/codex-naturalis/codex-naturalis-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/codex-naturalis/codex-naturalis-banner.png",
+    "heroAlt": "Codex Naturalis-emblemet i mitten av ett färgstarkt landskap med växter, djur, insekter och svampar.",
+    "gallery": [
+      {
+        "src": "/images/games/codex-naturalis/gallery/codex-naturalis-1.png",
+        "title": "Gulddetaljer",
+        "alt": "Närbild av ett guldfärgat kort med ett grönt blad och en röd svamp."
+      },
+      {
+        "src": "/images/games/codex-naturalis/gallery/codex-naturalis-2.png",
+        "title": "Insektskort",
+        "alt": "Närbild av ett lila kort med en humla, gulddetaljer och en bläckflaska."
+      },
+      {
+        "src": "/images/games/codex-naturalis/gallery/codex-naturalis-3.png",
+        "title": "Överlappande kort",
+        "alt": "Gröna, röda, blå och lila kort utlagda över varandras hörn på en rosa duk."
+      },
+      {
+        "src": "/images/games/codex-naturalis/gallery/codex-naturalis-4.png",
+        "title": "Spelet uppdukat",
+        "alt": "Kortformationer, kortlekar och en poängbräda med färgade markörer på ett träbord."
+      }
+    ]
   },
   {
     "id": "knarr",
