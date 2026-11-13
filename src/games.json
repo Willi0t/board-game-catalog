@@ -116,7 +116,47 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/terraforming/mars-thumb.png",
+    "coverAlt": "Omslag till Terraforming Mars med två astronauter i ett rött landskap och spelets titel.",
+    "hero": "/images/games/terraforming/mars-banner.png",
+    "heroAlt": "Terraforming Mars-logotyp till vänster och två astronauter i ett marslandskap med sjöar och träd.",
+    "gallery": [
+      {
+        "src": "/images/games/terraforming/gallery/mars-1.png",
+        "title": "Askens baksida",
+        "alt": "Askens baksida med spelöversikt, kort och komponenter."
+      },
+      {
+        "src": "/images/games/terraforming/gallery/mars-2.png",
+        "title": "Spelet på rött bord",
+        "alt": "Spelplan, spelarbräde, kort och resurskuber på ett rött bord."
+      },
+      {
+        "src": "/images/games/terraforming/gallery/mars-3.png",
+        "title": "Brickor på Mars",
+        "alt": "Närbild av skogs-, stads- och havsbrickor med röda och blå kuber."
+      },
+      {
+        "src": "/images/games/terraforming/gallery/mars-4.png",
+        "title": "Spelplan och resurser",
+        "alt": "Spelplan med skogs- och havsbrickor, spelarbräde, kort och resurskuber på ett bord."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/terraforming/mars-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/terraforming/mars-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/terraforming/mars-thumb.png",
+        "width": 602
+      }
+    ]
   },
   {
     "id": "cosmic",
