@@ -985,7 +985,56 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/knarr/knarr-thumb.png",
+    "coverAlt": "Knarr-omslag med titeln ovanför en pälsklädd roddare under norrsken.",
+    "coverVariants": [
+      {
+        "src": "/images/games/knarr/knarr-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/knarr/knarr-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/knarr/knarr-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/knarr/knarr-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/knarr/knarr-banner.png",
+    "heroAlt": "Knarr-titeln vid en pälsklädd roddare på havet under stjärnor och norrsken.",
+    "gallery": [
+      {
+        "src": "/images/games/knarr/gallery/knarr-1.png",
+        "title": "Spelet uppdukat",
+        "alt": "Knarr-asken med spelbräde, kort, skeppsbrickor och markörer uppdukade mot vit bakgrund."
+      },
+      {
+        "src": "/images/games/knarr/gallery/knarr-2.png",
+        "title": "En besättningsmedlem",
+        "alt": "Närbild av ett gult karaktärskort med en skäggig man med korsade armar."
+      },
+      {
+        "src": "/images/games/knarr/gallery/knarr-3.png",
+        "title": "Skeppsbrickan",
+        "alt": "Närbild av en blå skeppsbricka med ett seglande vikingaskepp."
+      },
+      {
+        "src": "/images/games/knarr/gallery/knarr-4.png",
+        "title": "Resmål",
+        "alt": "Närbild av illustrerade resmålskort med kustlandskap, byggnader och symboler."
+      },
+      {
+        "src": "/images/games/knarr/gallery/knarr-5.png",
+        "title": "Spelmarkörer",
+        "alt": "Runda vita markörer med gröna hjälmar och röda skeppssymboler på ett blått spelbräde."
+      }
+    ]
   },
   {
     "id": "the-crew-mission-deep-sea",
