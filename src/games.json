@@ -1207,7 +1207,51 @@
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     },
-    "expansions": ["Deeper Regrets"]
+    "expansions": ["Deeper Regrets"],
+    "cover": "/images/games/deep-regrets-deeper-regrets/deep-regrets-thumb.png",
+    "coverAlt": "Deep Regrets-omslag med en fiskebåt ovanför titeln och en grön tentakel i havsdjupet.",
+    "coverVariants": [
+      {
+        "src": "/images/games/deep-regrets-deeper-regrets/deep-regrets-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/deep-regrets-deeper-regrets/deep-regrets-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/deep-regrets-deeper-regrets/deep-regrets-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/deep-regrets-deeper-regrets/deep-regrets-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/deep-regrets-deeper-regrets/deep-regrets-banner.png",
+    "heroAlt": "Deep Regrets-titeln vid ett mörkt hav med fiskebåt, fiskar och en stor grön tentakel.",
+    "gallery": [
+      {
+        "src": "/images/games/deep-regrets-deeper-regrets/gallery/deep-regrets-1.png",
+        "title": "Spelet uppdukat",
+        "alt": "Spelbräden, fiskkort, tärningar och färgade båtpjäser uppdukade på ett träbord."
+      },
+      {
+        "src": "/images/games/deep-regrets-deeper-regrets/gallery/deep-regrets-2.png",
+        "title": "Fiskets första steg",
+        "alt": "Illustrerad engelsk regelöversikt med fiskar, djupkort och exempel på att avslöja en fisk."
+      },
+      {
+        "src": "/images/games/deep-regrets-deeper-regrets/gallery/deep-regrets-3.png",
+        "title": "Fiske och tärningar",
+        "alt": "Illustrerad engelsk regelöversikt med fiskkort, förmågesymboler och betalning med tärningar."
+      },
+      {
+        "src": "/images/games/deep-regrets-deeper-regrets/gallery/deep-regrets-4.png",
+        "title": "Fångst och djup",
+        "alt": "Illustrerad engelsk regelöversikt med fångst, småfångstkort och förflyttning till djupare vatten."
+      }
+    ]
   },
   {
     "id": "solar-titans",
