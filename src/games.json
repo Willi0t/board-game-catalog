@@ -763,7 +763,51 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/starwars/starwars-thumb.png",
+    "coverAlt": "Star Wars: The Deckbuilding Game-omslag med Luke Skywalker och Darth Vader i ljussabelduell.",
+    "coverVariants": [
+      {
+        "src": "/images/games/starwars/starwars-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/starwars/starwars-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/starwars/starwars-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/starwars/starwars-thumb.png",
+        "width": 1000
+      }
+    ],
+    "hero": "/images/games/starwars/starwars-banner.png",
+    "heroAlt": "Luke Skywalker och Darth Vader korsar ljussablar, med spelets logga nere till höger.",
+    "gallery": [
+      {
+        "src": "/images/games/starwars/gallery/starwars-1.png",
+        "title": "Askens baksida",
+        "alt": "Askens tyska baksida med spelöversikt, kort och komponenter."
+      },
+      {
+        "src": "/images/games/starwars/gallery/starwars-2.png",
+        "title": "En pågående duell",
+        "alt": "En spelare lägger ett Darth Vader-kort på en stjärnmönstrad spelmatta."
+      },
+      {
+        "src": "/images/games/starwars/gallery/starwars-3.png",
+        "title": "Spelet uppdukat",
+        "alt": "Kort, baser och färgade markörer på två illustrerade Star Wars-spelmattor."
+      },
+      {
+        "src": "/images/games/starwars/gallery/starwars-4.png",
+        "title": "Kort på hand",
+        "alt": "En hand håller kort med bland annat Bossk framför spelet på ett vitt bord."
+      }
+    ]
   },
   {
     "id": "scarface",
@@ -797,7 +841,51 @@
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     },
-    "expansions": ["Bloody Business", "Enforcers", "Stretch Goal Upgrades"]
+    "expansions": ["Bloody Business", "Enforcers", "Stretch Goal Upgrades"],
+    "cover": "/images/games/scarface/scarface1920-thumb.png",
+    "coverAlt": "Scarface 1920-omslag med fyra gangstergestalter ovanför titeln och en bil på en stadsgata.",
+    "coverVariants": [
+      {
+        "src": "/images/games/scarface/scarface1920-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/scarface/scarface1920-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/scarface/scarface1920-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/scarface/scarface1920-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/scarface/scarface1920-banner.png",
+    "heroAlt": "Scarface 1920-titeln vid en regnvåt stadsgata med ett par och en bil utanför en upplyst entré.",
+    "gallery": [
+      {
+        "src": "/images/games/scarface/gallery/scarface1920-1.png",
+        "title": "Capones spelarbräde",
+        "alt": "Alphonse Capones spelarbräde med markörer, miniatyrer och sedlar på ett träbord."
+      },
+      {
+        "src": "/images/games/scarface/gallery/scarface1920-2.png",
+        "title": "Kort och resurser",
+        "alt": "Bildkollage med karaktärskort, sedlar, tunnor och färgade miniatyrer på spelplanen."
+      },
+      {
+        "src": "/images/games/scarface/gallery/scarface1920-3.png",
+        "title": "Gäng och miniatyrer",
+        "alt": "Bildkollage med Black Wolves-gängets skärm och närbilder på beväpnade miniatyrer."
+      },
+      {
+        "src": "/images/games/scarface/gallery/scarface1920-4.png",
+        "title": "Kampen om Chicago",
+        "alt": "Bildkollage med kort, tidningskort och färgade miniatyrer på Chicagos stadskarta."
+      }
+    ]
   },
   {
     "id": "codex-naturalis",
