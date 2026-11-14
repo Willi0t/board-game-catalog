@@ -2272,7 +2272,51 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/catan-base/catan-thumb.png",
+    "coverAlt": "Catan-omslag med gul titel över ett kustlandskap med åkrar, får och en stor sol.",
+    "coverVariants": [
+      {
+        "src": "/images/games/catan-base/catan-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/catan-base/catan-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/catan-base/catan-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/catan-base/catan-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/catan-base/catan-banner.png",
+    "heroAlt": "Catan-titeln i gult över ett solbelyst kustlandskap med byar, betesmarker och sädesfält.",
+    "gallery": [
+      {
+        "src": "/images/games/catan-base/gallery/catan-1.png",
+        "title": "Byar och vägar",
+        "alt": "Färgade träbyar och vägar på Catans hexagonala landskapsbrickor."
+      },
+      {
+        "src": "/images/games/catan-base/gallery/catan-2.png",
+        "title": "Färgstarkt spelbräde",
+        "alt": "Närbild av landskapsbrickor med siffermarkörer och färgglada byar och vägar."
+      },
+      {
+        "src": "/images/games/catan-base/gallery/catan-3.png",
+        "title": "Catan i storformat",
+        "alt": "Ett stort Catan-bräde med tredimensionella landskap, byar och vägar på ett spelbord."
+      },
+      {
+        "src": "/images/games/catan-base/gallery/catan-4.png",
+        "title": "Rövaren",
+        "alt": "Den svarta rövaren på en landskapsbricka omgiven av röda och vita vägar och byar."
+      }
+    ]
   },
   {
     "id": "forbidden-desert",
