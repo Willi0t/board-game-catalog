@@ -2940,7 +2940,51 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/goats-and-goblins/goats-and-goblins-thumb.png",
+    "coverAlt": "Goats & Goblins-omslag med en goblin som firar sig ned med en lykta i en grotta med blå kristaller och guld, medan en get och andra gobliner tittar ned.",
+    "coverVariants": [
+      {
+        "src": "/images/games/goats-and-goblins/goats-and-goblins-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/goats-and-goblins/goats-and-goblins-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/goats-and-goblins/goats-and-goblins-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/goats-and-goblins/goats-and-goblins-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/goats-and-goblins/goats-and-goblins-banner.png",
+    "heroAlt": "Goats & Goblins-titeln till vänster om en get och gobliner som utforskar en grotta med skatter och blå kristaller.",
+    "gallery": [
+      {
+        "src": "/images/games/goats-and-goblins/gallery/goats-and-goblins-1.png",
+        "title": "Kort och korthög",
+        "alt": "En grön korthög och utlagda kort med en get, gobliner, skatter, ras och röstningssymboler."
+      },
+      {
+        "src": "/images/games/goats-and-goblins/gallery/goats-and-goblins-2.png",
+        "title": "Presentation av spelet",
+        "alt": "En illustrerad grotta med skatter och engelska textrutor om spelets upplägg och material."
+      },
+      {
+        "src": "/images/games/goats-and-goblins/gallery/goats-and-goblins-3.png",
+        "title": "Översikt över korten",
+        "alt": "En komponentöversikt med ledarkort, röstningskort, handlingskort, raskort samt getter, gobliner och skatter."
+      },
+      {
+        "src": "/images/games/goats-and-goblins/gallery/goats-and-goblins-4.png",
+        "title": "Mynt och kortförvaring",
+        "alt": "Guldfärgade röstningsmynt, en korthög, ett skattkort och en öppen svart förvaringsask med grön insida."
+      }
+    ]
   },
   {
     "id": "inis",
