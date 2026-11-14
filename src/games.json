@@ -2796,7 +2796,51 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/lord-of-the-rings-trick-taking-game/lotr-trick-thumb.png",
+    "coverAlt": "The Fellowship of the Ring: Trick-Taking Game-omslag med den gyllene ringen och gul titel i en färgstark glasmålning.",
+    "coverVariants": [
+      {
+        "src": "/images/games/lord-of-the-rings-trick-taking-game/lotr-trick-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/lord-of-the-rings-trick-taking-game/lotr-trick-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/lord-of-the-rings-trick-taking-game/lotr-trick-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/lord-of-the-rings-trick-taking-game/lotr-trick-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/lord-of-the-rings-trick-taking-game/lotr-trick-banner.png",
+    "heroAlt": "Spelets guldtitel till vänster om den gyllene ringen och följeslagarna vid en bergsport i en glasmålning.",
+    "gallery": [
+      {
+        "src": "/images/games/lord-of-the-rings-trick-taking-game/gallery/lotr-trick-1.png",
+        "title": "Askens baksida",
+        "alt": "Spelaskens baksida med exempel på kort, markörer och en beskrivning av spelet."
+      },
+      {
+        "src": "/images/games/lord-of-the-rings-trick-taking-game/gallery/lotr-trick-2.png",
+        "title": "Kort och förvaring",
+        "alt": "En öppen ask med kortfack, kapitelkort, ett Frodo-kort och lila markörer med ringmotiv."
+      },
+      {
+        "src": "/images/games/lord-of-the-rings-trick-taking-game/gallery/lotr-trick-3.png",
+        "title": "En spelomgång",
+        "alt": "En hand håller en solfjäder av numrerade kort vid ett bord med karaktärskort och spelasken."
+      },
+      {
+        "src": "/images/games/lord-of-the-rings-trick-taking-game/gallery/lotr-trick-4.png",
+        "title": "Karaktärer och kapitel",
+        "alt": "Kort med Frodo, Bilbo, Pippin och Gandalf samt ringkort, kapitelkort och lila markörer."
+      }
+    ]
   },
   {
     "id": "magical-athleete",
