@@ -1765,7 +1765,51 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/high-society/high-society-thumb.png",
+    "coverAlt": "High Society-omslag med en kvinna som höjer ett glas, omgiven av blommor och guldfärgade ornament.",
+    "coverVariants": [
+      {
+        "src": "/images/games/high-society/high-society-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/high-society/high-society-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/high-society/high-society-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/high-society/high-society-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/high-society/high-society-banner.png",
+    "heroAlt": "High Society-titeln i guld bredvid en kvinna med glas och spelkort i en blommig oval ram.",
+    "gallery": [
+      {
+        "src": "/images/games/high-society/gallery/high-society-1.png",
+        "title": "Spelet uppdukat",
+        "alt": "Tre solfjädrar av penningkort kring en kortlek och ett öppet Casino-kort på ett vitt bord."
+      },
+      {
+        "src": "/images/games/high-society/gallery/high-society-2.png",
+        "title": "Statuskort",
+        "alt": "Åtta illustrerade statuskort med eleganta personer och värden utlagda i två rader."
+      },
+      {
+        "src": "/images/games/high-society/gallery/high-society-3.png",
+        "title": "Komponentöversikt",
+        "alt": "Engelsk regelsida med exempel på lyx-, prestige- och vanärekort samt färgade penningkort."
+      },
+      {
+        "src": "/images/games/high-society/gallery/high-society-4.png",
+        "title": "Förberedelser och spel",
+        "alt": "Engelsk regelsida om förberedelser och spelgång med en man i hög hatt och flygande sedlar."
+      }
+    ]
   },
   {
     "id": "parlay",
