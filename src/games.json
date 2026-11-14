@@ -2498,7 +2498,51 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/fate-of-the-fellowship/fate-of-the-fellowship-thumb.png",
+    "coverAlt": "Fate of the Fellowship-omslag med Frodo och ringen framför följeslagarna, Galadriel och Saurons öga.",
+    "coverVariants": [
+      {
+        "src": "/images/games/fate-of-the-fellowship/fate-of-the-fellowship-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/fate-of-the-fellowship/fate-of-the-fellowship-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/fate-of-the-fellowship/fate-of-the-fellowship-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/fate-of-the-fellowship/fate-of-the-fellowship-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/fate-of-the-fellowship/fate-of-the-fellowship-banner.png",
+    "heroAlt": "Fate of the Fellowship-titeln till vänster om Frodo och följeslagarna på väg mot Mordor under Saurons öga.",
+    "gallery": [
+      {
+        "src": "/images/games/fate-of-the-fellowship/gallery/fate-of-the-fellowship-1.png",
+        "title": "Askens baksida",
+        "alt": "Askens baksida med spelbräde, karaktärskort, figurer och en översikt över innehållet."
+      },
+      {
+        "src": "/images/games/fate-of-the-fellowship/gallery/fate-of-the-fellowship-2.png",
+        "title": "Kartan över Midgård",
+        "alt": "Spelbrädet med Midgårds regioner, förbindelser och färgade markörer."
+      },
+      {
+        "src": "/images/games/fate-of-the-fellowship/gallery/fate-of-the-fellowship-3.png",
+        "title": "Följeslagarnas karaktärskort",
+        "alt": "Karaktärskort med Aragorn, Frodo och Sam, Gollum och Gandalf runt en bild av följeslagarna."
+      },
+      {
+        "src": "/images/games/fate-of-the-fellowship/gallery/fate-of-the-fellowship-4.png",
+        "title": "Platser och uppdrag",
+        "alt": "Ett urval platskort, händelsekort och uppdragskort med kartor och symboler."
+      }
+    ]
   },
   {
     "id": "fliptoons",
