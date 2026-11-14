@@ -1949,6 +1949,50 @@
       "Contracts Expansion",
       "Dark Side Expansion",
       "Stretch Goal Upgrades"
+    ],
+    "cover": "/images/games/long-dark-sea/long-dark-sea-thumb.png",
+    "coverAlt": "Long Dark Sea-omslag med guldtitel, två lysande himlakroppar och en ensam gestalt i ett mörkt klipplandskap.",
+    "coverVariants": [
+      {
+        "src": "/images/games/long-dark-sea/long-dark-sea-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/long-dark-sea/long-dark-sea-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/long-dark-sea/long-dark-sea-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/long-dark-sea/long-dark-sea-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/long-dark-sea/long-dark-sea-banner.png",
+    "heroAlt": "Long Dark Sea-titeln och guldemblemet bredvid ett orange luftskepp och en besättning vid havet.",
+    "gallery": [
+      {
+        "src": "/images/games/long-dark-sea/gallery/long-dark-sea-1.png",
+        "title": "Besättningsmedlemmar",
+        "alt": "Kampanjbild med en piratkapten, en rödhårig smugglare och deras karaktärskort."
+      },
+      {
+        "src": "/images/games/long-dark-sea/gallery/long-dark-sea-2.png",
+        "title": "Scenarier",
+        "alt": "Kampanjbild med pyramider, ett stort torn och fiendekort för två scenarier."
+      },
+      {
+        "src": "/images/games/long-dark-sea/gallery/long-dark-sea-3.png",
+        "title": "Fiendebesättningar",
+        "alt": "Kampanjbild med två fiendebesättningar, beväpnade gestalter och luftskeppskort."
+      },
+      {
+        "src": "/images/games/long-dark-sea/gallery/long-dark-sea-4.png",
+        "title": "Böcker och expansioner",
+        "alt": "Kampanjbild med en bakgrundsbok, expansionshäften, en spelmatta och färgade siffermarker."
+      }
     ]
   },
   {
