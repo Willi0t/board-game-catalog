@@ -1765,7 +1765,51 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/high-society/high-society-thumb.png",
+    "coverAlt": "High Society-omslag med en kvinna som höjer ett glas, omgiven av blommor och guldfärgade ornament.",
+    "coverVariants": [
+      {
+        "src": "/images/games/high-society/high-society-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/high-society/high-society-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/high-society/high-society-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/high-society/high-society-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/high-society/high-society-banner.png",
+    "heroAlt": "High Society-titeln i guld bredvid en kvinna med glas och spelkort i en blommig oval ram.",
+    "gallery": [
+      {
+        "src": "/images/games/high-society/gallery/high-society-1.png",
+        "title": "Spelet uppdukat",
+        "alt": "Tre solfjädrar av penningkort kring en kortlek och ett öppet Casino-kort på ett vitt bord."
+      },
+      {
+        "src": "/images/games/high-society/gallery/high-society-2.png",
+        "title": "Statuskort",
+        "alt": "Åtta illustrerade statuskort med eleganta personer och värden utlagda i två rader."
+      },
+      {
+        "src": "/images/games/high-society/gallery/high-society-3.png",
+        "title": "Komponentöversikt",
+        "alt": "Engelsk regelsida med exempel på lyx-, prestige- och vanärekort samt färgade penningkort."
+      },
+      {
+        "src": "/images/games/high-society/gallery/high-society-4.png",
+        "title": "Förberedelser och spel",
+        "alt": "Engelsk regelsida om förberedelser och spelgång med en man i hög hatt och flygande sedlar."
+      }
+    ]
   },
   {
     "id": "parlay",
@@ -1793,7 +1837,56 @@
       "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "provisional"
-    }
+    },
+    "cover": "/images/games/parlay/parlay-thumb.png",
+    "coverAlt": "Parlay-omslag med mörkgrönt tartanmönster, guldram, en stegrande häst och undertiteln The Betting Game.",
+    "coverVariants": [
+      {
+        "src": "/images/games/parlay/parlay-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/parlay/parlay-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/parlay/parlay-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/parlay/parlay-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/parlay/parlay-banner.png",
+    "heroAlt": "Parlay: The Betting Game-titeln bredvid åskådare och galopphästar på en kapplöpningsbana.",
+    "gallery": [
+      {
+        "src": "/images/games/parlay/gallery/parlay-1.png",
+        "title": "Spelet uppdukat",
+        "alt": "Parlay-asken, kort och gyllene spelpjäser på en mörkgrön spelplan bredvid cocktailglas."
+      },
+      {
+        "src": "/images/games/parlay/gallery/parlay-2.png",
+        "title": "Kort på hand",
+        "alt": "En hand håller två klöverkort med golfbag och målflaggor framför spelplanen."
+      },
+      {
+        "src": "/images/games/parlay/gallery/parlay-3.png",
+        "title": "Gyllene spelpjäser",
+        "alt": "Sex guldfärgade spelpjäser formade som tennisracket, golfbag, saxofon, häst, bil och hund."
+      },
+      {
+        "src": "/images/games/parlay/gallery/parlay-4.png",
+        "title": "Spelkort",
+        "alt": "Illustrerade kort och mörkgröna tartanmönstrade kortbaksidor på rött tyg."
+      },
+      {
+        "src": "/images/games/parlay/gallery/parlay-5.png",
+        "title": "En pjäs flyttas",
+        "alt": "En hand flyttar en gyllene spelpjäs på Parlay-spelplanen bredvid kort och en randig kopp."
+      }
+    ]
   },
   {
     "id": "grimcoven",
@@ -1823,9 +1916,9 @@
       "editionMatch": "not-independently-verified"
     },
     "cover": "/images/games/grimcoven/grimcoven-thumb.png",
-    "coverAlt": "Omslag till Grimcoven med vit logotyp, tre mörkt klädda gestalter i hattar och ett gotiskt slott framför en stor röd måne.",
+    "coverAlt": "Grimcoven-omslag med vit titel och tre mörka jägare framför en gotisk stad och en stor röd måne.",
     "hero": "/images/games/grimcoven/grimcoven-banner.png",
-    "heroAlt": "Bred illustration med Grimcovens vita logotyp till vänster och tre beväpnade gestalter i svarta hattar och mantlar mot en röd himmel och gotiska torn.",
+    "heroAlt": "Grimcoven-titeln i vitt bredvid tre beväpnade jägare på en regnvåt gata under en röd måne.",
     "gallery": [
       {
         "src": "/images/games/grimcoven/gallery/grimcoven-1.png",
@@ -1905,6 +1998,50 @@
       "Contracts Expansion",
       "Dark Side Expansion",
       "Stretch Goal Upgrades"
+    ],
+    "cover": "/images/games/long-dark-sea/long-dark-sea-thumb.png",
+    "coverAlt": "Long Dark Sea-omslag med guldtitel, två lysande himlakroppar och en ensam gestalt i ett mörkt klipplandskap.",
+    "coverVariants": [
+      {
+        "src": "/images/games/long-dark-sea/long-dark-sea-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/long-dark-sea/long-dark-sea-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/long-dark-sea/long-dark-sea-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/long-dark-sea/long-dark-sea-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/long-dark-sea/long-dark-sea-banner.png",
+    "heroAlt": "Long Dark Sea-titeln och guldemblemet bredvid ett orange luftskepp och en besättning vid havet.",
+    "gallery": [
+      {
+        "src": "/images/games/long-dark-sea/gallery/long-dark-sea-1.png",
+        "title": "Besättningsmedlemmar",
+        "alt": "Kampanjbild med en piratkapten, en rödhårig smugglare och deras karaktärskort."
+      },
+      {
+        "src": "/images/games/long-dark-sea/gallery/long-dark-sea-2.png",
+        "title": "Scenarier",
+        "alt": "Kampanjbild med pyramider, ett stort torn och fiendekort för två scenarier."
+      },
+      {
+        "src": "/images/games/long-dark-sea/gallery/long-dark-sea-3.png",
+        "title": "Fiendebesättningar",
+        "alt": "Kampanjbild med två fiendebesättningar, beväpnade gestalter och luftskeppskort."
+      },
+      {
+        "src": "/images/games/long-dark-sea/gallery/long-dark-sea-4.png",
+        "title": "Böcker och expansioner",
+        "alt": "Kampanjbild med en bakgrundsbok, expansionshäften, en spelmatta och färgade siffermarker."
+      }
     ]
   },
   {
@@ -1933,7 +2070,51 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/excalibur/excalibur-thumb.png",
+    "coverAlt": "Excalibur-omslag med ett gyllene svärd mellan fyra porträtt i lila och turkosa glasmålningar.",
+    "coverVariants": [
+      {
+        "src": "/images/games/excalibur/excalibur-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/excalibur/excalibur-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/excalibur/excalibur-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/excalibur/excalibur-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/excalibur/excalibur-banner.png",
+    "heroAlt": "Excalibur-titeln i guld till vänster om ett svärd och fyra porträtt i färgstarka glasmålningar.",
+    "gallery": [
+      {
+        "src": "/images/games/excalibur/gallery/excalibur-1.png",
+        "title": "Svärd och karaktärer",
+        "alt": "Tre svärdformade spelkomponenter och illustrerade karaktärsbrickor på ett mörkt träbord."
+      },
+      {
+        "src": "/images/games/excalibur/gallery/excalibur-2.png",
+        "title": "Brickor i asken",
+        "alt": "Närbild av två rader sköldformade brickor i spelaskens förvaring."
+      },
+      {
+        "src": "/images/games/excalibur/gallery/excalibur-3.png",
+        "title": "Karaktärer på hand",
+        "alt": "Fyra händer visar varsin karaktärsbricka ovanför ett bord med svärd och fler brickor."
+      },
+      {
+        "src": "/images/games/excalibur/gallery/excalibur-4.png",
+        "title": "Ask i levande ljus",
+        "alt": "Excalibur-asken med svärdsmotiv, karaktärsbrickor, en krona och en bägare bland tända ljus."
+      }
+    ]
   },
   {
     "id": "lands-of-evershade",
@@ -2036,6 +2217,16 @@
     "tint": "#eadce2",
     "description": "",
     "placeholderTheme": "castle-rose",
+    "cover": "/images/games/point-city/pointCity-thumb.png",
+    "coverAlt": "Point Citys omslag med färgglada byggnader mot turkos bakgrund",
+    "hero": "/images/games/point-city/pointCity-banner.png",
+    "heroAlt": "Point Citys logotyp och en färgglad stadssiluett",
+    "gallery": [
+      "/images/games/point-city/gallery/pointCity-1.png",
+      "/images/games/point-city/gallery/pointCity-2.png",
+      "/images/games/point-city/gallery/pointCity-3.png",
+      "/images/games/point-city/gallery/pointCity-4.png"
+    ],
     "playersMin": 1,
     "playersMax": 4,
     "bestWith": "2",
@@ -2081,7 +2272,51 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/catan-base/catan-thumb.png",
+    "coverAlt": "Catan-omslag med gul titel över ett kustlandskap med åkrar, får och en stor sol.",
+    "coverVariants": [
+      {
+        "src": "/images/games/catan-base/catan-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/catan-base/catan-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/catan-base/catan-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/catan-base/catan-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/catan-base/catan-banner.png",
+    "heroAlt": "Catan-titeln i gult över ett solbelyst kustlandskap med byar, betesmarker och sädesfält.",
+    "gallery": [
+      {
+        "src": "/images/games/catan-base/gallery/catan-1.png",
+        "title": "Byar och vägar",
+        "alt": "Färgade träbyar och vägar på Catans hexagonala landskapsbrickor."
+      },
+      {
+        "src": "/images/games/catan-base/gallery/catan-2.png",
+        "title": "Färgstarkt spelbräde",
+        "alt": "Närbild av landskapsbrickor med siffermarkörer och färgglada byar och vägar."
+      },
+      {
+        "src": "/images/games/catan-base/gallery/catan-3.png",
+        "title": "Catan i storformat",
+        "alt": "Ett stort Catan-bräde med tredimensionella landskap, byar och vägar på ett spelbord."
+      },
+      {
+        "src": "/images/games/catan-base/gallery/catan-4.png",
+        "title": "Rövaren",
+        "alt": "Den svarta rövaren på en landskapsbricka omgiven av röda och vita vägar och byar."
+      }
+    ]
   },
   {
     "id": "forbidden-desert",
@@ -2109,7 +2344,51 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/forbidden-desert/forbidden-desert-thumb.png",
+    "coverAlt": "Forbidden Desert-omslag med en flygmaskin begravd i sand framför en annalkande sandstorm.",
+    "coverVariants": [
+      {
+        "src": "/images/games/forbidden-desert/forbidden-desert-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/forbidden-desert/forbidden-desert-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/forbidden-desert/forbidden-desert-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/forbidden-desert/forbidden-desert-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/forbidden-desert/forbidden-desert-banner.png",
+    "heroAlt": "Forbidden Desert-titeln och undertiteln till vänster om en sandstorm och en begravd flygmaskin i öknen.",
+    "gallery": [
+      {
+        "src": "/images/games/forbidden-desert/gallery/forbidden-desert-1.png",
+        "title": "Ask och spelkomponenter",
+        "alt": "Forbidden Desert-asken med kort, ökenbrickor, spelpjäser och flygmaskinens delar."
+      },
+      {
+        "src": "/images/games/forbidden-desert/gallery/forbidden-desert-2.png",
+        "title": "Askens baksida",
+        "alt": "Askens baksida med en översikt över kort, ökenbrickor och flygmaskinens delar."
+      },
+      {
+        "src": "/images/games/forbidden-desert/gallery/forbidden-desert-3.png",
+        "title": "Spelet uppställt",
+        "alt": "Ökenbrickor i ett rutnät med kort, spelask och flygmaskinens delar runt omkring."
+      },
+      {
+        "src": "/images/games/forbidden-desert/gallery/forbidden-desert-4.png",
+        "title": "Öknen och sanden",
+        "alt": "Ökenbrickor i ett rutnät med sandmarkörer, oaser och färgade spelpjäser."
+      }
+    ]
   },
   {
     "id": "ticket-to-ride",
@@ -2137,7 +2416,61 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/ticket-to-ride/ticket-to-ride-thumb.png",
+    "coverAlt": "Ticket to Ride Europe-omslag med ett ånglok vid en alpstation och två resenärer med väskor.",
+    "coverVariants": [
+      {
+        "src": "/images/games/ticket-to-ride/ticket-to-ride-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/ticket-to-ride/ticket-to-ride-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/ticket-to-ride/ticket-to-ride-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/ticket-to-ride/ticket-to-ride-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/ticket-to-ride/ticket-to-ride-banner.png",
+    "heroAlt": "Ticket to Ride Europe-titeln ovanför ett ångtåg på en stenviadukt bland snötäckta berg.",
+    "gallery": [
+      {
+        "src": "/images/games/ticket-to-ride/gallery/ticket-to-ride-1.png",
+        "title": "Tåg över Europa",
+        "alt": "Färgade tågvagnar och stationer bildar järnvägslinjer på Europakartan."
+      },
+      {
+        "src": "/images/games/ticket-to-ride/gallery/ticket-to-ride-2.png",
+        "title": "Lokomotivkort",
+        "alt": "En hand håller ett regnbågsfärgat lokomotivkort ovanför spelbrädet."
+      },
+      {
+        "src": "/images/games/ticket-to-ride/gallery/ticket-to-ride-3.png",
+        "title": "Vagnkort",
+        "alt": "Ett orange vagnkort framför andra tågkort och röda spelpjäser."
+      },
+      {
+        "src": "/images/games/ticket-to-ride/gallery/ticket-to-ride-4.png",
+        "title": "Ånglok",
+        "alt": "Ett stående kort med ett ånglok framifrån, omgivet av färgade tågvagnar."
+      },
+      {
+        "src": "/images/games/ticket-to-ride/gallery/ticket-to-ride-5.png",
+        "title": "Station och järnvägar",
+        "alt": "En gul station står bland gröna, röda, svarta och blå tågvagnar på kartan."
+      },
+      {
+        "src": "/images/games/ticket-to-ride/gallery/ticket-to-ride-6.png",
+        "title": "Ruttkort",
+        "alt": "Ett kort med markerade järnvägsrutter och tio poäng framför tågvagnar på Europakartan."
+      }
+    ]
   },
   {
     "id": "fate-of-the-fellowship",
@@ -2165,7 +2498,51 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/fate-of-the-fellowship/fate-of-the-fellowship-thumb.png",
+    "coverAlt": "Fate of the Fellowship-omslag med Frodo och ringen framför följeslagarna, Galadriel och Saurons öga.",
+    "coverVariants": [
+      {
+        "src": "/images/games/fate-of-the-fellowship/fate-of-the-fellowship-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/fate-of-the-fellowship/fate-of-the-fellowship-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/fate-of-the-fellowship/fate-of-the-fellowship-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/fate-of-the-fellowship/fate-of-the-fellowship-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/fate-of-the-fellowship/fate-of-the-fellowship-banner.png",
+    "heroAlt": "Fate of the Fellowship-titeln till vänster om Frodo och följeslagarna på väg mot Mordor under Saurons öga.",
+    "gallery": [
+      {
+        "src": "/images/games/fate-of-the-fellowship/gallery/fate-of-the-fellowship-1.png",
+        "title": "Askens baksida",
+        "alt": "Askens baksida med spelbräde, karaktärskort, figurer och en översikt över innehållet."
+      },
+      {
+        "src": "/images/games/fate-of-the-fellowship/gallery/fate-of-the-fellowship-2.png",
+        "title": "Kartan över Midgård",
+        "alt": "Spelbrädet med Midgårds regioner, förbindelser och färgade markörer."
+      },
+      {
+        "src": "/images/games/fate-of-the-fellowship/gallery/fate-of-the-fellowship-3.png",
+        "title": "Följeslagarnas karaktärskort",
+        "alt": "Karaktärskort med Aragorn, Frodo och Sam, Gollum och Gandalf runt en bild av följeslagarna."
+      },
+      {
+        "src": "/images/games/fate-of-the-fellowship/gallery/fate-of-the-fellowship-4.png",
+        "title": "Platser och uppdrag",
+        "alt": "Ett urval platskort, händelsekort och uppdragskort med kartor och symboler."
+      }
+    ]
   },
   {
     "id": "fliptoons",
@@ -2193,7 +2570,51 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/fliptoons/fliptoons-thumb.png",
+    "coverAlt": "Fliptoons-omslag med logotyp och tecknade djur, bland annat en elefant med trumma, mot blå bakgrund.",
+    "coverVariants": [
+      {
+        "src": "/images/games/fliptoons/fliptoons-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/fliptoons/fliptoons-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/fliptoons/fliptoons-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/fliptoons/fliptoons-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/fliptoons/fliptoons-banner.png",
+    "heroAlt": "Fliptoons-logotypen till vänster om en grupp tecknade djur med instrument mot blå bakgrund.",
+    "gallery": [
+      {
+        "src": "/images/games/fliptoons/gallery/fliptoons-1.png",
+        "title": "Åsnekortet",
+        "alt": "En hand håller ett grönt kort med en tecknad åsna ovanför andra djurkort på bordet."
+      },
+      {
+        "src": "/images/games/fliptoons/gallery/fliptoons-2.png",
+        "title": "Kort och speluppställning",
+        "alt": "Djurkort, priskort och korthögar utlagda som en speluppställning på vit bakgrund."
+      },
+      {
+        "src": "/images/games/fliptoons/gallery/fliptoons-3.png",
+        "title": "Askens baksida",
+        "alt": "Två händer håller spelaskens baksida med bilder av kort och en översikt över spelets gång."
+      },
+      {
+        "src": "/images/games/fliptoons/gallery/fliptoons-4.png",
+        "title": "Ask och djurkort",
+        "alt": "Fliptoons-asken med tecknade djur ovanpå ett mönster av färgglada karaktärskort."
+      }
+    ]
   },
   {
     "id": "azul-mini",
@@ -2221,7 +2642,51 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/azul-mini/azul-thumb.png",
+    "coverAlt": "Azul-logotypen i en blå och gyllene ram omgiven av färgglada mönstrade kakelplattor.",
+    "coverVariants": [
+      {
+        "src": "/images/games/azul-mini/azul-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/azul-mini/azul-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/azul-mini/azul-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/azul-mini/azul-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/azul-mini/azul-banner.png",
+    "heroAlt": "Azul-logotypen till vänster på en bakgrund av röda, blå, turkosa och gula kakelmönster.",
+    "gallery": [
+      {
+        "src": "/images/games/azul-mini/gallery/azul-1.png",
+        "title": "Ask och spelkomponenter",
+        "alt": "Azul-asken med spelbräden, tygpåse, runda fabriksbrickor, kakelplattor och regelhäfte."
+      },
+      {
+        "src": "/images/games/azul-mini/gallery/azul-2.png",
+        "title": "Kakel på spelbrädet",
+        "alt": "Närbild av färgade kakelplattor på ett spelbräde med mönstervägg och poängbana."
+      },
+      {
+        "src": "/images/games/azul-mini/gallery/azul-3.png",
+        "title": "Fabriker och kakel",
+        "alt": "Fem runda fabriksbrickor med färgade kakelplattor runt startspelarmarkören."
+      },
+      {
+        "src": "/images/games/azul-mini/gallery/azul-4.png",
+        "title": "Tygpåse och kakelplattor",
+        "alt": "En blå Azul-tygpåse, fabriksbrickor och färgade kakelplattor på ett träbord."
+      }
+    ]
   },
   {
     "id": "there-and-back-again",
@@ -2249,7 +2714,61 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/there-and-back-again/there-and-back-again-thumb.png",
+    "coverAlt": "The Hobbit: There & Back Again-omslag med Bilbo och en grön ryggsäck på väg ut genom en rund dörr mot bergen.",
+    "coverVariants": [
+      {
+        "src": "/images/games/there-and-back-again/there-and-back-again-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/there-and-back-again/there-and-back-again-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/there-and-back-again/there-and-back-again-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/there-and-back-again/there-and-back-again-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/there-and-back-again/there-and-back-again-banner.png",
+    "heroAlt": "The Hobbit: There & Back Again-titeln till vänster om Bilbo som lämnar sitt hem genom en rund grön dörr.",
+    "gallery": [
+      {
+        "src": "/images/games/there-and-back-again/gallery/there-and-back-again-1.png",
+        "title": "Askens baksida",
+        "alt": "Askens baksida med äventyrsböcker, tärningar, markörer och en översikt över innehållet."
+      },
+      {
+        "src": "/images/games/there-and-back-again/gallery/there-and-back-again-2.png",
+        "title": "Tärningarna",
+        "alt": "Fem vita specialtärningar med symboler och en svart tolvsidig tärning."
+      },
+      {
+        "src": "/images/games/there-and-back-again/gallery/there-and-back-again-3.png",
+        "title": "Ask och spelkomponenter",
+        "alt": "Spelasken, en bok med drakmotiv, ett uppslaget äventyr, tärningar, markörer och en penna."
+      },
+      {
+        "src": "/images/games/there-and-back-again/gallery/there-and-back-again-4.png",
+        "title": "Äventyr i bergen",
+        "alt": "Närbild av ett äventyrsuppslag med åskmoln, vättar och en svart tolvsidig tärning."
+      },
+      {
+        "src": "/images/games/there-and-back-again/gallery/there-and-back-again-5.png",
+        "title": "Spindlar och ritade vägar",
+        "alt": "En lila äventyrskarta med spindlar, svärd och svarta ifyllda rutor och förbindelser."
+      },
+      {
+        "src": "/images/games/there-and-back-again/gallery/there-and-back-again-6.png",
+        "title": "Bilbo och Smaug",
+        "alt": "Närbild av en äventyrskarta med Bilbo, Smaug, handskrivna tal och en inritad svart väg."
+      }
+    ]
   },
   {
     "id": "lord-of-the-rings-trick-taking-game",
@@ -2277,7 +2796,51 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/lord-of-the-rings-trick-taking-game/lotr-trick-thumb.png",
+    "coverAlt": "The Fellowship of the Ring: Trick-Taking Game-omslag med den gyllene ringen och gul titel i en färgstark glasmålning.",
+    "coverVariants": [
+      {
+        "src": "/images/games/lord-of-the-rings-trick-taking-game/lotr-trick-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/lord-of-the-rings-trick-taking-game/lotr-trick-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/lord-of-the-rings-trick-taking-game/lotr-trick-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/lord-of-the-rings-trick-taking-game/lotr-trick-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/lord-of-the-rings-trick-taking-game/lotr-trick-banner.png",
+    "heroAlt": "Spelets guldtitel till vänster om den gyllene ringen och följeslagarna vid en bergsport i en glasmålning.",
+    "gallery": [
+      {
+        "src": "/images/games/lord-of-the-rings-trick-taking-game/gallery/lotr-trick-1.png",
+        "title": "Askens baksida",
+        "alt": "Spelaskens baksida med exempel på kort, markörer och en beskrivning av spelet."
+      },
+      {
+        "src": "/images/games/lord-of-the-rings-trick-taking-game/gallery/lotr-trick-2.png",
+        "title": "Kort och förvaring",
+        "alt": "En öppen ask med kortfack, kapitelkort, ett Frodo-kort och lila markörer med ringmotiv."
+      },
+      {
+        "src": "/images/games/lord-of-the-rings-trick-taking-game/gallery/lotr-trick-3.png",
+        "title": "En spelomgång",
+        "alt": "En hand håller en solfjäder av numrerade kort vid ett bord med karaktärskort och spelasken."
+      },
+      {
+        "src": "/images/games/lord-of-the-rings-trick-taking-game/gallery/lotr-trick-4.png",
+        "title": "Karaktärer och kapitel",
+        "alt": "Kort med Frodo, Bilbo, Pippin och Gandalf samt ringkort, kapitelkort och lila markörer."
+      }
+    ]
   },
   {
     "id": "magical-athleete",
@@ -2305,7 +2868,51 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/magical-athleete/magical-athlete-thumb.png",
+    "coverAlt": "Magical Athlete-omslag med vit titel och färgglada tävlande figurer, en banan och flygande tärningar mot röd bakgrund.",
+    "coverVariants": [
+      {
+        "src": "/images/games/magical-athleete/magical-athlete-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/magical-athleete/magical-athlete-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/magical-athleete/magical-athlete-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/magical-athleete/magical-athlete-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/magical-athleete/magical-athlete-banner.png",
+    "heroAlt": "Magical Athlete-titeln till vänster om en grupp färgglada figurer som springer tillsammans med en banan mot röd bakgrund.",
+    "gallery": [
+      {
+        "src": "/images/games/magical-athleete/gallery/magical-athlete-1.png",
+        "title": "Figurer på banan",
+        "alt": "Sex färgglada karaktärspjäser står på tävlingsbanans numrerade rutor mot gul bakgrund."
+      },
+      {
+        "src": "/images/games/magical-athleete/gallery/magical-athlete-2.png",
+        "title": "En spelomgång",
+        "alt": "En hand flyttar en karaktärspjäs på den avlånga tävlingsbanan bland andra figurer."
+      },
+      {
+        "src": "/images/games/magical-athleete/gallery/magical-athlete-3.png",
+        "title": "Prispallen",
+        "alt": "Tre karaktärspjäser på en prispall med placeringarna ett, två och tre under fallande konfetti."
+      },
+      {
+        "src": "/images/games/magical-athleete/gallery/magical-athlete-4.png",
+        "title": "Karaktärer och tärningar",
+        "alt": "Färgglada karaktärspjäser ordnade i rader med sex numrerade tärningar mot mörkblå bakgrund."
+      }
+    ]
   },
   {
     "id": "goats-and-goblins",
@@ -2333,7 +2940,51 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/goats-and-goblins/goats-and-goblins-thumb.png",
+    "coverAlt": "Goats & Goblins-omslag med en goblin som firar sig ned med en lykta i en grotta med blå kristaller och guld, medan en get och andra gobliner tittar ned.",
+    "coverVariants": [
+      {
+        "src": "/images/games/goats-and-goblins/goats-and-goblins-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/goats-and-goblins/goats-and-goblins-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/goats-and-goblins/goats-and-goblins-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/goats-and-goblins/goats-and-goblins-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/goats-and-goblins/goats-and-goblins-banner.png",
+    "heroAlt": "Goats & Goblins-titeln till vänster om en get och gobliner som utforskar en grotta med skatter och blå kristaller.",
+    "gallery": [
+      {
+        "src": "/images/games/goats-and-goblins/gallery/goats-and-goblins-1.png",
+        "title": "Kort och korthög",
+        "alt": "En grön korthög och utlagda kort med en get, gobliner, skatter, ras och röstningssymboler."
+      },
+      {
+        "src": "/images/games/goats-and-goblins/gallery/goats-and-goblins-2.png",
+        "title": "Presentation av spelet",
+        "alt": "En illustrerad grotta med skatter och engelska textrutor om spelets upplägg och material."
+      },
+      {
+        "src": "/images/games/goats-and-goblins/gallery/goats-and-goblins-3.png",
+        "title": "Översikt över korten",
+        "alt": "En komponentöversikt med ledarkort, röstningskort, handlingskort, raskort samt getter, gobliner och skatter."
+      },
+      {
+        "src": "/images/games/goats-and-goblins/gallery/goats-and-goblins-4.png",
+        "title": "Mynt och kortförvaring",
+        "alt": "Guldfärgade röstningsmynt, en korthög, ett skattkort och en öppen svart förvaringsask med grön insida."
+      }
+    ]
   },
   {
     "id": "inis",
