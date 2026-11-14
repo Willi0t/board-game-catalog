@@ -2344,7 +2344,51 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/forbidden-desert/forbidden-desert-thumb.png",
+    "coverAlt": "Forbidden Desert-omslag med en flygmaskin begravd i sand framför en annalkande sandstorm.",
+    "coverVariants": [
+      {
+        "src": "/images/games/forbidden-desert/forbidden-desert-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/forbidden-desert/forbidden-desert-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/forbidden-desert/forbidden-desert-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/forbidden-desert/forbidden-desert-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/forbidden-desert/forbidden-desert-banner.png",
+    "heroAlt": "Forbidden Desert-titeln och undertiteln till vänster om en sandstorm och en begravd flygmaskin i öknen.",
+    "gallery": [
+      {
+        "src": "/images/games/forbidden-desert/gallery/forbidden-desert-1.png",
+        "title": "Ask och spelkomponenter",
+        "alt": "Forbidden Desert-asken med kort, ökenbrickor, spelpjäser och flygmaskinens delar."
+      },
+      {
+        "src": "/images/games/forbidden-desert/gallery/forbidden-desert-2.png",
+        "title": "Askens baksida",
+        "alt": "Askens baksida med en översikt över kort, ökenbrickor och flygmaskinens delar."
+      },
+      {
+        "src": "/images/games/forbidden-desert/gallery/forbidden-desert-3.png",
+        "title": "Spelet uppställt",
+        "alt": "Ökenbrickor i ett rutnät med kort, spelask och flygmaskinens delar runt omkring."
+      },
+      {
+        "src": "/images/games/forbidden-desert/gallery/forbidden-desert-4.png",
+        "title": "Öknen och sanden",
+        "alt": "Ökenbrickor i ett rutnät med sandmarkörer, oaser och färgade spelpjäser."
+      }
+    ]
   },
   {
     "id": "ticket-to-ride",
