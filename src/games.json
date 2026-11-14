@@ -2570,7 +2570,51 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/fliptoons/fliptoons-thumb.png",
+    "coverAlt": "Fliptoons-omslag med logotyp och tecknade djur, bland annat en elefant med trumma, mot blå bakgrund.",
+    "coverVariants": [
+      {
+        "src": "/images/games/fliptoons/fliptoons-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/fliptoons/fliptoons-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/fliptoons/fliptoons-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/fliptoons/fliptoons-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/fliptoons/fliptoons-banner.png",
+    "heroAlt": "Fliptoons-logotypen till vänster om en grupp tecknade djur med instrument mot blå bakgrund.",
+    "gallery": [
+      {
+        "src": "/images/games/fliptoons/gallery/fliptoons-1.png",
+        "title": "Åsnekortet",
+        "alt": "En hand håller ett grönt kort med en tecknad åsna ovanför andra djurkort på bordet."
+      },
+      {
+        "src": "/images/games/fliptoons/gallery/fliptoons-2.png",
+        "title": "Kort och speluppställning",
+        "alt": "Djurkort, priskort och korthögar utlagda som en speluppställning på vit bakgrund."
+      },
+      {
+        "src": "/images/games/fliptoons/gallery/fliptoons-3.png",
+        "title": "Askens baksida",
+        "alt": "Två händer håller spelaskens baksida med bilder av kort och en översikt över spelets gång."
+      },
+      {
+        "src": "/images/games/fliptoons/gallery/fliptoons-4.png",
+        "title": "Ask och djurkort",
+        "alt": "Fliptoons-asken med tecknade djur ovanpå ett mönster av färgglada karaktärskort."
+      }
+    ]
   },
   {
     "id": "azul-mini",
