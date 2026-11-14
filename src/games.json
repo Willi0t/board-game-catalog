@@ -1837,7 +1837,56 @@
       "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "provisional"
-    }
+    },
+    "cover": "/images/games/parlay/parlay-thumb.png",
+    "coverAlt": "Parlay-omslag med mörkgrönt tartanmönster, guldram, en stegrande häst och undertiteln The Betting Game.",
+    "coverVariants": [
+      {
+        "src": "/images/games/parlay/parlay-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/parlay/parlay-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/parlay/parlay-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/parlay/parlay-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/parlay/parlay-banner.png",
+    "heroAlt": "Parlay: The Betting Game-titeln bredvid åskådare och galopphästar på en kapplöpningsbana.",
+    "gallery": [
+      {
+        "src": "/images/games/parlay/gallery/parlay-1.png",
+        "title": "Spelet uppdukat",
+        "alt": "Parlay-asken, kort och gyllene spelpjäser på en mörkgrön spelplan bredvid cocktailglas."
+      },
+      {
+        "src": "/images/games/parlay/gallery/parlay-2.png",
+        "title": "Kort på hand",
+        "alt": "En hand håller två klöverkort med golfbag och målflaggor framför spelplanen."
+      },
+      {
+        "src": "/images/games/parlay/gallery/parlay-3.png",
+        "title": "Gyllene spelpjäser",
+        "alt": "Sex guldfärgade spelpjäser formade som tennisracket, golfbag, saxofon, häst, bil och hund."
+      },
+      {
+        "src": "/images/games/parlay/gallery/parlay-4.png",
+        "title": "Spelkort",
+        "alt": "Illustrerade kort och mörkgröna tartanmönstrade kortbaksidor på rött tyg."
+      },
+      {
+        "src": "/images/games/parlay/gallery/parlay-5.png",
+        "title": "En pjäs flyttas",
+        "alt": "En hand flyttar en gyllene spelpjäs på Parlay-spelplanen bredvid kort och en randig kopp."
+      }
+    ]
   },
   {
     "id": "grimcoven",
