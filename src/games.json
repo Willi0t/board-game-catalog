@@ -2217,6 +2217,16 @@
     "tint": "#eadce2",
     "description": "",
     "placeholderTheme": "castle-rose",
+    "cover": "/images/games/point-city/pointCity-thumb.png",
+    "coverAlt": "Point Citys omslag med färgglada byggnader mot turkos bakgrund",
+    "hero": "/images/games/point-city/pointCity-banner.png",
+    "heroAlt": "Point Citys logotyp och en färgglad stadssiluett",
+    "gallery": [
+      "/images/games/point-city/gallery/pointCity-1.png",
+      "/images/games/point-city/gallery/pointCity-2.png",
+      "/images/games/point-city/gallery/pointCity-3.png",
+      "/images/games/point-city/gallery/pointCity-4.png"
+    ],
     "playersMin": 1,
     "playersMax": 4,
     "bestWith": "2",
