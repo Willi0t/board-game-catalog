@@ -2714,7 +2714,61 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/there-and-back-again/there-and-back-again-thumb.png",
+    "coverAlt": "The Hobbit: There & Back Again-omslag med Bilbo och en grön ryggsäck på väg ut genom en rund dörr mot bergen.",
+    "coverVariants": [
+      {
+        "src": "/images/games/there-and-back-again/there-and-back-again-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/there-and-back-again/there-and-back-again-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/there-and-back-again/there-and-back-again-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/there-and-back-again/there-and-back-again-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/there-and-back-again/there-and-back-again-banner.png",
+    "heroAlt": "The Hobbit: There & Back Again-titeln till vänster om Bilbo som lämnar sitt hem genom en rund grön dörr.",
+    "gallery": [
+      {
+        "src": "/images/games/there-and-back-again/gallery/there-and-back-again-1.png",
+        "title": "Askens baksida",
+        "alt": "Askens baksida med äventyrsböcker, tärningar, markörer och en översikt över innehållet."
+      },
+      {
+        "src": "/images/games/there-and-back-again/gallery/there-and-back-again-2.png",
+        "title": "Tärningarna",
+        "alt": "Fem vita specialtärningar med symboler och en svart tolvsidig tärning."
+      },
+      {
+        "src": "/images/games/there-and-back-again/gallery/there-and-back-again-3.png",
+        "title": "Ask och spelkomponenter",
+        "alt": "Spelasken, en bok med drakmotiv, ett uppslaget äventyr, tärningar, markörer och en penna."
+      },
+      {
+        "src": "/images/games/there-and-back-again/gallery/there-and-back-again-4.png",
+        "title": "Äventyr i bergen",
+        "alt": "Närbild av ett äventyrsuppslag med åskmoln, vättar och en svart tolvsidig tärning."
+      },
+      {
+        "src": "/images/games/there-and-back-again/gallery/there-and-back-again-5.png",
+        "title": "Spindlar och ritade vägar",
+        "alt": "En lila äventyrskarta med spindlar, svärd och svarta ifyllda rutor och förbindelser."
+      },
+      {
+        "src": "/images/games/there-and-back-again/gallery/there-and-back-again-6.png",
+        "title": "Bilbo och Smaug",
+        "alt": "Närbild av en äventyrskarta med Bilbo, Smaug, handskrivna tal och en inritad svart väg."
+      }
+    ]
   },
   {
     "id": "lord-of-the-rings-trick-taking-game",
