@@ -2416,7 +2416,61 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/ticket-to-ride/ticket-to-ride-thumb.png",
+    "coverAlt": "Ticket to Ride Europe-omslag med ett ånglok vid en alpstation och två resenärer med väskor.",
+    "coverVariants": [
+      {
+        "src": "/images/games/ticket-to-ride/ticket-to-ride-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/ticket-to-ride/ticket-to-ride-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/ticket-to-ride/ticket-to-ride-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/ticket-to-ride/ticket-to-ride-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/ticket-to-ride/ticket-to-ride-banner.png",
+    "heroAlt": "Ticket to Ride Europe-titeln ovanför ett ångtåg på en stenviadukt bland snötäckta berg.",
+    "gallery": [
+      {
+        "src": "/images/games/ticket-to-ride/gallery/ticket-to-ride-1.png",
+        "title": "Tåg över Europa",
+        "alt": "Färgade tågvagnar och stationer bildar järnvägslinjer på Europakartan."
+      },
+      {
+        "src": "/images/games/ticket-to-ride/gallery/ticket-to-ride-2.png",
+        "title": "Lokomotivkort",
+        "alt": "En hand håller ett regnbågsfärgat lokomotivkort ovanför spelbrädet."
+      },
+      {
+        "src": "/images/games/ticket-to-ride/gallery/ticket-to-ride-3.png",
+        "title": "Vagnkort",
+        "alt": "Ett orange vagnkort framför andra tågkort och röda spelpjäser."
+      },
+      {
+        "src": "/images/games/ticket-to-ride/gallery/ticket-to-ride-4.png",
+        "title": "Ånglok",
+        "alt": "Ett stående kort med ett ånglok framifrån, omgivet av färgade tågvagnar."
+      },
+      {
+        "src": "/images/games/ticket-to-ride/gallery/ticket-to-ride-5.png",
+        "title": "Station och järnvägar",
+        "alt": "En gul station står bland gröna, röda, svarta och blå tågvagnar på kartan."
+      },
+      {
+        "src": "/images/games/ticket-to-ride/gallery/ticket-to-ride-6.png",
+        "title": "Ruttkort",
+        "alt": "Ett kort med markerade järnvägsrutter och tio poäng framför tågvagnar på Europakartan."
+      }
+    ]
   },
   {
     "id": "fate-of-the-fellowship",
