@@ -2642,7 +2642,51 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/azul-mini/azul-thumb.png",
+    "coverAlt": "Azul-logotypen i en blå och gyllene ram omgiven av färgglada mönstrade kakelplattor.",
+    "coverVariants": [
+      {
+        "src": "/images/games/azul-mini/azul-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/azul-mini/azul-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/azul-mini/azul-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/azul-mini/azul-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/azul-mini/azul-banner.png",
+    "heroAlt": "Azul-logotypen till vänster på en bakgrund av röda, blå, turkosa och gula kakelmönster.",
+    "gallery": [
+      {
+        "src": "/images/games/azul-mini/gallery/azul-1.png",
+        "title": "Ask och spelkomponenter",
+        "alt": "Azul-asken med spelbräden, tygpåse, runda fabriksbrickor, kakelplattor och regelhäfte."
+      },
+      {
+        "src": "/images/games/azul-mini/gallery/azul-2.png",
+        "title": "Kakel på spelbrädet",
+        "alt": "Närbild av färgade kakelplattor på ett spelbräde med mönstervägg och poängbana."
+      },
+      {
+        "src": "/images/games/azul-mini/gallery/azul-3.png",
+        "title": "Fabriker och kakel",
+        "alt": "Fem runda fabriksbrickor med färgade kakelplattor runt startspelarmarkören."
+      },
+      {
+        "src": "/images/games/azul-mini/gallery/azul-4.png",
+        "title": "Tygpåse och kakelplattor",
+        "alt": "En blå Azul-tygpåse, fabriksbrickor och färgade kakelplattor på ett träbord."
+      }
+    ]
   },
   {
     "id": "there-and-back-again",
