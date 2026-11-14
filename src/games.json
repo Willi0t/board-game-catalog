@@ -2868,7 +2868,51 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/magical-athleete/magical-athlete-thumb.png",
+    "coverAlt": "Magical Athlete-omslag med vit titel och färgglada tävlande figurer, en banan och flygande tärningar mot röd bakgrund.",
+    "coverVariants": [
+      {
+        "src": "/images/games/magical-athleete/magical-athlete-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/magical-athleete/magical-athlete-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/magical-athleete/magical-athlete-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/magical-athleete/magical-athlete-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/magical-athleete/magical-athlete-banner.png",
+    "heroAlt": "Magical Athlete-titeln till vänster om en grupp färgglada figurer som springer tillsammans med en banan mot röd bakgrund.",
+    "gallery": [
+      {
+        "src": "/images/games/magical-athleete/gallery/magical-athlete-1.png",
+        "title": "Figurer på banan",
+        "alt": "Sex färgglada karaktärspjäser står på tävlingsbanans numrerade rutor mot gul bakgrund."
+      },
+      {
+        "src": "/images/games/magical-athleete/gallery/magical-athlete-2.png",
+        "title": "En spelomgång",
+        "alt": "En hand flyttar en karaktärspjäs på den avlånga tävlingsbanan bland andra figurer."
+      },
+      {
+        "src": "/images/games/magical-athleete/gallery/magical-athlete-3.png",
+        "title": "Prispallen",
+        "alt": "Tre karaktärspjäser på en prispall med placeringarna ett, två och tre under fallande konfetti."
+      },
+      {
+        "src": "/images/games/magical-athleete/gallery/magical-athlete-4.png",
+        "title": "Karaktärer och tärningar",
+        "alt": "Färgglada karaktärspjäser ordnade i rader med sex numrerade tärningar mot mörkblå bakgrund."
+      }
+    ]
   },
   {
     "id": "goats-and-goblins",
