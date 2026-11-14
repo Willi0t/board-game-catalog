@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Icon from '../Icon/Icon';
 import GameImage from '../GameImage/GameImage';
 import type { GalleryImage } from '../../types/game';
 import styles from './GameGallery.module.css';
@@ -15,6 +14,7 @@ function GalleryItem({ image, onOpenImage }: GalleryItemProps) {
   if (!available) return null;
   return (
     <button
+      aria-label={`Öppna bild: ${image.title}`}
       disabled={!ready}
       onClick={(event) => onOpenImage(image, event.currentTarget)}
     >
@@ -26,10 +26,6 @@ function GalleryItem({ image, onOpenImage }: GalleryItemProps) {
         onReady={() => setReady(true)}
         onUnavailable={() => setAvailable(false)}
       />
-      <span>
-        {image.title}
-        <Icon name="arrow" size={15} />
-      </span>
     </button>
   );
 }

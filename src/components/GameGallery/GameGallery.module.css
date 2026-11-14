@@ -1,10 +1,12 @@
 .gallery {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr));
   gap: 12px;
   padding: 18px 0 22px;
 }
 
 .gallery button {
+  min-width: 0;
   background: transparent;
   text-align: left;
   padding: 0;
@@ -17,25 +19,13 @@
   --image-aspect: 2.5;
 }
 
-.gallery button > span {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 8px 10px;
-  font-size: 10px;
-}
-
 @media (max-width: 650px) {
   .gallery {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .image {
     --image-aspect: 1.4;
-  }
-
-  .gallery button > span {
-    font-size: 9px;
   }
 }
 
@@ -66,15 +56,6 @@
 .thumbnails .image {
   --image-height: 110px;
   --image-aspect: auto;
-}
-
-.thumbnails button > span {
-  min-height: 42px;
-  gap: 4px;
-}
-
-.thumbnails button > span svg {
-  flex-shrink: 0;
 }
 
 @media (max-width: 650px) {
