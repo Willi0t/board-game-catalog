@@ -2070,7 +2070,51 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/excalibur/excalibur-thumb.png",
+    "coverAlt": "Excalibur-omslag med ett gyllene svärd mellan fyra porträtt i lila och turkosa glasmålningar.",
+    "coverVariants": [
+      {
+        "src": "/images/games/excalibur/excalibur-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/excalibur/excalibur-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/excalibur/excalibur-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/excalibur/excalibur-thumb.png",
+        "width": 1122
+      }
+    ],
+    "hero": "/images/games/excalibur/excalibur-banner.png",
+    "heroAlt": "Excalibur-titeln i guld till vänster om ett svärd och fyra porträtt i färgstarka glasmålningar.",
+    "gallery": [
+      {
+        "src": "/images/games/excalibur/gallery/excalibur-1.png",
+        "title": "Svärd och karaktärer",
+        "alt": "Tre svärdformade spelkomponenter och illustrerade karaktärsbrickor på ett mörkt träbord."
+      },
+      {
+        "src": "/images/games/excalibur/gallery/excalibur-2.png",
+        "title": "Brickor i asken",
+        "alt": "Närbild av två rader sköldformade brickor i spelaskens förvaring."
+      },
+      {
+        "src": "/images/games/excalibur/gallery/excalibur-3.png",
+        "title": "Karaktärer på hand",
+        "alt": "Fyra händer visar varsin karaktärsbricka ovanför ett bord med svärd och fler brickor."
+      },
+      {
+        "src": "/images/games/excalibur/gallery/excalibur-4.png",
+        "title": "Ask i levande ljus",
+        "alt": "Excalibur-asken med svärdsmotiv, karaktärsbrickor, en krona och en bägare bland tända ljus."
+      }
+    ]
   },
   {
     "id": "lands-of-evershade",
