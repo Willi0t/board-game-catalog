@@ -3013,7 +3013,38 @@
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     },
-    "expansions": ["Nemed", "Seasons of Inis", "Stretch Goal Upgrades"]
+    "expansions": ["Nemed", "Seasons of Inis", "Stretch Goal Upgrades"],
+    "cover": "/images/games/inis/inis-thumb.png",
+    "coverAlt": "Inis-omslag med en gyllene solgestalt, keltiska mönster och hjortar mot turkos bakgrund.",
+    "hero": "/images/games/inis/inis-banner.png",
+    "heroAlt": "Inis-logotypen och en krigare framför en stencirkel i ett dimmigt landskap vid solnedgången.",
+    "gallery": [
+      {
+        "src": "/images/games/inis/gallery/inis-1.png",
+        "title": "Figurer och episka berättelsekort",
+        "alt": "Färgglada territorier, byggnader, klanfigurer och illustrerade berättelsekort i Inis."
+      },
+      {
+        "src": "/images/games/inis/gallery/inis-2.png",
+        "title": "Territorier och markörer",
+        "alt": "Illustrerade territoriebrickor med berg, stencirklar och ängar samt runda markörer."
+      },
+      {
+        "src": "/images/games/inis/gallery/inis-3.png",
+        "title": "Handlingskort och fördelskort",
+        "alt": "Ett urval illustrerade handlingskort och fördelskort med keltiska mönster."
+      },
+      {
+        "src": "/images/games/inis/gallery/inis-4.png",
+        "title": "Närbild av spelplanen",
+        "alt": "Gröna, blå, orange, svarta och vita klanfigurer bland byggnader på territoriebrickorna."
+      },
+      {
+        "src": "/images/games/inis/gallery/inis-5.png",
+        "title": "Spelplan med målade figurer",
+        "alt": "Målade klanfigurer och byggnader på sammanhängande territoriebrickor på ett blått bord."
+      }
+    ]
   },
   {
     "id": "spirit-island",
@@ -3041,7 +3072,33 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/spirit-island/spiritIsland-thumb.png",
+    "coverAlt": "Spirit Island-omslag med naturandar ovanför tropiska öar och segelfartyg med röda segel.",
+    "hero": "/images/games/spirit-island/spiritIsland-banner.png",
+    "heroAlt": "Spirit Island-logotypen och naturandar över ett turkost hav med klippöar och röda segelfartyg.",
+    "gallery": [
+      {
+        "src": "/images/games/spirit-island/gallery/spiritIsland-1.png",
+        "title": "Spelet uppdukat",
+        "alt": "Spirit Island uppdukat med öbräden, figurer, kort och två andebrädor på ett bord."
+      },
+      {
+        "src": "/images/games/spirit-island/gallery/spiritIsland-2.png",
+        "title": "Vital Strength of the Earth",
+        "alt": "Andebrädan Vital Strength of the Earth ovanpå stenar omgivna av gröna ljusspår."
+      },
+      {
+        "src": "/images/games/spirit-island/gallery/spiritIsland-3.png",
+        "title": "River Surges in Sunlight",
+        "alt": "Andebrädan River Surges in Sunlight med blåvita ljusspår, en lysande bäck och vita spelfigurer."
+      },
+      {
+        "src": "/images/games/spirit-island/gallery/spiritIsland-4.png",
+        "title": "Öbräden och spelmaterial",
+        "alt": "Öbräden med andebrädor, motståndarbrädor och ett scenariokort på ett träbord."
+      }
+    ]
   },
   {
     "id": "nemesis-aftermath",
@@ -3147,7 +3204,33 @@
       "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/an-infamous-traffic-second-edition/traffic-thumb.png",
+    "coverAlt": "Omslag till An Infamous Traffic: Second Edition med turkosa historiska illustrationer och ljusa rökslingor.",
+    "hero": "/images/games/an-infamous-traffic-second-edition/traffic-banner.png",
+    "heroAlt": "An Infamous Traffic-logotypen intill segelfartyg och roddbåtar på havet, med ett brinnande fartyg i bakgrunden.",
+    "gallery": [
+      {
+        "src": "/images/games/an-infamous-traffic-second-edition/gallery/traffic-1.png",
+        "title": "Presentation av Second Edition",
+        "alt": "An Infamous Traffic: Second Edition med titel, en historisk sjöstridsmålning och en informationsruta."
+      },
+      {
+        "src": "/images/games/an-infamous-traffic-second-edition/gallery/traffic-2.png",
+        "title": "Översikt av prototypkomponenter",
+        "alt": "Spelask, färgade träpjäser, brickor, illustrerade kort, tärningar och spelplan. Bilden anger att komponenter och grafik är preliminära."
+      },
+      {
+        "src": "/images/games/an-infamous-traffic-second-edition/gallery/traffic-3.png",
+        "title": "En bricka placeras",
+        "alt": "En hand placerar en lila fartygsbricka intill gröna, rosa och gula brickor på spelplanens karta."
+      },
+      {
+        "src": "/images/games/an-infamous-traffic-second-edition/gallery/traffic-4.png",
+        "title": "Brickor på spelplanen",
+        "alt": "Gröna, lila, rosa och gula symbolbrickor ligger i rad på kartan, med svarta tärningar ovanför."
+      }
+    ]
   },
   {
     "id": "shug",
@@ -3181,6 +3264,32 @@
       "Landlords",
       "Shugnanigans",
       "Stretch Goal Upgrades"
+    ],
+    "cover": "/images/games/shug/shug-thumb.png",
+    "coverAlt": "SHUG-logotypen och en svart figur omgivna av färgglada fantasivarelser på pergamentfärgad bakgrund.",
+    "hero": "/images/games/shug/shug-banner.png",
+    "heroAlt": "SHUG-logotypen till vänster och en samling fantasivarelser, en riddare och sagogestalter inramade av blommor.",
+    "gallery": [
+      {
+        "src": "/images/games/shug/gallery/shug-1.png",
+        "title": "Presentation av SHUG",
+        "alt": "SHUG-logotypen, texten Fantasy meets Foolery och en närbild av spelplan, kort och tärningar."
+      },
+      {
+        "src": "/images/games/shug/gallery/shug-2.png",
+        "title": "Spelet uppdukat",
+        "alt": "SHUG sett ovanifrån med en avlång fantasikarta, färgade spelpjäser, kort och tärningar på ett träbord."
+      },
+      {
+        "src": "/images/games/shug/gallery/shug-3.png",
+        "title": "Kort, tärningar och spelpjäser",
+        "alt": "Illustrerade fantasikort, ljusa tärningar och färgade figurpjäser på röd bakgrund under rubriken Deluxe Components."
+      },
+      {
+        "src": "/images/games/shug/gallery/shug-4.png",
+        "title": "Sex spelpjäser och fantasikort",
+        "alt": "Sex färgade träpjäser med olika fantasigestalter ovanför en solfjäder av illustrerade kort."
+      }
     ]
   },
   {
@@ -3209,7 +3318,33 @@
       "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/battlesticks/battlesticks-thumb.png",
+    "coverAlt": "Battlesticks-logotypen på grön bakgrund omgiven av illustrerade pinnar, löv, svampar, ädelstenar och en groda.",
+    "hero": "/images/games/battlesticks/battlesticks-banner.png",
+    "heroAlt": "Battlesticks-logotypen intill korsade pinnar, en drakformad trästav och en lysande grön stav i en mossig skog.",
+    "gallery": [
+      {
+        "src": "/images/games/battlesticks/gallery/battlesticks-1.png",
+        "title": "Presentation av Battlesticks",
+        "alt": "Battlesticks spelask, kortpaket, tygpåse och illustrerade kort framför en skogsbakgrund."
+      },
+      {
+        "src": "/images/games/battlesticks/gallery/battlesticks-2.png",
+        "title": "Spelöversikt i fyra steg",
+        "alt": "Fyra paneler med kort som visar att dra kort, förbättra pinnar, sabotera och tävla om skatter."
+      },
+      {
+        "src": "/images/games/battlesticks/gallery/battlesticks-3.png",
+        "title": "Slutstrid och kortkombinationer",
+        "alt": "Illustrerad översikt av slutstriden, kombinationer av pinnkort och förstärkningar samt en trädkoja för sparade kort."
+      },
+      {
+        "src": "/images/games/battlesticks/gallery/battlesticks-4.png",
+        "title": "Illustrationer och kortdetaljer",
+        "alt": "En hjärtformad pinne, en lysande grön stav och färgglada kort med pinnar och förstärkningar i skogsmiljö."
+      }
+    ]
   },
   {
     "id": "re-match-marble-puzzle-fighter",
@@ -3244,6 +3379,77 @@
       "The VTuber Expansion",
       "The Duelist Expansion",
       "Stretch Goal Upgrades"
+    ],
+    "cover": "/images/games/re-match-marble-puzzle-fighter/reMatch-thumb.png",
+    "coverAlt": "Re;MATCH-omslag med två färgglada karaktärer som möts vid ett arkadformat spelställ med röda, gula och blå kulor.",
+    "hero": "/images/games/re-match-marble-puzzle-fighter/reMatch-banner.png",
+    "heroAlt": "Re;MATCH-logotypen till vänster och två karaktärer vid ett gult spelställ med färgade kulor mot en starkt färgad bakgrund.",
+    "gallery": [
+      {
+        "src": "/images/games/re-match-marble-puzzle-fighter/gallery/reMatch-1.png",
+        "title": "Presentation av Re;MATCH",
+        "alt": "Re;MATCH-logotypen, två illustrerade karaktärer och ett arkadformat spelställ med röda, gula och blå kulor."
+      },
+      {
+        "src": "/images/games/re-match-marble-puzzle-fighter/gallery/reMatch-2.png",
+        "title": "Spelstället och spelmaterialet",
+        "alt": "Ett gult spelställ med färgade kulor och en illustrerad stridsscen, omgivet av runda markörer och stående figurer."
+      },
+      {
+        "src": "/images/games/re-match-marble-puzzle-fighter/gallery/reMatch-3.png",
+        "title": "Närbild av spelmaterialet",
+        "alt": "Färgade kulor i spelstället, runda markörer, stående figurer och Tricksters färgglada spelarbräde."
+      },
+      {
+        "src": "/images/games/re-match-marble-puzzle-fighter/gallery/reMatch-4.png",
+        "title": "Välj din karaktär",
+        "alt": "Sex karaktärsaskar står på rad med namnen Psychic, Chef, Trickster, DJ, Firefighter och Dancer."
+      },
+      {
+        "src": "/images/games/re-match-marble-puzzle-fighter/gallery/reMatch-5.png",
+        "title": "Karaktärsurval",
+        "alt": "En illustrerad karaktärsmeny med Chef och Psychic på varsin sida om ett rutnät med karaktärsporträtt."
+      },
+      {
+        "src": "/images/games/re-match-marble-puzzle-fighter/gallery/reMatch-6.png",
+        "title": "Karaktär: DJ",
+        "alt": "En blåklädd DJ med hörlurar och musikutrustning, tillsammans med figurställ, karaktärsask och spelarbräde med förmågor."
+      },
+      {
+        "src": "/images/games/re-match-marble-puzzle-fighter/gallery/reMatch-7.png",
+        "title": "Karaktär: Trickster",
+        "alt": "En karaktär i rött och vitt med spelkort, tillsammans med figurställ, karaktärsask och spelarbräde med förmågor."
+      },
+      {
+        "src": "/images/games/re-match-marble-puzzle-fighter/gallery/reMatch-8.png",
+        "title": "Karaktär: Chef",
+        "alt": "En kock med köksredskap, eld och vatten, tillsammans med figurställ, karaktärsask och spelarbräde med förmågor."
+      },
+      {
+        "src": "/images/games/re-match-marble-puzzle-fighter/gallery/reMatch-9.png",
+        "title": "Karaktär: Firefighter",
+        "alt": "En brandman med yxa och flammande effekter, tillsammans med figurställ, karaktärsask och spelarbräde med förmågor."
+      },
+      {
+        "src": "/images/games/re-match-marble-puzzle-fighter/gallery/reMatch-10.png",
+        "title": "Karaktär: Dancer",
+        "alt": "En dansare i färgglada kläder med långa stavar, tillsammans med figurställ, karaktärsask och spelarbräde med förmågor."
+      },
+      {
+        "src": "/images/games/re-match-marble-puzzle-fighter/gallery/reMatch-11.png",
+        "title": "Karaktär: Psychic",
+        "alt": "En mörk silhuett i röd kostym med färgglada psykiska effekter, tillsammans med figurställ, karaktärsask och spelarbräde med förmågor."
+      },
+      {
+        "src": "/images/games/re-match-marble-puzzle-fighter/gallery/reMatch-12.png",
+        "title": "Karaktär: Duelist",
+        "alt": "En blond karaktär med kort, rosa kjol och svartvita kläder, tillsammans med figurställ, karaktärsask och spelarbräde med förmågor."
+      },
+      {
+        "src": "/images/games/re-match-marble-puzzle-fighter/gallery/reMatch-13.png",
+        "title": "Karaktär: VTuber",
+        "alt": "En mörkhårig karaktär i svart, vitt och gult med en stor randig svans, tillsammans med figurställ, karaktärsask och spelarbräde med förmågor."
+      }
     ]
   },
   {
@@ -3272,7 +3478,58 @@
       "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/roma-xli/romaXLI-thumb.png",
+    "coverAlt": "Roma XLI i guldbokstäver med en lagerkrans mot ett vinrött bokomslag med dekorativ ram.",
+    "hero": "/images/games/roma-xli/romaXLI-banner.png",
+    "heroAlt": "Roma XLI-logotypen i guld till vänster om ett romerskt torg med kolonner, tempel och statyer i solnedgången.",
+    "gallery": [
+      {
+        "src": "/images/games/roma-xli/gallery/romaXLI-1.png",
+        "title": "Spelet och dess innehåll",
+        "alt": "Roma XLI:s bokformade ask, spelplan, kort, mynt, tärning, tempel och färgade markörer uppställda på ljusa stenplattor."
+      },
+      {
+        "src": "/images/games/roma-xli/gallery/romaXLI-2.png",
+        "title": "Mynt, tempel och markörer",
+        "alt": "Högar av guldfärgade mynt, ett ljust tempel och nio färgade porträttmarkörer på tre stenplattor."
+      },
+      {
+        "src": "/images/games/roma-xli/gallery/romaXLI-3.png",
+        "title": "Den bokformade asken",
+        "alt": "En öppen bokformad ask med spelplan och kort inuti samt dekorativa djurmotiv på lockets insida."
+      },
+      {
+        "src": "/images/games/roma-xli/gallery/romaXLI-4.png",
+        "title": "Spelplanen",
+        "alt": "Roma XLI:s mosaikillustrerade karta med namngivna platser och en numrerad bana med röda stridsrutor längs kanten."
+      },
+      {
+        "src": "/images/games/roma-xli/gallery/romaXLI-5.png",
+        "title": "Tärningen i närbild",
+        "alt": "En ljust marmorerad tärning med svarta ringformade prickar och en grön ormsymbol på en stenplatta."
+      },
+      {
+        "src": "/images/games/roma-xli/gallery/romaXLI-6.png",
+        "title": "Karaktärskorten",
+        "alt": "Nio färgglada porträttkort med Antony, Cicero, Julia, Cleopatra, Caesarion, Fulvia, Octavian, Agrippa och Brutus."
+      },
+      {
+        "src": "/images/games/roma-xli/gallery/romaXLI-7.png",
+        "title": "Figurer i nio färger",
+        "alt": "Nio små genomskinliga karaktärsfigurer i olika färger står på rad på ljusa stenplattor."
+      },
+      {
+        "src": "/images/games/roma-xli/gallery/romaXLI-8.png",
+        "title": "Det gyllene templet",
+        "alt": "En glänsande guldfärgad tempelminiatyr med pelare på en ljus stenplatta."
+      },
+      {
+        "src": "/images/games/roma-xli/gallery/romaXLI-9.png",
+        "title": "Figurer på spelplanen",
+        "alt": "Färgade karaktärsfigurer på spelplanens mosaikkarta med kort och ett gyllene tempel i bakgrunden."
+      }
+    ]
   },
   {
     "id": "52-duels-fight-with-playing-cards",
@@ -3300,7 +3557,38 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/52-duels-fight-with-playing-cards/52Duels-thumb.png",
+    "coverAlt": "52 Duels: Fight with Playing Cards på blå bakgrund med två stiliserade krigare och röda och blå kortlekar.",
+    "hero": "/images/games/52-duels-fight-with-playing-cards/52Duels-banner.png",
+    "heroAlt": "52 Duels-logotypen till vänster om två stiliserade krigare omgivna av spelkort på blå bakgrund.",
+    "gallery": [
+      {
+        "src": "/images/games/52-duels-fight-with-playing-cards/gallery/52Duels-1.png",
+        "title": "Presentation av 52 Duels",
+        "alt": "52 Duels-logotypen ovanför ett karaktärsblad och vanliga spelkort mot blå bakgrund."
+      },
+      {
+        "src": "/images/games/52-duels-fight-with-playing-cards/gallery/52Duels-2.png",
+        "title": "Spelöversikt: välj en hjälte",
+        "alt": "En engelskspråkig introduktion till karaktärsval med Rogues karaktärsblad under rubriken Choose a Hero."
+      },
+      {
+        "src": "/images/games/52-duels-fight-with-playing-cards/gallery/52Duels-3.png",
+        "title": "Spelöversikt: handlingar",
+        "alt": "Spelkort och ett karaktärsblad under rubriken Take 2 Actions, med engelskspråkig text om turens handlingar."
+      },
+      {
+        "src": "/images/games/52-duels-fight-with-playing-cards/gallery/52Duels-4.png",
+        "title": "Spelöversikt: förbered attacker",
+        "alt": "Två femmor vid karaktärsbladets förmågor under rubriken Prepare Attacks, med engelskspråkig regeltext."
+      },
+      {
+        "src": "/images/games/52-duels-fight-with-playing-cards/gallery/52Duels-5.png",
+        "title": "Spelöversikt: försvar och skada",
+        "alt": "Ett karaktärsblad, en korthög och en röd attackmarkering under rubriken Block Damage, med engelskspråkig regeltext."
+      }
+    ]
   },
   {
     "id": "grifoni-blades-for-hire",
@@ -3335,6 +3623,32 @@
       "Caravan of Wonders",
       "Shakespeare in War",
       "Stretch Goal Upgrades"
+    ],
+    "cover": "/images/games/grifoni-blades-for-hire/grifoni-thumb.png",
+    "coverAlt": "Grifoni: Blades for Hire-logotypen ovanför en hästdragen bepansrad vagn med beväpnade resenärer vid ett tältläger.",
+    "hero": "/images/games/grifoni-blades-for-hire/grifoni-banner.png",
+    "heroAlt": "Grifoni: Blades for Hire-logotypen till vänster om en hästdragen vagn med beväpnade resenärer, tält och ett torn under blå himmel.",
+    "gallery": [
+      {
+        "src": "/images/games/grifoni-blades-for-hire/gallery/grifoni-1.png",
+        "title": "Översikt av spelmaterialet",
+        "alt": "Grifoni uppdukat med ett läger i flera nivåer, spelarbräden, kort, resursmarkörer och förvaringsaskar."
+      },
+      {
+        "src": "/images/games/grifoni-blades-for-hire/gallery/grifoni-2.png",
+        "title": "Väpnare i lägret",
+        "alt": "Blå och röda väpnarfigurer står vid handlingsplatser framför tält och en smedja på lägerbrädet."
+      },
+      {
+        "src": "/images/games/grifoni-blades-for-hire/gallery/grifoni-3.png",
+        "title": "Rekrytera legosoldater",
+        "alt": "Ett illustrerat legosoldatskort med namnet Francesco framför spelplanen, med mynt och ett spelarbräde i bakgrunden."
+      },
+      {
+        "src": "/images/games/grifoni-blades-for-hire/gallery/grifoni-4.png",
+        "title": "Organisera vagnen",
+        "alt": "Närbild av ett vagnformat spelarbräde med gröna brickor, resursmarkörer och illustrationer av vapen och utrustning."
+      }
     ]
   },
   {
@@ -3363,7 +3677,53 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/bio-blitz/bioBlitz-thumb.png",
+    "coverAlt": "Bio Blitz-logotypen omgiven av en svart fågel, en vit uggla, en clownfisk och en gul fågel mot öken- och havsmiljöer.",
+    "hero": "/images/games/bio-blitz/bioBlitz-banner.png",
+    "heroAlt": "Bio Blitz-logotypen mellan en svart fågel och en vit uggla, med en clownfisk, en gul fågel och färgglada naturmiljöer.",
+    "gallery": [
+      {
+        "src": "/images/games/bio-blitz/gallery/bioBlitz-1.png",
+        "title": "Spelet uppdukat",
+        "alt": "Spelask med texten Biome Blitz, kortlekar, poängbräde, tärningar och djurformade träpjäser på ett orange underlag."
+      },
+      {
+        "src": "/images/games/bio-blitz/gallery/bioBlitz-2.png",
+        "title": "Djur- och ekosystemkort",
+        "alt": "Närbild av illustrerade kort med bland annat sjöstjärna, komodovaran, jaguar och afrikansk dyngbagge samt ekosystemkort."
+      },
+      {
+        "src": "/images/games/bio-blitz/gallery/bioBlitz-3.png",
+        "title": "Presentation av djurkorten",
+        "alt": "Fyra illustrerade kort med kråka, kobra, pilgiftsgroda och kanadagås ovanför engelskspråkig spelinformation."
+      },
+      {
+        "src": "/images/games/bio-blitz/gallery/bioBlitz-4.png",
+        "title": "Resurskort på hand",
+        "alt": "En spelare håller färgglada resurskort med blommor, vatten och en höna framför ett bord med uppdukade djurkort."
+      },
+      {
+        "src": "/images/games/bio-blitz/gallery/bioBlitz-5.png",
+        "title": "Översikt av djurkorten",
+        "alt": "Ett stort urval illustrerade djurkort med bland annat späckhuggare, varg, koala, brunbjörn och pilgiftsgroda."
+      },
+      {
+        "src": "/images/games/bio-blitz/gallery/bioBlitz-6.png",
+        "title": "Översikt av ekosystemkorten",
+        "alt": "Illustrerade ekosystemkort med bland annat tundra, myrmark, lövskog, barrskog, korallrev och djuphav."
+      },
+      {
+        "src": "/images/games/bio-blitz/gallery/bioBlitz-7.png",
+        "title": "Poängbrädet",
+        "alt": "Ett numrerat poängbräde med Biome Blitz-logotypen, en bäver och en röd kräfta i illustrerade naturmiljöer."
+      },
+      {
+        "src": "/images/games/bio-blitz/gallery/bioBlitz-8.png",
+        "title": "Resurskort, tärningar och träpjäser",
+        "alt": "Resurskort med blommotiv, röda handlingskort, två genomskinliga tärningar och sex djurformade träpjäser."
+      }
+    ]
   },
   {
     "id": "high-adventure-treasure-hunt",
@@ -3391,7 +3751,33 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/high-adventure-treasure-hunt/highAdventure-thumb.png",
+    "coverAlt": "High Adventure: Treasure Hunt-logotypen i guld under en övervuxen stenportal, med en äventyrare på väg mot djungelruiner.",
+    "hero": "/images/games/high-adventure-treasure-hunt/highAdventure-banner.png",
+    "heroAlt": "High Adventure: Treasure Hunt-logotypen till vänster om en äventyrare vid en stenportal med djungel, ruiner och berg i bakgrunden.",
+    "gallery": [
+      {
+        "src": "/images/games/high-adventure-treasure-hunt/gallery/highAdventure-1.png",
+        "title": "Karaktärsblad",
+        "alt": "Fyra överlappande karaktärsblad med illustrerade äventyrare, egenskaper och värden, med J.P. Hunsten längst fram."
+      },
+      {
+        "src": "/images/games/high-adventure-treasure-hunt/gallery/highAdventure-2.png",
+        "title": "Uppdraget The Holy Grail",
+        "alt": "Engelskspråkig introduktion till uppdraget The Holy Grail med en bägare, en penna, en påse och exempel på karta, expeditionsblad och händelseblad."
+      },
+      {
+        "src": "/images/games/high-adventure-treasure-hunt/gallery/highAdventure-3.png",
+        "title": "Kartbladet",
+        "alt": "En sexkantsindelad karta med sjö, basläger, skog, berg och faror, omgiven av röda pilar och engelskspråkiga förklaringar."
+      },
+      {
+        "src": "/images/games/high-adventure-treasure-hunt/gallery/highAdventure-4.png",
+        "title": "Expeditionsbladet",
+        "alt": "Ett expeditionsblad indelat i panelerna Exertion, Camp och Dig Site med engelskspråkig förklarande text på pergamentfärgad bakgrund."
+      }
+    ]
   },
   {
     "id": "rolling-seas",
@@ -3420,7 +3806,58 @@
       "preliminary": true,
       "editionMatch": "not-independently-verified"
     },
-    "expansions": ["Salty Dogs & Sea Tales", "Stretch Goal Upgrades"]
+    "expansions": ["Salty Dogs & Sea Tales", "Stretch Goal Upgrades"],
+    "cover": "/images/games/rolling-seas/rollingSeas-thumb.png",
+    "coverAlt": "Rolling Seas-logotypen i guld under ett segelfartyg som möter en rosa sjöorm bland blå vågor och flygande fiskar.",
+    "hero": "/images/games/rolling-seas/rollingSeas-banner.png",
+    "heroAlt": "Rolling Seas-logotypen till vänster om ett segelfartyg och en stor rosa sjöorm bland skummande blå vågor.",
+    "gallery": [
+      {
+        "src": "/images/games/rolling-seas/gallery/rollingSeas-1.png",
+        "title": "Presentation av Rolling Seas",
+        "alt": "Rolling Seas-logotypen över blå vågor med ett segelfartyg, en sjöfarare och en rosa havsvarelse."
+      },
+      {
+        "src": "/images/games/rolling-seas/gallery/rollingSeas-2.png",
+        "title": "Vindar och stormar",
+        "alt": "Ett segelfartyg bland stora vågor och virvlande stormvindar på en pergamentfärgad kartbakgrund."
+      },
+      {
+        "src": "/images/games/rolling-seas/gallery/rollingSeas-3.png",
+        "title": "Pirater i skärgården",
+        "alt": "En illustrerad rävliknande pirat med svärd klättrar i ett segelfartygs rigg."
+      },
+      {
+        "src": "/images/games/rolling-seas/gallery/rollingSeas-4.png",
+        "title": "Utforska kusten",
+        "alt": "Ett litet fartyg seglar förbi en grönskande klippö med en stor djurformad klippformation."
+      },
+      {
+        "src": "/images/games/rolling-seas/gallery/rollingSeas-5.png",
+        "title": "Hinder på kartan",
+        "alt": "En hotfull dödskalleformad klippa med glödande ögon och en upplyst grottöppning vid havet."
+      },
+      {
+        "src": "/images/games/rolling-seas/gallery/rollingSeas-6.png",
+        "title": "En legendarisk sjöresa",
+        "alt": "Ett segelfartyg med vita segel kämpar i höga vågor under en röd stormhimmel."
+      },
+      {
+        "src": "/images/games/rolling-seas/gallery/rollingSeas-8.png",
+        "title": "Spelöversikt: äventyrsfasen",
+        "alt": "Engelskspråkig spelöversikt med ett Kraken-kort och röda pilar som visar en rad och en kolumn på en rutnätskarta."
+      },
+      {
+        "src": "/images/games/rolling-seas/gallery/rollingSeas-9.png",
+        "title": "Spelöversikt: tärningar och vindriktning",
+        "alt": "Engelskspråkig översikt med kompasser, tärningar, en inritad seglingsrutt och en illustrerad utforskningslogg."
+      },
+      {
+        "src": "/images/games/rolling-seas/gallery/rollingSeas-10.png",
+        "title": "Vindar och utforskning",
+        "alt": "Kompasser och tärningar ovanför en karta och en utforskningslogg, med engelskspråkiga förklaringar."
+      }
+    ]
   },
   {
     "id": "rise-of-the-oak-dell",
