@@ -3705,13 +3705,23 @@
       },
       {
         "src": "/images/games/bio-blitz/gallery/bioBlitz-5.png",
-        "title": "Översikt av komponenterna",
-        "alt": "En lång komponentöversikt med djurkort, ekosystemkort, poängbräde, resurskort, handlingskort, två tärningar, djurformade träpjäser och regelbok."
+        "title": "Översikt av djurkorten",
+        "alt": "Ett stort urval illustrerade djurkort med bland annat späckhuggare, varg, koala, brunbjörn och pilgiftsgroda."
       },
       {
         "src": "/images/games/bio-blitz/gallery/bioBlitz-6.png",
-        "title": "Kort och övrigt spelmaterial",
-        "alt": "Illustrerad sammanställning av djur- och ekosystemkort samt poängbräde, resurskort, handlingskort, tärningar, träpjäser och regelbok."
+        "title": "Översikt av ekosystemkorten",
+        "alt": "Illustrerade ekosystemkort med bland annat tundra, myrmark, lövskog, barrskog, korallrev och djuphav."
+      },
+      {
+        "src": "/images/games/bio-blitz/gallery/bioBlitz-7.png",
+        "title": "Poängbrädet",
+        "alt": "Ett numrerat poängbräde med Biome Blitz-logotypen, en bäver och en röd kräfta i illustrerade naturmiljöer."
+      },
+      {
+        "src": "/images/games/bio-blitz/gallery/bioBlitz-8.png",
+        "title": "Resurskort, tärningar och träpjäser",
+        "alt": "Resurskort med blommotiv, röda handlingskort, två genomskinliga tärningar och sex djurformade träpjäser."
       }
     ]
   },
