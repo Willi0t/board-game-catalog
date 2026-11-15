@@ -3264,6 +3264,32 @@
       "Landlords",
       "Shugnanigans",
       "Stretch Goal Upgrades"
+    ],
+    "cover": "/images/games/shug/shug-thumb.png",
+    "coverAlt": "SHUG-logotypen och en svart figur omgivna av färgglada fantasivarelser på pergamentfärgad bakgrund.",
+    "hero": "/images/games/shug/shug-banner.png",
+    "heroAlt": "SHUG-logotypen till vänster och en samling fantasivarelser, en riddare och sagogestalter inramade av blommor.",
+    "gallery": [
+      {
+        "src": "/images/games/shug/gallery/shug-1.png",
+        "title": "Presentation av SHUG",
+        "alt": "SHUG-logotypen, texten Fantasy meets Foolery och en närbild av spelplan, kort och tärningar."
+      },
+      {
+        "src": "/images/games/shug/gallery/shug-2.png",
+        "title": "Spelet uppdukat",
+        "alt": "SHUG sett ovanifrån med en avlång fantasikarta, färgade spelpjäser, kort och tärningar på ett träbord."
+      },
+      {
+        "src": "/images/games/shug/gallery/shug-3.png",
+        "title": "Kort, tärningar och spelpjäser",
+        "alt": "Illustrerade fantasikort, ljusa tärningar och färgade figurpjäser på röd bakgrund under rubriken Deluxe Components."
+      },
+      {
+        "src": "/images/games/shug/gallery/shug-4.png",
+        "title": "Sex spelpjäser och fantasikort",
+        "alt": "Sex färgade träpjäser med olika fantasigestalter ovanför en solfjäder av illustrerade kort."
+      }
     ]
   },
   {
