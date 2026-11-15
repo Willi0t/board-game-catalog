@@ -3072,7 +3072,33 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/spirit-island/spiritIsland-thumb.png",
+    "coverAlt": "Spirit Island-omslag med naturandar ovanför tropiska öar och segelfartyg med röda segel.",
+    "hero": "/images/games/spirit-island/spiritIsland-banner.png",
+    "heroAlt": "Spirit Island-logotypen och naturandar över ett turkost hav med klippöar och röda segelfartyg.",
+    "gallery": [
+      {
+        "src": "/images/games/spirit-island/gallery/spiritIsland-1.png",
+        "title": "Spelet uppdukat",
+        "alt": "Spirit Island uppdukat med öbräden, figurer, kort och två andebrädor på ett bord."
+      },
+      {
+        "src": "/images/games/spirit-island/gallery/spiritIsland-2.png",
+        "title": "Vital Strength of the Earth",
+        "alt": "Andebrädan Vital Strength of the Earth ovanpå stenar omgivna av gröna ljusspår."
+      },
+      {
+        "src": "/images/games/spirit-island/gallery/spiritIsland-3.png",
+        "title": "River Surges in Sunlight",
+        "alt": "Andebrädan River Surges in Sunlight med blåvita ljusspår, en lysande bäck och vita spelfigurer."
+      },
+      {
+        "src": "/images/games/spirit-island/gallery/spiritIsland-4.png",
+        "title": "Öbräden och spelmaterial",
+        "alt": "Öbräden med andebrädor, motståndarbrädor och ett scenariokort på ett träbord."
+      }
+    ]
   },
   {
     "id": "nemesis-aftermath",
