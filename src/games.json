@@ -3741,7 +3741,33 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/high-adventure-treasure-hunt/highAdventure-thumb.png",
+    "coverAlt": "High Adventure: Treasure Hunt-logotypen i guld under en övervuxen stenportal, med en äventyrare på väg mot djungelruiner.",
+    "hero": "/images/games/high-adventure-treasure-hunt/highAdventure-banner.png",
+    "heroAlt": "High Adventure: Treasure Hunt-logotypen till vänster om en äventyrare vid en stenportal med djungel, ruiner och berg i bakgrunden.",
+    "gallery": [
+      {
+        "src": "/images/games/high-adventure-treasure-hunt/gallery/highAdventure-1.png",
+        "title": "Karaktärsblad",
+        "alt": "Fyra överlappande karaktärsblad med illustrerade äventyrare, egenskaper och värden, med J.P. Hunsten längst fram."
+      },
+      {
+        "src": "/images/games/high-adventure-treasure-hunt/gallery/highAdventure-2.png",
+        "title": "Uppdraget The Holy Grail",
+        "alt": "Engelskspråkig introduktion till uppdraget The Holy Grail med en bägare, en penna, en påse och exempel på karta, expeditionsblad och händelseblad."
+      },
+      {
+        "src": "/images/games/high-adventure-treasure-hunt/gallery/highAdventure-3.png",
+        "title": "Kartbladet",
+        "alt": "En sexkantsindelad karta med sjö, basläger, skog, berg och faror, omgiven av röda pilar och engelskspråkiga förklaringar."
+      },
+      {
+        "src": "/images/games/high-adventure-treasure-hunt/gallery/highAdventure-4.png",
+        "title": "Expeditionsbladet",
+        "alt": "Ett expeditionsblad indelat i panelerna Exertion, Camp och Dig Site med engelskspråkig förklarande text på pergamentfärgad bakgrund."
+      }
+    ]
   },
   {
     "id": "rolling-seas",
