@@ -3013,7 +3013,38 @@
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     },
-    "expansions": ["Nemed", "Seasons of Inis", "Stretch Goal Upgrades"]
+    "expansions": ["Nemed", "Seasons of Inis", "Stretch Goal Upgrades"],
+    "cover": "/images/games/inis/inis-thumb.png",
+    "coverAlt": "Inis-omslag med en gyllene solgestalt, keltiska mönster och hjortar mot turkos bakgrund.",
+    "hero": "/images/games/inis/inis-banner.png",
+    "heroAlt": "Inis-logotypen och en krigare framför en stencirkel i ett dimmigt landskap vid solnedgången.",
+    "gallery": [
+      {
+        "src": "/images/games/inis/gallery/inis-1.png",
+        "title": "Figurer och episka berättelsekort",
+        "alt": "Färgglada territorier, byggnader, klanfigurer och illustrerade berättelsekort i Inis."
+      },
+      {
+        "src": "/images/games/inis/gallery/inis-2.png",
+        "title": "Territorier och markörer",
+        "alt": "Illustrerade territoriebrickor med berg, stencirklar och ängar samt runda markörer."
+      },
+      {
+        "src": "/images/games/inis/gallery/inis-3.png",
+        "title": "Handlingskort och fördelskort",
+        "alt": "Ett urval illustrerade handlingskort och fördelskort med keltiska mönster."
+      },
+      {
+        "src": "/images/games/inis/gallery/inis-4.png",
+        "title": "Närbild av spelplanen",
+        "alt": "Gröna, blå, orange, svarta och vita klanfigurer bland byggnader på territoriebrickorna."
+      },
+      {
+        "src": "/images/games/inis/gallery/inis-5.png",
+        "title": "Spelplan med målade figurer",
+        "alt": "Målade klanfigurer och byggnader på sammanhängande territoriebrickor på ett blått bord."
+      }
+    ]
   },
   {
     "id": "spirit-island",
