@@ -3379,6 +3379,77 @@
       "The VTuber Expansion",
       "The Duelist Expansion",
       "Stretch Goal Upgrades"
+    ],
+    "cover": "/images/games/re-match-marble-puzzle-fighter/reMatch-thumb.png",
+    "coverAlt": "Re;MATCH-omslag med två färgglada karaktärer som möts vid ett arkadformat spelställ med röda, gula och blå kulor.",
+    "hero": "/images/games/re-match-marble-puzzle-fighter/reMatch-banner.png",
+    "heroAlt": "Re;MATCH-logotypen till vänster och två karaktärer vid ett gult spelställ med färgade kulor mot en starkt färgad bakgrund.",
+    "gallery": [
+      {
+        "src": "/images/games/re-match-marble-puzzle-fighter/gallery/reMatch-1.png",
+        "title": "Presentation av Re;MATCH",
+        "alt": "Re;MATCH-logotypen, två illustrerade karaktärer och ett arkadformat spelställ med röda, gula och blå kulor."
+      },
+      {
+        "src": "/images/games/re-match-marble-puzzle-fighter/gallery/reMatch-2.png",
+        "title": "Spelstället och spelmaterialet",
+        "alt": "Ett gult spelställ med färgade kulor och en illustrerad stridsscen, omgivet av runda markörer och stående figurer."
+      },
+      {
+        "src": "/images/games/re-match-marble-puzzle-fighter/gallery/reMatch-3.png",
+        "title": "Närbild av spelmaterialet",
+        "alt": "Färgade kulor i spelstället, runda markörer, stående figurer och Tricksters färgglada spelarbräde."
+      },
+      {
+        "src": "/images/games/re-match-marble-puzzle-fighter/gallery/reMatch-4.png",
+        "title": "Välj din karaktär",
+        "alt": "Sex karaktärsaskar står på rad med namnen Psychic, Chef, Trickster, DJ, Firefighter och Dancer."
+      },
+      {
+        "src": "/images/games/re-match-marble-puzzle-fighter/gallery/reMatch-5.png",
+        "title": "Karaktärsurval",
+        "alt": "En illustrerad karaktärsmeny med Chef och Psychic på varsin sida om ett rutnät med karaktärsporträtt."
+      },
+      {
+        "src": "/images/games/re-match-marble-puzzle-fighter/gallery/reMatch-6.png",
+        "title": "Karaktär: DJ",
+        "alt": "En blåklädd DJ med hörlurar och musikutrustning, tillsammans med figurställ, karaktärsask och spelarbräde med förmågor."
+      },
+      {
+        "src": "/images/games/re-match-marble-puzzle-fighter/gallery/reMatch-7.png",
+        "title": "Karaktär: Trickster",
+        "alt": "En karaktär i rött och vitt med spelkort, tillsammans med figurställ, karaktärsask och spelarbräde med förmågor."
+      },
+      {
+        "src": "/images/games/re-match-marble-puzzle-fighter/gallery/reMatch-8.png",
+        "title": "Karaktär: Chef",
+        "alt": "En kock med köksredskap, eld och vatten, tillsammans med figurställ, karaktärsask och spelarbräde med förmågor."
+      },
+      {
+        "src": "/images/games/re-match-marble-puzzle-fighter/gallery/reMatch-9.png",
+        "title": "Karaktär: Firefighter",
+        "alt": "En brandman med yxa och flammande effekter, tillsammans med figurställ, karaktärsask och spelarbräde med förmågor."
+      },
+      {
+        "src": "/images/games/re-match-marble-puzzle-fighter/gallery/reMatch-10.png",
+        "title": "Karaktär: Dancer",
+        "alt": "En dansare i färgglada kläder med långa stavar, tillsammans med figurställ, karaktärsask och spelarbräde med förmågor."
+      },
+      {
+        "src": "/images/games/re-match-marble-puzzle-fighter/gallery/reMatch-11.png",
+        "title": "Karaktär: Psychic",
+        "alt": "En mörk silhuett i röd kostym med färgglada psykiska effekter, tillsammans med figurställ, karaktärsask och spelarbräde med förmågor."
+      },
+      {
+        "src": "/images/games/re-match-marble-puzzle-fighter/gallery/reMatch-12.png",
+        "title": "Karaktär: Duelist",
+        "alt": "En blond karaktär med kort, rosa kjol och svartvita kläder, tillsammans med figurställ, karaktärsask och spelarbräde med förmågor."
+      },
+      {
+        "src": "/images/games/re-match-marble-puzzle-fighter/gallery/reMatch-13.png",
+        "title": "Karaktär: VTuber",
+        "alt": "En mörkhårig karaktär i svart, vitt och gult med en stor randig svans, tillsammans med figurställ, karaktärsask och spelarbräde med förmågor."
+      }
     ]
   },
   {
