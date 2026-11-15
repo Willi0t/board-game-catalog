@@ -3796,7 +3796,58 @@
       "preliminary": true,
       "editionMatch": "not-independently-verified"
     },
-    "expansions": ["Salty Dogs & Sea Tales", "Stretch Goal Upgrades"]
+    "expansions": ["Salty Dogs & Sea Tales", "Stretch Goal Upgrades"],
+    "cover": "/images/games/rolling-seas/rollingSeas-thumb.png",
+    "coverAlt": "Rolling Seas-logotypen i guld under ett segelfartyg som möter en rosa sjöorm bland blå vågor och flygande fiskar.",
+    "hero": "/images/games/rolling-seas/rollingSeas-banner.png",
+    "heroAlt": "Rolling Seas-logotypen till vänster om ett segelfartyg och en stor rosa sjöorm bland skummande blå vågor.",
+    "gallery": [
+      {
+        "src": "/images/games/rolling-seas/gallery/rollingSeas-1.png",
+        "title": "Presentation av Rolling Seas",
+        "alt": "Rolling Seas-logotypen över blå vågor med ett segelfartyg, en sjöfarare och en rosa havsvarelse."
+      },
+      {
+        "src": "/images/games/rolling-seas/gallery/rollingSeas-2.png",
+        "title": "Vindar och stormar",
+        "alt": "Ett segelfartyg bland stora vågor och virvlande stormvindar på en pergamentfärgad kartbakgrund."
+      },
+      {
+        "src": "/images/games/rolling-seas/gallery/rollingSeas-3.png",
+        "title": "Pirater i skärgården",
+        "alt": "En illustrerad rävliknande pirat med svärd klättrar i ett segelfartygs rigg."
+      },
+      {
+        "src": "/images/games/rolling-seas/gallery/rollingSeas-4.png",
+        "title": "Utforska kusten",
+        "alt": "Ett litet fartyg seglar förbi en grönskande klippö med en stor djurformad klippformation."
+      },
+      {
+        "src": "/images/games/rolling-seas/gallery/rollingSeas-5.png",
+        "title": "Hinder på kartan",
+        "alt": "En hotfull dödskalleformad klippa med glödande ögon och en upplyst grottöppning vid havet."
+      },
+      {
+        "src": "/images/games/rolling-seas/gallery/rollingSeas-6.png",
+        "title": "En legendarisk sjöresa",
+        "alt": "Ett segelfartyg med vita segel kämpar i höga vågor under en röd stormhimmel."
+      },
+      {
+        "src": "/images/games/rolling-seas/gallery/rollingSeas-8.png",
+        "title": "Spelöversikt: äventyrsfasen",
+        "alt": "Engelskspråkig spelöversikt med ett Kraken-kort och röda pilar som visar en rad och en kolumn på en rutnätskarta."
+      },
+      {
+        "src": "/images/games/rolling-seas/gallery/rollingSeas-9.png",
+        "title": "Spelöversikt: tärningar och vindriktning",
+        "alt": "Engelskspråkig översikt med kompasser, tärningar, en inritad seglingsrutt och en illustrerad utforskningslogg."
+      },
+      {
+        "src": "/images/games/rolling-seas/gallery/rollingSeas-10.png",
+        "title": "Vindar och utforskning",
+        "alt": "Kompasser och tärningar ovanför en karta och en utforskningslogg, med engelskspråkiga förklaringar."
+      }
+    ]
   },
   {
     "id": "rise-of-the-oak-dell",
