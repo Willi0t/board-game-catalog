@@ -3623,6 +3623,32 @@
       "Caravan of Wonders",
       "Shakespeare in War",
       "Stretch Goal Upgrades"
+    ],
+    "cover": "/images/games/grifoni-blades-for-hire/grifoni-thumb.png",
+    "coverAlt": "Grifoni: Blades for Hire-logotypen ovanför en hästdragen bepansrad vagn med beväpnade resenärer vid ett tältläger.",
+    "hero": "/images/games/grifoni-blades-for-hire/grifoni-banner.png",
+    "heroAlt": "Grifoni: Blades for Hire-logotypen till vänster om en hästdragen vagn med beväpnade resenärer, tält och ett torn under blå himmel.",
+    "gallery": [
+      {
+        "src": "/images/games/grifoni-blades-for-hire/gallery/grifoni-1.png",
+        "title": "Översikt av spelmaterialet",
+        "alt": "Grifoni uppdukat med ett läger i flera nivåer, spelarbräden, kort, resursmarkörer och förvaringsaskar."
+      },
+      {
+        "src": "/images/games/grifoni-blades-for-hire/gallery/grifoni-2.png",
+        "title": "Väpnare i lägret",
+        "alt": "Blå och röda väpnarfigurer står vid handlingsplatser framför tält och en smedja på lägerbrädet."
+      },
+      {
+        "src": "/images/games/grifoni-blades-for-hire/gallery/grifoni-3.png",
+        "title": "Rekrytera legosoldater",
+        "alt": "Ett illustrerat legosoldatskort med namnet Francesco framför spelplanen, med mynt och ett spelarbräde i bakgrunden."
+      },
+      {
+        "src": "/images/games/grifoni-blades-for-hire/gallery/grifoni-4.png",
+        "title": "Organisera vagnen",
+        "alt": "Närbild av ett vagnformat spelarbräde med gröna brickor, resursmarkörer och illustrationer av vapen och utrustning."
+      }
     ]
   },
   {
