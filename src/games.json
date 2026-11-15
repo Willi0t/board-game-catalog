@@ -3478,7 +3478,58 @@
       "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/roma-xli/romaXLI-thumb.png",
+    "coverAlt": "Roma XLI i guldbokstäver med en lagerkrans mot ett vinrött bokomslag med dekorativ ram.",
+    "hero": "/images/games/roma-xli/romaXLI-banner.png",
+    "heroAlt": "Roma XLI-logotypen i guld till vänster om ett romerskt torg med kolonner, tempel och statyer i solnedgången.",
+    "gallery": [
+      {
+        "src": "/images/games/roma-xli/gallery/romaXLI-1.png",
+        "title": "Spelet och dess innehåll",
+        "alt": "Roma XLI:s bokformade ask, spelplan, kort, mynt, tärning, tempel och färgade markörer uppställda på ljusa stenplattor."
+      },
+      {
+        "src": "/images/games/roma-xli/gallery/romaXLI-2.png",
+        "title": "Mynt, tempel och markörer",
+        "alt": "Högar av guldfärgade mynt, ett ljust tempel och nio färgade porträttmarkörer på tre stenplattor."
+      },
+      {
+        "src": "/images/games/roma-xli/gallery/romaXLI-3.png",
+        "title": "Den bokformade asken",
+        "alt": "En öppen bokformad ask med spelplan och kort inuti samt dekorativa djurmotiv på lockets insida."
+      },
+      {
+        "src": "/images/games/roma-xli/gallery/romaXLI-4.png",
+        "title": "Spelplanen",
+        "alt": "Roma XLI:s mosaikillustrerade karta med namngivna platser och en numrerad bana med röda stridsrutor längs kanten."
+      },
+      {
+        "src": "/images/games/roma-xli/gallery/romaXLI-5.png",
+        "title": "Tärningen i närbild",
+        "alt": "En ljust marmorerad tärning med svarta ringformade prickar och en grön ormsymbol på en stenplatta."
+      },
+      {
+        "src": "/images/games/roma-xli/gallery/romaXLI-6.png",
+        "title": "Karaktärskorten",
+        "alt": "Nio färgglada porträttkort med Antony, Cicero, Julia, Cleopatra, Caesarion, Fulvia, Octavian, Agrippa och Brutus."
+      },
+      {
+        "src": "/images/games/roma-xli/gallery/romaXLI-7.png",
+        "title": "Figurer i nio färger",
+        "alt": "Nio små genomskinliga karaktärsfigurer i olika färger står på rad på ljusa stenplattor."
+      },
+      {
+        "src": "/images/games/roma-xli/gallery/romaXLI-8.png",
+        "title": "Det gyllene templet",
+        "alt": "En glänsande guldfärgad tempelminiatyr med pelare på en ljus stenplatta."
+      },
+      {
+        "src": "/images/games/roma-xli/gallery/romaXLI-9.png",
+        "title": "Figurer på spelplanen",
+        "alt": "Färgade karaktärsfigurer på spelplanens mosaikkarta med kort och ett gyllene tempel i bakgrunden."
+      }
+    ]
   },
   {
     "id": "52-duels-fight-with-playing-cards",
