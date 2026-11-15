@@ -3944,6 +3944,77 @@
       "Mistwalkers Expansion",
       "Vernax: The Black Dragon",
       "Stretch Goal Upgrades"
+    ],
+    "cover": "/images/games/avalon-the-riven-veil/avalon-thumb.png",
+    "coverAlt": "Avalon: The Riven Veil-omslag med ett lysande svärd i en klippa, riddare och baner bland blåvita dimmor och vågor.",
+    "hero": "/images/games/avalon-the-riven-veil/avalon-banner.png",
+    "heroAlt": "Avalon: The Riven Veil-logotypen ovanför riddare till häst, ett lysande svärd och en trollkarl med stav framför ett dimhöljt slott.",
+    "gallery": [
+      {
+        "src": "/images/games/avalon-the-riven-veil/gallery/avalon-1.png",
+        "title": "Spelet uppdukat",
+        "alt": "En rund spelplan med färgade miniatyrer omgiven av spelarbräden, kortlekar, korthållare och stora varelseminiatyrer."
+      },
+      {
+        "src": "/images/games/avalon-the-riven-veil/gallery/avalon-2.png",
+        "title": "Guinevere och riddarna",
+        "alt": "Två ljusa miniatyrer med guldfärgade detaljer: en svärdsbärande gestalt och en bepansrad ryttare med ett stort baner."
+      },
+      {
+        "src": "/images/games/avalon-the-riven-veil/gallery/avalon-3.png",
+        "title": "Knights of the Round",
+        "alt": "Ljusa riddar- och soldatminiatyrer framför fraktionsbrädet Knights of the Round och en illustrerad kortskärm."
+      },
+      {
+        "src": "/images/games/avalon-the-riven-veil/gallery/avalon-4.png",
+        "title": "Spelöversikt: dimfasen",
+        "alt": "En dimtäckt rund spelplan med nedvända kort under rubriken The Mist Phase och engelskspråkig förklarande text."
+      },
+      {
+        "src": "/images/games/avalon-the-riven-veil/gallery/avalon-5.png",
+        "title": "Förberedelser: välj kort",
+        "alt": "Fyra grupper av nedvända blå kort på ett stenliknande underlag under rubrikerna The Preparation Phase och Choose Your Cards."
+      },
+      {
+        "src": "/images/games/avalon-the-riven-veil/gallery/avalon-6.png",
+        "title": "Spela och avgör kort",
+        "alt": "Fyra uppvända kort i blått, gult och grönt med initiativvärden under rubriken Resolve Cards och engelskspråkig förklarande text."
+      },
+      {
+        "src": "/images/games/avalon-the-riven-veil/gallery/avalon-7.png",
+        "title": "Utforska dimman",
+        "alt": "Gröna miniatyrer och ett artefaktkort med en yxa på den runda spelplanen under rubriken Explore the Mists."
+      },
+      {
+        "src": "/images/games/avalon-the-riven-veil/gallery/avalon-8.png",
+        "title": "Alliera dig med mytiska varelser",
+        "alt": "En stor grå drakminiatyr och mörka och blå fantasivarelser på spelplanen under rubriken Bond Mythical Beasts."
+      },
+      {
+        "src": "/images/games/avalon-the-riven-veil/gallery/avalon-9.png",
+        "title": "Uppgradera din ledare",
+        "alt": "Närbild av det blå fraktionsbrädet The Undead med Mordred Ascendant under rubriken Upgrade Your Lord."
+      },
+      {
+        "src": "/images/games/avalon-the-riven-veil/gallery/avalon-10.png",
+        "title": "Excalibur och gunst",
+        "alt": "Ett upprätt Excalibur-kort framför kortlekar och ett numrerat spår med färgade markörer under rubriken Gain The Lady’s Favor."
+      },
+      {
+        "src": "/images/games/avalon-the-riven-veil/gallery/avalon-11.png",
+        "title": "Dra kort",
+        "alt": "Fyra kortlekar med gröna, gula, blå och röda symboler och varsitt uppvänt illustrerat kort under rubriken Draw Cards."
+      },
+      {
+        "src": "/images/games/avalon-the-riven-veil/gallery/avalon-12.png",
+        "title": "Spelöversikt: krigsfasen",
+        "alt": "Tre röda stridskort ovanför miniatyrer på spelplanen under rubrikerna War Phase och Heroes Play Battle Plan Cards."
+      },
+      {
+        "src": "/images/games/avalon-the-riven-veil/gallery/avalon-13.png",
+        "title": "Stridsplaner och hjältar",
+        "alt": "Röda kort med stridsplaner bakom färgade hjälte- och varelseminiatyrer, med engelskspråkig text om krigsfasen."
+      }
     ]
   },
   {
