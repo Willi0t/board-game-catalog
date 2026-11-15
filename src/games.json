@@ -3677,7 +3677,43 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/bio-blitz/bioBlitz-thumb.png",
+    "coverAlt": "Bio Blitz-logotypen omgiven av en svart fågel, en vit uggla, en clownfisk och en gul fågel mot öken- och havsmiljöer.",
+    "hero": "/images/games/bio-blitz/bioBlitz-banner.png",
+    "heroAlt": "Bio Blitz-logotypen mellan en svart fågel och en vit uggla, med en clownfisk, en gul fågel och färgglada naturmiljöer.",
+    "gallery": [
+      {
+        "src": "/images/games/bio-blitz/gallery/bioBlitz-1.png",
+        "title": "Spelet uppdukat",
+        "alt": "Spelask med texten Biome Blitz, kortlekar, poängbräde, tärningar och djurformade träpjäser på ett orange underlag."
+      },
+      {
+        "src": "/images/games/bio-blitz/gallery/bioBlitz-2.png",
+        "title": "Djur- och ekosystemkort",
+        "alt": "Närbild av illustrerade kort med bland annat sjöstjärna, komodovaran, jaguar och afrikansk dyngbagge samt ekosystemkort."
+      },
+      {
+        "src": "/images/games/bio-blitz/gallery/bioBlitz-3.png",
+        "title": "Presentation av djurkorten",
+        "alt": "Fyra illustrerade kort med kråka, kobra, pilgiftsgroda och kanadagås ovanför engelskspråkig spelinformation."
+      },
+      {
+        "src": "/images/games/bio-blitz/gallery/bioBlitz-4.png",
+        "title": "Resurskort på hand",
+        "alt": "En spelare håller färgglada resurskort med blommor, vatten och en höna framför ett bord med uppdukade djurkort."
+      },
+      {
+        "src": "/images/games/bio-blitz/gallery/bioBlitz-5.png",
+        "title": "Översikt av komponenterna",
+        "alt": "En lång komponentöversikt med djurkort, ekosystemkort, poängbräde, resurskort, handlingskort, två tärningar, djurformade träpjäser och regelbok."
+      },
+      {
+        "src": "/images/games/bio-blitz/gallery/bioBlitz-6.png",
+        "title": "Kort och övrigt spelmaterial",
+        "alt": "Illustrerad sammanställning av djur- och ekosystemkort samt poängbräde, resurskort, handlingskort, tärningar, träpjäser och regelbok."
+      }
+    ]
   },
   {
     "id": "high-adventure-treasure-hunt",
