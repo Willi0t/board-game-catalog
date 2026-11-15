@@ -3318,7 +3318,33 @@
       "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/battlesticks/battlesticks-thumb.png",
+    "coverAlt": "Battlesticks-logotypen på grön bakgrund omgiven av illustrerade pinnar, löv, svampar, ädelstenar och en groda.",
+    "hero": "/images/games/battlesticks/battlesticks-banner.png",
+    "heroAlt": "Battlesticks-logotypen intill korsade pinnar, en drakformad trästav och en lysande grön stav i en mossig skog.",
+    "gallery": [
+      {
+        "src": "/images/games/battlesticks/gallery/battlesticks-1.png",
+        "title": "Presentation av Battlesticks",
+        "alt": "Battlesticks spelask, kortpaket, tygpåse och illustrerade kort framför en skogsbakgrund."
+      },
+      {
+        "src": "/images/games/battlesticks/gallery/battlesticks-2.png",
+        "title": "Spelöversikt i fyra steg",
+        "alt": "Fyra paneler med kort som visar att dra kort, förbättra pinnar, sabotera och tävla om skatter."
+      },
+      {
+        "src": "/images/games/battlesticks/gallery/battlesticks-3.png",
+        "title": "Slutstrid och kortkombinationer",
+        "alt": "Illustrerad översikt av slutstriden, kombinationer av pinnkort och förstärkningar samt en trädkoja för sparade kort."
+      },
+      {
+        "src": "/images/games/battlesticks/gallery/battlesticks-4.png",
+        "title": "Illustrationer och kortdetaljer",
+        "alt": "En hjärtformad pinne, en lysande grön stav och färgglada kort med pinnar och förstärkningar i skogsmiljö."
+      }
+    ]
   },
   {
     "id": "re-match-marble-puzzle-fighter",
