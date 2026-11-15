@@ -3557,7 +3557,38 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/52-duels-fight-with-playing-cards/52Duels-thumb.png",
+    "coverAlt": "52 Duels: Fight with Playing Cards på blå bakgrund med två stiliserade krigare och röda och blå kortlekar.",
+    "hero": "/images/games/52-duels-fight-with-playing-cards/52Duels-banner.png",
+    "heroAlt": "52 Duels-logotypen till vänster om två stiliserade krigare omgivna av spelkort på blå bakgrund.",
+    "gallery": [
+      {
+        "src": "/images/games/52-duels-fight-with-playing-cards/gallery/52Duels-1.png",
+        "title": "Presentation av 52 Duels",
+        "alt": "52 Duels-logotypen ovanför ett karaktärsblad och vanliga spelkort mot blå bakgrund."
+      },
+      {
+        "src": "/images/games/52-duels-fight-with-playing-cards/gallery/52Duels-2.png",
+        "title": "Spelöversikt: välj en hjälte",
+        "alt": "En engelskspråkig introduktion till karaktärsval med Rogues karaktärsblad under rubriken Choose a Hero."
+      },
+      {
+        "src": "/images/games/52-duels-fight-with-playing-cards/gallery/52Duels-3.png",
+        "title": "Spelöversikt: handlingar",
+        "alt": "Spelkort och ett karaktärsblad under rubriken Take 2 Actions, med engelskspråkig text om turens handlingar."
+      },
+      {
+        "src": "/images/games/52-duels-fight-with-playing-cards/gallery/52Duels-4.png",
+        "title": "Spelöversikt: förbered attacker",
+        "alt": "Två femmor vid karaktärsbladets förmågor under rubriken Prepare Attacks, med engelskspråkig regeltext."
+      },
+      {
+        "src": "/images/games/52-duels-fight-with-playing-cards/gallery/52Duels-5.png",
+        "title": "Spelöversikt: försvar och skada",
+        "alt": "Ett karaktärsblad, en korthög och en röd attackmarkering under rubriken Block Damage, med engelskspråkig regeltext."
+      }
+    ]
   },
   {
     "id": "grifoni-blades-for-hire",
