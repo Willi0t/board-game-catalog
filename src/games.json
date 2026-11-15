@@ -3885,7 +3885,33 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/rise-of-the-oak-dell/oakDell-thumb.png",
+    "coverAlt": "Rise of the Oak Dell-logotypen ovanför en person i rödvit dräkt som blickar ut över en kuststad med murar, torn och en pyramid, inramad av eksiluetter.",
+    "hero": "/images/games/rise-of-the-oak-dell/oakDell-banner.png",
+    "heroAlt": "Rise of the Oak Dell-logotypen till vänster om en person som blickar ut över en ljus kuststad med torn, broar, statyer och en pyramid.",
+    "gallery": [
+      {
+        "src": "/images/games/rise-of-the-oak-dell/gallery/oakDell-1.png",
+        "title": "Presentation av spelmaterialet",
+        "alt": "Rise of the Oak Dell med kartblad, civilisationsblad, penna, svart tärning och illustrerat omslag med märkningen Print & Play."
+      },
+      {
+        "src": "/images/games/rise-of-the-oak-dell/gallery/oakDell-2.png",
+        "title": "Spelöversikt: tärning och rundor",
+        "alt": "Kartblad och en svart tärning med röda pilar och engelskspråkiga pratbubblor som visar segmenträkning, hot och rundnummer."
+      },
+      {
+        "src": "/images/games/rise-of-the-oak-dell/gallery/oakDell-3.png",
+        "title": "Vägar, resurser och utveckling",
+        "alt": "Ett kartblad med en röd inritad väg och ett civilisationsblad med resursspår och teknologier, tillsammans med engelskspråkiga förklaringar."
+      },
+      {
+        "src": "/images/games/rise-of-the-oak-dell/gallery/oakDell-4.png",
+        "title": "Översikt av Rise of the Oak Dell",
+        "alt": "Illustrerat omslag, kartblad, civilisationsblad, penna och tärning under en engelskspråkig presentation av spelet."
+      }
+    ]
   },
   {
     "id": "avalon-the-riven-veil",
