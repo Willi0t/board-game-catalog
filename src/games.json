@@ -3204,7 +3204,33 @@
       "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/an-infamous-traffic-second-edition/traffic-thumb.png",
+    "coverAlt": "Omslag till An Infamous Traffic: Second Edition med turkosa historiska illustrationer och ljusa rökslingor.",
+    "hero": "/images/games/an-infamous-traffic-second-edition/traffic-banner.png",
+    "heroAlt": "An Infamous Traffic-logotypen intill segelfartyg och roddbåtar på havet, med ett brinnande fartyg i bakgrunden.",
+    "gallery": [
+      {
+        "src": "/images/games/an-infamous-traffic-second-edition/gallery/traffic-1.png",
+        "title": "Presentation av Second Edition",
+        "alt": "An Infamous Traffic: Second Edition med titel, en historisk sjöstridsmålning och en informationsruta."
+      },
+      {
+        "src": "/images/games/an-infamous-traffic-second-edition/gallery/traffic-2.png",
+        "title": "Översikt av prototypkomponenter",
+        "alt": "Spelask, färgade träpjäser, brickor, illustrerade kort, tärningar och spelplan. Bilden anger att komponenter och grafik är preliminära."
+      },
+      {
+        "src": "/images/games/an-infamous-traffic-second-edition/gallery/traffic-3.png",
+        "title": "En bricka placeras",
+        "alt": "En hand placerar en lila fartygsbricka intill gröna, rosa och gula brickor på spelplanens karta."
+      },
+      {
+        "src": "/images/games/an-infamous-traffic-second-edition/gallery/traffic-4.png",
+        "title": "Brickor på spelplanen",
+        "alt": "Gröna, lila, rosa och gula symbolbrickor ligger i rad på kartan, med svarta tärningar ovanför."
+      }
+    ]
   },
   {
     "id": "shug",
