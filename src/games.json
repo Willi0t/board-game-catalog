@@ -4456,6 +4456,50 @@
       "City of Violence",
       "Gangland Empire",
       "Stretch Goal Upgrades"
+    ],
+    "cover": "/images/games/gang-wars/gangWars-thumb.png",
+    "coverAlt": "Scarface 1920: Gang Wars-omslag med illustrerade gangstrar, skyskrapor, äldre bilar och en explosion i en blågrön stadsmiljö.",
+    "hero": "/images/games/gang-wars/gangWars-banner.png",
+    "heroAlt": "Gang Wars-logotypen till vänster om äldre bilar och beväpnade gangstrar på en regnvåt gata med varmt upplysta byggnader.",
+    "gallery": [
+      {
+        "src": "/images/games/gang-wars/gallery/gangWars-1.png",
+        "title": "Översikt av spelmaterialet",
+        "alt": "Gang Wars-logotypen ovanför spelaskar, Chicagokarta, spelarbräden, kort, miniatyrer och markörer, med engelskspråkig presentationstext."
+      },
+      {
+        "src": "/images/games/gang-wars/gallery/gangWars-2.png",
+        "title": "Fraktioner och områdeskontroll",
+        "alt": "Illustrerade gangstrar, en grå beväpnad miniatyr och kort under engelskspråkiga rubriker om områdeskontroll, asymmetriska fraktioner och spelarinteraktion."
+      },
+      {
+        "src": "/images/games/gang-wars/gallery/gangWars-3.png",
+        "title": "Karaktärer och miljöer",
+        "alt": "En illustrerad gangster bär en whiskylåda intill ett tidningskort och ett platskort med Sunset Jazz Club."
+      },
+      {
+        "src": "/images/games/gang-wars/gallery/gangWars-4.png",
+        "title": "Gang Wars och Scarface 1920",
+        "alt": "Spelaskarna för Scarface 1920 och Gang Wars sida vid sida i en engelskspråkig jämförelse, med en illustrerad bil och beväpnade gangstrar nedtill."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/gang-wars/gangWars-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/gang-wars/gangWars-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/gang-wars/gangWars-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/gang-wars/gangWars-thumb.png",
+        "width": 1122
+      }
     ]
   },
   {
