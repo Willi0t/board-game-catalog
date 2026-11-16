@@ -3044,6 +3044,24 @@
         "title": "Spelplan med målade figurer",
         "alt": "Målade klanfigurer och byggnader på sammanhängande territoriebrickor på ett blått bord."
       }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/inis/inis-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/inis/inis-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/inis/inis-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/inis/inis-thumb.png",
+        "width": 1122
+      }
     ]
   },
   {
@@ -3097,6 +3115,24 @@
         "src": "/images/games/spirit-island/gallery/spiritIsland-4.png",
         "title": "Öbräden och spelmaterial",
         "alt": "Öbräden med andebrädor, motståndarbrädor och ett scenariokort på ett träbord."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/spirit-island/spiritIsland-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/spirit-island/spiritIsland-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/spirit-island/spiritIsland-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/spirit-island/spiritIsland-thumb.png",
+        "width": 1122
       }
     ]
   },
@@ -3230,6 +3266,24 @@
         "title": "Brickor på spelplanen",
         "alt": "Gröna, lila, rosa och gula symbolbrickor ligger i rad på kartan, med svarta tärningar ovanför."
       }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/an-infamous-traffic-second-edition/traffic-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/an-infamous-traffic-second-edition/traffic-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/an-infamous-traffic-second-edition/traffic-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/an-infamous-traffic-second-edition/traffic-thumb.png",
+        "width": 1122
+      }
     ]
   },
   {
@@ -3290,6 +3344,24 @@
         "title": "Sex spelpjäser och fantasikort",
         "alt": "Sex färgade träpjäser med olika fantasigestalter ovanför en solfjäder av illustrerade kort."
       }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/shug/shug-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/shug/shug-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/shug/shug-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/shug/shug-thumb.png",
+        "width": 1122
+      }
     ]
   },
   {
@@ -3343,6 +3415,24 @@
         "src": "/images/games/battlesticks/gallery/battlesticks-4.png",
         "title": "Illustrationer och kortdetaljer",
         "alt": "En hjärtformad pinne, en lysande grön stav och färgglada kort med pinnar och förstärkningar i skogsmiljö."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/battlesticks/battlesticks-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/battlesticks/battlesticks-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/battlesticks/battlesticks-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/battlesticks/battlesticks-thumb.png",
+        "width": 1122
       }
     ]
   },
@@ -3450,6 +3540,24 @@
         "title": "Karaktär: VTuber",
         "alt": "En mörkhårig karaktär i svart, vitt och gult med en stor randig svans, tillsammans med figurställ, karaktärsask och spelarbräde med förmågor."
       }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/re-match-marble-puzzle-fighter/reMatch-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/re-match-marble-puzzle-fighter/reMatch-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/re-match-marble-puzzle-fighter/reMatch-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/re-match-marble-puzzle-fighter/reMatch-thumb.png",
+        "width": 1122
+      }
     ]
   },
   {
@@ -3529,6 +3637,24 @@
         "title": "Figurer på spelplanen",
         "alt": "Färgade karaktärsfigurer på spelplanens mosaikkarta med kort och ett gyllene tempel i bakgrunden."
       }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/roma-xli/romaXLI-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/roma-xli/romaXLI-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/roma-xli/romaXLI-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/roma-xli/romaXLI-thumb.png",
+        "width": 872
+      }
     ]
   },
   {
@@ -3587,6 +3713,24 @@
         "src": "/images/games/52-duels-fight-with-playing-cards/gallery/52Duels-5.png",
         "title": "Spelöversikt: försvar och skada",
         "alt": "Ett karaktärsblad, en korthög och en röd attackmarkering under rubriken Block Damage, med engelskspråkig regeltext."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/52-duels-fight-with-playing-cards/52Duels-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/52-duels-fight-with-playing-cards/52Duels-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/52-duels-fight-with-playing-cards/52Duels-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/52-duels-fight-with-playing-cards/52Duels-thumb.png",
+        "width": 1122
       }
     ]
   },
@@ -3648,6 +3792,24 @@
         "src": "/images/games/grifoni-blades-for-hire/gallery/grifoni-4.png",
         "title": "Organisera vagnen",
         "alt": "Närbild av ett vagnformat spelarbräde med gröna brickor, resursmarkörer och illustrationer av vapen och utrustning."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/grifoni-blades-for-hire/grifoni-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/grifoni-blades-for-hire/grifoni-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/grifoni-blades-for-hire/grifoni-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/grifoni-blades-for-hire/grifoni-thumb.png",
+        "width": 1122
       }
     ]
   },
@@ -3723,6 +3885,24 @@
         "title": "Resurskort, tärningar och träpjäser",
         "alt": "Resurskort med blommotiv, röda handlingskort, två genomskinliga tärningar och sex djurformade träpjäser."
       }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/bio-blitz/bioBlitz-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/bio-blitz/bioBlitz-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/bio-blitz/bioBlitz-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/bio-blitz/bioBlitz-thumb.png",
+        "width": 1122
+      }
     ]
   },
   {
@@ -3776,6 +3956,24 @@
         "src": "/images/games/high-adventure-treasure-hunt/gallery/highAdventure-4.png",
         "title": "Expeditionsbladet",
         "alt": "Ett expeditionsblad indelat i panelerna Exertion, Camp och Dig Site med engelskspråkig förklarande text på pergamentfärgad bakgrund."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/high-adventure-treasure-hunt/highAdventure-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/high-adventure-treasure-hunt/highAdventure-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/high-adventure-treasure-hunt/highAdventure-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/high-adventure-treasure-hunt/highAdventure-thumb.png",
+        "width": 1122
       }
     ]
   },
@@ -3857,6 +4055,24 @@
         "title": "Vindar och utforskning",
         "alt": "Kompasser och tärningar ovanför en karta och en utforskningslogg, med engelskspråkiga förklaringar."
       }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/rolling-seas/rollingSeas-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/rolling-seas/rollingSeas-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/rolling-seas/rollingSeas-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/rolling-seas/rollingSeas-thumb.png",
+        "width": 1122
+      }
     ]
   },
   {
@@ -3910,6 +4126,24 @@
         "src": "/images/games/rise-of-the-oak-dell/gallery/oakDell-4.png",
         "title": "Översikt av Rise of the Oak Dell",
         "alt": "Illustrerat omslag, kartblad, civilisationsblad, penna och tärning under en engelskspråkig presentation av spelet."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/rise-of-the-oak-dell/oakDell-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/rise-of-the-oak-dell/oakDell-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/rise-of-the-oak-dell/oakDell-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/rise-of-the-oak-dell/oakDell-thumb.png",
+        "width": 1122
       }
     ]
   },
@@ -4014,6 +4248,24 @@
         "src": "/images/games/avalon-the-riven-veil/gallery/avalon-13.png",
         "title": "Stridsplaner och hjältar",
         "alt": "Röda kort med stridsplaner bakom färgade hjälte- och varelseminiatyrer, med engelskspråkig text om krigsfasen."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/avalon-the-riven-veil/avalon-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/avalon-the-riven-veil/avalon-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/avalon-the-riven-veil/avalon-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/avalon-the-riven-veil/avalon-thumb.png",
+        "width": 1122
       }
     ]
   },
