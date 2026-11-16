@@ -4296,7 +4296,61 @@
       "preliminary": true,
       "editionMatch": "not-independently-verified"
     },
-    "expansions": ["Pistachio", "Stretch Goal Upgrades"]
+    "expansions": ["Pistachio", "Stretch Goal Upgrades"],
+    "cover": "/images/games/decko-pistachio/decko-thumb.png",
+    "coverAlt": "DECKO Pistachio-logotypen ovanför vita handskar som håller en svart kortlek, omgivna av spelmarker, färgade strålar och orange lågor.",
+    "hero": "/images/games/decko-pistachio/decko-banner.png",
+    "heroAlt": "DECKO Pistachio-logotypen till vänster om vita handskar med en kortlek, röda och svarta spelmarker samt blå och gröna strålar på svart bakgrund.",
+    "gallery": [
+      {
+        "src": "/images/games/decko-pistachio/gallery/decko-1.png",
+        "title": "Presentation av DECKO",
+        "alt": "En hand med färgglada spelkort under rubriken What Is Decko? och en engelskspråkig introduktion."
+      },
+      {
+        "src": "/images/games/decko-pistachio/gallery/decko-2.png",
+        "title": "Bygg din kortlek",
+        "alt": "Kort ligger på en turkos spelmatta intill svarta marker under rubriken Deckbuilding, med engelskspråkig förklarande text."
+      },
+      {
+        "src": "/images/games/decko-pistachio/gallery/decko-3.png",
+        "title": "Ta bort kort",
+        "alt": "Spelkort på ett orange fält med flammotiv och en rutig korthög under rubriken Card Burning."
+      },
+      {
+        "src": "/images/games/decko-pistachio/gallery/decko-4.png",
+        "title": "Jokrar",
+        "alt": "Illustrerade jokerkort på en turkos spelmatta under rubriken Jokers, med engelskspråkig text om kortens funktioner."
+      },
+      {
+        "src": "/images/games/decko-pistachio/gallery/decko-5.png",
+        "title": "Specialrundor",
+        "alt": "Röda och blå specialkort samt spelmarker på ett vinrött bord under rubriken Wildcards."
+      },
+      {
+        "src": "/images/games/decko-pistachio/gallery/decko-6.png",
+        "title": "Kort och spelmarker",
+        "alt": "Jokerkort, rutiga kortbaksidor och röda och svarta spelmarker på ett vinrött bord, med ett engelskspråkigt omdöme i en textruta."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/decko-pistachio/decko-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/decko-pistachio/decko-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/decko-pistachio/decko-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/decko-pistachio/decko-thumb.png",
+        "width": 1122
+      }
+    ]
   },
   {
     "id": "nemesis-retaliation",
