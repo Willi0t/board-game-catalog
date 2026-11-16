@@ -174,3 +174,14 @@ Reservbilder markeras som platshållare och får alt-text för aktuellt spel.
 Bildstatus är oberoende av spelvärdenas metadata. Kör
 `node --test tests/*.test.mjs` för att kontrollera mapping, färgprioritet,
 bildsökvägar och oförändrad motivgeometri samt befintliga katalogtester.
+
+### Video i galleriet
+
+En galleripost kan ha `videoSrc` med en lokal videosökväg, exempelvis
+`/images/games/brass-pittsburgh/gallery/brass-pittsburgh-prototype.webm`.
+Postens `src` är en vanlig förhandsbild som visas i galleriet och som videons
+poster. Ange även svensk `title` och `alt`. Videon öppnas med webbläsarens
+uppspelningskontroller och ljudlös automatisk start när minskad rörelse inte
+är aktiverad. Den tas bort när användaren
+byter galleripost eller stänger dialogen. Videon lagras lokalt tillsammans
+med spelets galleribilder.

@@ -47,6 +47,7 @@ export interface CoverVariant {
 
 export interface GameGalleryEntry {
   src: string;
+  videoSrc?: string;
   title?: string;
   alt?: string;
 }
@@ -55,6 +56,7 @@ export type GameImageKind = 'cover' | 'scene' | 'detail';
 
 export interface GalleryImage {
   src?: string;
+  videoSrc?: string;
   placeholderSrc: string;
   placeholderTint?: string;
   alt?: string;

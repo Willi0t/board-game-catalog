@@ -153,6 +153,7 @@ export default function ImageModal({
       aria-modal="true"
       aria-label={active.title}
       onKeyDown={(event) => {
+        if (event.target instanceof HTMLVideoElement) return;
         if (!canNavigate || !['ArrowLeft', 'ArrowRight'].includes(event.key))
           return;
         event.preventDefault();
@@ -234,6 +235,23 @@ export default function ImageModal({
             );
           })}
           <div className={styles.mainImage} aria-label="Aktuell bild">
+            {active.videoSrc && (
+              <video
+                key={`${cursor}:${active.videoSrc}`}
+                className={styles.video}
+                src={active.videoSrc}
+                poster={active.src}
+                controls
+                autoPlay={!reducedMotion}
+                muted
+                playsInline
+                preload="metadata"
+                aria-label={active.alt || active.title}
+              >
+                Din webbläsare stöder inte videon.{' '}
+                <a href={active.videoSrc}>Hämta videon</a>
+              </video>
+            )}
             {canNavigate && (
               <>
                 <button

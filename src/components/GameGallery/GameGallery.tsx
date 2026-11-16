@@ -14,7 +14,7 @@ function GalleryItem({ image, onOpenImage }: GalleryItemProps) {
   if (!available) return null;
   return (
     <button
-      aria-label={`Öppna bild: ${image.title}`}
+      aria-label={`Öppna ${image.videoSrc ? 'video' : 'bild'}: ${image.title}`}
       disabled={!ready}
       onClick={(event) => onOpenImage(image, event.currentTarget)}
     >
@@ -23,6 +23,7 @@ function GalleryItem({ image, onOpenImage }: GalleryItemProps) {
         className={styles.image}
         placeholderLabel="Platshållarbild"
         labelClassName={styles.placeholder}
+        label={image.videoSrc ? '▶ Video' : undefined}
         onReady={() => setReady(true)}
         onUnavailable={() => setAvailable(false)}
       />
