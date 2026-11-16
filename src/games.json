@@ -4484,7 +4484,66 @@
       "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/davos/davos-thumb.png",
+    "coverAlt": "Davos-logotypen framför en blå och gyllene jordglob, med en talare och en publik av kostymklädda personer.",
+    "hero": "/images/games/davos/davos-banner.png",
+    "heroAlt": "Davos-logotypen till vänster om en talare, en applåderande publik och en blå och gyllene jordglob med en stor prislapp.",
+    "gallery": [
+      {
+        "src": "/images/games/davos/gallery/davos-1.png",
+        "title": "Big Media: Comacomb",
+        "alt": "Ett blått Big Media-kort med ett ansikte, lysande ögon, namnet Comacomb och texten Timeless distraction framför ett collage av andra spelkort."
+      },
+      {
+        "src": "/images/games/davos/gallery/davos-2.png",
+        "title": "Big Arms: Lurk & Merk",
+        "alt": "Ett rött Big Arms-kort med en ubåt, namnet Lurk & Merk och texten Before you knew it framför andra spelkort."
+      },
+      {
+        "src": "/images/games/davos/gallery/davos-3.png",
+        "title": "Big Tech: Gigabro",
+        "alt": "Ett ljusblått Big Tech-kort med en stor kameralins, namnet Gigabro och texten We see you."
+      },
+      {
+        "src": "/images/games/davos/gallery/davos-4.png",
+        "title": "Big Energy: Exhaust",
+        "alt": "Ett grönt Big Energy-kort med en lastbil i rök, namnet Exhaust och texten Just let it out."
+      },
+      {
+        "src": "/images/games/davos/gallery/davos-5.png",
+        "title": "Markörer och kort i spel",
+        "alt": "Händer flyttar färgade runda markörer på kort och vita halvcirkelformade spelbrickor på en mörk spelplan."
+      },
+      {
+        "src": "/images/games/davos/gallery/davos-6.png",
+        "title": "Spelare runt bordet",
+        "alt": "Spelare skakar hand över ett uppdukat Davos med kort, färgade markörer och spelasken i bakgrunden."
+      },
+      {
+        "src": "/images/games/davos/gallery/davos-7.png",
+        "title": "Översikt av spelplanen",
+        "alt": "En mörk Davos-spelplan med rader av färgade företagskort, runda markörer, vita spelbrickor och kort runt kanterna."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/davos/davos-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/davos/davos-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/davos/davos-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/davos/davos-thumb.png",
+        "width": 1122
+      }
+    ]
   },
   {
     "id": "hitman-the-board-game",
