@@ -140,3 +140,16 @@ test('cover titles keep all words and fit the reserved vertical area', () => {
       .length > 1,
   );
 });
+
+test('gallery videos retain their poster, source and position alongside images', () => {
+  const game = games.find((entry) => entry.id === 'brass-pittsburgh');
+  const gallery = getGalleryImages(game);
+  assert.equal(gallery.length, 4);
+  assert.ok(gallery.slice(0, 3).every((entry) => !entry.videoSrc));
+  const video = gallery.at(-1);
+  assert.equal(video.videoSrc, game.gallery.at(-1).videoSrc);
+  assert.equal(video.src, game.gallery[0].src);
+  assert.ok(fs.existsSync(`public${video.videoSrc}`));
+  assert.ok(fs.existsSync(`public${video.src}`));
+  assert.equal(video.gameId, game.id);
+});

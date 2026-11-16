@@ -4734,7 +4734,44 @@
       "preliminary": true,
       "editionMatch": "not-independently-verified"
     },
-    "expansions": ["Stretch Goal Upgrades"]
+    "expansions": ["Stretch Goal Upgrades"],
+    "cover": "/images/games/brass-pittsburgh/brassPittsburgh-thumb.png",
+    "coverAlt": "Brass: Pittsburgh-logotypen framför ett ånglok på en stenbro över en flod i en rökig industristad med gyllene ljus.",
+    "hero": "/images/games/brass-pittsburgh/brassPittsburgh-banner.png",
+    "heroAlt": "Brass: Pittsburgh-logotypen till vänster om ett stålverk med arbetare och glödande metall, med ånglok och fabriker i bakgrunden.",
+    "gallery": [
+      {
+        "src": "/images/games/brass-pittsburgh/gallery/brassPittsburgh-1.png",
+        "title": "Spelplanen",
+        "alt": "Brass: Pittsburgh-spelplanen med städer, järnvägar, industribrickor, resurskuber, mynt och färgade spelarmarkörer."
+      },
+      {
+        "src": "/images/games/brass-pittsburgh/gallery/brassPittsburgh-2.png",
+        "title": "Industristaden Pittsburgh",
+        "alt": "Arbetare vid glödande metall i ett stålverk under rubriken Brass Pittsburgh 1865–1913 och engelskspråkig presentationstext."
+      },
+      {
+        "src": "/images/games/brass-pittsburgh/gallery/brassPittsburgh-3.png",
+        "title": "Marknader, olja och industrier",
+        "alt": "Tre närbilder av spelplanen med marknadsplatser, resurskuber, oljeledningar och industribrickor, med engelskspråkiga förklaringar."
+      },
+      {
+        "src": "/images/games/brass-pittsburgh/gallery/brassPittsburgh-1.png",
+        "videoSrc": "/images/games/brass-pittsburgh/gallery/brass-pittsburgh-prototype.webm",
+        "title": "Prototyp – video",
+        "alt": "Video av prototypen till Brass: Pittsburgh."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/brass-pittsburgh/brassPittsburgh-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/brass-pittsburgh/brassPittsburgh-thumb.png",
+        "width": 1254
+      }
+    ]
   },
   {
     "id": "the-old-king-s-crown",
