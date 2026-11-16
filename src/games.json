@@ -4616,7 +4616,96 @@
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     },
-    "expansions": ["Stretch Goal Upgrades"]
+    "expansions": ["Stretch Goal Upgrades"],
+    "cover": "/images/games/hitman-the-board-game/hitMan-thumb.png",
+    "coverAlt": "Hitman: The Board Game-omslag med Agent 47 och tre andra beväpnade agenter framför kustvillor, ett palats och en japansk trädgård.",
+    "hero": "/images/games/hitman-the-board-game/hitMan-banner.png",
+    "heroAlt": "Hitman: The Board Game-logotypen till vänster om Agent 47 och tre andra agenter i ett collage med kustvilla, palats, japansk bro och tropisk strand.",
+    "gallery": [
+      {
+        "src": "/images/games/hitman-the-board-game/gallery/hitMan-1.png",
+        "title": "Spelöversikt: händelsekort",
+        "alt": "Fyra färgade händelsekort framför spelplanen under rubriken Core Loop och engelskspråkig text om att dra ett händelsekort."
+      },
+      {
+        "src": "/images/games/hitman-the-board-game/gallery/hitMan-2.png",
+        "title": "Spelöversikt: handlingar",
+        "alt": "Stående agent- och vaktfigurer på kartan med pilar och engelskspråkiga etiketter för bland annat förflyttning, förklädnad och distraktion."
+      },
+      {
+        "src": "/images/games/hitman-the-board-game/gallery/hitMan-3.png",
+        "title": "Agentkort",
+        "alt": "En röd agentkortlek och korten Lend a Hand och Chloroform med engelskspråkig förklarande text."
+      },
+      {
+        "src": "/images/games/hitman-the-board-game/gallery/hitMan-4.png",
+        "title": "Turens slut och segervillkor",
+        "alt": "Stående agentfigurer och en liggande målfigur under rubrikerna End of Turn och Win Conditions."
+      },
+      {
+        "src": "/images/games/hitman-the-board-game/gallery/hitMan-5.png",
+        "title": "Förklädnader och basringar",
+        "alt": "Figurer med färgade basringar på spelplanen under rubriken Taking Disguise och engelskspråkig text om tillträde."
+      },
+      {
+        "src": "/images/games/hitman-the-board-game/gallery/hitMan-6.png",
+        "title": "Förklädnader på spelplanen",
+        "alt": "Närbild av stående figurer och en liggande figur på kartan, med färgade basringar och engelskspråkig förklaring av förklädnader."
+      },
+      {
+        "src": "/images/games/hitman-the-board-game/gallery/hitMan-7.png",
+        "title": "Översikt av spelmaterialet",
+        "alt": "Spelask, kartbräde, rumsbrickor, kort, stående figurer, markörer och spelarblad med en engelskspråkig innehållslista."
+      },
+      {
+        "src": "/images/games/hitman-the-board-game/gallery/hitMan-8.png",
+        "title": "Agenter och Agent 47",
+        "alt": "Fyra illustrerade agenter ovanför Agent 47:s stående figur, vita kuber och svarta spelarblad."
+      },
+      {
+        "src": "/images/games/hitman-the-board-game/gallery/hitMan-9.png",
+        "title": "Stone och Knight",
+        "alt": "Spelarblad, stående figurer och kuber för Stone i grönt och Knight i rosa."
+      },
+      {
+        "src": "/images/games/hitman-the-board-game/gallery/hitMan-10.png",
+        "title": "Dalia Margolis",
+        "alt": "Dalia Margolis illustrerade porträtt, händelsekort, stående figur, tre rumsbrickor och uppdragsblad."
+      },
+      {
+        "src": "/images/games/hitman-the-board-game/gallery/hitMan-11.png",
+        "title": "Viktor Novikov",
+        "alt": "Viktor Novikovs illustrerade porträtt, händelsekort, stående figur, tre rumsbrickor och uppdragsblad."
+      },
+      {
+        "src": "/images/games/hitman-the-board-game/gallery/hitMan-12.png",
+        "title": "Plats: Paris",
+        "alt": "Ett upplyst palats i skymningen ovanför Paris-kartans färgade rum, med engelskspråkig platspresentation."
+      },
+      {
+        "src": "/images/games/hitman-the-board-game/gallery/hitMan-13.png",
+        "title": "Plats: Sapienza",
+        "alt": "En kustvilla med terrakottatak ovanför Sapienza-kartans rum, trädgårdar och gångvägar, med engelskspråkig platspresentation."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/hitman-the-board-game/hitMan-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/hitman-the-board-game/hitMan-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/hitman-the-board-game/hitMan-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/hitman-the-board-game/hitMan-thumb.png",
+        "width": 1122
+      }
+    ]
   },
   {
     "id": "brass-pittsburgh",
