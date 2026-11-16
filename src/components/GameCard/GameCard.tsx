@@ -53,7 +53,11 @@ export default function GameCard({
         </span>
       </div>
       <h2>{game.title}</h2>
-      <p>{game.edition || game.gameTypes.join(' · ')}</p>
+      <p>
+        {[game.gameTypes[0], ...game.mechanics.slice(0, 2)]
+          .filter(Boolean)
+          .join(' · ')}
+      </p>
       <GameExpansions expansions={game.expansions} compact />
     </button>
   );

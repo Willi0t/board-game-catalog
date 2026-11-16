@@ -49,12 +49,15 @@ export function getGalleryImages(game: Game): GalleryImage[] {
   return sources.map((entry, index) => {
     const source: GameGalleryEntry =
       typeof entry === 'string' ? { src: entry } : entry;
-    return getGameImage(
-      game,
-      index === 0 ? 'scene' : 'detail',
-      source.src,
-      source.title || `Bild ${index + 1}`,
-      source.alt,
-    );
+    return {
+      ...getGameImage(
+        game,
+        index === 0 ? 'scene' : 'detail',
+        source.src,
+        source.title || `Bild ${index + 1}`,
+        source.alt,
+      ),
+      videoSrc: source.videoSrc,
+    };
   });
 }

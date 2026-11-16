@@ -8,7 +8,7 @@ import type { Game, GalleryImage } from '../../types/game';
 import useModalDialog from '../../hooks/useModalDialog';
 import Icon from '../Icon/Icon';
 import GameGallery from '../GameGallery/GameGallery';
-import { getGalleryImages } from '../../utils/gameImages';
+import { getCoverImage, getGalleryImages } from '../../utils/gameImages';
 import styles from './GameDetailDrawer.module.css';
 
 interface GameDetailDrawerProps {
@@ -76,7 +76,7 @@ export default function GameDetailDrawer({
           <section className={styles.gallerySection} aria-label="Bilder">
             <h3>Bilder</h3>
             <GameGallery
-              images={getGalleryImages(game)}
+              images={[getCoverImage(game), ...getGalleryImages(game)]}
               onOpenImage={onOpenImage}
               layout="thumbnails"
             />

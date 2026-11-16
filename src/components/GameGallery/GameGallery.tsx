@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import GameImage from '../GameImage/GameImage';
+import VideoBadge from '../VideoBadge/VideoBadge';
 import type { GalleryImage } from '../../types/game';
 import styles from './GameGallery.module.css';
 
@@ -14,7 +15,7 @@ function GalleryItem({ image, onOpenImage }: GalleryItemProps) {
   if (!available) return null;
   return (
     <button
-      aria-label={`Öppna bild: ${image.title}`}
+      aria-label={`Öppna ${image.videoSrc ? 'video' : 'bild'}: ${image.title}`}
       disabled={!ready}
       onClick={(event) => onOpenImage(image, event.currentTarget)}
     >
@@ -26,6 +27,7 @@ function GalleryItem({ image, onOpenImage }: GalleryItemProps) {
         onReady={() => setReady(true)}
         onUnavailable={() => setAvailable(false)}
       />
+      {image.videoSrc && <VideoBadge />}
     </button>
   );
 }

@@ -1183,7 +1183,7 @@
   {
     "id": "deep-regrets-deeper-regrets",
     "title": "Deep Regrets",
-    "edition": "",
+    "edition": "Kickstarter Edition",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -1256,7 +1256,7 @@
   {
     "id": "solar-titans",
     "title": "Solar Titans",
-    "edition": "",
+    "edition": "Definitive Edition",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -1632,7 +1632,7 @@
       }
     ],
     "hero": "/images/games/libertalia-winds-of-galecrest/libertalia-banner.png",
-    "heroAlt": "Libertalia-titeln med undertiteln Winds of Galecrest bredvid ett seglande luftskepp över tropiska öar.",
+    "heroAlt": "Libertalia: Winds of Galecrest-logotypen ovanför ett turkost hav med segelfartyg, ett flygande skepp och en grönskande klippbåge.",
     "gallery": [
       {
         "src": "/images/games/libertalia-winds-of-galecrest/gallery/libertalia-1.png",
@@ -1814,7 +1814,7 @@
   {
     "id": "parlay",
     "title": "Parlay",
-    "edition": "",
+    "edition": "Kickstarter Edition",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -1891,7 +1891,7 @@
   {
     "id": "grimcoven",
     "title": "Grimcoven",
-    "edition": "",
+    "edition": "Special Edition",
     "category": "Övrigt",
     "accent": "#ad1f23",
     "tint": "#f6e4e5",
@@ -1968,7 +1968,7 @@
   {
     "id": "long-dark-sea",
     "title": "Long Dark Sea",
-    "edition": "",
+    "edition": "Limited Edition",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -2047,7 +2047,7 @@
   {
     "id": "excalibur",
     "title": "Excalibur",
-    "edition": "",
+    "edition": "Collector's Edition",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -2119,7 +2119,7 @@
   {
     "id": "lands-of-evershade",
     "title": "Lands of Evershade",
-    "edition": "",
+    "edition": "Special Edition",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -2619,7 +2619,7 @@
   {
     "id": "azul-mini",
     "title": "Azul Mini",
-    "edition": "",
+    "edition": "Mini",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -2917,7 +2917,7 @@
   {
     "id": "goats-and-goblins",
     "title": "Goats and Goblins",
-    "edition": "",
+    "edition": "Kickstarter Edition",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -2989,7 +2989,7 @@
   {
     "id": "inis",
     "title": "Inis",
-    "edition": "Big Box",
+    "edition": "Big Box, Kickstarter Edition",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -3044,6 +3044,24 @@
         "title": "Spelplan med målade figurer",
         "alt": "Målade klanfigurer och byggnader på sammanhängande territoriebrickor på ett blått bord."
       }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/inis/inis-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/inis/inis-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/inis/inis-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/inis/inis-thumb.png",
+        "width": 1122
+      }
     ]
   },
   {
@@ -3097,6 +3115,24 @@
         "src": "/images/games/spirit-island/gallery/spiritIsland-4.png",
         "title": "Öbräden och spelmaterial",
         "alt": "Öbräden med andebrädor, motståndarbrädor och ett scenariokort på ett träbord."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/spirit-island/spiritIsland-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/spirit-island/spiritIsland-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/spirit-island/spiritIsland-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/spirit-island/spiritIsland-thumb.png",
+        "width": 1122
       }
     ]
   },
@@ -3230,12 +3266,30 @@
         "title": "Brickor på spelplanen",
         "alt": "Gröna, lila, rosa och gula symbolbrickor ligger i rad på kartan, med svarta tärningar ovanför."
       }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/an-infamous-traffic-second-edition/traffic-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/an-infamous-traffic-second-edition/traffic-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/an-infamous-traffic-second-edition/traffic-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/an-infamous-traffic-second-edition/traffic-thumb.png",
+        "width": 1122
+      }
     ]
   },
   {
     "id": "shug",
     "title": "SHUG",
-    "edition": "Unnecessarily Nice Box",
+    "edition": "Unnecessarily Nice Box, Kickstarter Edition",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -3290,12 +3344,30 @@
         "title": "Sex spelpjäser och fantasikort",
         "alt": "Sex färgade träpjäser med olika fantasigestalter ovanför en solfjäder av illustrerade kort."
       }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/shug/shug-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/shug/shug-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/shug/shug-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/shug/shug-thumb.png",
+        "width": 1122
+      }
     ]
   },
   {
     "id": "battlesticks",
     "title": "Battlesticks",
-    "edition": "",
+    "edition": "Kickstarter Edition",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -3343,6 +3415,24 @@
         "src": "/images/games/battlesticks/gallery/battlesticks-4.png",
         "title": "Illustrationer och kortdetaljer",
         "alt": "En hjärtformad pinne, en lysande grön stav och färgglada kort med pinnar och förstärkningar i skogsmiljö."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/battlesticks/battlesticks-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/battlesticks/battlesticks-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/battlesticks/battlesticks-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/battlesticks/battlesticks-thumb.png",
+        "width": 1122
       }
     ]
   },
@@ -3450,12 +3540,30 @@
         "title": "Karaktär: VTuber",
         "alt": "En mörkhårig karaktär i svart, vitt och gult med en stor randig svans, tillsammans med figurställ, karaktärsask och spelarbräde med förmågor."
       }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/re-match-marble-puzzle-fighter/reMatch-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/re-match-marble-puzzle-fighter/reMatch-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/re-match-marble-puzzle-fighter/reMatch-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/re-match-marble-puzzle-fighter/reMatch-thumb.png",
+        "width": 1122
+      }
     ]
   },
   {
     "id": "roma-xli",
     "title": "Roma XLI",
-    "edition": "",
+    "edition": "Kickstarter Edition",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -3529,6 +3637,24 @@
         "title": "Figurer på spelplanen",
         "alt": "Färgade karaktärsfigurer på spelplanens mosaikkarta med kort och ett gyllene tempel i bakgrunden."
       }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/roma-xli/romaXLI-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/roma-xli/romaXLI-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/roma-xli/romaXLI-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/roma-xli/romaXLI-thumb.png",
+        "width": 872
+      }
     ]
   },
   {
@@ -3587,6 +3713,24 @@
         "src": "/images/games/52-duels-fight-with-playing-cards/gallery/52Duels-5.png",
         "title": "Spelöversikt: försvar och skada",
         "alt": "Ett karaktärsblad, en korthög och en röd attackmarkering under rubriken Block Damage, med engelskspråkig regeltext."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/52-duels-fight-with-playing-cards/52Duels-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/52-duels-fight-with-playing-cards/52Duels-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/52-duels-fight-with-playing-cards/52Duels-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/52-duels-fight-with-playing-cards/52Duels-thumb.png",
+        "width": 1122
       }
     ]
   },
@@ -3648,6 +3792,24 @@
         "src": "/images/games/grifoni-blades-for-hire/gallery/grifoni-4.png",
         "title": "Organisera vagnen",
         "alt": "Närbild av ett vagnformat spelarbräde med gröna brickor, resursmarkörer och illustrationer av vapen och utrustning."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/grifoni-blades-for-hire/grifoni-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/grifoni-blades-for-hire/grifoni-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/grifoni-blades-for-hire/grifoni-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/grifoni-blades-for-hire/grifoni-thumb.png",
+        "width": 1122
       }
     ]
   },
@@ -3723,6 +3885,24 @@
         "title": "Resurskort, tärningar och träpjäser",
         "alt": "Resurskort med blommotiv, röda handlingskort, två genomskinliga tärningar och sex djurformade träpjäser."
       }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/bio-blitz/bioBlitz-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/bio-blitz/bioBlitz-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/bio-blitz/bioBlitz-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/bio-blitz/bioBlitz-thumb.png",
+        "width": 1122
+      }
     ]
   },
   {
@@ -3777,12 +3957,30 @@
         "title": "Expeditionsbladet",
         "alt": "Ett expeditionsblad indelat i panelerna Exertion, Camp och Dig Site med engelskspråkig förklarande text på pergamentfärgad bakgrund."
       }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/high-adventure-treasure-hunt/highAdventure-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/high-adventure-treasure-hunt/highAdventure-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/high-adventure-treasure-hunt/highAdventure-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/high-adventure-treasure-hunt/highAdventure-thumb.png",
+        "width": 1122
+      }
     ]
   },
   {
     "id": "rolling-seas",
     "title": "Rolling Seas",
-    "edition": "",
+    "edition": "Kickstarter Edition",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -3857,6 +4055,24 @@
         "title": "Vindar och utforskning",
         "alt": "Kompasser och tärningar ovanför en karta och en utforskningslogg, med engelskspråkiga förklaringar."
       }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/rolling-seas/rollingSeas-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/rolling-seas/rollingSeas-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/rolling-seas/rollingSeas-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/rolling-seas/rollingSeas-thumb.png",
+        "width": 1122
+      }
     ]
   },
   {
@@ -3885,7 +4101,51 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/rise-of-the-oak-dell/oakDell-thumb.png",
+    "coverAlt": "Rise of the Oak Dell-logotypen ovanför en person i rödvit dräkt som blickar ut över en kuststad med murar, torn och en pyramid, inramad av eksiluetter.",
+    "hero": "/images/games/rise-of-the-oak-dell/oakDell-banner.png",
+    "heroAlt": "Rise of the Oak Dell-logotypen till vänster om en person som blickar ut över en ljus kuststad med torn, broar, statyer och en pyramid.",
+    "gallery": [
+      {
+        "src": "/images/games/rise-of-the-oak-dell/gallery/oakDell-1.png",
+        "title": "Presentation av spelmaterialet",
+        "alt": "Rise of the Oak Dell med kartblad, civilisationsblad, penna, svart tärning och illustrerat omslag med märkningen Print & Play."
+      },
+      {
+        "src": "/images/games/rise-of-the-oak-dell/gallery/oakDell-2.png",
+        "title": "Spelöversikt: tärning och rundor",
+        "alt": "Kartblad och en svart tärning med röda pilar och engelskspråkiga pratbubblor som visar segmenträkning, hot och rundnummer."
+      },
+      {
+        "src": "/images/games/rise-of-the-oak-dell/gallery/oakDell-3.png",
+        "title": "Vägar, resurser och utveckling",
+        "alt": "Ett kartblad med en röd inritad väg och ett civilisationsblad med resursspår och teknologier, tillsammans med engelskspråkiga förklaringar."
+      },
+      {
+        "src": "/images/games/rise-of-the-oak-dell/gallery/oakDell-4.png",
+        "title": "Översikt av Rise of the Oak Dell",
+        "alt": "Illustrerat omslag, kartblad, civilisationsblad, penna och tärning under en engelskspråkig presentation av spelet."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/rise-of-the-oak-dell/oakDell-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/rise-of-the-oak-dell/oakDell-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/rise-of-the-oak-dell/oakDell-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/rise-of-the-oak-dell/oakDell-thumb.png",
+        "width": 1122
+      }
+    ]
   },
   {
     "id": "avalon-the-riven-veil",
@@ -3918,6 +4178,95 @@
       "Mistwalkers Expansion",
       "Vernax: The Black Dragon",
       "Stretch Goal Upgrades"
+    ],
+    "cover": "/images/games/avalon-the-riven-veil/avalon-thumb.png",
+    "coverAlt": "Avalon: The Riven Veil-omslag med ett lysande svärd i en klippa, riddare och baner bland blåvita dimmor och vågor.",
+    "hero": "/images/games/avalon-the-riven-veil/avalon-banner.png",
+    "heroAlt": "Avalon: The Riven Veil-logotypen ovanför riddare till häst, ett lysande svärd och en trollkarl med stav framför ett dimhöljt slott.",
+    "gallery": [
+      {
+        "src": "/images/games/avalon-the-riven-veil/gallery/avalon-1.png",
+        "title": "Spelet uppdukat",
+        "alt": "En rund spelplan med färgade miniatyrer omgiven av spelarbräden, kortlekar, korthållare och stora varelseminiatyrer."
+      },
+      {
+        "src": "/images/games/avalon-the-riven-veil/gallery/avalon-2.png",
+        "title": "Guinevere och riddarna",
+        "alt": "Två ljusa miniatyrer med guldfärgade detaljer: en svärdsbärande gestalt och en bepansrad ryttare med ett stort baner."
+      },
+      {
+        "src": "/images/games/avalon-the-riven-veil/gallery/avalon-3.png",
+        "title": "Knights of the Round",
+        "alt": "Ljusa riddar- och soldatminiatyrer framför fraktionsbrädet Knights of the Round och en illustrerad kortskärm."
+      },
+      {
+        "src": "/images/games/avalon-the-riven-veil/gallery/avalon-4.png",
+        "title": "Spelöversikt: dimfasen",
+        "alt": "En dimtäckt rund spelplan med nedvända kort under rubriken The Mist Phase och engelskspråkig förklarande text."
+      },
+      {
+        "src": "/images/games/avalon-the-riven-veil/gallery/avalon-5.png",
+        "title": "Förberedelser: välj kort",
+        "alt": "Fyra grupper av nedvända blå kort på ett stenliknande underlag under rubrikerna The Preparation Phase och Choose Your Cards."
+      },
+      {
+        "src": "/images/games/avalon-the-riven-veil/gallery/avalon-6.png",
+        "title": "Spela och avgör kort",
+        "alt": "Fyra uppvända kort i blått, gult och grönt med initiativvärden under rubriken Resolve Cards och engelskspråkig förklarande text."
+      },
+      {
+        "src": "/images/games/avalon-the-riven-veil/gallery/avalon-7.png",
+        "title": "Utforska dimman",
+        "alt": "Gröna miniatyrer och ett artefaktkort med en yxa på den runda spelplanen under rubriken Explore the Mists."
+      },
+      {
+        "src": "/images/games/avalon-the-riven-veil/gallery/avalon-8.png",
+        "title": "Alliera dig med mytiska varelser",
+        "alt": "En stor grå drakminiatyr och mörka och blå fantasivarelser på spelplanen under rubriken Bond Mythical Beasts."
+      },
+      {
+        "src": "/images/games/avalon-the-riven-veil/gallery/avalon-9.png",
+        "title": "Uppgradera din ledare",
+        "alt": "Närbild av det blå fraktionsbrädet The Undead med Mordred Ascendant under rubriken Upgrade Your Lord."
+      },
+      {
+        "src": "/images/games/avalon-the-riven-veil/gallery/avalon-10.png",
+        "title": "Excalibur och gunst",
+        "alt": "Ett upprätt Excalibur-kort framför kortlekar och ett numrerat spår med färgade markörer under rubriken Gain The Lady’s Favor."
+      },
+      {
+        "src": "/images/games/avalon-the-riven-veil/gallery/avalon-11.png",
+        "title": "Dra kort",
+        "alt": "Fyra kortlekar med gröna, gula, blå och röda symboler och varsitt uppvänt illustrerat kort under rubriken Draw Cards."
+      },
+      {
+        "src": "/images/games/avalon-the-riven-veil/gallery/avalon-12.png",
+        "title": "Spelöversikt: krigsfasen",
+        "alt": "Tre röda stridskort ovanför miniatyrer på spelplanen under rubrikerna War Phase och Heroes Play Battle Plan Cards."
+      },
+      {
+        "src": "/images/games/avalon-the-riven-veil/gallery/avalon-13.png",
+        "title": "Stridsplaner och hjältar",
+        "alt": "Röda kort med stridsplaner bakom färgade hjälte- och varelseminiatyrer, med engelskspråkig text om krigsfasen."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/avalon-the-riven-veil/avalon-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/avalon-the-riven-veil/avalon-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/avalon-the-riven-veil/avalon-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/avalon-the-riven-veil/avalon-thumb.png",
+        "width": 1122
+      }
     ]
   },
   {
@@ -3947,7 +4296,61 @@
       "preliminary": true,
       "editionMatch": "not-independently-verified"
     },
-    "expansions": ["Pistachio", "Stretch Goal Upgrades"]
+    "expansions": ["Pistachio", "Stretch Goal Upgrades"],
+    "cover": "/images/games/decko-pistachio/decko-thumb.png",
+    "coverAlt": "DECKO Pistachio-logotypen ovanför vita handskar som håller en svart kortlek, omgivna av spelmarker, färgade strålar och orange lågor.",
+    "hero": "/images/games/decko-pistachio/decko-banner.png",
+    "heroAlt": "DECKO Pistachio-logotypen till vänster om vita handskar med en kortlek, röda och svarta spelmarker samt blå och gröna strålar på svart bakgrund.",
+    "gallery": [
+      {
+        "src": "/images/games/decko-pistachio/gallery/decko-1.png",
+        "title": "Presentation av DECKO",
+        "alt": "En hand med färgglada spelkort under rubriken What Is Decko? och en engelskspråkig introduktion."
+      },
+      {
+        "src": "/images/games/decko-pistachio/gallery/decko-2.png",
+        "title": "Bygg din kortlek",
+        "alt": "Kort ligger på en turkos spelmatta intill svarta marker under rubriken Deckbuilding, med engelskspråkig förklarande text."
+      },
+      {
+        "src": "/images/games/decko-pistachio/gallery/decko-3.png",
+        "title": "Ta bort kort",
+        "alt": "Spelkort på ett orange fält med flammotiv och en rutig korthög under rubriken Card Burning."
+      },
+      {
+        "src": "/images/games/decko-pistachio/gallery/decko-4.png",
+        "title": "Jokrar",
+        "alt": "Illustrerade jokerkort på en turkos spelmatta under rubriken Jokers, med engelskspråkig text om kortens funktioner."
+      },
+      {
+        "src": "/images/games/decko-pistachio/gallery/decko-5.png",
+        "title": "Specialrundor",
+        "alt": "Röda och blå specialkort samt spelmarker på ett vinrött bord under rubriken Wildcards."
+      },
+      {
+        "src": "/images/games/decko-pistachio/gallery/decko-6.png",
+        "title": "Kort och spelmarker",
+        "alt": "Jokerkort, rutiga kortbaksidor och röda och svarta spelmarker på ett vinrött bord, med ett engelskspråkigt omdöme i en textruta."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/decko-pistachio/decko-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/decko-pistachio/decko-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/decko-pistachio/decko-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/decko-pistachio/decko-thumb.png",
+        "width": 1122
+      }
+    ]
   },
   {
     "id": "nemesis-retaliation",
@@ -4053,6 +4456,50 @@
       "City of Violence",
       "Gangland Empire",
       "Stretch Goal Upgrades"
+    ],
+    "cover": "/images/games/gang-wars/gangWars-thumb.png",
+    "coverAlt": "Scarface 1920: Gang Wars-omslag med illustrerade gangstrar, skyskrapor, äldre bilar och en explosion i en blågrön stadsmiljö.",
+    "hero": "/images/games/gang-wars/gangWars-banner.png",
+    "heroAlt": "Gang Wars-logotypen till vänster om äldre bilar och beväpnade gangstrar på en regnvåt gata med varmt upplysta byggnader.",
+    "gallery": [
+      {
+        "src": "/images/games/gang-wars/gallery/gangWars-1.png",
+        "title": "Översikt av spelmaterialet",
+        "alt": "Gang Wars-logotypen ovanför spelaskar, Chicagokarta, spelarbräden, kort, miniatyrer och markörer, med engelskspråkig presentationstext."
+      },
+      {
+        "src": "/images/games/gang-wars/gallery/gangWars-2.png",
+        "title": "Fraktioner och områdeskontroll",
+        "alt": "Illustrerade gangstrar, en grå beväpnad miniatyr och kort under engelskspråkiga rubriker om områdeskontroll, asymmetriska fraktioner och spelarinteraktion."
+      },
+      {
+        "src": "/images/games/gang-wars/gallery/gangWars-3.png",
+        "title": "Karaktärer och miljöer",
+        "alt": "En illustrerad gangster bär en whiskylåda intill ett tidningskort och ett platskort med Sunset Jazz Club."
+      },
+      {
+        "src": "/images/games/gang-wars/gallery/gangWars-4.png",
+        "title": "Gang Wars och Scarface 1920",
+        "alt": "Spelaskarna för Scarface 1920 och Gang Wars sida vid sida i en engelskspråkig jämförelse, med en illustrerad bil och beväpnade gangstrar nedtill."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/gang-wars/gangWars-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/gang-wars/gangWars-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/gang-wars/gangWars-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/gang-wars/gangWars-thumb.png",
+        "width": 1122
+      }
     ]
   },
   {
@@ -4081,7 +4528,66 @@
       "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "cover": "/images/games/davos/davos-thumb.png",
+    "coverAlt": "Davos-logotypen framför en blå och gyllene jordglob, med en talare och en publik av kostymklädda personer.",
+    "hero": "/images/games/davos/davos-banner.png",
+    "heroAlt": "Davos-logotypen till vänster om en talare, en applåderande publik och en blå och gyllene jordglob med en stor prislapp.",
+    "gallery": [
+      {
+        "src": "/images/games/davos/gallery/davos-1.png",
+        "title": "Big Media: Comacomb",
+        "alt": "Ett blått Big Media-kort med ett ansikte, lysande ögon, namnet Comacomb och texten Timeless distraction framför ett collage av andra spelkort."
+      },
+      {
+        "src": "/images/games/davos/gallery/davos-2.png",
+        "title": "Big Arms: Lurk & Merk",
+        "alt": "Ett rött Big Arms-kort med en ubåt, namnet Lurk & Merk och texten Before you knew it framför andra spelkort."
+      },
+      {
+        "src": "/images/games/davos/gallery/davos-3.png",
+        "title": "Big Tech: Gigabro",
+        "alt": "Ett ljusblått Big Tech-kort med en stor kameralins, namnet Gigabro och texten We see you."
+      },
+      {
+        "src": "/images/games/davos/gallery/davos-4.png",
+        "title": "Big Energy: Exhaust",
+        "alt": "Ett grönt Big Energy-kort med en lastbil i rök, namnet Exhaust och texten Just let it out."
+      },
+      {
+        "src": "/images/games/davos/gallery/davos-5.png",
+        "title": "Markörer och kort i spel",
+        "alt": "Händer flyttar färgade runda markörer på kort och vita halvcirkelformade spelbrickor på en mörk spelplan."
+      },
+      {
+        "src": "/images/games/davos/gallery/davos-6.png",
+        "title": "Spelare runt bordet",
+        "alt": "Spelare skakar hand över ett uppdukat Davos med kort, färgade markörer och spelasken i bakgrunden."
+      },
+      {
+        "src": "/images/games/davos/gallery/davos-7.png",
+        "title": "Översikt av spelplanen",
+        "alt": "En mörk Davos-spelplan med rader av färgade företagskort, runda markörer, vita spelbrickor och kort runt kanterna."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/davos/davos-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/davos/davos-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/davos/davos-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/davos/davos-thumb.png",
+        "width": 1122
+      }
+    ]
   },
   {
     "id": "hitman-the-board-game",
@@ -4110,7 +4616,96 @@
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     },
-    "expansions": ["Stretch Goal Upgrades"]
+    "expansions": ["Stretch Goal Upgrades"],
+    "cover": "/images/games/hitman-the-board-game/hitMan-thumb.png",
+    "coverAlt": "Hitman: The Board Game-omslag med Agent 47 och tre andra beväpnade agenter framför kustvillor, ett palats och en japansk trädgård.",
+    "hero": "/images/games/hitman-the-board-game/hitMan-banner.png",
+    "heroAlt": "Hitman: The Board Game-logotypen till vänster om Agent 47 och tre andra agenter i ett collage med kustvilla, palats, japansk bro och tropisk strand.",
+    "gallery": [
+      {
+        "src": "/images/games/hitman-the-board-game/gallery/hitMan-1.png",
+        "title": "Spelöversikt: händelsekort",
+        "alt": "Fyra färgade händelsekort framför spelplanen under rubriken Core Loop och engelskspråkig text om att dra ett händelsekort."
+      },
+      {
+        "src": "/images/games/hitman-the-board-game/gallery/hitMan-2.png",
+        "title": "Spelöversikt: handlingar",
+        "alt": "Stående agent- och vaktfigurer på kartan med pilar och engelskspråkiga etiketter för bland annat förflyttning, förklädnad och distraktion."
+      },
+      {
+        "src": "/images/games/hitman-the-board-game/gallery/hitMan-3.png",
+        "title": "Agentkort",
+        "alt": "En röd agentkortlek och korten Lend a Hand och Chloroform med engelskspråkig förklarande text."
+      },
+      {
+        "src": "/images/games/hitman-the-board-game/gallery/hitMan-4.png",
+        "title": "Turens slut och segervillkor",
+        "alt": "Stående agentfigurer och en liggande målfigur under rubrikerna End of Turn och Win Conditions."
+      },
+      {
+        "src": "/images/games/hitman-the-board-game/gallery/hitMan-5.png",
+        "title": "Förklädnader och basringar",
+        "alt": "Figurer med färgade basringar på spelplanen under rubriken Taking Disguise och engelskspråkig text om tillträde."
+      },
+      {
+        "src": "/images/games/hitman-the-board-game/gallery/hitMan-6.png",
+        "title": "Förklädnader på spelplanen",
+        "alt": "Närbild av stående figurer och en liggande figur på kartan, med färgade basringar och engelskspråkig förklaring av förklädnader."
+      },
+      {
+        "src": "/images/games/hitman-the-board-game/gallery/hitMan-7.png",
+        "title": "Översikt av spelmaterialet",
+        "alt": "Spelask, kartbräde, rumsbrickor, kort, stående figurer, markörer och spelarblad med en engelskspråkig innehållslista."
+      },
+      {
+        "src": "/images/games/hitman-the-board-game/gallery/hitMan-8.png",
+        "title": "Agenter och Agent 47",
+        "alt": "Fyra illustrerade agenter ovanför Agent 47:s stående figur, vita kuber och svarta spelarblad."
+      },
+      {
+        "src": "/images/games/hitman-the-board-game/gallery/hitMan-9.png",
+        "title": "Stone och Knight",
+        "alt": "Spelarblad, stående figurer och kuber för Stone i grönt och Knight i rosa."
+      },
+      {
+        "src": "/images/games/hitman-the-board-game/gallery/hitMan-10.png",
+        "title": "Dalia Margolis",
+        "alt": "Dalia Margolis illustrerade porträtt, händelsekort, stående figur, tre rumsbrickor och uppdragsblad."
+      },
+      {
+        "src": "/images/games/hitman-the-board-game/gallery/hitMan-11.png",
+        "title": "Viktor Novikov",
+        "alt": "Viktor Novikovs illustrerade porträtt, händelsekort, stående figur, tre rumsbrickor och uppdragsblad."
+      },
+      {
+        "src": "/images/games/hitman-the-board-game/gallery/hitMan-12.png",
+        "title": "Plats: Paris",
+        "alt": "Ett upplyst palats i skymningen ovanför Paris-kartans färgade rum, med engelskspråkig platspresentation."
+      },
+      {
+        "src": "/images/games/hitman-the-board-game/gallery/hitMan-13.png",
+        "title": "Plats: Sapienza",
+        "alt": "En kustvilla med terrakottatak ovanför Sapienza-kartans rum, trädgårdar och gångvägar, med engelskspråkig platspresentation."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/hitman-the-board-game/hitMan-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/hitman-the-board-game/hitMan-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/hitman-the-board-game/hitMan-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/hitman-the-board-game/hitMan-thumb.png",
+        "width": 1122
+      }
+    ]
   },
   {
     "id": "brass-pittsburgh",
@@ -4139,7 +4734,44 @@
       "preliminary": true,
       "editionMatch": "not-independently-verified"
     },
-    "expansions": ["Stretch Goal Upgrades"]
+    "expansions": ["Stretch Goal Upgrades"],
+    "cover": "/images/games/brass-pittsburgh/brassPittsburgh-thumb.png",
+    "coverAlt": "Brass: Pittsburgh-logotypen framför ett ånglok på en stenbro över en flod i en rökig industristad med gyllene ljus.",
+    "hero": "/images/games/brass-pittsburgh/brassPittsburgh-banner.png",
+    "heroAlt": "Brass: Pittsburgh-logotypen till vänster om ett stålverk med arbetare och glödande metall, med ånglok och fabriker i bakgrunden.",
+    "gallery": [
+      {
+        "src": "/images/games/brass-pittsburgh/gallery/brassPittsburgh-1.png",
+        "title": "Spelplanen",
+        "alt": "Brass: Pittsburgh-spelplanen med städer, järnvägar, industribrickor, resurskuber, mynt och färgade spelarmarkörer."
+      },
+      {
+        "src": "/images/games/brass-pittsburgh/gallery/brassPittsburgh-2.png",
+        "title": "Industristaden Pittsburgh",
+        "alt": "Arbetare vid glödande metall i ett stålverk under rubriken Brass Pittsburgh 1865–1913 och engelskspråkig presentationstext."
+      },
+      {
+        "src": "/images/games/brass-pittsburgh/gallery/brassPittsburgh-3.png",
+        "title": "Marknader, olja och industrier",
+        "alt": "Tre närbilder av spelplanen med marknadsplatser, resurskuber, oljeledningar och industribrickor, med engelskspråkiga förklaringar."
+      },
+      {
+        "src": "/images/games/brass-pittsburgh/gallery/brassPittsburgh-1.png",
+        "videoSrc": "/images/games/brass-pittsburgh/gallery/brass-pittsburgh-prototype.webm",
+        "title": "Prototyp – video",
+        "alt": "Video av prototypen till Brass: Pittsburgh."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/brass-pittsburgh/brassPittsburgh-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/brass-pittsburgh/brassPittsburgh-thumb.png",
+        "width": 1254
+      }
+    ]
   },
   {
     "id": "the-old-king-s-crown",
@@ -4168,7 +4800,56 @@
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     },
-    "expansions": ["Songs of Home"]
+    "expansions": ["Songs of Home"],
+    "cover": "/images/games/the-old-king-s-crown/kingsCrown-thumb.png",
+    "coverAlt": "The Old King’s Crown-logotypen i guld ovanför en färgglad fantasistad med gyllene kupoler, stenstatyer, vattenfall och ett luftskepp.",
+    "hero": "/images/games/the-old-king-s-crown/kingsCrown-banner.png",
+    "heroAlt": "The Old King’s Crown-logotypen till vänster om ett gyllene palats, broar och vattenfall, med en mantlad gestalt på en klippa till höger.",
+    "gallery": [
+      {
+        "src": "/images/games/the-old-king-s-crown/gallery/kingsCrown-1.png",
+        "title": "Spelplanen",
+        "alt": "En illustrerad spelplan med sex landskapsområden, färgade träfigurer, markörer och kort med blå, röda, turkosa och lila baksidor."
+      },
+      {
+        "src": "/images/games/the-old-king-s-crown/gallery/kingsCrown-2.png",
+        "title": "Fraktionernas kort",
+        "alt": "Fyra illustrerade kort i blått, rött, turkost och lila ligger på spelplanen vid områdena Castle och Wilderness."
+      },
+      {
+        "src": "/images/games/the-old-king-s-crown/gallery/kingsCrown-3.png",
+        "title": "Råd och kort",
+        "alt": "Det turkosa kortet Gall intill spelplanens guldkantade fält Council of Secrets och Council of Oaths."
+      },
+      {
+        "src": "/images/games/the-old-king-s-crown/gallery/kingsCrown-4.png",
+        "title": "Adelns spelarbräde",
+        "alt": "Ett blått spelarbräde märkt Nobility med tornformade träpjäser, kort, kronmarkörer och kortet White Watchtowers."
+      },
+      {
+        "src": "/images/games/the-old-king-s-crown/gallery/kingsCrown-5.png",
+        "title": "Turkosa kort och markörer",
+        "alt": "Illustrerade turkosa kort med bland annat The Storyteller, Raid & Raze och Riders of the North Sky, intill trekantiga markörer."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/the-old-king-s-crown/kingsCrown-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/the-old-king-s-crown/kingsCrown-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/the-old-king-s-crown/kingsCrown-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/the-old-king-s-crown/kingsCrown-thumb.png",
+        "width": 1086
+      }
+    ]
   },
   {
     "id": "b-e-l-o-w-the-asylum",
@@ -4202,6 +4883,105 @@
       "Hero Pack",
       "Ferratic Entity",
       "SS Waratah"
+    ],
+    "cover": "/images/games/b-e-l-o-w-the-asylum/below-thumb.png",
+    "coverAlt": "The Asylum-logotypen ovanför en kvinna med en lysande bok, en beväpnad agent och spöklika katter i en röd korridor med porträtt.",
+    "hero": "/images/games/b-e-l-o-w-the-asylum/below-banner.png",
+    "heroAlt": "B.E.L.O.W. The Asylum-logotypen till vänster om en kvinna med en lysande bok och spöklika katter framför en röd, dimhöljd järnport.",
+    "gallery": [
+      {
+        "src": "/images/games/b-e-l-o-w-the-asylum/gallery/below-1.png",
+        "title": "Skräckvarelser i miniatyr",
+        "alt": "Mörka varelseminiatyrer med taggar och förvridna kroppar framför en röd bakgrund."
+      },
+      {
+        "src": "/images/games/b-e-l-o-w-the-asylum/gallery/below-2.png",
+        "title": "Ritualen på spelplanen",
+        "alt": "En röd miniatyr på ett runt ritualbräde omgivet av genomskinliga röda och blå kuber."
+      },
+      {
+        "src": "/images/games/b-e-l-o-w-the-asylum/gallery/below-3.png",
+        "title": "Blades karaktärsbräde",
+        "alt": "Karaktärskortet Blade med Kazuo Nakamura intill spår för Potential och Stamina samt röda kuber och vita markörer."
+      },
+      {
+        "src": "/images/games/b-e-l-o-w-the-asylum/gallery/below-4.png",
+        "title": "Agent och Monarch",
+        "alt": "En målad svärdsbärande agentminiatyr, ett förmågekort och en stor mörk varelseminiatyr mot röd bakgrund."
+      },
+      {
+        "src": "/images/games/b-e-l-o-w-the-asylum/gallery/below-5.png",
+        "title": "Översikt av The Asylum",
+        "alt": "Spelask, rumsbrickor, ritualbräden, karaktärsbräden, kort och miniatyrer uppställda på vit bakgrund."
+      },
+      {
+        "src": "/images/games/b-e-l-o-w-the-asylum/gallery/below-6.png",
+        "title": "SS Waratah",
+        "alt": "En grön SS Waratah-ask med skeppsformad spelplan, karaktärsbräden och miniatyrer, inklusive en stor glödande maskinvarelse."
+      },
+      {
+        "src": "/images/games/b-e-l-o-w-the-asylum/gallery/below-7.png",
+        "title": "Expeditionsgenomgång",
+        "alt": "Illustration av tre agenter vid ett bord med hemligstämplade dokument, böcker och en revolver under en engelskspråkig expeditionsgenomgång."
+      },
+      {
+        "src": "/images/games/b-e-l-o-w-the-asylum/gallery/below-8.png",
+        "title": "Karaktärsbrädets delar",
+        "alt": "Illustrerad översikt av karaktärskort, handlingsspår, Shimmer-spår och föremålsplatser på Blades karaktärsbräde."
+      },
+      {
+        "src": "/images/games/b-e-l-o-w-the-asylum/gallery/below-9.png",
+        "title": "B.E.L.O.W.: aktiva agenter",
+        "alt": "En mörk presentationssida med B.E.L.O.W.-emblem, agentsiluetter och engelskspråkig text om de aktiva agenterna."
+      },
+      {
+        "src": "/images/games/b-e-l-o-w-the-asylum/gallery/below-10.png",
+        "title": "Agent: Conductor",
+        "alt": "Oliver Chambers som Conductor med blå kattandar, karaktärsbräde och miniatyr samt engelskspråkig bakgrundstext."
+      },
+      {
+        "src": "/images/games/b-e-l-o-w-the-asylum/gallery/below-11.png",
+        "title": "Agent: Blade",
+        "alt": "Kazuo Nakamura som Blade med svärd, karaktärsbräde och miniatyr samt engelskspråkig bakgrundstext."
+      },
+      {
+        "src": "/images/games/b-e-l-o-w-the-asylum/gallery/below-12.png",
+        "title": "Agent: Archivist",
+        "alt": "Penelope Rallis som Archivist med en bok och en lysande magisk symbol, tillsammans med karaktärsbräde och miniatyr."
+      },
+      {
+        "src": "/images/games/b-e-l-o-w-the-asylum/gallery/below-13.png",
+        "title": "Agent: Bloodshot",
+        "alt": "Andrew Elsworth som Bloodshot med revolver och käpp, tillsammans med karaktärsbräde och miniatyr."
+      },
+      {
+        "src": "/images/games/b-e-l-o-w-the-asylum/gallery/below-14.png",
+        "title": "Agent: Calamity",
+        "alt": "Kiona Ledet som Calamity med en orm och en röd docka, tillsammans med karaktärsbräde och miniatyr."
+      },
+      {
+        "src": "/images/games/b-e-l-o-w-the-asylum/gallery/below-15.png",
+        "title": "Destination: den övergivna anstalten",
+        "alt": "En mörk korridor med agenter och en skräckvarelse under rubriken Destination: Abandoned Asylum och engelskspråkig uppdragstext."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/b-e-l-o-w-the-asylum/below-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/b-e-l-o-w-the-asylum/below-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/b-e-l-o-w-the-asylum/below-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/b-e-l-o-w-the-asylum/below-thumb.png",
+        "width": 1122
+      }
     ]
   },
   {
@@ -4236,12 +5016,71 @@
       "Sherlock Holmes – High Tension",
       "Darkness of Dracula",
       "Stretch Goal Upgrades"
+    ],
+    "cover": "/images/games/detectives-vs-criminals/detective-thumb.png",
+    "coverAlt": "Detectives vs Criminals-logotypen i ett collage med detektiv, ånglok i snöiga berg, en person på ett hustak och poliser i en hästdragen vagn.",
+    "hero": "/images/games/detectives-vs-criminals/detective-banner.png",
+    "heroAlt": "Detectives vs Criminals-logotypen till vänster om en springande detektiv med förstoringsglas på en regnig Londongata, med en flyende person på hustaken.",
+    "gallery": [
+      {
+        "src": "/images/games/detectives-vs-criminals/gallery/detective-1.png",
+        "title": "Spelet uppdukat",
+        "alt": "En Europakarta med stående figurer, färgade markörer, kort, spelarskärmar och anteckningsblad runt spelplanen."
+      },
+      {
+        "src": "/images/games/detectives-vs-criminals/gallery/detective-2.png",
+        "title": "Välj sida och karaktärer",
+        "alt": "Fyra illustrerade karaktärskort under engelskspråkiga rubriker om jakter, stölder, undersökningar och karaktärsval."
+      },
+      {
+        "src": "/images/games/detectives-vs-criminals/gallery/detective-3.png",
+        "title": "Brottslingarnas sida",
+        "alt": "Stående figurer på kartan och skattbrickor med guldtackor, krona, armband, diamant och svärd under engelskspråkig presentationstext."
+      },
+      {
+        "src": "/images/games/detectives-vs-criminals/gallery/detective-4.png",
+        "title": "Detektivernas sida",
+        "alt": "En polisfigur och en detektivfigur på kartan över Storbritannien, med gula frågeteckenmarkörer och engelskspråkig text."
+      },
+      {
+        "src": "/images/games/detectives-vs-criminals/gallery/detective-5.png",
+        "title": "Zack Clifford och Naira Nandez",
+        "alt": "Karaktärskort och stående figurer för Zack Clifford och Naira Nandez med engelskspråkiga karaktärspresentationer."
+      },
+      {
+        "src": "/images/games/detectives-vs-criminals/gallery/detective-6.png",
+        "title": "Zoltan Kovacs och Sofia Ioannidis",
+        "alt": "Karaktärskort och stående figurer för Zoltan Kovacs och Sofia Ioannidis med engelskspråkiga karaktärspresentationer."
+      },
+      {
+        "src": "/images/games/detectives-vs-criminals/gallery/detective-7.png",
+        "title": "Dimitriy Ivanov och Eva Nilsson",
+        "alt": "Karaktärskort och stående figurer för Dimitriy Ivanov och Eva Nilsson, presenterade med märkningen Follower Gift."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/detectives-vs-criminals/detective-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/detectives-vs-criminals/detective-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/detectives-vs-criminals/detective-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/detectives-vs-criminals/detective-thumb.png",
+        "width": 1122
+      }
     ]
   },
   {
     "id": "the-wandmaker-s-apprentice",
     "title": "The Wandmaker's Apprentice",
-    "edition": "",
+    "edition": "Ultimate Edition",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -4270,6 +5109,70 @@
       "Mage Pack",
       "Archaist Pack",
       "Stretch Goal Upgrades"
+    ],
+    "cover": "/images/games/the-wandmaker-s-apprentice/wandmaker-thumb.png",
+    "coverAlt": "The Wandmaker’s Apprentice-omslag med spegelvända porträtt av en äldre stavmakare och en ung lärling, omgivna av guldmönster, moln och trollstavar.",
+    "hero": "/images/games/the-wandmaker-s-apprentice/wandmaker-banner.png",
+    "heroAlt": "The Wandmaker’s Apprentice-logotypen i en varm verkstad där en äldre stavmakare visar en lysande trollstav och en lärling handlar i bakgrunden.",
+    "gallery": [
+      {
+        "src": "/images/games/the-wandmaker-s-apprentice/gallery/wandmaker-1.png",
+        "title": "Stavmakaren och lärlingen",
+        "alt": "Illustrerade presentationer av stavmakaren i grönt och lärlingen i lila, med trollstavar, resurser och engelskspråkig text."
+      },
+      {
+        "src": "/images/games/the-wandmaker-s-apprentice/gallery/wandmaker-2.png",
+        "title": "Översikt av spelmaterialet",
+        "alt": "Spelplan, spelarbräden, trollstavar, kort, mynt, figurer, tärningar och resursmarkörer uppställda på vit bakgrund."
+      },
+      {
+        "src": "/images/games/the-wandmaker-s-apprentice/gallery/wandmaker-3.png",
+        "title": "Trollstavarna",
+        "alt": "Fyra dekorerade trollstavar med symboler ligger i avlånga askar med röd, lila, grön och turkos insida."
+      },
+      {
+        "src": "/images/games/the-wandmaker-s-apprentice/gallery/wandmaker-4.png",
+        "title": "Lärlingens spelarområde",
+        "alt": "En stående lärlingsfigur intill kortlek, mynt, lila markörer och trekantiga pjäser på ett lila spelarområde."
+      },
+      {
+        "src": "/images/games/the-wandmaker-s-apprentice/gallery/wandmaker-5.png",
+        "title": "Stavmakaren i verkstaden",
+        "alt": "Stavmakarens stående figur på ett handlingsfält i verkstaden, med kundkort och mynt i närheten."
+      },
+      {
+        "src": "/images/games/the-wandmaker-s-apprentice/gallery/wandmaker-6.png",
+        "title": "Figurer och kunder på spelplanen",
+        "alt": "Stående figurer, kundkort och föremålsmarkörer på en illustrerad spelplan med numrerat spår runt kanten."
+      },
+      {
+        "src": "/images/games/the-wandmaker-s-apprentice/gallery/wandmaker-7.png",
+        "title": "Magiska resurser",
+        "alt": "Närbild av resursmarkörer med trä, flaska, blå ädelsten, lila föremål och ett ben på ett spelarbräde."
+      },
+      {
+        "src": "/images/games/the-wandmaker-s-apprentice/gallery/wandmaker-8.png",
+        "title": "Spelarbräde och stavdelar",
+        "alt": "Ett spelarbräde med färgglad kittel, resurser och kort omges av trollstavsdelar, en figur och små tärningar på ett träbord."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/the-wandmaker-s-apprentice/wandmaker-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/the-wandmaker-s-apprentice/wandmaker-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/the-wandmaker-s-apprentice/wandmaker-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/the-wandmaker-s-apprentice/wandmaker-thumb.png",
+        "width": 1122
+      }
     ]
   },
   {
@@ -4299,7 +5202,71 @@
       "preliminary": true,
       "editionMatch": "not-independently-verified"
     },
-    "expansions": ["Escalation", "Exotic Matter", "Genesis"]
+    "expansions": ["Escalation", "Exotic Matter", "Genesis"],
+    "cover": "/images/games/andromeda-s-edge-genesis-fully-operational/andromeda-thumb.png",
+    "coverAlt": "Andromeda’s Edge Deluxe Edition-logotypen under en gyllene rymdstad framför en mörk sfär, omgiven av lysande gasmoln och rymdskepp.",
+    "hero": "/images/games/andromeda-s-edge-genesis-fully-operational/andromeda-banner.png",
+    "heroAlt": "Andromeda’s Edge-logotypen till vänster om rymdskepp på väg mot en gyllene rymdstad framför en mörk sfär och glödande gasmoln.",
+    "gallery": [
+      {
+        "src": "/images/games/andromeda-s-edge-genesis-fully-operational/gallery/andromeda-1.png",
+        "title": "Presentation av Andromeda’s Edge",
+        "alt": "En engelskspråkig presentation under rubriken Seek the Edge med rymdmotiv, mekaniketiketter och spelinformation."
+      },
+      {
+        "src": "/images/games/andromeda-s-edge-genesis-fully-operational/gallery/andromeda-2.png",
+        "title": "Översikt av Deluxe Edition",
+        "alt": "Deluxe Edition-spelasken ovanför spelplan, spelarbräden, förvaringstråg, rymdskepp, byggnader, kort, tärningar och markörer."
+      },
+      {
+        "src": "/images/games/andromeda-s-edge-genesis-fully-operational/gallery/andromeda-3.png",
+        "title": "Rymdskeppen",
+        "alt": "Gula, gröna, turkosa och lila rymdskepp under rubriken Starships, med engelskspråkiga beskrivningar av skeppstyperna."
+      },
+      {
+        "src": "/images/games/andromeda-s-edge-genesis-fully-operational/gallery/andromeda-4.png",
+        "title": "Byggnadsminiatyrer",
+        "alt": "Grå miniatyrer av observatorium, stad, obelisk och rymdhamn med lila kuber under rubriken Development Minis."
+      },
+      {
+        "src": "/images/games/andromeda-s-edge-genesis-fully-operational/gallery/andromeda-5.png",
+        "title": "Spelöversikt: skicka ut ett skepp",
+        "alt": "Gula skepp på ett spelarbrädes skeppsfält under rubriken Launch a Starship och engelskspråkig förklaring."
+      },
+      {
+        "src": "/images/games/andromeda-s-edge-genesis-fully-operational/gallery/andromeda-6.png",
+        "title": "Spelöversikt: aktivera en region",
+        "alt": "En grön resursmarkör framför färgade skepp och byggnader på spelplanen under rubriken Activate a Region."
+      },
+      {
+        "src": "/images/games/andromeda-s-edge-genesis-fully-operational/gallery/andromeda-7.png",
+        "title": "Spelöversikt: strid",
+        "alt": "Gröna och lila tärningar samt röda stridskort på spelplanen under rubriken Battle Opponents."
+      },
+      {
+        "src": "/images/games/andromeda-s-edge-genesis-fully-operational/gallery/andromeda-8.png",
+        "title": "Spelöversikt: återvänd till stationen",
+        "alt": "Gula och lila skepp framför grå byggnader och färgade kuber under rubriken Return to Station."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/andromeda-s-edge-genesis-fully-operational/andromeda-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/andromeda-s-edge-genesis-fully-operational/andromeda-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/andromeda-s-edge-genesis-fully-operational/andromeda-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/andromeda-s-edge-genesis-fully-operational/andromeda-thumb.png",
+        "width": 1122
+      }
+    ]
   },
   {
     "id": "ascension-15th-anniversary-edition",
@@ -4451,7 +5418,7 @@
   {
     "id": "san-juan",
     "title": "San Juan",
-    "edition": "",
+    "edition": "2004 års utgåva",
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -4531,7 +5498,54 @@
       "preliminary": true,
       "editionMatch": "not-independently-verified"
     },
-    "expansions": ["Stretch Goal Upgrades"]
+    "expansions": ["Stretch Goal Upgrades"],
+    "cover": "/images/games/brass-birmingham/brassBirmingham-thumb.png",
+    "coverAlt": "Brass: Birmingham-logotypen över en regnvåt kullerstensgata med en spegelbild av en man, ett vagnshjul, en flaska och en hink.",
+    "hero": "/images/games/brass-birmingham/brassBirmingham-banner.png",
+    "heroAlt": "Brass: Birmingham-logotypen till vänster om en industrikanal med båtar, en stenbro och varmt upplysta fabriker i regnet.",
+    "gallery": [
+      {
+        "src": "/images/games/brass-birmingham/gallery/brassBirmingham-1.png",
+        "title": "Spelplanen",
+        "alt": "Brass: Birmingham-spelplanen med städer, industriplatser, förbindelser, marknader och poängspår."
+      },
+      {
+        "src": "/images/games/brass-birmingham/gallery/brassBirmingham-2.png",
+        "title": "Öltunnor",
+        "alt": "Ljusa träpjäser formade som tunnor ligger staplade på spelplanens illustrerade tunnfält."
+      },
+      {
+        "src": "/images/games/brass-birmingham/gallery/brassBirmingham-3.png",
+        "title": "Kanaler och industrier",
+        "alt": "Närbild av spelplanen vid Redditch och Birmingham med industriplatser och gula kanalbrickor."
+      },
+      {
+        "src": "/images/games/brass-birmingham/gallery/brassBirmingham-4.png",
+        "title": "Textilindustrin",
+        "alt": "Ett industrikort med två vävare omges av vit tråd, en trådrulle och industribrickor."
+      },
+      {
+        "src": "/images/games/brass-birmingham/gallery/brassBirmingham-5.png",
+        "title": "Kol och järn",
+        "alt": "Svarta och gula resurskuber står i rader på spelplanens marknadsfält."
+      },
+      {
+        "src": "/images/games/brass-birmingham/gallery/brassBirmingham-1.png",
+        "videoSrc": "/images/games/brass-pittsburgh/gallery/brass-pittsburgh-prototype.webm",
+        "title": "Brass: Pittsburgh – prototypvideo",
+        "alt": "Prototypvideo från Brass: Pittsburgh, även tillgänglig i Birminghams galleri."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/brass-birmingham/brassBirmingham-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/brass-birmingham/brassBirmingham-thumb.png",
+        "width": 1254
+      }
+    ]
   },
   {
     "id": "brass-lancashire",
@@ -4560,6 +5574,63 @@
       "preliminary": true,
       "editionMatch": "not-independently-verified"
     },
-    "expansions": ["Stretch Goal Upgrades"]
+    "expansions": ["Stretch Goal Upgrades"],
+    "cover": "/images/games/brass-lancashire/brassLancashire-thumb.png",
+    "coverAlt": "Brass: Lancashire-logotypen framför en man med hög hatt och pipa som håller en liten ångmaskin ovanför en rökig industristad.",
+    "hero": "/images/games/brass-lancashire/brassLancashire-banner.png",
+    "heroAlt": "Brass: Lancashire-logotypen till vänster om en regnvåt industrigata vid en kanal, med stenbro, arbetare och upplysta fabriksfönster.",
+    "gallery": [
+      {
+        "src": "/images/games/brass-lancashire/gallery/brassLancashire-1.png",
+        "title": "Spelet uppdukat",
+        "alt": "Brass: Lancashire sett ovanifrån med spelplan, industribrickor, förbindelser, resurskuber, mynt och fyra färgade spelarbräden."
+      },
+      {
+        "src": "/images/games/brass-lancashire/gallery/brassLancashire-2.png",
+        "title": "Spelask och karta",
+        "alt": "Brass: Lancashire-spelasken med en piprökande man framför spelplanens städer och industriplatser."
+      },
+      {
+        "src": "/images/games/brass-lancashire/gallery/brassLancashire-3.png",
+        "title": "Skeppsvarv",
+        "alt": "Tre illustrerade kort med arbetare som bygger ett träfartyg, placerade på spelplanen."
+      },
+      {
+        "src": "/images/games/brass-lancashire/gallery/brassLancashire-4.png",
+        "title": "Kolgruvor i Wigan",
+        "alt": "Orange och gula kolgruvebrickor omgivna av svarta resurskuber på spelplanen vid Wigan."
+      },
+      {
+        "src": "/images/games/brass-lancashire/gallery/brassLancashire-5.png",
+        "title": "Stadskort",
+        "alt": "Två stadskort med namnen Blackburn och Burnley står på spelplanen bland industriplatser."
+      },
+      {
+        "src": "/images/games/brass-lancashire/gallery/brassLancashire-6.png",
+        "title": "Hamnen i Fleetwood",
+        "alt": "En gul hamnbricka med ankarsymbol vid Fleetwood på spelplanens kustkarta."
+      },
+      {
+        "src": "/images/games/brass-lancashire/gallery/brassLancashire-7.png",
+        "title": "Industrier på spelarbrädet",
+        "alt": "Närbild av industribrickor och numrerade fält för bland annat textilfabriker och hamnar på ett spelarbräde."
+      },
+      {
+        "src": "/images/games/brass-lancashire/gallery/brassLancashire-1.png",
+        "videoSrc": "/images/games/brass-pittsburgh/gallery/brass-pittsburgh-prototype.webm",
+        "title": "Brass: Pittsburgh – prototypvideo",
+        "alt": "Prototypvideo från Brass: Pittsburgh, även tillgänglig i Lancashires galleri."
+      }
+    ],
+    "coverVariants": [
+      {
+        "src": "/images/games/brass-lancashire/brassLancashire-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/brass-lancashire/brassLancashire-thumb.png",
+        "width": 1254
+      }
+    ]
   }
 ]
