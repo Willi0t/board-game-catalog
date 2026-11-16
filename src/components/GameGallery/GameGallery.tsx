@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import GameImage from '../GameImage/GameImage';
+import VideoBadge from '../VideoBadge/VideoBadge';
 import type { GalleryImage } from '../../types/game';
 import styles from './GameGallery.module.css';
 
@@ -23,10 +24,10 @@ function GalleryItem({ image, onOpenImage }: GalleryItemProps) {
         className={styles.image}
         placeholderLabel="Platshållarbild"
         labelClassName={styles.placeholder}
-        label={image.videoSrc ? '▶ Video' : undefined}
         onReady={() => setReady(true)}
         onUnavailable={() => setAvailable(false)}
       />
+      {image.videoSrc && <VideoBadge />}
     </button>
   );
 }

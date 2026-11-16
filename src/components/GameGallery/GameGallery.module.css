@@ -6,6 +6,7 @@
 }
 
 .gallery button {
+  position: relative;
   min-width: 0;
   background: transparent;
   text-align: left;

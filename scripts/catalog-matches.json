@@ -56,7 +56,8 @@
     "sourceRow": 12,
     "sourceTitle": "Deep Regrets",
     "id": "deep-regrets-deeper-regrets",
-    "displayTitle": "Deep Regrets"
+    "displayTitle": "Deep Regrets",
+    "displayEdition": "Kickstarter Edition"
   },
   {
     "sourceRow": 13,
@@ -66,7 +67,8 @@
   {
     "sourceRow": 14,
     "sourceTitle": "Solar Titans",
-    "id": "solar-titans"
+    "id": "solar-titans",
+    "displayEdition": "Definitive Edition"
   },
   {
     "sourceRow": 15,
@@ -117,17 +119,20 @@
   {
     "sourceRow": 23,
     "sourceTitle": "Parlay",
-    "id": "parlay"
+    "id": "parlay",
+    "displayEdition": "Kickstarter Edition"
   },
   {
     "sourceRow": 24,
     "sourceTitle": "Grimcoven",
-    "id": "grimcoven"
+    "id": "grimcoven",
+    "displayEdition": "Special Edition"
   },
   {
     "sourceRow": 25,
     "sourceTitle": "Long Dark Sea",
-    "id": "long-dark-sea"
+    "id": "long-dark-sea",
+    "displayEdition": "Limited Edition"
   },
   {
     "sourceRow": 26,
@@ -137,12 +142,14 @@
   {
     "sourceRow": 27,
     "sourceTitle": "Excalibur",
-    "id": "excalibur"
+    "id": "excalibur",
+    "displayEdition": "Collector's Edition"
   },
   {
     "sourceRow": 28,
     "sourceTitle": "Lands of Evershade",
-    "id": "lands-of-evershade"
+    "id": "lands-of-evershade",
+    "displayEdition": "Special Edition"
   },
   {
     "sourceRow": 29,
@@ -190,7 +197,8 @@
     "sourceRow": 37,
     "sourceTitle": "azul mini",
     "id": "azul-mini",
-    "displayTitle": "Azul Mini"
+    "displayTitle": "Azul Mini",
+    "displayEdition": "Mini"
   },
   {
     "sourceRow": 38,
@@ -214,14 +222,15 @@
     "sourceRow": 41,
     "sourceTitle": "goats and goblins",
     "id": "goats-and-goblins",
-    "displayTitle": "Goats and Goblins"
+    "displayTitle": "Goats and Goblins",
+    "displayEdition": "Kickstarter Edition"
   },
   {
     "sourceRow": 42,
     "sourceTitle": "Inis: Big Box",
     "id": "inis",
     "displayTitle": "Inis",
-    "displayEdition": "Big Box"
+    "displayEdition": "Big Box, Kickstarter Edition"
   },
   {
     "sourceRow": 43,
@@ -248,12 +257,13 @@
     "sourceTitle": "SHUG: Unnecessarily Nice Box",
     "id": "shug",
     "displayTitle": "SHUG",
-    "displayEdition": "Unnecessarily Nice Box"
+    "displayEdition": "Unnecessarily Nice Box, Kickstarter Edition"
   },
   {
     "sourceRow": 47,
     "sourceTitle": "Battlesticks",
-    "id": "battlesticks"
+    "id": "battlesticks",
+    "displayEdition": "Kickstarter Edition"
   },
   {
     "sourceRow": 48,
@@ -265,7 +275,8 @@
   {
     "sourceRow": 49,
     "sourceTitle": "Roma XLI",
-    "id": "roma-xli"
+    "id": "roma-xli",
+    "displayEdition": "Kickstarter Edition"
   },
   {
     "sourceRow": 50,
@@ -292,7 +303,8 @@
   {
     "sourceRow": 54,
     "sourceTitle": "Rolling Seas",
-    "id": "rolling-seas"
+    "id": "rolling-seas",
+    "displayEdition": "Kickstarter Edition"
   },
   {
     "sourceRow": 55,
@@ -363,7 +375,8 @@
   {
     "sourceRow": 66,
     "sourceTitle": "The Wandmaker's Apprentice",
-    "id": "the-wandmaker-s-apprentice"
+    "id": "the-wandmaker-s-apprentice",
+    "displayEdition": "Ultimate Edition"
   },
   {
     "sourceRow": 67,
@@ -406,7 +419,8 @@
   {
     "sourceRow": 73,
     "id": "san-juan",
-    "sourceTitle": "San Juan"
+    "sourceTitle": "San Juan",
+    "displayEdition": "2004 års utgåva"
   },
   {
     "sourceRow": 74,

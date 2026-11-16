@@ -9,6 +9,7 @@ import { flushSync } from 'react-dom';
 import useMediaQuery from '../../hooks/useMediaQuery';
 import Icon from '../Icon/Icon';
 import GameImage from '../GameImage/GameImage';
+import VideoBadge from '../VideoBadge/VideoBadge';
 import useModalDialog from '../../hooks/useModalDialog';
 import type { GalleryImage } from '../../types/game';
 import styles from './ImageModal.module.css';
@@ -231,6 +232,7 @@ export default function ImageModal({
                       : undefined
                   }
                 />
+                {slides[target].videoSrc && <VideoBadge />}
               </button>
             );
           })}

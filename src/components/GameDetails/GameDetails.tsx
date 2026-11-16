@@ -36,9 +36,7 @@ export default function GameDetails({
   collectionIndex,
   onShowMore,
 }: GameDetailsProps) {
-  const galleryImages = onShowMore
-    ? getGalleryImages(game)
-    : [getCoverImage(game), ...getGalleryImages(game)];
+  const galleryImages = [getCoverImage(game), ...getGalleryImages(game)];
   const tabs: DetailTab[] = ['Om spelet', 'Bilder'];
   return (
     <aside
@@ -53,7 +51,7 @@ export default function GameDetails({
       />
       <div className={styles['detail-content']}>
         <p className={styles['detail-edition']}>
-          {game.edition || 'SPELINFORMATION'}
+          {game.edition || 'Retail Edition'}
         </p>
         <h2>{game.title}</h2>
         <div className={styles.status}>

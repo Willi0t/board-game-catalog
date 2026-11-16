@@ -54,9 +54,8 @@
   font-size: 9px;
   color: #7e7068;
   margin: 0 2px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
 }
 
 .selected-indicator {
