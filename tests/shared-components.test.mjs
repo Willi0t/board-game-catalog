@@ -208,6 +208,25 @@ test('mobile and full descriptions prefer long text and retain draft caveats; su
   );
 });
 
+test('Grimcoven renders all five approved add-ons in order', () => {
+  const game = games.find((game) => game.id === 'grimcoven');
+  const expected = [
+    'Terrain Add-on',
+    'Personal Stories',
+    'Playmat',
+    'Acrylic Add-on',
+    'Stretch Goal Upgrades',
+  ];
+  assert.deepEqual(game.expansions, expected);
+  for (const panel of [false, true]) {
+    const html = render(GameEditionDetails, { game, panel });
+    const labels = [...html.matchAll(/<li[^>]*>([^<]+)<\/li>/g)].map(
+      (match) => match[1],
+    );
+    assert.deepEqual(labels, expected);
+  }
+});
+
 test('expansion counts stay compact and disappear when empty', () => {
   const renderCount = (expansions) =>
     render(GameExpansions, { expansions, compact: true });

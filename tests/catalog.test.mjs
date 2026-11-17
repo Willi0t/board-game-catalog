@@ -18,10 +18,10 @@ const { default: filterGames } = await import(
   `data:text/javascript;base64,${Buffer.from(code).toString('base64')}`
 );
 
-test('75 explicit unique matches, exact approved fields and 24 upcoming games', () => {
-  assert.equal(source.games.length, 75);
+test('74 explicit unique matches, exact approved fields and 24 upcoming games', () => {
+  assert.equal(source.games.length, 74);
   assert.equal(new Set(games.map((game) => game.id)).size, games.length);
-  assert.equal(new Set(matches.map((match) => match.id)).size, 75);
+  assert.equal(new Set(matches.map((match) => match.id)).size, 74);
   for (const row of source.games) {
     const match = matches.find(
       (match) =>
@@ -48,6 +48,7 @@ test('75 explicit unique matches, exact approved fields and 24 upcoming games', 
     if (match.displayEdition !== undefined)
       assert.equal(game.edition, match.displayEdition);
     assert.equal(game.catalogMetadata.sourceTitle, row.title);
+    assert.equal(game.catalogMetadata.sourceRow, row.sourceRow);
   }
   assert.equal(games.filter((game) => game.upcoming === true).length, 24);
   assert.equal(
@@ -71,6 +72,41 @@ test('75 explicit unique matches, exact approved fields and 24 upcoming games', 
       (game) =>
         !Object.hasOwn(game, 'notes') && !Object.hasOwn(game, 'notering'),
     ),
+  );
+});
+
+test('Shallow Regrets stays absent after import and search; Deep Regrets is preserved', () => {
+  const imported = mergeCatalog(games, source);
+  assert(!matches.some((match) => match.id === 'shallow-regrets'));
+  for (const catalog of [games, imported]) {
+    assert(!catalog.some((game) => game.id === 'shallow-regrets'));
+    assert.deepEqual(filterGames(catalog, { query: 'Shallow Regrets' }), []);
+    const deep = catalog.find(
+      (game) => game.id === 'deep-regrets-deeper-regrets',
+    );
+    assert.equal(deep.title, 'Deep Regrets');
+    assert.deepEqual(deep.expansions, ['Deeper Regrets']);
+  }
+  assert.throws(() =>
+    mergeCatalog(games, {
+      ...source,
+      games: source.games.map((row) =>
+        row.sourceRow === 70 ? { ...row, title: 'Shallow Regrets' } : row,
+      ),
+    }),
+  );
+  assert.deepEqual(
+    matches
+      .filter((match) => match.sourceRow >= 70)
+      .map((match) => [match.sourceRow, match.id]),
+    [
+      [70, 'nexus-card-game'],
+      [71, 'tend-hive-cellar'],
+      [72, 'san-juan'],
+      [73, 'annulet'],
+      [74, 'brass-birmingham'],
+      [75, 'brass-lancashire'],
+    ],
   );
 });
 
@@ -182,7 +218,7 @@ test('simultaneous filters, favorites, tag search and unknown availability', () 
     ),
   );
   assert.equal(filterGames(games, { availability: 'upcoming' }).length, 24);
-  assert.equal(filterGames(games, { availability: 'owned' }).length, 51);
+  assert.equal(filterGames(games, { availability: 'owned' }).length, 50);
   assert.deepEqual(
     filterGames(games, {
       libraryView: 'favorites',
@@ -246,7 +282,7 @@ test('Terraforming Mars updates the stable entry with approved facts and medium 
 });
 
 test('source numbering inserts game 12 on row 13 and identities survive reordered input', () => {
-  assert.equal(source.source.range, 'A1:I76');
+  assert.equal(source.source.range, 'A1:I75');
   assert.equal(source.games[11].title, 'Terraforming Mars');
   assert.equal(source.games[11].sourceRow, 13);
   assert.equal(source.games[12].title, 'Solar Titans');

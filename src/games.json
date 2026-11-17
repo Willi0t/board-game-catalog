@@ -1963,6 +1963,13 @@
         "src": "/images/games/grimcoven/grimcoven-thumb.png",
         "width": 1122
       }
+    ],
+    "expansions": [
+      "Terrain Add-on",
+      "Personal Stories",
+      "Playmat",
+      "Acrylic Add-on",
+      "Stretch Goal Upgrades"
     ]
   },
   {
@@ -5330,34 +5337,6 @@
     }
   },
   {
-    "id": "shallow-regrets",
-    "title": "Shallow Regrets",
-    "edition": "",
-    "category": "Övrigt",
-    "accent": "#815467",
-    "tint": "#eadce2",
-    "description": "",
-    "placeholderTheme": "castle-rose",
-    "playersMin": null,
-    "playersMax": null,
-    "bestWith": null,
-    "weight": null,
-    "playerInteraction": 3,
-    "mechanics": ["Push your luck", "Set collection", "Hand management"],
-    "gameTypes": ["Competitive"],
-    "upcoming": false,
-    "minutes": null,
-    "descriptionStatus": "missing",
-    "metadataStatus": "catalog-import",
-    "catalogMetadata": {
-      "sourceRow": 70,
-      "sourceTitle": "Shallow Regrets",
-      "importedAt": "2026-11-13",
-      "preliminary": false,
-      "editionMatch": "not-independently-verified"
-    }
-  },
-  {
     "id": "nexus-card-game",
     "title": "Nexus Card Game",
     "edition": "Founders Edition",
@@ -5378,7 +5357,7 @@
     "descriptionStatus": "missing",
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
-      "sourceRow": 71,
+      "sourceRow": 70,
       "sourceTitle": "Nexus Card Game: Founders Edition",
       "importedAt": "2026-11-13",
       "preliminary": true,
@@ -5407,7 +5386,7 @@
     "descriptionStatus": "missing",
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
-      "sourceRow": 72,
+      "sourceRow": 71,
       "sourceTitle": "Tend: Big Box Edition",
       "importedAt": "2026-11-13",
       "preliminary": true,
@@ -5436,7 +5415,7 @@
     "descriptionStatus": "missing",
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
-      "sourceRow": 73,
+      "sourceRow": 72,
       "sourceTitle": "San Juan",
       "importedAt": "2026-11-13",
       "preliminary": false,
@@ -5464,7 +5443,7 @@
     "descriptionStatus": "missing",
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
-      "sourceRow": 74,
+      "sourceRow": 73,
       "sourceTitle": "Annulet",
       "importedAt": "2026-11-13",
       "preliminary": true,
@@ -5492,7 +5471,7 @@
     "descriptionStatus": "missing",
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
-      "sourceRow": 75,
+      "sourceRow": 74,
       "sourceTitle": "Brass: Birmingham: Collector's Edition",
       "importedAt": "2026-11-13",
       "preliminary": true,
@@ -5568,7 +5547,7 @@
     "descriptionStatus": "missing",
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
-      "sourceRow": 76,
+      "sourceRow": 75,
       "sourceTitle": "Brass: Lancashire: Collector's Edition",
       "importedAt": "2026-11-13",
       "preliminary": true,

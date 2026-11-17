@@ -399,43 +399,38 @@
   },
   {
     "sourceRow": 70,
-    "sourceTitle": "Shallow Regrets",
-    "id": "shallow-regrets"
-  },
-  {
-    "sourceRow": 71,
     "sourceTitle": "Nexus Card Game: Founders Edition",
     "id": "nexus-card-game",
     "displayTitle": "Nexus Card Game",
     "displayEdition": "Founders Edition"
   },
   {
-    "sourceRow": 72,
+    "sourceRow": 71,
     "sourceTitle": "Tend: Big Box Edition",
     "id": "tend-hive-cellar",
     "displayTitle": "Tend",
     "displayEdition": "Big Box Edition"
   },
   {
-    "sourceRow": 73,
+    "sourceRow": 72,
     "id": "san-juan",
     "sourceTitle": "San Juan",
     "displayEdition": "2004 års utgåva"
   },
   {
-    "sourceRow": 74,
+    "sourceRow": 73,
     "id": "annulet",
     "sourceTitle": "Annulet"
   },
   {
-    "sourceRow": 75,
+    "sourceRow": 74,
     "id": "brass-birmingham",
     "sourceTitle": "Brass: Birmingham: Collector's Edition",
     "displayTitle": "Brass: Birmingham",
     "displayEdition": "Collector's Edition"
   },
   {
-    "sourceRow": 76,
+    "sourceRow": 75,
     "id": "brass-lancashire",
     "sourceTitle": "Brass: Lancashire: Collector's Edition",
     "displayTitle": "Brass: Lancashire",

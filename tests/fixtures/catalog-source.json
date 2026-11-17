@@ -3,7 +3,7 @@
   "source": {
     "url": "https://docs.google.com/spreadsheets/d/1cQjSP-aUUlCe93NibwDcPdxPtAAS_KD6wiliVAMGRdk/edit",
     "sheet": "Sheet1",
-    "range": "A1:I76",
+    "range": "A1:I75",
     "exportedAt": "2026-11-13",
     "notesIncluded": false
   },
@@ -387,7 +387,13 @@
       "mechanics": ["Dice allocation", "Tactical combat"],
       "gameTypes": ["Cooperative", "Boss battler"],
       "upcoming": false,
-      "expansions": []
+      "expansions": [
+        "Terrain Add-on",
+        "Personal Stories",
+        "Playmat",
+        "Acrylic Add-on",
+        "Stretch Goal Upgrades"
+      ]
     },
     {
       "sourceRow": 25,
@@ -1071,20 +1077,6 @@
     },
     {
       "sourceRow": 70,
-      "title": "Shallow Regrets",
-      "playersMin": null,
-      "playersMax": null,
-      "playersSource": "TBA",
-      "bestWith": null,
-      "weight": null,
-      "playerInteraction": 3,
-      "mechanics": ["Push your luck", "Set collection", "Hand management"],
-      "gameTypes": ["Competitive"],
-      "upcoming": false,
-      "expansions": []
-    },
-    {
-      "sourceRow": 71,
       "title": "Nexus Card Game: Founders Edition",
       "playersMin": null,
       "playersMax": null,
@@ -1098,7 +1090,7 @@
       "expansions": ["Foil Pack"]
     },
     {
-      "sourceRow": 72,
+      "sourceRow": 71,
       "title": "Tend: Big Box Edition",
       "playersMin": 1,
       "playersMax": 6,
@@ -1112,7 +1104,7 @@
       "expansions": ["Hive", "Cellar", "Stretch Goal Upgrades"]
     },
     {
-      "sourceRow": 73,
+      "sourceRow": 72,
       "title": "San Juan",
       "playersMin": 2,
       "playersMax": 4,
@@ -1127,7 +1119,7 @@
       "minutes": 60
     },
     {
-      "sourceRow": 74,
+      "sourceRow": 73,
       "title": "Annulet",
       "playersMin": 1,
       "playersMax": 4,
@@ -1142,7 +1134,7 @@
       "minutes": 60
     },
     {
-      "sourceRow": 75,
+      "sourceRow": 74,
       "title": "Brass: Birmingham: Collector's Edition",
       "playersMin": 2,
       "playersMax": 4,
@@ -1157,7 +1149,7 @@
       "minutes": 120
     },
     {
-      "sourceRow": 76,
+      "sourceRow": 75,
       "title": "Brass: Lancashire: Collector's Edition",
       "playersMin": 2,
       "playersMax": 4,

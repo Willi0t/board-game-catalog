@@ -218,7 +218,7 @@ Behåll osäkerhetsmarkeringar per fält och skilj bildstatus från speldata. Fa
    utanför exporten bevaras utan att tilldelas ägarstatus eller granskade fakta.
 4. Kör `node --test tests/*.test.mjs` samt projektets kontroller. Testerna
    använder Node:s inbyggda testverktyg samt befintliga TypeScript/esbuild; inga nya
-   testberoenden krävs. Nuvarande exportkontroll förväntar 75 poster/24 kommande;
+   testberoenden krävs. Nuvarande exportkontroll förväntar 74 poster/24 kommande;
    uppdatera dessa förväntningar vid en avsiktlig ändring av underlaget.
 
 När ett kommande spel levererats: ändra dess `upcoming` till `false` i
