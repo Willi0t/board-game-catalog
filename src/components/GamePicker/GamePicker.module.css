@@ -1,7 +1,9 @@
 .dialog {
   width: min(760px, calc(100% - 40px));
   max-width: none;
+  height: fit-content;
   max-height: calc(100dvh - 40px);
+  margin: auto;
   padding: 0;
   border: 1px solid #fff9;
   border-radius: 12px;
@@ -162,16 +164,11 @@
 }
 @media (max-width: 650px) {
   .dialog {
-    width: 100%;
-    height: 100dvh;
-    max-height: none;
-    margin: 0;
-    border: 0;
-    border-radius: 0;
+    width: calc(100% - 28px);
+    max-height: calc(100dvh - 28px);
   }
   .panel {
-    height: 100%;
-    max-height: none;
+    max-height: calc(100dvh - 30px);
   }
   .header {
     padding: 12px 18px;
@@ -253,7 +250,7 @@
 
 .dialog.compact {
   width: min(560px, calc(100% - 28px));
-  height: auto;
+  height: fit-content;
   max-height: calc(100dvh - 28px);
   margin: auto;
   border: 0;
