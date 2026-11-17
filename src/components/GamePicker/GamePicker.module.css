@@ -228,3 +228,25 @@
   padding: 6px 0;
   text-align: left;
 }
+
+.mode {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.mode button {
+  min-height: 44px;
+  padding: 8px 14px;
+  border: 1px solid #cfc1c8;
+  border-radius: 6px;
+  color: #5c494e;
+  background: white;
+}
+
+.mode button[aria-pressed='true'] {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: white;
+}

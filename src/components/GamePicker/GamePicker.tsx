@@ -22,6 +22,7 @@ import {
   weightLabels,
   type PickerCriteria,
 } from '../../utils/gamePicker';
+import GamePickerChat from '../GamePickerChat/GamePickerChat';
 import PickerChoices from '../PickerChoices/PickerChoices';
 import PickerLevelChoices from '../PickerLevelChoices/PickerLevelChoices';
 import PickerSummary from '../PickerSummary/PickerSummary';
@@ -53,6 +54,7 @@ export default function GamePicker({
   const dialogProps = useModalDialog({ onClose, openerRef, fallbackRef });
   const titleId = useId();
   const errorId = useId();
+  const [manual, setManual] = useState(false);
   const [step, setStep] = useState(0);
   const [playerError, setPlayerError] = useState(false);
   const playerOptionsRef = useRef<HTMLDivElement>(null);
@@ -64,7 +66,7 @@ export default function GamePicker({
   useEffect(() => {
     headingRef.current?.focus({ preventScroll: true });
     contentRef.current?.scrollTo({ top: 0, behavior: 'instant' });
-  }, [step]);
+  }, [manual, step]);
 
   const update = (changes: Partial<PickerCriteria>) => {
     onCriteriaChange({ ...criteria, ...changes });
@@ -102,179 +104,207 @@ export default function GamePicker({
           </button>
         </header>
         <div ref={contentRef} className={styles.content}>
-          <p className={styles.intro}>
-            Hitta ett spel för just ert sällskap. Guiden använder hela katalogen
-            och visar alla träffar i biblioteket. Dina vanliga biblioteksfilter
-            pausas medan guidens resultat visas.
-          </p>
-          <ol className={styles.steps} aria-label="Guidens steg">
-            {steps.map((label, index) => (
-              <li
-                key={label}
-                aria-current={step === index ? 'step' : undefined}
-              >
-                <span>{index + 1}</span>
-                {label}
-              </li>
-            ))}
-          </ol>
-          <h3 ref={headingRef} tabIndex={-1} className={styles.heading}>
-            {steps[step]}
-          </h3>
-          <p className={styles.count} aria-live="polite" aria-atomic="true">
-            {criteria.players == null
-              ? 'Ange spelarantal för att se hur många spel som matchar.'
-              : `${counts.total} spel matchar`}
-          </p>
-          {conflicts.length > 0 && (
-            <section className={styles.conflicts} aria-label="Val att se över">
-              <h4>
-                {counts.total === 0
-                  ? 'Inga spel matchar dina val'
-                  : 'Vissa val matchar inte längre'}
-              </h4>
-              <p>
-                Se över valen nedan. De har 0 spel efter tidigare val och
-                behålls tills du själv ändrar eller avmarkerar dem.
+          <div className={styles.mode}>
+            <button
+              type="button"
+              aria-pressed={!manual}
+              onClick={() => setManual(false)}
+            >
+              AI-chatt
+            </button>
+            <button
+              type="button"
+              aria-pressed={manual}
+              onClick={() => setManual(true)}
+            >
+              Välj manuellt
+            </button>
+          </div>
+          <div hidden={manual}>
+            <GamePickerChat />
+          </div>
+          {manual && (
+            <>
+              <p className={styles.intro}>
+                Hitta ett spel för just ert sällskap. Guiden använder hela
+                katalogen och visar alla träffar i biblioteket. Dina vanliga
+                biblioteksfilter pausas medan guidens resultat visas.
               </p>
-              <ul>
-                {conflicts.map((conflict) => (
-                  <li key={conflict.label}>
-                    <button
-                      type="button"
-                      onClick={() => setStep(conflict.step)}
-                    >
-                      Se över {conflict.label}
-                    </button>
+              <ol className={styles.steps} aria-label="Guidens steg">
+                {steps.map((label, index) => (
+                  <li
+                    key={label}
+                    aria-current={step === index ? 'step' : undefined}
+                  >
+                    <span>{index + 1}</span>
+                    {label}
                   </li>
                 ))}
-              </ul>
-            </section>
-          )}
-          <form noValidate onSubmit={submit}>
-            {step === 0 && (
-              <>
-                <fieldset className={styles.fieldset}>
-                  <legend>Hur många ska spela?</legend>
-                  <p>
-                    Obligatoriskt. Spelet måste stödja exakt ert antal spelare.
-                  </p>
-                  <div
-                    ref={playerOptionsRef}
-                    tabIndex={-1}
-                    role="group"
-                    className={styles.quick}
-                    aria-label="Snabbval för spelarantal"
-                    aria-describedby={playerError ? errorId : undefined}
-                  >
-                    {pickerPlayerOptions.map((count) => (
-                      <button
-                        key={count}
-                        type="button"
-                        aria-pressed={criteria.players === count}
-                        data-empty={counts.players[count] === 0}
-                        disabled={
-                          criteria.players !== count &&
-                          counts.players[count] === 0
-                        }
-                        onClick={() =>
-                          update({
-                            players: criteria.players === count ? null : count,
-                          })
-                        }
-                      >
-                        {criteria.players === count && (
-                          <span aria-hidden="true">✓ </span>
-                        )}
-                        {count} spelare
-                        <OptionCount
-                          count={counts.players[count] ?? 0}
-                          selected={criteria.players === count}
-                        />
-                      </button>
-                    ))}
-                  </div>
-                  {playerError && (
-                    <p id={errorId} role="alert" className={styles.error}>
-                      Välj hur många som ska spela med snabbvalen.
-                    </p>
-                  )}
-                </fieldset>
-                <PickerLevelChoices
-                  legend="Hur avancerat får det vara?"
-                  description="Välj en eller flera nivåer. Inga val betyder ”Spelar ingen roll”. Okänd svårighet matchar bara utan svårighetsfilter."
-                  options={weightOptions}
-                  labels={weightLabels}
-                  selected={criteria.weightLevels}
-                  counts={counts.weightLevels}
-                  onChange={(weightLevels) => update({ weightLevels })}
-                />
-                <label className={styles.checkbox}>
-                  <input
-                    type="checkbox"
-                    checked={criteria.includeUpcoming}
-                    onChange={(event) =>
-                      update({ includeUpcoming: event.target.checked })
-                    }
-                  />
-                  Inkludera kommande spel
-                </label>
-                <p className={styles.help}>
-                  När rutan är markerad tillåts även spel med okänd
-                  tillgänglighet. Annars visas endast spel som är kända att
-                  finnas i samlingen.
-                </p>
-              </>
-            )}
-            {step === 1 && (
-              <>
-                <PickerChoices
-                  legend="Vilken speltyp är ni sugna på?"
-                  options={gameTypeOptions}
-                  selected={criteria.gameTypes}
-                  counts={counts.gameTypes}
-                  onChange={(gameTypes) => update({ gameTypes })}
-                />
-                <PickerLevelChoices
-                  legend="Hur mycket spelarinteraktion vill ni ha?"
-                  description="Interaktion räknar både samarbete och konkurrens och är vår subjektiva bedömning. Välj flera nivåer för att matcha minst en. Inga val betyder ”Spelar ingen roll”."
-                  options={interactionOptions}
-                  labels={interactionLabels}
-                  selected={criteria.interactionLevels}
-                  counts={counts.interaction}
-                  onChange={(interactionLevels) =>
-                    update({ interactionLevels })
-                  }
-                  clearLabel="Rensa interaktionsval"
-                />
-              </>
-            )}
-            {step === 2 && (
-              <>
-                <PickerChoices
-                  legend="Vilka spelmekaniker gillar ni?"
-                  options={mechanicOptions}
-                  selected={criteria.mechanics}
-                  counts={counts.mechanics}
-                  onChange={(mechanics) => update({ mechanics })}
-                />
-                <PickerSummary criteria={criteria} />
-              </>
-            )}
-            <footer className={styles.navigation}>
-              {step > 0 && (
-                <button
-                  type="button"
-                  onClick={() => setStep((previous) => previous - 1)}
+              </ol>
+              <h3 ref={headingRef} tabIndex={-1} className={styles.heading}>
+                {steps[step]}
+              </h3>
+              <p className={styles.count} aria-live="polite" aria-atomic="true">
+                {criteria.players == null
+                  ? 'Ange spelarantal för att se hur många spel som matchar.'
+                  : `${counts.total} spel matchar`}
+              </p>
+              {conflicts.length > 0 && (
+                <section
+                  className={styles.conflicts}
+                  aria-label="Val att se över"
                 >
-                  Bakåt
-                </button>
+                  <h4>
+                    {counts.total === 0
+                      ? 'Inga spel matchar dina val'
+                      : 'Vissa val matchar inte längre'}
+                  </h4>
+                  <p>
+                    Se över valen nedan. De har 0 spel efter tidigare val och
+                    behålls tills du själv ändrar eller avmarkerar dem.
+                  </p>
+                  <ul>
+                    {conflicts.map((conflict) => (
+                      <li key={conflict.label}>
+                        <button
+                          type="button"
+                          onClick={() => setStep(conflict.step)}
+                        >
+                          Se över {conflict.label}
+                        </button>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
               )}
-              <button className={styles.primary} type="submit">
-                {step === 2 ? `Visa ${counts.total} spel` : 'Nästa'}
-              </button>
-            </footer>
-          </form>
+              <form noValidate onSubmit={submit}>
+                {step === 0 && (
+                  <>
+                    <fieldset className={styles.fieldset}>
+                      <legend>Hur många ska spela?</legend>
+                      <p>
+                        Obligatoriskt. Spelet måste stödja exakt ert antal
+                        spelare.
+                      </p>
+                      <div
+                        ref={playerOptionsRef}
+                        tabIndex={-1}
+                        role="group"
+                        className={styles.quick}
+                        aria-label="Snabbval för spelarantal"
+                        aria-describedby={playerError ? errorId : undefined}
+                      >
+                        {pickerPlayerOptions.map((count) => (
+                          <button
+                            key={count}
+                            type="button"
+                            aria-pressed={criteria.players === count}
+                            data-empty={counts.players[count] === 0}
+                            disabled={
+                              criteria.players !== count &&
+                              counts.players[count] === 0
+                            }
+                            onClick={() =>
+                              update({
+                                players:
+                                  criteria.players === count ? null : count,
+                              })
+                            }
+                          >
+                            {criteria.players === count && (
+                              <span aria-hidden="true">✓ </span>
+                            )}
+                            {count} spelare
+                            <OptionCount
+                              count={counts.players[count] ?? 0}
+                              selected={criteria.players === count}
+                            />
+                          </button>
+                        ))}
+                      </div>
+                      {playerError && (
+                        <p id={errorId} role="alert" className={styles.error}>
+                          Välj hur många som ska spela med snabbvalen.
+                        </p>
+                      )}
+                    </fieldset>
+                    <PickerLevelChoices
+                      legend="Hur avancerat får det vara?"
+                      description="Välj en eller flera nivåer. Inga val betyder ”Spelar ingen roll”. Okänd svårighet matchar bara utan svårighetsfilter."
+                      options={weightOptions}
+                      labels={weightLabels}
+                      selected={criteria.weightLevels}
+                      counts={counts.weightLevels}
+                      onChange={(weightLevels) => update({ weightLevels })}
+                    />
+                    <label className={styles.checkbox}>
+                      <input
+                        type="checkbox"
+                        checked={criteria.includeUpcoming}
+                        onChange={(event) =>
+                          update({ includeUpcoming: event.target.checked })
+                        }
+                      />
+                      Inkludera kommande spel
+                    </label>
+                    <p className={styles.help}>
+                      När rutan är markerad tillåts även spel med okänd
+                      tillgänglighet. Annars visas endast spel som är kända att
+                      finnas i samlingen.
+                    </p>
+                  </>
+                )}
+                {step === 1 && (
+                  <>
+                    <PickerChoices
+                      legend="Vilken speltyp är ni sugna på?"
+                      options={gameTypeOptions}
+                      selected={criteria.gameTypes}
+                      counts={counts.gameTypes}
+                      onChange={(gameTypes) => update({ gameTypes })}
+                    />
+                    <PickerLevelChoices
+                      legend="Hur mycket spelarinteraktion vill ni ha?"
+                      description="Interaktion räknar både samarbete och konkurrens och är vår subjektiva bedömning. Välj flera nivåer för att matcha minst en. Inga val betyder ”Spelar ingen roll”."
+                      options={interactionOptions}
+                      labels={interactionLabels}
+                      selected={criteria.interactionLevels}
+                      counts={counts.interaction}
+                      onChange={(interactionLevels) =>
+                        update({ interactionLevels })
+                      }
+                      clearLabel="Rensa interaktionsval"
+                    />
+                  </>
+                )}
+                {step === 2 && (
+                  <>
+                    <PickerChoices
+                      legend="Vilka spelmekaniker gillar ni?"
+                      options={mechanicOptions}
+                      selected={criteria.mechanics}
+                      counts={counts.mechanics}
+                      onChange={(mechanics) => update({ mechanics })}
+                    />
+                    <PickerSummary criteria={criteria} />
+                  </>
+                )}
+                <footer className={styles.navigation}>
+                  {step > 0 && (
+                    <button
+                      type="button"
+                      onClick={() => setStep((previous) => previous - 1)}
+                    >
+                      Bakåt
+                    </button>
+                  )}
+                  <button className={styles.primary} type="submit">
+                    {step === 2 ? `Visa ${counts.total} spel` : 'Nästa'}
+                  </button>
+                </footer>
+              </form>
+            </>
+          )}
         </div>
       </div>
     </dialog>
