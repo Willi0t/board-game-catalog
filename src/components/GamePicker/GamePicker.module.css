@@ -1,12 +1,17 @@
 .dialog {
   width: min(760px, calc(100% - 40px));
   max-width: none;
+  height: fit-content;
   max-height: calc(100dvh - 40px);
+  margin: auto;
   padding: 0;
   border: 1px solid #fff9;
   border-radius: 12px;
   color: #353539;
-  background: linear-gradient(135deg, #faf9f7 35%, transparent), var(--tint);
+  background:
+    linear-gradient(#fbfaf8b8, #fbfaf8b8),
+    url('/images/ui/game-picker-background.jpg') center / cover,
+    #fbfaf8;
   box-shadow: 0 20px 80px #312b3533;
   overflow: hidden;
 }
@@ -14,6 +19,15 @@
   background: #312b356b;
   backdrop-filter: blur(3px);
 }
+
+.dialog.manual {
+  background: #fbfaf8;
+}
+
+.manual .header {
+  background: #fbfaf8;
+}
+
 .panel {
   display: flex;
   flex-direction: column;
@@ -26,7 +40,7 @@
   gap: 12px;
   flex-shrink: 0;
   padding: 16px 24px;
-  background: #fbfaf8;
+  background: #fbfaf870;
   border-bottom: 1px solid #ded5d1;
 }
 .header h2 {
@@ -162,16 +176,11 @@
 }
 @media (max-width: 650px) {
   .dialog {
-    width: 100%;
-    height: 100dvh;
-    max-height: none;
-    margin: 0;
-    border: 0;
-    border-radius: 0;
+    width: calc(100% - 28px);
+    max-height: calc(100dvh - 28px);
   }
   .panel {
-    height: 100%;
-    max-height: none;
+    max-height: calc(100dvh - 30px);
   }
   .header {
     padding: 12px 18px;
@@ -227,4 +236,144 @@
   font-size: 12px;
   padding: 6px 0;
   text-align: left;
+}
+
+.mode {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.mode button {
+  min-height: 44px;
+  padding: 8px 14px;
+  border: 1px solid #cfc1c8;
+  border-radius: 6px;
+  color: #5c494e;
+  background: white;
+}
+
+.mode button[aria-pressed='true'] {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: white;
+}
+
+.dialog.compact {
+  width: min(560px, calc(100% - 28px));
+  height: fit-content;
+  max-height: calc(100dvh - 28px);
+  margin: auto;
+  border: 0;
+  border-radius: 22px;
+  background:
+    linear-gradient(#fbfaf8b8, #fbfaf8b8),
+    url('/images/ui/game-picker-background.jpg') center / cover,
+    #fbfaf8;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.banner {
+  position: relative;
+  background: #263540;
+}
+
+.banner img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+}
+
+.banner button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #fff5;
+  border-radius: 50%;
+  background: #222932c9;
+  color: #fff;
+}
+
+.welcomeBody {
+  padding: clamp(18px, 4vw, 30px);
+}
+
+.welcomeBody h2 {
+  margin: 0 0 6px;
+  font-family: Manrope, sans-serif;
+  font-size: 24px;
+  line-height: 1.25;
+  color: #25252a;
+}
+
+.welcomeBody p {
+  margin: 0;
+  color: #665f5a;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.features {
+  display: grid;
+  gap: 10px;
+  margin: 20px 0 24px;
+  padding: 0;
+  list-style: none;
+}
+
+.features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.features span {
+  display: grid;
+  place-items: center;
+  flex: 0 0 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #eeedea;
+  color: #353539;
+}
+
+.welcomeActions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.welcomeActions button {
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid #cbc4c1;
+  border-radius: 8px;
+  background: white;
+  color: #353539;
+  font-weight: 600;
+}
+
+.welcomeActions button:last-child {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: white;
+}
+
+.banner button:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 3px;
+}
+
+.welcomeActions button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }

@@ -9,7 +9,7 @@ interface GameCollectionProps {
   selectedGame: Game | undefined;
   favorites: string[];
   sort: string;
-  onSortChange: (sort: string) => void;
+  onSortChange?: (sort: string) => void;
   onSelectGame: (game: Game, trigger: HTMLButtonElement) => void;
   onOpenDetails: (game: Game, trigger: HTMLButtonElement) => void;
   onReset: (trigger: HTMLButtonElement) => void;
@@ -32,15 +32,17 @@ export default function GameCollection({
         <p>
           <strong>{games.length}</strong> spel att upptäcka
         </p>
-        <select
-          value={sort}
-          aria-label="Sortera spel"
-          onChange={(e) => onSortChange(e.target.value)}
-        >
-          <option value="default">Samlingens ordning</option>
-          <option value="name">Namn A–Ö</option>
-          <option value="time">Kortast speltid</option>
-        </select>
+        {onSortChange && (
+          <select
+            value={sort}
+            aria-label="Sortera spel"
+            onChange={(e) => onSortChange(e.target.value)}
+          >
+            <option value="default">Samlingens ordning</option>
+            <option value="name">Namn A–Ö</option>
+            <option value="time">Kortast speltid</option>
+          </select>
+        )}
       </div>
       {games.length ? (
         <div className={styles['game-grid']}>

@@ -20,13 +20,19 @@ export default function useCatalog(
   games: readonly Game[],
   favorites: readonly string[],
   pickerCriteria: PickerCriteria | null,
+  recommendationIds: readonly string[] | null = null,
 ) {
   const [filters, setFilters] = useState(initialFilters);
   const [sort, setSort] = useState('default');
   const [selectedGameId, setSelectedGameId] = useState<string | null>(null);
-  const visibleGames = pickerCriteria
-    ? filterGames(matchPickerGames(games, pickerCriteria), { sort })
-    : filterGames(games, { ...filters, favorites, sort });
+  const visibleGames = recommendationIds
+    ? recommendationIds.flatMap((id) => {
+        const game = games.find((g) => g.id === id);
+        return game ? [game] : [];
+      })
+    : pickerCriteria
+      ? filterGames(matchPickerGames(games, pickerCriteria), { sort })
+      : filterGames(games, { ...filters, favorites, sort });
   const selectedGame = resolveSelectedGame(visibleGames, selectedGameId);
   const resolvedGameId = selectedGame?.id ?? null;
   // Persist the automatic fallback without invoking any manual-selection behavior.
