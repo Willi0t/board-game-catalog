@@ -6,7 +6,7 @@ import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
 export default defineConfig([
-  globalIgnores(['dist/**', 'node_modules/**']),
+  globalIgnores(['dist/**', 'node_modules/**', '.netlify/**']),
   {
     files: ['**/*.{js,mjs,ts,tsx}'],
     extends: [js.configs.recommended],
@@ -21,7 +21,12 @@ export default defineConfig([
     extends: [reactHooks.configs.flat.recommended],
   },
   {
-    files: ['*.config.{js,ts}', 'scripts/**/*.mjs', 'tests/**/*.mjs'],
+    files: [
+      '*.config.{js,ts}',
+      'netlify/functions/**/*.mjs',
+      'scripts/**/*.mjs',
+      'tests/**/*.mjs',
+    ],
     languageOptions: { globals: globals.node },
   },
   prettier,

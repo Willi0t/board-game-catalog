@@ -1,6 +1,6 @@
 # Spelhyllan
 
-Williams ljusa brädspelskatalog, inspirerad av Playnite/Dune. Bakgrundens ton ändras mjukt med det valda spelet. Byggd med [React](https://react.dev/), TypeScript och [Vite](https://vite.dev/), utan databas eller backend. Komponentstilar använder CSS Modules med vanlig CSS, utan Sass.
+Williams ljusa brädspelskatalog, inspirerad av Playnite/Dune. Bakgrundens ton ändras mjukt med det valda spelet. Byggd med [React](https://react.dev/), TypeScript och [Vite](https://vite.dev/), utan databas, med en Netlify Function för den valfria AI-chatten. Komponentstilar använder CSS Modules med vanlig CSS, utan Sass.
 
 ## Starta i VS Code
 
@@ -19,6 +19,36 @@ npm run dev
 Öppna adressen som Vite skriver i terminalen.
 
 För fortsatt AI-utveckling: installera OpenAI:s officiella Codex-tillägg i VS Code och logga in. Öppna projektmappen innan du startar en Codex-chatt. Se [Codex i din editor](https://developers.openai.com/codex/ide).
+
+## AI-chatten i Välj åt mig
+
+Startdialogen låter dig välja **AI** eller **Manuellt**. AI-chatten visar korta
+svarsförslag som skickas direkt när du klickar. Förslagen kommer från det
+strukturerade API-svaret, tillsammans med validerade spel-ID:n. När AI:n valt
+spel visas de i katalogen i rekommendationsordning. **Rensa AI-filter** återställer
+den tidigare katalogvyn och dess filter. Den manuella guidens frågor är oförändrade.
+
+Den manuella guiden fungerar med vanlig Vite. För att köra chatten lokalt,
+kopiera `.env.example` till `.env`, fyll i värdena och starta med `npx netlify-cli dev`.
+I produktion anges samma variabler i Netlifys miljöinställningar med tillgång
+till Functions, följt av en ny deploy.
+
+- `GROQ_API_KEY` är en [API-nyckel från GroqCloud](https://console.groq.com/keys). Skapa den på Free-planen.
+- `GAME_PICKER_PASSWORD_HASH` är en saltad scrypt-hash av chattens lösenord.
+- `GAME_PICKER_SESSION_SECRET` är ett separat slumpvärde. Skapa det med `openssl rand -hex 32`.
+
+Skapa lösenordshashen i Bash. Skriv in lösenordet vid prompten.
+
+```bash
+read -rsp 'Lösenord för chatten: ' picker_password; printf '\n'
+printf '%s' "$picker_password" | node -e 'const { randomBytes, scryptSync } = require("node:crypto"); const salt = randomBytes(16); const hash = scryptSync(require("node:fs").readFileSync(0), salt, 32, { N: 65536, r: 8, p: 1, maxmem: 96 * 1024 * 1024 }); console.log(salt.toString("hex") + ":" + hash.toString("hex"));'
+unset picker_password
+```
+
+Spara bara hashvärdet. Chattens session löper ut efter en timme. Skicka inga
+hemligheter i chattmeddelanden. Funktionen skickar meddelanden och speldata
+till Groq för att ta fram förslag från katalogen med GPT-OSS 20B. Om
+API-kvoten tar slut kan du använda **Välj manuellt** tills kvoten återställs.
 
 ## Temafärger från omslag
 

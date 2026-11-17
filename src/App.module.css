@@ -78,3 +78,22 @@
 .catalog-column {
   min-width: 0;
 }
+
+.aiResults {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px;
+  background: #fff9;
+  border: 1px solid #d9cdd2;
+  border-radius: 8px;
+}
+.aiResults button {
+  min-height: 44px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: var(--accent);
+  background: #fff;
+}
