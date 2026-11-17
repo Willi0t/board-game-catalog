@@ -8,7 +8,10 @@
   border: 1px solid #fff9;
   border-radius: 12px;
   color: #353539;
-  background: linear-gradient(135deg, #faf9f7 35%, transparent), var(--tint);
+  background:
+    linear-gradient(#fbfaf8b8, #fbfaf8b8),
+    url('/images/ui/game-picker-background.jpg') center / cover,
+    #fbfaf8;
   box-shadow: 0 20px 80px #312b3533;
   overflow: hidden;
 }
@@ -28,7 +31,7 @@
   gap: 12px;
   flex-shrink: 0;
   padding: 16px 24px;
-  background: #fbfaf8;
+  background: #fbfaf870;
   border-bottom: 1px solid #ded5d1;
 }
 .header h2 {
@@ -255,7 +258,10 @@
   margin: auto;
   border: 0;
   border-radius: 22px;
-  background: #fbfaf8;
+  background:
+    linear-gradient(#fbfaf8b8, #fbfaf8b8),
+    url('/images/ui/game-picker-background.jpg') center / cover,
+    #fbfaf8;
   overflow-y: auto;
   overscroll-behavior: contain;
 }
