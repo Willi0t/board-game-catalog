@@ -82,7 +82,9 @@ export default function GamePickerChat() {
         return;
       }
       if (response.status === 429) {
-        setError('För många försök. Vänta en minut och försök igen.');
+        setError(
+          'AI-chatten har nått en användningsgräns. Försök igen senare eller välj manuellt.',
+        );
         return;
       }
       if (!response.ok) throw new Error();

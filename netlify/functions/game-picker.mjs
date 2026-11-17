@@ -12,37 +12,24 @@ const cookieName = '__Host-game-picker';
 const sessionSeconds = 3600;
 const passwordOptions = { N: 65536, r: 8, p: 1, maxmem: 96 * 1024 * 1024 };
 const gamesById = new Map(games.map(({ id, title }) => [id, title]));
-const catalog = JSON.stringify(
-  games.map(
-    ({
-      id,
-      title,
-      playersMin,
-      playersMax,
-      minutes,
-      weight,
-      playerInteraction,
-      bestWith,
-      upcoming,
-      mechanics,
-      gameTypes,
-      description,
-    }) => ({
-      id,
-      title,
-      playersMin,
-      playersMax,
-      minutes,
-      weight,
-      playerInteraction,
-      bestWith,
-      upcoming,
-      mechanics,
-      gameTypes,
-      description,
-    }),
-  ),
-);
+const catalogFields = [
+  'id',
+  'title',
+  'playersMin',
+  'playersMax',
+  'minutes',
+  'weight',
+  'playerInteraction',
+  'bestWith',
+  'upcoming',
+  'mechanics',
+  'gameTypes',
+  'description',
+];
+const catalog = JSON.stringify({
+  fields: catalogFields,
+  games: games.map((game) => catalogFields.map((field) => game[field] ?? null)),
+});
 
 function json(data, status = 200, headers = {}) {
   return Response.json(data, {
@@ -98,7 +85,7 @@ export default async function handler(request) {
   )
     return json({}, 403);
 
-  const apiKey = env.OPENAI_API_KEY;
+  const apiKey = env.GROQ_API_KEY;
   const passwordHash = env.GAME_PICKER_PASSWORD_HASH;
   const secret = env.GAME_PICKER_SESSION_SECRET;
   const hash = passwordHash?.match(/^([a-f\d]{32}):([a-f\d]{64})$/);
@@ -141,46 +128,52 @@ export default async function handler(request) {
   if (!validMessages(body.messages)) return json({}, 400);
 
   try {
-    const response = await fetch('https://api.openai.com/v1/responses', {
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${apiKey}`,
-        'Content-Type': 'application/json',
-      },
-      signal: AbortSignal.timeout(20000),
-      body: JSON.stringify({
-        model: env.GAME_PICKER_MODEL || 'gpt-5-mini',
-        store: false,
-        reasoning: { effort: 'minimal' },
-        max_output_tokens: 800,
-        instructions: `Du hjälper användaren att välja brädspel ur Spelhyllan. Svara kort på svenska. Ställ en följdfråga om spelarantal eller andra viktiga krav saknas. Använd bara katalogen nedan. Respektera spelarantal, tid och tillgänglighet. Behandla okända värden som okända. Föreslå högst tre spel, och ta bara med kommande spel om användaren vill se dem. Förklara kort varför förslagen passar. Använd gameIds för de föreslagna spelen och en tom lista vid följdfrågor. Katalog: ${catalog}`,
-        input: body.messages.map(({ role, content }) => ({ role, content })),
-        text: {
-          format: {
+    const response = await fetch(
+      'https://api.groq.com/openai/v1/chat/completions',
+      {
+        method: 'POST',
+        headers: {
+          Authorization: `Bearer ${apiKey}`,
+          'Content-Type': 'application/json',
+        },
+        signal: AbortSignal.timeout(20000),
+        body: JSON.stringify({
+          model: 'openai/gpt-oss-20b',
+          reasoning_effort: 'low',
+          max_completion_tokens: 800,
+          messages: [
+            {
+              role: 'system',
+              content: `Du hjälper användaren att välja brädspel ur Spelhyllan. Svara kort på svenska. Ställ en följdfråga om spelarantal eller andra viktiga krav saknas. Använd bara katalogen nedan. Respektera spelarantal, tid och tillgänglighet. Behandla okända värden som okända. Föreslå högst tre spel, och ta bara med kommande spel om användaren vill se dem. Förklara kort varför förslagen passar. Använd gameIds för de föreslagna spelen och en tom lista vid följdfrågor. Katalog med kolumnnamn följda av spelrader: ${catalog}`,
+            },
+            ...body.messages.map(({ role, content }) => ({ role, content })),
+          ],
+          response_format: {
             type: 'json_schema',
-            name: 'game_picker',
-            strict: true,
-            schema: {
-              type: 'object',
-              additionalProperties: false,
-              required: ['reply', 'gameIds'],
-              properties: {
-                reply: { type: 'string' },
-                gameIds: {
-                  type: 'array',
-                  items: { type: 'string', enum: [...gamesById.keys()] },
+            json_schema: {
+              name: 'game_picker',
+              strict: true,
+              schema: {
+                type: 'object',
+                additionalProperties: false,
+                required: ['reply', 'gameIds'],
+                properties: {
+                  reply: { type: 'string' },
+                  gameIds: {
+                    type: 'array',
+                    items: { type: 'string', enum: [...gamesById.keys()] },
+                  },
                 },
               },
             },
           },
-        },
-      }),
-    });
+        }),
+      },
+    );
+    if (response.status === 429) return json({}, 429);
     if (!response.ok) return json({}, 502);
     const result = await response.json();
-    const output = result.output
-      ?.flatMap((item) => item.content ?? [])
-      .find((part) => part.type === 'output_text')?.text;
+    const output = result.choices?.[0]?.message?.content;
     const { reply, gameIds } = JSON.parse(output ?? '{}');
     if (
       typeof reply !== 'string' ||

@@ -15,7 +15,7 @@ test('picker chat requires a valid session before using the API', async (t) => {
   process.env.GAME_PICKER_PASSWORD_HASH = `${salt.toString('hex')}:${hash.toString('hex')}`;
   process.env.GAME_PICKER_SESSION_SECRET =
     'test-session-signing-key-not-for-production';
-  process.env.OPENAI_API_KEY = 'dummy-test-key';
+  process.env.GROQ_API_KEY = 'dummy-test-key';
 
   const origin = 'https://catalog.example';
   const call = (body, cookie = '', from = origin) =>
@@ -30,22 +30,22 @@ test('picker chat requires a valid session before using the API', async (t) => {
     action: 'chat',
     messages: [{ role: 'user', content: 'Vi är två.' }],
   };
+  let quotaExceeded = false;
   const fetch = t.mock.method(globalThis, 'fetch', async () =>
-    Response.json({
-      output: [
-        {
-          content: [
+    quotaExceeded
+      ? new Response(null, { status: 429 })
+      : Response.json({
+          choices: [
             {
-              type: 'output_text',
-              text: JSON.stringify({
-                reply: 'Prova ett strategispel.',
-                gameIds: ['burgundy'],
-              }),
+              message: {
+                content: JSON.stringify({
+                  reply: 'Prova ett strategispel.',
+                  gameIds: ['burgundy'],
+                }),
+              },
             },
           ],
-        },
-      ],
-    }),
+        }),
   );
 
   assert.equal((await call(chat)).status, 401);
@@ -76,7 +76,14 @@ test('picker chat requires a valid session before using the API', async (t) => {
   const response = await call(chat, cookie);
   assert.equal(response.status, 200);
   assert.equal((await response.json()).titles[0], 'The Castles of Burgundy');
-  const [, options] = fetch.mock.calls[0].arguments;
-  assert.equal(JSON.parse(options.body).store, false);
+  const [url, options] = fetch.mock.calls[0].arguments;
+  const payload = JSON.parse(options.body);
+  assert.equal(url, 'https://api.groq.com/openai/v1/chat/completions');
+  assert.equal(payload.model, 'openai/gpt-oss-20b');
+  assert.equal(payload.response_format.json_schema.strict, true);
+  assert.deepEqual(payload.messages.slice(1), chat.messages);
   assert.ok(!options.body.includes(password));
+
+  quotaExceeded = true;
+  assert.equal((await call(chat, cookie)).status, 429);
 });

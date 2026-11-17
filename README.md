@@ -27,7 +27,7 @@ kopiera `.env.example` till `.env`, fyll i värdena och starta med `npx netlify-
 I produktion anges samma variabler i Netlifys miljöinställningar med tillgång
 till Functions, följt av en ny deploy.
 
-- `OPENAI_API_KEY` är en projektnyckel från OpenAI API Platform.
+- `GROQ_API_KEY` är en [API-nyckel från GroqCloud](https://console.groq.com/keys). Skapa den på Free-planen.
 - `GAME_PICKER_PASSWORD_HASH` är en saltad scrypt-hash av chattens lösenord.
 - `GAME_PICKER_SESSION_SECRET` är ett separat slumpvärde. Skapa det med `openssl rand -hex 32`.
 
@@ -41,7 +41,8 @@ unset picker_password
 
 Spara bara hashvärdet. Chattens session löper ut efter en timme. Skicka inga
 hemligheter i chattmeddelanden. Funktionen skickar meddelanden och speldata
-till OpenAI för att ta fram förslag från katalogen.
+till Groq för att ta fram förslag från katalogen med GPT-OSS 20B. Om
+API-kvoten tar slut kan du använda **Välj manuellt** tills kvoten återställs.
 
 ## Temafärger från omslag
 
