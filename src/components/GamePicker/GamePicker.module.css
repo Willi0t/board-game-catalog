@@ -19,6 +19,15 @@
   background: #312b356b;
   backdrop-filter: blur(3px);
 }
+
+.dialog.manual {
+  background: #fbfaf8;
+}
+
+.manual .header {
+  background: #fbfaf8;
+}
+
 .panel {
   display: flex;
   flex-direction: column;

@@ -96,7 +96,7 @@ export default function GamePicker({
   return (
     <dialog
       {...dialogProps}
-      className={`${styles.dialog} ${mode === null ? styles.compact : ''}`}
+      className={`${styles.dialog} ${mode === null ? styles.compact : ''} ${manual ? styles.manual : ''}`}
       aria-modal="true"
       aria-labelledby={titleId}
       aria-describedby={mode === null ? descriptionId : undefined}

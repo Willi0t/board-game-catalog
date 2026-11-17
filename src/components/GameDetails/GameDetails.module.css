@@ -3,11 +3,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  background:
-    linear-gradient(#fbfaf8b8, #fbfaf8b8),
-    url('/images/ui/game-picker-background.jpg') center / cover no-repeat,
-    var(--tint);
-  background-blend-mode: normal, soft-light, normal;
+  background: #fbfaf8e8;
   transition: background-color 0.7s ease;
 }
 
