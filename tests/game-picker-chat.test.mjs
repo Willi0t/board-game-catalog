@@ -31,6 +31,11 @@ test('picker chat requires a valid session before using the API', async (t) => {
     messages: [{ role: 'user', content: 'Vi är två.' }],
   };
   let quotaExceeded = false;
+  let result = {
+    reply: 'Prova ett strategispel.',
+    gameIds: ['burgundy'],
+    suggestions: [],
+  };
   const fetch = t.mock.method(globalThis, 'fetch', async () =>
     quotaExceeded
       ? new Response(null, { status: 429 })
@@ -38,10 +43,7 @@ test('picker chat requires a valid session before using the API', async (t) => {
           choices: [
             {
               message: {
-                content: JSON.stringify({
-                  reply: 'Prova ett strategispel.',
-                  gameIds: ['burgundy'],
-                }),
+                content: JSON.stringify(result),
               },
             },
           ],
@@ -84,6 +86,82 @@ test('picker chat requires a valid session before using the API', async (t) => {
   assert.deepEqual(payload.messages.slice(1), chat.messages);
   assert.ok(!options.body.includes(password));
 
+  for (const suggestion of ['4 spelare', 'Max en timme']) {
+    result = {
+      reply: 'En följdfråga?',
+      gameIds: [],
+      suggestions: [suggestion],
+    };
+    const followup = await call(chat, cookie);
+    assert.equal(followup.status, 200);
+    assert.deepEqual((await followup.json()).suggestions, [suggestion]);
+  }
+  result = {
+    reply: 'Felaktigt spel.',
+    gameIds: ['not-a-game'],
+    suggestions: [],
+  };
+  assert.equal((await call(chat, cookie)).status, 502);
   quotaExceeded = true;
   assert.equal((await call(chat, cookie)).status, 429);
+});
+
+test('HTTP session cookies work only on loopback in Netlify Dev', async (t) => {
+  const previous = { ...process.env };
+  t.after(() => {
+    process.env = previous;
+  });
+  const setEnv = (key, value) => {
+    process.env[key] = value;
+  };
+  setEnv('NETLIFY_DEV', 'true');
+  const salt = Buffer.alloc(16, 2);
+  const password = 'local-test-password';
+  const digest = scryptSync(password, salt, 32, {
+    N: 65536,
+    r: 8,
+    p: 1,
+    maxmem: 96 * 1024 * 1024,
+  });
+  setEnv(
+    'GAME_PICKER_PASSWORD_HASH',
+    `${salt.toString('hex')}:${digest.toString('hex')}`,
+  );
+  setEnv(
+    'GAME_PICKER_SESSION_SECRET',
+    'local-cookie-test-secret-at-least-32-characters',
+  );
+  setEnv('GROQ_API_KEY', 'test-key');
+  const call = (origin, body, cookie = '') =>
+    handler(
+      new Request(`${origin}/api/game-picker`, {
+        method: 'POST',
+        headers: { origin, 'content-type': 'application/json', cookie },
+        body: JSON.stringify(body),
+      }),
+    );
+  const local = 'http://localhost:8888';
+  const unlocked = await call(local, { action: 'unlock', password });
+  const header = unlocked.headers.get('set-cookie');
+  assert.match(header, /^game-picker-local=/);
+  assert.doesNotMatch(header, /; Secure/);
+  assert.match(header, /HttpOnly; SameSite=Strict/);
+  assert.deepEqual(
+    await (
+      await call(local, { action: 'status' }, header.split(';')[0])
+    ).json(),
+    { unlocked: true },
+  );
+  for (const origin of ['https://catalog.example', 'http://catalog.example']) {
+    const response = await call(origin, { action: 'unlock', password });
+    assert.match(response.headers.get('set-cookie'), /^__Host-game-picker=/);
+    assert.match(response.headers.get('set-cookie'), /; Secure;/);
+  }
+  setEnv('NETLIFY_DEV', 'false');
+  assert.match(
+    (await call(local, { action: 'unlock', password })).headers.get(
+      'set-cookie',
+    ),
+    /^__Host-game-picker=/,
+  );
 });

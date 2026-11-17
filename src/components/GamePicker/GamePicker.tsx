@@ -36,6 +36,7 @@ interface GamePickerProps {
   criteria: PickerCriteria;
   onCriteriaChange: (criteria: PickerCriteria) => void;
   onApply: () => void;
+  onRecommend: (ids: string[]) => void;
   openerRef: RefObject<HTMLElement | null>;
   fallbackRef: RefObject<HTMLElement | null>;
 }
@@ -48,13 +49,15 @@ export default function GamePicker({
   criteria,
   onCriteriaChange,
   onApply,
+  onRecommend,
   openerRef,
   fallbackRef,
 }: GamePickerProps) {
   const dialogProps = useModalDialog({ onClose, openerRef, fallbackRef });
   const titleId = useId();
   const errorId = useId();
-  const [manual, setManual] = useState(false);
+  const [mode, setMode] = useState<'ai' | 'manual' | null>(null);
+  const manual = mode === 'manual';
   const [step, setStep] = useState(0);
   const [playerError, setPlayerError] = useState(false);
   const playerOptionsRef = useRef<HTMLDivElement>(null);
@@ -92,7 +95,7 @@ export default function GamePicker({
   return (
     <dialog
       {...dialogProps}
-      className={styles.dialog}
+      className={`${styles.dialog} ${mode === null ? styles.compact : ''}`}
       aria-modal="true"
       aria-labelledby={titleId}
     >
@@ -107,22 +110,20 @@ export default function GamePicker({
           <div className={styles.mode}>
             <button
               type="button"
-              aria-pressed={!manual}
-              onClick={() => setManual(false)}
+              aria-pressed={mode === 'ai'}
+              onClick={() => setMode('ai')}
             >
-              AI-chatt
+              AI
             </button>
             <button
               type="button"
               aria-pressed={manual}
-              onClick={() => setManual(true)}
+              onClick={() => setMode('manual')}
             >
-              Välj manuellt
+              Manuellt
             </button>
           </div>
-          <div hidden={manual}>
-            <GamePickerChat />
-          </div>
+          {mode === 'ai' && <GamePickerChat onRecommend={onRecommend} />}
           {manual && (
             <>
               <p className={styles.intro}>

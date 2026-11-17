@@ -250,3 +250,7 @@
   background: var(--accent);
   color: white;
 }
+
+.compact {
+  width: min(400px, calc(100% - 32px));
+}

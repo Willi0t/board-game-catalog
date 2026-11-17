@@ -22,6 +22,12 @@ För fortsatt AI-utveckling: installera OpenAI:s officiella Codex-tillägg i VS 
 
 ## AI-chatten i Välj åt mig
 
+Startdialogen låter dig välja **AI** eller **Manuellt**. AI-chatten visar korta
+svarsförslag som skickas direkt när du klickar. Förslagen kommer från det
+strukturerade API-svaret, tillsammans med validerade spel-ID:n. När AI:n valt
+spel visas de i katalogen i rekommendationsordning. **Rensa AI-filter** återställer
+den tidigare katalogvyn och dess filter. Den manuella guidens frågor är oförändrade.
+
 Den manuella guiden fungerar med vanlig Vite. För att köra chatten lokalt,
 kopiera `.env.example` till `.env`, fyll i värdena och starta med `npx netlify-cli dev`.
 I produktion anges samma variabler i Netlifys miljöinställningar med tillgång

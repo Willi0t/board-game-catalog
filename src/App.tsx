@@ -1,4 +1,4 @@
-import { useRef, type CSSProperties } from 'react';
+import { useState, useRef, type CSSProperties } from 'react';
 import games from './data/games';
 import { resolveGameColors } from './constants/placeholderThemes';
 import type { Game } from './types/game';
@@ -24,31 +24,46 @@ import GamePickerResult from './components/GamePickerResult/GamePickerResult';
 export default function App() {
   const { favorites, toggleFavorite } = useFavorites();
   const picker = useGamePicker();
-  const catalog = useCatalog(games, favorites, picker.appliedCriteria);
+  const [aiIds, setAiIds] = useState<string[] | null>(null);
+  const catalog = useCatalog(games, favorites, picker.appliedCriteria, aiIds);
+  const clearAi = () => setAiIds(null);
+  const recommend = (ids: string[]) => {
+    const valid = [...new Set(ids)].filter((id) =>
+      games.some((g) => g.id === id),
+    );
+    if (!valid.length) return;
+    setAiIds(valid);
+    picker.close();
+  };
   const isMobile = useMediaQuery('(max-width: 900px)');
   const { mobilePanel, detailDrawer, imageModal, tab, setTab, showGameInfo } =
     useGamePanels(catalog.selectedGame?.id ?? null, isMobile);
   const libraryRef = useRef<HTMLElement>(null);
   const selectedGame = catalog.selectedGame;
-  const viewLabel = picker.appliedCriteria
-    ? 'Guidens resultat'
-    : catalog.filters.libraryView === 'favorites'
-      ? 'Favoriter'
-      : 'Alla spel';
+  const viewLabel = aiIds
+    ? 'AI:s rekommendationer'
+    : picker.appliedCriteria
+      ? 'Guidens resultat'
+      : catalog.filters.libraryView === 'favorites'
+        ? 'Favoriter'
+        : 'Alla spel';
   const themeGame = detailDrawer.game ?? selectedGame;
   const { tint, accent } = themeGame
     ? resolveGameColors(themeGame)
     : { tint: '#e9e4ed', accent: '#815467' };
 
   const reset = () => {
+    clearAi();
     picker.clearResults();
     catalog.resetFilters();
   };
   const changeLibraryView = (view: LibraryView) => {
+    clearAi();
     picker.clearResults();
     catalog.updateFilter('libraryView', view);
   };
   const changeTag = (field: 'gameType' | 'mechanic', value: string) => {
+    clearAi();
     picker.clearResults();
     catalog.updateFilter(field, value);
   };
@@ -70,10 +85,14 @@ export default function App() {
         games={games}
         favorites={favorites}
         libraryView={
-          picker.appliedCriteria ? null : catalog.filters.libraryView
+          aiIds || picker.appliedCriteria ? null : catalog.filters.libraryView
         }
-        gameType={picker.appliedCriteria ? '' : catalog.filters.gameType}
-        mechanic={picker.appliedCriteria ? '' : catalog.filters.mechanic}
+        gameType={
+          aiIds || picker.appliedCriteria ? '' : catalog.filters.gameType
+        }
+        mechanic={
+          aiIds || picker.appliedCriteria ? '' : catalog.filters.mechanic
+        }
         onLibraryViewChange={changeLibraryView}
         onGameTypeChange={(value) => changeTag('gameType', value)}
         onMechanicChange={(value) => changeTag('mechanic', value)}
@@ -87,7 +106,15 @@ export default function App() {
         >
           <div className={styles['collection-layout']}>
             <div className={styles['catalog-column']}>
-              {picker.appliedCriteria ? (
+              {aiIds ? (
+                <section
+                  className={styles.aiResults}
+                  aria-label="AI:s rekommendationer"
+                >
+                  <strong>AI:s rekommendationer</strong>
+                  <button onClick={clearAi}>Rensa AI-filter</button>
+                </section>
+              ) : picker.appliedCriteria ? (
                 <GamePickerResult
                   games={games}
                   criteria={picker.appliedCriteria}
@@ -120,7 +147,7 @@ export default function App() {
                 selectedGame={selectedGame}
                 favorites={favorites}
                 sort={catalog.sort}
-                onSortChange={catalog.setSort}
+                onSortChange={aiIds ? undefined : catalog.setSort}
                 onSelectGame={selectGame}
                 onOpenDetails={openDetails}
                 onReset={
@@ -162,7 +189,11 @@ export default function App() {
           onClose={picker.close}
           criteria={picker.criteria}
           onCriteriaChange={picker.setCriteria}
-          onApply={picker.apply}
+          onApply={() => {
+            clearAi();
+            picker.apply();
+          }}
+          onRecommend={recommend}
           openerRef={picker.openerRef}
           fallbackRef={libraryRef}
         />

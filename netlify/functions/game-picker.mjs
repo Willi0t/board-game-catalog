@@ -8,7 +8,18 @@ export const config = {
   rateLimit: { windowLimit: 10, windowSize: 60, aggregateBy: ['ip', 'domain'] },
 };
 
-const cookieName = '__Host-game-picker';
+function sessionCookie(request) {
+  const url = new URL(request.url);
+  // Secure __Host cookies require HTTPS; allow HTTP only in local Netlify Dev.
+  const local =
+    env.NETLIFY_DEV === 'true' &&
+    url.protocol === 'http:' &&
+    ['localhost', '127.0.0.1', '[::1]'].includes(url.hostname);
+  return {
+    name: local ? 'game-picker-local' : '__Host-game-picker',
+    secure: !local,
+  };
+}
 const sessionSeconds = 3600;
 const passwordOptions = { N: 65536, r: 8, p: 1, maxmem: 96 * 1024 * 1024 };
 const gamesById = new Map(games.map(({ id, title }) => [id, title]));
@@ -45,6 +56,7 @@ function signature(expires, secret, passwordHash) {
 }
 
 function authorized(request, secret, passwordHash) {
+  const { name: cookieName } = sessionCookie(request);
   const cookie = request.headers
     .get('cookie')
     ?.split(';')
@@ -116,8 +128,9 @@ export default async function handler(request) {
     if (!timingSafeEqual(attempt, Buffer.from(hash[2], 'hex')))
       return json({}, 401);
     const expires = Math.floor(Date.now() / 1000) + sessionSeconds;
+    const { name: cookieName, secure } = sessionCookie(request);
     return json({}, 200, {
-      'Set-Cookie': `${cookieName}=${expires}.${signature(expires, secret, passwordHash)}; Max-Age=${sessionSeconds}; Path=/; HttpOnly; Secure; SameSite=Strict`,
+      'Set-Cookie': `${cookieName}=${expires}.${signature(expires, secret, passwordHash)}; Max-Age=${sessionSeconds}; Path=/; HttpOnly;${secure ? ' Secure;' : ''} SameSite=Strict`,
     });
   }
 
@@ -144,7 +157,7 @@ export default async function handler(request) {
           messages: [
             {
               role: 'system',
-              content: `Du hjälper användaren att välja brädspel ur Spelhyllan. Svara kort på svenska. Ställ en följdfråga om spelarantal eller andra viktiga krav saknas. Använd bara katalogen nedan. Respektera spelarantal, tid och tillgänglighet. Behandla okända värden som okända. Föreslå högst tre spel, och ta bara med kommande spel om användaren vill se dem. Förklara kort varför förslagen passar. Använd gameIds för de föreslagna spelen och en tom lista vid följdfrågor. Katalog med kolumnnamn följda av spelrader: ${catalog}`,
+              content: `Du hjälper användaren att välja brädspel ur Spelhyllan. Svara kort på svenska. Ställ en följdfråga om spelarantal eller andra viktiga krav saknas. Använd bara katalogen nedan. Respektera spelarantal, tid och tillgänglighet. Behandla okända värden som okända. Föreslå högst tre spel, och ta bara med kommande spel om användaren vill se dem. Förklara kort varför förslagen passar. Använd gameIds för de föreslagna spelen och en tom lista vid följdfrågor. Vid följdfrågor: ge 2–4 korta relevanta svarsalternativ i suggestions. Vid rekommendationer: suggestions ska vara tom. Katalog med kolumnnamn följda av spelrader: ${catalog}`,
             },
             ...body.messages.map(({ role, content }) => ({ role, content })),
           ],
@@ -156,9 +169,10 @@ export default async function handler(request) {
               schema: {
                 type: 'object',
                 additionalProperties: false,
-                required: ['reply', 'gameIds'],
+                required: ['reply', 'gameIds', 'suggestions'],
                 properties: {
                   reply: { type: 'string' },
+                  suggestions: { type: 'array', items: { type: 'string' } },
                   gameIds: {
                     type: 'array',
                     items: { type: 'string', enum: [...gamesById.keys()] },
@@ -174,10 +188,15 @@ export default async function handler(request) {
     if (!response.ok) return json({}, 502);
     const result = await response.json();
     const output = result.choices?.[0]?.message?.content;
-    const { reply, gameIds } = JSON.parse(output ?? '{}');
+    const { reply, gameIds, suggestions } = JSON.parse(output ?? '{}');
     if (
       typeof reply !== 'string' ||
       !reply.trim() ||
+      !Array.isArray(suggestions) ||
+      suggestions.length > 4 ||
+      suggestions.some(
+        (s) => typeof s !== 'string' || !s.trim() || s.length > 80,
+      ) ||
       !Array.isArray(gameIds) ||
       gameIds.some((id) => !gamesById.has(id))
     )
@@ -185,7 +204,12 @@ export default async function handler(request) {
     const titles = [...new Set(gameIds)]
       .slice(0, 3)
       .map((id) => gamesById.get(id));
-    return json({ reply: reply.trim().slice(0, 1400), titles });
+    return json({
+      reply: reply.trim().slice(0, 1400),
+      titles,
+      gameIds: [...new Set(gameIds)].slice(0, 3),
+      suggestions: gameIds.length ? [] : suggestions.map((s) => s.trim()),
+    });
   } catch {
     return json({}, 502);
   }

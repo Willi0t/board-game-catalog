@@ -70,3 +70,46 @@
 .error {
   color: #943646;
 }
+
+.chat h3 {
+  text-align: center;
+  font-size: 24px;
+  margin: 12px 0 0;
+}
+.intro {
+  text-align: center;
+}
+.composer {
+  border: 1px solid #b7a7af;
+  border-radius: 22px;
+  padding: 12px;
+  background: #fff;
+  display: grid;
+  gap: 8px;
+}
+.composer textarea,
+.composer input {
+  border: 0;
+  background: transparent;
+}
+.composer button {
+  justify-self: end;
+  border-radius: 18px;
+}
+.suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+.suggestions button {
+  min-height: 44px;
+  padding: 8px 14px;
+  border-radius: 22px;
+  border: 1px solid #cdbfc6;
+  background: #fff9;
+  color: #5c494e;
+}
+.suggestions button:disabled {
+  opacity: 0.6;
+}
