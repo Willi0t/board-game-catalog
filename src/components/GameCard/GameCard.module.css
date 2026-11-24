@@ -26,7 +26,7 @@
   border: 3px solid transparent;
   transition:
     box-shadow 0.2s,
-    border-color 0.2s;
+    border-color 0.25s;
 }
 
 .image {
@@ -35,8 +35,21 @@
   --image-height: 100%;
 }
 
+.cover-wrap[data-tinted] .image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    155deg,
+    transparent 20%,
+    color-mix(in srgb, var(--card-tint) 8%, transparent) 60%,
+    color-mix(in srgb, var(--card-tint) 19%, transparent)
+  );
+}
+
 .game-card.selected .cover-wrap {
-  border-color: var(--accent);
+  border-color: var(--selected-card-color);
   box-shadow:
     0 0 0 3px #fff9,
     0 8px 18px #4e2c3720;
@@ -74,6 +87,10 @@
 
 .selected .selected-indicator {
   display: flex;
+}
+
+.cover-wrap[data-tinted] .selected-indicator {
+  background: color-mix(in srgb, var(--card-tint) 65%, black);
 }
 
 .card-heart {

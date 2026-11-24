@@ -1,10 +1,18 @@
 .app {
   min-height: 100vh;
   display: flex;
-  background:
-    linear-gradient(to right, #faf9f7 8%, #faf9f780 42%, transparent 72%),
-    var(--tint);
+  background-image: linear-gradient(
+    to right,
+    #faf9f7 8%,
+    #faf9f780 42%,
+    transparent 72%
+  );
+  background-color: var(--tint);
   transition: background-color 0.7s ease;
+}
+
+.app[data-has-selection] {
+  background-color: color-mix(in srgb, var(--selected-card-color) 22%, #faf9f7);
 }
 
 .workspace {

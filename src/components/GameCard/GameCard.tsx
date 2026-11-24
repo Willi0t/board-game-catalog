@@ -1,3 +1,4 @@
+import type { CSSProperties } from 'react';
 import GameExpansions from '../GameExpansions/GameExpansions';
 import GameStatus from '../GameStatus/GameStatus';
 import Icon from '../Icon/Icon';
@@ -21,6 +22,9 @@ export default function GameCard({
   onSelectGame,
   onOpenDetails,
 }: GameCardProps) {
+  const coverStyle: (CSSProperties & { '--card-tint': string }) | undefined =
+    game.cardTint ? { '--card-tint': game.cardTint } : undefined;
+
   return (
     <button
       className={`${styles['game-card']} ${isSelected ? styles.selected : ''}`}
@@ -28,7 +32,11 @@ export default function GameCard({
       onDoubleClick={(event) => onOpenDetails(game, event.currentTarget)}
       aria-pressed={isSelected}
     >
-      <div className={styles['cover-wrap']}>
+      <div
+        className={styles['cover-wrap']}
+        data-tinted={game.cardTint ? true : undefined}
+        style={coverStyle}
+      >
         <GameImage
           image={getCoverImage(game)}
           className={styles.image}
