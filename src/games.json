@@ -5718,6 +5718,47 @@
     "tint": "#eadce2",
     "description": "",
     "placeholderTheme": "castle-rose",
+    "cover": "/images/games/annulet/annulet-thumb.png",
+    "coverAlt": "Omslag för Annulet med en lysande vit hjort under en blå stenportal",
+    "hero": "/images/games/annulet/annulet-banner.png",
+    "heroAlt": "Annulets logotyp över en skogsbäck med en guldring och en vit hjort vid en blå portal",
+    "gallery": [
+      {
+        "src": "/images/games/annulet/gallery/annulet-1.png",
+        "title": "Introduktion",
+        "alt": "Engelsk introduktion till Annulet, ett fristående strategispel i samma värld som The Old King’s Crown"
+      },
+      {
+        "src": "/images/games/annulet/gallery/annulet-2.png",
+        "title": "Spelet uppdukat",
+        "alt": "Spelmatta med kort, gröna stenar och marker framför en illustration av en vit hjort"
+      },
+      {
+        "src": "/images/games/annulet/gallery/annulet-3.png",
+        "title": "Regelboken",
+        "alt": "Omslaget och ett uppslag som visar korttyper och spelområden"
+      },
+      {
+        "src": "/images/games/annulet/gallery/annulet-4.png",
+        "title": "Spelmatta och marker",
+        "alt": "Marknadsmatta i tyg, gröna stenar, en röd initiativmarkör och kronmarker"
+      },
+      {
+        "src": "/images/games/annulet/gallery/annulet-5.png",
+        "title": "Landskaps- och karaktärskort",
+        "alt": "Illustrerade kort med landskap, byggnader och karaktärer"
+      },
+      {
+        "src": "/images/games/annulet/gallery/annulet-6.png",
+        "title": "Annulet- och ödeskort",
+        "alt": "Karaktärskort ovanför kort med ringar och blå portaler"
+      },
+      {
+        "src": "/images/games/annulet/gallery/annulet-7.png",
+        "title": "Berättelse- och solokort",
+        "alt": "Berättelsekort, solokort och regelboken. Bilden anger att innehåll och antal kan ändras."
+      }
+    ],
     "playersMin": 1,
     "playersMax": 4,
     "bestWith": null,
@@ -5735,7 +5776,14 @@
       "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "coverVariants": [
+      { "src": "/images/games/annulet/annulet-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/annulet/annulet-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/annulet/annulet-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/annulet/annulet-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/annulet/annulet-thumb.png", "width": 1122 }
+    ]
   },
   {
     "id": "brass-birmingham",
