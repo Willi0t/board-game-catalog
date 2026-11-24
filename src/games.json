@@ -5518,6 +5518,92 @@
     "tint": "#eadce2",
     "description": "",
     "placeholderTheme": "castle-rose",
+    "cover": "/images/games/tend-hive-cellar/tend-thumb.png",
+    "coverAlt": "Tends logotyp över ett färgglatt landskap med främmande växter och djur",
+    "hero": "/images/games/tend-hive-cellar/tend-banner.png",
+    "heroAlt": "Tends logotyp vid en flod och en odling som sköts av en robot",
+    "gallery": [
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-1.png",
+        "title": "Spelkomponenter"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-2.png",
+        "title": "Spelboxen"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-3.png",
+        "title": "Spelblad och uppgiftskort"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-4.png",
+        "title": "Odling"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-5.png",
+        "title": "Skogen"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-6.png",
+        "title": "Fiske"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-7.png",
+        "title": "Gruvan"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-8.png",
+        "title": "Märken"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-9.png",
+        "title": "Lastmanifestet"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-10.png",
+        "title": "Floden"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-11.png",
+        "title": "Kombinationer och bonusuppgifter"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-12.png",
+        "title": "Tend vid spelbordet"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-13.png",
+        "title": "Hive – expansionsboxen"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-14.png",
+        "title": "Hive – bigårdar"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-15.png",
+        "title": "Hive – bitärningar och utrustning"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-16.png",
+        "title": "Hive – uppgraderingar och last"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-17.png",
+        "title": "Cellar – expansionsboxen"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-18.png",
+        "title": "Cellar – hantverksvaror"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-19.png",
+        "title": "Cellar – utrustning och marknadskontrakt"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-20.png",
+        "title": "Cellar – marknadsstånd och lager"
+      }
+    ],
     "playersMin": 1,
     "playersMax": 6,
     "bestWith": "1, 3",
@@ -5536,7 +5622,26 @@
       "preliminary": true,
       "editionMatch": "not-independently-verified"
     },
-    "expansions": ["Hive", "Cellar", "Stretch Goal Upgrades"]
+    "expansions": ["Hive", "Cellar", "Stretch Goal Upgrades"],
+    "coverVariants": [
+      {
+        "src": "/images/games/tend-hive-cellar/tend-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/tend-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/tend-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/tend-thumb-896.webp",
+        "width": 896
+      },
+      { "src": "/images/games/tend-hive-cellar/tend-thumb.png", "width": 1122 }
+    ]
   },
   {
     "id": "san-juan",
