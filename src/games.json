@@ -5338,6 +5338,32 @@
     "id": "ascension-legends",
     "title": "Ascension Legends",
     "edition": "",
+    "cover": "/images/games/ascension-legends/ascensionL-thumb.png",
+    "coverAlt": "Omslaget till Ascension Legends med fem illustrerade karaktärer i olika färger",
+    "hero": "/images/games/ascension-legends/ascensionL-banner.png",
+    "heroAlt": "Ascension Legends logotyp vid en borg med två äventyrare i förgrunden",
+    "gallery": [
+      {
+        "src": "/images/games/ascension-legends/gallery/ascensionL-1.png",
+        "title": "Askens baksida",
+        "alt": "Baksidan av spelasken med en översikt över spelplan, kort och markörer"
+      },
+      {
+        "src": "/images/games/ascension-legends/gallery/ascensionL-2.png",
+        "title": "Spelets innehåll",
+        "alt": "Spelask, spelplan, kort och röda markörer uppställda tillsammans"
+      },
+      {
+        "src": "/images/games/ascension-legends/gallery/ascensionL-3.png",
+        "title": "Närbild på spelplanen",
+        "alt": "Kort på spelplanen framför utlagda markörer och stående karaktärskort"
+      },
+      {
+        "src": "/images/games/ascension-legends/gallery/ascensionL-4.png",
+        "title": "Vid spelbordet",
+        "alt": "En hand med spelkort i förgrunden och spelplanen på bordet"
+      }
+    ],
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -5360,7 +5386,29 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "coverVariants": [
+      {
+        "src": "/images/games/ascension-legends/ascensionL-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/ascension-legends/ascensionL-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/ascension-legends/ascensionL-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/ascension-legends/ascensionL-thumb-896.webp",
+        "width": 896
+      },
+      {
+        "src": "/images/games/ascension-legends/ascensionL-thumb.png",
+        "width": 1122
+      }
+    ]
   },
   {
     "id": "nexus-card-game",
