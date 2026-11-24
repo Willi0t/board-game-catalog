@@ -7,6 +7,7 @@ export interface Game {
   category: string;
   accent: string;
   tint: string;
+  cardTint?: string;
   description: string;
   longDescription?: string;
   minimumAge?: number;
