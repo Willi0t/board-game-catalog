@@ -5652,6 +5652,37 @@
     "tint": "#eadce2",
     "description": "",
     "placeholderTheme": "castle-rose",
+    "cover": "/images/games/san-juan/san-juan-thumb.png",
+    "coverAlt": "Omslag för San Juan 1897 Special Edition med ett solbelyst torg",
+    "hero": "/images/games/san-juan/san-juan-banner.png",
+    "heroAlt": "Illustration av San Juans torg med marknadsstånd, fontän och segelfartyg i hamnen",
+    "gallery": [
+      {
+        "src": "/images/games/san-juan/gallery/san-juan-1.png",
+        "title": "Spelbox och byggnadskort",
+        "alt": "Boxen till San Juan 1897 Special Edition bakom utlagda byggnadskort"
+      },
+      {
+        "src": "/images/games/san-juan/gallery/san-juan-2.png",
+        "title": "Kort på grön spelduk",
+        "alt": "Byggnadskort, korthögar och regelhäfte på en grön spelduk"
+      },
+      {
+        "src": "/images/games/san-juan/gallery/san-juan-3.png",
+        "title": "Spelbox och kort på träbord",
+        "alt": "Spelboxen bredvid en korthög och utlagda kort på ett träbord"
+      },
+      {
+        "src": "/images/games/san-juan/gallery/san-juan-4.png",
+        "title": "Roll- och byggnadskort",
+        "alt": "Närbild av rollkort och byggnadskort på en svart spelmatta"
+      },
+      {
+        "src": "/images/games/san-juan/gallery/san-juan-5.png",
+        "title": "Speluppställning",
+        "alt": "Speluppställning ovanifrån med rollkort, byggnadskort och kortlek"
+      }
+    ],
     "playersMin": 2,
     "playersMax": 4,
     "bestWith": "3",
@@ -5669,7 +5700,14 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "coverVariants": [
+      { "src": "/images/games/san-juan/san-juan-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/san-juan/san-juan-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/san-juan/san-juan-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/san-juan/san-juan-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/san-juan/san-juan-thumb.png", "width": 1122 }
+    ]
   },
   {
     "id": "annulet",
