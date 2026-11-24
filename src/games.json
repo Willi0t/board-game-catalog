@@ -5414,6 +5414,57 @@
     "id": "nexus-card-game",
     "title": "Nexus Card Game",
     "edition": "Founders Edition",
+    "cover": "/images/games/nexus-card-game/nexus-thumb.png",
+    "coverAlt": "Omslaget med titeln Nexus: Last Dawn, två krigare och en eldsprutande drake",
+    "hero": "/images/games/nexus-card-game/nexus-banner.png",
+    "heroAlt": "Nexus-logotypen mellan fantasykrigare mot en himmel med planeter och en drake",
+    "gallery": [
+      {
+        "src": "/images/games/nexus-card-game/gallery/nexus-1.png",
+        "title": "Tre spelkort",
+        "alt": "Tre illustrerade spelkort med Lady of Blood i mitten"
+      },
+      {
+        "src": "/images/games/nexus-card-game/gallery/nexus-3.png",
+        "title": "Så spelas Nexus",
+        "alt": "En eldmagiker och en översikt över hur två fraktioner kombineras för att besegra motståndarens Nexus"
+      },
+      {
+        "src": "/images/games/nexus-card-game/gallery/nexus-4.png",
+        "title": "Dra kort",
+        "alt": "En kortlek på spelplanen illustrerar turens första steg"
+      },
+      {
+        "src": "/images/games/nexus-card-game/gallery/nexus-5.png",
+        "title": "Spela kort",
+        "alt": "Kortet Hamadryad visas framför spelplanen som exempel på turens andra steg"
+      },
+      {
+        "src": "/images/games/nexus-card-game/gallery/nexus-6.png",
+        "title": "Attackera",
+        "alt": "Spelkort på varsin sida av spelplanen illustrerar turens attacksteg"
+      },
+      {
+        "src": "/images/games/nexus-card-game/gallery/nexus-7.png",
+        "title": "Avsluta turen",
+        "alt": "Spelplanen med utlagda kort vid turens slut"
+      },
+      {
+        "src": "/images/games/nexus-card-game/gallery/nexus-8.png",
+        "title": "Spelläge: bäst av ett",
+        "alt": "Fyra fraktionslekar illustrerar hur fraktioner väljs i en enskild match"
+      },
+      {
+        "src": "/images/games/nexus-card-game/gallery/nexus-9.png",
+        "title": "Spelläge: bäst av tre",
+        "alt": "Åtta fraktionslekar och en översikt över valet av fraktioner i en matchserie"
+      },
+      {
+        "src": "/images/games/nexus-card-game/gallery/nexus-10.png",
+        "title": "Spelläge: fritt val",
+        "alt": "Fraktionskorten Pirates och Dragons illustrerar läget Casual Pick"
+      }
+    ],
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -5437,7 +5488,26 @@
       "preliminary": true,
       "editionMatch": "not-independently-verified"
     },
-    "expansions": ["Foil Pack"]
+    "expansions": ["Foil Pack"],
+    "coverVariants": [
+      {
+        "src": "/images/games/nexus-card-game/nexus-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/nexus-card-game/nexus-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/nexus-card-game/nexus-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/nexus-card-game/nexus-thumb-896.webp",
+        "width": 896
+      },
+      { "src": "/images/games/nexus-card-game/nexus-thumb.png", "width": 1122 }
+    ]
   },
   {
     "id": "tend-hive-cellar",
