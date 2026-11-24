@@ -72,18 +72,9 @@
       "Stretch Goal Upgrades"
     ],
     "coverVariants": [
-      {
-        "src": "/images/games/burgundy/castle-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/burgundy/castle-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/burgundy/castle-thumb.png",
-        "width": 768
-      }
+      { "src": "/images/games/burgundy/castle-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/burgundy/castle-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/burgundy/castle-thumb.png", "width": 768 }
     ]
   },
   {
@@ -140,22 +131,11 @@
       }
     ],
     "coverVariants": [
-      {
-        "src": "/images/games/terraforming/mars-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/terraforming/mars-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/terraforming/mars-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/terraforming/mars-thumb.png",
-        "width": 1122
-      }
+      { "src": "/images/games/terraforming/mars-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/terraforming/mars-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/terraforming/mars-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/terraforming/mars-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/terraforming/mars-thumb.png", "width": 1122 }
     ]
   },
   {
@@ -213,22 +193,11 @@
       }
     ],
     "coverVariants": [
-      {
-        "src": "/images/games/cosmic/cosmic-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/cosmic/cosmic-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/cosmic/cosmic-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/cosmic/cosmic-thumb.png",
-        "width": 1122
-      }
+      { "src": "/images/games/cosmic/cosmic-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/cosmic/cosmic-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/cosmic/cosmic-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/cosmic/cosmic-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/cosmic/cosmic-thumb.png", "width": 1122 }
     ]
   },
   {
@@ -286,22 +255,11 @@
       }
     ],
     "coverVariants": [
-      {
-        "src": "/images/games/clank/catacombs-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/clank/catacombs-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/clank/catacombs-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/clank/catacombs-thumb.png",
-        "width": 1122
-      }
+      { "src": "/images/games/clank/catacombs-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/clank/catacombs-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/clank/catacombs-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/clank/catacombs-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/clank/catacombs-thumb.png", "width": 1122 }
     ]
   },
   {
@@ -359,22 +317,11 @@
       }
     ],
     "coverVariants": [
-      {
-        "src": "/images/games/wonders/wonders-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/wonders/wonders-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/wonders/wonders-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/wonders/wonders-thumb.png",
-        "width": 1122
-      }
+      { "src": "/images/games/wonders/wonders-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/wonders/wonders-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/wonders/wonders-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/wonders/wonders-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/wonders/wonders-thumb.png", "width": 1122 }
     ]
   },
   {
@@ -431,22 +378,11 @@
       }
     ],
     "coverVariants": [
-      {
-        "src": "/images/games/salad/sallad-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/salad/sallad-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/salad/sallad-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/salad/sallad-thumb.png",
-        "width": 1122
-      }
+      { "src": "/images/games/salad/sallad-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/salad/sallad-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/salad/sallad-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/salad/sallad-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/salad/sallad-thumb.png", "width": 1122 }
     ]
   },
   {
@@ -503,22 +439,11 @@
     "cover": "/images/games/burgle/burgle-thumb.png",
     "coverAlt": "Burgle Bros.-omslag med kuppgänget ovanför titeln på en gul affisch med röd ram.",
     "coverVariants": [
-      {
-        "src": "/images/games/burgle/burgle-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/burgle/burgle-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/burgle/burgle-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/burgle/burgle-thumb.png",
-        "width": 1122
-      }
+      { "src": "/images/games/burgle/burgle-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/burgle/burgle-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/burgle/burgle-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/burgle/burgle-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/burgle/burgle-thumb.png", "width": 1122 }
     ]
   },
   {
@@ -551,22 +476,11 @@
     "cover": "/images/games/duel/wonders-duel-thumb.png",
     "coverAlt": "7 Wonders Duel-omslag med guldtitel, en krigare och en egyptisk kvinna framför antika städer.",
     "coverVariants": [
-      {
-        "src": "/images/games/duel/wonders-duel-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/duel/wonders-duel-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/duel/wonders-duel-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/duel/wonders-duel-thumb.png",
-        "width": 1122
-      }
+      { "src": "/images/games/duel/wonders-duel-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/duel/wonders-duel-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/duel/wonders-duel-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/duel/wonders-duel-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/duel/wonders-duel-thumb.png", "width": 1122 }
     ],
     "hero": "/images/games/duel/wonders-duel-banner.png",
     "heroAlt": "7 Wonders Duel-titeln med en krigare, en egyptisk kvinna och antika städer i solnedgång.",
@@ -623,22 +537,11 @@
     "cover": "/images/games/vaalbara/vaalbara-thumb.png",
     "coverAlt": "Vaalbara-omslag med en hornprydd gestalt, en uggla och vargar på en klippa.",
     "coverVariants": [
-      {
-        "src": "/images/games/vaalbara/vaalbara-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/vaalbara/vaalbara-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/vaalbara/vaalbara-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/vaalbara/vaalbara-thumb.png",
-        "width": 1122
-      }
+      { "src": "/images/games/vaalbara/vaalbara-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/vaalbara/vaalbara-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/vaalbara/vaalbara-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/vaalbara/vaalbara-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/vaalbara/vaalbara-thumb.png", "width": 1122 }
     ],
     "hero": "/images/games/vaalbara/vaalbara-banner.png",
     "heroAlt": "Vaalbara-titeln över ett grönt landskap med en hornprydd gestalt och en flygande uggla.",
@@ -695,22 +598,11 @@
     "cover": "/images/games/citadels/citadels-thumb.png",
     "coverAlt": "Citadels-omslag med titeln ovanför en färgstark medeltida stad och en kung med sitt följe.",
     "coverVariants": [
-      {
-        "src": "/images/games/citadels/citadels-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/citadels/citadels-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/citadels/citadels-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/citadels/citadels-thumb.png",
-        "width": 1122
-      }
+      { "src": "/images/games/citadels/citadels-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/citadels/citadels-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/citadels/citadels-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/citadels/citadels-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/citadels/citadels-thumb.png", "width": 1122 }
     ],
     "hero": "/images/games/citadels/citadels-banner.png",
     "heroAlt": "Citadels-titeln vid en medeltida stad med torn, marknad och en stenbro över vattnet.",
@@ -767,22 +659,11 @@
     "cover": "/images/games/starwars/starwars-thumb.png",
     "coverAlt": "Star Wars: The Deckbuilding Game-omslag med Luke Skywalker och Darth Vader i ljussabelduell.",
     "coverVariants": [
-      {
-        "src": "/images/games/starwars/starwars-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/starwars/starwars-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/starwars/starwars-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/starwars/starwars-thumb.png",
-        "width": 1000
-      }
+      { "src": "/images/games/starwars/starwars-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/starwars/starwars-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/starwars/starwars-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/starwars/starwars-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/starwars/starwars-thumb.png", "width": 1000 }
     ],
     "hero": "/images/games/starwars/starwars-banner.png",
     "heroAlt": "Luke Skywalker och Darth Vader korsar ljussablar, med spelets logga nere till höger.",
@@ -858,9 +739,10 @@
         "width": 768
       },
       {
-        "src": "/images/games/scarface/scarface1920-thumb.png",
-        "width": 1122
-      }
+        "src": "/images/games/scarface/scarface1920-thumb-896.webp",
+        "width": 896
+      },
+      { "src": "/images/games/scarface/scarface1920-thumb.png", "width": 1122 }
     ],
     "hero": "/images/games/scarface/scarface1920-banner.png",
     "heroAlt": "Scarface 1920-titeln vid en regnvåt stadsgata med ett par och en bil utanför en upplyst entré.",
@@ -930,6 +812,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/codex-naturalis/codex-naturalis-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/codex-naturalis/codex-naturalis-thumb.png",
         "width": 1122
       }
@@ -989,22 +875,11 @@
     "cover": "/images/games/knarr/knarr-thumb.png",
     "coverAlt": "Knarr-omslag med titeln ovanför en pälsklädd roddare under norrsken.",
     "coverVariants": [
-      {
-        "src": "/images/games/knarr/knarr-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/knarr/knarr-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/knarr/knarr-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/knarr/knarr-thumb.png",
-        "width": 1122
-      }
+      { "src": "/images/games/knarr/knarr-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/knarr/knarr-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/knarr/knarr-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/knarr/knarr-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/knarr/knarr-thumb.png", "width": 1122 }
     ],
     "hero": "/images/games/knarr/knarr-banner.png",
     "heroAlt": "Knarr-titeln vid en pälsklädd roddare på havet under stjärnor och norrsken.",
@@ -1079,6 +954,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/the-crew-mission-deep-sea/the-crew-deep-sea-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/the-crew-mission-deep-sea/the-crew-deep-sea-thumb.png",
         "width": 1000
       }
@@ -1149,6 +1028,10 @@
       {
         "src": "/images/games/spies-lies-supplies/air-land-sea-spies-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/spies-lies-supplies/air-land-sea-spies-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/spies-lies-supplies/air-land-sea-spies-thumb.png",
@@ -1224,6 +1107,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/deep-regrets-deeper-regrets/deep-regrets-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/deep-regrets-deeper-regrets/deep-regrets-thumb.png",
         "width": 1122
       }
@@ -1296,6 +1183,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/solar-titans/solar-titans-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/solar-titans/solar-titans-thumb.png",
         "width": 1122
       }
@@ -1366,6 +1257,10 @@
       {
         "src": "/images/games/love-letter/love-letter-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/love-letter/love-letter-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/love-letter/love-letter-thumb.png",
@@ -1481,9 +1376,10 @@
         "width": 768
       },
       {
-        "src": "/images/games/puerto-rico/puerto-thumb.png",
-        "width": 1122
-      }
+        "src": "/images/games/puerto-rico/puerto-thumb-896.webp",
+        "width": 896
+      },
+      { "src": "/images/games/puerto-rico/puerto-thumb.png", "width": 1122 }
     ]
   },
   {
@@ -1566,22 +1462,11 @@
       "Stretch Goals"
     ],
     "coverVariants": [
-      {
-        "src": "/images/games/agricola/agricola-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/agricola/agricola-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/agricola/agricola-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/agricola/agricola-thumb.png",
-        "width": 1122
-      }
+      { "src": "/images/games/agricola/agricola-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/agricola/agricola-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/agricola/agricola-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/agricola/agricola-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/agricola/agricola-thumb.png", "width": 1122 }
     ]
   },
   {
@@ -1625,6 +1510,10 @@
       {
         "src": "/images/games/libertalia-winds-of-galecrest/libertalia-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/libertalia-winds-of-galecrest/libertalia-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/libertalia-winds-of-galecrest/libertalia-thumb.png",
@@ -1705,6 +1594,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/final-titan/final-titan-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/final-titan/final-titan-thumb.png",
         "width": 1122
       }
@@ -1782,6 +1675,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/high-society/high-society-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/high-society/high-society-thumb.png",
         "width": 1122
       }
@@ -1841,22 +1738,11 @@
     "cover": "/images/games/parlay/parlay-thumb.png",
     "coverAlt": "Parlay-omslag med mörkgrönt tartanmönster, guldram, en stegrande häst och undertiteln The Betting Game.",
     "coverVariants": [
-      {
-        "src": "/images/games/parlay/parlay-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/parlay/parlay-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/parlay/parlay-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/parlay/parlay-thumb.png",
-        "width": 1122
-      }
+      { "src": "/images/games/parlay/parlay-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/parlay/parlay-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/parlay/parlay-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/parlay/parlay-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/parlay/parlay-thumb.png", "width": 1122 }
     ],
     "hero": "/images/games/parlay/parlay-banner.png",
     "heroAlt": "Parlay: The Betting Game-titeln bredvid åskådare och galopphästar på en kapplöpningsbana.",
@@ -1960,9 +1846,10 @@
         "width": 768
       },
       {
-        "src": "/images/games/grimcoven/grimcoven-thumb.png",
-        "width": 1122
-      }
+        "src": "/images/games/grimcoven/grimcoven-thumb-896.webp",
+        "width": 896
+      },
+      { "src": "/images/games/grimcoven/grimcoven-thumb.png", "width": 1122 }
     ],
     "expansions": [
       "Terrain Add-on",
@@ -2020,6 +1907,10 @@
       {
         "src": "/images/games/long-dark-sea/long-dark-sea-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/long-dark-sea/long-dark-sea-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/long-dark-sea/long-dark-sea-thumb.png",
@@ -2094,9 +1985,10 @@
         "width": 768
       },
       {
-        "src": "/images/games/excalibur/excalibur-thumb.png",
-        "width": 1122
-      }
+        "src": "/images/games/excalibur/excalibur-thumb-896.webp",
+        "width": 896
+      },
+      { "src": "/images/games/excalibur/excalibur-thumb.png", "width": 1122 }
     ],
     "hero": "/images/games/excalibur/excalibur-banner.png",
     "heroAlt": "Excalibur-titeln i guld till vänster om ett svärd och fyra porträtt i färgstarka glasmålningar.",
@@ -2210,6 +2102,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/lands-of-evershade/evershade-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/lands-of-evershade/evershade-thumb.png",
         "width": 1122
       }
@@ -2251,7 +2147,26 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "coverVariants": [
+      {
+        "src": "/images/games/point-city/pointCity-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/point-city/pointCity-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/point-city/pointCity-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/point-city/pointCity-thumb-896.webp",
+        "width": 896
+      },
+      { "src": "/images/games/point-city/pointCity-thumb.png", "width": 1122 }
+    ]
   },
   {
     "id": "catan-base",
@@ -2283,22 +2198,11 @@
     "cover": "/images/games/catan-base/catan-thumb.png",
     "coverAlt": "Catan-omslag med gul titel över ett kustlandskap med åkrar, får och en stor sol.",
     "coverVariants": [
-      {
-        "src": "/images/games/catan-base/catan-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/catan-base/catan-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/catan-base/catan-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/catan-base/catan-thumb.png",
-        "width": 1122
-      }
+      { "src": "/images/games/catan-base/catan-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/catan-base/catan-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/catan-base/catan-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/catan-base/catan-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/catan-base/catan-thumb.png", "width": 1122 }
     ],
     "hero": "/images/games/catan-base/catan-banner.png",
     "heroAlt": "Catan-titeln i gult över ett solbelyst kustlandskap med byar, betesmarker och sädesfält.",
@@ -2366,6 +2270,10 @@
       {
         "src": "/images/games/forbidden-desert/forbidden-desert-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/forbidden-desert/forbidden-desert-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/forbidden-desert/forbidden-desert-thumb.png",
@@ -2438,6 +2346,10 @@
       {
         "src": "/images/games/ticket-to-ride/ticket-to-ride-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/ticket-to-ride/ticket-to-ride-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/ticket-to-ride/ticket-to-ride-thumb.png",
@@ -2522,6 +2434,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/fate-of-the-fellowship/fate-of-the-fellowship-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/fate-of-the-fellowship/fate-of-the-fellowship-thumb.png",
         "width": 1122
       }
@@ -2594,9 +2510,10 @@
         "width": 768
       },
       {
-        "src": "/images/games/fliptoons/fliptoons-thumb.png",
-        "width": 1122
-      }
+        "src": "/images/games/fliptoons/fliptoons-thumb-896.webp",
+        "width": 896
+      },
+      { "src": "/images/games/fliptoons/fliptoons-thumb.png", "width": 1122 }
     ],
     "hero": "/images/games/fliptoons/fliptoons-banner.png",
     "heroAlt": "Fliptoons-logotypen till vänster om en grupp tecknade djur med instrument mot blå bakgrund.",
@@ -2653,22 +2570,11 @@
     "cover": "/images/games/azul-mini/azul-thumb.png",
     "coverAlt": "Azul-logotypen i en blå och gyllene ram omgiven av färgglada mönstrade kakelplattor.",
     "coverVariants": [
-      {
-        "src": "/images/games/azul-mini/azul-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/azul-mini/azul-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/azul-mini/azul-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/azul-mini/azul-thumb.png",
-        "width": 1122
-      }
+      { "src": "/images/games/azul-mini/azul-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/azul-mini/azul-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/azul-mini/azul-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/azul-mini/azul-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/azul-mini/azul-thumb.png", "width": 1122 }
     ],
     "hero": "/images/games/azul-mini/azul-banner.png",
     "heroAlt": "Azul-logotypen till vänster på en bakgrund av röda, blå, turkosa och gula kakelmönster.",
@@ -2736,6 +2642,10 @@
       {
         "src": "/images/games/there-and-back-again/there-and-back-again-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/there-and-back-again/there-and-back-again-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/there-and-back-again/there-and-back-again-thumb.png",
@@ -2820,6 +2730,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/lord-of-the-rings-trick-taking-game/lotr-trick-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/lord-of-the-rings-trick-taking-game/lotr-trick-thumb.png",
         "width": 1122
       }
@@ -2892,6 +2806,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/magical-athleete/magical-athlete-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/magical-athleete/magical-athlete-thumb.png",
         "width": 1122
       }
@@ -2962,6 +2880,10 @@
       {
         "src": "/images/games/goats-and-goblins/goats-and-goblins-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/goats-and-goblins/goats-and-goblins-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/goats-and-goblins/goats-and-goblins-thumb.png",
@@ -3053,22 +2975,11 @@
       }
     ],
     "coverVariants": [
-      {
-        "src": "/images/games/inis/inis-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/inis/inis-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/inis/inis-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/inis/inis-thumb.png",
-        "width": 1122
-      }
+      { "src": "/images/games/inis/inis-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/inis/inis-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/inis/inis-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/inis/inis-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/inis/inis-thumb.png", "width": 1122 }
     ]
   },
   {
@@ -3136,6 +3047,10 @@
       {
         "src": "/images/games/spirit-island/spiritIsland-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/spirit-island/spiritIsland-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/spirit-island/spiritIsland-thumb.png",
@@ -3216,6 +3131,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/nemesis-aftermath/nemesis-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/nemesis-aftermath/nemesis-thumb.png",
         "width": 1122
       }
@@ -3288,6 +3207,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/an-infamous-traffic-second-edition/traffic-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/an-infamous-traffic-second-edition/traffic-thumb.png",
         "width": 1122
       }
@@ -3353,22 +3276,11 @@
       }
     ],
     "coverVariants": [
-      {
-        "src": "/images/games/shug/shug-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/shug/shug-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/shug/shug-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/shug/shug-thumb.png",
-        "width": 1122
-      }
+      { "src": "/images/games/shug/shug-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/shug/shug-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/shug/shug-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/shug/shug-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/shug/shug-thumb.png", "width": 1122 }
     ]
   },
   {
@@ -3436,6 +3348,10 @@
       {
         "src": "/images/games/battlesticks/battlesticks-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/battlesticks/battlesticks-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/battlesticks/battlesticks-thumb.png",
@@ -3562,6 +3478,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/re-match-marble-puzzle-fighter/reMatch-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/re-match-marble-puzzle-fighter/reMatch-thumb.png",
         "width": 1122
       }
@@ -3646,22 +3566,10 @@
       }
     ],
     "coverVariants": [
-      {
-        "src": "/images/games/roma-xli/romaXLI-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/roma-xli/romaXLI-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/roma-xli/romaXLI-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/roma-xli/romaXLI-thumb.png",
-        "width": 872
-      }
+      { "src": "/images/games/roma-xli/romaXLI-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/roma-xli/romaXLI-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/roma-xli/romaXLI-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/roma-xli/romaXLI-thumb.png", "width": 872 }
     ]
   },
   {
@@ -3734,6 +3642,10 @@
       {
         "src": "/images/games/52-duels-fight-with-playing-cards/52Duels-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/52-duels-fight-with-playing-cards/52Duels-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/52-duels-fight-with-playing-cards/52Duels-thumb.png",
@@ -3813,6 +3725,10 @@
       {
         "src": "/images/games/grifoni-blades-for-hire/grifoni-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/grifoni-blades-for-hire/grifoni-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/grifoni-blades-for-hire/grifoni-thumb.png",
@@ -3907,9 +3823,10 @@
         "width": 768
       },
       {
-        "src": "/images/games/bio-blitz/bioBlitz-thumb.png",
-        "width": 1122
-      }
+        "src": "/images/games/bio-blitz/bioBlitz-thumb-896.webp",
+        "width": 896
+      },
+      { "src": "/images/games/bio-blitz/bioBlitz-thumb.png", "width": 1122 }
     ]
   },
   {
@@ -3977,6 +3894,10 @@
       {
         "src": "/images/games/high-adventure-treasure-hunt/highAdventure-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/high-adventure-treasure-hunt/highAdventure-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/high-adventure-treasure-hunt/highAdventure-thumb.png",
@@ -4077,6 +3998,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/rolling-seas/rollingSeas-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/rolling-seas/rollingSeas-thumb.png",
         "width": 1122
       }
@@ -4147,6 +4072,10 @@
       {
         "src": "/images/games/rise-of-the-oak-dell/oakDell-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/rise-of-the-oak-dell/oakDell-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/rise-of-the-oak-dell/oakDell-thumb.png",
@@ -4271,6 +4200,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/avalon-the-riven-veil/avalon-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/avalon-the-riven-veil/avalon-thumb.png",
         "width": 1122
       }
@@ -4354,9 +4287,10 @@
         "width": 768
       },
       {
-        "src": "/images/games/decko-pistachio/decko-thumb.png",
-        "width": 1122
-      }
+        "src": "/images/games/decko-pistachio/decko-thumb-896.webp",
+        "width": 896
+      },
+      { "src": "/images/games/decko-pistachio/decko-thumb.png", "width": 1122 }
     ]
   },
   {
@@ -4424,6 +4358,10 @@
       {
         "src": "/images/games/nemesis-retaliation/nemesis-retaliation-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/nemesis-retaliation/nemesis-retaliation-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/nemesis-retaliation/nemesis-retaliation-thumb.png",
@@ -4504,9 +4442,10 @@
         "width": 768
       },
       {
-        "src": "/images/games/gang-wars/gangWars-thumb.png",
-        "width": 1122
-      }
+        "src": "/images/games/gang-wars/gangWars-thumb-896.webp",
+        "width": 896
+      },
+      { "src": "/images/games/gang-wars/gangWars-thumb.png", "width": 1122 }
     ]
   },
   {
@@ -4578,22 +4517,11 @@
       }
     ],
     "coverVariants": [
-      {
-        "src": "/images/games/davos/davos-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/davos/davos-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/davos/davos-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/davos/davos-thumb.png",
-        "width": 1122
-      }
+      { "src": "/images/games/davos/davos-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/davos/davos-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/davos/davos-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/davos/davos-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/davos/davos-thumb.png", "width": 1122 }
     ]
   },
   {
@@ -4709,6 +4637,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/hitman-the-board-game/hitMan-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/hitman-the-board-game/hitMan-thumb.png",
         "width": 1122
       }
@@ -4771,8 +4703,20 @@
     ],
     "coverVariants": [
       {
+        "src": "/images/games/brass-pittsburgh/brassPittsburgh-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/brass-pittsburgh/brassPittsburgh-thumb-384.webp",
+        "width": 384
+      },
+      {
         "src": "/images/games/brass-pittsburgh/brassPittsburgh-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/brass-pittsburgh/brassPittsburgh-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/brass-pittsburgh/brassPittsburgh-thumb.png",
@@ -4851,6 +4795,10 @@
       {
         "src": "/images/games/the-old-king-s-crown/kingsCrown-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/the-old-king-s-crown/kingsCrown-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/the-old-king-s-crown/kingsCrown-thumb.png",
@@ -4986,6 +4934,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/b-e-l-o-w-the-asylum/below-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/b-e-l-o-w-the-asylum/below-thumb.png",
         "width": 1122
       }
@@ -5077,6 +5029,10 @@
       {
         "src": "/images/games/detectives-vs-criminals/detective-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/detectives-vs-criminals/detective-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/detectives-vs-criminals/detective-thumb.png",
@@ -5177,6 +5133,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/the-wandmaker-s-apprentice/wandmaker-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/the-wandmaker-s-apprentice/wandmaker-thumb.png",
         "width": 1122
       }
@@ -5268,6 +5228,10 @@
       {
         "src": "/images/games/andromeda-s-edge-genesis-fully-operational/andromeda-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/andromeda-s-edge-genesis-fully-operational/andromeda-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/andromeda-s-edge-genesis-fully-operational/andromeda-thumb.png",
@@ -5565,8 +5529,20 @@
     ],
     "coverVariants": [
       {
+        "src": "/images/games/brass-birmingham/brassBirmingham-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/brass-birmingham/brassBirmingham-thumb-384.webp",
+        "width": 384
+      },
+      {
         "src": "/images/games/brass-birmingham/brassBirmingham-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/brass-birmingham/brassBirmingham-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/brass-birmingham/brassBirmingham-thumb.png",
@@ -5651,8 +5627,20 @@
     ],
     "coverVariants": [
       {
+        "src": "/images/games/brass-lancashire/brassLancashire-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/brass-lancashire/brassLancashire-thumb-384.webp",
+        "width": 384
+      },
+      {
         "src": "/images/games/brass-lancashire/brassLancashire-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/brass-lancashire/brassLancashire-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/brass-lancashire/brassLancashire-thumb.png",
