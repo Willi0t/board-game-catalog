@@ -5279,6 +5279,54 @@
     "id": "ascension-15th-anniversary-edition",
     "title": "Ascension",
     "edition": "15th Anniversary Edition",
+    "cover": "/images/games/ascension-15th-anniversary-edition/ascension-thumb.png",
+    "coverVariants": [
+      {
+        "src": "/images/games/ascension-15th-anniversary-edition/ascension-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/ascension-15th-anniversary-edition/ascension-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/ascension-15th-anniversary-edition/ascension-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/ascension-15th-anniversary-edition/ascension-thumb-896.webp",
+        "width": 896
+      },
+      {
+        "src": "/images/games/ascension-15th-anniversary-edition/ascension-thumb.png",
+        "width": 1122
+      }
+    ],
+    "coverAlt": "Omslaget till Ascension 15th Anniversary Edition med illustrerade karaktärer",
+    "hero": "/images/games/ascension-15th-anniversary-edition/ascension-banner.png",
+    "heroAlt": "Ascensions jubileumslogotyp bredvid illustrerade karaktärer i ett bergslandskap",
+    "gallery": [
+      {
+        "src": "/images/games/ascension-15th-anniversary-edition/gallery/ascension-1.png",
+        "title": "Jubileumsutgåvan",
+        "alt": "Jubileumsutgåvans ask, spelmatta, kort och markörer uppställda tillsammans"
+      },
+      {
+        "src": "/images/games/ascension-15th-anniversary-edition/gallery/ascension-2.png",
+        "title": "Kort och markörer",
+        "alt": "Spelkort och röda och genomskinliga markörer på spelplanen"
+      },
+      {
+        "src": "/images/games/ascension-15th-anniversary-edition/gallery/ascension-3.png",
+        "title": "På spelbordet",
+        "alt": "Spelare runt bordet med Ascensions spelplan, kort och markörer utlagda"
+      },
+      {
+        "src": "/images/games/ascension-15th-anniversary-edition/gallery/ascension-4.png",
+        "title": "Närbild på korten",
+        "alt": "Tre Mechana-kort på bordet framför Ascensions spelplan"
+      }
+    ],
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
