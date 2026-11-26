@@ -14,7 +14,10 @@ const code = buildSync({
 const { default: description } = await import(
   `data:text/javascript;base64,${Buffer.from(code).toString('base64')}`
 );
-const translatedGames = games.filter((game) => game.catalogMetadata.sourceRow <= 51);
+const translatedGames = games.filter((game) =>
+  game.catalogMetadata.sourceRow <= 51 ||
+  (game.catalogMetadata.sourceRow >= 62 && game.catalogMetadata.sourceRow <= 71),
+);
 const ids = translatedGames.map(({ id }) => id);
 const paragraphs = (text) => text.split(/\r?\n(?:[^\S\r\n]*\r?\n)+/);
 
