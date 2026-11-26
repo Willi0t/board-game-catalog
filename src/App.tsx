@@ -51,6 +51,9 @@ export default function App() {
   const { tint, accent } = themeGame
     ? resolveGameColors(themeGame)
     : { tint: '#e9e4ed', accent: '#815467' };
+  const selectedCardColor = selectedGame
+    ? (selectedGame.cardTint ?? resolveGameColors(selectedGame).accent)
+    : undefined;
 
   const reset = () => {
     clearAi();
@@ -78,9 +81,18 @@ export default function App() {
   const themeStyle: CSSProperties & {
     '--tint': string;
     '--accent': string;
-  } = { '--tint': tint, '--accent': accent };
+    '--selected-card-color'?: string;
+  } = {
+    '--tint': tint,
+    '--accent': accent,
+    '--selected-card-color': selectedCardColor,
+  };
   return (
-    <div className={styles['app']} style={themeStyle}>
+    <div
+      className={styles['app']}
+      data-has-selection={selectedGame ? true : undefined}
+      style={themeStyle}
+    >
       <Sidebar
         games={games}
         favorites={favorites}

@@ -41,9 +41,25 @@ alt-text, exempelvis (först när filen finns):
 Utan egen alt-text används en neutral bildetikett och speltiteln. Vid bildfel
 används alltid platshållarens alt-text, inte fotografiets beskrivning.
 
-WebP är en namnkonvention, inte ett krav. PNG, JPG, AVIF och SVG fungerar också.
+Originalet för ett spelkort kan vara PNG, JPEG, WebP, AVIF eller SVG.
 Skapa mappar först när du har verkliga filer. Lägg inte in tomma filer eller
 JSON-sökvägar till framtida material.
+
+När du lägger till eller byter ett omslag, ange originalets sökväg i `cover`
+och kör `npm run covers:generate -- <spel-id>`. Utan spel-id behandlas hela
+katalogen. Kommitta originalet, de genererade WebP-filerna och uppdaterade
+`coverVariants` i `src/games.json`.
+
+Skriptet skapar WebP i bredderna 192, 384, 768 och 896 px när originalet är
+bredare än respektive målbredd. Det behåller bildproportionerna och använder
+Lanczos3, lätt skärpning (sigma 0,6) och WebP-kvalitet 95 med anpassad
+färgsampling. Originalet ingår som största kandidat. SVG-omslag och
+platshållare skalas som vektorbilder.
+
+Spelkortet använder källornas pixelbredder i `srcset` och sin visade bredd via
+`sizes="auto, …"` för bilder som laddas när de närmar sig vyn. Om
+en variant inte kan laddas försöker `GameImage` med originalet.
+`npm run covers:check` verifierar källor och pixelmått och körs även vid bygget.
 
 ### Videobanner och logga
 

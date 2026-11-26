@@ -72,18 +72,9 @@
       "Stretch Goal Upgrades"
     ],
     "coverVariants": [
-      {
-        "src": "/images/games/burgundy/castle-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/burgundy/castle-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/burgundy/castle-thumb.png",
-        "width": 768
-      }
+      { "src": "/images/games/burgundy/castle-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/burgundy/castle-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/burgundy/castle-thumb.png", "width": 768 }
     ]
   },
   {
@@ -140,22 +131,11 @@
       }
     ],
     "coverVariants": [
-      {
-        "src": "/images/games/terraforming/mars-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/terraforming/mars-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/terraforming/mars-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/terraforming/mars-thumb.png",
-        "width": 1122
-      }
+      { "src": "/images/games/terraforming/mars-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/terraforming/mars-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/terraforming/mars-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/terraforming/mars-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/terraforming/mars-thumb.png", "width": 1122 }
     ]
   },
   {
@@ -213,22 +193,11 @@
       }
     ],
     "coverVariants": [
-      {
-        "src": "/images/games/cosmic/cosmic-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/cosmic/cosmic-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/cosmic/cosmic-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/cosmic/cosmic-thumb.png",
-        "width": 1122
-      }
+      { "src": "/images/games/cosmic/cosmic-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/cosmic/cosmic-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/cosmic/cosmic-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/cosmic/cosmic-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/cosmic/cosmic-thumb.png", "width": 1122 }
     ]
   },
   {
@@ -286,22 +255,11 @@
       }
     ],
     "coverVariants": [
-      {
-        "src": "/images/games/clank/catacombs-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/clank/catacombs-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/clank/catacombs-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/clank/catacombs-thumb.png",
-        "width": 1122
-      }
+      { "src": "/images/games/clank/catacombs-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/clank/catacombs-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/clank/catacombs-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/clank/catacombs-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/clank/catacombs-thumb.png", "width": 1122 }
     ]
   },
   {
@@ -359,22 +317,11 @@
       }
     ],
     "coverVariants": [
-      {
-        "src": "/images/games/wonders/wonders-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/wonders/wonders-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/wonders/wonders-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/wonders/wonders-thumb.png",
-        "width": 1122
-      }
+      { "src": "/images/games/wonders/wonders-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/wonders/wonders-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/wonders/wonders-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/wonders/wonders-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/wonders/wonders-thumb.png", "width": 1122 }
     ]
   },
   {
@@ -431,22 +378,11 @@
       }
     ],
     "coverVariants": [
-      {
-        "src": "/images/games/salad/sallad-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/salad/sallad-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/salad/sallad-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/salad/sallad-thumb.png",
-        "width": 1122
-      }
+      { "src": "/images/games/salad/sallad-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/salad/sallad-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/salad/sallad-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/salad/sallad-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/salad/sallad-thumb.png", "width": 1122 }
     ]
   },
   {
@@ -456,6 +392,7 @@
     "category": "Co-op",
     "accent": "#4d7195",
     "tint": "#e0e9f2",
+    "cardTint": "#C39329",
     "description": "Planera en kupp tillsammans. Undvik vakter, knäck kassaskåp och hitta vägen ut.",
     "playersMin": 1,
     "playersMax": 4,
@@ -503,22 +440,11 @@
     "cover": "/images/games/burgle/burgle-thumb.png",
     "coverAlt": "Burgle Bros.-omslag med kuppgänget ovanför titeln på en gul affisch med röd ram.",
     "coverVariants": [
-      {
-        "src": "/images/games/burgle/burgle-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/burgle/burgle-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/burgle/burgle-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/burgle/burgle-thumb.png",
-        "width": 1122
-      }
+      { "src": "/images/games/burgle/burgle-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/burgle/burgle-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/burgle/burgle-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/burgle/burgle-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/burgle/burgle-thumb.png", "width": 1122 }
     ]
   },
   {
@@ -551,22 +477,11 @@
     "cover": "/images/games/duel/wonders-duel-thumb.png",
     "coverAlt": "7 Wonders Duel-omslag med guldtitel, en krigare och en egyptisk kvinna framför antika städer.",
     "coverVariants": [
-      {
-        "src": "/images/games/duel/wonders-duel-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/duel/wonders-duel-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/duel/wonders-duel-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/duel/wonders-duel-thumb.png",
-        "width": 1122
-      }
+      { "src": "/images/games/duel/wonders-duel-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/duel/wonders-duel-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/duel/wonders-duel-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/duel/wonders-duel-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/duel/wonders-duel-thumb.png", "width": 1122 }
     ],
     "hero": "/images/games/duel/wonders-duel-banner.png",
     "heroAlt": "7 Wonders Duel-titeln med en krigare, en egyptisk kvinna och antika städer i solnedgång.",
@@ -623,22 +538,11 @@
     "cover": "/images/games/vaalbara/vaalbara-thumb.png",
     "coverAlt": "Vaalbara-omslag med en hornprydd gestalt, en uggla och vargar på en klippa.",
     "coverVariants": [
-      {
-        "src": "/images/games/vaalbara/vaalbara-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/vaalbara/vaalbara-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/vaalbara/vaalbara-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/vaalbara/vaalbara-thumb.png",
-        "width": 1122
-      }
+      { "src": "/images/games/vaalbara/vaalbara-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/vaalbara/vaalbara-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/vaalbara/vaalbara-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/vaalbara/vaalbara-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/vaalbara/vaalbara-thumb.png", "width": 1122 }
     ],
     "hero": "/images/games/vaalbara/vaalbara-banner.png",
     "heroAlt": "Vaalbara-titeln över ett grönt landskap med en hornprydd gestalt och en flygande uggla.",
@@ -695,22 +599,11 @@
     "cover": "/images/games/citadels/citadels-thumb.png",
     "coverAlt": "Citadels-omslag med titeln ovanför en färgstark medeltida stad och en kung med sitt följe.",
     "coverVariants": [
-      {
-        "src": "/images/games/citadels/citadels-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/citadels/citadels-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/citadels/citadels-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/citadels/citadels-thumb.png",
-        "width": 1122
-      }
+      { "src": "/images/games/citadels/citadels-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/citadels/citadels-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/citadels/citadels-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/citadels/citadels-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/citadels/citadels-thumb.png", "width": 1122 }
     ],
     "hero": "/images/games/citadels/citadels-banner.png",
     "heroAlt": "Citadels-titeln vid en medeltida stad med torn, marknad och en stenbro över vattnet.",
@@ -767,22 +660,11 @@
     "cover": "/images/games/starwars/starwars-thumb.png",
     "coverAlt": "Star Wars: The Deckbuilding Game-omslag med Luke Skywalker och Darth Vader i ljussabelduell.",
     "coverVariants": [
-      {
-        "src": "/images/games/starwars/starwars-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/starwars/starwars-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/starwars/starwars-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/starwars/starwars-thumb.png",
-        "width": 1000
-      }
+      { "src": "/images/games/starwars/starwars-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/starwars/starwars-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/starwars/starwars-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/starwars/starwars-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/starwars/starwars-thumb.png", "width": 1000 }
     ],
     "hero": "/images/games/starwars/starwars-banner.png",
     "heroAlt": "Luke Skywalker och Darth Vader korsar ljussablar, med spelets logga nere till höger.",
@@ -816,6 +698,7 @@
     "category": "Strategi",
     "accent": "#6f7562",
     "tint": "#e8e9df",
+    "cardTint": "#82251E",
     "description": "Bygg upp ditt imperium i förbudstidens Chicago och kämpa om stadens inflytande.",
     "playersMin": 2,
     "playersMax": 4,
@@ -858,9 +741,10 @@
         "width": 768
       },
       {
-        "src": "/images/games/scarface/scarface1920-thumb.png",
-        "width": 1122
-      }
+        "src": "/images/games/scarface/scarface1920-thumb-896.webp",
+        "width": 896
+      },
+      { "src": "/images/games/scarface/scarface1920-thumb.png", "width": 1122 }
     ],
     "hero": "/images/games/scarface/scarface1920-banner.png",
     "heroAlt": "Scarface 1920-titeln vid en regnvåt stadsgata med ett par och en bil utanför en upplyst entré.",
@@ -930,6 +814,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/codex-naturalis/codex-naturalis-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/codex-naturalis/codex-naturalis-thumb.png",
         "width": 1122
       }
@@ -989,22 +877,11 @@
     "cover": "/images/games/knarr/knarr-thumb.png",
     "coverAlt": "Knarr-omslag med titeln ovanför en pälsklädd roddare under norrsken.",
     "coverVariants": [
-      {
-        "src": "/images/games/knarr/knarr-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/knarr/knarr-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/knarr/knarr-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/knarr/knarr-thumb.png",
-        "width": 1122
-      }
+      { "src": "/images/games/knarr/knarr-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/knarr/knarr-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/knarr/knarr-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/knarr/knarr-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/knarr/knarr-thumb.png", "width": 1122 }
     ],
     "hero": "/images/games/knarr/knarr-banner.png",
     "heroAlt": "Knarr-titeln vid en pälsklädd roddare på havet under stjärnor och norrsken.",
@@ -1079,6 +956,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/the-crew-mission-deep-sea/the-crew-deep-sea-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/the-crew-mission-deep-sea/the-crew-deep-sea-thumb.png",
         "width": 1000
       }
@@ -1149,6 +1030,10 @@
       {
         "src": "/images/games/spies-lies-supplies/air-land-sea-spies-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/spies-lies-supplies/air-land-sea-spies-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/spies-lies-supplies/air-land-sea-spies-thumb.png",
@@ -1224,6 +1109,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/deep-regrets-deeper-regrets/deep-regrets-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/deep-regrets-deeper-regrets/deep-regrets-thumb.png",
         "width": 1122
       }
@@ -1296,6 +1185,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/solar-titans/solar-titans-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/solar-titans/solar-titans-thumb.png",
         "width": 1122
       }
@@ -1366,6 +1259,10 @@
       {
         "src": "/images/games/love-letter/love-letter-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/love-letter/love-letter-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/love-letter/love-letter-thumb.png",
@@ -1481,9 +1378,10 @@
         "width": 768
       },
       {
-        "src": "/images/games/puerto-rico/puerto-thumb.png",
-        "width": 1122
-      }
+        "src": "/images/games/puerto-rico/puerto-thumb-896.webp",
+        "width": 896
+      },
+      { "src": "/images/games/puerto-rico/puerto-thumb.png", "width": 1122 }
     ]
   },
   {
@@ -1566,22 +1464,11 @@
       "Stretch Goals"
     ],
     "coverVariants": [
-      {
-        "src": "/images/games/agricola/agricola-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/agricola/agricola-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/agricola/agricola-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/agricola/agricola-thumb.png",
-        "width": 1122
-      }
+      { "src": "/images/games/agricola/agricola-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/agricola/agricola-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/agricola/agricola-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/agricola/agricola-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/agricola/agricola-thumb.png", "width": 1122 }
     ]
   },
   {
@@ -1625,6 +1512,10 @@
       {
         "src": "/images/games/libertalia-winds-of-galecrest/libertalia-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/libertalia-winds-of-galecrest/libertalia-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/libertalia-winds-of-galecrest/libertalia-thumb.png",
@@ -1705,6 +1596,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/final-titan/final-titan-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/final-titan/final-titan-thumb.png",
         "width": 1122
       }
@@ -1746,6 +1641,7 @@
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
+    "cardTint": "#36634D",
     "description": "",
     "placeholderTheme": "castle-rose",
     "playersMin": 3,
@@ -1780,6 +1676,10 @@
       {
         "src": "/images/games/high-society/high-society-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/high-society/high-society-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/high-society/high-society-thumb.png",
@@ -1841,22 +1741,11 @@
     "cover": "/images/games/parlay/parlay-thumb.png",
     "coverAlt": "Parlay-omslag med mörkgrönt tartanmönster, guldram, en stegrande häst och undertiteln The Betting Game.",
     "coverVariants": [
-      {
-        "src": "/images/games/parlay/parlay-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/parlay/parlay-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/parlay/parlay-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/parlay/parlay-thumb.png",
-        "width": 1122
-      }
+      { "src": "/images/games/parlay/parlay-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/parlay/parlay-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/parlay/parlay-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/parlay/parlay-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/parlay/parlay-thumb.png", "width": 1122 }
     ],
     "hero": "/images/games/parlay/parlay-banner.png",
     "heroAlt": "Parlay: The Betting Game-titeln bredvid åskådare och galopphästar på en kapplöpningsbana.",
@@ -1960,9 +1849,17 @@
         "width": 768
       },
       {
-        "src": "/images/games/grimcoven/grimcoven-thumb.png",
-        "width": 1122
-      }
+        "src": "/images/games/grimcoven/grimcoven-thumb-896.webp",
+        "width": 896
+      },
+      { "src": "/images/games/grimcoven/grimcoven-thumb.png", "width": 1122 }
+    ],
+    "expansions": [
+      "Terrain Add-on",
+      "Personal Stories",
+      "Playmat",
+      "Acrylic Add-on",
+      "Stretch Goal Upgrades"
     ]
   },
   {
@@ -2013,6 +1910,10 @@
       {
         "src": "/images/games/long-dark-sea/long-dark-sea-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/long-dark-sea/long-dark-sea-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/long-dark-sea/long-dark-sea-thumb.png",
@@ -2087,9 +1988,10 @@
         "width": 768
       },
       {
-        "src": "/images/games/excalibur/excalibur-thumb.png",
-        "width": 1122
-      }
+        "src": "/images/games/excalibur/excalibur-thumb-896.webp",
+        "width": 896
+      },
+      { "src": "/images/games/excalibur/excalibur-thumb.png", "width": 1122 }
     ],
     "hero": "/images/games/excalibur/excalibur-banner.png",
     "heroAlt": "Excalibur-titeln i guld till vänster om ett svärd och fyra porträtt i färgstarka glasmålningar.",
@@ -2123,6 +2025,7 @@
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
+    "cardTint": "#4D5227",
     "description": "",
     "placeholderTheme": "castle-rose",
     "playersMin": 3,
@@ -2203,6 +2106,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/lands-of-evershade/evershade-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/lands-of-evershade/evershade-thumb.png",
         "width": 1122
       }
@@ -2244,7 +2151,26 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "coverVariants": [
+      {
+        "src": "/images/games/point-city/pointCity-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/point-city/pointCity-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/point-city/pointCity-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/point-city/pointCity-thumb-896.webp",
+        "width": 896
+      },
+      { "src": "/images/games/point-city/pointCity-thumb.png", "width": 1122 }
+    ]
   },
   {
     "id": "catan-base",
@@ -2276,22 +2202,11 @@
     "cover": "/images/games/catan-base/catan-thumb.png",
     "coverAlt": "Catan-omslag med gul titel över ett kustlandskap med åkrar, får och en stor sol.",
     "coverVariants": [
-      {
-        "src": "/images/games/catan-base/catan-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/catan-base/catan-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/catan-base/catan-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/catan-base/catan-thumb.png",
-        "width": 1122
-      }
+      { "src": "/images/games/catan-base/catan-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/catan-base/catan-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/catan-base/catan-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/catan-base/catan-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/catan-base/catan-thumb.png", "width": 1122 }
     ],
     "hero": "/images/games/catan-base/catan-banner.png",
     "heroAlt": "Catan-titeln i gult över ett solbelyst kustlandskap med byar, betesmarker och sädesfält.",
@@ -2359,6 +2274,10 @@
       {
         "src": "/images/games/forbidden-desert/forbidden-desert-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/forbidden-desert/forbidden-desert-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/forbidden-desert/forbidden-desert-thumb.png",
@@ -2431,6 +2350,10 @@
       {
         "src": "/images/games/ticket-to-ride/ticket-to-ride-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/ticket-to-ride/ticket-to-ride-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/ticket-to-ride/ticket-to-ride-thumb.png",
@@ -2515,6 +2438,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/fate-of-the-fellowship/fate-of-the-fellowship-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/fate-of-the-fellowship/fate-of-the-fellowship-thumb.png",
         "width": 1122
       }
@@ -2551,6 +2478,7 @@
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
+    "cardTint": "#1765AA",
     "description": "",
     "placeholderTheme": "castle-rose",
     "playersMin": 1,
@@ -2587,9 +2515,10 @@
         "width": 768
       },
       {
-        "src": "/images/games/fliptoons/fliptoons-thumb.png",
-        "width": 1122
-      }
+        "src": "/images/games/fliptoons/fliptoons-thumb-896.webp",
+        "width": 896
+      },
+      { "src": "/images/games/fliptoons/fliptoons-thumb.png", "width": 1122 }
     ],
     "hero": "/images/games/fliptoons/fliptoons-banner.png",
     "heroAlt": "Fliptoons-logotypen till vänster om en grupp tecknade djur med instrument mot blå bakgrund.",
@@ -2646,22 +2575,11 @@
     "cover": "/images/games/azul-mini/azul-thumb.png",
     "coverAlt": "Azul-logotypen i en blå och gyllene ram omgiven av färgglada mönstrade kakelplattor.",
     "coverVariants": [
-      {
-        "src": "/images/games/azul-mini/azul-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/azul-mini/azul-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/azul-mini/azul-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/azul-mini/azul-thumb.png",
-        "width": 1122
-      }
+      { "src": "/images/games/azul-mini/azul-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/azul-mini/azul-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/azul-mini/azul-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/azul-mini/azul-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/azul-mini/azul-thumb.png", "width": 1122 }
     ],
     "hero": "/images/games/azul-mini/azul-banner.png",
     "heroAlt": "Azul-logotypen till vänster på en bakgrund av röda, blå, turkosa och gula kakelmönster.",
@@ -2729,6 +2647,10 @@
       {
         "src": "/images/games/there-and-back-again/there-and-back-again-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/there-and-back-again/there-and-back-again-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/there-and-back-again/there-and-back-again-thumb.png",
@@ -2813,6 +2735,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/lord-of-the-rings-trick-taking-game/lotr-trick-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/lord-of-the-rings-trick-taking-game/lotr-trick-thumb.png",
         "width": 1122
       }
@@ -2849,6 +2775,7 @@
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
+    "cardTint": "#C02D29",
     "description": "",
     "placeholderTheme": "castle-rose",
     "playersMin": 2,
@@ -2883,6 +2810,10 @@
       {
         "src": "/images/games/magical-athleete/magical-athlete-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/magical-athleete/magical-athlete-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/magical-athleete/magical-athlete-thumb.png",
@@ -2955,6 +2886,10 @@
       {
         "src": "/images/games/goats-and-goblins/goats-and-goblins-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/goats-and-goblins/goats-and-goblins-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/goats-and-goblins/goats-and-goblins-thumb.png",
@@ -3046,22 +2981,11 @@
       }
     ],
     "coverVariants": [
-      {
-        "src": "/images/games/inis/inis-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/inis/inis-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/inis/inis-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/inis/inis-thumb.png",
-        "width": 1122
-      }
+      { "src": "/images/games/inis/inis-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/inis/inis-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/inis/inis-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/inis/inis-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/inis/inis-thumb.png", "width": 1122 }
     ]
   },
   {
@@ -3129,6 +3053,10 @@
       {
         "src": "/images/games/spirit-island/spiritIsland-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/spirit-island/spiritIsland-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/spirit-island/spiritIsland-thumb.png",
@@ -3209,6 +3137,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/nemesis-aftermath/nemesis-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/nemesis-aftermath/nemesis-thumb.png",
         "width": 1122
       }
@@ -3221,6 +3153,7 @@
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
+    "cardTint": "#245B6F",
     "description": "",
     "placeholderTheme": "castle-rose",
     "playersMin": 1,
@@ -3281,6 +3214,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/an-infamous-traffic-second-edition/traffic-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/an-infamous-traffic-second-edition/traffic-thumb.png",
         "width": 1122
       }
@@ -3293,6 +3230,7 @@
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
+    "cardTint": "#795139",
     "description": "",
     "placeholderTheme": "castle-rose",
     "playersMin": 1,
@@ -3346,22 +3284,11 @@
       }
     ],
     "coverVariants": [
-      {
-        "src": "/images/games/shug/shug-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/shug/shug-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/shug/shug-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/shug/shug-thumb.png",
-        "width": 1122
-      }
+      { "src": "/images/games/shug/shug-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/shug/shug-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/shug/shug-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/shug/shug-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/shug/shug-thumb.png", "width": 1122 }
     ]
   },
   {
@@ -3431,6 +3358,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/battlesticks/battlesticks-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/battlesticks/battlesticks-thumb.png",
         "width": 1122
       }
@@ -3443,6 +3374,7 @@
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
+    "cardTint": "#D1AC23",
     "description": "",
     "placeholderTheme": "castle-rose",
     "playersMin": 2,
@@ -3555,6 +3487,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/re-match-marble-puzzle-fighter/reMatch-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/re-match-marble-puzzle-fighter/reMatch-thumb.png",
         "width": 1122
       }
@@ -3639,22 +3575,10 @@
       }
     ],
     "coverVariants": [
-      {
-        "src": "/images/games/roma-xli/romaXLI-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/roma-xli/romaXLI-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/roma-xli/romaXLI-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/roma-xli/romaXLI-thumb.png",
-        "width": 872
-      }
+      { "src": "/images/games/roma-xli/romaXLI-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/roma-xli/romaXLI-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/roma-xli/romaXLI-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/roma-xli/romaXLI-thumb.png", "width": 872 }
     ]
   },
   {
@@ -3664,6 +3588,7 @@
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
+    "cardTint": "#2C5696",
     "description": "",
     "placeholderTheme": "castle-rose",
     "playersMin": null,
@@ -3727,6 +3652,10 @@
       {
         "src": "/images/games/52-duels-fight-with-playing-cards/52Duels-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/52-duels-fight-with-playing-cards/52Duels-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/52-duels-fight-with-playing-cards/52Duels-thumb.png",
@@ -3806,6 +3735,10 @@
       {
         "src": "/images/games/grifoni-blades-for-hire/grifoni-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/grifoni-blades-for-hire/grifoni-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/grifoni-blades-for-hire/grifoni-thumb.png",
@@ -3900,9 +3833,10 @@
         "width": 768
       },
       {
-        "src": "/images/games/bio-blitz/bioBlitz-thumb.png",
-        "width": 1122
-      }
+        "src": "/images/games/bio-blitz/bioBlitz-thumb-896.webp",
+        "width": 896
+      },
+      { "src": "/images/games/bio-blitz/bioBlitz-thumb.png", "width": 1122 }
     ]
   },
   {
@@ -3912,6 +3846,7 @@
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
+    "cardTint": "#32684A",
     "description": "",
     "placeholderTheme": "castle-rose",
     "playersMin": null,
@@ -3970,6 +3905,10 @@
       {
         "src": "/images/games/high-adventure-treasure-hunt/highAdventure-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/high-adventure-treasure-hunt/highAdventure-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/high-adventure-treasure-hunt/highAdventure-thumb.png",
@@ -4070,6 +4009,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/rolling-seas/rollingSeas-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/rolling-seas/rollingSeas-thumb.png",
         "width": 1122
       }
@@ -4140,6 +4083,10 @@
       {
         "src": "/images/games/rise-of-the-oak-dell/oakDell-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/rise-of-the-oak-dell/oakDell-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/rise-of-the-oak-dell/oakDell-thumb.png",
@@ -4264,6 +4211,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/avalon-the-riven-veil/avalon-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/avalon-the-riven-veil/avalon-thumb.png",
         "width": 1122
       }
@@ -4347,9 +4298,10 @@
         "width": 768
       },
       {
-        "src": "/images/games/decko-pistachio/decko-thumb.png",
-        "width": 1122
-      }
+        "src": "/images/games/decko-pistachio/decko-thumb-896.webp",
+        "width": 896
+      },
+      { "src": "/images/games/decko-pistachio/decko-thumb.png", "width": 1122 }
     ]
   },
   {
@@ -4417,6 +4369,10 @@
       {
         "src": "/images/games/nemesis-retaliation/nemesis-retaliation-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/nemesis-retaliation/nemesis-retaliation-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/nemesis-retaliation/nemesis-retaliation-thumb.png",
@@ -4497,9 +4453,10 @@
         "width": 768
       },
       {
-        "src": "/images/games/gang-wars/gangWars-thumb.png",
-        "width": 1122
-      }
+        "src": "/images/games/gang-wars/gangWars-thumb-896.webp",
+        "width": 896
+      },
+      { "src": "/images/games/gang-wars/gangWars-thumb.png", "width": 1122 }
     ]
   },
   {
@@ -4571,22 +4528,11 @@
       }
     ],
     "coverVariants": [
-      {
-        "src": "/images/games/davos/davos-thumb-192.webp",
-        "width": 192
-      },
-      {
-        "src": "/images/games/davos/davos-thumb-384.webp",
-        "width": 384
-      },
-      {
-        "src": "/images/games/davos/davos-thumb-768.webp",
-        "width": 768
-      },
-      {
-        "src": "/images/games/davos/davos-thumb.png",
-        "width": 1122
-      }
+      { "src": "/images/games/davos/davos-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/davos/davos-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/davos/davos-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/davos/davos-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/davos/davos-thumb.png", "width": 1122 }
     ]
   },
   {
@@ -4702,6 +4648,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/hitman-the-board-game/hitMan-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/hitman-the-board-game/hitMan-thumb.png",
         "width": 1122
       }
@@ -4764,8 +4714,20 @@
     ],
     "coverVariants": [
       {
+        "src": "/images/games/brass-pittsburgh/brassPittsburgh-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/brass-pittsburgh/brassPittsburgh-thumb-384.webp",
+        "width": 384
+      },
+      {
         "src": "/images/games/brass-pittsburgh/brassPittsburgh-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/brass-pittsburgh/brassPittsburgh-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/brass-pittsburgh/brassPittsburgh-thumb.png",
@@ -4780,6 +4742,7 @@
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
+    "cardTint": "#72538F",
     "description": "",
     "placeholderTheme": "castle-rose",
     "playersMin": 1,
@@ -4846,6 +4809,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/the-old-king-s-crown/kingsCrown-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/the-old-king-s-crown/kingsCrown-thumb.png",
         "width": 1086
       }
@@ -4858,6 +4825,7 @@
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
+    "cardTint": "#A12D27",
     "description": "",
     "placeholderTheme": "castle-rose",
     "playersMin": null,
@@ -4979,6 +4947,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/b-e-l-o-w-the-asylum/below-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/b-e-l-o-w-the-asylum/below-thumb.png",
         "width": 1122
       }
@@ -5070,6 +5042,10 @@
       {
         "src": "/images/games/detectives-vs-criminals/detective-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/detectives-vs-criminals/detective-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/detectives-vs-criminals/detective-thumb.png",
@@ -5170,6 +5146,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/the-wandmaker-s-apprentice/wandmaker-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/the-wandmaker-s-apprentice/wandmaker-thumb.png",
         "width": 1122
       }
@@ -5263,6 +5243,10 @@
         "width": 768
       },
       {
+        "src": "/images/games/andromeda-s-edge-genesis-fully-operational/andromeda-thumb-896.webp",
+        "width": 896
+      },
+      {
         "src": "/images/games/andromeda-s-edge-genesis-fully-operational/andromeda-thumb.png",
         "width": 1122
       }
@@ -5272,9 +5256,58 @@
     "id": "ascension-15th-anniversary-edition",
     "title": "Ascension",
     "edition": "15th Anniversary Edition",
+    "cover": "/images/games/ascension-15th-anniversary-edition/ascension-thumb.png",
+    "coverVariants": [
+      {
+        "src": "/images/games/ascension-15th-anniversary-edition/ascension-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/ascension-15th-anniversary-edition/ascension-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/ascension-15th-anniversary-edition/ascension-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/ascension-15th-anniversary-edition/ascension-thumb-896.webp",
+        "width": 896
+      },
+      {
+        "src": "/images/games/ascension-15th-anniversary-edition/ascension-thumb.png",
+        "width": 1122
+      }
+    ],
+    "coverAlt": "Omslaget till Ascension 15th Anniversary Edition med illustrerade karaktärer",
+    "hero": "/images/games/ascension-15th-anniversary-edition/ascension-banner.png",
+    "heroAlt": "Ascensions jubileumslogotyp bredvid illustrerade karaktärer i ett bergslandskap",
+    "gallery": [
+      {
+        "src": "/images/games/ascension-15th-anniversary-edition/gallery/ascension-1.png",
+        "title": "Jubileumsutgåvan",
+        "alt": "Jubileumsutgåvans ask, spelmatta, kort och markörer uppställda tillsammans"
+      },
+      {
+        "src": "/images/games/ascension-15th-anniversary-edition/gallery/ascension-2.png",
+        "title": "Kort och markörer",
+        "alt": "Spelkort och röda och genomskinliga markörer på spelplanen"
+      },
+      {
+        "src": "/images/games/ascension-15th-anniversary-edition/gallery/ascension-3.png",
+        "title": "På spelbordet",
+        "alt": "Spelare runt bordet med Ascensions spelplan, kort och markörer utlagda"
+      },
+      {
+        "src": "/images/games/ascension-15th-anniversary-edition/gallery/ascension-4.png",
+        "title": "Närbild på korten",
+        "alt": "Tre Mechana-kort på bordet framför Ascensions spelplan"
+      }
+    ],
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
+    "cardTint": "#245A91",
     "description": "",
     "placeholderTheme": "castle-rose",
     "playersMin": null,
@@ -5305,6 +5338,32 @@
     "id": "ascension-legends",
     "title": "Ascension Legends",
     "edition": "",
+    "cover": "/images/games/ascension-legends/ascensionL-thumb.png",
+    "coverAlt": "Omslaget till Ascension Legends med fem illustrerade karaktärer i olika färger",
+    "hero": "/images/games/ascension-legends/ascensionL-banner.png",
+    "heroAlt": "Ascension Legends logotyp vid en borg med två äventyrare i förgrunden",
+    "gallery": [
+      {
+        "src": "/images/games/ascension-legends/gallery/ascensionL-1.png",
+        "title": "Askens baksida",
+        "alt": "Baksidan av spelasken med en översikt över spelplan, kort och markörer"
+      },
+      {
+        "src": "/images/games/ascension-legends/gallery/ascensionL-2.png",
+        "title": "Spelets innehåll",
+        "alt": "Spelask, spelplan, kort och röda markörer uppställda tillsammans"
+      },
+      {
+        "src": "/images/games/ascension-legends/gallery/ascensionL-3.png",
+        "title": "Närbild på spelplanen",
+        "alt": "Kort på spelplanen framför utlagda markörer och stående karaktärskort"
+      },
+      {
+        "src": "/images/games/ascension-legends/gallery/ascensionL-4.png",
+        "title": "Vid spelbordet",
+        "alt": "En hand med spelkort i förgrunden och spelplanen på bordet"
+      }
+    ],
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -5327,40 +5386,85 @@
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
-  },
-  {
-    "id": "shallow-regrets",
-    "title": "Shallow Regrets",
-    "edition": "",
-    "category": "Övrigt",
-    "accent": "#815467",
-    "tint": "#eadce2",
-    "description": "",
-    "placeholderTheme": "castle-rose",
-    "playersMin": null,
-    "playersMax": null,
-    "bestWith": null,
-    "weight": null,
-    "playerInteraction": 3,
-    "mechanics": ["Push your luck", "Set collection", "Hand management"],
-    "gameTypes": ["Competitive"],
-    "upcoming": false,
-    "minutes": null,
-    "descriptionStatus": "missing",
-    "metadataStatus": "catalog-import",
-    "catalogMetadata": {
-      "sourceRow": 70,
-      "sourceTitle": "Shallow Regrets",
-      "importedAt": "2026-11-13",
-      "preliminary": false,
-      "editionMatch": "not-independently-verified"
-    }
+    },
+    "coverVariants": [
+      {
+        "src": "/images/games/ascension-legends/ascensionL-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/ascension-legends/ascensionL-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/ascension-legends/ascensionL-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/ascension-legends/ascensionL-thumb-896.webp",
+        "width": 896
+      },
+      {
+        "src": "/images/games/ascension-legends/ascensionL-thumb.png",
+        "width": 1122
+      }
+    ]
   },
   {
     "id": "nexus-card-game",
     "title": "Nexus Card Game",
     "edition": "Founders Edition",
+    "cover": "/images/games/nexus-card-game/nexus-thumb.png",
+    "coverAlt": "Omslaget med titeln Nexus: Last Dawn, två krigare och en eldsprutande drake",
+    "hero": "/images/games/nexus-card-game/nexus-banner.png",
+    "heroAlt": "Nexus-logotypen mellan fantasykrigare mot en himmel med planeter och en drake",
+    "gallery": [
+      {
+        "src": "/images/games/nexus-card-game/gallery/nexus-1.png",
+        "title": "Tre spelkort",
+        "alt": "Tre illustrerade spelkort med Lady of Blood i mitten"
+      },
+      {
+        "src": "/images/games/nexus-card-game/gallery/nexus-3.png",
+        "title": "Så spelas Nexus",
+        "alt": "En eldmagiker och en översikt över hur två fraktioner kombineras för att besegra motståndarens Nexus"
+      },
+      {
+        "src": "/images/games/nexus-card-game/gallery/nexus-4.png",
+        "title": "Dra kort",
+        "alt": "En kortlek på spelplanen illustrerar turens första steg"
+      },
+      {
+        "src": "/images/games/nexus-card-game/gallery/nexus-5.png",
+        "title": "Spela kort",
+        "alt": "Kortet Hamadryad visas framför spelplanen som exempel på turens andra steg"
+      },
+      {
+        "src": "/images/games/nexus-card-game/gallery/nexus-6.png",
+        "title": "Attackera",
+        "alt": "Spelkort på varsin sida av spelplanen illustrerar turens attacksteg"
+      },
+      {
+        "src": "/images/games/nexus-card-game/gallery/nexus-7.png",
+        "title": "Avsluta turen",
+        "alt": "Spelplanen med utlagda kort vid turens slut"
+      },
+      {
+        "src": "/images/games/nexus-card-game/gallery/nexus-8.png",
+        "title": "Spelläge: bäst av ett",
+        "alt": "Fyra fraktionslekar illustrerar hur fraktioner väljs i en enskild match"
+      },
+      {
+        "src": "/images/games/nexus-card-game/gallery/nexus-9.png",
+        "title": "Spelläge: bäst av tre",
+        "alt": "Åtta fraktionslekar och en översikt över valet av fraktioner i en matchserie"
+      },
+      {
+        "src": "/images/games/nexus-card-game/gallery/nexus-10.png",
+        "title": "Spelläge: fritt val",
+        "alt": "Fraktionskorten Pirates och Dragons illustrerar läget Casual Pick"
+      }
+    ],
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
@@ -5378,13 +5482,32 @@
     "descriptionStatus": "missing",
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
-      "sourceRow": 71,
+      "sourceRow": 70,
       "sourceTitle": "Nexus Card Game: Founders Edition",
       "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
     },
-    "expansions": ["Foil Pack"]
+    "expansions": ["Foil Pack"],
+    "coverVariants": [
+      {
+        "src": "/images/games/nexus-card-game/nexus-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/nexus-card-game/nexus-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/nexus-card-game/nexus-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/nexus-card-game/nexus-thumb-896.webp",
+        "width": 896
+      },
+      { "src": "/images/games/nexus-card-game/nexus-thumb.png", "width": 1122 }
+    ]
   },
   {
     "id": "tend-hive-cellar",
@@ -5395,6 +5518,92 @@
     "tint": "#eadce2",
     "description": "",
     "placeholderTheme": "castle-rose",
+    "cover": "/images/games/tend-hive-cellar/tend-thumb.png",
+    "coverAlt": "Tends logotyp över ett färgglatt landskap med främmande växter och djur",
+    "hero": "/images/games/tend-hive-cellar/tend-banner.png",
+    "heroAlt": "Tends logotyp vid en flod och en odling som sköts av en robot",
+    "gallery": [
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-1.png",
+        "title": "Spelkomponenter"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-2.png",
+        "title": "Spelboxen"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-3.png",
+        "title": "Spelblad och uppgiftskort"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-4.png",
+        "title": "Odling"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-5.png",
+        "title": "Skogen"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-6.png",
+        "title": "Fiske"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-7.png",
+        "title": "Gruvan"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-8.png",
+        "title": "Märken"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-9.png",
+        "title": "Lastmanifestet"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-10.png",
+        "title": "Floden"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-11.png",
+        "title": "Kombinationer och bonusuppgifter"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-12.png",
+        "title": "Tend vid spelbordet"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-13.png",
+        "title": "Hive – expansionsboxen"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-14.png",
+        "title": "Hive – bigårdar"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-15.png",
+        "title": "Hive – bitärningar och utrustning"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-16.png",
+        "title": "Hive – uppgraderingar och last"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-17.png",
+        "title": "Cellar – expansionsboxen"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-18.png",
+        "title": "Cellar – hantverksvaror"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-19.png",
+        "title": "Cellar – utrustning och marknadskontrakt"
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/gallery/tend-20.png",
+        "title": "Cellar – marknadsstånd och lager"
+      }
+    ],
     "playersMin": 1,
     "playersMax": 6,
     "bestWith": "1, 3",
@@ -5407,13 +5616,32 @@
     "descriptionStatus": "missing",
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
-      "sourceRow": 72,
+      "sourceRow": 71,
       "sourceTitle": "Tend: Big Box Edition",
       "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
     },
-    "expansions": ["Hive", "Cellar", "Stretch Goal Upgrades"]
+    "expansions": ["Hive", "Cellar", "Stretch Goal Upgrades"],
+    "coverVariants": [
+      {
+        "src": "/images/games/tend-hive-cellar/tend-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/tend-thumb-384.webp",
+        "width": 384
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/tend-thumb-768.webp",
+        "width": 768
+      },
+      {
+        "src": "/images/games/tend-hive-cellar/tend-thumb-896.webp",
+        "width": 896
+      },
+      { "src": "/images/games/tend-hive-cellar/tend-thumb.png", "width": 1122 }
+    ]
   },
   {
     "id": "san-juan",
@@ -5424,6 +5652,37 @@
     "tint": "#eadce2",
     "description": "",
     "placeholderTheme": "castle-rose",
+    "cover": "/images/games/san-juan/san-juan-thumb.png",
+    "coverAlt": "Omslag för San Juan 1897 Special Edition med ett solbelyst torg",
+    "hero": "/images/games/san-juan/san-juan-banner.png",
+    "heroAlt": "Illustration av San Juans torg med marknadsstånd, fontän och segelfartyg i hamnen",
+    "gallery": [
+      {
+        "src": "/images/games/san-juan/gallery/san-juan-1.png",
+        "title": "Spelbox och byggnadskort",
+        "alt": "Boxen till San Juan 1897 Special Edition bakom utlagda byggnadskort"
+      },
+      {
+        "src": "/images/games/san-juan/gallery/san-juan-2.png",
+        "title": "Kort på grön spelduk",
+        "alt": "Byggnadskort, korthögar och regelhäfte på en grön spelduk"
+      },
+      {
+        "src": "/images/games/san-juan/gallery/san-juan-3.png",
+        "title": "Spelbox och kort på träbord",
+        "alt": "Spelboxen bredvid en korthög och utlagda kort på ett träbord"
+      },
+      {
+        "src": "/images/games/san-juan/gallery/san-juan-4.png",
+        "title": "Roll- och byggnadskort",
+        "alt": "Närbild av rollkort och byggnadskort på en svart spelmatta"
+      },
+      {
+        "src": "/images/games/san-juan/gallery/san-juan-5.png",
+        "title": "Speluppställning",
+        "alt": "Speluppställning ovanifrån med rollkort, byggnadskort och kortlek"
+      }
+    ],
     "playersMin": 2,
     "playersMax": 4,
     "bestWith": "3",
@@ -5436,12 +5695,19 @@
     "descriptionStatus": "missing",
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
-      "sourceRow": 73,
+      "sourceRow": 72,
       "sourceTitle": "San Juan",
       "importedAt": "2026-11-13",
       "preliminary": false,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "coverVariants": [
+      { "src": "/images/games/san-juan/san-juan-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/san-juan/san-juan-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/san-juan/san-juan-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/san-juan/san-juan-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/san-juan/san-juan-thumb.png", "width": 1122 }
+    ]
   },
   {
     "id": "annulet",
@@ -5452,6 +5718,47 @@
     "tint": "#eadce2",
     "description": "",
     "placeholderTheme": "castle-rose",
+    "cover": "/images/games/annulet/annulet-thumb.png",
+    "coverAlt": "Omslag för Annulet med en lysande vit hjort under en blå stenportal",
+    "hero": "/images/games/annulet/annulet-banner.png",
+    "heroAlt": "Annulets logotyp över en skogsbäck med en guldring och en vit hjort vid en blå portal",
+    "gallery": [
+      {
+        "src": "/images/games/annulet/gallery/annulet-1.png",
+        "title": "Introduktion",
+        "alt": "Engelsk introduktion till Annulet, ett fristående strategispel i samma värld som The Old King’s Crown"
+      },
+      {
+        "src": "/images/games/annulet/gallery/annulet-2.png",
+        "title": "Spelet uppdukat",
+        "alt": "Spelmatta med kort, gröna stenar och marker framför en illustration av en vit hjort"
+      },
+      {
+        "src": "/images/games/annulet/gallery/annulet-3.png",
+        "title": "Regelboken",
+        "alt": "Omslaget och ett uppslag som visar korttyper och spelområden"
+      },
+      {
+        "src": "/images/games/annulet/gallery/annulet-4.png",
+        "title": "Spelmatta och marker",
+        "alt": "Marknadsmatta i tyg, gröna stenar, en röd initiativmarkör och kronmarker"
+      },
+      {
+        "src": "/images/games/annulet/gallery/annulet-5.png",
+        "title": "Landskaps- och karaktärskort",
+        "alt": "Illustrerade kort med landskap, byggnader och karaktärer"
+      },
+      {
+        "src": "/images/games/annulet/gallery/annulet-6.png",
+        "title": "Annulet- och ödeskort",
+        "alt": "Karaktärskort ovanför kort med ringar och blå portaler"
+      },
+      {
+        "src": "/images/games/annulet/gallery/annulet-7.png",
+        "title": "Berättelse- och solokort",
+        "alt": "Berättelsekort, solokort och regelboken. Bilden anger att innehåll och antal kan ändras."
+      }
+    ],
     "playersMin": 1,
     "playersMax": 4,
     "bestWith": null,
@@ -5464,12 +5771,19 @@
     "descriptionStatus": "missing",
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
-      "sourceRow": 74,
+      "sourceRow": 73,
       "sourceTitle": "Annulet",
       "importedAt": "2026-11-13",
       "preliminary": true,
       "editionMatch": "not-independently-verified"
-    }
+    },
+    "coverVariants": [
+      { "src": "/images/games/annulet/annulet-thumb-192.webp", "width": 192 },
+      { "src": "/images/games/annulet/annulet-thumb-384.webp", "width": 384 },
+      { "src": "/images/games/annulet/annulet-thumb-768.webp", "width": 768 },
+      { "src": "/images/games/annulet/annulet-thumb-896.webp", "width": 896 },
+      { "src": "/images/games/annulet/annulet-thumb.png", "width": 1122 }
+    ]
   },
   {
     "id": "brass-birmingham",
@@ -5492,7 +5806,7 @@
     "descriptionStatus": "missing",
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
-      "sourceRow": 75,
+      "sourceRow": 74,
       "sourceTitle": "Brass: Birmingham: Collector's Edition",
       "importedAt": "2026-11-13",
       "preliminary": true,
@@ -5538,8 +5852,20 @@
     ],
     "coverVariants": [
       {
+        "src": "/images/games/brass-birmingham/brassBirmingham-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/brass-birmingham/brassBirmingham-thumb-384.webp",
+        "width": 384
+      },
+      {
         "src": "/images/games/brass-birmingham/brassBirmingham-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/brass-birmingham/brassBirmingham-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/brass-birmingham/brassBirmingham-thumb.png",
@@ -5568,7 +5894,7 @@
     "descriptionStatus": "missing",
     "metadataStatus": "catalog-import",
     "catalogMetadata": {
-      "sourceRow": 76,
+      "sourceRow": 75,
       "sourceTitle": "Brass: Lancashire: Collector's Edition",
       "importedAt": "2026-11-13",
       "preliminary": true,
@@ -5624,8 +5950,20 @@
     ],
     "coverVariants": [
       {
+        "src": "/images/games/brass-lancashire/brassLancashire-thumb-192.webp",
+        "width": 192
+      },
+      {
+        "src": "/images/games/brass-lancashire/brassLancashire-thumb-384.webp",
+        "width": 384
+      },
+      {
         "src": "/images/games/brass-lancashire/brassLancashire-thumb-768.webp",
         "width": 768
+      },
+      {
+        "src": "/images/games/brass-lancashire/brassLancashire-thumb-896.webp",
+        "width": 896
       },
       {
         "src": "/images/games/brass-lancashire/brassLancashire-thumb.png",
