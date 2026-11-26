@@ -1,3 +1,5 @@
+import type { Message } from '../../i18n/translations';
+import { useLanguage } from '../../i18n/LanguageContext';
 import { useEffect, useId, useRef, useState, type FormEvent } from 'react';
 import styles from './GamePickerChat.module.css';
 
@@ -15,6 +17,7 @@ export default function GamePickerChat({
 }: {
   onRecommend: (ids: string[]) => void;
 }) {
+  const { t, language } = useLanguage();
   const inputId = useId();
   const [unlocked, setUnlocked] = useState(false);
   const [password, setPassword] = useState('');
@@ -22,7 +25,7 @@ export default function GamePickerChat({
   const [turns, setTurns] = useState<Turn[]>([]);
   const [suggestions, setSuggestions] = useState<string[]>([]);
   const [pending, setPending] = useState(true);
-  const [error, setError] = useState('');
+  const [error, setError] = useState<Message | null>(null);
   const controller = useRef<AbortController | null>(null);
   const busy = useRef(false);
   useEffect(() => {
@@ -35,8 +38,7 @@ export default function GamePickerChat({
         if (!request.signal.aborted) setUnlocked(data.unlocked === true);
       })
       .catch(() => {
-        if (!request.signal.aborted)
-          setError('AI-chatten är inte tillgänglig just nu.');
+        if (!request.signal.aborted) setError('chatUnavailable');
       })
       .finally(() => {
         if (!request.signal.aborted) setPending(false);
@@ -51,13 +53,14 @@ export default function GamePickerChat({
     controller.current = request;
     const userTurn: Turn = { role: 'user', content };
     setPending(true);
-    setError('');
+    setError(null);
     setSuggestions([]);
     try {
       const response = await requestPicker(
         unlocked
           ? {
               action: 'chat',
+              language,
               messages: [...turns.slice(-8), userTurn],
             }
           : { action: 'unlock', password: content },
@@ -66,17 +69,11 @@ export default function GamePickerChat({
       if (request.signal.aborted) return;
       if (response.status === 401) {
         setUnlocked(false);
-        setError(
-          unlocked
-            ? 'Din session har gått ut. Lås upp chatten igen.'
-            : 'Fel lösenord.',
-        );
+        setError(unlocked ? 'sessionExpired' : 'wrongPassword');
         return;
       }
       if (response.status === 429) {
-        setError(
-          'AI-chatten har nått en användningsgräns. Försök igen senare eller välj manuellt.',
-        );
+        setError('chatLimit');
         return;
       }
       if (!response.ok) throw new Error();
@@ -111,10 +108,7 @@ export default function GamePickerChat({
         setPassword('');
       }
     } catch {
-      if (!request.signal.aborted)
-        setError(
-          'AI-chatten kunde inte svara. Försök igen eller välj manuellt.',
-        );
+      if (!request.signal.aborted) setError('chatFailed');
     } finally {
       busy.current = false;
       if (!request.signal.aborted) setPending(false);
@@ -125,16 +119,18 @@ export default function GamePickerChat({
     void send();
   };
   return (
-    <section className={styles.chat} aria-label="AI-chatt">
-      <h3>Vad vill ni spela?</h3>
-      <p className={styles.intro}>
-        Berätta om sällskapet och spelkvällen så hittar vi något i Spelhyllan.
-      </p>
+    <section className={styles.chat} aria-label={t('chat')}>
+      <h3>{t('chatHeading')}</h3>
+      <p className={styles.intro}>{t('chatIntro')}</p>
       {unlocked && (
-        <div className={styles.transcript} role="log" aria-label="Konversation">
+        <div
+          className={styles.transcript}
+          role="log"
+          aria-label={t('conversation')}
+        >
           {turns.map((turn, index) => (
             <div key={index} className={styles.turn} data-role={turn.role}>
-              <strong>{turn.role === 'user' ? 'Du' : 'Spelhyllan'}</strong>
+              <strong>{turn.role === 'user' ? t('you') : 'Spelhyllan'}</strong>
               <p>{turn.content}</p>
             </div>
           ))}
@@ -142,7 +138,7 @@ export default function GamePickerChat({
       )}
       <form onSubmit={submit} className={styles.form} aria-busy={pending}>
         <label htmlFor={inputId}>
-          {unlocked ? 'Ditt meddelande' : 'Lösenord för AI-chatten'}
+          {unlocked ? t('yourMessage') : t('chatPassword')}
         </label>
         <div className={styles.composer}>
           {unlocked ? (
@@ -151,7 +147,7 @@ export default function GamePickerChat({
               value={message}
               maxLength={600}
               onChange={(e) => setMessage(e.target.value)}
-              placeholder="Vi är fyra och vill spela något taktiskt …"
+              placeholder={t('chatPlaceholder')}
               rows={3}
               required
             />
@@ -170,17 +166,17 @@ export default function GamePickerChat({
             type="submit"
             disabled={pending || !(unlocked ? message.trim() : password)}
           >
-            {pending ? 'Vänta …' : unlocked ? 'Skicka' : 'Lås upp'}
+            {pending ? t('pleaseWait') : unlocked ? t('send') : t('unlock')}
           </button>
         </div>
         {error && (
           <p role="alert" className={styles.error}>
-            {error}
+            {t(error)}
           </p>
         )}
       </form>
       {unlocked && (
-        <div className={styles.suggestions} aria-label="Svarsförslag">
+        <div className={styles.suggestions} aria-label={t('suggestedReplies')}>
           {suggestions.map((answer) => (
             <button
               key={answer}
