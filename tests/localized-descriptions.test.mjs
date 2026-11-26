@@ -16,7 +16,7 @@ const { default: description } = await import(
 );
 const translatedGames = games.filter((game) =>
   game.catalogMetadata.sourceRow <= 51 ||
-  (game.catalogMetadata.sourceRow >= 62 && game.catalogMetadata.sourceRow <= 71),
+  (game.catalogMetadata.sourceRow >= 62 && game.catalogMetadata.sourceRow <= 75),
 );
 const ids = translatedGames.map(({ id }) => id);
 const paragraphs = (text) => text.split(/\r?\n(?:[^\S\r\n]*\r?\n)+/);
