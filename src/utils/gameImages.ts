@@ -1,3 +1,4 @@
+import { swedish, type Translate } from '../i18n/translations';
 import type {
   Game,
   GalleryImage,
@@ -12,6 +13,7 @@ export function getGameImage(
   src?: string,
   title?: string,
   alt?: string,
+  t: Translate = swedish.t,
 ): GalleryImage {
   const theme = resolvePlaceholderTheme(game);
   return {
@@ -25,27 +27,32 @@ export function getGameImage(
     title:
       title ??
       (kind === 'cover'
-        ? 'Omslag'
+        ? t('cover')
         : kind === 'scene'
-          ? 'Spelet uppdukat'
-          : 'Komponenter'),
+          ? t('gameSetup')
+          : t('components')),
   };
 }
 
-export function getCoverImage(game: Game) {
-  return getGameImage(game, 'cover', game.cover, undefined, game.coverAlt);
+export function getCoverImage(game: Game, t?: Translate) {
+  return getGameImage(game, 'cover', game.cover, undefined, game.coverAlt, t);
 }
 
-export function getHeroImage(game: Game) {
-  return getGameImage(game, 'scene', game.hero, undefined, game.heroAlt);
+export function getHeroImage(game: Game, t?: Translate) {
+  return getGameImage(game, 'scene', game.hero, undefined, game.heroAlt, t);
 }
 
-export function getGalleryImages(game: Game): GalleryImage[] {
+export function getGalleryImages(
+  game: Game,
+  t: Translate = swedish.t,
+): GalleryImage[] {
   const sources = game.gallery?.filter((entry) =>
     (typeof entry === 'string' ? entry : entry.src).trim(),
   );
   if (!sources?.length)
-    return [getGameImage(game, 'scene'), getGameImage(game, 'detail')];
+    return (['scene', 'detail'] as const).map((kind) =>
+      getGameImage(game, kind, undefined, undefined, undefined, t),
+    );
   return sources.map((entry, index) => {
     const source: GameGalleryEntry =
       typeof entry === 'string' ? { src: entry } : entry;
@@ -54,8 +61,9 @@ export function getGalleryImages(game: Game): GalleryImage[] {
         game,
         index === 0 ? 'scene' : 'detail',
         source.src,
-        source.title || `Bild ${index + 1}`,
+        source.title || t('numberedImage', index + 1),
         source.alt,
+        t,
       ),
       videoSrc: source.videoSrc,
     };

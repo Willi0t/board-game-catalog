@@ -1,3 +1,4 @@
+import { useLanguage } from '../../i18n/LanguageContext';
 import type { Game } from '../../types/game';
 import { getHeroImage } from '../../utils/gameImages';
 import GameImage from '../GameImage/GameImage';
@@ -19,12 +20,13 @@ export default function GameBanner({
   onToggleFavorite,
   className = '',
 }: GameBannerProps) {
+  const { t } = useLanguage();
   return (
     <GameImage
-      image={getHeroImage(game)}
+      image={getHeroImage(game, t)}
       blurredBackdrop
       className={className}
-      placeholderLabel="PLATSHÅLLARBILD"
+      placeholderLabel={t('placeholderUpper')}
       labelClassName={styles.placeholder}
       bannerControls={
         <>
@@ -37,9 +39,7 @@ export default function GameBanner({
             </div>
             <button
               className={`${styles.favorite} ${isFavorite ? styles.active : ''}`}
-              aria-label={
-                isFavorite ? 'Ta bort från favoriter' : 'Lägg till i favoriter'
-              }
+              aria-label={isFavorite ? t('removeFavorite') : t('addFavorite')}
               aria-pressed={isFavorite}
               onClick={() => onToggleFavorite(game.id)}
             >

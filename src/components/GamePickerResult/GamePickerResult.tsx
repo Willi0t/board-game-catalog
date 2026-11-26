@@ -1,3 +1,4 @@
+import { useLanguage } from '../../i18n/LanguageContext';
 import type { Game } from '../../types/game';
 import {
   suggestPickerChanges,
@@ -24,12 +25,13 @@ export default function GamePickerResult({
   onEdit,
   onClear,
 }: GamePickerResultProps) {
-  const suggestions = count === 0 ? suggestPickerChanges(games, criteria) : [];
+  const { t } = useLanguage();
+  const suggestions =
+    count === 0 ? suggestPickerChanges(games, criteria, t) : [];
   return (
-    <section className={styles.results} aria-label="Guidens resultat">
+    <section className={styles.results} aria-label={t('guideResults')}>
       <p className={styles.count} role="status">
-        {count} spel matchar dina val. Guidens filter används i stället för
-        bibliotekets vanliga filter.
+        {t('guideResultNote', count)}
       </p>
       <PickerSummary criteria={criteria} compact />
       <div className={styles.actions}>
@@ -37,16 +39,13 @@ export default function GamePickerResult({
           aria-haspopup="dialog"
           onClick={(event) => onEdit(event.currentTarget)}
         >
-          Ändra mina val
+          {t('editChoices')}
         </button>
-        <button onClick={onClear}>Rensa guidens filter</button>
+        <button onClick={onClear}>{t('clearGuide')}</button>
       </div>
       {suggestions.length > 0 && (
         <div className={styles.suggestions}>
-          <p>
-            Dessa ändringar skulle ge träffar. Öppna guiden för att granska och
-            bekräfta ett förslag:
-          </p>
+          <p>{t('suggestionIntro')}</p>
           {suggestions.map((suggestion) => (
             <button
               key={suggestion.label}
@@ -55,7 +54,7 @@ export default function GamePickerResult({
                 onEdit(event.currentTarget, suggestion.changes)
               }
             >
-              {suggestion.label} ({suggestion.count} spel)
+              {t('labeledCount', suggestion.label, suggestion.count)}
             </button>
           ))}
         </div>

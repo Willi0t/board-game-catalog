@@ -67,4 +67,4 @@ export interface GalleryImage {
   title: string;
 }
 
-export type DetailTab = 'Om spelet' | 'Bilder';
+export type DetailTab = 'about' | 'images';

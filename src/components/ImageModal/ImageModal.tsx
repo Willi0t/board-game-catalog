@@ -1,3 +1,4 @@
+import { useLanguage } from '../../i18n/LanguageContext';
 import {
   useEffect,
   useRef,
@@ -30,6 +31,7 @@ export default function ImageModal({
   openerRef,
   fallbackRef,
 }: ImageModalProps) {
+  const { t } = useLanguage();
   const dialogProps = useModalDialog({ onClose, openerRef, fallbackRef });
   const slides = images.length ? images : [modal];
   // Unbounded keys keep each image mounted as it moves between layers, including wraparound.
@@ -166,7 +168,7 @@ export default function ImageModal({
         <button
           className={styles.close}
           onClick={onClose}
-          aria-label="Stäng bild"
+          aria-label={t('closeImage')}
         >
           <Icon name="close" />
         </button>
@@ -176,7 +178,7 @@ export default function ImageModal({
           style={stageStyle}
           data-single={!canNavigate}
           role="group"
-          aria-label={canNavigate ? 'Bläddra bland bilder' : 'Bild'}
+          aria-label={canNavigate ? t('browseImages') : t('image')}
         >
           {(canNavigate ? [-3, -2, -1, 0, 1, 2, 3] : [0]).map((offset) => {
             const target =
@@ -201,7 +203,10 @@ export default function ImageModal({
                     ? undefined
                     : offset === 0
                       ? slides[target].title
-                      : `Visa ${offset < 0 ? 'föregående' : 'nästa'} bild: ${slides[target].title}`
+                      : t(
+                          offset < 0 ? 'showPreviousImage' : 'showNextImage',
+                          slides[target].title,
+                        )
                 }
                 onClick={() => {
                   for (let step = 0; step < Math.abs(offset); step++)
@@ -211,7 +216,7 @@ export default function ImageModal({
                 <GameImage
                   image={slides[target]}
                   className={styles.image}
-                  placeholderLabel="Platshållarbild"
+                  placeholderLabel={t('placeholderImage')}
                   onReady={
                     offset === 0
                       ? () => {
@@ -236,7 +241,7 @@ export default function ImageModal({
               </button>
             );
           })}
-          <div className={styles.mainImage} aria-label="Aktuell bild">
+          <div className={styles.mainImage} aria-label={t('currentImage')}>
             {active.videoSrc && (
               <video
                 key={`${cursor}:${active.videoSrc}`}
@@ -250,8 +255,8 @@ export default function ImageModal({
                 preload="metadata"
                 aria-label={active.alt || active.title}
               >
-                Din webbläsare stöder inte videon.{' '}
-                <a href={active.videoSrc}>Hämta videon</a>
+                {t('videoUnsupported')}{' '}
+                <a href={active.videoSrc}>{t('downloadVideo')}</a>
               </video>
             )}
             {canNavigate && (
@@ -259,14 +264,14 @@ export default function ImageModal({
                 <button
                   className={styles.previousButton}
                   onClick={() => navigate(-1)}
-                  aria-label="Föregående bild"
+                  aria-label={t('previousImage')}
                 >
                   <Icon name="chevron" className={styles.previous} size={18} />
                 </button>
                 <button
                   className={styles.nextButton}
                   onClick={() => navigate(1)}
-                  aria-label="Nästa bild"
+                  aria-label={t('nextImage')}
                 >
                   <Icon name="chevron" size={18} />
                 </button>
@@ -277,7 +282,7 @@ export default function ImageModal({
         <div className={styles.caption} aria-live="polite" aria-atomic="true">
           <p>{active.title}</p>
           <span>
-            {index + 1} av {slides.length}
+            {index + 1} {t('of')} {slides.length}
           </span>
         </div>
       </div>

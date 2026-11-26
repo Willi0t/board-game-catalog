@@ -322,7 +322,7 @@ test('Explore shows five mechanics and reveals all mechanics then types for hidd
   ]) {
     const expanded = render(ExploreNavigation, { ...props, ...selection });
     assert(expanded.includes('Mechanic 7'));
-    assert(expanded.includes('Competitive'));
+    assert(expanded.includes('Tävlingsspel'));
     assert(expanded.indexOf('Spelmekanik') < expanded.indexOf('Speltyp'));
     assert(expanded.includes('aria-expanded="true"'));
     assert(expanded.includes('aria-pressed="true"'));
@@ -338,7 +338,7 @@ test('shared game type badges show every type and omit missing types without a c
     gameTypes: ['Competitive', 'Party', 'Social'],
   });
   assert(html.includes('aria-label="Speltyper"'));
-  for (const tag of ['Competitive', 'Party', 'Social'])
+  for (const tag of ['Tävlingsspel', 'Partyspel', 'Socialt spel'])
     assert(html.includes(`<li>${tag}</li>`));
   assert.equal((html.match(/<li>/g) || []).length, 3);
   assert.equal(render(GameTypeBadges, { gameTypes: [] }), '');

@@ -1,3 +1,4 @@
+import { useLanguage } from '../../i18n/LanguageContext';
 import { useState } from 'react';
 import GameImage from '../GameImage/GameImage';
 import VideoBadge from '../VideoBadge/VideoBadge';
@@ -10,19 +11,20 @@ interface GalleryItemProps {
 }
 
 function GalleryItem({ image, onOpenImage }: GalleryItemProps) {
+  const { t } = useLanguage();
   const [available, setAvailable] = useState(true);
   const [ready, setReady] = useState(false);
   if (!available) return null;
   return (
     <button
-      aria-label={`Öppna ${image.videoSrc ? 'video' : 'bild'}: ${image.title}`}
+      aria-label={t(image.videoSrc ? 'openVideo' : 'openImage', image.title)}
       disabled={!ready}
       onClick={(event) => onOpenImage(image, event.currentTarget)}
     >
       <GameImage
         image={image}
         className={styles.image}
-        placeholderLabel="Platshållarbild"
+        placeholderLabel={t('placeholderImage')}
         labelClassName={styles.placeholder}
         onReady={() => setReady(true)}
         onUnavailable={() => setAvailable(false)}

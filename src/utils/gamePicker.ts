@@ -1,13 +1,14 @@
+import { swedish, type Translate } from '../i18n/translations';
 import type { Game } from '../types/game';
 
 export type InteractionLevel = 'low' | 'medium' | 'high';
 export type WeightLevel = 'low' | 'medium' | 'high';
 
-export const weightLabels: Record<WeightLevel, string> = {
-  low: 'Låg (1 ≤ vikt < 2)',
-  medium: 'Medel (2 ≤ vikt < 3)',
-  high: 'Hög (3 ≤ vikt ≤ 5)',
-};
+export const getWeightLabels = (t: Translate): Record<WeightLevel, string> => ({
+  low: t('weightLow'),
+  medium: t('weightMedium'),
+  high: t('weightHigh'),
+});
 
 export function weightLevel(weight: number | null): WeightLevel | undefined {
   if (weight == null) return undefined;
@@ -36,11 +37,13 @@ export interface PickerCriteria {
   mechanics: string[];
 }
 
-export const interactionLabels: Record<InteractionLevel, string> = {
-  low: 'Låg (0–1/5)',
-  medium: 'Medel (2–3/5)',
-  high: 'Hög (4–5/5)',
-};
+export const getInteractionLabels = (
+  t: Translate,
+): Record<InteractionLevel, string> => ({
+  low: t('interactionLow'),
+  medium: t('interactionMedium'),
+  high: t('interactionHigh'),
+});
 
 export function defaultPickerCriteria(): PickerCriteria {
   return {
@@ -110,6 +113,7 @@ export interface PickerSuggestion {
 export function suggestPickerChanges(
   games: readonly Game[],
   criteria: PickerCriteria,
+  t: Translate = swedish.t,
 ): PickerSuggestion[] {
   const suggestions: PickerSuggestion[] = [];
   const add = (label: string, changes: Partial<PickerCriteria>) => {
@@ -118,29 +122,22 @@ export function suggestPickerChanges(
     return count;
   };
   if (criteria.weightLevels.length)
-    add('Ta bort svårighetsfiltret', { weightLevels: [] });
-  if (criteria.mechanics.length)
-    add('Ta bort mekanikfiltret', { mechanics: [] });
-  if (criteria.gameTypes.length)
-    add('Ta bort filtret för speltyp', { gameTypes: [] });
+    add(t('removeDifficulty'), { weightLevels: [] });
+  if (criteria.mechanics.length) add(t('removeMechanic'), { mechanics: [] });
+  if (criteria.gameTypes.length) add(t('removeType'), { gameTypes: [] });
   if (criteria.interactionLevels.length)
-    add('Låt interaktionen spela ingen roll', { interactionLevels: [] });
+    add(t('removeInteraction'), { interactionLevels: [] });
   if (!criteria.includeUpcoming)
-    add('Inkludera kommande spel och okänd tillgänglighet', {
+    add(t('includeUnknown'), {
       includeUpcoming: true,
     });
   if (!suggestions.length) {
     const relaxed = { ...defaultPickerCriteria(), players: criteria.players };
-    if (
-      !add(
-        `Behåll endast ${criteria.players} spelare och återställ övriga val`,
-        relaxed,
-      )
-    ) {
-      add(
-        `Behåll ${criteria.players} spelare, återställ önskemålen och inkludera kommande/okänd tillgänglighet`,
-        { ...relaxed, includeUpcoming: true },
-      );
+    if (!add(t('keepPlayersReset', criteria.players), relaxed)) {
+      add(t('keepPlayersIncludeUpcoming', criteria.players), {
+        ...relaxed,
+        includeUpcoming: true,
+      });
     }
   }
   const counts = new Set<number>();
@@ -164,10 +161,9 @@ export function suggestPickerChanges(
   const nearest = ordered.find(
     (players) => matchPickerGames(games, { ...criteria, players }).length > 0,
   );
-  if (nearest != null)
-    add(`Ändra till ${nearest} spelare`, { players: nearest });
+  if (nearest != null) add(t('changePlayers', nearest), { players: nearest });
   else if (!suggestions.length && ordered[0] != null)
-    add(`Ändra till ${ordered[0]} spelare och återställ alla övriga val`, {
+    add(t('changePlayersReset', ordered[0]), {
       ...defaultPickerCriteria(),
       players: ordered[0],
       includeUpcoming: true,
@@ -260,26 +256,32 @@ export interface PickerConflict {
 export function findPickerConflicts(
   criteria: PickerCriteria,
   counts: PickerOptionCounts,
+  { t, tagLabel } = { ...swedish, tagLabel: (tag: string) => tag },
 ): PickerConflict[] {
   if (criteria.players == null) return [];
   const conflicts: PickerConflict[] = [];
+  const weightLabels = getWeightLabels(t);
+  const interactionLabels = getInteractionLabels(t);
   if (counts.players[criteria.players] === 0)
-    conflicts.push({ label: `${criteria.players} spelare`, step: 0 });
+    conflicts.push({ label: t('playerCount', criteria.players), step: 0 });
   for (const level of criteria.weightLevels)
     if (counts.weightLevels[level] === 0)
-      conflicts.push({ label: `Svårighet: ${weightLabels[level]}`, step: 0 });
+      conflicts.push({
+        label: t('difficultyConflict', weightLabels[level]),
+        step: 0,
+      });
   for (const tag of criteria.gameTypes)
     if (counts.gameTypes[tag] === 0)
-      conflicts.push({ label: `Speltyp: ${tag}`, step: 1 });
+      conflicts.push({ label: t('typeConflict', tagLabel(tag)), step: 1 });
   for (const level of criteria.interactionLevels)
     if (counts.interaction[level] === 0)
       conflicts.push({
-        label: `Interaktion: ${interactionLabels[level]}`,
+        label: t('interactionConflict', interactionLabels[level]),
         step: 1,
       });
   for (const tag of criteria.mechanics)
     if (counts.mechanics[tag] === 0)
-      conflicts.push({ label: `Spelmekanik: ${tag}`, step: 2 });
+      conflicts.push({ label: t('mechanicConflict', tagLabel(tag)), step: 2 });
   return conflicts;
 }
 

@@ -1,3 +1,4 @@
+import { useLanguage } from '../../i18n/LanguageContext';
 import GameBanner from '../GameBanner/GameBanner';
 import GameFacts from '../GameFacts/GameFacts';
 import GameDescription from '../GameDescription/GameDescription';
@@ -36,6 +37,7 @@ export default function GameDetailDrawer({
   fallbackRef,
   panelRef,
 }: GameDetailDrawerProps) {
+  const { t } = useLanguage();
   const titleId = useId();
   const dialogProps = useModalDialog({ onClose, openerRef, fallbackRef });
   return (
@@ -47,11 +49,11 @@ export default function GameDetailDrawer({
     >
       <div className={styles.panel}>
         <header ref={panelRef} tabIndex={-1} className={styles.header}>
-          <span>Spelinformation</span>
+          <span>{t('gameInformation')}</span>
           <button
             className={styles.close}
             onClick={onClose}
-            aria-label="Stäng spelinformation"
+            aria-label={t('closeGameInformation')}
           >
             <Icon name="close" />
           </button>
@@ -73,10 +75,10 @@ export default function GameDetailDrawer({
           <GameMetadata game={game} />
           <GameDescription game={game} presentation="full" />
           <GameEditionDetails game={game} />
-          <section className={styles.gallerySection} aria-label="Bilder">
-            <h3>Bilder</h3>
+          <section className={styles.gallerySection} aria-label={t('images')}>
+            <h3>{t('images')}</h3>
             <GameGallery
-              images={[getCoverImage(game), ...getGalleryImages(game)]}
+              images={[getCoverImage(game, t), ...getGalleryImages(game, t)]}
               onOpenImage={onOpenImage}
               layout="thumbnails"
             />

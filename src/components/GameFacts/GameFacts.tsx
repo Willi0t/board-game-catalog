@@ -1,3 +1,4 @@
+import { useLanguage } from '../../i18n/LanguageContext';
 import { useId } from 'react';
 import type { Game } from '../../types/game';
 import styles from './GameFacts.module.css';
@@ -12,10 +13,11 @@ function difficultyColor(weight: number) {
 }
 
 export default function GameFacts({ game }: { game: Game }) {
+  const { t, language } = useLanguage();
   const interactionHelp = useId();
   const players =
     game.playersMin == null || game.playersMax == null
-      ? 'Uppgift saknas'
+      ? t('unknown')
       : game.playersMin === game.playersMax
         ? String(game.playersMin)
         : `${game.playersMin}–${game.playersMax}`;
@@ -23,24 +25,24 @@ export default function GameFacts({ game }: { game: Game }) {
     <div>
       <dl className={styles.facts}>
         <div>
-          <dt>Spelare</dt>
+          <dt>{t('players')}</dt>
           <dd>{players}</dd>
         </div>
         <div>
-          <dt>Bäst med</dt>
-          <dd>{game.bestWith ?? 'Uppgift saknas'}</dd>
+          <dt>{t('bestWith')}</dt>
+          <dd>{game.bestWith ?? t('unknown')}</dd>
         </div>
         <div>
-          <dt>Svårighetsgrad</dt>
+          <dt>{t('difficulty')}</dt>
           <dd>
             {game.weight == null ? (
-              'Uppgift saknas'
+              t('unknown')
             ) : (
               <span
                 className={styles.difficulty}
                 style={{ color: difficultyColor(game.weight) }}
               >
-                {game.weight.toLocaleString('sv-SE', {
+                {game.weight.toLocaleString(language, {
                   minimumFractionDigits: 2,
                   maximumFractionDigits: 2,
                 })}
@@ -50,10 +52,10 @@ export default function GameFacts({ game }: { game: Game }) {
           </dd>
         </div>
         <div>
-          <dt>Spelarinteraktion</dt>
+          <dt>{t('playerInteraction')}</dt>
           <dd aria-describedby={interactionHelp}>
             {game.playerInteraction == null ? (
-              'Uppgift saknas'
+              t('unknown')
             ) : (
               <>
                 {game.playerInteraction}/5
@@ -75,20 +77,21 @@ export default function GameFacts({ game }: { game: Game }) {
         </div>
         {game.minutes != null && (
           <div>
-            <dt>Speltid</dt>
-            <dd>{game.minutes} min</dd>
+            <dt>{t('playTime')}</dt>
+            <dd>
+              {game.minutes} {t('minutes')}
+            </dd>
           </div>
         )}
         {game.minimumAge != null && (
           <div>
-            <dt>Ålder</dt>
-            <dd>Från {game.minimumAge} år</dd>
+            <dt>{t('age')}</dt>
+            <dd>{t('minimumAge', game.minimumAge)}</dd>
           </div>
         )}
       </dl>
       <p id={interactionHelp} className={styles.help}>
-        Spelarinteraktion är vår subjektiva bedömning (0–5) av både samarbete
-        och konkurrens.
+        {t('interactionScale')}
       </p>
     </div>
   );

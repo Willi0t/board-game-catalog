@@ -1,6 +1,7 @@
+import { useLanguage } from '../../i18n/LanguageContext';
 import {
-  interactionLabels,
-  weightLabels,
+  getInteractionLabels,
+  getWeightLabels,
   type PickerCriteria,
 } from '../../utils/gamePicker';
 import styles from './PickerSummary.module.css';
@@ -12,36 +13,37 @@ export default function PickerSummary({
   criteria: PickerCriteria;
   compact?: boolean;
 }) {
+  const { t, tagLabel } = useLanguage();
+  const weightLabels = getWeightLabels(t);
+  const interactionLabels = getInteractionLabels(t);
   const entries: [string, string | number, boolean][] = [
-    ['Spelare', criteria.players ?? 'Inte angivet', true],
+    [t('players'), criteria.players ?? t('unspecified'), true],
     [
-      'Svårighetsnivå (minst en)',
+      t('difficultyAny'),
       criteria.weightLevels.map((level) => weightLabels[level]).join(', ') ||
-        'Spelar ingen roll',
+        t('any'),
       criteria.weightLevels.length > 0,
     ],
     [
-      'Tillgänglighet',
-      criteria.includeUpcoming
-        ? 'I samlingen, kommande och okänd tillgänglighet'
-        : 'Endast i samlingen',
+      t('availability'),
+      criteria.includeUpcoming ? t('allAvailability') : t('ownedOnly'),
       true,
     ],
     [
-      'Speltyp (minst en)',
-      criteria.gameTypes.join(', ') || 'Spelar ingen roll',
+      t('typeAny'),
+      criteria.gameTypes.map(tagLabel).join(', ') || t('any'),
       criteria.gameTypes.length > 0,
     ],
     [
-      'Interaktion',
+      t('interaction'),
       criteria.interactionLevels
         .map((level) => interactionLabels[level])
-        .join(', ') || 'Spelar ingen roll',
+        .join(', ') || t('any'),
       criteria.interactionLevels.length > 0,
     ],
     [
-      'Spelmekanik (minst en)',
-      criteria.mechanics.join(', ') || 'Spelar ingen roll',
+      t('mechanicAny'),
+      criteria.mechanics.map(tagLabel).join(', ') || t('any'),
       criteria.mechanics.length > 0,
     ],
   ];
@@ -49,9 +51,9 @@ export default function PickerSummary({
   return (
     <section
       className={`${styles.summary} ${compact ? styles.compact : ''}`}
-      aria-label="Sammanfattning av dina val"
+      aria-label={t('choiceSummary')}
     >
-      <h3>Dina val</h3>
+      <h3>{t('yourChoices')}</h3>
       <dl>
         {activeEntries.map(([label, value]) => (
           <div key={label}>

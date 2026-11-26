@@ -1,3 +1,4 @@
+import { useLanguage } from '../../i18n/LanguageContext';
 import type { Game } from '../../types/game';
 import GameStatus from '../GameStatus/GameStatus';
 import styles from './GameMetadata.module.css';
@@ -9,13 +10,14 @@ export default function GameMetadata({
   game: Game;
   showStatus?: boolean;
 }) {
+  const { t, tagLabel } = useLanguage();
   return (
     <div className={styles.metadata}>
       {showStatus && <GameStatus game={game} />}
       {(
         [
-          ['Spelmekanik', game.mechanics],
-          ['Speltyp', game.gameTypes],
+          [t('mechanic'), game.mechanics],
+          [t('gameType'), game.gameTypes],
         ] as const
       ).map(
         ([label, tags]) =>
@@ -24,7 +26,7 @@ export default function GameMetadata({
               <h3 className={styles.heading}>{label}</h3>
               <ul className={styles.chips}>
                 {tags.map((tag) => (
-                  <li key={tag}>{tag}</li>
+                  <li key={tag}>{tagLabel(tag)}</li>
                 ))}
               </ul>
             </section>
@@ -32,19 +34,10 @@ export default function GameMetadata({
       )}
       {game.catalogMetadata && (
         <div className={styles.quality}>
-          <p>
-            Spelarantal och svårighet följer importunderlaget och kan avse
-            grundspelet. Exakt utgåva är inte oberoende verifierad. Taggarna är
-            vår granskade indelning.
-          </p>
-          {game.catalogMetadata.preliminary && (
-            <p>Uppgifterna kan vara preliminära.</p>
-          )}
+          <p>{t('catalogCaveat')}</p>
+          {game.catalogMetadata.preliminary && <p>{t('preliminary')}</p>}
           {game.catalogMetadata.editionMatch === 'provisional' && (
-            <p>
-              Preliminär utgåvematchning: Parlay: The Betting Game antas, men
-              exakt utgåva är inte bekräftad. Även taggarna är preliminära.
-            </p>
+            <p>{t('parlayCaveat')}</p>
           )}
         </div>
       )}

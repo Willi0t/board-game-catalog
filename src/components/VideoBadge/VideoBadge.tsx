@@ -1,6 +1,8 @@
+import { useLanguage } from '../../i18n/LanguageContext';
 import styles from './VideoBadge.module.css';
 
 export default function VideoBadge() {
+  const { t } = useLanguage();
   return (
     <span className={styles.overlay} aria-hidden="true">
       <span className={styles.play}>
@@ -8,7 +10,7 @@ export default function VideoBadge() {
           <path d="M8 4v16l12-8z" />
         </svg>
       </span>
-      <span className={styles.label}>Video</span>
+      <span className={styles.label}>{t('video')}</span>
     </span>
   );
 }

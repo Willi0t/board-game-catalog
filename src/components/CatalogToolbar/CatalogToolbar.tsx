@@ -1,3 +1,4 @@
+import { useLanguage } from '../../i18n/LanguageContext';
 import Icon from '../Icon/Icon';
 
 import styles from './CatalogToolbar.module.css';
@@ -38,6 +39,7 @@ export default function CatalogToolbar({
   onPlayersChange,
   onDurationChange,
 }: CatalogToolbarProps) {
+  const { t, tagLabel } = useLanguage();
   return (
     <div className={styles['toolbar']}>
       <label className={styles['search']}>
@@ -45,60 +47,67 @@ export default function CatalogToolbar({
         <input
           value={query}
           onChange={(e) => onQueryChange(e.target.value)}
-          placeholder="Sök efter ett spel…"
-          aria-label="Sök efter ett spel"
+          placeholder={t('searchPlaceholder')}
+          aria-label={t('search')}
         />
         {query && (
-          <button aria-label="Rensa sökning" onClick={() => onQueryChange('')}>
+          <button
+            aria-label={t('clearSearch')}
+            onClick={() => onQueryChange('')}
+          >
             <Icon name="close" size={15} />
           </button>
         )}
       </label>
       <div className={styles['filters']}>
         <select
-          aria-label="Filtrera antal spelare"
+          aria-label={t('filterPlayers')}
           value={players}
           onChange={(e) => onPlayersChange(e.target.value)}
         >
-          <option value="">Alla spelarantal</option>
+          <option value="">{t('allPlayerCounts')}</option>
           {playerOptions.map((n) => (
             <option key={n} value={n}>
-              {n} spelare
+              {t('playerCount', n)}
             </option>
           ))}
         </select>
         <select
-          aria-label="Filtrera speltid"
+          aria-label={t('filterDuration')}
           value={duration}
           onChange={(e) => onDurationChange(e.target.value)}
         >
-          <option value="">Alla speltider</option>
-          <option value="30">Upp till 30 min</option>
-          <option value="60">Upp till 60 min</option>
-          <option value="120">Upp till 120 min</option>
+          <option value="">{t('allDurations')}</option>
+          <option value="30">{t('upTo30')}</option>
+          <option value="60">{t('upTo60')}</option>
+          <option value="120">{t('upTo120')}</option>
         </select>
         <select
-          aria-label="Filtrera spelmekanik"
+          aria-label={t('filterMechanic')}
           value={mechanic}
           onChange={(event) => onMechanicChange(event.target.value)}
         >
-          <option value="">Alla spelmekaniker</option>
+          <option value="">{t('allMechanics')}</option>
           {mechanicOptions.map((tag) => (
-            <option key={tag}>{tag}</option>
+            <option key={tag} value={tag}>
+              {tagLabel(tag)}
+            </option>
           ))}
         </select>
         <select
-          aria-label="Filtrera speltyp"
+          aria-label={t('filterType')}
           value={gameType}
           onChange={(event) => onGameTypeChange(event.target.value)}
         >
-          <option value="">Alla speltyper</option>
+          <option value="">{t('allTypes')}</option>
           {gameTypeOptions.map((tag) => (
-            <option key={tag}>{tag}</option>
+            <option key={tag} value={tag}>
+              {tagLabel(tag)}
+            </option>
           ))}
         </select>
         <select
-          aria-label="Filtrera tillgänglighet"
+          aria-label={t('filterAvailability')}
           value={availability}
           onChange={(event) => {
             const value = event.target.value;
@@ -106,12 +115,12 @@ export default function CatalogToolbar({
               onAvailabilityChange(value);
           }}
         >
-          <option value="all">Alla</option>
-          <option value="owned">I samlingen</option>
-          <option value="upcoming">Kommande</option>
+          <option value="all">{t('all')}</option>
+          <option value="owned">{t('owned')}</option>
+          <option value="upcoming">{t('upcoming')}</option>
         </select>
         <button className={styles.reset} onClick={onReset}>
-          Återställ filter
+          {t('resetFilters')}
         </button>
       </div>
     </div>

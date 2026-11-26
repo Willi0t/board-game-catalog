@@ -1,3 +1,4 @@
+import { useLanguage } from '../../i18n/LanguageContext';
 import GameBanner from '../GameBanner/GameBanner';
 import GameFacts from '../GameFacts/GameFacts';
 import GameDescription from '../GameDescription/GameDescription';
@@ -36,12 +37,13 @@ export default function GameDetails({
   collectionIndex,
   onShowMore,
 }: GameDetailsProps) {
-  const galleryImages = [getCoverImage(game), ...getGalleryImages(game)];
-  const tabs: DetailTab[] = ['Om spelet', 'Bilder'];
+  const { t } = useLanguage();
+  const galleryImages = [getCoverImage(game, t), ...getGalleryImages(game, t)];
+  const tabs: DetailTab[] = ['about', 'images'];
   return (
     <aside
       className={styles['details']}
-      aria-label="Information om valt spel"
+      aria-label={t('selectedGameInfo')}
       key={game.id}
     >
       <GameBanner
@@ -51,7 +53,7 @@ export default function GameDetails({
       />
       <div className={styles['detail-content']}>
         <p className={styles['detail-edition']}>
-          {game.edition || 'Retail Edition'}
+          {game.edition || t('retailEdition')}
         </p>
         <h2>{game.title}</h2>
         <div className={styles.status}>
@@ -61,28 +63,28 @@ export default function GameDetails({
         <div
           className={styles['detail-tabs']}
           role="tablist"
-          aria-label="Spelinformation"
+          aria-label={t('gameInformation')}
         >
-          {tabs.map((t) => (
+          {tabs.map((detailTab) => (
             <button
-              key={t}
+              key={detailTab}
               role="tab"
-              id={`tab-${t === 'Bilder' ? 'images' : 'about'}`}
+              id={`tab-${detailTab}`}
               aria-controls="detail-tab-panel"
-              aria-selected={tab === t}
-              onClick={() => onTabChange(t)}
+              aria-selected={tab === detailTab}
+              onClick={() => onTabChange(detailTab)}
             >
-              {t}
-              {t === 'Bilder' && <span>{galleryImages.length}</span>}
+              {detailTab === 'images' ? t('images') : t('aboutGame')}
+              {detailTab === 'images' && <span>{galleryImages.length}</span>}
             </button>
           ))}
         </div>
         <div
           id="detail-tab-panel"
           role="tabpanel"
-          aria-labelledby={`tab-${tab === 'Bilder' ? 'images' : 'about'}`}
+          aria-labelledby={`tab-${tab}`}
         >
-          {tab === 'Om spelet' ? (
+          {tab === 'about' ? (
             <>
               <GameDescription
                 game={game}
@@ -115,7 +117,7 @@ export default function GameDetails({
             aria-haspopup="dialog"
             onClick={(event) => onShowMore(game, event.currentTarget)}
           >
-            Visa mer <Icon name="arrow" size={17} />
+            {t('showDetails')} <Icon name="arrow" size={17} />
           </button>
         </div>
       )}

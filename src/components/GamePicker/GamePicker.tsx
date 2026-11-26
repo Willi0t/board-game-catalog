@@ -1,3 +1,4 @@
+import { useLanguage } from '../../i18n/LanguageContext';
 import {
   useEffect,
   useId,
@@ -13,13 +14,13 @@ import {
 } from '../../constants/catalogOptions';
 import useModalDialog from '../../hooks/useModalDialog';
 import {
-  interactionLabels,
+  getInteractionLabels,
   countPickerOptions,
   findPickerConflicts,
   weightOptions,
   interactionOptions,
   pickerPlayerOptions,
-  weightLabels,
+  getWeightLabels,
   type PickerCriteria,
 } from '../../utils/gamePicker';
 import GamePickerChat from '../GamePickerChat/GamePickerChat';
@@ -41,8 +42,6 @@ interface GamePickerProps {
   fallbackRef: RefObject<HTMLElement | null>;
 }
 
-const steps = ['Sällskap', 'Spelkänsla', 'Önskemål'];
-
 export default function GamePicker({
   games,
   onClose,
@@ -53,6 +52,8 @@ export default function GamePicker({
   openerRef,
   fallbackRef,
 }: GamePickerProps) {
+  const { t, tagLabel } = useLanguage();
+  const steps = [t('group'), t('playStyle'), t('preferences')];
   const dialogProps = useModalDialog({ onClose, openerRef, fallbackRef });
   const titleId = useId();
   const errorId = useId();
@@ -65,7 +66,7 @@ export default function GamePicker({
   const headingRef = useRef<HTMLHeadingElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
   const counts = countPickerOptions(games, criteria);
-  const conflicts = findPickerConflicts(criteria, counts);
+  const conflicts = findPickerConflicts(criteria, counts, { t, tagLabel });
 
   useEffect(() => {
     headingRef.current?.focus({ preventScroll: true });
@@ -108,31 +109,31 @@ export default function GamePicker({
             <button
               type="button"
               onClick={onClose}
-              aria-label="Stäng spelväljaren"
+              aria-label={t('closePicker')}
             >
               <Icon name="close" size={18} />
             </button>
           </div>
           <div className={styles.welcomeBody}>
-            <h2 id={titleId}>Välj åt mig</h2>
-            <p id={descriptionId}>Hitta nästa spel för ditt sällskap.</p>
+            <h2 id={titleId}>{t('pickForMe')}</h2>
+            <p id={descriptionId}>{t('pickerIntro')}</p>
             <ul className={styles.features}>
               <li>
-                <span aria-hidden="true">✓</span>Beskriv vad ni är sugna på och
-                få förslag med AI.
+                <span aria-hidden="true">✓</span>
+                {t('aiFeature')}
               </li>
               <li>
-                <span aria-hidden="true">✓</span>Välj själva spelarantal,
-                svårighetsgrad och spelmekaniker.
+                <span aria-hidden="true">✓</span>
+                {t('manualFeature')}
               </li>
               <li>
-                <span aria-hidden="true">✓</span>Se spelen som matchar direkt i
-                katalogen.
+                <span aria-hidden="true">✓</span>
+                {t('catalogFeature')}
               </li>
             </ul>
             <div className={styles.welcomeActions}>
               <button type="button" onClick={() => setMode('manual')}>
-                Manuellt
+                {t('manual')}
               </button>
               <button type="button" onClick={() => setMode('ai')}>
                 AI
@@ -148,9 +149,9 @@ export default function GamePicker({
               ref={mode === 'ai' ? headingRef : undefined}
               tabIndex={mode === 'ai' ? -1 : undefined}
             >
-              Välj åt mig
+              {t('pickForMe')}
             </h2>
-            <button onClick={onClose} aria-label="Stäng spelväljaren">
+            <button onClick={onClose} aria-label={t('closePicker')}>
               <Icon name="close" />
             </button>
           </header>
@@ -168,18 +169,14 @@ export default function GamePicker({
                 aria-pressed={manual}
                 onClick={() => setMode('manual')}
               >
-                Manuellt
+                {t('manual')}
               </button>
             </div>
             {mode === 'ai' && <GamePickerChat onRecommend={onRecommend} />}
             {manual && (
               <>
-                <p className={styles.intro}>
-                  Hitta ett spel för just ert sällskap. Guiden använder hela
-                  katalogen och visar alla träffar i biblioteket. Dina vanliga
-                  biblioteksfilter pausas medan guidens resultat visas.
-                </p>
-                <ol className={styles.steps} aria-label="Guidens steg">
+                <p className={styles.intro}>{t('guideIntro')}</p>
+                <ol className={styles.steps} aria-label={t('guideSteps')}>
                   {steps.map((label, index) => (
                     <li
                       key={label}
@@ -199,23 +196,20 @@ export default function GamePicker({
                   aria-atomic="true"
                 >
                   {criteria.players == null
-                    ? 'Ange spelarantal för att se hur många spel som matchar.'
-                    : `${counts.total} spel matchar`}
+                    ? t('enterPlayers')
+                    : t('matchCount', counts.total)}
                 </p>
                 {conflicts.length > 0 && (
                   <section
                     className={styles.conflicts}
-                    aria-label="Val att se över"
+                    aria-label={t('reviewChoices')}
                   >
                     <h4>
                       {counts.total === 0
-                        ? 'Inga spel matchar dina val'
-                        : 'Vissa val matchar inte längre'}
+                        ? t('noGuideMatches')
+                        : t('conflictingChoices')}
                     </h4>
-                    <p>
-                      Se över valen nedan. De har 0 spel efter tidigare val och
-                      behålls tills du själv ändrar eller avmarkerar dem.
-                    </p>
+                    <p>{t('conflictHelp')}</p>
                     <ul>
                       {conflicts.map((conflict) => (
                         <li key={conflict.label}>
@@ -223,7 +217,7 @@ export default function GamePicker({
                             type="button"
                             onClick={() => setStep(conflict.step)}
                           >
-                            Se över {conflict.label}
+                            {t('reviewChoice', conflict.label)}
                           </button>
                         </li>
                       ))}
@@ -234,17 +228,14 @@ export default function GamePicker({
                   {step === 0 && (
                     <>
                       <fieldset className={styles.fieldset}>
-                        <legend>Hur många ska spela?</legend>
-                        <p>
-                          Obligatoriskt. Spelet måste stödja exakt ert antal
-                          spelare.
-                        </p>
+                        <legend>{t('playerQuestion')}</legend>
+                        <p>{t('requiredPlayers')}</p>
                         <div
                           ref={playerOptionsRef}
                           tabIndex={-1}
                           role="group"
                           className={styles.quick}
-                          aria-label="Snabbval för spelarantal"
+                          aria-label={t('quickPlayers')}
                           aria-describedby={playerError ? errorId : undefined}
                         >
                           {pickerPlayerOptions.map((count) => (
@@ -267,7 +258,7 @@ export default function GamePicker({
                               {criteria.players === count && (
                                 <span aria-hidden="true">✓ </span>
                               )}
-                              {count} spelare
+                              {t('playerCount', count)}
                               <OptionCount
                                 count={counts.players[count] ?? 0}
                                 selected={criteria.players === count}
@@ -277,15 +268,15 @@ export default function GamePicker({
                         </div>
                         {playerError && (
                           <p id={errorId} role="alert" className={styles.error}>
-                            Välj hur många som ska spela med snabbvalen.
+                            {t('playerError')}
                           </p>
                         )}
                       </fieldset>
                       <PickerLevelChoices
-                        legend="Hur avancerat får det vara?"
-                        description="Välj en eller flera nivåer. Inga val betyder ”Spelar ingen roll”. Okänd svårighet matchar bara utan svårighetsfilter."
+                        legend={t('difficultyQuestion')}
+                        description={t('weightHelp')}
                         options={weightOptions}
-                        labels={weightLabels}
+                        labels={getWeightLabels(t)}
                         selected={criteria.weightLevels}
                         counts={counts.weightLevels}
                         onChange={(weightLevels) => update({ weightLevels })}
@@ -298,42 +289,38 @@ export default function GamePicker({
                             update({ includeUpcoming: event.target.checked })
                           }
                         />
-                        Inkludera kommande spel
+                        {t('includeUpcoming')}
                       </label>
-                      <p className={styles.help}>
-                        När rutan är markerad tillåts även spel med okänd
-                        tillgänglighet. Annars visas endast spel som är kända
-                        att finnas i samlingen.
-                      </p>
+                      <p className={styles.help}>{t('upcomingHelp')}</p>
                     </>
                   )}
                   {step === 1 && (
                     <>
                       <PickerChoices
-                        legend="Vilken speltyp är ni sugna på?"
+                        legend={t('typeQuestion')}
                         options={gameTypeOptions}
                         selected={criteria.gameTypes}
                         counts={counts.gameTypes}
                         onChange={(gameTypes) => update({ gameTypes })}
                       />
                       <PickerLevelChoices
-                        legend="Hur mycket spelarinteraktion vill ni ha?"
-                        description="Interaktion räknar både samarbete och konkurrens och är vår subjektiva bedömning. Välj flera nivåer för att matcha minst en. Inga val betyder ”Spelar ingen roll”."
+                        legend={t('interactionQuestion')}
+                        description={t('interactionHelp')}
                         options={interactionOptions}
-                        labels={interactionLabels}
+                        labels={getInteractionLabels(t)}
                         selected={criteria.interactionLevels}
                         counts={counts.interaction}
                         onChange={(interactionLevels) =>
                           update({ interactionLevels })
                         }
-                        clearLabel="Rensa interaktionsval"
+                        clearLabel={t('clearInteraction')}
                       />
                     </>
                   )}
                   {step === 2 && (
                     <>
                       <PickerChoices
-                        legend="Vilka spelmekaniker gillar ni?"
+                        legend={t('mechanicQuestion')}
                         options={mechanicOptions}
                         selected={criteria.mechanics}
                         counts={counts.mechanics}
@@ -348,11 +335,11 @@ export default function GamePicker({
                         type="button"
                         onClick={() => setStep((previous) => previous - 1)}
                       >
-                        Bakåt
+                        {t('back')}
                       </button>
                     )}
                     <button className={styles.primary} type="submit">
-                      {step === 2 ? `Visa ${counts.total} spel` : 'Nästa'}
+                      {step === 2 ? t('showGames', counts.total) : t('next')}
                     </button>
                   </footer>
                 </form>

@@ -1,3 +1,4 @@
+import { useLanguage } from '../../i18n/LanguageContext';
 import { useId, useState } from 'react';
 import type { CatalogTagCount } from '../../utils/getTagCounts';
 import TagNavigation from '../TagNavigation/TagNavigation';
@@ -20,6 +21,7 @@ export default function ExploreNavigation({
   onGameTypeChange,
   onMechanicChange,
 }: ExploreNavigationProps) {
+  const { t } = useLanguage();
   const listId = useId();
   const hiddenMechanic =
     mechanics.findIndex(({ tag }) => tag === mechanic) >= 5;
@@ -44,14 +46,14 @@ export default function ExploreNavigation({
     <>
       <div id={listId}>
         <TagNavigation
-          title="Spelmekanik"
+          title={t('mechanic')}
           options={expanded ? mechanics : mechanics.slice(0, 5)}
           selected={mechanic}
           onChange={onMechanicChange}
         />
         {expanded && (
           <TagNavigation
-            title="Speltyp"
+            title={t('gameType')}
             options={gameTypes}
             selected={gameType}
             onChange={onGameTypeChange}
@@ -67,7 +69,7 @@ export default function ExploreNavigation({
             setListState({ gameType, mechanic, expanded: !expanded })
           }
         >
-          {expanded ? 'Visa färre' : 'Visa fler'}
+          {expanded ? t('showFewer') : t('showMore')}
         </button>
       )}
     </>

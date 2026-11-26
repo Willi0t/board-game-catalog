@@ -1,3 +1,4 @@
+import { useLanguage } from '../../i18n/LanguageContext';
 import {
   useEffect,
   useLayoutEffect,
@@ -149,6 +150,7 @@ export default function GameInfoPanel({
   panelRef,
   children,
 }: GameInfoPanelProps) {
+  const { t } = useLanguage();
   const scrollRef = useRef<HTMLElement | null>(null);
   usePanelViewportHeight(scrollRef, !isMobile);
   useEffect(() => {
@@ -176,14 +178,14 @@ export default function GameInfoPanel({
       }}
       tabIndex={-1}
       className={styles.panel}
-      aria-label="Spelinformation"
+      aria-label={t('gameInformation')}
     >
       {gameId ? (
         <PanelContent gameId={gameId}>{children}</PanelContent>
       ) : (
         <div className={styles.empty}>
-          <h2>Inga spel att visa</h2>
-          <p>Ändra eller rensa filtren för att visa spelinformation.</p>
+          <h2>{t('noGamesToDisplay')}</h2>
+          <p>{t('emptyGameInfo')}</p>
         </div>
       )}
     </section>

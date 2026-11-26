@@ -12,7 +12,7 @@ export default function useGamePanels(
   );
   if (mobilePanelGameId !== null && mobilePanelGameId !== selectedGameId)
     setMobilePanelGameId(null);
-  const [tab, setTab] = useState<DetailTab>('Om spelet');
+  const [tab, setTab] = useState<DetailTab>('about');
   const [detailGame, setDetailGame] = useState<Game | null>(null);
   const [image, setImage] = useState<{
     selected: GalleryImage;
@@ -26,12 +26,12 @@ export default function useGamePanels(
 
   const showGameInfo = (game: Game, trigger: HTMLButtonElement) => {
     infoOpenerRef.current = trigger;
-    setTab('Om spelet');
+    setTab('about');
     setMobilePanelGameId(isMobile ? game.id : null);
   };
   const openDetailDrawer = (game: Game, trigger: HTMLButtonElement) => {
     drawerOpenerRef.current = trigger;
-    setTab('Om spelet');
+    setTab('about');
     setDetailGame(game);
   };
   const openImage = (

@@ -1,13 +1,15 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import fs from 'node:fs';
-import { transpileModule, ModuleKind } from 'typescript';
+import { buildSync } from 'esbuild';
 import games from '../src/games.json' with { type: 'json' };
 
-const code = transpileModule(
-  fs.readFileSync('src/utils/gamePicker.ts', 'utf8'),
-  { compilerOptions: { module: ModuleKind.ESNext } },
-).outputText;
+const code = buildSync({
+  entryPoints: ['src/utils/gamePicker.ts'],
+  bundle: true,
+  format: 'esm',
+  platform: 'node',
+  write: false,
+}).outputFiles[0].text;
 const {
   countPickerOptions,
   findPickerConflicts,
