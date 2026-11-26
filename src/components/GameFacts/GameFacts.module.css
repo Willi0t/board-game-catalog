@@ -22,12 +22,6 @@
   overflow-wrap: anywhere;
 }
 
-.help {
-  color: #74665f;
-  font-size: 11px;
-  line-height: 1.7;
-}
-
 .scale {
   display: flex;
   gap: 3px;

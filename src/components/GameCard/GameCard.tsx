@@ -1,3 +1,4 @@
+import { useLanguage } from '../../i18n/LanguageContext';
 import type { CSSProperties } from 'react';
 import GameExpansions from '../GameExpansions/GameExpansions';
 import GameStatus from '../GameStatus/GameStatus';
@@ -22,6 +23,7 @@ export default function GameCard({
   onSelectGame,
   onOpenDetails,
 }: GameCardProps) {
+  const { t, tagLabel } = useLanguage();
   const coverStyle: (CSSProperties & { '--card-tint': string }) | undefined =
     game.cardTint ? { '--card-tint': game.cardTint } : undefined;
 
@@ -38,7 +40,7 @@ export default function GameCard({
         style={coverStyle}
       >
         <GameImage
-          image={getCoverImage(game)}
+          image={getCoverImage(game, t)}
           className={styles.image}
           loading="lazy"
           srcSet={game.coverVariants
@@ -57,13 +59,14 @@ export default function GameCard({
           </span>
         )}
         <span className={styles['selected-indicator']}>
-          Valt spel <Icon name="arrow" size={14} />
+          {t('selectedGame')} <Icon name="arrow" size={14} />
         </span>
       </div>
       <h2>{game.title}</h2>
       <p>
         {[game.gameTypes[0], ...game.mechanics.slice(0, 2)]
           .filter(Boolean)
+          .map(tagLabel)
           .join(' · ')}
       </p>
       <GameExpansions expansions={game.expansions} compact />

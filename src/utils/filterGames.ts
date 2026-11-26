@@ -29,13 +29,19 @@ export default function filterGames(
     gameType = '',
     availability = 'all',
   }: GameFilters = {},
+  translatedTag?: (tag: string) => string,
 ) {
+  const search = query.toLocaleLowerCase('sv');
   const filtered = games.filter(
     (game) =>
       (libraryView === 'all' || favorites.includes(game.id)) &&
-      `${game.title} ${game.edition} ${game.category} ${game.mechanics.join(' ')} ${game.gameTypes.join(' ')}`
+      (`${game.title} ${game.edition} ${game.category} ${game.mechanics.join(' ')} ${game.gameTypes.join(' ')}`
         .toLocaleLowerCase('sv')
-        .includes(query.toLocaleLowerCase('sv')) &&
+        .includes(search) ||
+        (translatedTag &&
+          [...game.mechanics, ...game.gameTypes].some((tag) =>
+            translatedTag(tag).toLocaleLowerCase('sv').includes(search),
+          ))) &&
       (!players ||
         (game.playersMin != null &&
           game.playersMax != null &&

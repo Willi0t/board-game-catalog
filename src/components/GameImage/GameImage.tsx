@@ -1,3 +1,4 @@
+import { useLanguage } from '../../i18n/LanguageContext';
 import {
   useCallback,
   useEffect,
@@ -40,6 +41,7 @@ function ResolvedGameImage({
   onReady,
   onUnavailable,
 }: GameImageProps) {
+  const { t } = useLanguage();
   const [stage, setStage] = useState<'image' | 'placeholder' | 'unavailable'>(
     image.src && image.src !== image.placeholderSrc ? 'image' : 'placeholder',
   );
@@ -73,11 +75,11 @@ function ResolvedGameImage({
     '--placeholder-tint': image.placeholderTint ?? 'var(--tint, #eadce2)',
   };
   const visibleLabel = isPlaceholder
-    ? (placeholderLabel ?? 'Platshållarbild')
+    ? (placeholderLabel ?? t('placeholderImage'))
     : label;
   const alt = isPlaceholder
-    ? `Platshållarillustration: ${image.title} för ${image.gameTitle}`
-    : image.alt || `${image.title} för ${image.gameTitle}`;
+    ? t('placeholderFor', image.title, image.gameTitle)
+    : image.alt || t('imageFor', image.title, image.gameTitle);
   return (
     <div
       className={`${styles.frame} ${blurredBackdrop ? styles.bannerFrame : ''} ${className}`}
@@ -101,7 +103,7 @@ function ResolvedGameImage({
       >
         {stage === 'unavailable' ? (
           <div className={styles.unavailable} role="img" aria-label={alt}>
-            <span>Bild saknas</span>
+            <span>{t('imageMissing')}</span>
             <span>{image.gameTitle}</span>
           </div>
         ) : (

@@ -1,3 +1,4 @@
+import { useLanguage } from '../../i18n/LanguageContext';
 import styles from './GameExpansions.module.css';
 import metadataStyles from '../GameMetadata/GameMetadata.module.css';
 
@@ -14,13 +15,14 @@ export default function GameExpansions({
   className,
   panel = false,
 }: GameExpansionsProps) {
+  const { t } = useLanguage();
   if (!expansions?.length) return null;
 
   if (compact)
     return (
       <span className={styles.count}>
         {expansions.length}{' '}
-        {expansions.length === 1 ? 'expansion' : 'expansioner'}
+        {t(expansions.length === 1 ? 'expansion' : 'expansionsCount')}
       </span>
     );
 
@@ -31,7 +33,7 @@ export default function GameExpansions({
         .join(' ')}
     >
       <h3 className={panel ? metadataStyles.heading : undefined}>
-        Expansioner
+        {t('expansions')}
       </h3>
       <ul className={panel ? metadataStyles.chips : styles.list}>
         {expansions.map((expansion, index) => (

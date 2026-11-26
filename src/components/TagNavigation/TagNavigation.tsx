@@ -1,3 +1,4 @@
+import { useLanguage } from '../../i18n/LanguageContext';
 import getTagColor from '../../utils/getTagColor';
 import type { CatalogTagCount } from '../../utils/getTagCounts';
 import styles from './TagNavigation.module.css';
@@ -15,6 +16,7 @@ export default function TagNavigation({
   selected,
   onChange,
 }: TagNavigationProps) {
+  const { t, tagLabel } = useLanguage();
   return (
     <section className={styles.group}>
       <h2>{title}</h2>
@@ -23,7 +25,7 @@ export default function TagNavigation({
           <button
             key={tag}
             className={`${styles.button} ${selected === tag ? styles.active : ''}`}
-            aria-label={`${tag}, ${count} spel`}
+            aria-label={t('labeledCount', tagLabel(tag), count)}
             aria-pressed={selected === tag}
             onClick={() => onChange(selected === tag ? '' : tag)}
           >
@@ -32,7 +34,7 @@ export default function TagNavigation({
               style={{ backgroundColor: getTagColor(tag) }}
               aria-hidden="true"
             />
-            <span className={styles.label}>{tag}</span>
+            <span className={styles.label}>{tagLabel(tag)}</span>
             {selected === tag && (
               <span className={styles.check} aria-hidden="true">
                 ✓

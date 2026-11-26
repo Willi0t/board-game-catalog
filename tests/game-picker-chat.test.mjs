@@ -85,6 +85,16 @@ test('picker chat requires a valid session before using the API', async (t) => {
   assert.equal(payload.response_format.json_schema.strict, true);
   assert.deepEqual(payload.messages.slice(1), chat.messages);
   assert.ok(!options.body.includes(password));
+  assert.match(payload.messages[0].content, /reply and suggestions in Swedish/);
+
+  assert.equal((await call({ ...chat, language: 'fr' }, cookie)).status, 200);
+  const french = JSON.parse(fetch.mock.calls[1].arguments[1].body);
+  assert.match(french.messages[0].content, /reply and suggestions in French/);
+  assert.equal(
+    (await call({ ...chat, language: 'invalid' }, cookie)).status,
+    400,
+  );
+  assert.equal(fetch.mock.callCount(), 2);
 
   for (const suggestion of ['4 spelare', 'Max en timme']) {
     result = {

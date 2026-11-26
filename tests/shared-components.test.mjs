@@ -16,6 +16,10 @@ const modules = new Map();
 async function loadComponent(filename) {
   const fullPath = path.resolve(filename);
   if (modules.has(fullPath)) return modules.get(fullPath);
+  if (fullPath.endsWith('.json')) {
+    const value = JSON.parse(fs.readFileSync(fullPath, 'utf8'));
+    return `data:text/javascript;base64,${Buffer.from('export default ' + JSON.stringify(value)).toString('base64')}`;
+  }
   let code = transpileModule(fs.readFileSync(fullPath, 'utf8'), {
     fileName: fullPath,
     compilerOptions: { module: ModuleKind.ESNext, jsx: JsxEmit.ReactJSX },
@@ -30,7 +34,7 @@ async function loadComponent(filename) {
       ? await loadComponent(
           path.resolve(
             path.dirname(fullPath),
-            `${specifier}${fs.existsSync(path.resolve(path.dirname(fullPath), `${specifier}.tsx`)) ? '.tsx' : '.ts'}`,
+            `${specifier}${specifier.endsWith('.json') ? '' : fs.existsSync(path.resolve(path.dirname(fullPath), `${specifier}.tsx`)) ? '.tsx' : '.ts'}`,
           ),
         )
       : pathToFileURL(require.resolve(specifier)).href;
@@ -182,6 +186,7 @@ test('image dialog starts on the selected thumbnail and hides navigation for a s
 test('mobile and full descriptions prefer long text and retain draft caveats; summaries stay short', () => {
   const game = {
     ...games[0],
+    id: 'description-fixture',
     description: 'Kort text',
     longDescription: 'Lång text',
     descriptionStatus: 'draft',
@@ -322,7 +327,7 @@ test('Explore shows five mechanics and reveals all mechanics then types for hidd
   ]) {
     const expanded = render(ExploreNavigation, { ...props, ...selection });
     assert(expanded.includes('Mechanic 7'));
-    assert(expanded.includes('Competitive'));
+    assert(expanded.includes('Tävlingsspel'));
     assert(expanded.indexOf('Spelmekanik') < expanded.indexOf('Speltyp'));
     assert(expanded.includes('aria-expanded="true"'));
     assert(expanded.includes('aria-pressed="true"'));
@@ -338,7 +343,7 @@ test('shared game type badges show every type and omit missing types without a c
     gameTypes: ['Competitive', 'Party', 'Social'],
   });
   assert(html.includes('aria-label="Speltyper"'));
-  for (const tag of ['Competitive', 'Party', 'Social'])
+  for (const tag of ['Tävlingsspel', 'Partyspel', 'Socialt spel'])
     assert(html.includes(`<li>${tag}</li>`));
   assert.equal((html.match(/<li>/g) || []).length, 3);
   assert.equal(render(GameTypeBadges, { gameTypes: [] }), '');

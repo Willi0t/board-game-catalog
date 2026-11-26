@@ -1,3 +1,4 @@
+import { useLanguage } from '../../i18n/LanguageContext';
 import { useId } from 'react';
 import PickerOption from '../PickerOption/PickerOption';
 import { togglePickerChoice } from '../../utils/gamePicker';
@@ -18,19 +19,17 @@ export default function PickerChoices({
   counts,
   onChange,
 }: PickerChoicesProps) {
+  const { t, tagLabel } = useLanguage();
   const helpId = useId();
   return (
     <fieldset className={styles.group} aria-describedby={helpId}>
       <legend>{legend}</legend>
-      <p id={helpId}>
-        Valfritt. Inga val betyder ”Spelar ingen roll”. Välj flera för att
-        matcha minst ett.
-      </p>
+      <p id={helpId}>{t('multiChoiceHelp')}</p>
       <div className={styles.choices}>
         {options.map((option) => (
           <PickerOption
             key={option}
-            label={option}
+            label={tagLabel(option)}
             checked={selected.includes(option)}
             count={counts[option] ?? 0}
             onChange={() => onChange(togglePickerChoice(selected, option))}

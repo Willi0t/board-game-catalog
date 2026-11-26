@@ -1,3 +1,4 @@
+import { useLanguage } from '../../i18n/LanguageContext';
 import {
   useEffect,
   useId,
@@ -26,6 +27,7 @@ export default function MobileGamePanel({
   panelRef,
   children,
 }: MobileGamePanelProps) {
+  const { t } = useLanguage();
   const dialogProps = useModalDialog({ onClose, openerRef, fallbackRef });
   const scrollRef = useRef<HTMLDivElement>(null);
   const titleId = useId();
@@ -42,9 +44,9 @@ export default function MobileGamePanel({
       <header ref={panelRef} tabIndex={-1} className={styles.header}>
         <button onClick={onClose}>
           <Icon name="arrow" size={18} />
-          Tillbaka till spelen
+          {t('backToGames')}
         </button>
-        <h2 id={titleId}>Spelinformation</h2>
+        <h2 id={titleId}>{t('gameInformation')}</h2>
       </header>
       <div ref={scrollRef} className={styles.content}>
         {children}

@@ -1,3 +1,4 @@
+import { useLanguage } from '../../i18n/LanguageContext';
 import { useEffect, useRef, useState } from 'react';
 import type { Game } from '../../types/game';
 import useMediaQuery from '../../hooks/useMediaQuery';
@@ -6,6 +7,8 @@ import { loadYouTubeAPI, type YouTubePlayer } from '../../utils/youtubePlayer';
 import styles from './BannerMedia.module.css';
 
 function Video({ youtubeId, paused }: { youtubeId: string; paused: boolean }) {
+  const { t } = useLanguage();
+  const title = t('decorativeVideo');
   const host = useRef<HTMLDivElement>(null);
   const playerRef = useRef<YouTubePlayer | undefined>(undefined);
   const pausedRef = useRef(paused);
@@ -51,7 +54,7 @@ function Video({ youtubeId, paused }: { youtubeId: string; paused: boolean }) {
               const iframe = host.current?.querySelector('iframe');
               if (iframe) {
                 iframe.tabIndex = -1;
-                iframe.title = 'Dekorativ videobakgrund';
+                iframe.title = title;
                 iframe.setAttribute('aria-hidden', 'true');
               }
               readyPlayer.mute();
@@ -77,7 +80,7 @@ function Video({ youtubeId, paused }: { youtubeId: string; paused: boolean }) {
       player?.destroy();
       playerRef.current = undefined;
     };
-  }, [youtubeId]);
+  }, [youtubeId, title]);
   return (
     <div
       ref={host}
@@ -88,6 +91,7 @@ function Video({ youtubeId, paused }: { youtubeId: string; paused: boolean }) {
 }
 
 export default function BannerMedia({ game }: { game: Game }) {
+  const { t } = useLanguage();
   const ref = useRef<HTMLDivElement>(null);
   const visible = useBannerVisibility(ref);
   const reducedMotion = useMediaQuery('(prefers-reduced-motion: reduce)');
@@ -114,11 +118,11 @@ export default function BannerMedia({ game }: { game: Game }) {
         <button
           type="button"
           className={styles.pause}
-          aria-label={paused ? 'Spela bannerfilm' : 'Pausa bannerfilm'}
+          aria-label={paused ? t('playBanner') : t('pauseBanner')}
           aria-pressed={paused}
           onClick={() => setPaused((value) => !value)}
         >
-          {paused ? 'Spela' : 'Pausa'}
+          {paused ? t('play') : t('pause')}
         </button>
       )}
     </>

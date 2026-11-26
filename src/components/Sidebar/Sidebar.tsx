@@ -1,3 +1,4 @@
+import { useLanguage } from '../../i18n/LanguageContext';
 import { useEffect, useRef } from 'react';
 import Icon, { type IconName } from '../Icon/Icon';
 import { gameTypeTags, mechanicTags } from '../../constants/catalogOptions';
@@ -30,6 +31,7 @@ export default function Sidebar({
   onMechanicChange,
   onReset,
 }: SidebarProps) {
+  const { t } = useLanguage();
   const isCompact = useMediaQuery('(max-width: 900px)');
   const exploreRef = useRef<HTMLDetailsElement>(null);
   useEffect(() => {
@@ -42,8 +44,8 @@ export default function Sidebar({
       exploreRef.current.open = true;
   }, [gameType, mechanic, isCompact]);
   const libraryItems: [LibraryView, string, IconName, number][] = [
-    ['all', 'Alla spel', 'grid', games.length],
-    ['favorites', 'Favoriter', 'heart', favorites.length],
+    ['all', t('allGames'), 'grid', games.length],
+    ['favorites', t('favorites'), 'heart', favorites.length],
   ];
   return (
     <aside className={styles['sidebar']}>
@@ -65,18 +67,17 @@ export default function Sidebar({
       <div className={styles['owner']}>
         <span className={styles['avatar']}>W</span>
         <div>
-          <strong>Williams samling</strong>
-          <span>En värld av spelkvällar</span>
+          <strong>{t('ownerCollection')}</strong>
         </div>
       </div>
       <p className={`${styles['nav-caption']} ${styles['library-caption']}`}>
-        BIBLIOTEK
+        {t('libraryCaption')}
       </p>
-      <nav className={styles.library} aria-label="Bibliotek">
+      <nav className={styles.library} aria-label={t('library')}>
         {libraryItems.map(([view, label, icon, count]) => (
           <button
-            key={label}
-            aria-label={`${label}, ${count} spel`}
+            key={view}
+            aria-label={t('labeledCount', label, count)}
             className={`${styles['nav-item']} ${libraryView === view ? styles.active : ''}`}
             onClick={() => onLibraryViewChange(view)}
             aria-current={libraryView === view ? 'page' : undefined}
@@ -88,7 +89,7 @@ export default function Sidebar({
         ))}
       </nav>
       <details ref={exploreRef} className={styles.explore} open={!isCompact}>
-        <summary>Utforska</summary>
+        <summary>{t('explore')}</summary>
         <div className={styles['tag-lists']}>
           <ExploreNavigation
             gameTypes={gameTypeTags}
@@ -103,9 +104,9 @@ export default function Sidebar({
       <div className={styles['sidebar-bottom']}>
         <Icon name="sun" size={18} />
         <span>
-          Lite mindre skärm.
+          {t('lessScreenTime')}
           <br />
-          <strong>Lite mer spelkväll.</strong>
+          <strong>{t('moreGameNights')}</strong>
         </span>
       </div>
     </aside>

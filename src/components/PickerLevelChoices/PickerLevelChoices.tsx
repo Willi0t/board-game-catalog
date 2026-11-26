@@ -1,3 +1,4 @@
+import { useLanguage } from '../../i18n/LanguageContext';
 import { useId } from 'react';
 import PickerOption from '../PickerOption/PickerOption';
 import { togglePickerChoice } from '../../utils/gamePicker';
@@ -24,6 +25,7 @@ export default function PickerLevelChoices<Level extends string>({
   onChange,
   clearLabel,
 }: PickerLevelChoicesProps<Level>) {
+  const { t } = useLanguage();
   const helpId = useId();
   return (
     <fieldset className={styles.group} aria-describedby={helpId}>
@@ -31,7 +33,7 @@ export default function PickerLevelChoices<Level extends string>({
       <p id={helpId}>{description}</p>
       <div className={styles.choices}>
         <PickerOption
-          label="Spelar ingen roll"
+          label={t('any')}
           count={counts.any}
           checked={selected.length === 0}
           onChange={() => onChange([])}

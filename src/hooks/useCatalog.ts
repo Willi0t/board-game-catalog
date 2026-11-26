@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { tagSearchText } from '../i18n/translations';
 import type { Game } from '../types/game';
 import filterGames, { type GameFilters } from '../utils/filterGames';
 import { matchPickerGames, type PickerCriteria } from '../utils/gamePicker';
@@ -32,7 +33,7 @@ export default function useCatalog(
       })
     : pickerCriteria
       ? filterGames(matchPickerGames(games, pickerCriteria), { sort })
-      : filterGames(games, { ...filters, favorites, sort });
+      : filterGames(games, { ...filters, favorites, sort }, tagSearchText);
   const selectedGame = resolveSelectedGame(visibleGames, selectedGameId);
   const resolvedGameId = selectedGame?.id ?? null;
   // Persist the automatic fallback without invoking any manual-selection behavior.

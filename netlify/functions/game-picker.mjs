@@ -20,6 +20,13 @@ function sessionCookie(request) {
     secure: !local,
   };
 }
+const replyLanguages = new Map([
+  ['sv', 'Swedish'],
+  ['en', 'English'],
+  ['fr', 'French'],
+  ['de', 'German'],
+  ['es', 'Spanish'],
+]);
 const sessionSeconds = 3600;
 const passwordOptions = { N: 65536, r: 8, p: 1, maxmem: 96 * 1024 * 1024 };
 const gamesById = new Map(games.map(({ id, title }) => [id, title]));
@@ -139,6 +146,8 @@ export default async function handler(request) {
   if (body?.action !== 'chat') return json({}, 400);
   if (!authorized(request, secret, passwordHash)) return json({}, 401);
   if (!validMessages(body.messages)) return json({}, 400);
+  const replyLanguage = replyLanguages.get(body.language ?? 'sv');
+  if (!replyLanguage) return json({}, 400);
 
   try {
     const response = await fetch(
@@ -157,7 +166,7 @@ export default async function handler(request) {
           messages: [
             {
               role: 'system',
-              content: `Du hjälper användaren att välja brädspel ur Spelhyllan. Svara kort på svenska. Ställ en följdfråga om spelarantal eller andra viktiga krav saknas. Använd bara katalogen nedan. Respektera spelarantal, tid och tillgänglighet. Behandla okända värden som okända. Föreslå högst tre spel, och ta bara med kommande spel om användaren vill se dem. Förklara kort varför förslagen passar. Använd gameIds för de föreslagna spelen och en tom lista vid följdfrågor. Vid följdfrågor: ge 2–4 korta relevanta svarsalternativ i suggestions. Vid rekommendationer: suggestions ska vara tom. Katalog med kolumnnamn följda av spelrader: ${catalog}`,
+              content: `Du hjälper användaren att välja brädspel ur Spelhyllan. Write the reply and suggestions in ${replyLanguage}, keeping the original game titles. Ställ en följdfråga om spelarantal eller andra viktiga krav saknas. Använd bara katalogen nedan. Respektera spelarantal, tid och tillgänglighet. Behandla okända värden som okända. Föreslå högst tre spel, och ta bara med kommande spel om användaren vill se dem. Förklara kort varför förslagen passar. Använd gameIds för de föreslagna spelen och en tom lista vid följdfrågor. Vid följdfrågor: ge 2–4 korta relevanta svarsalternativ i suggestions. Vid rekommendationer: suggestions ska vara tom. Katalog med kolumnnamn följda av spelrader: ${catalog}`,
             },
             ...body.messages.map(({ role, content }) => ({ role, content })),
           ],

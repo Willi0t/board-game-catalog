@@ -9,6 +9,7 @@ export interface Game {
   tint: string;
   cardTint?: string;
   description: string;
+  descriptionLanguage?: string;
   longDescription?: string;
   minimumAge?: number;
   expansions?: string[];
@@ -67,4 +68,4 @@ export interface GalleryImage {
   title: string;
 }
 
-export type DetailTab = 'Om spelet' | 'Bilder';
+export type DetailTab = 'about' | 'images';
