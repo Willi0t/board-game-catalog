@@ -10,7 +10,7 @@ bilder: favoriter sparar id i localStorage.
 ```text
 games/<game-id>/
   <prefix>-thumb.<format>
-  <prefix>-banner.<format>
+  <prefix>-banner.webp
   gallery/
     <prefix>-1.<format>
     <prefix>-2.<format>
@@ -19,9 +19,10 @@ games/<game-id>/
 Använd varje spels eget, konsekventa prefix: `<prefix>-thumb` för
 `cover` (bilden i griden), `<prefix>-banner` för `hero` (den stora bilden)
 och `gallery/<prefix>-1`, `<prefix>-2` och så vidare i galleriordning.
-Behåll filens format och filändelse; ett galleri kan blanda PNG och WebP.
+Exportera nya banners som WebP för att hålla nere laddningstiden.
+Ett galleri kan blanda PNG och WebP.
 Castles of Burgundy (`burgundy`) använder prefixet `castle`, exempelvis
-`castle-thumb.png`, `castle-banner.png` och `gallery/castle-1.png`.
+`castle-thumb.png`, `castle-banner.webp` och `gallery/castle-1.png`.
 Andra spel använder sina egna prefix, inte `castle`.
 Bildrollerna styrs av `cover`, `hero` och `gallery` i `src/games.json`;
 färgskriptet hittar omslaget via `cover`, oberoende av filnamnet.
@@ -85,7 +86,7 @@ Spelaren förstörs när bannern scrollas ur bild, dokumentet döljs eller en an
 dialog täcker bannern. Därmed spelar inte panelen bakom ”Visa mer”. En manuell
 paus bevaras under bannerkomponentens livstid.
 
-Lands of Evershade använder nu en statisk `evershade-banner.png` som `hero`
+Lands of Evershade använder nu en statisk `evershade-banner.webp` som `hero`
 och åtta numrerade galleribilder. Spelet har ingen aktiv `bannerVideo` eller
 `bannerLogo`; exemplet ovan visar det återanvändbara stödet för dessa fält.
 
@@ -97,7 +98,7 @@ kompletteras med dessa bildfält (övriga spelfält behålls):
   "id": "burgundy",
   "placeholderTheme": "castle-rose",
   "cover": "/images/games/burgundy/castle-thumb.png",
-  "hero": "/images/games/burgundy/castle-banner.png",
+  "hero": "/images/games/burgundy/castle-banner.webp",
   "gallery": [
     "/images/games/burgundy/gallery/castle-1.png",
     "/images/games/burgundy/gallery/castle-2.png"
