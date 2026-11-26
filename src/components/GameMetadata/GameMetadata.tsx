@@ -32,15 +32,16 @@ export default function GameMetadata({
             </section>
           ),
       )}
-      {game.catalogMetadata && (
-        <div className={styles.quality}>
-          <p>{t('catalogCaveat')}</p>
-          {game.catalogMetadata.preliminary && <p>{t('preliminary')}</p>}
-          {game.catalogMetadata.editionMatch === 'provisional' && (
-            <p>{t('parlayCaveat')}</p>
-          )}
-        </div>
-      )}
+      {game.catalogMetadata &&
+        (game.catalogMetadata.preliminary ||
+          game.catalogMetadata.editionMatch === 'provisional') && (
+          <div className={styles.quality}>
+            {game.catalogMetadata.preliminary && <p>{t('preliminary')}</p>}
+            {game.catalogMetadata.editionMatch === 'provisional' && (
+              <p>{t('parlayCaveat')}</p>
+            )}
+          </div>
+        )}
     </div>
   );
 }

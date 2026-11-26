@@ -135,8 +135,6 @@ export const messages = {
   gamesToDiscover: 'jeux à découvrir',
   playBanner: 'Lire la vidéo de bannière',
   any: 'Sans préférence',
-  catalogCaveat:
-    'Le nombre de joueurs et la complexité proviennent des données importées et peuvent concerner le jeu de base. L’édition exacte reste à vérifier indépendamment. Nous avons revu la classification par tags.',
   players: 'Joueurs',
   playerInteraction: 'Interaction entre joueurs',
   gameSetup: 'Jeu mis en place',

@@ -130,8 +130,6 @@ export const messages = {
   gamesToDiscover: 'games to discover',
   playBanner: 'Play banner video',
   any: 'Any',
-  catalogCaveat:
-    'Player count and complexity come from the imported data and may refer to the base game. The exact edition has yet to be independently verified. We reviewed the tag classification.',
   players: 'Players',
   playerInteraction: 'Player interaction',
   gameSetup: 'Game setup',

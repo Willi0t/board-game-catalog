@@ -137,8 +137,6 @@ export const messages = {
   gamesToDiscover: 'Spiele zu entdecken',
   playBanner: 'Banner-Video abspielen',
   any: 'Beliebig',
-  catalogCaveat:
-    'Spielerzahl und Komplexität stammen aus den Importdaten und können sich auf das Grundspiel beziehen. Die genaue Ausgabe wurde noch nicht unabhängig überprüft. Die Zuordnung der Tags wurde von uns geprüft.',
   players: 'Spielerzahl',
   playerInteraction: 'Spielerinteraktion',
   gameSetup: 'Spielaufbau',

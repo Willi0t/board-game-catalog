@@ -135,8 +135,6 @@ export const messages = {
   gamesToDiscover: 'juegos por descubrir',
   playBanner: 'Reproducir el vídeo del banner',
   any: 'Cualquiera',
-  catalogCaveat:
-    'El número de jugadores y la dificultad proceden de los datos importados y pueden referirse al juego base. Falta verificar de forma independiente la edición exacta. Hemos revisado la clasificación de las etiquetas.',
   players: 'Jugadores',
   playerInteraction: 'Interacción entre jugadores',
   gameSetup: 'Juego preparado',

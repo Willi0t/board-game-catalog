@@ -131,8 +131,6 @@ export const messages = {
   gamesToDiscover: 'spel att upptäcka',
   playBanner: 'Spela bannerfilm',
   any: 'Spelar ingen roll',
-  catalogCaveat:
-    'Spelarantal och svårighet följer importunderlaget och kan avse grundspelet. Exakt utgåva är inte oberoende verifierad. Taggarna är vår granskade indelning.',
   players: 'Spelare',
   playerInteraction: 'Spelarinteraktion',
   gameSetup: 'Spelet uppdukat',
