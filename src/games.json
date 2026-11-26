@@ -16,7 +16,7 @@
     "placeholderTheme": "castle-rose",
     "cover": "/images/games/burgundy/castle-thumb.png",
     "coverAlt": "Omslag till Castles of Burgundy: Special Edition med vit logotyp ovanför ett slott på en grön höjd, berg och segelbåtar.",
-    "hero": "/images/games/burgundy/castle-banner.png",
+    "hero": "/images/games/burgundy/castle-banner.webp",
     "heroAlt": "Bred illustration med logotypen för Castles of Burgundy: Special Edition till vänster och ett slott på en grön bergshöjd till höger.",
     "gallery": [
       {
@@ -108,7 +108,7 @@
     },
     "cover": "/images/games/terraforming/mars-thumb.png",
     "coverAlt": "Omslag till Terraforming Mars med två astronauter i ett rött landskap och spelets titel.",
-    "hero": "/images/games/terraforming/mars-banner.png",
+    "hero": "/images/games/terraforming/mars-banner.webp",
     "heroAlt": "Terraforming Mars-logotyp till vänster och två astronauter i ett marslandskap med sjöar och träd.",
     "gallery": [
       {
@@ -171,7 +171,7 @@
     "expansions": ["Cosmic Dominion", "Cosmic Odyssey", "Cosmic Conflict"],
     "cover": "/images/games/cosmic/cosmic-thumb.png",
     "coverAlt": "Omslag till Cosmic Encounter med gyllene logotyp, utomjordiska varelser och blå energi mot en stjärnhimmel.",
-    "hero": "/images/games/cosmic/cosmic-banner.png",
+    "hero": "/images/games/cosmic/cosmic-banner.webp",
     "heroAlt": "Cosmic Encounter-logotyp framför utomjordiska varelser och lysande blå energi.",
     "gallery": [
       {
@@ -234,7 +234,7 @@
     },
     "cover": "/images/games/clank/catacombs-thumb.png",
     "coverAlt": "Omslag till Clank! Catacombs med äventyrare som flyr en grönlysande skelettdrake.",
-    "hero": "/images/games/clank/catacombs-banner.png",
+    "hero": "/images/games/clank/catacombs-banner.webp",
     "heroAlt": "Clank! Catacombs med äventyrare och monster, Underworld-logotyp nere till vänster och Lairs & Lost Chambers nere till höger.",
     "gallery": [
       {
@@ -297,7 +297,7 @@
     "expansions": ["Leaders"],
     "cover": "/images/games/wonders/wonders-thumb.png",
     "coverAlt": "Omslag till 7 Wonders med gyllene titel, en staty med fackla och antika byggnadsverk vid havet.",
-    "hero": "/images/games/wonders/wonders-banner.png",
+    "hero": "/images/games/wonders/wonders-banner.webp",
     "heroAlt": "7 Wonders-logotyp till vänster om en antik hamnstad med staty, pyramid och fyr i solnedgång.",
     "gallery": [
       {
@@ -359,7 +359,7 @@
     },
     "cover": "/images/games/salad/sallad-thumb.png",
     "coverAlt": "Omslag till Point Salad med vit titel på grön bakgrund och färgglada grönsaker på en tallrik.",
-    "hero": "/images/games/salad/sallad-banner.png",
+    "hero": "/images/games/salad/sallad-banner.webp",
     "heroAlt": "Point Salad-logotyp till vänster och en tallrik med färgglada grönsaker till höger på grön bakgrund.",
     "gallery": [
       {
@@ -420,7 +420,7 @@
       "preliminary": false,
       "editionMatch": "not-independently-verified"
     },
-    "hero": "/images/games/burgle/burgle-banner.png",
+    "hero": "/images/games/burgle/burgle-banner.webp",
     "heroAlt": "Burgle Bros.-titeln och kuppgänget i ett genomskuret hus med vakter och kassaskåp.",
     "gallery": [
       {
@@ -491,7 +491,7 @@
       { "src": "/images/games/duel/wonders-duel-thumb-896.webp", "width": 896 },
       { "src": "/images/games/duel/wonders-duel-thumb.png", "width": 1122 }
     ],
-    "hero": "/images/games/duel/wonders-duel-banner.png",
+    "hero": "/images/games/duel/wonders-duel-banner.webp",
     "heroAlt": "7 Wonders Duel-titeln med en krigare, en egyptisk kvinna och antika städer i solnedgång.",
     "gallery": [
       {
@@ -553,7 +553,7 @@
       { "src": "/images/games/vaalbara/vaalbara-thumb-896.webp", "width": 896 },
       { "src": "/images/games/vaalbara/vaalbara-thumb.png", "width": 1122 }
     ],
-    "hero": "/images/games/vaalbara/vaalbara-banner.png",
+    "hero": "/images/games/vaalbara/vaalbara-banner.webp",
     "heroAlt": "Vaalbara-titeln över ett grönt landskap med en hornprydd gestalt och en flygande uggla.",
     "gallery": [
       {
@@ -615,7 +615,7 @@
       { "src": "/images/games/citadels/citadels-thumb-896.webp", "width": 896 },
       { "src": "/images/games/citadels/citadels-thumb.png", "width": 1122 }
     ],
-    "hero": "/images/games/citadels/citadels-banner.png",
+    "hero": "/images/games/citadels/citadels-banner.webp",
     "heroAlt": "Citadels-titeln vid en medeltida stad med torn, marknad och en stenbro över vattnet.",
     "gallery": [
       {
@@ -677,7 +677,7 @@
       { "src": "/images/games/starwars/starwars-thumb-896.webp", "width": 896 },
       { "src": "/images/games/starwars/starwars-thumb.png", "width": 1000 }
     ],
-    "hero": "/images/games/starwars/starwars-banner.png",
+    "hero": "/images/games/starwars/starwars-banner.webp",
     "heroAlt": "Luke Skywalker och Darth Vader korsar ljussablar, med spelets logga nere till höger.",
     "gallery": [
       {
@@ -758,7 +758,7 @@
       },
       { "src": "/images/games/scarface/scarface1920-thumb.png", "width": 1122 }
     ],
-    "hero": "/images/games/scarface/scarface1920-banner.png",
+    "hero": "/images/games/scarface/scarface1920-banner.webp",
     "heroAlt": "Scarface 1920-titeln vid en regnvåt stadsgata med ett par och en bil utanför en upplyst entré.",
     "gallery": [
       {
@@ -835,7 +835,7 @@
         "width": 1122
       }
     ],
-    "hero": "/images/games/codex-naturalis/codex-naturalis-banner.png",
+    "hero": "/images/games/codex-naturalis/codex-naturalis-banner.webp",
     "heroAlt": "Codex Naturalis-emblemet i mitten av ett färgstarkt landskap med växter, djur, insekter och svampar.",
     "gallery": [
       {
@@ -897,7 +897,7 @@
       { "src": "/images/games/knarr/knarr-thumb-896.webp", "width": 896 },
       { "src": "/images/games/knarr/knarr-thumb.png", "width": 1122 }
     ],
-    "hero": "/images/games/knarr/knarr-banner.png",
+    "hero": "/images/games/knarr/knarr-banner.webp",
     "heroAlt": "Knarr-titeln vid en pälsklädd roddare på havet under stjärnor och norrsken.",
     "gallery": [
       {
@@ -979,7 +979,7 @@
         "width": 1000
       }
     ],
-    "hero": "/images/games/the-crew-mission-deep-sea/the-crew-deep-sea-banner.png",
+    "hero": "/images/games/the-crew-mission-deep-sea/the-crew-deep-sea-banner.webp",
     "heroAlt": "The Crew: Mission Deep Sea-titeln vid dykare och ruiner i en undervattensgrotta.",
     "gallery": [
       {
@@ -1056,7 +1056,7 @@
         "width": 1122
       }
     ],
-    "hero": "/images/games/spies-lies-supplies/air-land-sea-spies-banner.png",
+    "hero": "/images/games/spies-lies-supplies/air-land-sea-spies-banner.webp",
     "heroAlt": "Air, Land & Sea-titeln med undertiteln Spies, Lies, & Supplies vid en regnig hamn med spioner och svetsare.",
     "gallery": [
       {
@@ -1134,7 +1134,7 @@
         "width": 1122
       }
     ],
-    "hero": "/images/games/deep-regrets-deeper-regrets/deep-regrets-banner.png",
+    "hero": "/images/games/deep-regrets-deeper-regrets/deep-regrets-banner.webp",
     "heroAlt": "Deep Regrets-titeln vid ett mörkt hav med fiskebåt, fiskar och en stor grön tentakel.",
     "gallery": [
       {
@@ -1211,7 +1211,7 @@
         "width": 1122
       }
     ],
-    "hero": "/images/games/solar-titans/solar-titans-banner.png",
+    "hero": "/images/games/solar-titans/solar-titans-banner.webp",
     "heroAlt": "Solar Titans-titeln bredvid ett rymdskepp ovanför en planets solbelysta horisont.",
     "gallery": [
       {
@@ -1288,7 +1288,7 @@
         "width": 1122
       }
     ],
-    "hero": "/images/games/love-letter/love-letter-banner.png",
+    "hero": "/images/games/love-letter/love-letter-banner.webp",
     "heroAlt": "Love Letter-titeln och ett rött vaxsigill på pergament bredvid prinsessan och hovet.",
     "gallery": [
       {
@@ -1343,7 +1343,7 @@
     },
     "cover": "/images/games/puerto-rico/puerto-thumb.png",
     "coverAlt": "Omslag till Puerto Rico 1897: Special Edition med vit logotyp över en marknadsgata, människor med varor och ett segelfartyg i solnedgången.",
-    "hero": "/images/games/puerto-rico/puerto-banner.png",
+    "hero": "/images/games/puerto-rico/puerto-banner.webp",
     "heroAlt": "Bred illustration med logotypen för Puerto Rico 1897: Special Edition till vänster och en solbelyst marknad med fruktstånd och en person som bär bananklasar till höger.",
     "gallery": [
       {
@@ -1434,7 +1434,7 @@
     },
     "cover": "/images/games/agricola/agricola-thumb.png",
     "coverAlt": "Omslag till Agricola: Special Edition med en familj, lantgårdsdjur och ett hus med halmtak under blå himmel.",
-    "hero": "/images/games/agricola/agricola-banner.png",
+    "hero": "/images/games/agricola/agricola-banner.webp",
     "heroAlt": "Bred gårdsillustration med Agricola-logotyp, ett får i förgrunden och en familj bland höns och andra djur vid ett hus med halmtak.",
     "gallery": [
       {
@@ -1544,7 +1544,7 @@
         "width": 1122
       }
     ],
-    "hero": "/images/games/libertalia-winds-of-galecrest/libertalia-banner.png",
+    "hero": "/images/games/libertalia-winds-of-galecrest/libertalia-banner.webp",
     "heroAlt": "Libertalia: Winds of Galecrest-logotypen ovanför ett turkost hav med segelfartyg, ett flygande skepp och en grönskande klippbåge.",
     "gallery": [
       {
@@ -1627,7 +1627,7 @@
         "width": 1122
       }
     ],
-    "hero": "/images/games/final-titan/final-titan-banner.png",
+    "hero": "/images/games/final-titan/final-titan-banner.webp",
     "heroAlt": "Final Titan-titeln på ljus bakgrund bredvid en mörk riddare, en muskulös varelse och en ljushårig krigare.",
     "gallery": [
       {
@@ -1710,7 +1710,7 @@
         "width": 1122
       }
     ],
-    "hero": "/images/games/high-society/high-society-banner.png",
+    "hero": "/images/games/high-society/high-society-banner.webp",
     "heroAlt": "High Society-titeln i guld bredvid en kvinna med glas och spelkort i en blommig oval ram.",
     "gallery": [
       {
@@ -1772,7 +1772,7 @@
       { "src": "/images/games/parlay/parlay-thumb-896.webp", "width": 896 },
       { "src": "/images/games/parlay/parlay-thumb.png", "width": 1122 }
     ],
-    "hero": "/images/games/parlay/parlay-banner.png",
+    "hero": "/images/games/parlay/parlay-banner.webp",
     "heroAlt": "Parlay: The Betting Game-titeln bredvid åskådare och galopphästar på en kapplöpningsbana.",
     "gallery": [
       {
@@ -1832,7 +1832,7 @@
     },
     "cover": "/images/games/grimcoven/grimcoven-thumb.png",
     "coverAlt": "Grimcoven-omslag med vit titel och tre mörka jägare framför en gotisk stad och en stor röd måne.",
-    "hero": "/images/games/grimcoven/grimcoven-banner.png",
+    "hero": "/images/games/grimcoven/grimcoven-banner.webp",
     "heroAlt": "Grimcoven-titeln i vitt bredvid tre beväpnade jägare på en regnvåt gata under en röd måne.",
     "gallery": [
       {
@@ -1947,7 +1947,7 @@
         "width": 1122
       }
     ],
-    "hero": "/images/games/long-dark-sea/long-dark-sea-banner.png",
+    "hero": "/images/games/long-dark-sea/long-dark-sea-banner.webp",
     "heroAlt": "Long Dark Sea-titeln och guldemblemet bredvid ett orange luftskepp och en besättning vid havet.",
     "gallery": [
       {
@@ -2021,7 +2021,7 @@
       },
       { "src": "/images/games/excalibur/excalibur-thumb.png", "width": 1122 }
     ],
-    "hero": "/images/games/excalibur/excalibur-banner.png",
+    "hero": "/images/games/excalibur/excalibur-banner.webp",
     "heroAlt": "Excalibur-titeln i guld till vänster om ett svärd och fyra porträtt i färgstarka glasmålningar.",
     "gallery": [
       {
@@ -2075,7 +2075,7 @@
       "preliminary": true,
       "editionMatch": "not-independently-verified"
     },
-    "hero": "/images/games/lands-of-evershade/evershade-banner.png",
+    "hero": "/images/games/lands-of-evershade/evershade-banner.webp",
     "heroAlt": "Fyra mantlade gestalter i ett snölandskap framför en lysande ruin och logotypen Lands of Evershade.",
     "gallery": [
       {
@@ -2156,7 +2156,7 @@
     "placeholderTheme": "castle-rose",
     "cover": "/images/games/point-city/pointCity-thumb.png",
     "coverAlt": "Point Citys omslag med färgglada byggnader mot turkos bakgrund",
-    "hero": "/images/games/point-city/pointCity-banner.png",
+    "hero": "/images/games/point-city/pointCity-banner.webp",
     "heroAlt": "Point Citys logotyp och en färgglad stadssiluett",
     "gallery": [
       "/images/games/point-city/gallery/pointCity-1.png",
@@ -2239,7 +2239,7 @@
       { "src": "/images/games/catan-base/catan-thumb-896.webp", "width": 896 },
       { "src": "/images/games/catan-base/catan-thumb.png", "width": 1122 }
     ],
-    "hero": "/images/games/catan-base/catan-banner.png",
+    "hero": "/images/games/catan-base/catan-banner.webp",
     "heroAlt": "Catan-titeln i gult över ett solbelyst kustlandskap med byar, betesmarker och sädesfält.",
     "gallery": [
       {
@@ -2316,7 +2316,7 @@
         "width": 1122
       }
     ],
-    "hero": "/images/games/forbidden-desert/forbidden-desert-banner.png",
+    "hero": "/images/games/forbidden-desert/forbidden-desert-banner.webp",
     "heroAlt": "Forbidden Desert-titeln och undertiteln till vänster om en sandstorm och en begravd flygmaskin i öknen.",
     "gallery": [
       {
@@ -2393,7 +2393,7 @@
         "width": 1122
       }
     ],
-    "hero": "/images/games/ticket-to-ride/ticket-to-ride-banner.png",
+    "hero": "/images/games/ticket-to-ride/ticket-to-ride-banner.webp",
     "heroAlt": "Ticket to Ride Europe-titeln ovanför ett ångtåg på en stenviadukt bland snötäckta berg.",
     "gallery": [
       {
@@ -2480,7 +2480,7 @@
         "width": 1122
       }
     ],
-    "hero": "/images/games/fate-of-the-fellowship/fate-of-the-fellowship-banner.png",
+    "hero": "/images/games/fate-of-the-fellowship/fate-of-the-fellowship-banner.webp",
     "heroAlt": "Fate of the Fellowship-titeln till vänster om Frodo och följeslagarna på väg mot Mordor under Saurons öga.",
     "gallery": [
       {
@@ -2555,7 +2555,7 @@
       },
       { "src": "/images/games/fliptoons/fliptoons-thumb.png", "width": 1122 }
     ],
-    "hero": "/images/games/fliptoons/fliptoons-banner.png",
+    "hero": "/images/games/fliptoons/fliptoons-banner.webp",
     "heroAlt": "Fliptoons-logotypen till vänster om en grupp tecknade djur med instrument mot blå bakgrund.",
     "gallery": [
       {
@@ -2617,7 +2617,7 @@
       { "src": "/images/games/azul-mini/azul-thumb-896.webp", "width": 896 },
       { "src": "/images/games/azul-mini/azul-thumb.png", "width": 1122 }
     ],
-    "hero": "/images/games/azul-mini/azul-banner.png",
+    "hero": "/images/games/azul-mini/azul-banner.webp",
     "heroAlt": "Azul-logotypen till vänster på en bakgrund av röda, blå, turkosa och gula kakelmönster.",
     "gallery": [
       {
@@ -2694,7 +2694,7 @@
         "width": 1122
       }
     ],
-    "hero": "/images/games/there-and-back-again/there-and-back-again-banner.png",
+    "hero": "/images/games/there-and-back-again/there-and-back-again-banner.webp",
     "heroAlt": "The Hobbit: There & Back Again-titeln till vänster om Bilbo som lämnar sitt hem genom en rund grön dörr.",
     "gallery": [
       {
@@ -2781,7 +2781,7 @@
         "width": 1122
       }
     ],
-    "hero": "/images/games/lord-of-the-rings-trick-taking-game/lotr-trick-banner.png",
+    "hero": "/images/games/lord-of-the-rings-trick-taking-game/lotr-trick-banner.webp",
     "heroAlt": "Spelets guldtitel till vänster om den gyllene ringen och följeslagarna vid en bergsport i en glasmålning.",
     "gallery": [
       {
@@ -2859,7 +2859,7 @@
         "width": 1122
       }
     ],
-    "hero": "/images/games/magical-athleete/magical-athlete-banner.png",
+    "hero": "/images/games/magical-athleete/magical-athlete-banner.webp",
     "heroAlt": "Magical Athlete-titeln till vänster om en grupp färgglada figurer som springer tillsammans med en banan mot röd bakgrund.",
     "gallery": [
       {
@@ -2936,7 +2936,7 @@
         "width": 1122
       }
     ],
-    "hero": "/images/games/goats-and-goblins/goats-and-goblins-banner.png",
+    "hero": "/images/games/goats-and-goblins/goats-and-goblins-banner.webp",
     "heroAlt": "Goats & Goblins-titeln till vänster om en get och gobliner som utforskar en grotta med skatter och blå kristaller.",
     "gallery": [
       {
@@ -2992,7 +2992,7 @@
     "expansions": ["Nemed", "Seasons of Inis", "Stretch Goal Upgrades"],
     "cover": "/images/games/inis/inis-thumb.png",
     "coverAlt": "Inis-omslag med en gyllene solgestalt, keltiska mönster och hjortar mot turkos bakgrund.",
-    "hero": "/images/games/inis/inis-banner.png",
+    "hero": "/images/games/inis/inis-banner.webp",
     "heroAlt": "Inis-logotypen och en krigare framför en stencirkel i ett dimmigt landskap vid solnedgången.",
     "gallery": [
       {
@@ -3059,7 +3059,7 @@
     },
     "cover": "/images/games/spirit-island/spiritIsland-thumb.png",
     "coverAlt": "Spirit Island-omslag med naturandar ovanför tropiska öar och segelfartyg med röda segel.",
-    "hero": "/images/games/spirit-island/spiritIsland-banner.png",
+    "hero": "/images/games/spirit-island/spiritIsland-banner.webp",
     "heroAlt": "Spirit Island-logotypen och naturandar över ett turkost hav med klippöar och röda segelfartyg.",
     "gallery": [
       {
@@ -3136,7 +3136,7 @@
     },
     "cover": "/images/games/nemesis-aftermath/nemesis-thumb.png",
     "coverAlt": "Omslag till Nemesis med vit logotyp, en astronaut i förgrunden och en stor kloförsedd rymdvarelse i blågrönt ljus bakom.",
-    "hero": "/images/games/nemesis-aftermath/nemesis-banner.png",
+    "hero": "/images/games/nemesis-aftermath/nemesis-banner.webp",
     "heroAlt": "Bred illustration med Nemesis vita logotyp till vänster, en astronaut nedtill och en stor rymdvarelse med öppen käft och klor ovanför i blågrönt ljus.",
     "gallery": [
       {
@@ -3220,7 +3220,7 @@
     },
     "cover": "/images/games/an-infamous-traffic-second-edition/traffic-thumb.png",
     "coverAlt": "Omslag till An Infamous Traffic: Second Edition med turkosa historiska illustrationer och ljusa rökslingor.",
-    "hero": "/images/games/an-infamous-traffic-second-edition/traffic-banner.png",
+    "hero": "/images/games/an-infamous-traffic-second-edition/traffic-banner.webp",
     "heroAlt": "An Infamous Traffic-logotypen intill segelfartyg och roddbåtar på havet, med ett brinnande fartyg i bakgrunden.",
     "gallery": [
       {
@@ -3304,7 +3304,7 @@
     ],
     "cover": "/images/games/shug/shug-thumb.png",
     "coverAlt": "SHUG-logotypen och en svart figur omgivna av färgglada fantasivarelser på pergamentfärgad bakgrund.",
-    "hero": "/images/games/shug/shug-banner.png",
+    "hero": "/images/games/shug/shug-banner.webp",
     "heroAlt": "SHUG-logotypen till vänster och en samling fantasivarelser, en riddare och sagogestalter inramade av blommor.",
     "gallery": [
       {
@@ -3366,7 +3366,7 @@
     },
     "cover": "/images/games/battlesticks/battlesticks-thumb.png",
     "coverAlt": "Battlesticks-logotypen på grön bakgrund omgiven av illustrerade pinnar, löv, svampar, ädelstenar och en groda.",
-    "hero": "/images/games/battlesticks/battlesticks-banner.png",
+    "hero": "/images/games/battlesticks/battlesticks-banner.webp",
     "heroAlt": "Battlesticks-logotypen intill korsade pinnar, en drakformad trästav och en lysande grön stav i en mossig skog.",
     "gallery": [
       {
@@ -3451,7 +3451,7 @@
     ],
     "cover": "/images/games/re-match-marble-puzzle-fighter/reMatch-thumb.png",
     "coverAlt": "Re;MATCH-omslag med två färgglada karaktärer som möts vid ett arkadformat spelställ med röda, gula och blå kulor.",
-    "hero": "/images/games/re-match-marble-puzzle-fighter/reMatch-banner.png",
+    "hero": "/images/games/re-match-marble-puzzle-fighter/reMatch-banner.webp",
     "heroAlt": "Re;MATCH-logotypen till vänster och två karaktärer vid ett gult spelställ med färgade kulor mot en starkt färgad bakgrund.",
     "gallery": [
       {
@@ -3573,7 +3573,7 @@
     },
     "cover": "/images/games/roma-xli/romaXLI-thumb.png",
     "coverAlt": "Roma XLI i guldbokstäver med en lagerkrans mot ett vinrött bokomslag med dekorativ ram.",
-    "hero": "/images/games/roma-xli/romaXLI-banner.png",
+    "hero": "/images/games/roma-xli/romaXLI-banner.webp",
     "heroAlt": "Roma XLI-logotypen i guld till vänster om ett romerskt torg med kolonner, tempel och statyer i solnedgången.",
     "gallery": [
       {
@@ -3660,7 +3660,7 @@
     },
     "cover": "/images/games/52-duels-fight-with-playing-cards/52Duels-thumb.png",
     "coverAlt": "52 Duels: Fight with Playing Cards på blå bakgrund med två stiliserade krigare och röda och blå kortlekar.",
-    "hero": "/images/games/52-duels-fight-with-playing-cards/52Duels-banner.png",
+    "hero": "/images/games/52-duels-fight-with-playing-cards/52Duels-banner.webp",
     "heroAlt": "52 Duels-logotypen till vänster om två stiliserade krigare omgivna av spelkort på blå bakgrund.",
     "gallery": [
       {
@@ -3749,7 +3749,7 @@
     ],
     "cover": "/images/games/grifoni-blades-for-hire/grifoni-thumb.png",
     "coverAlt": "Grifoni: Blades for Hire-logotypen ovanför en hästdragen bepansrad vagn med beväpnade resenärer vid ett tältläger.",
-    "hero": "/images/games/grifoni-blades-for-hire/grifoni-banner.png",
+    "hero": "/images/games/grifoni-blades-for-hire/grifoni-banner.webp",
     "heroAlt": "Grifoni: Blades for Hire-logotypen till vänster om en hästdragen vagn med beväpnade resenärer, tält och ett torn under blå himmel.",
     "gallery": [
       {
@@ -3826,7 +3826,7 @@
     },
     "cover": "/images/games/bio-blitz/bioBlitz-thumb.png",
     "coverAlt": "Bio Blitz-logotypen omgiven av en svart fågel, en vit uggla, en clownfisk och en gul fågel mot öken- och havsmiljöer.",
-    "hero": "/images/games/bio-blitz/bioBlitz-banner.png",
+    "hero": "/images/games/bio-blitz/bioBlitz-banner.webp",
     "heroAlt": "Bio Blitz-logotypen mellan en svart fågel och en vit uggla, med en clownfisk, en gul fågel och färgglada naturmiljöer.",
     "gallery": [
       {
@@ -3921,7 +3921,7 @@
     },
     "cover": "/images/games/high-adventure-treasure-hunt/highAdventure-thumb.png",
     "coverAlt": "High Adventure: Treasure Hunt-logotypen i guld under en övervuxen stenportal, med en äventyrare på väg mot djungelruiner.",
-    "hero": "/images/games/high-adventure-treasure-hunt/highAdventure-banner.png",
+    "hero": "/images/games/high-adventure-treasure-hunt/highAdventure-banner.webp",
     "heroAlt": "High Adventure: Treasure Hunt-logotypen till vänster om en äventyrare vid en stenportal med djungel, ruiner och berg i bakgrunden.",
     "gallery": [
       {
@@ -3999,7 +3999,7 @@
     "expansions": ["Salty Dogs & Sea Tales", "Stretch Goal Upgrades"],
     "cover": "/images/games/rolling-seas/rollingSeas-thumb.png",
     "coverAlt": "Rolling Seas-logotypen i guld under ett segelfartyg som möter en rosa sjöorm bland blå vågor och flygande fiskar.",
-    "hero": "/images/games/rolling-seas/rollingSeas-banner.png",
+    "hero": "/images/games/rolling-seas/rollingSeas-banner.webp",
     "heroAlt": "Rolling Seas-logotypen till vänster om ett segelfartyg och en stor rosa sjöorm bland skummande blå vågor.",
     "gallery": [
       {
@@ -4101,7 +4101,7 @@
     },
     "cover": "/images/games/rise-of-the-oak-dell/oakDell-thumb.png",
     "coverAlt": "Rise of the Oak Dell-logotypen ovanför en person i rödvit dräkt som blickar ut över en kuststad med murar, torn och en pyramid, inramad av eksiluetter.",
-    "hero": "/images/games/rise-of-the-oak-dell/oakDell-banner.png",
+    "hero": "/images/games/rise-of-the-oak-dell/oakDell-banner.webp",
     "heroAlt": "Rise of the Oak Dell-logotypen till vänster om en person som blickar ut över en ljus kuststad med torn, broar, statyer och en pyramid.",
     "gallery": [
       {
@@ -4183,7 +4183,7 @@
     ],
     "cover": "/images/games/avalon-the-riven-veil/avalon-thumb.png",
     "coverAlt": "Avalon: The Riven Veil-omslag med ett lysande svärd i en klippa, riddare och baner bland blåvita dimmor och vågor.",
-    "hero": "/images/games/avalon-the-riven-veil/avalon-banner.png",
+    "hero": "/images/games/avalon-the-riven-veil/avalon-banner.webp",
     "heroAlt": "Avalon: The Riven Veil-logotypen ovanför riddare till häst, ett lysande svärd och en trollkarl med stav framför ett dimhöljt slott.",
     "gallery": [
       {
@@ -4306,7 +4306,7 @@
     "expansions": ["Pistachio", "Stretch Goal Upgrades"],
     "cover": "/images/games/decko-pistachio/decko-thumb.png",
     "coverAlt": "DECKO Pistachio-logotypen ovanför vita handskar som håller en svart kortlek, omgivna av spelmarker, färgade strålar och orange lågor.",
-    "hero": "/images/games/decko-pistachio/decko-banner.png",
+    "hero": "/images/games/decko-pistachio/decko-banner.webp",
     "heroAlt": "DECKO Pistachio-logotypen till vänster om vita handskar med en kortlek, röda och svarta spelmarker samt blå och gröna strålar på svart bakgrund.",
     "gallery": [
       {
@@ -4390,7 +4390,7 @@
     },
     "cover": "/images/games/nemesis-retaliation/nemesis-retaliation-thumb.png",
     "coverAlt": "Omslag till Nemesis: Retaliation med tre bepansrade soldater i en blå rymdskeppskorridor.",
-    "hero": "/images/games/nemesis-retaliation/nemesis-retaliation-banner.png",
+    "hero": "/images/games/nemesis-retaliation/nemesis-retaliation-banner.webp",
     "heroAlt": "Tre bepansrade soldater i en blåtonad science fiction-miljö med logotypen Nemesis: Retaliation.",
     "gallery": [
       {
@@ -4473,7 +4473,7 @@
     ],
     "cover": "/images/games/gang-wars/gangWars-thumb.png",
     "coverAlt": "Scarface 1920: Gang Wars-omslag med illustrerade gangstrar, skyskrapor, äldre bilar och en explosion i en blågrön stadsmiljö.",
-    "hero": "/images/games/gang-wars/gangWars-banner.png",
+    "hero": "/images/games/gang-wars/gangWars-banner.webp",
     "heroAlt": "Gang Wars-logotypen till vänster om äldre bilar och beväpnade gangstrar på en regnvåt gata med varmt upplysta byggnader.",
     "gallery": [
       {
@@ -4547,7 +4547,7 @@
     },
     "cover": "/images/games/davos/davos-thumb.png",
     "coverAlt": "Davos-logotypen framför en blå och gyllene jordglob, med en talare och en publik av kostymklädda personer.",
-    "hero": "/images/games/davos/davos-banner.png",
+    "hero": "/images/games/davos/davos-banner.webp",
     "heroAlt": "Davos-logotypen till vänster om en talare, en applåderande publik och en blå och gyllene jordglob med en stor prislapp.",
     "gallery": [
       {
@@ -4625,7 +4625,7 @@
     "expansions": ["Stretch Goal Upgrades"],
     "cover": "/images/games/hitman-the-board-game/hitMan-thumb.png",
     "coverAlt": "Hitman: The Board Game-omslag med Agent 47 och tre andra beväpnade agenter framför kustvillor, ett palats och en japansk trädgård.",
-    "hero": "/images/games/hitman-the-board-game/hitMan-banner.png",
+    "hero": "/images/games/hitman-the-board-game/hitMan-banner.webp",
     "heroAlt": "Hitman: The Board Game-logotypen till vänster om Agent 47 och tre andra agenter i ett collage med kustvilla, palats, japansk bro och tropisk strand.",
     "gallery": [
       {
@@ -4748,7 +4748,7 @@
     "expansions": ["Stretch Goal Upgrades"],
     "cover": "/images/games/brass-pittsburgh/brassPittsburgh-thumb.png",
     "coverAlt": "Brass: Pittsburgh-logotypen framför ett ånglok på en stenbro över en flod i en rökig industristad med gyllene ljus.",
-    "hero": "/images/games/brass-pittsburgh/brassPittsburgh-banner.png",
+    "hero": "/images/games/brass-pittsburgh/brassPittsburgh-banner.webp",
     "heroAlt": "Brass: Pittsburgh-logotypen till vänster om ett stålverk med arbetare och glödande metall, med ånglok och fabriker i bakgrunden.",
     "gallery": [
       {
@@ -4828,7 +4828,7 @@
     "expansions": ["Songs of Home"],
     "cover": "/images/games/the-old-king-s-crown/kingsCrown-thumb.png",
     "coverAlt": "The Old King’s Crown-logotypen i guld ovanför en färgglad fantasistad med gyllene kupoler, stenstatyer, vattenfall och ett luftskepp.",
-    "hero": "/images/games/the-old-king-s-crown/kingsCrown-banner.png",
+    "hero": "/images/games/the-old-king-s-crown/kingsCrown-banner.webp",
     "heroAlt": "The Old King’s Crown-logotypen till vänster om ett gyllene palats, broar och vattenfall, med en mantlad gestalt på en klippa till höger.",
     "gallery": [
       {
@@ -4917,7 +4917,7 @@
     ],
     "cover": "/images/games/b-e-l-o-w-the-asylum/below-thumb.png",
     "coverAlt": "The Asylum-logotypen ovanför en kvinna med en lysande bok, en beväpnad agent och spöklika katter i en röd korridor med porträtt.",
-    "hero": "/images/games/b-e-l-o-w-the-asylum/below-banner.png",
+    "hero": "/images/games/b-e-l-o-w-the-asylum/below-banner.webp",
     "heroAlt": "B.E.L.O.W. The Asylum-logotypen till vänster om en kvinna med en lysande bok och spöklika katter framför en röd, dimhöljd järnport.",
     "gallery": [
       {
@@ -5055,7 +5055,7 @@
     ],
     "cover": "/images/games/detectives-vs-criminals/detective-thumb.png",
     "coverAlt": "Detectives vs Criminals-logotypen i ett collage med detektiv, ånglok i snöiga berg, en person på ett hustak och poliser i en hästdragen vagn.",
-    "hero": "/images/games/detectives-vs-criminals/detective-banner.png",
+    "hero": "/images/games/detectives-vs-criminals/detective-banner.webp",
     "heroAlt": "Detectives vs Criminals-logotypen till vänster om en springande detektiv med förstoringsglas på en regnig Londongata, med en flyende person på hustaken.",
     "gallery": [
       {
@@ -5153,7 +5153,7 @@
     ],
     "cover": "/images/games/the-wandmaker-s-apprentice/wandmaker-thumb.png",
     "coverAlt": "The Wandmaker’s Apprentice-omslag med spegelvända porträtt av en äldre stavmakare och en ung lärling, omgivna av guldmönster, moln och trollstavar.",
-    "hero": "/images/games/the-wandmaker-s-apprentice/wandmaker-banner.png",
+    "hero": "/images/games/the-wandmaker-s-apprentice/wandmaker-banner.webp",
     "heroAlt": "The Wandmaker’s Apprentice-logotypen i en varm verkstad där en äldre stavmakare visar en lysande trollstav och en lärling handlar i bakgrunden.",
     "gallery": [
       {
@@ -5251,7 +5251,7 @@
     "expansions": ["Escalation", "Exotic Matter", "Genesis"],
     "cover": "/images/games/andromeda-s-edge-genesis-fully-operational/andromeda-thumb.png",
     "coverAlt": "Andromeda’s Edge Deluxe Edition-logotypen under en gyllene rymdstad framför en mörk sfär, omgiven av lysande gasmoln och rymdskepp.",
-    "hero": "/images/games/andromeda-s-edge-genesis-fully-operational/andromeda-banner.png",
+    "hero": "/images/games/andromeda-s-edge-genesis-fully-operational/andromeda-banner.webp",
     "heroAlt": "Andromeda’s Edge-logotypen till vänster om rymdskepp på väg mot en gyllene rymdstad framför en mörk sfär och glödande gasmoln.",
     "gallery": [
       {
@@ -5346,7 +5346,7 @@
       }
     ],
     "coverAlt": "Omslaget till Ascension 15th Anniversary Edition med illustrerade karaktärer",
-    "hero": "/images/games/ascension-15th-anniversary-edition/ascension-banner.png",
+    "hero": "/images/games/ascension-15th-anniversary-edition/ascension-banner.webp",
     "heroAlt": "Ascensions jubileumslogotyp bredvid illustrerade karaktärer i ett bergslandskap",
     "gallery": [
       {
@@ -5407,7 +5407,7 @@
     "edition": "",
     "cover": "/images/games/ascension-legends/ascensionL-thumb.png",
     "coverAlt": "Omslaget till Ascension Legends med fem illustrerade karaktärer i olika färger",
-    "hero": "/images/games/ascension-legends/ascensionL-banner.png",
+    "hero": "/images/games/ascension-legends/ascensionL-banner.webp",
     "heroAlt": "Ascension Legends logotyp vid en borg med två äventyrare i förgrunden",
     "gallery": [
       {
@@ -5484,7 +5484,7 @@
     "edition": "Founders Edition",
     "cover": "/images/games/nexus-card-game/nexus-thumb.png",
     "coverAlt": "Omslaget med titeln Nexus: Last Dawn, två krigare och en eldsprutande drake",
-    "hero": "/images/games/nexus-card-game/nexus-banner.png",
+    "hero": "/images/games/nexus-card-game/nexus-banner.webp",
     "heroAlt": "Nexus-logotypen mellan fantasykrigare mot en himmel med planeter och en drake",
     "gallery": [
       {
@@ -5590,7 +5590,7 @@
     "placeholderTheme": "castle-rose",
     "cover": "/images/games/tend-hive-cellar/tend-thumb.png",
     "coverAlt": "Tends logotyp över ett färgglatt landskap med främmande växter och djur",
-    "hero": "/images/games/tend-hive-cellar/tend-banner.png",
+    "hero": "/images/games/tend-hive-cellar/tend-banner.webp",
     "heroAlt": "Tends logotyp vid en flod och en odling som sköts av en robot",
     "gallery": [
       {
@@ -5725,7 +5725,7 @@
     "placeholderTheme": "castle-rose",
     "cover": "/images/games/san-juan/san-juan-thumb.png",
     "coverAlt": "Omslag för San Juan 1897 Special Edition med ett solbelyst torg",
-    "hero": "/images/games/san-juan/san-juan-banner.png",
+    "hero": "/images/games/san-juan/san-juan-banner.webp",
     "heroAlt": "Illustration av San Juans torg med marknadsstånd, fontän och segelfartyg i hamnen",
     "gallery": [
       {
@@ -5792,7 +5792,7 @@
     "placeholderTheme": "castle-rose",
     "cover": "/images/games/annulet/annulet-thumb.png",
     "coverAlt": "Omslag för Annulet med en lysande vit hjort under en blå stenportal",
-    "hero": "/images/games/annulet/annulet-banner.png",
+    "hero": "/images/games/annulet/annulet-banner.webp",
     "heroAlt": "Annulets logotyp över en skogsbäck med en guldring och en vit hjort vid en blå portal",
     "gallery": [
       {
@@ -5888,7 +5888,7 @@
     "expansions": ["Stretch Goal Upgrades"],
     "cover": "/images/games/brass-birmingham/brassBirmingham-thumb.png",
     "coverAlt": "Brass: Birmingham-logotypen över en regnvåt kullerstensgata med en spegelbild av en man, ett vagnshjul, en flaska och en hink.",
-    "hero": "/images/games/brass-birmingham/brassBirmingham-banner.png",
+    "hero": "/images/games/brass-birmingham/brassBirmingham-banner.webp",
     "heroAlt": "Brass: Birmingham-logotypen till vänster om en industrikanal med båtar, en stenbro och varmt upplysta fabriker i regnet.",
     "gallery": [
       {
@@ -5977,7 +5977,7 @@
     "expansions": ["Stretch Goal Upgrades"],
     "cover": "/images/games/brass-lancashire/brassLancashire-thumb.png",
     "coverAlt": "Brass: Lancashire-logotypen framför en man med hög hatt och pipa som håller en liten ångmaskin ovanför en rökig industristad.",
-    "hero": "/images/games/brass-lancashire/brassLancashire-banner.png",
+    "hero": "/images/games/brass-lancashire/brassLancashire-banner.webp",
     "heroAlt": "Brass: Lancashire-logotypen till vänster om en regnvåt industrigata vid en kanal, med stenbro, arbetare och upplysta fabriksfönster.",
     "gallery": [
       {
