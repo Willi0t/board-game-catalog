@@ -14,11 +14,7 @@ const code = buildSync({
 const { default: description } = await import(
   `data:text/javascript;base64,${Buffer.from(code).toString('base64')}`
 );
-const translatedGames = games.filter((game) =>
-  game.catalogMetadata.sourceRow <= 51 ||
-  (game.catalogMetadata.sourceRow >= 62 && game.catalogMetadata.sourceRow <= 75),
-);
-const ids = translatedGames.map(({ id }) => id);
+const ids = games.map(({ id }) => id);
 const paragraphs = (text) => text.split(/\r?\n(?:[^\S\r\n]*\r?\n)+/);
 
 test('every catalog game has descriptions in English and all four target languages', () => {
@@ -31,7 +27,7 @@ test('every catalog game has descriptions in English and all four target languag
       fs.readFileSync(`src/data/descriptions/${language}.json`, 'utf8'),
     );
     assert.deepEqual(Object.keys(translations).sort(), [...ids].sort());
-    for (const game of translatedGames) {
+    for (const game of games) {
       const { id } = game;
       assert.ok(translations[id]?.trim(), `${language}: ${id}`);
       const result = description(game, language, 'full');
