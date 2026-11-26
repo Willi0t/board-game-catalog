@@ -15,10 +15,10 @@ const code = buildSync({
 const { default: description } = await import(
   `data:text/javascript;base64,${Buffer.from(code).toString('base64')}`
 );
-const ids = matches.slice(0, 10).map(({ id }) => id);
+const ids = matches.slice(0, 20).map(({ id }) => id);
 const paragraphs = (text) => text.split(/\r?\n(?:[^\S\r\n]*\r?\n)+/);
 
-test('all 40 translations use the first ten stable IDs and preserve paragraphs and numeric examples', () => {
+test('all 80 translations use the first twenty stable IDs and preserve paragraphs and numeric examples', () => {
   for (const language of ['sv', 'fr', 'de', 'es']) {
     const translations = JSON.parse(
       fs.readFileSync(`src/data/descriptions/${language}.json`, 'utf8'),
@@ -42,7 +42,7 @@ test('all 40 translations use the first ten stable IDs and preserve paragraphs a
 });
 
 test('missing translations use English and long descriptions keep their own source text', () => {
-  const game = games.find(({ id }) => id === 'terraforming');
+  const game = games.find(({ id }) => id === 'high-society');
   for (const language of ['sv', 'en', 'fr', 'de', 'es']) {
     assert.deepEqual(description(game, language, 'full'), {
       text: game.description,
