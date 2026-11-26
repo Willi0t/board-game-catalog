@@ -1011,7 +1011,7 @@
     "category": "Övrigt",
     "accent": "#815467",
     "tint": "#eadce2",
-    "description": "Möt en motståndare i en kortduell om tre fronter. Spela kort öppet på rätt front för att aktivera deras taktiska effekter, eller dolt på valfri front för att tillföra styrka. Ta kontroll över två fronter för att vinna striden, eller dra dig ur tidigt för att begränsa motståndarens poäng.",
+    "description": "In this standalone sequel to Air, Land & Sea, two players contest Intelligence, Diplomacy, and Economics instead of the original game's Air, Land, and Sea. Each battle starts with six cards per player and no further draws. You take turns playing one card at a time. If both hands are emptied, compare the total strength on each side of each theater. Whoever controls more theaters wins the battle. The first player to reach 12 victory points wins the game.\n\nPlay a card face up to use its printed strength and any tactical ability. Normally it must go into its matching theater. Played face down, it can go into any theater, but contributes only 2 strength and its ability is inactive.\n\nOn your turn you can withdraw instead of playing a card. Your opponent wins the battle, but the points they earn depend on how many cards you still hold. Leaving early can keep their score low. Staying in gives you another chance to turn the battle around.",
     "descriptionLanguage": "en",
     "placeholderTheme": "castle-rose",
     "playersMin": 2,

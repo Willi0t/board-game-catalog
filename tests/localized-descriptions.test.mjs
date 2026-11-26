@@ -61,5 +61,5 @@ test('missing translations use English and long descriptions keep their own sour
   );
   const spies = games.find(({ id }) => id === 'spies-lies-supplies');
   assert.equal(description(spies, 'en', 'full').language, 'en');
-  assert.match(description(spies, 'en', 'full').text, /^Face an opponent/);
+  assert.equal(description(spies, 'en', 'full').text, spies.description);
 });
