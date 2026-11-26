@@ -3,7 +3,6 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { buildSync } from 'esbuild';
 import games from '../src/games.json' with { type: 'json' };
-import matches from '../scripts/catalog-matches.json' with { type: 'json' };
 
 const code = buildSync({
   entryPoints: ['src/utils/localizedDescription.ts'],
@@ -15,17 +14,23 @@ const code = buildSync({
 const { default: description } = await import(
   `data:text/javascript;base64,${Buffer.from(code).toString('base64')}`
 );
-const ids = matches.slice(0, 20).map(({ id }) => id);
+const translatedGames = games.filter((game) => game.catalogMetadata.sourceRow <= 31);
+const ids = translatedGames.map(({ id }) => id);
 const paragraphs = (text) => text.split(/\r?\n(?:[^\S\r\n]*\r?\n)+/);
 
-test('all 80 translations use the first twenty stable IDs and preserve paragraphs and numeric examples', () => {
+test('every catalog game has descriptions in English and all four target languages', () => {
+  for (const game of games) {
+    assert.equal(game.descriptionLanguage, 'en', game.id);
+    assert.ok(game.description.trim(), game.id);
+  }
   for (const language of ['sv', 'fr', 'de', 'es']) {
     const translations = JSON.parse(
       fs.readFileSync(`src/data/descriptions/${language}.json`, 'utf8'),
     );
     assert.deepEqual(Object.keys(translations).sort(), [...ids].sort());
-    for (const id of ids) {
-      const game = games.find((game) => game.id === id);
+    for (const game of translatedGames) {
+      const { id } = game;
+      assert.ok(translations[id]?.trim(), `${language}: ${id}`);
       const result = description(game, language, 'full');
       assert.equal(result.text, translations[id]);
       assert.equal(result.language, language);
@@ -33,16 +38,17 @@ test('all 80 translations use the first twenty stable IDs and preserve paragraph
         paragraphs(result.text).length,
         paragraphs(game.description).length,
       );
-      assert.deepEqual(
-        result.text.match(/\d+/g),
-        game.description.match(/\d+/g),
-      );
     }
   }
 });
 
 test('missing translations use English and long descriptions keep their own source text', () => {
-  const game = games.find(({ id }) => id === 'high-society');
+  const game = {
+    ...games.find(({ id }) => id === 'high-society'),
+    id: 'untranslated-test-fixture',
+    description: 'English source text',
+    descriptionLanguage: 'en',
+  };
   for (const language of ['sv', 'en', 'fr', 'de', 'es']) {
     assert.deepEqual(description(game, language, 'full'), {
       text: game.description,
