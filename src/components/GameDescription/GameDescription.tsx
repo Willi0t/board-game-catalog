@@ -16,14 +16,25 @@ export default function GameDescription({
     presentation === 'summary'
       ? game.description
       : game.longDescription || game.description;
-  if (!text) return null;
+  if (!text?.trim()) return null;
+  const paragraphs = text
+    .split(/\r?\n(?:[^\S\r\n]*\r?\n)+/)
+    .map((paragraph, index) => (
+      <p
+        key={index}
+        className={styles.description}
+        lang={game.descriptionLanguage ?? 'sv'}
+      >
+        {paragraph}
+      </p>
+    ));
   const draft = game.descriptionStatus === 'draft' && (
     <p className={styles.note}>{t('draftDescription')}</p>
   );
   if (presentation !== 'full')
     return (
       <div className={styles.summary}>
-        <p lang="sv">{text}</p>
+        {paragraphs}
         {draft}
       </div>
     );
@@ -31,9 +42,7 @@ export default function GameDescription({
     <section className={styles.section}>
       <h3>{t('aboutGame')}</h3>
       {draft}
-      <p className={styles.description} lang="sv">
-        {text}
-      </p>
+      {paragraphs}
     </section>
   );
 }

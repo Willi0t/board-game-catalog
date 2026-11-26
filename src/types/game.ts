@@ -9,6 +9,7 @@ export interface Game {
   tint: string;
   cardTint?: string;
   description: string;
+  descriptionLanguage?: string;
   longDescription?: string;
   minimumAge?: number;
   expansions?: string[];
