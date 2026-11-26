@@ -20,6 +20,7 @@ En brädspelskatalog för att hålla koll på samlingen och välja spel till nä
 - [Kom igång](#kom-igång)
 - [Användning](#användning)
 - [Underhåll av katalogen](#underhåll-av-katalogen)
+  - [Anslut en egen datakälla i en fork](#anslut-en-egen-datakälla-i-en-fork)
 - [Utveckling och publicering](#utveckling-och-publicering)
 - [Tack](#tack)
 
@@ -41,6 +42,14 @@ engelska, spanska, tyska och franska.
 Appen använder CSS Modules och lokala JSON-filer för speldata och
 översättningar. Den valfria AI-chatten anropar [Groq](https://groq.com/) via en
 Netlify Function.
+
+### Varför lokala filer?
+
+Jag har valt att spara speldata och översättningar i JSON-filer i repot.
+Innehållet i samlingen ändras ganska sällan, så en ändring i filerna följd av
+en ny publicering räcker för mitt behov. Katalogen kan publiceras statiskt,
+och jag slipper drifta och betala för en server eller databastjänst som måste
+vara igång hela tiden.
 
 ## Kom igång
 
@@ -117,6 +126,27 @@ lägg till `--write` för att spara dem.
    och bevarar lokala beskrivningar, bilder och färger.
 4. Kör projektkontrollerna nedan. Uppdatera Sheets-underlaget när ett kommande
    spel flyttas till samlingen, så att nästa import behåller rätt status.
+
+### Anslut en egen datakälla i en fork
+
+Spelvyerna använder samma datastruktur oavsett var innehållet lagras. I en
+fork kan du börja med att byta hur katalogen får sin data.
+
+- **Google Sheets:** Utgå från importen ovan. För att automatisera den kan du
+  hämta rader via Sheets API, mappa dem till importformatet och köra
+  `scripts/import-catalog.mjs` före bygget. Då kan katalogen fortsätta
+  publiceras statiskt. Lägg åtkomstuppgifter för ett privat kalkylark i
+  byggmiljön.
+- **Databas:** Lägg upp katalogen i en databas med ett stabilt `id` per spel.
+  Skapa ett API som läser spelposterna och returnerar JSON enligt typen
+  [`Game`](src/types/game.ts). Anpassa datainläsningen i
+  [`src/data/games.ts`](src/data/games.ts) och där den används så att appen
+  hämtar katalogen från API:t. Lägg till laddnings- och fellägen. Databasens
+  åtkomstuppgifter hör hemma i API:ets miljö.
+
+Behåll spelens ID:n så att favoriter, bilder och översättningar fortsätter att
+peka på rätt spel. Om du använder AI-chatten behöver även Netlify-funktionen
+läsa samma katalog. Den läser i dag `src/games.json`.
 
 ## Utveckling och publicering
 
