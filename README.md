@@ -2,61 +2,59 @@
 
 # Spelhyllan
 
-En brädspelskatalog för att hålla koll på samlingen och välja spel till nästa spelkväll.
+A board game catalog to track your collection and pick a game for your next game night.
 
 [![CI][ci-badge]][ci-url]
-[![GitHub-stjärnor][stars-badge]][stars-url]
-[![Forkar][forks-badge]][forks-url]
-[![Öppna ärenden][issues-badge]][issues-url]
-[![Bidragsgivare][contributors-badge]][contributors-url]
+[![GitHub stars][stars-badge]][stars-url]
+[![Forks][forks-badge]][forks-url]
+[![Open issues][issues-badge]][issues-url]
+[![Contributors][contributors-badge]][contributors-url]
 
-[Kom igång](#kom-igång) · [Rapportera ett fel][bug-url] · [Föreslå en funktion][issues-url]
+[Getting started](#getting-started) · [Report a bug][bug-url] · [Suggest a feature][issues-url]
 
 </div>
 
-## Innehåll
+## Contents
 
-- [Om projektet](#om-projektet)
-- [Kom igång](#kom-igång)
-- [Användning](#användning)
-- [Underhåll av katalogen](#underhåll-av-katalogen)
-  - [Anslut en egen datakälla i en fork](#anslut-en-egen-datakälla-i-en-fork)
-- [Utveckling och publicering](#utveckling-och-publicering)
-- [Tack](#tack)
+- [About the project](#about-the-project)
+- [Getting started](#getting-started)
+- [Usage](#usage)
+- [Maintaining the catalog](#maintaining-the-catalog)
+  - [Connect your own data source in a fork](#connect-your-own-data-source-in-a-fork)
+- [Development and deployment](#development-and-deployment)
+- [Acknowledgments](#acknowledgments)
 
-## Om projektet
+## About the project
 
-Spelhyllan visar spel i samlingen och kommande spel. Varje spel har en detaljvy
-med beskrivning, spelinformation och galleri. Gränssnittet finns på svenska,
-engelska, spanska, tyska och franska.
+Spelhyllan shows games in the collection and upcoming games. Each game has a
+detail view with a description, game information, and a gallery. The interface
+is available in Swedish, English, Spanish, German, and French.
 
-![Spelhyllans katalog med sökning, filter och detaljpanelen för The Castles of Burgundy öppen](docs/images/spelhyllan-katalog.webp)
+![The Spelhyllan catalog with search, filters, and the detail panel for The Castles of Burgundy open](docs/images/spelhyllan-katalog.webp)
 
-### Byggd med
+### Built with
 
 [![React][react-badge]](https://react.dev/)
 [![TypeScript][typescript-badge]](https://www.typescriptlang.org/)
 [![Vite][vite-badge]](https://vite.dev/)
 [![Netlify][netlify-badge]](https://www.netlify.com/)
 
-Appen använder CSS Modules och lokala JSON-filer för speldata och
-översättningar. Den valfria AI-chatten anropar [Groq](https://groq.com/) via en
-Netlify Function.
+The app uses CSS Modules and local JSON files for game data and translations.
+The optional AI chat calls [Groq](https://groq.com/) through a Netlify Function.
 
-### Varför lokala filer?
+### Why local files?
 
-Jag har valt att spara speldata och översättningar i JSON-filer i repot.
-Innehållet i samlingen ändras ganska sällan, så en ändring i filerna följd av
-en ny publicering räcker för mitt behov. Katalogen kan publiceras statiskt,
-och jag slipper drifta och betala för en server eller databastjänst som måste
-vara igång hela tiden.
+I keep the game data and translations in JSON files in the repository. The
+collection changes infrequently, so editing the files and redeploying is enough
+for my needs. Static hosting lets me run the catalog without the cost and
+maintenance of an always-on server or database service.
 
-## Kom igång
+## Getting started
 
-### Förutsättningar
+### Prerequisites
 
-Installera Git och Node.js 22.13.0 eller senare i 22-serien, alternativt Node.js
-24 eller senare. GitHub Actions och Netlify använder Node.js 22.23.4.
+Install Git and Node.js 22.13.0 or later in the 22.x series, or Node.js 24 or
+later. GitHub Actions and Netlify use Node.js 22.23.4.
 
 ### Installation
 
@@ -67,88 +65,87 @@ npm ci
 npm run dev
 ```
 
-Öppna adressen som Vite skriver ut i terminalen. Katalogen och den manuella
-spelguiden kan köras direkt med dessa kommandon.
+Open the address printed by Vite in your terminal. These commands start the
+catalog and the manual game picker.
 
-## Användning
+## Usage
 
-- **Utforska** katalogen med sökning, filter för bland annat speltyp, mekanik och
-  spelarantal samt sortering.
-- **Öppna ett spel** för att se beskrivningen, galleriet och eventuella
-  expansioner. Språket går att byta medan detaljvyn är öppen.
-- **Spara favoriter** för snabb åtkomst. De sparas i den aktuella webbläsaren.
-- **Välj åt mig** öppnar den manuella spelguiden eller den lösenordsskyddade
-  AI-chatten. Chattens rekommendationer visas i katalogen.
+- **Browse the catalog** with search, sorting, and filters for game type,
+  mechanics, player count, and more.
+- **Open a game** to see its description, gallery, and any expansions. You can
+  switch languages while the detail view is open.
+- **Save favorites** for quick access. They are stored in your current browser.
+- **Pick for me** opens the manual game picker or the password-protected AI
+  chat. The chat's recommendations appear in the catalog.
 
-### Aktivera AI-chatten
+### Enable the AI chat
 
-Skapa en lokal `.env` med variablerna nedan och starta appen med
+Create a local `.env` file with the variables below, then start the app with
 `npx netlify-cli dev`.
 
-| Variabel                     | Värde                                                       |
-| ---------------------------- | ----------------------------------------------------------- |
-| `GROQ_API_KEY`               | API-nyckel från [GroqCloud](https://console.groq.com/keys). |
-| `GAME_PICKER_PASSWORD_HASH`  | Saltad scrypt-hash av chattens lösenord.                    |
-| `GAME_PICKER_SESSION_SECRET` | Separat slumpvärde från `openssl rand -hex 32`.             |
+| Variable                     | Value                                                        |
+| ---------------------------- | ------------------------------------------------------------ |
+| `GROQ_API_KEY`               | API key from [GroqCloud](https://console.groq.com/keys).     |
+| `GAME_PICKER_PASSWORD_HASH`  | Salted scrypt hash of the chat password.                     |
+| `GAME_PICKER_SESSION_SECRET` | Separate random value generated with `openssl rand -hex 32`. |
 
-Skapa lösenordshashen i Bash och spara resultatet som
+Generate the password hash in Bash and save the result as
 `GAME_PICKER_PASSWORD_HASH`.
 
 ```bash
-read -rsp 'Lösenord för chatten: ' picker_password; printf '\n'
+read -rsp 'Chat password: ' picker_password; printf '\n'
 printf '%s' "$picker_password" | node -e 'const { randomBytes, scryptSync } = require("node:crypto"); const salt = randomBytes(16); const hash = scryptSync(require("node:fs").readFileSync(0), salt, 32, { N: 65536, r: 8, p: 1, maxmem: 96 * 1024 * 1024 }); console.log(salt.toString("hex") + ":" + hash.toString("hex"));'
 unset picker_password
 ```
 
-## Underhåll av katalogen
+## Maintaining the catalog
 
-| Innehåll                                              | Plats                                           |
-| ----------------------------------------------------- | ----------------------------------------------- |
-| Speldata och engelska källtexter                      | [`src/games.json`](src/games.json)              |
-| Svenska, spanska, tyska och franska spelbeskrivningar | `src/data/descriptions/`, en JSON-fil per språk |
-| Översättningar av gränssnittet                        | `src/i18n/`                                     |
-| Spelbilder och reservillustrationer                   | [Bildguiden](public/images/README.md)           |
+| Content                                                | Location                                             |
+| ------------------------------------------------------ | ---------------------------------------------------- |
+| Game data and English source descriptions              | [`src/games.json`](src/games.json)                   |
+| Swedish, Spanish, German, and French game descriptions | `src/data/descriptions/`, one JSON file per language |
+| Interface translations                                 | `src/i18n/`                                          |
+| Game images and placeholder illustrations              | [Image guide](public/images/README.md)               |
 
-Använd spelets befintliga `id` som nyckel i språkfilerna och som mappnamn för
-bilder under `public/images/games/`. Saknas en översättning används källtexten i katalogen. När omslaget byts kan du uppdatera bildvarianterna med
-`npm run covers:generate`. Använd vid behov
-`node scripts/cover-theme.mjs <spel-id>` för att förhandsgranska temafärger och
-lägg till `--write` för att spara dem.
+Use each game's existing `id` as the key in the language files and as the
+folder name for images under `public/images/games/`. When a translation is
+missing, the app uses the source description. If you replace a cover, run
+`npm run covers:generate` to update its image variants. To preview theme
+colors, run `node scripts/cover-theme.mjs <game-id>`. Add `--write` to save them.
 
-### Importera speldata från Sheets
+### Import game data from Google Sheets
 
-1. Exportera de första nio kolumnerna inklusive `Expansions` till
-   `catalog-data.json`. Utelämna kolumnen Notes/Notering.
-2. Granska källrader och speltitlar i
-   [`scripts/catalog-matches.json`](scripts/catalog-matches.json). Behåll
-   befintliga spel-ID:n och ange titel och utgåva separat.
-3. Kör `node scripts/import-catalog.mjs`. Importen uppdaterar katalogmetadata
-   och bevarar lokala beskrivningar, bilder och färger.
-4. Kör projektkontrollerna nedan. Uppdatera Sheets-underlaget när ett kommande
-   spel flyttas till samlingen, så att nästa import behåller rätt status.
+1. Export the first nine columns, including `Expansions`, to
+   `catalog-data.json`. Omit the Notes column (`Notes` or `Notering`).
+2. Review the source rows and titles in
+   [`scripts/catalog-matches.json`](scripts/catalog-matches.json). Keep
+   existing game IDs and enter the title and edition separately.
+3. Run `node scripts/import-catalog.mjs`. The import updates catalog metadata
+   and preserves local descriptions, images, and colors.
+4. Run the project checks below. When an upcoming game joins the collection,
+   update the source spreadsheet so the next import preserves its new status.
 
-### Anslut en egen datakälla i en fork
+### Connect your own data source in a fork
 
-Spelvyerna använder samma datastruktur oavsett var innehållet lagras. I en
-fork kan du börja med att byta hur katalogen får sin data.
+The game views use the same data structure regardless of where the content is
+stored. In a fork, start by changing how the catalog loads its data.
 
-- **Google Sheets:** Utgå från importen ovan. För att automatisera den kan du
-  hämta rader via Sheets API, mappa dem till importformatet och köra
-  `scripts/import-catalog.mjs` före bygget. Då kan katalogen fortsätta
-  publiceras statiskt. Lägg åtkomstuppgifter för ett privat kalkylark i
-  byggmiljön.
-- **Databas:** Lägg upp katalogen i en databas med ett stabilt `id` per spel.
-  Skapa ett API som läser spelposterna och returnerar JSON enligt typen
-  [`Game`](src/types/game.ts). Anpassa datainläsningen i
-  [`src/data/games.ts`](src/data/games.ts) och där den används så att appen
-  hämtar katalogen från API:t. Lägg till laddnings- och fellägen. Databasens
-  åtkomstuppgifter hör hemma i API:ets miljö.
+- **Google Sheets:** Use the import process above. To automate it, fetch rows
+  through the Sheets API, map them to the import format, and run
+  `scripts/import-catalog.mjs` before building. The catalog can still be hosted
+  statically. Store credentials for a private spreadsheet in the build
+  environment.
+- **Database:** Give each game a stable `id` and create an API that reads game
+  records and returns JSON matching the [`Game`](src/types/game.ts) type.
+  Adapt [`src/data/games.ts`](src/data/games.ts) and its callers to load the
+  catalog from the API, with loading and error states. Store database
+  credentials in the API's environment.
 
-Behåll spelens ID:n så att favoriter, bilder och översättningar fortsätter att
-peka på rätt spel. Om du använder AI-chatten behöver även Netlify-funktionen
-läsa samma katalog. Den läser i dag `src/games.json`.
+Keep game IDs stable so that favorites, images, and translations still point
+to the right games. If you enable the AI chat, configure the Netlify Function
+to read the same catalog. It currently reads `src/games.json`.
 
-## Utveckling och publicering
+## Development and deployment
 
 ```bash
 npm run format:check
@@ -157,22 +154,23 @@ node --test tests/*.test.mjs
 npm run build
 ```
 
-Använd `npm run format` för att formatera filer. Bygget kör typkontroll och
-kontrollerar omslagsvarianter innan Vite skriver resultatet till `dist/`.
-Förhandsgranska produktionsbygget med `npm run preview`.
+Use `npm run format` to format files. The build runs type checks and verifies
+cover variants before Vite writes the output to `dist/`. Use `npm run preview`
+to preview the production build.
 
-[GitHub Actions](.github/workflows/ci.yml) kör formatering, lint och bygge vid
-pushar till alla grenar och pull requests till `main`. [`netlify.toml`](netlify.toml) anger
-`npm run build` och `dist/` som byggkommando och publiceringsmapp. För
-AI-chatten i produktion lägger du in miljövariablerna i Netlify med åtkomst för
-Functions och gör en ny deploy.
+[GitHub Actions](.github/workflows/ci.yml) runs formatting, linting, and the
+build on pushes to all branches and on pull requests targeting `main`.
+[`netlify.toml`](netlify.toml) sets `npm run build` as the build command and
+`dist/` as the publish directory. To enable the AI chat in production, set
+the environment variables in Netlify with access for Functions, then
+redeploy.
 
-## Tack
+## Acknowledgments
 
-README-strukturen är inspirerad av
+The README structure is inspired by
 [Best README Template](https://github.com/othneildrew/Best-README-Template).
 
-[Tillbaka till toppen](#spelhyllan)
+[Back to top](#spelhyllan)
 
 [ci-badge]: https://github.com/Willi0t/board-game-catalog/actions/workflows/ci.yml/badge.svg?branch=feat%2Fui-copy-and-localization
 [ci-url]: https://github.com/Willi0t/board-game-catalog/actions/workflows/ci.yml
