@@ -1,4 +1,5 @@
 import { useLanguage } from '../../i18n/LanguageContext';
+import localizedDescription from '../../utils/localizedDescription';
 import type { Game } from '../../types/game';
 import styles from './GameDescription.module.css';
 
@@ -11,20 +12,14 @@ export default function GameDescription({
   game,
   presentation = 'summary',
 }: GameDescriptionProps) {
-  const { t } = useLanguage();
-  const text =
-    presentation === 'summary'
-      ? game.description
-      : game.longDescription || game.description;
+  const { t, language } = useLanguage();
+  const description = localizedDescription(game, language, presentation);
+  const { text } = description;
   if (!text?.trim()) return null;
   const paragraphs = text
     .split(/\r?\n(?:[^\S\r\n]*\r?\n)+/)
     .map((paragraph, index) => (
-      <p
-        key={index}
-        className={styles.description}
-        lang={game.descriptionLanguage ?? 'sv'}
-      >
+      <p key={index} className={styles.description} lang={description.language}>
         {paragraph}
       </p>
     ));
