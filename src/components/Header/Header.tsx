@@ -1,52 +1,86 @@
+import { useLanguage } from '../../i18n/LanguageContext';
 import React from 'react';
+import { languageNames, type Language } from '../../i18n/translations';
 import Icon from '../Icon/Icon';
 
 import styles from './Header.module.css';
 
+const languageFlags = {
+  sv: 'se',
+  en: 'gb',
+  fr: 'fr',
+  de: 'de',
+  es: 'es',
+} satisfies Record<Language, string>;
+
 interface HeaderProps {
-  viewLabel: string;
+  view: 'allGames' | 'favorites' | 'guideResults' | 'aiResults';
   onOpenPicker: (trigger: HTMLButtonElement) => void;
   children: React.ReactNode;
   contentClassName: string;
 }
 export default function Header({
-  viewLabel,
+  view,
   onOpenPicker,
   children,
   contentClassName,
 }: HeaderProps) {
+  const { t, language, setLanguage } = useLanguage();
   return (
     <>
       <header className={styles['topbar']}>
         <div className={styles['breadcrumb']}>
-          Mitt bibliotek <Icon name="chevron" size={13} />
-          <span>{viewLabel}</span>
+          {t('myLibrary')} <Icon name="chevron" size={13} />
+          <span>{t(view)}</span>
         </div>
-        <span className={styles['demo-label']}>
-          <span /> Förhandsversion
-        </span>
+        <div
+          className={styles.languages}
+          role="group"
+          aria-label={t('language')}
+        >
+          {(Object.keys(languageFlags) as Language[]).map((code) => (
+            <div className={styles.languageOption} key={code}>
+              <button
+                type="button"
+                className={styles.flag}
+                lang={code}
+                aria-label={languageNames[code]}
+                aria-pressed={language === code}
+                onClick={() => setLanguage(code)}
+              >
+                <img
+                  src={`/images/ui/flags/${languageFlags[code]}.svg`}
+                  alt=""
+                />
+              </button>
+              <span
+                className={styles.languageName}
+                lang={code}
+                aria-hidden="true"
+              >
+                {languageNames[code]}
+              </span>
+            </div>
+          ))}
+        </div>
       </header>
       <div className={contentClassName}>
         <section className={styles['page-heading']}>
           <div>
-            <p className={styles['eyebrow']}>SAMLINGEN, PÅ ETT STÄLLE</p>
+            <p className={styles['eyebrow']}>{t('collectionCaption')}</p>
             <h1 className={styles.heading}>
-              {viewLabel === 'Alla spel'
-                ? 'Nästa spelkväll börjar här.'
-                : viewLabel}
+              {view === 'allGames' ? t('browseGames') : t(view)}
             </h1>
-            <p className={styles['intro']}>
-              Bläddra, upptäck och hitta något att samlas kring.
-            </p>
+            <p className={styles['intro']}>{t('browseIntro')}</p>
           </div>
           <button
             className={styles['random-button']}
             aria-haspopup="dialog"
-            aria-label="Välj åt mig"
+            aria-label={t('pickForMe')}
             onClick={(event) => onOpenPicker(event.currentTarget)}
           >
             <Icon name="dice" size={18} />
-            Välj åt mig
+            {t('pickForMe')}
             <Icon name="arrow" size={17} />
           </button>
         </section>

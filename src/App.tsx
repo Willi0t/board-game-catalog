@@ -1,3 +1,4 @@
+import { useLanguage } from './i18n/LanguageContext';
 import { useState, useRef, type CSSProperties } from 'react';
 import games from './data/games';
 import { resolveGameColors } from './constants/placeholderThemes';
@@ -22,6 +23,7 @@ import GamePicker from './components/GamePicker/GamePicker';
 import GamePickerResult from './components/GamePickerResult/GamePickerResult';
 
 export default function App() {
+  const { t } = useLanguage();
   const { favorites, toggleFavorite } = useFavorites();
   const picker = useGamePicker();
   const [aiIds, setAiIds] = useState<string[] | null>(null);
@@ -40,13 +42,13 @@ export default function App() {
     useGamePanels(catalog.selectedGame?.id ?? null, isMobile);
   const libraryRef = useRef<HTMLElement>(null);
   const selectedGame = catalog.selectedGame;
-  const viewLabel = aiIds
-    ? 'AI:s rekommendationer'
+  const view = aiIds
+    ? 'aiResults'
     : picker.appliedCriteria
-      ? 'Guidens resultat'
+      ? 'guideResults'
       : catalog.filters.libraryView === 'favorites'
-        ? 'Favoriter'
-        : 'Alla spel';
+        ? 'favorites'
+        : 'allGames';
   const themeGame = detailDrawer.game ?? selectedGame;
   const { tint, accent } = themeGame
     ? resolveGameColors(themeGame)
@@ -113,7 +115,7 @@ export default function App() {
       <main ref={libraryRef} tabIndex={-1} className={styles['workspace']}>
         <Header
           contentClassName={styles['workspace-inner']}
-          viewLabel={viewLabel}
+          view={view}
           onOpenPicker={picker.open}
         >
           <div className={styles['collection-layout']}>
@@ -121,10 +123,10 @@ export default function App() {
               {aiIds ? (
                 <section
                   className={styles.aiResults}
-                  aria-label="AI:s rekommendationer"
+                  aria-label={t('aiResults')}
                 >
-                  <strong>AI:s rekommendationer</strong>
-                  <button onClick={clearAi}>Rensa AI-filter</button>
+                  <strong>{t('aiResults')}</strong>
+                  <button onClick={clearAi}>{t('clearAi')}</button>
                 </section>
               ) : picker.appliedCriteria ? (
                 <GamePickerResult
