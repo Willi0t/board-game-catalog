@@ -4,6 +4,14 @@
 
 En brädspelskatalog för att hålla koll på samlingen och välja spel till nästa spelkväll.
 
+[![CI][ci-badge]][ci-url]
+[![GitHub-stjärnor][stars-badge]][stars-url]
+[![Forkar][forks-badge]][forks-url]
+[![Öppna ärenden][issues-badge]][issues-url]
+[![Bidragsgivare][contributors-badge]][contributors-url]
+
+[Kom igång](#kom-igång) · [Rapportera ett fel][bug-url] · [Föreslå en funktion][issues-url]
+
 </div>
 
 ## Innehåll
@@ -13,6 +21,7 @@ En brädspelskatalog för att hålla koll på samlingen och välja spel till nä
 - [Användning](#användning)
 - [Underhåll av katalogen](#underhåll-av-katalogen)
 - [Utveckling och publicering](#utveckling-och-publicering)
+- [Tack](#tack)
 
 ## Om projektet
 
@@ -20,13 +29,18 @@ Spelhyllan visar spel i samlingen och kommande spel. Varje spel har en detaljvy
 med beskrivning, spelinformation och galleri. Gränssnittet finns på svenska,
 engelska, spanska, tyska och franska.
 
+![Spelhyllans katalog med sökning, filter och detaljpanelen för The Castles of Burgundy öppen](docs/images/spelhyllan-katalog.webp)
+
 ### Byggd med
 
-- [React](https://react.dev/), [TypeScript](https://www.typescriptlang.org/) och
-  [Vite](https://vite.dev/)
-- CSS Modules och lokala JSON-filer för speldata och översättningar
-- [Netlify](https://www.netlify.com/) för publicering och en funktion som anropar
-  [Groq](https://groq.com/) för den valfria AI-chatten
+[![React][react-badge]](https://react.dev/)
+[![TypeScript][typescript-badge]](https://www.typescriptlang.org/)
+[![Vite][vite-badge]](https://vite.dev/)
+[![Netlify][netlify-badge]](https://www.netlify.com/)
+
+Appen använder CSS Modules och lokala JSON-filer för speldata och
+översättningar. Den valfria AI-chatten anropar [Groq](https://groq.com/) via en
+Netlify Function.
 
 ## Kom igång
 
@@ -122,3 +136,26 @@ pushar till alla grenar och pull requests till `main`. [`netlify.toml`](netlify.
 `npm run build` och `dist/` som byggkommando och publiceringsmapp. För
 AI-chatten i produktion lägger du in miljövariablerna i Netlify med åtkomst för
 Functions och gör en ny deploy.
+
+## Tack
+
+README-strukturen är inspirerad av
+[Best README Template](https://github.com/othneildrew/Best-README-Template).
+
+[Tillbaka till toppen](#spelhyllan)
+
+[ci-badge]: https://github.com/Willi0t/board-game-catalog/actions/workflows/ci.yml/badge.svg?branch=feat%2Fui-copy-and-localization
+[ci-url]: https://github.com/Willi0t/board-game-catalog/actions/workflows/ci.yml
+[stars-badge]: https://img.shields.io/github/stars/Willi0t/board-game-catalog?style=flat&logo=github
+[stars-url]: https://github.com/Willi0t/board-game-catalog/stargazers
+[forks-badge]: https://img.shields.io/github/forks/Willi0t/board-game-catalog?style=flat&logo=github
+[forks-url]: https://github.com/Willi0t/board-game-catalog/forks
+[issues-badge]: https://img.shields.io/github/issues/Willi0t/board-game-catalog?style=flat&logo=github
+[issues-url]: https://github.com/Willi0t/board-game-catalog/issues
+[bug-url]: https://github.com/Willi0t/board-game-catalog/issues/new
+[contributors-badge]: https://img.shields.io/github/contributors/Willi0t/board-game-catalog?style=flat&logo=github
+[contributors-url]: https://github.com/Willi0t/board-game-catalog/graphs/contributors
+[react-badge]: https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB
+[typescript-badge]: https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white
+[vite-badge]: https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white
+[netlify-badge]: https://img.shields.io/badge/Netlify-004D4D?style=flat&logo=netlify&logoColor=white
