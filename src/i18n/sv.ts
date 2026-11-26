@@ -135,8 +135,6 @@ export const messages = {
     'Spelarantal och svårighet följer importunderlaget och kan avse grundspelet. Exakt utgåva är inte oberoende verifierad. Taggarna är vår granskade indelning.',
   players: 'Spelare',
   playerInteraction: 'Spelarinteraktion',
-  interactionScale:
-    'Spelarinteraktion är vår subjektiva bedömning (0–5) av både samarbete och konkurrens.',
   gameSetup: 'Spelet uppdukat',
   gameInformation: 'Spelinformation',
   playStyle: 'Spelkänsla',

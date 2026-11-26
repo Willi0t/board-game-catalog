@@ -134,8 +134,6 @@ export const messages = {
     'Player count and complexity come from the imported data and may refer to the base game. The exact edition has yet to be independently verified. We reviewed the tag classification.',
   players: 'Players',
   playerInteraction: 'Player interaction',
-  interactionScale:
-    'Player interaction is our subjective assessment (0–5) of both cooperation and competition.',
   gameSetup: 'Game setup',
   gameInformation: 'Game information',
   playStyle: 'Play style',

@@ -141,8 +141,6 @@ export const messages = {
     'Spielerzahl und Komplexität stammen aus den Importdaten und können sich auf das Grundspiel beziehen. Die genaue Ausgabe wurde noch nicht unabhängig überprüft. Die Zuordnung der Tags wurde von uns geprüft.',
   players: 'Spielerzahl',
   playerInteraction: 'Spielerinteraktion',
-  interactionScale:
-    'Spielerinteraktion ist unsere subjektive Einschätzung (0–5) von Zusammenarbeit und Wettbewerb.',
   gameSetup: 'Spielaufbau',
   gameInformation: 'Spielinformationen',
   playStyle: 'Spielgefühl',

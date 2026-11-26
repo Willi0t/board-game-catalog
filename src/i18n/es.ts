@@ -139,8 +139,6 @@ export const messages = {
     'El número de jugadores y la dificultad proceden de los datos importados y pueden referirse al juego base. Falta verificar de forma independiente la edición exacta. Hemos revisado la clasificación de las etiquetas.',
   players: 'Jugadores',
   playerInteraction: 'Interacción entre jugadores',
-  interactionScale:
-    'La interacción entre jugadores es nuestra valoración subjetiva (0–5) de la cooperación y la competición.',
   gameSetup: 'Juego preparado',
   gameInformation: 'Información del juego',
   playStyle: 'Estilo de juego',

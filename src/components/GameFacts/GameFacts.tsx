@@ -1,5 +1,4 @@
 import { useLanguage } from '../../i18n/LanguageContext';
-import { useId } from 'react';
 import type { Game } from '../../types/game';
 import styles from './GameFacts.module.css';
 
@@ -14,7 +13,6 @@ function difficultyColor(weight: number) {
 
 export default function GameFacts({ game }: { game: Game }) {
   const { t, language } = useLanguage();
-  const interactionHelp = useId();
   const players =
     game.playersMin == null || game.playersMax == null
       ? t('unknown')
@@ -53,7 +51,7 @@ export default function GameFacts({ game }: { game: Game }) {
         </div>
         <div>
           <dt>{t('playerInteraction')}</dt>
-          <dd aria-describedby={interactionHelp}>
+          <dd>
             {game.playerInteraction == null ? (
               t('unknown')
             ) : (
@@ -90,9 +88,6 @@ export default function GameFacts({ game }: { game: Game }) {
           </div>
         )}
       </dl>
-      <p id={interactionHelp} className={styles.help}>
-        {t('interactionScale')}
-      </p>
     </div>
   );
 }
