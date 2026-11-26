@@ -2,7 +2,7 @@
 
 # Spelhyllan
 
-A board game catalog to track your collection and pick a game for your next game night.
+Find the right board game for your next game night with friends.
 
 [![CI][ci-badge]][ci-url]
 [![GitHub stars][stars-badge]][stars-url]
